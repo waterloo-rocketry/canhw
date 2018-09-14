@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:picdev-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -35,7 +36,7 @@ U 1 1 5B9AC064
 P 6700 5100
 F 0 "R1" H 6770 5146 50  0000 L CNN
 F 1 "120R" H 6770 5055 50  0000 L CNN
-F 2 "" V 6630 5100 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6630 5100 50  0001 C CNN
 F 3 "~" H 6700 5100 50  0001 C CNN
 	1    6700 5100
 	1    0    0    -1  
@@ -46,7 +47,7 @@ U 1 1 5B9AC215
 P 6450 4750
 F 0 "TP1" H 6508 4870 50  0000 L CNN
 F 1 "TestPoint" H 6508 4779 50  0000 L CNN
-F 2 "" H 6650 4750 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 6650 4750 50  0001 C CNN
 F 3 "~" H 6650 4750 50  0001 C CNN
 	1    6450 4750
 	1    0    0    -1  
@@ -57,7 +58,7 @@ U 1 1 5B9AC25A
 P 6450 5500
 F 0 "TP2" H 6392 5527 50  0000 R CNN
 F 1 "TestPoint" H 6392 5618 50  0000 R CNN
-F 2 "" H 6650 5500 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 6650 5500 50  0001 C CNN
 F 3 "~" H 6650 5500 50  0001 C CNN
 	1    6450 5500
 	-1   0    0    1   
@@ -72,7 +73,7 @@ U 1 1 5B9ACB20
 P 4050 1750
 F 0 "U1" H 4050 2015 50  0000 C CNN
 F 1 "R-78E5.0-0.5" H 4050 1924 50  0000 C CNN
-F 2 "" H 4050 1750 50  0001 C CNN
+F 2 "Package_SIP:SIP3_11.6x8.5mm" H 4050 1750 50  0001 C CNN
 F 3 "" H 4050 1750 50  0001 C CNN
 	1    4050 1750
 	1    0    0    -1  
@@ -94,7 +95,7 @@ U 1 1 5B9ACD24
 P 3150 1750
 F 0 "F1" H 3150 1935 50  0000 C CNN
 F 1 "Fuse_Small" H 3150 1844 50  0000 C CNN
-F 2 "" H 3150 1750 50  0001 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric_Pad1.24x1.80mm_HandSolder" H 3150 1750 50  0001 C CNN
 F 3 "~" H 3150 1750 50  0001 C CNN
 	1    3150 1750
 	1    0    0    -1  
@@ -107,7 +108,7 @@ U 1 1 5B9ACE94
 P 2350 1850
 F 0 "J1" H 2244 1525 50  0000 C CNN
 F 1 "Power Conn" H 2244 1616 50  0000 C CNN
-F 2 "" H 2350 1850 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 2350 1850 50  0001 C CNN
 F 3 "~" H 2350 1850 50  0001 C CNN
 	1    2350 1850
 	-1   0    0    1   
@@ -135,7 +136,7 @@ U 1 1 5B9AD0FC
 P 3450 2000
 F 0 "C1" H 3565 2046 50  0000 L CNN
 F 1 "10uF" H 3565 1955 50  0000 L CNN
-F 2 "" H 3488 1850 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 3488 1850 50  0001 C CNN
 F 3 "~" H 3450 2000 50  0001 C CNN
 	1    3450 2000
 	1    0    0    -1  
@@ -177,7 +178,7 @@ U 1 1 5B9AD614
 P 4700 2000
 F 0 "C2" H 4815 2046 50  0000 L CNN
 F 1 "10uF" H 4815 1955 50  0000 L CNN
-F 2 "" H 4738 1850 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 4738 1850 50  0001 C CNN
 F 3 "~" H 4700 2000 50  0001 C CNN
 	1    4700 2000
 	1    0    0    -1  
@@ -210,10 +211,8 @@ Wire Wire Line
 Connection ~ 6700 5350
 Wire Wire Line
 	6700 5350 6950 5350
-Connection ~ 6450 4900
 Wire Wire Line
 	6450 4900 6700 4900
-Connection ~ 6450 5350
 Wire Wire Line
 	6450 5350 6700 5350
 Wire Wire Line
@@ -224,7 +223,7 @@ U 1 1 5B9CF2C1
 P 5950 4000
 F 0 "J4" H 5977 3976 50  0000 L CNN
 F 1 "CAN Breakout" H 5977 3885 50  0000 L CNN
-F 2 "" H 5950 4000 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5950 4000 50  0001 C CNN
 F 3 "~" H 5950 4000 50  0001 C CNN
 	1    5950 4000
 	1    0    0    -1  
@@ -233,14 +232,42 @@ Wire Wire Line
 	5750 4100 5750 4900
 Wire Wire Line
 	5000 4900 5750 4900
-Connection ~ 5750 4900
-Wire Wire Line
-	5750 4900 6450 4900
 Wire Wire Line
 	5750 4000 5550 4000
 Wire Wire Line
 	5550 4000 5550 5350
-Connection ~ 5550 5350
+$Comp
+L device:Jumper_NC_Small JP1
+U 1 1 5B9B21B9
+P 6100 4900
+F 0 "JP1" H 6100 5112 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 6100 5021 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6100 4900 50  0001 C CNN
+F 3 "~" H 6100 4900 50  0001 C CNN
+	1    6100 4900
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	5550 5350 6450 5350
+	6200 4900 6450 4900
+Connection ~ 6450 4900
+Wire Wire Line
+	6000 4900 5750 4900
+Connection ~ 5750 4900
+$Comp
+L device:Jumper_NC_Small JP2
+U 1 1 5B9B28E2
+P 6100 5350
+F 0 "JP2" H 6100 5562 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 6100 5471 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6100 5350 50  0001 C CNN
+F 3 "~" H 6100 5350 50  0001 C CNN
+	1    6100 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 5350 6450 5350
+Connection ~ 6450 5350
+Wire Wire Line
+	6000 5350 5550 5350
+Connection ~ 5550 5350
 $EndSCHEMATC
