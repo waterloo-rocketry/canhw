@@ -438,7 +438,7 @@ U 1 1 5B9A876F
 P 7850 4350
 F 0 "TP3" H 7800 4650 50  0000 L CNN
 F 1 "TestPoint" H 7700 4550 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 8050 4350 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 8050 4350 50  0001 C CNN
 F 3 "~" H 8050 4350 50  0001 C CNN
 	1    7850 4350
 	1    0    0    -1  
@@ -454,7 +454,7 @@ U 1 1 5B9A97A4
 P 7850 4650
 F 0 "TP4" H 7900 4950 50  0000 R CNN
 F 1 "TestPoint" H 8000 4850 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 8050 4650 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 8050 4650 50  0001 C CNN
 F 3 "~" H 8050 4650 50  0001 C CNN
 	1    7850 4650
 	-1   0    0    1   

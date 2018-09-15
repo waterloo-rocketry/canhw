@@ -47,7 +47,7 @@ U 1 1 5B9AC215
 P 6450 4750
 F 0 "TP1" H 6508 4870 50  0000 L CNN
 F 1 "TestPoint" H 6508 4779 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 6650 4750 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 6650 4750 50  0001 C CNN
 F 3 "~" H 6650 4750 50  0001 C CNN
 	1    6450 4750
 	1    0    0    -1  
@@ -58,7 +58,7 @@ U 1 1 5B9AC25A
 P 6450 5500
 F 0 "TP2" H 6392 5527 50  0000 R CNN
 F 1 "TestPoint" H 6392 5618 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 6650 5500 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 6650 5500 50  0001 C CNN
 F 3 "~" H 6650 5500 50  0001 C CNN
 	1    6450 5500
 	-1   0    0    1   

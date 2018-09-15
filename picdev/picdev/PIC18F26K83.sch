@@ -373,7 +373,7 @@ U 1 1 5B973A0D
 P 1900 5100
 F 0 "TP5" H 2200 5100 50  0000 R CNN
 F 1 "TestPoint" H 2300 5200 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 2100 5100 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 2100 5100 50  0001 C CNN
 F 3 "~" H 2100 5100 50  0001 C CNN
 	1    1900 5100
 	-1   0    0    1   
@@ -384,7 +384,7 @@ U 1 1 5B973F34
 P 2100 5100
 F 0 "TP6" H 2042 5127 50  0000 R CNN
 F 1 "TestPoint" H 2042 5218 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 2300 5100 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 2300 5100 50  0001 C CNN
 F 3 "~" H 2300 5100 50  0001 C CNN
 	1    2100 5100
 	-1   0    0    1   
