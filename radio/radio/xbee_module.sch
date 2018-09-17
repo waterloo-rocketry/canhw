@@ -293,7 +293,7 @@ Wire Wire Line
 Wire Wire Line
 	4450 4900 4450 4850
 Text HLabel 3650 4900 0    50   Input ~ 0
-~XBEE_SLEEP
+XBEE_SLEEP
 Wire Wire Line
 	3650 4900 4450 4900
 Connection ~ 4450 4900

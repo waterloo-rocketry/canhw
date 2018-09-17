@@ -110,17 +110,6 @@ Wire Wire Line
 Wire Wire Line
 	5000 1050 5000 1100
 $Comp
-L power:+3.3V #PWR017
-U 1 1 5B9DECE0
-P 5150 1400
-F 0 "#PWR017" H 5150 1250 50  0001 C CNN
-F 1 "+3.3V" H 5165 1573 50  0000 C CNN
-F 2 "" H 5150 1400 50  0001 C CNN
-F 3 "" H 5150 1400 50  0001 C CNN
-	1    5150 1400
-	1    0    0    -1  
-$EndComp
-$Comp
 L canhw:TPS5405TR U5
 U 1 1 5B9DED7D
 P 4200 3500
@@ -535,9 +524,9 @@ F 3 "~" H 6650 6100 50  0001 C CNN
 	1    6650 6100
 	1    0    0    -1  
 $EndComp
-Text GLabel 6450 6100 0    50   Input ~ 0
-CANH
 Text GLabel 6450 6200 0    50   Input ~ 0
+CANH
+Text GLabel 6450 6300 0    50   Input ~ 0
 CANL
 $Comp
 L canhw:INA180 U6
@@ -629,28 +618,17 @@ Wire Wire Line
 Connection ~ 3900 5450
 Wire Wire Line
 	3900 5450 3900 5350
-$Comp
-L power:+3.3V #PWR038
-U 1 1 5B9E7420
-P 3900 5350
-F 0 "#PWR038" H 3900 5200 50  0001 C CNN
-F 1 "+3.3V" H 3915 5523 50  0000 C CNN
-F 2 "" H 3900 5350 50  0001 C CNN
-F 3 "" H 3900 5350 50  0001 C CNN
-	1    3900 5350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2650 5000 2650 4950
 $Comp
 L power:GND #PWR042
 U 1 1 5B9EDFA7
-P 5650 7150
-F 0 "#PWR042" H 5650 6900 50  0001 C CNN
-F 1 "GND" H 5655 6977 50  0000 C CNN
-F 2 "" H 5650 7150 50  0001 C CNN
-F 3 "" H 5650 7150 50  0001 C CNN
-	1    5650 7150
+P 6000 7150
+F 0 "#PWR042" H 6000 6900 50  0001 C CNN
+F 1 "GND" H 6005 6977 50  0000 C CNN
+F 2 "" H 6000 7150 50  0001 C CNN
+F 3 "" H 6000 7150 50  0001 C CNN
+	1    6000 7150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -829,28 +807,24 @@ Voltage divider must map battery\ninput voltage of 10-13V down to\n0-2.048 volts
 $Comp
 L Device:Q_NMOS_DGS Q3
 U 1 1 5BA06A3E
-P 5550 6950
-F 0 "Q3" H 5755 6996 50  0000 L CNN
-F 1 "Q_NMOS_DGS" H 5755 6905 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 5750 7050 50  0001 C CNN
-F 3 "~" H 5550 6950 50  0001 C CNN
-	1    5550 6950
+P 5900 6950
+F 0 "Q3" H 6105 6996 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 6105 6905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6100 7050 50  0001 C CNN
+F 3 "~" H 5900 6950 50  0001 C CNN
+	1    5900 6950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5000 6150 4900 6150
-Wire Wire Line
-	5650 6750 5650 6300
-Wire Wire Line
-	5650 6300 6450 6300
 Wire Notes Line
-	5400 6700 5400 7150
+	5750 6700 5750 7150
 Wire Notes Line
-	5400 7150 6300 7150
+	5750 7150 6650 7150
 Wire Notes Line
-	6300 7150 6300 6700
+	6650 7150 6650 6700
 Wire Notes Line
-	6300 6700 5400 6700
+	6650 6700 5750 6700
 Text Notes 4600 7750 0    50   ~ 0
 this transistor is optional, could just tie bus\nground to ground. Advantage is that this \ntransistor adds a second device that needs to fail\nbefore the bus accidentally gets power. Need to discuss \npreferred failure mode (fail powered or unpowered)
 Wire Wire Line
@@ -868,9 +842,35 @@ F 3 "~" H 4900 6550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4900 6950 4900 6700
-Connection ~ 4900 6950
-Wire Wire Line
-	4900 6950 5350 6950
 Wire Wire Line
 	4900 6400 4900 6150
+Wire Wire Line
+	4900 6950 5700 6950
+Connection ~ 4900 6950
+Wire Wire Line
+	6000 6750 6000 6100
+Wire Wire Line
+	6000 6100 6450 6100
+$Comp
+L power:+5V #PWR?
+U 1 1 5BA18D3E
+P 3900 5350
+F 0 "#PWR?" H 3900 5200 50  0001 C CNN
+F 1 "+5V" H 3915 5523 50  0000 C CNN
+F 2 "" H 3900 5350 50  0001 C CNN
+F 3 "" H 3900 5350 50  0001 C CNN
+	1    3900 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5BA190C7
+P 5150 1400
+F 0 "#PWR?" H 5150 1250 50  0001 C CNN
+F 1 "+5V" H 5165 1573 50  0000 C CNN
+F 2 "" H 5150 1400 50  0001 C CNN
+F 3 "" H 5150 1400 50  0001 C CNN
+	1    5150 1400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
