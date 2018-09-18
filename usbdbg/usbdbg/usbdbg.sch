@@ -618,17 +618,6 @@ F 3 "~" H 4350 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x04_Female J3
-U 1 1 5B9F582C
-P 10350 4350
-F 0 "J3" H 10377 4326 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 10377 4235 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 10350 4350 50  0001 C CNN
-F 3 "~" H 10350 4350 50  0001 C CNN
-	1    10350 4350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR014
 U 1 1 5B9F5A0B
 P 10000 5000
@@ -647,7 +636,6 @@ Wire Wire Line
 	9400 4450 10150 4450
 Wire Wire Line
 	9400 4350 10150 4350
-NoConn ~ 10150 4250
 $Comp
 L Device:R R6
 U 1 1 5B9FDAB7
@@ -661,4 +649,15 @@ F 3 "~" H 10000 4800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10000 5000 10000 4950
+$Comp
+L Connector:Conn_01x03_Female J3
+U 1 1 5BA195A3
+P 10350 4450
+F 0 "J3" H 10243 4125 50  0000 C CNN
+F 1 "CAN_Header" H 10243 4216 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10350 4450 50  0001 C CNN
+F 3 "~" H 10350 4450 50  0001 C CNN
+	1    10350 4450
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
