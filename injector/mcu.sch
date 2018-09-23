@@ -61,9 +61,9 @@ Wire Wire Line
 Connection ~ 7000 4000
 Wire Wire Line
 	7000 4000 7000 4100
-Text Label 2300 4500 2    50   ~ 0
+Text Label 2800 4500 2    50   ~ 0
 CAN_TX
-Text Label 2300 4600 2    50   ~ 0
+Text Label 2800 4600 2    50   ~ 0
 CAN_RX
 $Comp
 L Connector:Conn_01x05_Female J?
@@ -198,39 +198,6 @@ Wire Wire Line
 Connection ~ 4900 4900
 Wire Wire Line
 	4900 4900 4900 4800
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5B9D7A15
-P 2400 4700
-AR Path="/5B9CFC89/5B9D7A15" Ref="TP?"  Part="1" 
-AR Path="/5B9D6FCC/5B9D7A15" Ref="TP1"  Part="1" 
-F 0 "TP1" H 2700 4700 50  0000 R CNN
-F 1 "TestPoint" H 2800 4800 50  0000 R CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 2600 4700 50  0001 C CNN
-F 3 "~" H 2600 4700 50  0001 C CNN
-	1    2400 4700
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5B9D7A1C
-P 2600 4700
-AR Path="/5B9CFC89/5B9D7A1C" Ref="TP?"  Part="1" 
-AR Path="/5B9D6FCC/5B9D7A1C" Ref="TP2"  Part="1" 
-F 0 "TP2" H 2542 4727 50  0000 R CNN
-F 1 "TestPoint" H 2542 4818 50  0000 R CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 2800 4700 50  0001 C CNN
-F 3 "~" H 2800 4700 50  0001 C CNN
-	1    2600 4700
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2300 4600 2600 4600
-Wire Wire Line
-	2600 4700 2600 4600
-Connection ~ 2600 4600
-Wire Wire Line
-	2600 4600 3250 4600
 Text Label 6750 4200 2    50   ~ 0
 CAN_TX
 Text Label 6750 4300 2    50   ~ 0
@@ -335,21 +302,10 @@ Wire Wire Line
 Connection ~ 4850 3250
 Wire Wire Line
 	4850 3250 4850 3600
-Wire Wire Line
-	2300 4500 2400 4500
-Wire Wire Line
-	2400 4700 2400 4500
-Connection ~ 2400 4500
-Wire Wire Line
-	2400 4500 3250 4500
-Text Label 3050 4300 2    50   ~ 0
+Text Label 2800 4300 2    50   ~ 0
 OSC1
-Text Label 3050 4400 2    50   ~ 0
+Text Label 2800 4400 2    50   ~ 0
 OSC2
-Wire Wire Line
-	3050 4300 3250 4300
-Wire Wire Line
-	3050 4400 3250 4400
 $Comp
 L device:Crystal Y?
 U 1 1 5B9D7A66
@@ -476,4 +432,12 @@ Text HLabel 2800 3800 0    50   Input ~ 0
 CURR_AMP
 Wire Wire Line
 	2800 3800 3250 3800
+Wire Wire Line
+	2800 4300 3250 4300
+Wire Wire Line
+	2800 4400 3250 4400
+Wire Wire Line
+	2800 4500 3250 4500
+Wire Wire Line
+	2800 4600 3250 4600
 $EndSCHEMATC
