@@ -262,6 +262,26 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# device:Polyfuse
+#
+DEF device:Polyfuse F 0 0 N Y 1 F N
+F0 "F" -100 0 50 V V C CNN
+F1 "device:Polyfuse" 100 0 50 V V C CNN
+F2 "" 50 -200 50 H I L CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *polyfuse*
+ *PTC*
+$ENDFPLIST
+DRAW
+S -30 100 30 -100 0 1 10 N
+P 2 0 1 0 0 100 0 -100 N
+P 4 0 1 0 -60 100 -60 60 60 -60 60 -100 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # device:Q_NMOS_GDS
 #
 DEF device:Q_NMOS_GDS Q 0 0 Y N 1 F N
@@ -358,18 +378,22 @@ X S 3 100 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# device:R
+# device:R_US
 #
-DEF device:R R 0 0 N Y 1 F N
-F0 "R" 80 0 50 V V C CNN
-F1 "device:R" 0 0 50 V V C CNN
-F2 "" -70 0 50 V I C CNN
+DEF device:R_US R 0 0 N Y 1 F N
+F0 "R" 100 0 50 V V C CNN
+F1 "device:R_US" -100 0 50 V V C CNN
+F2 "" 40 -10 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  R_*
 $ENDFPLIST
 DRAW
-S -40 -100 40 100 0 1 10 N
+P 2 0 1 0 0 -90 0 -100 N
+P 2 0 1 0 0 90 0 100 N
+P 5 0 1 0 0 -30 40 -45 0 -60 -40 -75 0 -90 N
+P 5 0 1 0 0 30 40 15 0 0 -40 -15 0 -30 N
+P 5 0 1 0 0 90 40 75 0 60 -40 45 0 30 N
 X ~ 1 0 150 50 D 50 50 1 1 P
 X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
@@ -402,6 +426,21 @@ P 2 0 1 0 -30 50 0 100 N
 P 2 0 1 0 0 0 0 100 N
 P 2 0 1 0 0 100 30 50 N
 X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power:+BATT
+#
+DEF power:+BATT #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power:+BATT" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +BATT 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
