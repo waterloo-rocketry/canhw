@@ -732,7 +732,7 @@ Wire Notes Line
 	8650 6300 8650 5850
 Wire Notes Line
 	8650 5850 7750 5850
-Text Notes 12200 3200 0    50   ~ 0
+Text Notes 8900 6300 0    50   ~ 0
 this transistor is optional, could just tie bus\nground to ground. Advantage is that this \ntransistor adds a second device that needs to fail\nbefore the bus accidentally gets power. Need to discuss \npreferred failure mode (fail powered or unpowered)
 Wire Wire Line
 	6200 6100 6500 6100
