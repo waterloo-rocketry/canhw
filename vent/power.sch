@@ -1,0 +1,296 @@
+EESchema Schematic File Version 4
+LIBS:vent-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5BAADE95
+P 1950 3050
+F 0 "J?" H 2056 3228 50  0000 C CNN
+F 1 "Motor Power" H 2056 3137 50  0000 C CNN
+F 2 "" H 1950 3050 50  0001 C CNN
+F 3 "~" H 1950 3050 50  0001 C CNN
+	1    1950 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BAADE9C
+P 2750 3400
+F 0 "#PWR?" H 2750 3150 50  0001 C CNN
+F 1 "GND" H 2755 3227 50  0000 C CNN
+F 2 "" H 2750 3400 50  0001 C CNN
+F 3 "" H 2750 3400 50  0001 C CNN
+	1    2750 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3150 2150 3150
+$Comp
+L device:Fuse_Small F?
+U 1 1 5BAADEA3
+P 2450 3050
+F 0 "F?" H 2450 3235 50  0000 C CNN
+F 1 "30A" H 2450 3144 50  0000 C CNN
+F 2 "" H 2450 3050 50  0001 C CNN
+F 3 "~" H 2450 3050 50  0001 C CNN
+	1    2450 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 3050 2350 3050
+Wire Wire Line
+	2750 3400 2750 3150
+$Comp
+L power:GND #PWR?
+U 1 1 5BAADEAC
+P 6550 3550
+F 0 "#PWR?" H 6550 3300 50  0001 C CNN
+F 1 "GND" H 6555 3377 50  0000 C CNN
+F 2 "" H 6550 3550 50  0001 C CNN
+F 3 "" H 6550 3550 50  0001 C CNN
+	1    6550 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3550 6550 3150
+Wire Wire Line
+	6550 3150 6150 3150
+Text GLabel 6850 3250 2    50   Input ~ 0
+CANH
+Wire Wire Line
+	6850 3250 6150 3250
+Text GLabel 6850 3350 2    50   Input ~ 0
+CANL
+Wire Wire Line
+	6850 3350 6150 3350
+Wire Wire Line
+	2550 3050 3300 3050
+$Comp
+L power:GND #PWR?
+U 1 1 5BAADEC7
+P 3300 3950
+F 0 "#PWR?" H 3300 3700 50  0001 C CNN
+F 1 "GND" H 3305 3777 50  0000 C CNN
+F 2 "" H 3300 3950 50  0001 C CNN
+F 3 "" H 3300 3950 50  0001 C CNN
+	1    3300 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3650 3300 3600
+Wire Wire Line
+	3300 3200 3300 3050
+Connection ~ 3300 3050
+Wire Wire Line
+	3300 3050 3700 3050
+Text HLabel 3700 3600 2    50   Input ~ 0
+VBAT
+Wire Wire Line
+	3700 3600 3300 3600
+Connection ~ 3300 3600
+Wire Wire Line
+	3300 3600 3300 3500
+Wire Wire Line
+	8400 3050 8400 2950
+Wire Wire Line
+	7900 3050 8000 3050
+$Comp
+L canhw:INA180 U?
+U 1 1 5BAADED8
+P 8650 4050
+F 0 "U?" H 8600 3578 50  0000 C CNN
+F 1 "INA180" H 8600 3487 50  0000 C CNN
+F 2 "" H 8650 4050 50  0001 C CNN
+F 3 "" H 8650 4050 50  0001 C CNN
+	1    8650 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5BAADEDF
+P 8500 3400
+F 0 "#PWR?" H 8500 3250 50  0001 C CNN
+F 1 "+5V" H 8515 3573 50  0000 C CNN
+F 2 "" H 8500 3400 50  0001 C CNN
+F 3 "" H 8500 3400 50  0001 C CNN
+	1    8500 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BAADEE5
+P 8150 4250
+F 0 "#PWR?" H 8150 4000 50  0001 C CNN
+F 1 "GND" H 8155 4077 50  0000 C CNN
+F 2 "" H 8150 4250 50  0001 C CNN
+F 3 "" H 8150 4250 50  0001 C CNN
+	1    8150 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 3950 8000 3950
+Wire Wire Line
+	8000 3950 8000 3050
+Connection ~ 8000 3050
+Wire Wire Line
+	8000 3050 8400 3050
+Wire Wire Line
+	8150 4150 7500 4150
+Wire Wire Line
+	7500 4150 7500 3050
+Wire Wire Line
+	7500 3050 7600 3050
+Text HLabel 9050 4050 2    50   Input ~ 0
+CURR_AMP
+Text Notes 8650 4350 0    50   ~ 0
+GAIN: 100 V/V
+Text Notes 7550 3300 0    50   ~ 0
+max Id =\n200 mA
+Wire Wire Line
+	8500 3400 8500 3550
+$Comp
+L device:C C?
+U 1 1 5BAADEF8
+P 8800 3550
+F 0 "C?" V 8548 3550 50  0000 C CNN
+F 1 "0.1uF" V 8639 3550 50  0000 C CNN
+F 2 "" H 8838 3400 50  0001 C CNN
+F 3 "~" H 8800 3550 50  0001 C CNN
+	1    8800 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BAADEFF
+P 9050 3600
+F 0 "#PWR?" H 9050 3350 50  0001 C CNN
+F 1 "GND" H 9055 3427 50  0000 C CNN
+F 2 "" H 9050 3600 50  0001 C CNN
+F 3 "" H 9050 3600 50  0001 C CNN
+	1    9050 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 3600 9050 3550
+Wire Wire Line
+	9050 3550 8950 3550
+Wire Wire Line
+	8650 3550 8500 3550
+Connection ~ 8500 3550
+Wire Wire Line
+	8500 3550 8500 3600
+Text Notes 3750 3750 0    50   ~ 0
+map to 4.096V
+$Comp
+L Connector:Conn_01x05_Female J?
+U 1 1 5BAADF13
+P 5950 3150
+F 0 "J?" H 5844 3535 50  0000 C CNN
+F 1 "CAN Bus Conn" H 5844 3444 50  0000 C CNN
+F 2 "" H 5950 3150 50  0001 C CNN
+F 3 "~" H 5950 3150 50  0001 C CNN
+	1    5950 3150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5BAADF1A
+P 8400 2950
+F 0 "#PWR?" H 8400 2800 50  0001 C CNN
+F 1 "+5V" H 8415 3123 50  0000 C CNN
+F 2 "" H 8400 2950 50  0001 C CNN
+F 3 "" H 8400 2950 50  0001 C CNN
+	1    8400 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5BAADF20
+P 6550 2750
+F 0 "#PWR?" H 6550 2600 50  0001 C CNN
+F 1 "+12V" H 6565 2923 50  0000 C CNN
+F 2 "" H 6550 2750 50  0001 C CNN
+F 3 "" H 6550 2750 50  0001 C CNN
+	1    6550 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2750 6550 2950
+Wire Wire Line
+	6550 2950 6150 2950
+$Comp
+L power:+BATT #PWR?
+U 1 1 5BAAE6BE
+P 3700 3050
+F 0 "#PWR?" H 3700 2900 50  0001 C CNN
+F 1 "+BATT" H 3715 3223 50  0000 C CNN
+F 2 "" H 3700 3050 50  0001 C CNN
+F 3 "" H 3700 3050 50  0001 C CNN
+	1    3700 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:Polyfuse F?
+U 1 1 5BAB3F39
+P 6900 3050
+F 0 "F?" V 6675 3050 50  0000 C CNN
+F 1 "Polyfuse" V 6766 3050 50  0000 C CNN
+F 2 "" H 6950 2850 50  0001 L CNN
+F 3 "~" H 6900 3050 50  0001 C CNN
+	1    6900 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7050 3050 7500 3050
+Connection ~ 7500 3050
+Wire Wire Line
+	6750 3050 6150 3050
+Text Notes 3800 3050 0    50   ~ 0
+8V?
+$Comp
+L device:R_US R?
+U 1 1 5BAB527B
+P 3300 3350
+F 0 "R?" H 3368 3396 50  0000 L CNN
+F 1 "R_US" H 3368 3305 50  0000 L CNN
+F 2 "" V 3340 3340 50  0001 C CNN
+F 3 "~" H 3300 3350 50  0001 C CNN
+	1    3300 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R_US R?
+U 1 1 5BAB52F0
+P 3300 3800
+F 0 "R?" H 3368 3846 50  0000 L CNN
+F 1 "R_US" H 3368 3755 50  0000 L CNN
+F 2 "" V 3340 3790 50  0001 C CNN
+F 3 "~" H 3300 3800 50  0001 C CNN
+	1    3300 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R_US R?
+U 1 1 5BAB5696
+P 7750 3050
+F 0 "R?" V 7545 3050 50  0000 C CNN
+F 1 "200mR" V 7636 3050 50  0000 C CNN
+F 2 "" V 7790 3040 50  0001 C CNN
+F 3 "~" H 7750 3050 50  0001 C CNN
+	1    7750 3050
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
