@@ -540,17 +540,6 @@ F 3 "~" H 1850 4550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R1
-U 1 1 5B9F4C9F
-P 6600 2100
-F 0 "R1" V 6393 2100 50  0000 C CNN
-F 1 "0" V 6484 2100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6530 2100 50  0001 C CNN
-F 3 "~" H 6600 2100 50  0001 C CNN
-	1    6600 2100
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:C C3
 U 1 1 5B9F50FC
 P 2650 5400
@@ -629,35 +618,60 @@ F 3 "" H 10000 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10000 4650 10000 4550
-Wire Wire Line
-	10000 4550 10150 4550
-Wire Wire Line
 	9400 4450 10150 4450
 Wire Wire Line
 	9400 4350 10150 4350
 $Comp
-L Device:R R6
-U 1 1 5B9FDAB7
-P 10000 4800
-F 0 "R6" H 10070 4846 50  0000 L CNN
-F 1 "0" H 10070 4755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9930 4800 50  0001 C CNN
-F 3 "~" H 10000 4800 50  0001 C CNN
-	1    10000 4800
+L Connector:Conn_01x05_Female J3
+U 1 1 5BAB19E0
+P 10350 4250
+F 0 "J3" H 10378 4276 50  0000 L CNN
+F 1 "BUS CONN" H 10378 4185 50  0000 L CNN
+F 2 "" H 10350 4250 50  0001 C CNN
+F 3 "~" H 10350 4250 50  0001 C CNN
+	1    10350 4250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10000 5000 10000 4950
+	10000 4250 10150 4250
+Wire Wire Line
+	10000 4250 10000 5000
+Text Notes 10400 4100 0    50   ~ 0
+12V (NC, this board\ndoesn't need it)
 $Comp
-L Connector:Conn_01x03_Female J3
-U 1 1 5BA195A3
-P 10350 4450
-F 0 "J3" H 10243 4125 50  0000 C CNN
-F 1 "CAN_Header" H 10243 4216 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10350 4450 50  0001 C CNN
-F 3 "~" H 10350 4450 50  0001 C CNN
-	1    10350 4450
-	1    0    0    1   
+L Device:Jumper_NC_Dual JP1
+U 1 1 5BAB505C
+P 10000 3450
+F 0 "JP1" H 10000 3689 50  0000 C CNN
+F 1 "Jumper_NC_Dual" H 10000 3598 50  0000 C CNN
+F 2 "" H 10000 3450 50  0001 C CNN
+F 3 "~" H 10000 3450 50  0001 C CNN
+	1    10000 3450
+	1    0    0    -1  
 $EndComp
+NoConn ~ 10250 3450
+$Comp
+L power:+5V #PWR019
+U 1 1 5BAB81E8
+P 9500 3200
+F 0 "#PWR019" H 9500 3050 50  0001 C CNN
+F 1 "+5V" H 9515 3373 50  0000 C CNN
+F 2 "" H 9500 3200 50  0001 C CNN
+F 3 "" H 9500 3200 50  0001 C CNN
+	1    9500 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 3450 9500 3450
+Wire Wire Line
+	9500 3450 9500 3200
+Wire Wire Line
+	10150 4150 10000 4150
+Wire Wire Line
+	10000 4150 10000 3550
+NoConn ~ 10150 4050
+Text Notes 8700 2950 0    50   ~ 0
+In some situations (namely, integration testing), we want the\nbus to be powered without having the radio board connected.\nBy moving a jumper on these pins, you can power the bus from\nthe USB port of your computer.
+Wire Wire Line
+	6450 2100 6750 2100
 $EndSCHEMATC
