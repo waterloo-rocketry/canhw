@@ -22,7 +22,7 @@ AR Path="/5B9D8C66/5B9D7E5B" Ref="J3"  Part="1"
 AR Path="/5B9D7D87/5B9D7E5B" Ref="J2"  Part="1" 
 F 0 "J2" H 6550 4267 50  0000 C CNN
 F 1 "Micro_SD_Card" H 6550 4176 50  0000 C CNN
-F 2 "Connector_Card:microSD_HC_Wuerth_693072010801" H 7750 3850 50  0001 C CNN
+F 2 "canhw_footprints:microSD_Molex_WM6698CT-ND" H 7750 3850 50  0001 C CNN
 F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 6600 3550 50  0001 C CNN
 	1    6600 3550
 	1    0    0    -1  

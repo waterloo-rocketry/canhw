@@ -277,9 +277,9 @@ S 8750 3600 750  400
 U 5B9D7D87
 F0 "SDcard1" 50
 F1 "SDcard.sch" 50
-F2 "MISO" I L 8750 3950 50 
+F2 "MISO" I L 8750 3750 50 
 F3 "MOSI" I L 8750 3650 50 
-F4 "SCLK" I L 8750 3750 50 
+F4 "SCLK" I L 8750 3950 50 
 F5 "CS" I L 8750 3850 50 
 $EndSheet
 $Sheet
@@ -294,42 +294,6 @@ F5 "CS" I L 8750 4450 50
 $EndSheet
 Text Notes 8650 3450 0    50   ~ 0
 Not all pins support peripheral output,\nwhich is required for CS, MOSI, SCK,\nand CANTX. RP20 and RP35-43 are \nthe ones that support peripheral ouptut
-Wire Wire Line
-	7400 3650 8750 3650
-Wire Wire Line
-	7400 3950 8000 3950
-Wire Wire Line
-	8000 3950 8000 3750
-Wire Wire Line
-	8000 3750 8750 3750
-Wire Wire Line
-	7400 4050 8050 4050
-Wire Wire Line
-	8050 4050 8050 3850
-Wire Wire Line
-	8050 3850 8750 3850
-Wire Wire Line
-	7400 4150 8600 4150
-Wire Wire Line
-	8600 4150 8600 4250
-Wire Wire Line
-	8600 4250 8750 4250
-Wire Wire Line
-	7400 4250 8550 4250
-Wire Wire Line
-	8550 4250 8550 4350
-Wire Wire Line
-	8550 4350 8750 4350
-Wire Wire Line
-	7400 4350 8500 4350
-Wire Wire Line
-	8500 4350 8500 4450
-Wire Wire Line
-	8500 4450 8750 4450
-Wire Wire Line
-	8100 3950 8750 3950
-Wire Wire Line
-	7400 4550 8750 4550
 Text Label 3900 5050 2    50   ~ 0
 CANTX
 Text Label 7700 4800 0    50   ~ 0
@@ -357,12 +321,12 @@ Connection ~ 2750 5200
 $Comp
 L Device:LED_Small D2
 U 1 1 5B9F454C
-P 9850 4800
-F 0 "D2" V 9896 4732 50  0000 R CNN
-F 1 "DEBUG2" V 9805 4732 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 9850 4800 50  0001 C CNN
-F 3 "~" V 9850 4800 50  0001 C CNN
-	1    9850 4800
+P 7750 3050
+F 0 "D2" V 7796 2982 50  0000 R CNN
+F 1 "DEBUG2" V 7705 2982 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7750 3050 50  0001 C CNN
+F 3 "~" V 7750 3050 50  0001 C CNN
+	1    7750 3050
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -382,8 +346,6 @@ Text Label 4200 4650 2    50   ~ 0
 OSC2
 Wire Wire Line
 	3100 4300 3100 4450
-Wire Wire Line
-	3100 4450 4200 4450
 $Comp
 L power:+5V #PWR08
 U 1 1 5B9FF5DB
@@ -398,22 +360,14 @@ $EndComp
 $Comp
 L power:+5V #PWR010
 U 1 1 5B9FF607
-P 9850 4400
-F 0 "#PWR010" H 9850 4250 50  0001 C CNN
-F 1 "+5V" H 9865 4573 50  0000 C CNN
-F 2 "" H 9850 4400 50  0001 C CNN
-F 3 "" H 9850 4400 50  0001 C CNN
-	1    9850 4400
+P 7750 2650
+F 0 "#PWR010" H 7750 2500 50  0001 C CNN
+F 1 "+5V" H 7765 2823 50  0000 C CNN
+F 2 "" H 7750 2650 50  0001 C CNN
+F 3 "" H 7750 2650 50  0001 C CNN
+	1    7750 2650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7400 4750 7400 4900
-Wire Wire Line
-	7400 4900 9850 4900
-Wire Wire Line
-	7400 4450 8100 4450
-Wire Wire Line
-	8100 3950 8100 4450
 Text GLabel 4200 4350 0    50   Input ~ 0
 CURR_AMP
 $Sheet
@@ -560,12 +514,62 @@ $EndComp
 $Comp
 L Device:R R4
 U 1 1 5BAC6DFE
-P 9850 4550
-F 0 "R4" H 9920 4596 50  0000 L CNN
-F 1 "330" H 9920 4505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9780 4550 50  0001 C CNN
-F 3 "~" H 9850 4550 50  0001 C CNN
-	1    9850 4550
+P 7750 2800
+F 0 "R4" H 7820 2846 50  0000 L CNN
+F 1 "330" H 7820 2755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7680 2800 50  0001 C CNN
+F 3 "~" H 7750 2800 50  0001 C CNN
+	1    7750 2800
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7400 3750 8750 3750
+Wire Wire Line
+	7400 4050 8650 4050
+Wire Wire Line
+	7400 4150 8600 4150
+Wire Wire Line
+	8600 4150 8600 4350
+Wire Wire Line
+	8600 4350 8750 4350
+Wire Wire Line
+	8650 4550 8750 4550
+Wire Wire Line
+	8650 4050 8650 4550
+Wire Wire Line
+	7400 3950 8150 3950
+Wire Wire Line
+	8150 3950 8150 3850
+Wire Wire Line
+	8150 3850 8750 3850
+Wire Wire Line
+	7400 3650 8250 3650
+Wire Wire Line
+	8250 3650 8250 3950
+Wire Wire Line
+	8250 3950 8750 3950
+Wire Wire Line
+	7900 3850 7900 3700
+Wire Wire Line
+	7900 3700 8450 3700
+Wire Wire Line
+	8450 3700 8450 3650
+Wire Wire Line
+	8450 3650 8750 3650
+Wire Wire Line
+	7400 3850 7900 3850
+Wire Wire Line
+	3100 4450 4200 4450
+Wire Wire Line
+	7400 3250 7750 3250
+Wire Wire Line
+	7750 3250 7750 3150
+Wire Wire Line
+	7400 4450 8750 4450
+Wire Wire Line
+	7400 4350 7900 4350
+Wire Wire Line
+	7900 4350 7900 4250
+Wire Wire Line
+	7900 4250 8750 4250
 $EndSCHEMATC

@@ -245,7 +245,7 @@ U 1 1 5BAC3C73
 P 2750 3150
 F 0 "J4" H 2644 2725 50  0000 C CNN
 F 1 "BUS CONN" H 2644 2816 50  0000 C CNN
-F 2 "Connector_Harwin:Harwin_LTek-Male_2x03_P2.00mm_Vertical_StrainRelief" H 2750 3150 50  0001 C CNN
+F 2 "canhw_footprints:connector_Harwin_M80-4120642-ND" H 2750 3150 50  0001 C CNN
 F 3 "~" H 2750 3150 50  0001 C CNN
 	1    2750 3150
 	-1   0    0    1   
