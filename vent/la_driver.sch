@@ -685,30 +685,8 @@ F 3 "~" H 9500 4500 50  0001 C CNN
 $EndComp
 Text Notes 8150 4750 0    50   ~ 0
 2.0Vgs(th) max\n1.4A Id
-$Comp
-L device:Q_NMOS_GSD Q3
-U 1 1 5BB08134
-P 7950 3600
-F 0 "Q3" H 8155 3646 50  0000 L CNN
-F 1 "DMP3099L" H 8155 3555 50  0000 L CNN
-F 2 "" H 8150 3700 50  0001 C CNN
-F 3 "~" H 7950 3600 50  0001 C CNN
-	1    7950 3600
-	1    0    0    -1  
-$EndComp
 Text Notes 8150 3850 0    50   ~ 0
 -2.1Vgs(th) max\n-3.8A Id
-$Comp
-L device:Q_NMOS_GSD Q4
-U 1 1 5BB089D8
-P 9500 3600
-F 0 "Q4" H 9706 3646 50  0000 L CNN
-F 1 "DMP3099L" H 9706 3555 50  0000 L CNN
-F 2 "" H 9700 3700 50  0001 C CNN
-F 3 "~" H 9500 3600 50  0001 C CNN
-	1    9500 3600
-	-1   0    0    -1  
-$EndComp
 Text Notes 4350 1800 0    50   ~ 0
 MCU I/O current max: 50mA
 $Comp
@@ -780,4 +758,26 @@ Wire Wire Line
 Connection ~ 3000 2700
 Wire Wire Line
 	3000 2700 3000 2950
+$Comp
+L device:Q_PMOS_GSD Q?
+U 1 1 5BB25FC0
+P 7950 3600
+F 0 "Q?" H 8155 3646 50  0000 L CNN
+F 1 "DMP3099L" H 8155 3555 50  0000 L CNN
+F 2 "" H 8150 3700 50  0001 C CNN
+F 3 "~" H 7950 3600 50  0001 C CNN
+	1    7950 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:Q_PMOS_GSD Q?
+U 1 1 5BB26166
+P 9500 3600
+F 0 "Q?" H 9706 3646 50  0000 L CNN
+F 1 "DMP3099L" H 9706 3555 50  0000 L CNN
+F 2 "" H 9700 3700 50  0001 C CNN
+F 3 "~" H 9500 3600 50  0001 C CNN
+	1    9500 3600
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
