@@ -279,7 +279,7 @@ F5 "CS" I L 9700 4400 50
 $EndSheet
 Text Notes 8650 3450 0    50   ~ 0
 Not all pins support peripheral output,\nwhich is required for MOSI, SCK,\nand CANTX. RP20 and RP35-43 are \nthe ones that support peripheral ouptut
-Text Label 7400 4750 0    50   ~ 0
+Text Label 7400 4250 0    50   ~ 0
 CANRX
 Wire Wire Line
 	4200 5050 4200 4750
@@ -304,7 +304,7 @@ F 1 "DEBUG2" V 8005 4282 50  0000 R CNN
 F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8050 4350 50  0001 C CNN
 F 3 "~" V 8050 4350 50  0001 C CNN
 	1    8050 4350
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 $Comp
 L Device:LED_Small D1
@@ -343,7 +343,7 @@ F 3 "" H 8050 3950 50  0001 C CNN
 	1    8050 3950
 	1    0    0    -1  
 $EndComp
-Text GLabel 3300 4450 0    50   Input ~ 0
+Text GLabel 3700 4450 0    50   Input ~ 0
 CURR_AMP
 $Sheet
 S 1600 1600 1400 950 
@@ -531,26 +531,24 @@ Wire Wire Line
 	9550 4300 9700 4300
 Wire Wire Line
 	9550 4200 9700 4200
-Text Label 4200 4350 2    50   ~ 0
-SD1_CS
-Text Label 7400 3650 0    50   ~ 0
-SD1_MOSI
-Text Label 7400 3750 0    50   ~ 0
-SD1_MISO
-Text Label 3900 5050 2    50   ~ 0
-SD1_SCLK
 Text Label 7400 4150 0    50   ~ 0
-SD2_MOSI
-Text Label 7400 4250 0    50   ~ 0
-SD2_MISO
+SD1_CS
 Text Label 7400 4050 0    50   ~ 0
-SD2_CS
-Text Label 7400 4350 0    50   ~ 0
-SD2_SCLK
+SD1_MOSI
 Text Label 7400 3850 0    50   ~ 0
+SD1_MISO
+Text Label 7400 3950 0    50   ~ 0
+SD1_SCLK
+Text Label 7400 3650 0    50   ~ 0
+SD2_MOSI
+Text Label 3900 5050 2    50   ~ 0
+SD2_MISO
+Text Label 7400 3250 0    50   ~ 0
+SD2_CS
+Text Label 7400 3750 0    50   ~ 0
+SD2_SCLK
+Text Label 7400 4350 0    50   ~ 0
 CANTX
-Wire Wire Line
-	7400 4450 8050 4450
 Wire Wire Line
 	8650 4500 8650 4550
 Wire Wire Line
@@ -558,14 +556,18 @@ Wire Wire Line
 $Comp
 L Jumper:Jumper_2_Bridged JP1
 U 1 1 5BB0EE30
-P 3500 4450
-F 0 "JP1" H 3500 4645 50  0000 C CNN
-F 1 "Jumper_2_Bridged" H 3500 4554 50  0000 C CNN
-F 2 "canhw_footprints:Jumper_952-1474-2-ND" H 3500 4450 50  0001 C CNN
-F 3 "~" H 3500 4450 50  0001 C CNN
-	1    3500 4450
-	1    0    0    -1  
+P 1150 4250
+F 0 "JP1" H 1150 4445 50  0000 C CNN
+F 1 "Jumper_2_Bridged" H 1150 4354 50  0000 C CNN
+F 2 "canhw_footprints:Jumper_952-1474-2-ND" H 1150 4250 50  0001 C CNN
+F 3 "~" H 1150 4250 50  0001 C CNN
+	1    1150 4250
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	3700 4450 4200 4450
+Wire Wire Line
+	8050 4450 8050 4650
+Wire Wire Line
+	8050 4650 7400 4650
 $EndSCHEMATC
