@@ -126,7 +126,7 @@ U 1 1 5B9E05FB
 P 5650 3450
 F 0 "L1" V 5840 3450 50  0000 C CNN
 F 1 "47u" V 5749 3450 50  0000 C CNN
-F 2 "" H 5650 3450 50  0001 C CNN
+F 2 "Inductor_THT:L_Radial_D8.7mm_P5.00mm_Fastron_07HCP" H 5650 3450 50  0001 C CNN
 F 3 "~" H 5650 3450 50  0001 C CNN
 	1    5650 3450
 	0    -1   -1   0   
@@ -346,7 +346,7 @@ U 1 1 5B9F2D77
 P 3200 1200
 F 0 "J2" H 3094 875 50  0000 C CNN
 F 1 "Battery In" H 3094 966 50  0000 C CNN
-F 2 "" H 3200 1200 50  0001 C CNN
+F 2 "canhw_footprints:BarrierBlock_ED2945-ND" H 3200 1200 50  0001 C CNN
 F 3 "~" H 3200 1200 50  0001 C CNN
 	1    3200 1200
 	-1   0    0    1   
@@ -370,7 +370,7 @@ U 1 1 5B9F51DA
 P 3750 1100
 F 0 "F1" V 3553 1100 50  0000 C CNN
 F 1 "Fuse" V 3644 1100 50  0000 C CNN
-F 2 "" V 3680 1100 50  0001 C CNN
+F 2 "canhw_footprints:Fuseholder_36-3557-15-ND" V 3680 1100 50  0001 C CNN
 F 3 "~" H 3750 1100 50  0001 C CNN
 	1    3750 1100
 	0    1    1    0   
@@ -380,11 +380,11 @@ Wire Wire Line
 Wire Wire Line
 	3400 1200 3650 1200
 $Comp
-L Device:Q_PMOS_DGS Q3
+L Device:Q_PMOS_GSD Q3
 U 1 1 5BA03600
 P 7900 5300
 F 0 "Q3" H 8106 5346 50  0000 L CNN
-F 1 "Q_PMOS_DGS" H 8106 5255 50  0000 L CNN
+F 1 "Q_PMOS_GSD" H 8106 5255 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 8100 5400 50  0001 C CNN
 F 3 "~" H 7900 5300 50  0001 C CNN
 	1    7900 5300
@@ -465,11 +465,11 @@ Wire Wire Line
 Text Notes 7300 1650 0    50   ~ 0
 Voltage divider must map battery\ninput voltage of 10-13V down to\n0-2.048 volts with output impedance\nless than 10k. Output range allows\nvoltage compare against pic's fixed\nreference instead of potentially\nunstable VDD. Output impedance is\nas specified in datasheet.
 $Comp
-L Device:Q_NMOS_DGS Q5
+L Device:Q_NMOS_GSD Q5
 U 1 1 5BA06A3E
 P 7900 6100
 F 0 "Q5" H 8105 6146 50  0000 L CNN
-F 1 "Q_NMOS_DGS" H 8105 6055 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 8105 6055 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 8100 6200 50  0001 C CNN
 F 3 "~" H 7900 6100 50  0001 C CNN
 	1    7900 6100
@@ -512,12 +512,12 @@ F 3 "" H 5150 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_DGS Q4
+L Device:Q_NMOS_GSD Q4
 U 1 1 5BAB33AB
 P 7250 5550
 F 0 "Q4" H 7455 5596 50  0000 L CNN
-F 1 "Q_NMOS_DGS" H 7455 5505 50  0000 L CNN
-F 2 "" H 7450 5650 50  0001 C CNN
+F 1 "Q_NMOS_GSD" H 7455 5505 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7450 5650 50  0001 C CNN
 F 3 "~" H 7250 5550 50  0001 C CNN
 	1    7250 5550
 	1    0    0    -1  
@@ -606,12 +606,12 @@ F 3 "" H 7350 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_DGS Q2
+L Device:Q_NMOS_GSD Q2
 U 1 1 5BAE2F42
 P 7250 4300
 F 0 "Q2" H 7455 4346 50  0000 L CNN
-F 1 "Q_NMOS_DGS" H 7455 4255 50  0000 L CNN
-F 2 "" H 7450 4400 50  0001 C CNN
+F 1 "Q_NMOS_GSD" H 7455 4255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7450 4400 50  0001 C CNN
 F 3 "~" H 7250 4300 50  0001 C CNN
 	1    7250 4300
 	1    0    0    -1  
@@ -650,11 +650,11 @@ F 3 "" H 8000 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_PMOS_DGS Q1
+L Device:Q_PMOS_GSD Q1
 U 1 1 5BAFDA3A
 P 7900 4050
 F 0 "Q1" H 8106 4096 50  0000 L CNN
-F 1 "Q_PMOS_DGS" H 8106 4005 50  0000 L CNN
+F 1 "Q_PMOS_GSD" H 8106 4005 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 8100 4150 50  0001 C CNN
 F 3 "~" H 7900 4050 50  0001 C CNN
 	1    7900 4050
@@ -666,7 +666,7 @@ U 1 1 5BB09698
 P 9650 5000
 F 0 "J3" H 9730 5042 50  0000 L CNN
 F 1 "BUS_CONN" H 9730 4951 50  0000 L CNN
-F 2 "" H 9650 5000 50  0001 C CNN
+F 2 "canhw_footprints:connector_Harwin_M80-5000642" H 9650 5000 50  0001 C CNN
 F 3 "~" H 9650 5000 50  0001 C CNN
 	1    9650 5000
 	1    0    0    -1  
@@ -744,7 +744,7 @@ U 1 1 5BB04A6A
 P 4350 4250
 F 0 "U5" H 4350 4515 50  0000 C CNN
 F 1 "AP1509" H 4350 4424 50  0000 C CNN
-F 2 "" H 4350 3750 50  0001 C CNN
+F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 4350 3750 50  0001 C CNN
 F 3 "" H 4350 3750 50  0001 C CNN
 	1    4350 4250
 	1    0    0    -1  
