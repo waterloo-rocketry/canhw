@@ -1,0 +1,293 @@
+EESchema Schematic File Version 4
+LIBS:sensors-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L flight_instr:MS5607-02BA03 U?
+U 1 1 5BB1B7F7
+P 7350 5400
+F 0 "U?" H 7150 5950 60  0000 C CNN
+F 1 "MS5607-02BA03" H 7400 5400 60  0000 C CNN
+F 2 "Flight_Instr:MS560702BA03" H 7400 5400 60  0001 C CNN
+F 3 "" H 7400 5400 60  0001 C CNN
+	1    7350 5400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L flight_instr:LSM6DS3HTR U?
+U 1 1 5BB1B879
+P 7300 2800
+F 0 "U?" H 6900 3400 60  0000 C CNN
+F 1 "LSM6DS3HTR" H 7750 2250 60  0000 C CNN
+F 2 "Flight_Instr:LSM6DS3HTR" H 7200 2550 60  0001 C CNN
+F 3 "" H 7200 2550 60  0001 C CNN
+	1    7300 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L flight_instr:BMG250 U?
+U 1 1 5BB1B872
+P 3250 2950
+F 0 "U?" H 2950 2650 60  0000 C CNN
+F 1 "BMG250" H 3450 2650 60  0000 C CNN
+F 2 "Flight_Instr:Bosch_LGA-14" H 3150 2950 60  0001 C CNN
+F 3 "" H 3150 2950 60  0001 C CNN
+	1    3250 2950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7400 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5BB77048
+P 7200 3450
+F 0 "#PWR?" H 7200 3200 50  0001 C CNN
+F 1 "GND" H 7205 3277 50  0000 C CNN
+F 2 "" H 7200 3450 50  0001 C CNN
+F 3 "" H 7200 3450 50  0001 C CNN
+	1    7200 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 3450 7200 3350
+Wire Wire Line
+	7300 3300 7300 3350
+Wire Wire Line
+	7300 3350 7200 3350
+Connection ~ 7200 3350
+Wire Wire Line
+	7200 3350 7200 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5BB770C8
+P 8250 3050
+F 0 "#PWR?" H 8250 2800 50  0001 C CNN
+F 1 "GND" H 8255 2877 50  0000 C CNN
+F 2 "" H 8250 3050 50  0001 C CNN
+F 3 "" H 8250 3050 50  0001 C CNN
+	1    8250 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 3050 8250 2950
+Wire Wire Line
+	8250 2850 7950 2850
+Wire Wire Line
+	7950 2950 8250 2950
+Connection ~ 8250 2950
+Wire Wire Line
+	8250 2950 8250 2850
+NoConn ~ 7950 2750
+NoConn ~ 7950 2650
+Text HLabel 6600 2650 0    50   Input ~ 0
+MISO
+Text HLabel 6600 2750 0    50   Input ~ 0
+SCLK
+Text HLabel 6600 2850 0    50   Input ~ 0
+MOSI
+NoConn ~ 7400 2100
+$Comp
+L power:GND #PWR?
+U 1 1 5BB7C7D9
+P 3150 3550
+F 0 "#PWR?" H 3150 3300 50  0001 C CNN
+F 1 "GND" H 3155 3377 50  0000 C CNN
+F 2 "" H 3150 3550 50  0001 C CNN
+F 3 "" H 3150 3550 50  0001 C CNN
+	1    3150 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3550 3150 3450
+Wire Wire Line
+	3250 3400 3250 3450
+Wire Wire Line
+	3250 3450 3150 3450
+Connection ~ 3150 3450
+Wire Wire Line
+	3150 3450 3150 3400
+NoConn ~ 3750 2550
+NoConn ~ 3750 2650
+Text HLabel 2700 2650 0    50   Input ~ 0
+MISO
+Text HLabel 6600 2950 0    50   Input ~ 0
+IMU_CS
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5BB7D820
+P 3300 1700
+F 0 "#PWR?" H 3300 1550 50  0001 C CNN
+F 1 "+3V3" H 3450 1800 50  0000 C CNN
+F 2 "" H 3300 1700 50  0001 C CNN
+F 3 "" H 3300 1700 50  0001 C CNN
+	1    3300 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1700 3300 1900
+$Comp
+L device:C C?
+U 1 1 5BB7E539
+P 3450 2000
+F 0 "C?" V 3198 2000 50  0000 C CNN
+F 1 "0.1uF" V 3289 2000 50  0000 C CNN
+F 2 "" H 3488 1850 50  0001 C CNN
+F 3 "~" H 3450 2000 50  0001 C CNN
+	1    3450 2000
+	0    1    1    0   
+$EndComp
+Connection ~ 3300 2000
+Wire Wire Line
+	3300 2000 3300 2050
+$Comp
+L power:GND #PWR?
+U 1 1 5BB7E5D2
+P 3600 2000
+F 0 "#PWR?" H 3600 1750 50  0001 C CNN
+F 1 "GND" H 3605 1827 50  0000 C CNN
+F 2 "" H 3600 2000 50  0001 C CNN
+F 3 "" H 3600 2000 50  0001 C CNN
+	1    3600 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5BB7EB66
+P 7300 1550
+F 0 "#PWR?" H 7300 1400 50  0001 C CNN
+F 1 "+3V3" H 7450 1650 50  0000 C CNN
+F 2 "" H 7300 1550 50  0001 C CNN
+F 3 "" H 7300 1550 50  0001 C CNN
+	1    7300 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 1550 7300 1850
+$Comp
+L device:C C?
+U 1 1 5BB7EB6E
+P 7450 1850
+F 0 "C?" V 7198 1850 50  0000 C CNN
+F 1 "0.1uF" V 7289 1850 50  0000 C CNN
+F 2 "" H 7488 1700 50  0001 C CNN
+F 3 "~" H 7450 1850 50  0001 C CNN
+	1    7450 1850
+	0    1    1    0   
+$EndComp
+Connection ~ 7300 1850
+$Comp
+L power:GND #PWR?
+U 1 1 5BB7EB77
+P 7600 1850
+F 0 "#PWR?" H 7600 1600 50  0001 C CNN
+F 1 "GND" H 7605 1677 50  0000 C CNN
+F 2 "" H 7600 1850 50  0001 C CNN
+F 3 "" H 7600 1850 50  0001 C CNN
+	1    7600 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 1850 7300 1950
+Wire Wire Line
+	3200 2050 3200 1900
+Wire Wire Line
+	3200 1900 3300 1900
+Connection ~ 3300 1900
+Wire Wire Line
+	3300 1900 3300 2000
+Wire Wire Line
+	7200 2100 7200 1950
+Wire Wire Line
+	7200 1950 7300 1950
+Connection ~ 7300 1950
+Wire Wire Line
+	7300 1950 7300 2100
+Text HLabel 2700 2750 0    50   Input ~ 0
+SCLK
+Text HLabel 2700 2850 0    50   Input ~ 0
+MOSI
+Text HLabel 2700 2550 0    50   Input ~ 0
+GYRO_CS
+NoConn ~ 3750 2850
+NoConn ~ 3750 2950
+NoConn ~ 3750 3050
+NoConn ~ 3750 2750
+Text HLabel 6850 5250 0    50   Input ~ 0
+MISO
+Text HLabel 6850 5150 0    50   Input ~ 0
+MOSI
+Text HLabel 6850 5050 0    50   Input ~ 0
+SCLK
+Text HLabel 6850 4950 0    50   Input ~ 0
+BARO_CS
+$Comp
+L power:GND #PWR?
+U 1 1 5BB812BA
+P 7900 5350
+F 0 "#PWR?" H 7900 5100 50  0001 C CNN
+F 1 "GND" H 7905 5177 50  0000 C CNN
+F 2 "" H 7900 5350 50  0001 C CNN
+F 3 "" H 7900 5350 50  0001 C CNN
+	1    7900 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 5350 7900 5250
+Wire Wire Line
+	7900 5150 7800 5150
+Wire Wire Line
+	7800 5250 7900 5250
+Connection ~ 7900 5250
+Wire Wire Line
+	7900 5250 7900 5150
+NoConn ~ 7800 5050
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5BB81B8B
+P 7800 4650
+F 0 "#PWR?" H 7800 4500 50  0001 C CNN
+F 1 "+3V3" H 7815 4823 50  0000 C CNN
+F 2 "" H 7800 4650 50  0001 C CNN
+F 3 "" H 7800 4650 50  0001 C CNN
+	1    7800 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 4650 7800 4850
+$Comp
+L device:C C?
+U 1 1 5BB81F0F
+P 7950 4850
+F 0 "C?" V 7698 4850 50  0000 C CNN
+F 1 "0.1uF" V 7789 4850 50  0000 C CNN
+F 2 "" H 7988 4700 50  0001 C CNN
+F 3 "~" H 7950 4850 50  0001 C CNN
+	1    7950 4850
+	0    1    1    0   
+$EndComp
+Connection ~ 7800 4850
+Wire Wire Line
+	7800 4850 7800 4950
+$Comp
+L power:GND #PWR?
+U 1 1 5BB82008
+P 8100 4850
+F 0 "#PWR?" H 8100 4600 50  0001 C CNN
+F 1 "GND" H 8105 4677 50  0000 C CNN
+F 2 "" H 8100 4850 50  0001 C CNN
+F 3 "" H 8100 4850 50  0001 C CNN
+	1    8100 4850
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
