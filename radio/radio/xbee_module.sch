@@ -56,8 +56,6 @@ Wire Wire Line
 Wire Wire Line
 	4700 2500 4700 2400
 Connection ~ 4700 2400
-Wire Wire Line
-	5000 3500 5650 3500
 $Comp
 L power:+5V #PWR047
 U 1 1 5BA28183
@@ -134,21 +132,9 @@ Connection ~ 4500 2400
 Wire Wire Line
 	5000 3300 5100 3300
 Wire Wire Line
-	5100 3300 5100 3400
-Wire Wire Line
-	5100 3400 5650 3400
-Wire Wire Line
 	5000 3100 5200 3100
 Wire Wire Line
-	5200 3100 5200 3300
-Wire Wire Line
-	5200 3300 5650 3300
-Wire Wire Line
 	5000 2900 5300 2900
-Wire Wire Line
-	5300 2900 5300 3200
-Wire Wire Line
-	5300 3200 5650 3200
 NoConn ~ 6850 3000
 $Comp
 L power:+3.3V #PWR051
@@ -218,9 +204,9 @@ Text HLabel 3650 2900 0    50   Input ~ 0
 UART_TX
 Text HLabel 3650 3100 0    50   Input ~ 0
 UART_RX
-Text HLabel 3650 3300 0    50   Input ~ 0
-UART_~CTS
 Text HLabel 3650 3500 0    50   Input ~ 0
+UART_~CTS
+Text HLabel 3650 3300 0    50   Input ~ 0
 UART_~RTS
 Wire Wire Line
 	3650 3500 4200 3500
@@ -328,4 +314,26 @@ Wire Wire Line
 	6150 2850 6150 2750
 Wire Wire Line
 	6150 2750 6250 2750
+Wire Wire Line
+	5000 3500 5350 3500
+Wire Wire Line
+	5350 3500 5350 3400
+Wire Wire Line
+	5350 3400 5650 3400
+Wire Wire Line
+	5100 3300 5100 3450
+Wire Wire Line
+	5100 3450 5500 3450
+Wire Wire Line
+	5500 3450 5500 3500
+Wire Wire Line
+	5500 3500 5650 3500
+Wire Wire Line
+	5200 3100 5200 3300
+Wire Wire Line
+	5200 3300 5650 3300
+Wire Wire Line
+	5300 2900 5300 3200
+Wire Wire Line
+	5300 3200 5650 3200
 $EndSCHEMATC
