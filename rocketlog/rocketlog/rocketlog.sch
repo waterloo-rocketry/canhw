@@ -434,10 +434,10 @@ U 1 1 5B9ED738
 P 9950 1550
 F 0 "J1" H 9977 1576 50  0000 L CNN
 F 1 "Conn_01x05_Female" H 9977 1485 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical_SMD_Pin1Right" H 9950 1550 50  0001 C CNN
+F 2 "canhw_footprints:PinHeader_5x2.54_SMD_90deg_952-3198-1-ND" H 9950 1550 50  0001 C CNN
 F 3 "~" H 9950 1550 50  0001 C CNN
 	1    9950 1550
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Text Label 9750 1350 2    50   ~ 0
 ~MCLR
@@ -553,17 +553,6 @@ Wire Wire Line
 	8650 4500 8650 4550
 Wire Wire Line
 	8650 4550 7400 4550
-$Comp
-L Jumper:Jumper_2_Bridged JP1
-U 1 1 5BB0EE30
-P 1150 4250
-F 0 "JP1" H 1150 4445 50  0000 C CNN
-F 1 "Jumper_2_Bridged" H 1150 4354 50  0000 C CNN
-F 2 "canhw_footprints:Jumper_952-1474-2-ND" H 1150 4250 50  0001 C CNN
-F 3 "~" H 1150 4250 50  0001 C CNN
-	1    1150 4250
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	3700 4450 4200 4450
 Wire Wire Line
