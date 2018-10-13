@@ -200,9 +200,9 @@ Connection ~ 6650 5250
 Text Notes 7950 4050 0    50   ~ 0
 RF pin doesn't actually exist on\nthe xbee with a UFL connector
 NoConn ~ 7850 4000
-Text HLabel 3650 2900 0    50   Input ~ 0
-UART_TX
 Text HLabel 3650 3100 0    50   Input ~ 0
+UART_TX
+Text HLabel 3650 2900 0    50   Input ~ 0
 UART_RX
 Text HLabel 3650 3500 0    50   Input ~ 0
 UART_~CTS
@@ -329,11 +329,11 @@ Wire Wire Line
 Wire Wire Line
 	5500 3500 5650 3500
 Wire Wire Line
-	5200 3100 5200 3300
+	5300 3300 5650 3300
 Wire Wire Line
-	5200 3300 5650 3300
+	5300 2900 5300 3300
 Wire Wire Line
-	5300 2900 5300 3200
+	5200 3100 5200 3200
 Wire Wire Line
-	5300 3200 5650 3200
+	5200 3200 5650 3200
 $EndSCHEMATC
