@@ -239,7 +239,7 @@ Wire Wire Line
 Wire Wire Line
 	9250 4200 8800 4200
 $Comp
-L device:C C?
+L Device:C C?
 U 1 1 5B9D7A3E
 P 7650 4550
 AR Path="/5B9CFC89/5B9D7A3E" Ref="C?"  Part="1" 
@@ -270,7 +270,7 @@ Wire Wire Line
 	7650 4400 7650 4100
 Connection ~ 7650 4100
 $Comp
-L device:C C?
+L Device:C C?
 U 1 1 5B9D7A4D
 P 5700 3250
 AR Path="/5B9CFC89/5B9D7A4D" Ref="C?"  Part="1" 
@@ -309,7 +309,7 @@ OSC1
 Text Label 3450 4400 2    50   ~ 0
 OSC2
 $Comp
-L device:Crystal Y?
+L Device:Crystal Y?
 U 1 1 5B9D7A66
 P 4750 6100
 AR Path="/5B9CFC89/5B9D7A66" Ref="Y?"  Part="1" 
@@ -323,7 +323,7 @@ F 3 "~" H 4750 6100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:C C?
+L Device:C C?
 U 1 1 5B9D7A6D
 P 4300 5850
 AR Path="/5B9CFC89/5B9D7A6D" Ref="C?"  Part="1" 
@@ -337,7 +337,7 @@ F 3 "~" H 4300 5850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:C C?
+L Device:C C?
 U 1 1 5B9D7A74
 P 4300 6350
 AR Path="/5B9CFC89/5B9D7A74" Ref="C?"  Part="1" 
@@ -447,7 +447,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 4600 3900 4600
 $Comp
-L device:LED D6
+L Device:LED D6
 U 1 1 5BA93324
 P 2200 4150
 F 0 "D6" V 2238 4033 50  0000 R CNN
@@ -469,7 +469,7 @@ F 3 "" H 2200 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:LED D7
+L Device:LED D7
 U 1 1 5BA937EC
 P 2600 4150
 F 0 "D7" V 2638 4033 50  0000 R CNN
@@ -491,7 +491,7 @@ F 3 "" H 2600 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:LED D5
+L Device:LED D5
 U 1 1 5BA949EB
 P 1800 4150
 F 0 "D5" V 1838 4033 50  0000 R CNN
@@ -525,7 +525,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 4900 3900 4900
 $Comp
-L device:R_US R4
+L Device:R_US R4
 U 1 1 5BAB9EC5
 P 3700 3250
 F 0 "R4" H 3768 3296 50  0000 L CNN
@@ -536,7 +536,7 @@ F 3 "~" H 3700 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R_US R5
+L Device:R_US R5
 U 1 1 5BABA931
 P 1800 4450
 F 0 "R5" H 1868 4496 50  0000 L CNN
@@ -547,7 +547,7 @@ F 3 "~" H 1800 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R_US R6
+L Device:R_US R6
 U 1 1 5BABD5ED
 P 2200 4450
 F 0 "R6" H 2268 4496 50  0000 L CNN
@@ -558,7 +558,7 @@ F 3 "~" H 2200 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R_US R7
+L Device:R_US R7
 U 1 1 5BABD61F
 P 2600 4450
 F 0 "R7" H 2668 4496 50  0000 L CNN

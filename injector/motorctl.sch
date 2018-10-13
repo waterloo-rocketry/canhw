@@ -106,7 +106,7 @@ LIM_OPEN
 Text HLabel 4500 2100 0    60   Input ~ 0
 LIM_CLOSE
 $Comp
-L device:Q_NMOS_GSD Q?
+L Device:Q_NMOS_GSD Q?
 U 1 1 5B9E0D9B
 P 3450 3800
 AR Path="/5B9DA175/5B9E0D9B" Ref="Q?"  Part="1" 
@@ -119,7 +119,7 @@ F 3 "" H 3450 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:Q_NMOS_GDS Q?
+L Device:Q_NMOS_GDS Q?
 U 1 1 5B9E0DA2
 P 4700 4350
 AR Path="/5B9DA175/5B9E0DA2" Ref="Q?"  Part="1" 
@@ -132,7 +132,7 @@ F 3 "" H 4700 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:Q_NMOS_GDS Q?
+L Device:Q_NMOS_GDS Q?
 U 1 1 5B9E0DA9
 P 6700 4350
 AR Path="/5B9DA175/5B9E0DA9" Ref="Q?"  Part="1" 
@@ -145,7 +145,7 @@ F 3 "" H 6700 4350 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L device:Q_PMOS_GDS Q?
+L Device:Q_PMOS_GDS Q?
 U 1 1 5B9E0DB0
 P 4700 3600
 AR Path="/5B9DA175/5B9E0DB0" Ref="Q?"  Part="1" 
@@ -158,7 +158,7 @@ F 3 "" H 4700 3600 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L device:Q_PMOS_GDS Q?
+L Device:Q_PMOS_GDS Q?
 U 1 1 5B9E0DB7
 P 6700 3600
 AR Path="/5B9DA175/5B9E0DB7" Ref="Q?"  Part="1" 
@@ -188,7 +188,7 @@ $EndComp
 Text HLabel 8800 3800 2    60   Input ~ 0
 HIGH_SIDE_B
 $Comp
-L device:Q_NMOS_GSD Q?
+L Device:Q_NMOS_GSD Q?
 U 1 1 5B9E0DD9
 P 7950 3800
 AR Path="/5B9DA175/5B9E0DD9" Ref="Q?"  Part="1" 
@@ -264,7 +264,7 @@ Wire Wire Line
 Wire Wire Line
 	7850 4100 7850 4000
 $Comp
-L device:D D?
+L Device:D D?
 U 1 1 5B9E0E22
 P 5150 4400
 AR Path="/5B9DA175/5B9E0E22" Ref="D?"  Part="1" 
@@ -277,7 +277,7 @@ F 3 "" H 5150 4400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:D D?
+L Device:D D?
 U 1 1 5B9E0E29
 P 6250 4400
 AR Path="/5B9DA175/5B9E0E29" Ref="D?"  Part="1" 
@@ -306,7 +306,7 @@ Wire Wire Line
 	6250 4700 6600 4700
 Connection ~ 6600 4700
 $Comp
-L device:D D?
+L Device:D D?
 U 1 1 5B9E0E3A
 P 5150 3500
 AR Path="/5B9DA175/5B9E0E3A" Ref="D?"  Part="1" 
@@ -319,7 +319,7 @@ F 3 "" H 5150 3500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:D D?
+L Device:D D?
 U 1 1 5B9E0E41
 P 6250 3500
 AR Path="/5B9DA175/5B9E0E41" Ref="D?"  Part="1" 
@@ -464,7 +464,7 @@ F 3 "" H 5700 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R_US R8
+L Device:R_US R8
 U 1 1 5BABF53F
 P 4600 1750
 F 0 "R8" H 4350 1800 50  0000 L CNN
@@ -475,7 +475,7 @@ F 3 "~" H 4600 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R_US R9
+L Device:R_US R9
 U 1 1 5BABF5CD
 P 4800 1750
 F 0 "R9" H 4868 1796 50  0000 L CNN
@@ -492,7 +492,7 @@ Wire Wire Line
 Wire Wire Line
 	4600 2100 5700 2100
 $Comp
-L device:R_US R12
+L Device:R_US R12
 U 1 1 5BAC14DC
 P 2900 3800
 F 0 "R12" V 2695 3800 50  0000 C CNN
@@ -502,10 +502,8 @@ F 3 "~" H 2900 3800 50  0001 C CNN
 	1    2900 3800
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3050 3800 3100 3800
 $Comp
-L device:R_US R14
+L Device:R_US R14
 U 1 1 5BAC15DB
 P 3100 3950
 F 0 "R14" H 3168 3996 50  0000 L CNN
@@ -515,11 +513,8 @@ F 3 "~" H 3100 3950 50  0001 C CNN
 	1    3100 3950
 	1    0    0    -1  
 $EndComp
-Connection ~ 3100 3800
-Wire Wire Line
-	3100 3800 3250 3800
 $Comp
-L device:R_US R18
+L Device:R_US R18
 U 1 1 5BAC18CA
 P 3100 4600
 F 0 "R18" H 3168 4646 50  0000 L CNN
@@ -530,7 +525,7 @@ F 3 "~" H 3100 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R_US R16
+L Device:R_US R16
 U 1 1 5BAC190F
 P 2900 4350
 F 0 "R16" V 2695 4350 50  0000 C CNN
@@ -541,7 +536,7 @@ F 3 "~" H 2900 4350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R_US R10
+L Device:R_US R10
 U 1 1 5BAC307C
 P 4300 3300
 F 0 "R10" H 4368 3346 50  0000 L CNN
@@ -552,7 +547,7 @@ F 3 "~" H 4300 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R_US R11
+L Device:R_US R11
 U 1 1 5BAC3214
 P 7100 3300
 F 0 "R11" H 7168 3346 50  0000 L CNN
@@ -563,7 +558,7 @@ F 3 "~" H 7100 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R_US R13
+L Device:R_US R13
 U 1 1 5BAC342A
 P 8500 3800
 F 0 "R13" V 8295 3800 50  0000 C CNN
@@ -573,10 +568,8 @@ F 3 "~" H 8500 3800 50  0001 C CNN
 	1    8500 3800
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8150 3800 8300 3800
 $Comp
-L device:R_US R15
+L Device:R_US R15
 U 1 1 5BAC3613
 P 8300 3950
 F 0 "R15" H 8368 3996 50  0000 L CNN
@@ -586,11 +579,8 @@ F 3 "~" H 8300 3950 50  0001 C CNN
 	1    8300 3950
 	1    0    0    -1  
 $EndComp
-Connection ~ 8300 3800
-Wire Wire Line
-	8300 3800 8350 3800
 $Comp
-L device:R_US R17
+L Device:R_US R17
 U 1 1 5BAC36DC
 P 8500 4350
 F 0 "R17" V 8295 4350 50  0000 C CNN
@@ -601,7 +591,7 @@ F 3 "~" H 8500 4350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R_US R19
+L Device:R_US R19
 U 1 1 5BAC3721
 P 8300 4600
 F 0 "R19" H 8368 4646 50  0000 L CNN
@@ -611,4 +601,8 @@ F 3 "~" H 8300 4600 50  0001 C CNN
 	1    8300 4600
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3050 3800 3250 3800
+Wire Wire Line
+	8150 3800 8350 3800
 $EndSCHEMATC

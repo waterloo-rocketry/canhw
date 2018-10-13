@@ -39,7 +39,7 @@ $EndComp
 Wire Wire Line
 	2900 3750 2300 3750
 $Comp
-L device:Fuse_Small F1
+L Device:Fuse_Small F1
 U 1 1 5B9F3487
 P 2600 3650
 F 0 "F1" H 2600 3835 50  0000 C CNN
@@ -162,7 +162,7 @@ max Id =\n200 mA
 Wire Wire Line
 	8650 4000 8650 4150
 $Comp
-L device:C C1
+L Device:C C1
 U 1 1 5BA6E391
 P 8950 4150
 F 0 "C1" V 8698 4150 50  0000 C CNN
@@ -245,7 +245,7 @@ F 3 "" H 3850 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:Polyfuse F2
+L Device:Polyfuse F2
 U 1 1 5BAAF586
 P 7000 3650
 F 0 "F2" V 6775 3650 50  0000 C CNN
@@ -261,7 +261,7 @@ Wire Wire Line
 	7150 3650 7650 3650
 Connection ~ 7650 3650
 $Comp
-L device:R_US R2
+L Device:R_US R2
 U 1 1 5BAB7D14
 P 3450 3950
 F 0 "R2" H 3518 3996 50  0000 L CNN
@@ -272,7 +272,7 @@ F 3 "~" H 3450 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R_US R3
+L Device:R_US R3
 U 1 1 5BAB8116
 P 3450 4400
 F 0 "R3" H 3518 4446 50  0000 L CNN
@@ -283,7 +283,7 @@ F 3 "~" H 3450 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R_US R1
+L Device:R_US R1
 U 1 1 5BAB8487
 P 7900 3650
 F 0 "R1" V 7695 3650 50  0000 C CNN
