@@ -24,7 +24,7 @@ AR Path="/5BA73887/5BA7388D/5BA74E7A" Ref="U?"  Part="1"
 AR Path="/5BA73887/5BA74E7A" Ref="U3"  Part="1" 
 F 0 "U3" H 3975 5315 50  0000 C CNN
 F 1 "PIC18F26K83" H 3975 5224 50  0000 C CNN
-F 2 "Housings_DIP:DIP-28_W7.62mm" H 4450 4400 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-28W_7.5x17.9mm_Pitch1.27mm" H 4450 4400 50  0001 C CNN
 F 3 "" H 4450 4400 50  0001 C CNN
 	1    4000 4400
 	1    0    0    -1  
@@ -39,7 +39,7 @@ AR Path="/5BA73887/5BA7388D/5BA74E81" Ref="U?"  Part="1"
 AR Path="/5BA73887/5BA74E81" Ref="U2"  Part="1" 
 F 0 "U2" H 9025 4415 50  0000 C CNN
 F 1 "MCP2562" H 9025 4324 50  0000 C CNN
-F 2 "" H 9050 4150 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 9050 4150 50  0001 C CNN
 F 3 "" H 9050 4150 50  0001 C CNN
 	1    9050 4150
 	1    0    0    -1  
@@ -82,7 +82,7 @@ AR Path="/5BA73887/5BA7388D/5BA74E95" Ref="J?"  Part="1"
 AR Path="/5BA73887/5BA74E95" Ref="J3"  Part="1" 
 F 0 "J3" H 3250 1400 50  0000 C CNN
 F 1 "Programming Header" H 2900 1500 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 2900 1850 50  0001 C CNN
+F 2 "canhw_footprints:PinHeader_5x2.54_SMD_90deg_952-3198-1-ND" H 2900 1850 50  0001 C CNN
 F 3 "~" H 2900 1850 50  0001 C CNN
 	1    2900 1850
 	-1   0    0    1   
@@ -249,7 +249,7 @@ Wire Wire Line
 Wire Wire Line
 	9950 4350 9500 4350
 $Comp
-L device:C C?
+L Device:C C?
 U 1 1 5BA74EFE
 P 8350 4700
 AR Path="/5B9CFC89/5BA74EFE" Ref="C?"  Part="1" 
@@ -258,7 +258,7 @@ AR Path="/5BA73887/5BA7388D/5BA74EFE" Ref="C?"  Part="1"
 AR Path="/5BA73887/5BA74EFE" Ref="C3"  Part="1" 
 F 0 "C3" H 8465 4746 50  0000 L CNN
 F 1 "10uF" H 8465 4655 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 8388 4550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8388 4550 50  0001 C CNN
 F 3 "~" H 8350 4700 50  0001 C CNN
 	1    8350 4700
 	1    0    0    -1  
@@ -282,7 +282,7 @@ Wire Wire Line
 	8350 4550 8350 4250
 Connection ~ 8350 4250
 $Comp
-L device:C C?
+L Device:C C?
 U 1 1 5BA74F0D
 P 5050 3400
 AR Path="/5B9CFC89/5BA74F0D" Ref="C?"  Part="1" 
@@ -291,7 +291,7 @@ AR Path="/5BA73887/5BA7388D/5BA74F0D" Ref="C?"  Part="1"
 AR Path="/5BA73887/5BA74F0D" Ref="C2"  Part="1" 
 F 0 "C2" V 4798 3400 50  0000 C CNN
 F 1 "0.1uF" V 4889 3400 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5088 3250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5088 3250 50  0001 C CNN
 F 3 "~" H 5050 3400 50  0001 C CNN
 	1    5050 3400
 	0    1    1    0   
@@ -323,7 +323,7 @@ OSC1
 Text Label 2800 4550 2    50   ~ 0
 OSC2
 $Comp
-L device:Crystal Y?
+L Device:Crystal Y?
 U 1 1 5BA74F26
 P 4100 6250
 AR Path="/5B9CFC89/5BA74F26" Ref="Y?"  Part="1" 
@@ -338,7 +338,7 @@ F 3 "~" H 4100 6250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:C C?
+L Device:C C?
 U 1 1 5BA74F2D
 P 3650 6000
 AR Path="/5B9CFC89/5BA74F2D" Ref="C?"  Part="1" 
@@ -347,13 +347,13 @@ AR Path="/5BA73887/5BA7388D/5BA74F2D" Ref="C?"  Part="1"
 AR Path="/5BA73887/5BA74F2D" Ref="C4"  Part="1" 
 F 0 "C4" V 3398 6000 50  0000 C CNN
 F 1 "26pF" V 3489 6000 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3688 5850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3688 5850 50  0001 C CNN
 F 3 "~" H 3650 6000 50  0001 C CNN
 	1    3650 6000
 	0    1    1    0   
 $EndComp
 $Comp
-L device:C C?
+L Device:C C?
 U 1 1 5BA74F34
 P 3650 6500
 AR Path="/5B9CFC89/5BA74F34" Ref="C?"  Part="1" 
@@ -362,7 +362,7 @@ AR Path="/5BA73887/5BA7388D/5BA74F34" Ref="C?"  Part="1"
 AR Path="/5BA73887/5BA74F34" Ref="C5"  Part="1" 
 F 0 "C5" V 3398 6500 50  0000 C CNN
 F 1 "26pF" V 3489 6500 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3688 6350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3688 6350 50  0001 C CNN
 F 3 "~" H 3650 6500 50  0001 C CNN
 	1    3650 6500
 	0    1    1    0   
@@ -439,12 +439,12 @@ Wire Wire Line
 Wire Wire Line
 	2800 4750 3250 4750
 $Comp
-L device:R_US R4
+L Device:R_US R4
 U 1 1 5BAB6CA8
 P 3050 3400
 F 0 "R4" H 3118 3446 50  0000 L CNN
 F 1 "10K" H 3118 3355 50  0000 L CNN
-F 2 "" V 3090 3390 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3090 3390 50  0001 C CNN
 F 3 "~" H 3050 3400 50  0001 C CNN
 	1    3050 3400
 	1    0    0    -1  
@@ -458,23 +458,23 @@ Wire Wire Line
 Wire Wire Line
 	1850 5050 2200 5050
 $Comp
-L device:R_US R8
+L Device:R_US R8
 U 1 1 5BAE308C
 P 2000 4700
 F 0 "R8" H 1750 4750 50  0000 L CNN
 F 1 "10K" H 1750 4650 50  0000 L CNN
-F 2 "" V 2040 4690 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2040 4690 50  0001 C CNN
 F 3 "~" H 2000 4700 50  0001 C CNN
 	1    2000 4700
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R_US R9
+L Device:R_US R9
 U 1 1 5BAE3143
 P 2200 4700
 F 0 "R9" H 2268 4746 50  0000 L CNN
 F 1 "10K" H 2268 4655 50  0000 L CNN
-F 2 "" V 2240 4690 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2240 4690 50  0001 C CNN
 F 3 "~" H 2200 4700 50  0001 C CNN
 	1    2200 4700
 	1    0    0    -1  
@@ -524,23 +524,23 @@ Wire Wire Line
 Wire Wire Line
 	4950 4250 4700 4250
 $Comp
-L device:R_US R5
+L Device:R_US R5
 U 1 1 5BAEAA65
 P 6000 4500
 F 0 "R5" H 6068 4546 50  0000 L CNN
 F 1 "330R" H 6068 4455 50  0000 L CNN
-F 2 "" V 6040 4490 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6040 4490 50  0001 C CNN
 F 3 "~" H 6000 4500 50  0001 C CNN
 	1    6000 4500
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:LED D1
+L Device:LED D1
 U 1 1 5BAEAB25
 P 6000 4200
 F 0 "D1" V 6038 4083 50  0000 R CNN
 F 1 "LED" V 5947 4083 50  0000 R CNN
-F 2 "" H 6000 4200 50  0001 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6000 4200 50  0001 C CNN
 F 3 "~" H 6000 4200 50  0001 C CNN
 	1    6000 4200
 	0    -1   -1   0   
@@ -557,23 +557,23 @@ F 3 "" H 6000 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R_US R6
+L Device:R_US R6
 U 1 1 5BAEAE66
 P 6350 4500
 F 0 "R6" H 6418 4546 50  0000 L CNN
 F 1 "330R" H 6418 4455 50  0000 L CNN
-F 2 "" V 6390 4490 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6390 4490 50  0001 C CNN
 F 3 "~" H 6350 4500 50  0001 C CNN
 	1    6350 4500
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:LED D2
+L Device:LED D2
 U 1 1 5BAEAE6D
 P 6350 4200
 F 0 "D2" V 6388 4083 50  0000 R CNN
 F 1 "LED" V 6297 4083 50  0000 R CNN
-F 2 "" H 6350 4200 50  0001 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6350 4200 50  0001 C CNN
 F 3 "~" H 6350 4200 50  0001 C CNN
 	1    6350 4200
 	0    -1   -1   0   
@@ -590,23 +590,23 @@ F 3 "" H 6350 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R_US R7
+L Device:R_US R7
 U 1 1 5BAEC246
 P 6700 4500
 F 0 "R7" H 6768 4546 50  0000 L CNN
 F 1 "330R" H 6768 4455 50  0000 L CNN
-F 2 "" V 6740 4490 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6740 4490 50  0001 C CNN
 F 3 "~" H 6700 4500 50  0001 C CNN
 	1    6700 4500
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:LED D3
+L Device:LED D3
 U 1 1 5BAEC24D
 P 6700 4200
 F 0 "D3" V 6738 4083 50  0000 R CNN
 F 1 "LED" V 6647 4083 50  0000 R CNN
-F 2 "" H 6700 4200 50  0001 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6700 4200 50  0001 C CNN
 F 3 "~" H 6700 4200 50  0001 C CNN
 	1    6700 4200
 	0    -1   -1   0   
