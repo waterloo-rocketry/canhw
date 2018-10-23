@@ -513,9 +513,9 @@ Wire Wire Line
 	2200 5050 3250 5050
 Text HLabel 4950 4050 2    50   Input ~ 0
 MOTOR_FEEDBACK
-Text HLabel 4950 4350 2    50   Input ~ 0
-MOTOR_FWD
 Text HLabel 4950 4450 2    50   Input ~ 0
+MOTOR_FWD
+Text HLabel 4950 4350 2    50   Input ~ 0
 MOTOR_BWD
 Wire Wire Line
 	4950 4050 4700 4050
@@ -632,9 +632,9 @@ Wire Wire Line
 	6700 4650 6700 4850
 Wire Wire Line
 	6700 4850 4700 4850
-Text HLabel 4950 4150 2    50   Input ~ 0
-~LIM_HIGH
 Text HLabel 4950 4250 2    50   Input ~ 0
+~LIM_HIGH
+Text HLabel 4950 4150 2    50   Input ~ 0
 ~LIM_LOW
 Wire Wire Line
 	4950 4350 4700 4350
