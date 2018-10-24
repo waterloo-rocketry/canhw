@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 9
+Sheet 9 9
 Title ""
 Date ""
 Rev ""
@@ -366,12 +366,6 @@ Text HLabel 2550 4900 0    50   Input ~ 0
 ANALOG_MUX
 Wire Wire Line
 	2550 4900 2800 4900
-Text HLabel 6400 4100 2    50   Input ~ 0
-MUX_S0
-Text HLabel 6400 4200 2    50   Input ~ 0
-MUX_S1
-Text HLabel 6400 4300 2    50   Input ~ 0
-MUX_S2
 Text HLabel 6400 4400 2    50   Input ~ 0
 SCLK
 Text HLabel 6400 4500 2    50   Input ~ 0
@@ -573,100 +567,6 @@ Wire Wire Line
 Wire Wire Line
 	950  5200 2800 5200
 $Comp
-L canhw:MC74HC138A U8
-U 1 1 5BC2D461
-P 7850 4900
-F 0 "U8" H 8200 5350 50  0000 C CNN
-F 1 "MC74HC138A" H 8200 5250 50  0000 C CNN
-F 2 "" H 7850 4900 50  0001 C CNN
-F 3 "" H 7850 4900 50  0001 C CNN
-	1    7850 4900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6000 4900 7450 4900
-Wire Wire Line
-	6000 5000 7450 5000
-Wire Wire Line
-	6000 5100 7450 5100
-$Comp
-L power:+5V #PWR043
-U 1 1 5BC3364A
-P 7250 5350
-F 0 "#PWR043" H 7250 5200 50  0001 C CNN
-F 1 "+5V" H 7265 5523 50  0000 C CNN
-F 2 "" H 7250 5350 50  0001 C CNN
-F 3 "" H 7250 5350 50  0001 C CNN
-	1    7250 5350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7250 5350 7250 5400
-Wire Wire Line
-	7250 5400 7450 5400
-$Comp
-L power:GND #PWR044
-U 1 1 5BC34EA5
-P 7250 5700
-F 0 "#PWR044" H 7250 5450 50  0001 C CNN
-F 1 "GND" H 7255 5527 50  0000 C CNN
-F 2 "" H 7250 5700 50  0001 C CNN
-F 3 "" H 7250 5700 50  0001 C CNN
-	1    7250 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7250 5700 7250 5600
-Wire Wire Line
-	7250 5500 7450 5500
-Wire Wire Line
-	7450 5600 7250 5600
-Connection ~ 7250 5600
-Wire Wire Line
-	7250 5600 7250 5500
-$Comp
-L power:GND #PWR046
-U 1 1 5BC38412
-P 7900 6050
-F 0 "#PWR046" H 7900 5800 50  0001 C CNN
-F 1 "GND" H 7905 5877 50  0000 C CNN
-F 2 "" H 7900 6050 50  0001 C CNN
-F 3 "" H 7900 6050 50  0001 C CNN
-	1    7900 6050
-	1    0    0    -1  
-$EndComp
-Text HLabel 8650 4900 2    50   Input ~ 0
-IMU1_ACCEL
-Text HLabel 8650 5000 2    50   Input ~ 0
-IMU1_GYRO
-Text HLabel 8650 5100 2    50   Input ~ 0
-IMU1_MAG
-Text HLabel 8650 5200 2    50   Input ~ 0
-IMU2_ACCEL
-Text HLabel 8650 5300 2    50   Input ~ 0
-IMU2_GYRO
-Text HLabel 8650 5400 2    50   Input ~ 0
-IMU2_MAG
-Text HLabel 8650 5500 2    50   Input ~ 0
-BARO
-Wire Wire Line
-	8650 4900 8350 4900
-Wire Wire Line
-	8350 5000 8650 5000
-Wire Wire Line
-	8350 5100 8650 5100
-Wire Wire Line
-	8350 5200 8650 5200
-Wire Wire Line
-	8350 5300 8650 5300
-Wire Wire Line
-	8350 5400 8650 5400
-Wire Wire Line
-	8350 5500 8650 5500
-NoConn ~ 8350 5600
-Text Notes 8650 4800 0    50   ~ 0
-Chip selects
-$Comp
 L Device:LED D3
 U 1 1 5BC49769
 P 6000 5450
@@ -701,15 +601,22 @@ F 3 "" H 6000 5900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6000 5300 6000 5200
-$Comp
-L power:+3V3 #PWR042
-U 1 1 5BC5222E
-P 7900 4450
-F 0 "#PWR042" H 7900 4300 50  0001 C CNN
-F 1 "+3V3" H 7915 4623 50  0000 C CNN
-F 2 "" H 7900 4450 50  0001 C CNN
-F 3 "" H 7900 4450 50  0001 C CNN
-	1    7900 4450
-	1    0    0    -1  
-$EndComp
+Text HLabel 6400 4900 2    50   Input ~ 0
+BARO_CS
+Text HLabel 6400 5000 2    50   Input ~ 0
+IMU1_CS
+Text HLabel 6400 5100 2    50   Input ~ 0
+IMU2_CS
+Wire Wire Line
+	6000 4900 6400 4900
+Wire Wire Line
+	6000 5000 6400 5000
+Wire Wire Line
+	6000 5100 6400 5100
+Text HLabel 6400 4100 2    50   Input ~ 0
+MUX_S0
+Text HLabel 6400 4200 2    50   Input ~ 0
+MUX_S1
+Text HLabel 6400 4300 2    50   Input ~ 0
+MUX_S2
 $EndSCHEMATC
