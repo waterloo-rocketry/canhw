@@ -272,9 +272,9 @@ S 9700 4150 750  400
 U 5B9D8C66
 F0 "SDcard2" 50
 F1 "SDcard.sch" 50
-F2 "MISO" I L 9700 4500 50 
+F2 "MISO" I L 9700 4300 50 
 F3 "MOSI" I L 9700 4200 50 
-F4 "SCLK" I L 9700 4300 50 
+F4 "SCLK" I L 9700 4500 50 
 F5 "CS" I L 9700 4400 50 
 $EndSheet
 Text Notes 8650 3450 0    50   ~ 0
@@ -541,11 +541,11 @@ Text Label 7400 3950 0    50   ~ 0
 SD1_SCLK
 Text Label 7400 3650 0    50   ~ 0
 SD2_MOSI
-Text Label 3900 5050 2    50   ~ 0
+Text Label 7400 3750 0    50   ~ 0
 SD2_MISO
 Text Label 7400 3250 0    50   ~ 0
 SD2_CS
-Text Label 7400 3750 0    50   ~ 0
+Text Label 3900 5050 2    50   ~ 0
 SD2_SCLK
 Text Label 7400 4350 0    50   ~ 0
 CANTX
