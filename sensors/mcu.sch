@@ -24,7 +24,7 @@ AR Path="/5BB12E21/5BB14883" Ref="U?"  Part="1"
 AR Path="/5BB1460E/5BB14883" Ref="U6"  Part="1" 
 F 0 "U6" H 9325 3115 50  0000 C CNN
 F 1 "MCP2562" H 9325 3024 50  0000 C CNN
-F 2 "" H 9350 2850 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 9350 2850 50  0001 C CNN
 F 3 "" H 9350 2850 50  0001 C CNN
 	1    9350 2850
 	1    0    0    -1  
@@ -201,7 +201,7 @@ U 1 1 5BB1E345
 P 4400 4400
 F 0 "U7" H 3050 5650 50  0000 C CNN
 F 1 "DSPIC33EP512GP502" H 3400 5550 50  0000 C CNN
-F 2 "Package_DIP:DIP-28_W7.62mm" H 4400 4400 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-28W_7.5x17.9mm_Pitch1.27mm" H 4400 4400 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/70000657H.pdf" H 4400 4400 50  0001 C CNN
 	1    4400 4400
 	1    0    0    -1  
@@ -264,9 +264,9 @@ $EndComp
 Text Notes 2050 4350 0    50   ~ 0
 Ceramic
 Text Label 2550 5000 2    50   ~ 0
-OSC_1
+OSC1
 Text Label 2550 5100 2    50   ~ 0
-OSC_2
+OSC2
 Wire Wire Line
 	2550 5000 2800 5000
 Wire Wire Line
@@ -400,7 +400,7 @@ U 1 1 5BBBAD50
 P 9250 1250
 F 0 "Y1" V 9204 1381 50  0000 L CNN
 F 1 "Crystal" V 9295 1381 50  0000 L CNN
-F 2 "" H 9250 1250 50  0001 C CNN
+F 2 "Crystal:Resonator-2Pin_W10.0mm_H5.0mm" H 9250 1250 50  0001 C CNN
 F 3 "~" H 9250 1250 50  0001 C CNN
 	1    9250 1250
 	0    1    1    0   

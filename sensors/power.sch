@@ -51,7 +51,7 @@ AR Path="/5BB11D6C/5BB12B37" Ref="U?"  Part="1"
 AR Path="/5BB129A7/5BB12B37" Ref="U4"  Part="1" 
 F 0 "U4" H 4300 4528 50  0000 C CNN
 F 1 "INA180" H 4300 4437 50  0000 C CNN
-F 2 "" H 4350 5000 50  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 4350 5000 50  0001 C CNN
 F 3 "" H 4350 5000 50  0001 C CNN
 	1    4350 5000
 	1    0    0    -1  
@@ -144,7 +144,7 @@ AR Path="/5BB11D6C/5BB12B67" Ref="J?"  Part="1"
 AR Path="/5BB129A7/5BB12B67" Ref="J1"  Part="1" 
 F 0 "J1" H 1544 4485 50  0000 C CNN
 F 1 "Conn_01x05_Female" H 1544 4394 50  0000 C CNN
-F 2 "" H 1650 4100 50  0001 C CNN
+F 2 "canhw_footprints:connector_Harwin_M80-5000642" H 1650 4100 50  0001 C CNN
 F 3 "~" H 1650 4100 50  0001 C CNN
 	1    1650 4100
 	-1   0    0    -1  
@@ -185,15 +185,13 @@ AR Path="/5BB11D6C/5BB12B7C" Ref="F?"  Part="1"
 AR Path="/5BB129A7/5BB12B7C" Ref="F2"  Part="1" 
 F 0 "F2" V 2325 4000 50  0000 C CNN
 F 1 "Polyfuse" V 2416 4000 50  0000 C CNN
-F 2 "" H 2600 3800 50  0001 L CNN
+F 2 "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2600 3800 50  0001 L CNN
 F 3 "~" H 2550 4000 50  0001 C CNN
 	1    2550 4000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2400 4000 1850 4000
-Wire Wire Line
-	2700 4000 3200 4000
+	2400 4000 2350 4000
 Connection ~ 3200 4000
 $Comp
 L Device:R_US R?
@@ -203,7 +201,7 @@ AR Path="/5BB11D6C/5BB12B86" Ref="R?"  Part="1"
 AR Path="/5BB129A7/5BB12B86" Ref="R2"  Part="1" 
 F 0 "R2" V 3245 4000 50  0000 C CNN
 F 1 "?" V 3336 4000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3490 3990 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3490 3990 50  0001 C CNN
 F 3 "~" H 3450 4000 50  0001 C CNN
 	1    3450 4000
 	0    1    1    0   
@@ -216,7 +214,7 @@ AR Path="/5BB11D6C/5BB49A1D" Ref="U?"  Part="1"
 AR Path="/5BB129A7/5BB49A1D" Ref="U2"  Part="1" 
 F 0 "U2" H 4300 2378 50  0000 C CNN
 F 1 "INA180" H 4300 2287 50  0000 C CNN
-F 2 "" H 4350 2850 50  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 4350 2850 50  0001 C CNN
 F 3 "" H 4350 2850 50  0001 C CNN
 	1    4350 2850
 	1    0    0    -1  
@@ -306,7 +304,7 @@ Wire Wire Line
 	4100 1850 3700 1850
 Connection ~ 3700 1850
 Wire Wire Line
-	3200 1850 2700 1850
+	3200 1850 2800 1850
 Connection ~ 3200 1850
 Wire Wire Line
 	2400 1850 2250 1850
@@ -318,7 +316,7 @@ U 1 1 5BB84AA9
 P 8350 4250
 F 0 "U5" H 8375 4475 50  0000 C CNN
 F 1 "MIC5504-3.3" H 8375 4384 50  0000 C CNN
-F 2 "" H 8350 4250 50  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 8350 4250 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550x-300mA-Single-Output-LDO-in-Small-Packages-DS20006006A.pdf" H 8350 4250 50  0001 C CNN
 	1    8350 4250
 	1    0    0    -1  
@@ -418,7 +416,7 @@ U 1 1 5BB8BDF7
 P 8050 2950
 F 0 "U3" H 8200 3215 50  0000 C CNN
 F 1 "LP2985-10" H 8200 3124 50  0000 C CNN
-F 2 "" H 8050 2950 50  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 8050 2950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lp2985.pdf" H 8050 2950 50  0001 C CNN
 	1    8050 2950
 	1    0    0    -1  
@@ -543,7 +541,7 @@ U 1 1 5BBBC5CD
 P 2550 1850
 F 0 "F1" V 2325 1850 50  0000 C CNN
 F 1 "Polyfuse" V 2416 1850 50  0000 C CNN
-F 2 "" H 2600 1650 50  0001 L CNN
+F 2 "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2600 1650 50  0001 L CNN
 F 3 "~" H 2550 1850 50  0001 C CNN
 	1    2550 1850
 	0    1    1    0   
@@ -554,7 +552,7 @@ U 1 1 5BBBC7AE
 P 3450 1850
 F 0 "R1" V 3245 1850 50  0000 C CNN
 F 1 "R_US" V 3336 1850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3490 1840 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3490 1840 50  0001 C CNN
 F 3 "~" H 3450 1850 50  0001 C CNN
 	1    3450 1850
 	0    1    1    0   
@@ -565,7 +563,7 @@ U 1 1 5BBD2085
 P 8100 1650
 F 0 "U1" H 8175 1937 60  0000 C CNN
 F 1 "SPU01M-15" H 8175 1831 60  0000 C CNN
-F 2 "" H 8100 1650 60  0001 C CNN
+F 2 "Flight_Instr:SIP6_Housing" H 8100 1650 60  0001 C CNN
 F 3 "" H 8100 1650 60  0001 C CNN
 	1    8100 1650
 	1    0    0    -1  
@@ -762,7 +760,7 @@ U 1 1 5BD847E8
 P 8400 5350
 F 0 "U8" H 8375 5575 50  0000 C CNN
 F 1 "MIC5365-1.8" H 8375 5484 50  0000 C CNN
-F 2 "" H 8450 5350 50  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 8450 5350 50  0001 C CNN
 F 3 "" H 8450 5350 50  0001 C CNN
 	1    8400 5350
 	1    0    0    -1  
@@ -778,4 +776,68 @@ F 3 "" H 9600 5250 50  0001 C CNN
 	1    9600 5250
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5BDC9287
+P 2250 1400
+F 0 "TP1" H 2308 1520 50  0000 L CNN
+F 1 "TestPoint" H 2308 1429 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2450 1400 50  0001 C CNN
+F 3 "~" H 2450 1400 50  0001 C CNN
+	1    2250 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1400 2250 1850
+Connection ~ 2250 1850
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5BDCA55D
+P 2800 1400
+F 0 "TP2" H 2858 1520 50  0000 L CNN
+F 1 "TestPoint" H 2858 1429 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3000 1400 50  0001 C CNN
+F 3 "~" H 3000 1400 50  0001 C CNN
+	1    2800 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1400 2800 1850
+Connection ~ 2800 1850
+Wire Wire Line
+	2800 1850 2700 1850
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5BDCB8C1
+P 2900 3650
+F 0 "TP4" H 2958 3770 50  0000 L CNN
+F 1 "TestPoint" H 2958 3679 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3100 3650 50  0001 C CNN
+F 3 "~" H 3100 3650 50  0001 C CNN
+	1    2900 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3650 2900 4000
+Wire Wire Line
+	2700 4000 2900 4000
+Connection ~ 2900 4000
+Wire Wire Line
+	2900 4000 3200 4000
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5BDCD140
+P 2350 3650
+F 0 "TP3" H 2408 3770 50  0000 L CNN
+F 1 "TestPoint" H 2408 3679 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2550 3650 50  0001 C CNN
+F 3 "~" H 2550 3650 50  0001 C CNN
+	1    2350 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3650 2350 4000
+Connection ~ 2350 4000
+Wire Wire Line
+	2350 4000 1850 4000
 $EndSCHEMATC
