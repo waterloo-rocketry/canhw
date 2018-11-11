@@ -25,22 +25,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001943A.pdf" H 4300 3950 
 	1    0    0    -1  
 $EndComp
 $Comp
-L A2235-H:A2235-H U2
-U 1 1 5BE4A34D
-P 7450 3500
-F 0 "U2" H 7450 4567 50  0000 C CNN
-F 1 "A2235-H" H 7450 4476 50  0000 C CNN
-F 2 "XCVR_A2235-H" H 7450 3500 50  0001 L BNN
-F 3 "None" H 7450 3500 50  0001 L BNN
-F 4 "Maestro Wireless" H 7450 3500 50  0001 L BNN "Field4"
-F 5 "Gps Module, Mini Outline w/ Ant" H 7450 3500 50  0001 L BNN "Field5"
-F 6 "Module Maestro Wireless" H 7450 3500 50  0001 L BNN "Field6"
-F 7 "Unavailable" H 7450 3500 50  0001 L BNN "Field7"
-F 8 "A2235-H" H 7450 3500 50  0001 L BNN "Field8"
-	1    7450 3500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR?
 U 1 1 5BE4A795
 P 3000 2750
@@ -304,10 +288,6 @@ Wire Wire Line
 Wire Wire Line
 	3100 4500 2850 4500
 Wire Wire Line
-	2850 4500 2850 4850
-Wire Wire Line
-	2850 4850 6450 4850
-Wire Wire Line
 	6450 4850 6450 3400
 Wire Wire Line
 	6450 3400 6650 3400
@@ -372,4 +352,24 @@ Wire Wire Line
 	9000 3200 9100 3200
 Wire Wire Line
 	9400 3200 9500 3200
+$Comp
+L canhw:A2235-H U2
+U 1 1 5BE4A34D
+P 7450 3500
+F 0 "U2" H 7450 4567 50  0000 C CNN
+F 1 "A2235-H" H 7450 4476 50  0000 C CNN
+F 2 "XCVR_A2235-H" H 7450 3500 50  0001 L BNN
+F 3 "None" H 7450 3500 50  0001 L BNN
+F 4 "Maestro Wireless" H 7450 3500 50  0001 L BNN "Field4"
+F 5 "Gps Module, Mini Outline w/ Ant" H 7450 3500 50  0001 L BNN "Field5"
+F 6 "Module Maestro Wireless" H 7450 3500 50  0001 L BNN "Field6"
+F 7 "Unavailable" H 7450 3500 50  0001 L BNN "Field7"
+F 8 "A2235-H" H 7450 3500 50  0001 L BNN "Field8"
+	1    7450 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4850 6450 4850
+Wire Wire Line
+	2850 4500 2850 4850
 $EndSCHEMATC
