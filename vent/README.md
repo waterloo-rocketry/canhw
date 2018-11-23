@@ -1,0 +1,13 @@
+# Vent Board 
+
+The purpose of the vent board is to open and close the valve that allows for nitrous oxide to flow into the rocket before launch. 
+
+
+## Front of vent:
+
+![front of vent](/images/vent_front.jpg)
+
+## Back of vent:
+
+![back of vent](/images/vent_back.jpg)
+
