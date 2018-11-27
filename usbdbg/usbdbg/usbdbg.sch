@@ -628,18 +628,6 @@ Wire Wire Line
 Text Notes 10400 4100 0    50   ~ 0
 12V (NC, this board\ndoesn't need it)
 $Comp
-L Device:Jumper_NC_Dual JP1
-U 1 1 5BAB505C
-P 10000 3450
-F 0 "JP1" H 10000 3689 50  0000 C CNN
-F 1 "Jumper_NC_Dual" H 10000 3598 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 10000 3450 50  0001 C CNN
-F 3 "~" H 10000 3450 50  0001 C CNN
-	1    10000 3450
-	1    0    0    -1  
-$EndComp
-NoConn ~ 10250 3450
-$Comp
 L power:+5V #PWR019
 U 1 1 5BAB81E8
 P 9500 3200
@@ -656,8 +644,6 @@ Wire Wire Line
 	9500 3450 9500 3200
 Wire Wire Line
 	10150 4150 10000 4150
-Wire Wire Line
-	10000 4150 10000 3550
 NoConn ~ 10150 4050
 Text Notes 8700 2950 0    50   ~ 0
 In some situations (namely, integration testing), we want the\nbus to be powered without having the radio board connected.\nBy moving a jumper on these pins, you can power the bus from\nthe USB port of your computer.
@@ -674,4 +660,21 @@ F 3 " ~" H 6300 2250 50  0001 C CNN
 	1    6150 2300
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:Jumper JP1
+U 1 1 5BFE64D4
+P 10050 3450
+F 0 "JP1" H 10050 3714 50  0000 C CNN
+F 1 "Jumper" H 10050 3623 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 10050 3450 50  0001 C CNN
+F 3 "~" H 10050 3450 50  0001 C CNN
+	1    10050 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 3450 10350 3700
+Wire Wire Line
+	10350 3700 10000 3700
+Wire Wire Line
+	10000 3700 10000 4150
 $EndSCHEMATC
