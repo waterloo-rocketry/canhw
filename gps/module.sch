@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:gps-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 4 4
 Title ""
 Date ""
 Rev ""
@@ -14,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L canhw:A2235-H U2
+L canhw:A2235-H U?
 U 1 1 5C124D1F
 P 7540 3540
-F 0 "U2" H 7540 4607 50  0000 C CNN
+F 0 "U?" H 7540 4607 50  0000 C CNN
 F 1 "A2235-H" H 7540 4516 50  0000 C CNN
 F 2 "XCVR_A2235-H" H 7540 3540 50  0001 L BNN
 F 3 "None" H 7540 3540 50  0001 L BNN
