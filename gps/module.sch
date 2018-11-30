@@ -1,0 +1,154 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L canhw:A2235-H U2
+U 1 1 5C124D1F
+P 7540 3540
+F 0 "U2" H 7540 4607 50  0000 C CNN
+F 1 "A2235-H" H 7540 4516 50  0000 C CNN
+F 2 "XCVR_A2235-H" H 7540 3540 50  0001 L BNN
+F 3 "None" H 7540 3540 50  0001 L BNN
+F 4 "Maestro Wireless" H 7540 3540 50  0001 L BNN "Field4"
+F 5 "Gps Module, Mini Outline w/ Ant" H 7540 3540 50  0001 L BNN "Field5"
+F 6 "Module Maestro Wireless" H 7540 3540 50  0001 L BNN "Field6"
+F 7 "Unavailable" H 7540 3540 50  0001 L BNN "Field7"
+F 8 "A2235-H" H 7540 3540 50  0001 L BNN "Field8"
+	1    7540 3540
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6740 2840 6430 2840
+Wire Wire Line
+	6430 2840 6430 2690
+Connection ~ 6430 2840
+Wire Wire Line
+	6430 2840 6350 2840
+$Comp
+L Device:R R?
+U 1 1 5C124E09
+P 6430 2540
+F 0 "R?" H 6500 2586 50  0000 L CNN
+F 1 "R" H 6500 2495 50  0000 L CNN
+F 2 "" V 6360 2540 50  0001 C CNN
+F 3 "~" H 6430 2540 50  0001 C CNN
+	1    6430 2540
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5C124EAD
+P 6430 2390
+F 0 "#PWR?" H 6430 2240 50  0001 C CNN
+F 1 "+3V3" H 6445 2563 50  0000 C CNN
+F 2 "" H 6430 2390 50  0001 C CNN
+F 3 "" H 6430 2390 50  0001 C CNN
+	1    6430 2390
+	1    0    0    -1  
+$EndComp
+Text Label 6740 3240 2    50   ~ 0
+SD0
+Text Label 6740 3440 2    50   ~ 0
+SCK
+Text Label 6740 3540 2    50   ~ 0
+SS
+Wire Wire Line
+	8340 2740 8530 2740
+Connection ~ 8530 2740
+Wire Wire Line
+	8530 2740 8640 2740
+Wire Wire Line
+	8530 2490 8530 2740
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5C124FDC
+P 8530 2490
+F 0 "#PWR?" H 8530 2340 50  0001 C CNN
+F 1 "+3V3" H 8545 2663 50  0000 C CNN
+F 2 "" H 8530 2490 50  0001 C CNN
+F 3 "" H 8530 2490 50  0001 C CNN
+	1    8530 2490
+	1    0    0    -1  
+$EndComp
+Text Label 6350 2840 2    50   ~ 0
+RESET
+$Comp
+L Device:C C?
+U 1 1 5C12505F
+P 8790 2740
+F 0 "C?" V 9042 2740 50  0000 C CNN
+F 1 "0.1µf" V 8951 2740 50  0000 C CNN
+F 2 "" H 8828 2590 50  0001 C CNN
+F 3 "~" H 8790 2740 50  0001 C CNN
+	1    8790 2740
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C1251A0
+P 9380 2790
+F 0 "#PWR?" H 9380 2540 50  0001 C CNN
+F 1 "GND" H 9385 2617 50  0000 C CNN
+F 2 "" H 9380 2790 50  0001 C CNN
+F 3 "" H 9380 2790 50  0001 C CNN
+	1    9380 2790
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8940 2740 9380 2740
+Wire Wire Line
+	9380 2740 9380 2790
+Text Label 8340 3140 0    50   ~ 0
+WAKE_UP
+Wire Wire Line
+	8340 3240 9090 3240
+Wire Wire Line
+	9090 3240 9090 3470
+$Comp
+L Device:LED D?
+U 1 1 5C1252F6
+P 9090 3620
+F 0 "D?" V 9128 3503 50  0000 R CNN
+F 1 "LED" V 9037 3503 50  0000 R CNN
+F 2 "" H 9090 3620 50  0001 C CNN
+F 3 "~" H 9090 3620 50  0001 C CNN
+	1    9090 3620
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C12546E
+P 9090 3920
+F 0 "R?" H 9160 3966 50  0000 L CNN
+F 1 "330" H 9160 3875 50  0000 L CNN
+F 2 "" V 9020 3920 50  0001 C CNN
+F 3 "~" H 9090 3920 50  0001 C CNN
+	1    9090 3920
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C1254E1
+P 9090 4070
+F 0 "#PWR?" H 9090 3820 50  0001 C CNN
+F 1 "GND" H 9095 3897 50  0000 C CNN
+F 2 "" H 9090 4070 50  0001 C CNN
+F 3 "" H 9090 4070 50  0001 C CNN
+	1    9090 4070
+	1    0    0    -1  
+$EndComp
+Text Label 8340 3340 0    50   ~ 0
+SDI
+$EndSCHEMATC
