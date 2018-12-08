@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L vent-rescue:PIC18F26K83-canhw U?
+L canhw:PIC18F26K83 U?
 U 1 1 5BA74E7A
 P 4000 4400
 AR Path="/5B9CFC89/5BA74E7A" Ref="U?"  Part="1" 
@@ -30,7 +30,7 @@ F 3 "" H 4450 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L vent-rescue:MCP2562-canhw U?
+L canhw:MCP2562 U?
 U 1 1 5BA74E81
 P 9050 4150
 AR Path="/5B9CFC89/5BA74E81" Ref="U?"  Part="1" 

@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L vent-rescue:DAC5571-canhw U6
+L canhw:DAC5571 U6
 U 1 1 5BABF85F
 P 2550 5150
 F 0 "U6" H 2550 5375 50  0000 C CNN
@@ -26,7 +26,7 @@ F 3 "" H 2650 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L vent-rescue:DAC5571-canhw U4
+L canhw:DAC5571 U4
 U 1 1 5BABF939
 P 2550 2950
 F 0 "U4" H 2550 3175 50  0000 C CNN
@@ -64,7 +64,7 @@ Wire Wire Line
 Wire Wire Line
 	1300 3050 1700 3050
 $Comp
-L vent-rescue:TS391ILT-canhw U5
+L canhw:TS391ILT U5
 U 1 1 5BABFFB3
 P 3950 3200
 F 0 "U5" H 4050 3050 50  0000 L CNN
@@ -75,7 +75,7 @@ F 3 "" H 3950 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L vent-rescue:TS391ILT-canhw U7
+L canhw:TS391ILT U7
 U 1 1 5BAC0502
 P 3950 5150
 F 0 "U7" H 4050 5000 50  0000 L CNN
@@ -722,7 +722,7 @@ F 3 "" H 5250 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L vent-rescue:5VBAT-canhw #U012
+L canhw:5VBAT #U012
 U 1 1 5BB196ED
 P 2000 2800
 AR Path="/5BB196ED" Ref="#U012"  Part="1" 
@@ -735,7 +735,7 @@ F 3 "" H 2000 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L vent-rescue:5VBAT-canhw #U011
+L canhw:5VBAT #U011
 U 1 1 5BB19751
 P 3000 2550
 AR Path="/5BB19751" Ref="#U011"  Part="1" 
@@ -748,7 +748,7 @@ F 3 "" H 3000 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L vent-rescue:5VBAT-canhw #U013
+L canhw:5VBAT #U013
 U 1 1 5BB19C8B
 P 3950 2800
 AR Path="/5BB19C8B" Ref="#U013"  Part="1" 
@@ -761,7 +761,7 @@ F 3 "" H 3950 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L vent-rescue:5VBAT-canhw #U016
+L canhw:5VBAT #U016
 U 1 1 5BB19E99
 P 3950 4750
 AR Path="/5BB19E99" Ref="#U016"  Part="1" 
@@ -774,7 +774,7 @@ F 3 "" H 3950 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L vent-rescue:5VBAT-canhw #U015
+L canhw:5VBAT #U015
 U 1 1 5BB19EDA
 P 3000 4750
 AR Path="/5BB19EDA" Ref="#U015"  Part="1" 
@@ -787,7 +787,7 @@ F 3 "" H 3000 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L vent-rescue:5VBAT-canhw #U014
+L canhw:5VBAT #U014
 U 1 1 5BB1A326
 P 5200 4050
 AR Path="/5BB1A326" Ref="#U014"  Part="1" 
@@ -800,7 +800,7 @@ F 3 "" H 5200 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L vent-rescue:5VBAT-canhw #U010
+L canhw:5VBAT #U010
 U 1 1 5BB1A81D
 P 5250 1900
 AR Path="/5BB1A81D" Ref="#U010"  Part="1" 
@@ -813,7 +813,7 @@ F 3 "" H 5250 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L vent-rescue:5VBAT-canhw #U?
+L canhw:5VBAT #U?
 U 1 1 5C08A25D
 P 4650 2850
 AR Path="/5C08A25D" Ref="#U?"  Part="1" 
@@ -826,7 +826,7 @@ F 3 "" H 4650 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L vent-rescue:5VBAT-canhw #U?
+L canhw:5VBAT #U?
 U 1 1 5C08A2BA
 P 4650 4800
 AR Path="/5C08A2BA" Ref="#U?"  Part="1" 
@@ -840,11 +840,6 @@ F 3 "" H 4650 4800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10150 3900 9800 3900
-Connection ~ 9800 3900
-Wire Wire Line
-	9800 3900 9100 3900
-Wire Wire Line
-	9100 3900 9100 3600
 Wire Wire Line
 	7300 3900 7650 3900
 Connection ~ 7650 3900
@@ -852,4 +847,9 @@ Wire Wire Line
 	7650 3900 8350 3900
 Wire Wire Line
 	8350 3900 8350 3600
+Connection ~ 9800 3900
+Wire Wire Line
+	9800 3900 9100 3900
+Wire Wire Line
+	9100 3900 9100 3600
 $EndSCHEMATC
