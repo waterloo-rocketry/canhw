@@ -108,7 +108,7 @@ Wire Wire Line
 Wire Wire Line
 	7900 1900 8000 1900
 $Comp
-L vent-rescue:INA180-canhw U1
+L canhw:INA180 U1
 U 1 1 5BAADED8
 P 8650 2900
 F 0 "U1" H 8600 2428 50  0000 C CNN
@@ -280,7 +280,7 @@ F 3 "~" H 7750 1900 50  0001 C CNN
 $EndComp
 NoConn ~ 6150 1800
 $Comp
-L vent-rescue:L78L05AC-canhw U9
+L canhw:L78L05AC U9
 U 1 1 5BB0ADE7
 P 3450 4850
 F 0 "U9" H 3475 5115 50  0000 C CNN
@@ -373,7 +373,7 @@ Connection ~ 3950 5050
 Wire Wire Line
 	3950 5050 3950 4950
 $Comp
-L vent-rescue:5VBAT-canhw #U08
+L canhw:5VBAT #U08
 U 1 1 5BB11BC0
 P 4450 4750
 F 0 "#U08" H 4600 4900 50  0001 C CNN
