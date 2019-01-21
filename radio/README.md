@@ -1,12 +1,13 @@
 # Radio baord
 
-The radio board is used to receive signals from the controller operated on ground. These signals are used to control the other boards
-mounted onto the rocket. It also sends signals to the controller to relay various data back to ground control.
+The radio board is the interface between the electronics inside the rocket and those on the ground at mission control. The radio board receives commands and either acts upon them or relays them to the other boards inside the rocket. This board is responsible for delivering power to and communicating with the vent, injector, sensor, and logger boards over CAN. The status of each connected board (such as valve position status and error states) can be send over CAN and broadcast to mission control over radio.
 
-## Front of radio board:
+The radio board is powered from a single lithium polymer battery.
+
+## Front:
 
 ![front of radio](/images/radio_front.jpg)
 
-## Back of radio board:
+## Back:
 
 ![back of radio](/images/radio_back.jpg)
