@@ -128,28 +128,6 @@ Text HLabel 4620 3770 0    50   Input ~ 0
 GPS_RX
 Text HLabel 6950 4180 2    50   Input ~ 0
 GPS_TX
-$Comp
-L Device:R R21
-U 1 1 5C08192E
-P 4350 4340
-F 0 "R21" V 4143 4340 50  0000 C CNN
-F 1 "0" V 4234 4340 50  0000 C CNN
-F 2 "" V 4280 4340 50  0001 C CNN
-F 3 "~" H 4350 4340 50  0001 C CNN
-	1    4350 4340
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R23
-U 1 1 5C081A32
-P 4350 4680
-F 0 "R23" V 4143 4680 50  0000 C CNN
-F 1 "0" V 4234 4680 50  0000 C CNN
-F 2 "" V 4280 4680 50  0001 C CNN
-F 3 "~" H 4350 4680 50  0001 C CNN
-	1    4350 4680
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4920 4340 4920 4370
 Wire Wire Line
@@ -342,4 +320,8 @@ Wire Wire Line
 	4800 4680 4800 4470
 Wire Wire Line
 	4800 4470 4920 4470
+Wire Wire Line
+	4500 4340 4200 4340
+Wire Wire Line
+	4200 4680 4500 4680
 $EndSCHEMATC

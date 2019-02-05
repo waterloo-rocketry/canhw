@@ -17,7 +17,7 @@ $EndDescr
 $Sheet
 S 1340 2030 1400 1140
 U 5C0142FC
-F0 "POWER" 50
+F0 "CURR_AMP" 50
 F1 "power.sch" 50
 F2 "CURR_AMP" I R 2740 2360 50 
 $EndSheet
