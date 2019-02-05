@@ -416,8 +416,6 @@ Text HLabel 3800 6750 2    50   Input ~ 0
 CURR_BUS
 Text HLabel 5700 2050 2    50   Input ~ 0
 CURR_BATT
-Text HLabel 5800 5550 0    50   Input ~ 0
-BUS_EN
 $Comp
 L Device:R R6
 U 1 1 5BA12469
@@ -637,13 +635,13 @@ $EndComp
 $Comp
 L power:+12V #PWR031
 U 1 1 5BAF9100
-P 8000 3850
-F 0 "#PWR031" H 8000 3700 50  0001 C CNN
-F 1 "+12V" H 8015 4023 50  0000 C CNN
-F 2 "" H 8000 3850 50  0001 C CNN
-F 3 "" H 8000 3850 50  0001 C CNN
-	1    8000 3850
-	1    0    0    -1  
+P 8000 4250
+F 0 "#PWR031" H 8000 4100 50  0001 C CNN
+F 1 "+12V" H 8015 4423 50  0000 C CNN
+F 2 "" H 8000 4250 50  0001 C CNN
+F 3 "" H 8000 4250 50  0001 C CNN
+	1    8000 4250
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:Q_PMOS_GSD Q1
@@ -672,7 +670,7 @@ Sensed_5V
 Wire Wire Line
 	2900 5250 3100 5250
 Connection ~ 2900 5250
-Text Label 8100 5000 0    50   ~ 0
+Text Label 8150 5650 0    50   ~ 0
 Sensed_5V
 Wire Wire Line
 	7350 4100 7350 4050
@@ -700,22 +698,6 @@ Connection ~ 7350 4050
 Wire Wire Line
 	7350 4050 7350 3950
 Wire Wire Line
-	8000 5100 8000 5000
-Wire Wire Line
-	8000 5000 8100 5000
-Wire Wire Line
-	8000 4250 8000 4800
-Wire Wire Line
-	8000 4800 9450 4800
-Wire Wire Line
-	8000 5500 8000 5600
-Wire Wire Line
-	8000 5600 8750 5600
-Wire Wire Line
-	8750 5600 8750 4900
-Wire Wire Line
-	8750 4900 9450 4900
-Wire Wire Line
 	8000 5900 8000 5750
 Wire Wire Line
 	8000 5750 9000 5750
@@ -729,7 +711,7 @@ U 1 1 5BB04A6A
 P 4350 4250
 F 0 "U5" H 4350 4515 50  0000 C CNN
 F 1 "AP1509" H 4350 4424 50  0000 C CNN
-F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 4350 3750 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4350 3750 50  0001 C CNN
 F 3 "" H 4350 3750 50  0001 C CNN
 	1    4350 4250
 	1    0    0    -1  
@@ -988,9 +970,7 @@ F 3 "~" H 6500 4450 50  0001 C CNN
 	1    6500 4450
 	1    0    0    -1  
 $EndComp
-Text HLabel 5800 4300 0    50   Input ~ 0
-BUS_EN
-Text HLabel 5800 6100 0    50   Input ~ 0
+Text HLabel 5650 6100 0    50   Input ~ 0
 BUS_EN
 $Comp
 L power:GND #PWR?
@@ -1030,4 +1010,28 @@ Wire Wire Line
 	6500 4300 7050 4300
 Wire Wire Line
 	6500 5550 7050 5550
+Wire Wire Line
+	8000 3850 8000 3700
+Wire Wire Line
+	8000 3700 8650 3700
+Wire Wire Line
+	8650 4800 9450 4800
+Wire Wire Line
+	8650 3700 8650 4800
+Wire Wire Line
+	8000 4900 8000 5100
+Wire Wire Line
+	8000 4900 9450 4900
+Wire Wire Line
+	8000 5650 8150 5650
+Wire Wire Line
+	8000 5500 8000 5650
+Wire Wire Line
+	5800 4300 5800 5550
+Connection ~ 5800 5550
+Wire Wire Line
+	5800 5550 5800 6100
+Wire Wire Line
+	5650 6100 5800 6100
+Connection ~ 5800 6100
 $EndSCHEMATC
