@@ -530,4 +530,20 @@ Text Label 5150 3400 2    50   ~ 0
 LED2
 Text Label 5150 3500 2    50   ~ 0
 LED3
+Text HLabel 3100 3400 0    50   Output ~ 0
+BUS_EN
+Wire Wire Line
+	5150 3800 3800 3800
+Wire Wire Line
+	3800 3800 3800 3400
+Wire Wire Line
+	3800 3400 3100 3400
+Text HLabel 3100 3500 0    50   Output ~ 0
+BUS_EN
+Wire Wire Line
+	3100 3500 3700 3500
+Wire Wire Line
+	3700 3500 3700 4200
+Wire Wire Line
+	3700 4200 5150 4200
 $EndSCHEMATC
