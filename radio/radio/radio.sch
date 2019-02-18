@@ -21,8 +21,10 @@ F0 "Power" 50
 F1 "power.sch" 50
 F2 "CURR_BUS" I R 3100 3000 50 
 F3 "CURR_BATT" I R 3100 3100 50 
-F4 "BUS_EN" I R 3100 3200 50 
-F5 "BATT_VSENSE" I R 3100 3300 50 
+F4 "BATT_VSENSE" I R 3100 3300 50 
+F5 "BUS_EN_GND" I R 3100 3500 50 
+F6 "BUS_EN_5V" I R 3100 3400 50 
+F7 "BUS_EN_12V" I R 3100 3200 50 
 $EndSheet
 $Comp
 L radio-rescue:PIC18F26K83-canhw U1
@@ -530,16 +532,12 @@ Text Label 5150 3400 2    50   ~ 0
 LED2
 Text Label 5150 3500 2    50   ~ 0
 LED3
-Text HLabel 3100 3400 0    50   Output ~ 0
-BUS_EN
 Wire Wire Line
 	5150 3800 3800 3800
 Wire Wire Line
 	3800 3800 3800 3400
 Wire Wire Line
 	3800 3400 3100 3400
-Text HLabel 3100 3500 0    50   Output ~ 0
-BUS_EN
 Wire Wire Line
 	3100 3500 3700 3500
 Wire Wire Line
