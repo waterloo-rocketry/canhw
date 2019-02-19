@@ -100,7 +100,7 @@ U 1 1 5C025AC3
 P 6900 1900
 F 0 "F1" H 6988 1946 50  0001 L CNN
 F 1 "Polyfuse" V 6988 1855 50  0000 L CNN
-F 2 "canhw_footprints:Fuseholder_36-3557-15-ND" H 6950 1700 50  0001 L CNN
+F 2 "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6950 1700 50  0001 L CNN
 F 3 "~" H 6900 1900 50  0001 C CNN
 	1    6900 1900
 	0    -1   -1   0   

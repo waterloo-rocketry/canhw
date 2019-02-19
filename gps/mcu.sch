@@ -697,17 +697,6 @@ F 3 "" H 8760 4120 50  0001 C CNN
 	1    8760 4120
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR023
-U 1 1 5C4C5A1F
-P 6960 4310
-F 0 "#PWR023" H 6960 4160 50  0001 C CNN
-F 1 "+5V" H 6975 4483 50  0000 C CNN
-F 2 "" H 6960 4310 50  0001 C CNN
-F 3 "" H 6960 4310 50  0001 C CNN
-	1    6960 4310
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8680 4810 10230 4810
 $Comp
@@ -732,15 +721,10 @@ F 3 "~" H 10230 4660 50  0001 C CNN
 	1    10230 4660
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6830 4610 6960 4610
-Wire Wire Line
-	6960 4310 6960 4610
-Connection ~ 6960 4610
-Wire Wire Line
-	6960 4610 7580 4610
 Text HLabel 8680 4610 2    50   Input ~ 0
 PIC_RESET_3V3
 Wire Wire Line
 	8680 4710 9440 4710
+Wire Wire Line
+	6830 4610 7580 4610
 $EndSCHEMATC
