@@ -238,11 +238,7 @@ Wire Wire Line
 Connection ~ 1190 3080
 Text Label 940  3080 0    50   ~ 0
 ~MCLR
-Wire Wire Line
-	1290 3480 1040 3480
-NoConn ~ 1040 3480
-Text Label 1040 3480 0    50   ~ 0
-VREF+
+NoConn ~ 1290 3480
 Connection ~ 3390 4380
 Wire Wire Line
 	2740 3580 4090 3580

@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L gps-rescue:A2235-H-canhw U?
+L gps-rescue:A2235-H-canhw-gps-rescue U?
 U 1 1 5C124D1F
 P 5720 4070
 AR Path="/5C124D1F" Ref="U?"  Part="1" 
@@ -55,7 +55,7 @@ L Device:C C10
 U 1 1 5C12505F
 P 6970 3270
 F 0 "C10" V 7222 3270 50  0000 C CNN
-F 1 "0.1µf" V 7131 3270 50  0000 C CNN
+F 1 "0.1µF" V 7131 3270 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7008 3120 50  0001 C CNN
 F 3 "~" H 6970 3270 50  0001 C CNN
 	1    6970 3270

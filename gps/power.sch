@@ -117,7 +117,7 @@ F 3 "" H 8400 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L gps-rescue:INA180-canhw U?
+L gps-rescue:INA180-canhw-gps-rescue U?
 U 1 1 5C02A5D4
 P 8650 2900
 AR Path="/5C02A5D4" Ref="U?"  Part="1" 
@@ -219,7 +219,7 @@ P 6390 4400
 AR Path="/5C01481A/5C02BEED" Ref="C?"  Part="1" 
 AR Path="/5C0142FC/5C02BEED" Ref="C2"  Part="1" 
 F 0 "C2" H 6505 4446 50  0000 L CNN
-F 1 "1µf" H 6505 4355 50  0000 L CNN
+F 1 "1µF" H 6505 4355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6428 4250 50  0001 C CNN
 F 3 "~" H 6390 4400 50  0001 C CNN
 	1    6390 4400
@@ -232,7 +232,7 @@ P 8380 4400
 AR Path="/5C01481A/5C02BEF4" Ref="C?"  Part="1" 
 AR Path="/5C0142FC/5C02BEF4" Ref="C3"  Part="1" 
 F 0 "C3" H 8495 4446 50  0000 L CNN
-F 1 "1µf" H 8495 4355 50  0000 L CNN
+F 1 "1µF" H 8495 4355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8418 4250 50  0001 C CNN
 F 3 "~" H 8380 4400 50  0001 C CNN
 	1    8380 4400
@@ -283,7 +283,7 @@ Connection ~ 6390 4250
 Wire Wire Line
 	8380 4250 8650 4250
 $Comp
-L gps-rescue:MIC5504-3.3-canhw U?
+L gps-rescue:MIC5504-3.3-canhw-gps-rescue U?
 U 1 1 5C02BF12
 P 7460 4250
 AR Path="/5C01481A/5C02BF12" Ref="U?"  Part="1" 
