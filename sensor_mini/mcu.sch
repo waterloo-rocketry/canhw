@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -235,7 +235,7 @@ Wire Wire Line
 Wire Wire Line
 	3350 4500 3600 4500
 Wire Wire Line
-	5450 4300 5050 4300
+	5450 4400 5050 4400
 Text Label 5450 3800 0    50   ~ 0
 ICSPDAT
 Wire Wire Line
@@ -249,9 +249,9 @@ CAN_TX
 Text Label 5450 4800 0    50   ~ 0
 CAN_RX
 Wire Wire Line
-	5450 4400 5050 4400
-Wire Wire Line
 	5450 4500 5050 4500
+Wire Wire Line
+	5450 4600 5050 4600
 Wire Wire Line
 	8800 2750 8800 2850
 Wire Wire Line
@@ -263,7 +263,7 @@ Wire Wire Line
 	8500 2750 8500 2950
 Wire Wire Line
 	8500 2950 8850 2950
-Text HLabel 5450 4200 2    50   Input ~ 0
+Text HLabel 5450 4300 2    50   Input ~ 0
 MISO
 $Comp
 L Device:R_US R3
@@ -337,47 +337,25 @@ Connection ~ 5050 3350
 Wire Wire Line
 	5050 3350 5050 3700
 $Comp
-L Device:LED D2
-U 1 1 5BBC90C4
-P 2600 3350
-F 0 "D2" V 2638 3233 50  0000 R CNN
-F 1 "LED" V 2547 3233 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2600 3350 50  0001 C CNN
-F 3 "~" H 2600 3350 50  0001 C CNN
-	1    2600 3350
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_US R5
-U 1 1 5BBC918F
-P 2600 3050
-F 0 "R5" H 2668 3096 50  0000 L CNN
-F 1 "330R" H 2668 3005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2640 3040 50  0001 C CNN
-F 3 "~" H 2600 3050 50  0001 C CNN
-	1    2600 3050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:LED D1
 U 1 1 5BBCCFE3
-P 1800 3350
-F 0 "D1" V 1838 3233 50  0000 R CNN
-F 1 "LED" V 1747 3233 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1800 3350 50  0001 C CNN
-F 3 "~" H 1800 3350 50  0001 C CNN
-	1    1800 3350
+P 6050 3450
+F 0 "D1" V 6088 3333 50  0000 R CNN
+F 1 "LED" V 5997 3333 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6050 3450 50  0001 C CNN
+F 3 "~" H 6050 3450 50  0001 C CNN
+	1    6050 3450
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_US R4
 U 1 1 5BBCCFEA
-P 1800 3050
-F 0 "R4" H 1868 3096 50  0000 L CNN
-F 1 "330R" H 1868 3005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1840 3040 50  0001 C CNN
-F 3 "~" H 1800 3050 50  0001 C CNN
-	1    1800 3050
+P 6050 3150
+F 0 "R4" H 6118 3196 50  0000 L CNN
+F 1 "330R" H 6118 3105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6090 3140 50  0001 C CNN
+F 3 "~" H 6050 3150 50  0001 C CNN
+	1    6050 3150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -396,24 +374,24 @@ Wire Wire Line
 Wire Wire Line
 	5250 5000 5250 5250
 Text HLabel 3200 3800 0    50   Input ~ 0
-CURR_INPUT
-Text HLabel 5450 4300 2    50   Input ~ 0
-MOSI
+CURR_INPUT_5V
 Text HLabel 5450 4400 2    50   Input ~ 0
+MOSI
+Text HLabel 5450 4500 2    50   Input ~ 0
 SCLK
 Wire Wire Line
-	5450 4200 5050 4200
+	5450 4300 5050 4300
 Wire Wire Line
-	5450 4100 5050 4100
+	5450 4200 5050 4200
 Wire Wire Line
 	5050 4800 5450 4800
 Wire Wire Line
 	5050 4700 5450 4700
 Text HLabel 5450 4000 2    50   Input ~ 0
 IMU2_CS
-Text HLabel 5450 4500 2    50   Input ~ 0
+Text HLabel 5450 4600 2    50   Input ~ 0
 IMU1_CS
-Text HLabel 5450 4100 2    50   Input ~ 0
+Text HLabel 5450 4200 2    50   Input ~ 0
 BARO_CS
 Wire Wire Line
 	3200 3800 3600 3800
@@ -450,28 +428,15 @@ F 3 "" H 4400 1100 50  0001 C CNN
 $EndComp
 $Comp
 L power:+1V8 #PWR?
-U 1 1 5C62E62A
-P 2600 2900
-AR Path="/5BB17361/5C62E62A" Ref="#PWR?"  Part="1" 
-AR Path="/5BB1460E/5C62E62A" Ref="#PWR0106"  Part="1" 
-F 0 "#PWR0106" H 2600 2750 50  0001 C CNN
-F 1 "+1V8" H 2500 3100 50  0000 C CNN
-F 2 "" H 2600 2900 50  0001 C CNN
-F 3 "" H 2600 2900 50  0001 C CNN
-	1    2600 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+1V8 #PWR?
 U 1 1 5C63057A
-P 1800 2900
+P 6050 3000
 AR Path="/5BB17361/5C63057A" Ref="#PWR?"  Part="1" 
 AR Path="/5BB1460E/5C63057A" Ref="#PWR0108"  Part="1" 
-F 0 "#PWR0108" H 1800 2750 50  0001 C CNN
-F 1 "+1V8" H 1700 3100 50  0000 C CNN
-F 2 "" H 1800 2900 50  0001 C CNN
-F 3 "" H 1800 2900 50  0001 C CNN
-	1    1800 2900
+F 0 "#PWR0108" H 6050 2850 50  0001 C CNN
+F 1 "+1V8" H 5950 3200 50  0000 C CNN
+F 2 "" H 6050 3000 50  0001 C CNN
+F 3 "" H 6050 3000 50  0001 C CNN
+	1    6050 3000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -488,13 +453,7 @@ F 3 "" H 5050 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 3500 2600 3900
-Wire Wire Line
-	2600 3900 3600 3900
-Wire Wire Line
-	1800 3500 1800 4000
-Wire Wire Line
-	3600 4000 1800 4000
+	6050 3600 6050 4100
 $Comp
 L power:+1V8 #PWR?
 U 1 1 5C6001E1
@@ -510,4 +469,18 @@ F 3 "" H 3300 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5050 4000 5450 4000
+Text HLabel 3200 4100 0    50   Input ~ 0
+CURR_INPUT_12V
+Wire Wire Line
+	3200 4100 3600 4100
+Text HLabel 3200 3900 0    50   Input ~ 0
+THERM_0
+Text HLabel 3200 4000 0    50   Input ~ 0
+PRESSURE
+Wire Wire Line
+	3200 3900 3600 3900
+Wire Wire Line
+	3200 4000 3600 4000
+Wire Wire Line
+	5050 4100 6050 4100
 $EndSCHEMATC
