@@ -175,8 +175,6 @@ F 3 "~" H 2600 4000 50  0001 C CNN
 	1    2600 4000
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2450 4000 2350 4000
 Connection ~ 3200 4000
 $Comp
 L Device:R_US R?
@@ -300,40 +298,6 @@ F 3 "" H 9600 5250 50  0001 C CNN
 	1    9600 5250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:TestPoint TP4
-U 1 1 5BDCB8C1
-P 2900 3650
-F 0 "TP4" H 2958 3770 50  0000 L CNN
-F 1 "TestPoint" H 2958 3679 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3100 3650 50  0001 C CNN
-F 3 "~" H 3100 3650 50  0001 C CNN
-	1    2900 3650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2900 3650 2900 4000
-Wire Wire Line
-	2750 4000 2900 4000
-Connection ~ 2900 4000
-Wire Wire Line
-	2900 4000 3200 4000
-$Comp
-L Connector:TestPoint TP3
-U 1 1 5BDCD140
-P 2350 3650
-F 0 "TP3" H 2408 3770 50  0000 L CNN
-F 1 "TestPoint" H 2408 3679 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2550 3650 50  0001 C CNN
-F 3 "~" H 2550 3650 50  0001 C CNN
-	1    2350 3650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2350 3650 2350 4000
-Connection ~ 2350 4000
-Wire Wire Line
-	2350 4000 1850 4000
 Wire Wire Line
 	4200 1600 4200 1500
 Wire Wire Line
@@ -458,46 +422,10 @@ F 3 "~" H 2600 1600 50  0001 C CNN
 	1    2600 1600
 	0    1    1    0   
 $EndComp
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5C961755
-P 2900 1200
-F 0 "TP2" H 2958 1320 50  0000 L CNN
-F 1 "TestPoint" H 2958 1229 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3100 1200 50  0001 C CNN
-F 3 "~" H 3100 1200 50  0001 C CNN
-	1    2900 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5C9617CF
-P 2350 1200
-F 0 "TP1" H 2408 1320 50  0000 L CNN
-F 1 "TestPoint" H 2408 1229 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2550 1200 50  0001 C CNN
-F 3 "~" H 2550 1200 50  0001 C CNN
-	1    2350 1200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1850 3900 2200 3900
 Wire Wire Line
 	2200 3900 2200 1600
-Wire Wire Line
-	2200 1600 2350 1600
-Wire Wire Line
-	2350 1200 2350 1600
-Connection ~ 2350 1600
-Wire Wire Line
-	2350 1600 2450 1600
-Wire Wire Line
-	2750 1600 2900 1600
-Wire Wire Line
-	2900 1600 2900 1200
-Wire Wire Line
-	2900 1600 3300 1600
-Connection ~ 2900 1600
 $Comp
 L power:+12V #PWR01
 U 1 1 5C9647FF
@@ -609,4 +537,12 @@ F 3 "" H 9350 4500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9350 4450 9350 4500
+Wire Wire Line
+	2200 1600 2450 1600
+Wire Wire Line
+	2750 1600 3300 1600
+Wire Wire Line
+	2750 4000 3200 4000
+Wire Wire Line
+	1850 4000 2450 4000
 $EndSCHEMATC
