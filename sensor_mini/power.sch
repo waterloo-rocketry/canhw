@@ -44,7 +44,7 @@ Wire Wire Line
 Wire Wire Line
 	3600 4000 3700 4000
 $Comp
-L sensors-rescue:INA180-canhw U?
+L sensors-rescue:INA180-canhw-sensors-rescue U?
 U 1 1 5BB12B37
 P 4350 5000
 AR Path="/5BB11D6C/5BB12B37" Ref="U?"  Part="1" 
@@ -279,7 +279,7 @@ Connection ~ 9200 5350
 Wire Wire Line
 	9200 5350 9600 5350
 $Comp
-L sensors-rescue:MIC5365-1.8-canhw U8
+L sensors-rescue:MIC5365-1.8-canhw-sensors-rescue U8
 U 1 1 5BD847E8
 P 8400 5350
 F 0 "U8" H 8375 5575 50  0000 C CNN
@@ -339,7 +339,7 @@ Wire Wire Line
 Wire Wire Line
 	3700 1600 3800 1600
 $Comp
-L sensors-rescue:INA180-canhw U?
+L sensors-rescue:INA180-canhw-sensors-rescue U?
 U 1 1 5C960D34
 P 4450 2600
 AR Path="/5BB11D6C/5C960D34" Ref="U?"  Part="1" 
