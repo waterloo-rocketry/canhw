@@ -104,7 +104,7 @@ U 1 1 5B9DEFF0
 P 9150 2600
 F 0 "U4" H 9150 2942 50  0000 C CNN
 F 1 "AP2114H-3.3" H 9150 2851 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 9150 2925 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 9150 2925 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/AP2112.pdf" H 9150 2700 50  0001 C CNN
 	1    9150 2600
 	1    0    0    -1  
