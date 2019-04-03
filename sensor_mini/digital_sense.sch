@@ -466,4 +466,8 @@ Wire Wire Line
 	2450 2500 2850 2500
 Wire Wire Line
 	2450 2600 2850 2600
+Text Notes 7650 3600 0    50   ~ 0
+Accel/Gyro IMU\nINT line shared for accel/gyro data ready
+Text Notes 3850 3700 0    50   ~ 0
+Accel/Mag IMU\nAccel interrupt unused
 $EndSCHEMATC
