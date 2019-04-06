@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:power-cache
+LIBS:radio-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 3 3
 Title ""
 Date ""
 Rev ""
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L radio-rescue:INA180-canhw U3
+L radio-rescue:INA180-canhw-radio-rescue U3
 U 1 1 5B9DCC5E
 P 5300 2050
 F 0 "U3" H 5250 1578 50  0000 C CNN
@@ -249,7 +249,7 @@ CANH
 Text GLabel 9450 5200 0    50   Input ~ 0
 CANL
 $Comp
-L radio-rescue:INA180-canhw U6
+L radio-rescue:INA180-canhw-radio-rescue U6
 U 1 1 5B9E73E8
 P 3400 6750
 F 0 "U6" H 3350 6278 50  0000 C CNN
@@ -546,8 +546,8 @@ $Comp
 L Device:R R20
 U 1 1 5BABB435
 P 6050 6100
-F 0 "R20" H 6120 6146 50  0000 L CNN
-F 1 "220" H 6120 6055 50  0000 L CNN
+F 0 "R20" V 5850 6050 50  0000 L CNN
+F 1 "220" V 5950 6050 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5980 6100 50  0001 C CNN
 F 3 "~" H 6050 6100 50  0001 C CNN
 	1    6050 6100
@@ -704,9 +704,11 @@ Wire Wire Line
 Wire Wire Line
 	9000 5000 9450 5000
 $Comp
-L radio-rescue:AP1509-canhw U5
+L radio-rescue:AP1509-canhw-radio-rescue U5
 U 1 1 5BB04A6A
 P 4350 4250
+AR Path="/5BB04A6A" Ref="U5"  Part="1" 
+AR Path="/5B9FA408/5BB04A6A" Ref="U5"  Part="1" 
 F 0 "U5" H 4350 4515 50  0000 C CNN
 F 1 "AP1509" H 4350 4424 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4350 3750 50  0001 C CNN
@@ -928,12 +930,12 @@ $Comp
 L Device:R R18
 U 1 1 5C0FDDFF
 P 6050 5550
-F 0 "R18" V 6257 5550 50  0000 C CNN
-F 1 "220" V 6166 5550 50  0000 C CNN
+F 0 "R18" V 5850 5550 50  0000 C CNN
+F 1 "220" V 5950 5550 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5980 5550 50  0001 C CNN
 F 3 "~" H 6050 5550 50  0001 C CNN
 	1    6050 5550
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R14
@@ -971,10 +973,10 @@ $EndComp
 Text HLabel 5650 6100 0    50   Input ~ 0
 BUS_EN_GND
 $Comp
-L power:GND #PWR047
+L power:GND #PWR038
 U 1 1 5C10EFD3
 P 6500 4600
-F 0 "#PWR047" H 6500 4350 50  0001 C CNN
+F 0 "#PWR038" H 6500 4350 50  0001 C CNN
 F 1 "GND" H 6505 4427 50  0000 C CNN
 F 2 "" H 6500 4600 50  0001 C CNN
 F 3 "" H 6500 4600 50  0001 C CNN
@@ -982,10 +984,10 @@ F 3 "" H 6500 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR048
+L power:GND #PWR056
 U 1 1 5C10F30A
 P 6500 5850
-F 0 "#PWR048" H 6500 5600 50  0001 C CNN
+F 0 "#PWR056" H 6500 5600 50  0001 C CNN
 F 1 "GND" H 6505 5677 50  0000 C CNN
 F 2 "" H 6500 5850 50  0001 C CNN
 F 3 "" H 6500 5850 50  0001 C CNN
@@ -1022,12 +1024,12 @@ Wire Wire Line
 	8000 5500 8000 5650
 Wire Wire Line
 	5650 6100 5900 6100
-Text HLabel 5650 5550 0    50   Input ~ 0
-BUS_EN_5V
 Text HLabel 5600 4300 0    50   Input ~ 0
 BUS_EN_12V
 Wire Wire Line
 	5600 4300 5900 4300
 Wire Wire Line
 	5650 5550 5900 5550
+Text HLabel 5650 5550 0    50   Input ~ 0
+BUS_EN_5V
 $EndSCHEMATC
