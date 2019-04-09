@@ -452,7 +452,6 @@ $EndComp
 Wire Wire Line
 	6550 5250 6050 5250
 NoConn ~ 5100 5350
-NoConn ~ 5100 5050
 Wire Wire Line
 	6550 5150 6550 5250
 Wire Wire Line
@@ -470,4 +469,17 @@ Text Notes 7650 3600 0    50   ~ 0
 Accel/Gyro IMU\nINT line shared for accel/gyro data ready
 Text Notes 3850 3700 0    50   ~ 0
 Accel/Mag IMU\nAccel interrupt unused
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5CAC428E
+P 5100 4900
+F 0 "#PWR?" H 5100 4750 50  0001 C CNN
+F 1 "+1V8" H 5115 5073 50  0000 C CNN
+F 2 "" H 5100 4900 50  0001 C CNN
+F 3 "" H 5100 4900 50  0001 C CNN
+	1    5100 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4900 5100 5050
 $EndSCHEMATC

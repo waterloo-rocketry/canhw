@@ -1,4 +1,4 @@
-update=Sat 09 Feb 2019 10:41:46 PM EST
+update=Monday, April 08, 2019 at 08:18:04 pm
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=sensors_mini.net
+LastNetListRead=sensor_mini.net
 PadDrill=0.762
 PadDrillOvalY=0.762
 PadSizeH=1.524
