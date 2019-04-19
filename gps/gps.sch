@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:gps-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -53,8 +53,6 @@ F 3 "~" H 3630 2150 50  0001 C CNN
 	1    3630 2150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3630 2000 3630 1900
 Wire Wire Line
 	3730 2450 3630 2450
 Wire Wire Line
@@ -189,13 +187,13 @@ F 3 "~" H 1890 1280 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+3V3 #PWR?
 U 1 1 5C9976E8
 P 2640 830
 AR Path="/5C0E59C4/5C9976E8" Ref="#PWR?"  Part="1" 
 AR Path="/5C9976E8" Ref="#PWR0103"  Part="1" 
 F 0 "#PWR0103" H 2640 680 50  0001 C CNN
-F 1 "+5V" H 2655 1003 50  0000 C CNN
+F 1 "+3V3" H 2655 1003 50  0000 C CNN
 F 2 "" H 2640 830 50  0001 C CNN
 F 3 "" H 2640 830 50  0001 C CNN
 	1    2640 830 
@@ -246,7 +244,7 @@ Wire Wire Line
 Wire Wire Line
 	5180 3750 5830 3750
 $Comp
-L gps-rescue:MCP2562-canhw-gps-rescue U4
+L gps-rescue:MCP2562-canhw-gps-rescue-gps-rescue U4
 U 1 1 5C997708
 P 6520 5270
 AR Path="/5C997708" Ref="U4"  Part="1" 
@@ -267,56 +265,49 @@ CAN_TX
 Text Label 5580 5570 2    50   ~ 0
 CAN_RX
 Wire Wire Line
-	5820 5130 5820 5270
+	5675 5150 5675 5270
 $Comp
 L power:+5V #PWR?
 U 1 1 5C997714
-P 5820 5130
+P 5675 5150
 AR Path="/5C0E59C4/5C997714" Ref="#PWR?"  Part="1" 
 AR Path="/5C997714" Ref="#PWR0105"  Part="1" 
-F 0 "#PWR0105" H 5820 4980 50  0001 C CNN
-F 1 "+5V" H 5835 5303 50  0000 C CNN
-F 2 "" H 5820 5130 50  0001 C CNN
-F 3 "" H 5820 5130 50  0001 C CNN
-	1    5820 5130
+F 0 "#PWR0105" H 5675 5000 50  0001 C CNN
+F 1 "+5V" H 5690 5323 50  0000 C CNN
+F 2 "" H 5675 5150 50  0001 C CNN
+F 3 "" H 5675 5150 50  0001 C CNN
+	1    5675 5150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5C99771A
-P 5820 5870
+P 5675 5935
 AR Path="/5C0E59C4/5C99771A" Ref="C?"  Part="1" 
 AR Path="/5C99771A" Ref="C5"  Part="1" 
-F 0 "C5" H 5935 5916 50  0000 L CNN
-F 1 "10uF" H 5935 5825 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5858 5720 50  0001 C CNN
-F 3 "~" H 5820 5870 50  0001 C CNN
-	1    5820 5870
+F 0 "C5" H 5790 5981 50  0000 L CNN
+F 1 "10uF" H 5790 5890 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5713 5785 50  0001 C CNN
+F 3 "~" H 5675 5935 50  0001 C CNN
+	1    5675 5935
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5C997721
-P 5820 6020
+P 5675 6085
 AR Path="/5C0E59C4/5C997721" Ref="#PWR?"  Part="1" 
 AR Path="/5C997721" Ref="#PWR0106"  Part="1" 
-F 0 "#PWR0106" H 5820 5770 50  0001 C CNN
-F 1 "GND" H 5825 5847 50  0000 C CNN
-F 2 "" H 5820 6020 50  0001 C CNN
-F 3 "" H 5820 6020 50  0001 C CNN
-	1    5820 6020
+F 0 "#PWR0106" H 5675 5835 50  0001 C CNN
+F 1 "GND" H 5680 5912 50  0000 C CNN
+F 2 "" H 5675 6085 50  0001 C CNN
+F 3 "" H 5675 6085 50  0001 C CNN
+	1    5675 6085
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6020 5270 5820 5270
-Connection ~ 5820 5270
-Wire Wire Line
-	5820 5270 5820 5370
-Wire Wire Line
-	6020 5370 5820 5370
-Connection ~ 5820 5370
-Wire Wire Line
-	5820 5370 5820 5720
+	6020 5270 5675 5270
+Connection ~ 5675 5270
 Wire Wire Line
 	6970 5270 7430 5270
 Wire Wire Line
@@ -429,26 +420,13 @@ $EndComp
 Text Label 10050 5720 0    50   ~ 0
 OSC2
 $Comp
-L power:+5V #PWR?
-U 1 1 5C997769
-P 3630 1900
-AR Path="/5C0E59C4/5C997769" Ref="#PWR?"  Part="1" 
-AR Path="/5C997769" Ref="#PWR0109"  Part="1" 
-F 0 "#PWR0109" H 3630 1750 50  0001 C CNN
-F 1 "+5V" H 3645 2073 50  0000 C CNN
-F 2 "" H 3630 1900 50  0001 C CNN
-F 3 "" H 3630 1900 50  0001 C CNN
-	1    3630 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
+L power:+3V3 #PWR?
 U 1 1 5C99776F
 P 5230 2200
 AR Path="/5C0E59C4/5C99776F" Ref="#PWR?"  Part="1" 
 AR Path="/5C99776F" Ref="#PWR0110"  Part="1" 
 F 0 "#PWR0110" H 5230 2050 50  0001 C CNN
-F 1 "+5V" H 5245 2373 50  0000 C CNN
+F 1 "+3V3" H 5245 2373 50  0000 C CNN
 F 2 "" H 5230 2200 50  0001 C CNN
 F 3 "" H 5230 2200 50  0001 C CNN
 	1    5230 2200
@@ -576,7 +554,7 @@ F 3 "" H 9690 1310 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L gps-rescue:INA180-canhw-gps-rescue U1
+L gps-rescue:INA180-canhw-gps-rescue-gps-rescue U1
 U 1 1 5C99F0C5
 P 9940 2410
 AR Path="/5C99F0C5" Ref="U1"  Part="1" 
@@ -755,7 +733,7 @@ Connection ~ 8010 3790
 Wire Wire Line
 	10000 3790 10270 3790
 $Comp
-L gps-rescue:MIC5504-3.3-canhw-gps-rescue U?
+L gps-rescue:MIC5504-3.3-canhw-gps-rescue-gps-rescue U?
 U 1 1 5C99F11B
 P 9080 3790
 AR Path="/5C01481A/5C99F11B" Ref="U?"  Part="1" 
@@ -782,7 +760,7 @@ Wire Wire Line
 	9530 3790 10000 3790
 Connection ~ 10000 3790
 $Comp
-L gps-rescue:A2235-H-canhw-gps-rescue U5
+L gps-rescue:A2235-H-canhw-gps-rescue-gps-rescue U5
 U 1 1 5C9AF4B5
 P 3150 5510
 AR Path="/5C9AF4B5" Ref="U5"  Part="1" 
@@ -1155,4 +1133,36 @@ Text Label 7660 5370 0    50   ~ 0
 CANH
 Text Label 7660 5470 0    50   ~ 0
 CANL
+Wire Wire Line
+	3630 2000 3630 1900
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5C997769
+P 3630 1900
+AR Path="/5C0E59C4/5C997769" Ref="#PWR?"  Part="1" 
+AR Path="/5C997769" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 3630 1750 50  0001 C CNN
+F 1 "+3V3" H 3645 2073 50  0000 C CNN
+F 2 "" H 3630 1900 50  0001 C CNN
+F 3 "" H 3630 1900 50  0001 C CNN
+	1    3630 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5675 5270 5675 5785
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CC01BFB
+P 5875 5145
+F 0 "#PWR?" H 5875 4995 50  0001 C CNN
+F 1 "+3V3" H 5890 5318 50  0000 C CNN
+F 2 "" H 5875 5145 50  0001 C CNN
+F 3 "" H 5875 5145 50  0001 C CNN
+	1    5875 5145
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5875 5145 5875 5370
+Wire Wire Line
+	5875 5370 6020 5370
 $EndSCHEMATC
