@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:gps-cache
-EELAYER 29 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -244,7 +244,7 @@ Wire Wire Line
 Wire Wire Line
 	5180 3750 5830 3750
 $Comp
-L gps-rescue:MCP2562-canhw-gps-rescue-gps-rescue U4
+L gps-rescue:MCP2562-canhw-gps-rescue-gps-rescue-gps-rescue U4
 U 1 1 5C997708
 P 6520 5270
 AR Path="/5C997708" Ref="U4"  Part="1" 
@@ -554,7 +554,7 @@ F 3 "" H 9690 1310 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L gps-rescue:INA180-canhw-gps-rescue-gps-rescue U1
+L gps-rescue:INA180-canhw-gps-rescue-gps-rescue-gps-rescue U1
 U 1 1 5C99F0C5
 P 9940 2410
 AR Path="/5C99F0C5" Ref="U1"  Part="1" 
@@ -733,7 +733,7 @@ Connection ~ 8010 3790
 Wire Wire Line
 	10000 3790 10270 3790
 $Comp
-L gps-rescue:MIC5504-3.3-canhw-gps-rescue-gps-rescue U?
+L gps-rescue:MIC5504-3.3-canhw-gps-rescue-gps-rescue-gps-rescue U?
 U 1 1 5C99F11B
 P 9080 3790
 AR Path="/5C01481A/5C99F11B" Ref="U?"  Part="1" 
@@ -760,7 +760,7 @@ Wire Wire Line
 	9530 3790 10000 3790
 Connection ~ 10000 3790
 $Comp
-L gps-rescue:A2235-H-canhw-gps-rescue-gps-rescue U5
+L gps-rescue:A2235-H-canhw-gps-rescue-gps-rescue-gps-rescue U5
 U 1 1 5C9AF4B5
 P 3150 5510
 AR Path="/5C9AF4B5" Ref="U5"  Part="1" 
