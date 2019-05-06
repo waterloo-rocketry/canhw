@@ -105,17 +105,6 @@ Text Label 4650 4500 0    50   ~ 0
 ~MCLR
 Text Label 2500 4600 2    50   ~ 0
 CLKOUT
-$Comp
-L power:+5V #PWR09
-U 1 1 5B97E564
-P 2650 4250
-F 0 "#PWR09" H 2650 4100 50  0001 C CNN
-F 1 "+5V" H 2665 4423 50  0000 C CNN
-F 2 "" H 2650 4250 50  0001 C CNN
-F 3 "" H 2650 4250 50  0001 C CNN
-	1    2650 4250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2650 4250 2650 4500
 Wire Wire Line
@@ -338,17 +327,6 @@ Wire Wire Line
 Connection ~ 4350 4500
 Wire Wire Line
 	4350 4500 4650 4500
-$Comp
-L power:+5V #PWR05
-U 1 1 5B9A5A0C
-P 4350 3800
-F 0 "#PWR05" H 4350 3650 50  0001 C CNN
-F 1 "+5V" H 4365 3973 50  0000 C CNN
-F 2 "" H 4350 3800 50  0001 C CNN
-F 3 "" H 4350 3800 50  0001 C CNN
-	1    4350 3800
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5B9A876F
@@ -674,4 +652,26 @@ Text Notes 8700 2950 0    50   ~ 0
 In some situations (namely, integration testing), we want the\nbus to be powered without having the radio board connected.\nBy moving a jumper on these pins, you can power the bus from\nthe USB port of your computer.
 Wire Wire Line
 	6450 2100 6750 2100
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5BFB7BBC
+P 4350 3800
+F 0 "#PWR?" H 4350 3650 50  0001 C CNN
+F 1 "+3.3V" H 4365 3973 50  0000 C CNN
+F 2 "" H 4350 3800 50  0001 C CNN
+F 3 "" H 4350 3800 50  0001 C CNN
+	1    4350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5BFB7C7E
+P 2650 4250
+F 0 "#PWR?" H 2650 4100 50  0001 C CNN
+F 1 "+3.3V" H 2665 4423 50  0000 C CNN
+F 2 "" H 2650 4250 50  0001 C CNN
+F 3 "" H 2650 4250 50  0001 C CNN
+	1    2650 4250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
