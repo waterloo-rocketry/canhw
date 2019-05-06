@@ -14,18 +14,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 1500 2700 1600 1000
-U 5B9FA408
-F0 "Power" 50
-F1 "power.sch" 50
-F2 "CURR_BUS" I R 3100 3000 50 
-F3 "CURR_BATT" I R 3100 3100 50 
-F4 "BUS_EN" I R 3100 3200 50 
-F5 "BATT_VSENSE" I R 3100 3300 50 
-$EndSheet
 $Comp
-L canhw:PIC18F26K83 U1
+L radio-rescue:PIC18F26K83-canhw-radio-rescue-radio-rescue U1
 U 1 1 5B9FB7D0
 P 5900 3550
 F 0 "U1" H 5875 4465 50  0000 C CNN
@@ -273,7 +263,7 @@ CAN_TX
 Text Notes 7400 3250 0    50   ~ 0
 CAN/UART peripheal pins\nare remappable to any pin\non port b or c. Do not remap\nto port A.
 $Comp
-L canhw:MCP2562 U2
+L radio-rescue:MCP2562-canhw-radio-rescue-radio-rescue U2
 U 1 1 5BA24A11
 P 9600 5400
 F 0 "U2" H 9575 5665 50  0000 C CNN
@@ -530,4 +520,28 @@ Text Label 5150 3400 2    50   ~ 0
 LED2
 Text Label 5150 3500 2    50   ~ 0
 LED3
+Wire Wire Line
+	5150 3800 3800 3800
+Wire Wire Line
+	3800 3800 3800 3400
+Wire Wire Line
+	3800 3400 3100 3400
+Wire Wire Line
+	3100 3500 3700 3500
+Wire Wire Line
+	3700 3500 3700 4200
+Wire Wire Line
+	3700 4200 5150 4200
+$Sheet
+S 1500 2700 1600 1000
+U 5B9FA408
+F0 "Power" 50
+F1 "power.sch" 50
+F2 "CURR_BUS" I R 3100 3000 50 
+F3 "CURR_BATT" I R 3100 3100 50 
+F4 "BUS_EN_12V" I R 3100 3200 50 
+F5 "BATT_VSENSE" I R 3100 3300 50 
+F6 "BUS_EN_GND" I R 3100 3500 50 
+F7 "BUS_EN_5V" I R 3100 3400 50 
+$EndSheet
 $EndSCHEMATC

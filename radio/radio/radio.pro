@@ -1,6 +1,6 @@
-update=Sun 16 Sep 2018 10:16:18 AM EDT
+update=Sunday, February 10, 2019 at 04:39:52 pm
 version=1
-last_client=kicad
+last_client=eeschema
 [general]
 version=1
 RootSch=
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=
+PlotDirectoryName=radio/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
