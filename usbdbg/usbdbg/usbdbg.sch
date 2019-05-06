@@ -20,7 +20,7 @@ U 1 1 5B97C713
 P 3300 4550
 F 0 "U2" H 3525 4865 50  0000 C CNN
 F 1 "PIC16F1455" H 3525 4774 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3300 4550 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 3300 4550 50  0001 C CNN
 F 3 "" H 3300 4550 50  0001 C CNN
 	1    3300 4550
 	1    0    0    -1  
@@ -34,7 +34,7 @@ AR Path="/5B96A11F/5B97C90D" Ref="J?"  Part="1"
 AR Path="/5B97C90D" Ref="J2"  Part="1" 
 F 0 "J2" H 3400 2000 50  0000 C CNN
 F 1 "Programming Header" H 3050 2100 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3050 2450 50  0001 C CNN
+F 2 "canhw_footprints:PinHeader_5x2.54_SMD_90deg_952-3198-1-ND" H 3050 2450 50  0001 C CNN
 F 3 "~" H 3050 2450 50  0001 C CNN
 	1    3050 2450
 	-1   0    0    -1  
@@ -85,7 +85,7 @@ U 1 1 5B97D1E1
 P 8950 4250
 F 0 "U1" H 8925 4515 50  0000 C CNN
 F 1 "MCP2562" H 8925 4424 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8950 4250 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 8950 4250 50  0001 C CNN
 F 3 "" H 8950 4250 50  0001 C CNN
 	1    8950 4250
 	1    0    0    -1  
@@ -96,7 +96,7 @@ U 1 1 5B97D115
 P 7050 4650
 F 0 "U3" H 7050 5115 50  0000 C CNN
 F 1 "MCP2515" H 7050 5024 50  0000 C CNN
-F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 7000 4650 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-18W_7.5x11.6mm_Pitch1.27mm" H 7000 4650 50  0001 C CNN
 F 3 "" H 7000 4650 50  0001 C CNN
 	1    7050 4650
 	-1   0    0    -1  
@@ -105,6 +105,17 @@ Text Label 4650 4500 0    50   ~ 0
 ~MCLR
 Text Label 2500 4600 2    50   ~ 0
 CLKOUT
+$Comp
+L power:+5V #PWR09
+U 1 1 5B97E564
+P 2650 4250
+F 0 "#PWR09" H 2650 4100 50  0001 C CNN
+F 1 "+5V" H 2665 4423 50  0000 C CNN
+F 2 "" H 2650 4250 50  0001 C CNN
+F 3 "" H 2650 4250 50  0001 C CNN
+	1    2650 4250
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	2650 4250 2650 4500
 Wire Wire Line
@@ -328,6 +339,17 @@ Connection ~ 4350 4500
 Wire Wire Line
 	4350 4500 4650 4500
 $Comp
+L power:+5V #PWR05
+U 1 1 5B9A5A0C
+P 4350 3800
+F 0 "#PWR05" H 4350 3650 50  0001 C CNN
+F 1 "+5V" H 4365 3973 50  0000 C CNN
+F 2 "" H 4350 3800 50  0001 C CNN
+F 3 "" H 4350 3800 50  0001 C CNN
+	1    4350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
 L Connector:TestPoint TP1
 U 1 1 5B9A876F
 P 7850 4350
@@ -407,17 +429,6 @@ $EndComp
 Wire Wire Line
 	6350 5300 6350 4550
 Connection ~ 6350 4550
-$Comp
-L Connector:USB_B J1
-U 1 1 5B9C7087
-P 6150 2300
-F 0 "J1" H 6205 2767 50  0000 C CNN
-F 1 "USB_B" H 6205 2676 50  0000 C CNN
-F 2 "Connector_USB:USB_B_OST_USB-B1HSxx_Horizontal" H 6300 2250 50  0001 C CNN
-F 3 " ~" H 6300 2250 50  0001 C CNN
-	1    6150 2300
-	1    0    0    -1  
-$EndComp
 Text Label 6750 2300 0    50   ~ 0
 USB_D+
 Wire Wire Line
@@ -605,7 +616,7 @@ U 1 1 5BAB19E0
 P 10350 4250
 F 0 "J3" H 10378 4276 50  0000 L CNN
 F 1 "BUS CONN" H 10378 4185 50  0000 L CNN
-F 2 "canhw_footprints:connector_Harwin_M80-5000642" H 10350 4250 50  0001 C CNN
+F 2 "canhw_footprints:PinHeader_5x2.54_SMD_90deg_952-3198-1-ND" H 10350 4250 50  0001 C CNN
 F 3 "~" H 10350 4250 50  0001 C CNN
 	1    10350 4250
 	1    0    0    -1  
@@ -616,18 +627,6 @@ Wire Wire Line
 	10000 4250 10000 5000
 Text Notes 10400 4100 0    50   ~ 0
 12V (NC, this board\ndoesn't need it)
-$Comp
-L Device:Jumper_NC_Dual JP1
-U 1 1 5BAB505C
-P 10000 3450
-F 0 "JP1" H 10000 3689 50  0000 C CNN
-F 1 "Jumper_NC_Dual" H 10000 3598 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10000 3450 50  0001 C CNN
-F 3 "~" H 10000 3450 50  0001 C CNN
-	1    10000 3450
-	1    0    0    -1  
-$EndComp
-NoConn ~ 10250 3450
 $Comp
 L power:+5V #PWR019
 U 1 1 5BAB81E8
@@ -645,33 +644,37 @@ Wire Wire Line
 	9500 3450 9500 3200
 Wire Wire Line
 	10150 4150 10000 4150
-Wire Wire Line
-	10000 4150 10000 3550
 NoConn ~ 10150 4050
 Text Notes 8700 2950 0    50   ~ 0
 In some situations (namely, integration testing), we want the\nbus to be powered without having the radio board connected.\nBy moving a jumper on these pins, you can power the bus from\nthe USB port of your computer.
 Wire Wire Line
 	6450 2100 6750 2100
 $Comp
-L power:+3.3V #PWR?
-U 1 1 5BFB7BBC
-P 4350 3800
-F 0 "#PWR?" H 4350 3650 50  0001 C CNN
-F 1 "+3.3V" H 4365 3973 50  0000 C CNN
-F 2 "" H 4350 3800 50  0001 C CNN
-F 3 "" H 4350 3800 50  0001 C CNN
-	1    4350 3800
+L Connector:USB_A J1
+U 1 1 5BF9CDF8
+P 6150 2300
+F 0 "J1" H 6205 2767 50  0000 C CNN
+F 1 "USB_A" H 6205 2676 50  0000 C CNN
+F 2 "Connector_USB:USB_A_CNCTech_1001-011-01101_Horizontal" H 6300 2250 50  0001 C CNN
+F 3 " ~" H 6300 2250 50  0001 C CNN
+	1    6150 2300
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR?
-U 1 1 5BFB7C7E
-P 2650 4250
-F 0 "#PWR?" H 2650 4100 50  0001 C CNN
-F 1 "+3.3V" H 2665 4423 50  0000 C CNN
-F 2 "" H 2650 4250 50  0001 C CNN
-F 3 "" H 2650 4250 50  0001 C CNN
-	1    2650 4250
+L Device:Jumper JP1
+U 1 1 5BFE64D4
+P 10050 3450
+F 0 "JP1" H 10050 3714 50  0000 C CNN
+F 1 "Jumper" H 10050 3623 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 10050 3450 50  0001 C CNN
+F 3 "~" H 10050 3450 50  0001 C CNN
+	1    10050 3450
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	10350 3450 10350 3700
+Wire Wire Line
+	10350 3700 10000 3700
+Wire Wire Line
+	10000 3700 10000 4150
 $EndSCHEMATC
