@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L canhw:DAC5571 U6
-U 1 1 5BABF85F
-P 2550 5150
-F 0 "U6" H 2550 5375 50  0000 C CNN
-F 1 "DAC5571" H 2550 5284 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-6_Handsoldering" H 2650 5150 50  0001 C CNN
-F 3 "" H 2650 5150 50  0001 C CNN
-	1    2550 5150
-	1    0    0    -1  
-$EndComp
-$Comp
 L canhw:DAC5571 U4
 U 1 1 5BABF939
 P 2550 2950
@@ -44,25 +33,6 @@ Wire Wire Line
 	2000 2800 2000 3150
 Wire Wire Line
 	2000 3150 2100 3150
-$Comp
-L power:GND #PWR045
-U 1 1 5BABFB3D
-P 2000 5500
-F 0 "#PWR045" H 2000 5250 50  0001 C CNN
-F 1 "GND" H 2005 5327 50  0000 C CNN
-F 2 "" H 2000 5500 50  0001 C CNN
-F 3 "" H 2000 5500 50  0001 C CNN
-	1    2000 5500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2000 5500 2000 5350
-Wire Wire Line
-	2000 5350 2100 5350
-Wire Wire Line
-	1300 2950 1800 2950
-Wire Wire Line
-	1300 3050 1700 3050
 $Comp
 L canhw:TS391ILT U5
 U 1 1 5BABFFB3
@@ -110,30 +80,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR044
 U 1 1 5BAC0CC5
-P 3000 5450
-F 0 "#PWR044" H 3000 5200 50  0001 C CNN
-F 1 "GND" H 3005 5277 50  0000 C CNN
-F 2 "" H 3000 5450 50  0001 C CNN
-F 3 "" H 3000 5450 50  0001 C CNN
-	1    3000 5450
+P 3000 5750
+F 0 "#PWR044" H 3000 5500 50  0001 C CNN
+F 1 "GND" H 3005 5577 50  0000 C CNN
+F 2 "" H 3000 5750 50  0001 C CNN
+F 3 "" H 3000 5750 50  0001 C CNN
+	1    3000 5750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3000 5450 3000 5350
-Wire Wire Line
-	2100 5150 1800 5150
-Wire Wire Line
-	1800 5150 1800 2950
-Connection ~ 1800 2950
-Wire Wire Line
-	1800 2950 2100 2950
-Wire Wire Line
-	2100 5250 1700 5250
-Wire Wire Line
-	1700 5250 1700 3050
-Connection ~ 1700 3050
-Wire Wire Line
-	1700 3050 2100 3050
 $Comp
 L power:GND #PWR036
 U 1 1 5BAC15C7
@@ -406,32 +360,6 @@ Wire Wire Line
 Connection ~ 9400 4050
 Wire Wire Line
 	9400 4050 9400 4300
-$Comp
-L Connector:Conn_01x05_Female J4
-U 1 1 5BAD8892
-P 9450 1600
-F 0 "J4" H 9477 1626 50  0000 L CNN
-F 1 "Linear Actuator Connector" H 9477 1535 50  0000 L CNN
-F 2 "canhw_footprints:connector_Harwin_M80-5000642" H 9450 1600 50  0001 C CNN
-F 3 "~" H 9450 1600 50  0001 C CNN
-	1    9450 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR025
-U 1 1 5BAD8B43
-P 8950 1250
-F 0 "#PWR025" H 8950 1100 50  0001 C CNN
-F 1 "+5V" H 8965 1423 50  0000 C CNN
-F 2 "" H 8950 1250 50  0001 C CNN
-F 3 "" H 8950 1250 50  0001 C CNN
-	1    8950 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8950 1250 8950 1400
-Wire Wire Line
-	8950 1400 9250 1400
 Text Label 8950 1500 2    50   ~ 0
 MOTOR_V-
 Text Label 8950 1600 2    50   ~ 0
@@ -575,35 +503,6 @@ Text Notes 8200 3550 0    50   ~ 0
 -2.1Vgs(th) max\n-3.8A Id
 Text Notes 4350 1500 0    50   ~ 0
 MCU I/O current max: 50mA
-$Comp
-L Device:C C7
-U 1 1 5BB0BC21
-P 3200 4900
-F 0 "C7" V 2948 4900 50  0000 C CNN
-F 1 "0.1uF" V 3039 4900 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3238 4750 50  0001 C CNN
-F 3 "~" H 3200 4900 50  0001 C CNN
-	1    3200 4900
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR048
-U 1 1 5BB0BD04
-P 3350 4900
-F 0 "#PWR048" H 3350 4650 50  0001 C CNN
-F 1 "GND" H 3355 4727 50  0000 C CNN
-F 2 "" H 3350 4900 50  0001 C CNN
-F 3 "" H 3350 4900 50  0001 C CNN
-	1    3350 4900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3000 4750 3000 4900
-Wire Wire Line
-	3050 4900 3000 4900
-Connection ~ 3000 4900
-Wire Wire Line
-	3000 4900 3000 5150
 $Comp
 L Device:C C6
 U 1 1 5BB0EE2C
@@ -795,8 +694,8 @@ L canhw:5VBAT #U?
 U 1 1 5C08A25D
 P 4650 2850
 AR Path="/5C08A25D" Ref="#U?"  Part="1" 
-AR Path="/5BA7388A/5C08A25D" Ref="#U?"  Part="1" 
-F 0 "#U?" H 4800 3000 50  0001 C CNN
+AR Path="/5BA7388A/5C08A25D" Ref="#U01"  Part="1" 
+F 0 "#U01" H 4800 3000 50  0001 C CNN
 F 1 "5VBAT" H 4550 3000 50  0000 L CNN
 F 2 "" H 4650 2850 50  0001 C CNN
 F 3 "" H 4650 2850 50  0001 C CNN
@@ -808,8 +707,8 @@ L canhw:5VBAT #U?
 U 1 1 5C08A2BA
 P 4650 4800
 AR Path="/5C08A2BA" Ref="#U?"  Part="1" 
-AR Path="/5BA7388A/5C08A2BA" Ref="#U?"  Part="1" 
-F 0 "#U?" H 4800 4950 50  0001 C CNN
+AR Path="/5BA7388A/5C08A2BA" Ref="#U02"  Part="1" 
+F 0 "#U02" H 4800 4950 50  0001 C CNN
 F 1 "5VBAT" H 4550 4950 50  0000 L CNN
 F 2 "" H 4650 4800 50  0001 C CNN
 F 3 "" H 4650 4800 50  0001 C CNN
@@ -834,4 +733,67 @@ Wire Wire Line
 	4400 3200 4650 3200
 Wire Wire Line
 	4400 5150 4650 5150
+Wire Wire Line
+	1300 2950 2100 2950
+Wire Wire Line
+	1300 3050 2100 3050
+Wire Wire Line
+	3000 5750 3000 5650
+Wire Wire Line
+	3000 5350 3000 5250
+Connection ~ 3000 5250
+Wire Wire Line
+	3000 5250 3000 5150
+Wire Wire Line
+	3000 4850 3000 4750
+$Comp
+L Device:R_US R23
+U 1 1 5CEEB9A4
+P 3000 5500
+F 0 "R23" H 3068 5546 50  0000 L CNN
+F 1 "2.2K" H 3068 5455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3040 5490 50  0001 C CNN
+F 3 "~" H 3000 5500 50  0001 C CNN
+	1    3000 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR025
+U 1 1 5BAD8B43
+P 8950 1250
+F 0 "#PWR025" H 8950 1100 50  0001 C CNN
+F 1 "+5V" H 8965 1423 50  0000 C CNN
+F 2 "" H 8950 1250 50  0001 C CNN
+F 3 "" H 8950 1250 50  0001 C CNN
+	1    8950 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 1250 8950 1400
+Wire Wire Line
+	8950 1400 9250 1400
+$Comp
+L Connector:Conn_01x05_Female J4
+U 1 1 5BAD8892
+P 9450 1600
+F 0 "J4" H 9477 1626 50  0000 L CNN
+F 1 "Linear Actuator Connector" H 9477 1535 50  0000 L CNN
+F 2 "canhw_footprints:connector_Harwin_M80-5000642" H 9450 1600 50  0001 C CNN
+F 3 "~" H 9450 1600 50  0001 C CNN
+	1    9450 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R22
+U 1 1 5CEF43C4
+P 3000 5000
+F 0 "R22" H 3068 5046 50  0000 L CNN
+F 1 "20K" H 3068 4955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3040 4990 50  0001 C CNN
+F 3 "~" H 3000 5000 50  0001 C CNN
+	1    3000 5000
+	1    0    0    -1  
+$EndComp
+Text Notes 1200 5450 0    50   ~ 0
+Resistive divider sets the open comparator\nto fire at 0.5V. This is here because we\nwant the valve to open even if the MCU\nisn't powered and hasn't initialized the\nDACs
 $EndSCHEMATC
