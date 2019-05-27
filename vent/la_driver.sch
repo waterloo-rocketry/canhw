@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:vent-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -168,8 +168,6 @@ F 3 "~" H 4650 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 3200 4500 3200
-Wire Wire Line
 	4650 3200 4650 3150
 $Comp
 L Device:R_US R18
@@ -182,8 +180,6 @@ F 3 "~" H 4650 4950 50  0001 C CNN
 	1    4650 4950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4400 5150 4500 5150
 Wire Wire Line
 	4650 5150 4650 5100
 Wire Wire Line
@@ -505,24 +501,6 @@ F 3 "" H 5200 2500 50  0001 C CNN
 	1    5200 2500
 	1    0    0    -1  
 $EndComp
-Text HLabel 4600 3650 2    50   Input ~ 0
-~LIM_HIGH
-Wire Wire Line
-	4600 3650 4500 3650
-Wire Wire Line
-	4500 3650 4500 3200
-Connection ~ 4500 3200
-Wire Wire Line
-	4500 3200 4650 3200
-Text HLabel 4600 5600 2    50   Input ~ 0
-~LIM_LOW
-Wire Wire Line
-	4600 5600 4500 5600
-Wire Wire Line
-	4500 5600 4500 5150
-Connection ~ 4500 5150
-Wire Wire Line
-	4500 5150 4650 5150
 Text Notes 4500 5950 0    50   ~ 0
 Signal is low when the “limit switch”\nis hit (i.e. the linear actuator has reached\nits maximum extension/retraction)
 $Comp
@@ -852,4 +830,8 @@ Wire Wire Line
 	9800 3900 9100 3900
 Wire Wire Line
 	9100 3900 9100 3600
+Wire Wire Line
+	4400 3200 4650 3200
+Wire Wire Line
+	4400 5150 4650 5150
 $EndSCHEMATC

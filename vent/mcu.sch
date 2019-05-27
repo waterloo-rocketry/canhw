@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:vent-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -519,10 +519,6 @@ Text HLabel 4950 4350 2    50   Input ~ 0
 MOTOR_BWD
 Wire Wire Line
 	4950 4050 4700 4050
-Wire Wire Line
-	4950 4150 4700 4150
-Wire Wire Line
-	4950 4250 4700 4250
 $Comp
 L Device:R_US R5
 U 1 1 5BAEAA65
@@ -632,12 +628,10 @@ Wire Wire Line
 	6700 4650 6700 4850
 Wire Wire Line
 	6700 4850 4700 4850
-Text HLabel 4950 4250 2    50   Input ~ 0
-~LIM_HIGH
-Text HLabel 4950 4150 2    50   Input ~ 0
-~LIM_LOW
 Wire Wire Line
 	4950 4350 4700 4350
 Wire Wire Line
 	4950 4450 4700 4450
+NoConn ~ 4700 4250
+NoConn ~ 4700 4150
 $EndSCHEMATC
