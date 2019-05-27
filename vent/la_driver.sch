@@ -758,22 +758,7 @@ F 3 "~" H 3000 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR025
-U 1 1 5BAD8B43
-P 8950 1250
-F 0 "#PWR025" H 8950 1100 50  0001 C CNN
-F 1 "+5V" H 8965 1423 50  0000 C CNN
-F 2 "" H 8950 1250 50  0001 C CNN
-F 3 "" H 8950 1250 50  0001 C CNN
-	1    8950 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8950 1250 8950 1400
-Wire Wire Line
-	8950 1400 9250 1400
-$Comp
-L Connector:Conn_01x05_Female J4
+L Connector:Conn_01x06_Female J4
 U 1 1 5BAD8892
 P 9450 1600
 F 0 "J4" H 9477 1626 50  0000 L CNN
@@ -796,4 +781,22 @@ F 3 "~" H 3000 5000 50  0001 C CNN
 $EndComp
 Text Notes 1200 5450 0    50   ~ 0
 Resistive divider sets the open comparator\nto fire at 0.5V. This is here because we\nwant the valve to open even if the MCU\nisn't powered and hasn't initialized the\nDACs
+$Comp
+L canhw:5VBAT #U?
+U 1 1 5CEC99DB
+P 9100 1250
+AR Path="/5CEC99DB" Ref="#U?"  Part="1" 
+AR Path="/5BA7388A/5CEC99DB" Ref="#U0101"  Part="1" 
+F 0 "#U0101" H 9250 1400 50  0001 C CNN
+F 1 "5VBAT" H 9000 1400 50  0000 L CNN
+F 2 "" H 9100 1250 50  0001 C CNN
+F 3 "" H 9100 1250 50  0001 C CNN
+	1    9100 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 1250 9100 1900
+Wire Wire Line
+	9100 1900 9250 1900
+NoConn ~ 9250 1400
 $EndSCHEMATC
