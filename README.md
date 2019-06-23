@@ -17,6 +17,3 @@ At present, the radio board integrates with Waterloo Rocketry's Remote Launch Co
 The CAN protocol was chosen for its high data rate, priority-based arbitration, and abundance of inexpensive hardware. The bus can safely be used by many boards at once without the risk of a low-priority message (eg. sensor data) preempting a high-priority message (eg. valve command). Microcontrollers with CAN modules, stand-alone CAN modules, and CAN transceivers are all widely available, making it cheap and simple to add CAN functionality to a subsystem.
 
 Further descriptions and instructions for using each individual board are available in the README in the relevant board's directory.
-
-![rocketcan](images/rocketcan.jpg)
-
