@@ -12,11 +12,11 @@ The RocketCAN project is an extension of the 2018 Flight Instrumentation project
 
 At present, the radio board integrates with Waterloo Rocketry's Remote Launch Control System (RLCS), from which it receives instructions. It is also capable of broadcasting sensor data to RLCS.  The radio board communicates with the tower-side box of RLCS, which relays the data to the client-side box at mission control.
 
-![topo](images/communication_arch.png)
+![comms](images/communication_arch.png)
 
 The CAN protocol was chosen for its high data rate, priority-based arbitration, and abundance of inexpensive hardware. The bus can safely be used by many boards at once without the risk of a low-priority message (eg. sensor data) preempting a high-priority message (eg. valve command). Microcontrollers with CAN modules, stand-alone CAN modules, and CAN transceivers are all widely available, making it cheap and simple to add CAN functionality to a subsystem.
 
 Further descriptions and instructions for using each individual board are available in the README in the relevant board's directory.
 
-![topo](images/rocketcan.png)
+![rocketcan](images/rocketcan.jpg)
 
