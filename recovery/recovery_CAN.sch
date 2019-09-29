@@ -1,0 +1,168 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "recovery_CAN"
+Date ""
+Rev ""
+Comp "Waterloo Rocketry"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L canhw:PIC18F26K83 U?
+U 1 1 5D8FD23F
+P 5900 3150
+F 0 "U?" H 5875 4065 50  0000 C CNN
+F 1 "PIC18F26K83" H 5875 3974 50  0000 C CNN
+F 2 "" H 6350 3150 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001943A.pdf" H 6350 3150 50  0001 C CNN
+	1    5900 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D8FD34A
+P 7150 2200
+F 0 "C?" V 6898 2200 50  0000 C CNN
+F 1 "0.1u" V 6989 2200 50  0000 C CNN
+F 2 "" H 7188 2050 50  0001 C CNN
+F 3 "~" H 7150 2200 50  0001 C CNN
+	1    7150 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D8FD48D
+P 6750 2100
+F 0 "#PWR?" H 6750 1950 50  0001 C CNN
+F 1 "+5V" H 6765 2273 50  0000 C CNN
+F 2 "" H 6750 2100 50  0001 C CNN
+F 3 "" H 6750 2100 50  0001 C CNN
+	1    6750 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D8FD4C8
+P 7500 2300
+F 0 "#PWR?" H 7500 2050 50  0001 C CNN
+F 1 "GND" H 7505 2127 50  0000 C CNN
+F 2 "" H 7500 2300 50  0001 C CNN
+F 3 "" H 7500 2300 50  0001 C CNN
+	1    7500 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2500 6750 2500
+Wire Wire Line
+	6750 2500 6750 2200
+Wire Wire Line
+	6750 2200 7000 2200
+Wire Wire Line
+	6750 2200 6750 2100
+Connection ~ 6750 2200
+Wire Wire Line
+	7300 2200 7500 2200
+Wire Wire Line
+	7500 2200 7500 2300
+$Comp
+L power:GND #PWR?
+U 1 1 5D8FD543
+P 6750 3900
+F 0 "#PWR?" H 6750 3650 50  0001 C CNN
+F 1 "GND" H 6755 3727 50  0000 C CNN
+F 2 "" H 6750 3900 50  0001 C CNN
+F 3 "" H 6750 3900 50  0001 C CNN
+	1    6750 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3800 6750 3800
+Wire Wire Line
+	6750 3800 6750 3900
+Wire Wire Line
+	6600 3700 6750 3700
+Wire Wire Line
+	6750 3700 6750 3800
+Connection ~ 6750 3800
+Text Label 5150 3200 2    50   ~ 0
+OSC1
+Text Label 5150 3300 2    50   ~ 0
+OSC2
+Text Label 3400 3750 0    50   ~ 0
+OSC1
+Text Label 3400 4100 0    50   ~ 0
+OSC2
+$Comp
+L Device:Crystal Y?
+U 1 1 5D8FD67B
+P 3000 3950
+F 0 "Y?" V 2954 4081 50  0000 L CNN
+F 1 "Crystal" V 3045 4081 50  0000 L CNN
+F 2 "" H 3000 3950 50  0001 C CNN
+F 3 "~" H 3000 3950 50  0001 C CNN
+	1    3000 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D8FD6F4
+P 2450 3800
+F 0 "C?" V 2198 3800 50  0000 C CNN
+F 1 "C" V 2289 3800 50  0000 C CNN
+F 2 "" H 2488 3650 50  0001 C CNN
+F 3 "~" H 2450 3800 50  0001 C CNN
+	1    2450 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D8FD755
+P 2450 4200
+F 0 "C?" V 2198 4200 50  0000 C CNN
+F 1 "C" V 2289 4200 50  0000 C CNN
+F 2 "" H 2488 4050 50  0001 C CNN
+F 3 "~" H 2450 4200 50  0001 C CNN
+	1    2450 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D8FD7A1
+P 2100 4200
+F 0 "#PWR?" H 2100 3950 50  0001 C CNN
+F 1 "GND" H 2105 4027 50  0000 C CNN
+F 2 "" H 2100 4200 50  0001 C CNN
+F 3 "" H 2100 4200 50  0001 C CNN
+	1    2100 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 4200 2100 4200
+Wire Wire Line
+	2300 3800 2100 3800
+Wire Wire Line
+	2100 3800 2100 4200
+Connection ~ 2100 4200
+Wire Wire Line
+	2600 3800 3000 3800
+Wire Wire Line
+	2600 4200 3000 4200
+Wire Wire Line
+	3000 4200 3000 4100
+Wire Wire Line
+	3000 4200 3400 4200
+Wire Wire Line
+	3400 4200 3400 4100
+Connection ~ 3000 4200
+Wire Wire Line
+	3000 3800 3000 3750
+Wire Wire Line
+	3000 3750 3400 3750
+Connection ~ 3000 3800
+$EndSCHEMATC
