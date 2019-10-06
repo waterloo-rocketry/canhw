@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:recovery_CAN-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -165,4 +166,85 @@ Wire Wire Line
 Wire Wire Line
 	3000 3750 3400 3750
 Connection ~ 3000 3800
+$Comp
+L Connector:Conn_01x05_Female J?
+U 1 1 5D959CC4
+P 1700 1300
+F 0 "J?" H 1594 875 50  0000 C CNN
+F 1 "Conn_01x05_Female" H 1594 966 50  0000 C CNN
+F 2 "" H 1700 1300 50  0001 C CNN
+F 3 "~" H 1700 1300 50  0001 C CNN
+	1    1700 1300
+	-1   0    0    1   
+$EndComp
+Text Label 2150 1100 0    50   ~ 0
+~MCLR
+Wire Wire Line
+	1900 1100 2150 1100
+$Comp
+L power:+5V #PWR?
+U 1 1 5D95A01E
+P 2500 1100
+F 0 "#PWR?" H 2500 950 50  0001 C CNN
+F 1 "+5V" H 2515 1273 50  0000 C CNN
+F 2 "" H 2500 1100 50  0001 C CNN
+F 3 "" H 2500 1100 50  0001 C CNN
+	1    2500 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1200 2500 1200
+Wire Wire Line
+	2500 1200 2500 1100
+$Comp
+L power:GND #PWR?
+U 1 1 5D95A4EB
+P 2500 1700
+F 0 "#PWR?" H 2500 1450 50  0001 C CNN
+F 1 "GND" H 2505 1527 50  0000 C CNN
+F 2 "" H 2500 1700 50  0001 C CNN
+F 3 "" H 2500 1700 50  0001 C CNN
+	1    2500 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1300 2500 1300
+Wire Wire Line
+	2500 1300 2500 1700
+Text Label 2150 1500 0    50   ~ 0
+ICSPCLK
+Text Label 2150 1400 0    50   ~ 0
+ICSPDAT
+Wire Wire Line
+	2150 1400 1900 1400
+Wire Wire Line
+	2150 1500 1900 1500
+Text Label 6600 2600 0    50   ~ 0
+ICSPDAT
+Text Label 6600 2700 0    50   ~ 0
+ICSPCLK
+Text Label 5150 2500 2    50   ~ 0
+~MCLR
+$Comp
+L recovery_CAN-cache:StratoLoggerCF A?
+U 1 1 5D9977AA
+P 8550 1650
+F 0 "A?" H 8800 2365 50  0000 C CNN
+F 1 "StratoLoggerCF" H 8800 2274 50  0000 C CNN
+F 2 "" H 8550 1650 50  0001 C CNN
+F 3 "" H 8550 1650 50  0001 C CNN
+	1    8550 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L recovery_CAN-cache:Raven4 A?
+U 1 1 5D9983F7
+P 8500 3150
+F 0 "A?" H 8500 3565 50  0000 C CNN
+F 1 "Raven4" H 8500 3474 50  0000 C CNN
+F 2 "" H 8550 3150 50  0001 C CNN
+F 3 "" H 8550 3150 50  0001 C CNN
+	1    8500 3150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
