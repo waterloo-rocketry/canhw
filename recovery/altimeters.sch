@@ -1,0 +1,422 @@
+EESchema Schematic File Version 4
+LIBS:recovery_CAN-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L recovery_CAN-rescue:StratoLoggerCF-recovery_CAN-cache A?
+U 1 1 5DA13DF1
+P 4550 2050
+F 0 "A?" H 4800 2765 50  0000 C CNN
+F 1 "StratoLoggerCF-recovery_CAN-cache" H 4800 2674 50  0000 C CNN
+F 2 "" H 4550 2050 50  0001 C CNN
+F 3 "" H 4550 2050 50  0001 C CNN
+	1    4550 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L recovery_CAN-rescue:Raven4-recovery_CAN-cache A?
+U 1 1 5DA14746
+P 4700 4400
+AR Path="/5DA14746" Ref="A?"  Part="1" 
+AR Path="/5DA13D99/5DA14746" Ref="A?"  Part="1" 
+F 0 "A?" H 4700 4815 50  0000 C CNN
+F 1 "Raven4" H 4700 4724 50  0000 C CNN
+F 2 "" H 4750 4400 50  0001 C CNN
+F 3 "" H 4750 4400 50  0001 C CNN
+	1    4700 4400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4150 2000 4050 2000
+Wire Wire Line
+	4050 2000 4050 2100
+Wire Wire Line
+	4050 2100 4150 2100
+Wire Wire Line
+	5450 2000 5450 2500
+Wire Wire Line
+	5450 2500 4600 2500
+$Comp
+L power:GND #PWR?
+U 1 1 5DA2A26E
+P 5450 2650
+F 0 "#PWR?" H 5450 2400 50  0001 C CNN
+F 1 "GND" H 5455 2477 50  0000 C CNN
+F 2 "" H 5450 2650 50  0001 C CNN
+F 3 "" H 5450 2650 50  0001 C CNN
+	1    5450 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2500 5450 2650
+Connection ~ 5450 2500
+Text HLabel 6500 2250 2    50   Input ~ 0
+SL_TX
+$Comp
+L power:GND #PWR?
+U 1 1 5DA2A4A1
+P 4150 4250
+F 0 "#PWR?" H 4150 4000 50  0001 C CNN
+F 1 "GND" H 4155 4077 50  0000 C CNN
+F 2 "" H 4150 4250 50  0001 C CNN
+F 3 "" H 4150 4250 50  0001 C CNN
+	1    4150 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 4550 4350 4550
+$Comp
+L Device:Q_PMOS_GDS Q?
+U 1 1 5DA2A885
+P 3850 2550
+F 0 "Q?" V 4100 2550 50  0000 C CNN
+F 1 "AOD417" V 4191 2550 50  0000 C CNN
+F 2 "" H 4050 2650 50  0001 C CNN
+F 3 "~" H 3850 2550 50  0001 C CNN
+	1    3850 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 2500 4500 2650
+Wire Wire Line
+	4500 2650 4050 2650
+$Comp
+L power:+BATT #PWR?
+U 1 1 5DA2AD2E
+P 3300 2450
+F 0 "#PWR?" H 3300 2300 50  0001 C CNN
+F 1 "+BATT" H 3315 2623 50  0000 C CNN
+F 2 "" H 3300 2450 50  0001 C CNN
+F 3 "" H 3300 2450 50  0001 C CNN
+	1    3300 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2450 3300 2650
+Wire Wire Line
+	3300 2650 3650 2650
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5DA2B498
+P 2500 2550
+F 0 "Q?" H 2705 2596 50  0000 L CNN
+F 1 "DMG2302UK" H 2705 2505 50  0000 L CNN
+F 2 "" H 2700 2650 50  0001 C CNN
+F 3 "~" H 2500 2550 50  0001 C CNN
+	1    2500 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA2B4ED
+P 2600 2950
+F 0 "#PWR?" H 2600 2700 50  0001 C CNN
+F 1 "GND" H 2605 2777 50  0000 C CNN
+F 2 "" H 2600 2950 50  0001 C CNN
+F 3 "" H 2600 2950 50  0001 C CNN
+	1    2600 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2750 2600 2950
+$Comp
+L power:+BATT #PWR?
+U 1 1 5DA2B8FE
+P 3250 1550
+F 0 "#PWR?" H 3250 1400 50  0001 C CNN
+F 1 "+BATT" H 3265 1723 50  0000 C CNN
+F 2 "" H 3250 1550 50  0001 C CNN
+F 3 "" H 3250 1550 50  0001 C CNN
+	1    3250 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5DA2BA67
+P 3250 1700
+F 0 "R?" H 3318 1746 50  0000 L CNN
+F 1 "15k" H 3318 1655 50  0000 L CNN
+F 2 "" V 3290 1690 50  0001 C CNN
+F 3 "~" H 3250 1700 50  0001 C CNN
+	1    3250 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2350 3850 2050
+Wire Wire Line
+	3850 2050 3250 2050
+Wire Wire Line
+	2600 2050 2600 2350
+Wire Wire Line
+	3250 1850 3250 2050
+Connection ~ 3250 2050
+Wire Wire Line
+	3250 2050 2600 2050
+$Comp
+L Device:R_US R?
+U 1 1 5DA2CDB1
+P 2100 2250
+F 0 "R?" H 2168 2296 50  0000 L CNN
+F 1 "10k" H 2168 2205 50  0000 L CNN
+F 2 "" V 2140 2240 50  0001 C CNN
+F 3 "~" H 2100 2250 50  0001 C CNN
+	1    2100 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2400 2100 2550
+Wire Wire Line
+	2100 2550 2300 2550
+$Comp
+L power:+5V #PWR?
+U 1 1 5DA2D0E2
+P 2100 2100
+F 0 "#PWR?" H 2100 1950 50  0001 C CNN
+F 1 "+5V" H 2115 2273 50  0000 C CNN
+F 2 "" H 2100 2100 50  0001 C CNN
+F 3 "" H 2100 2100 50  0001 C CNN
+	1    2100 2100
+	1    0    0    -1  
+$EndComp
+Text HLabel 1300 2550 0    50   Input ~ 0
+SL_ARM
+$Comp
+L Device:Q_PMOS_GDS Q?
+U 1 1 5DA2D9EA
+P 3850 4450
+F 0 "Q?" V 4100 4450 50  0000 C CNN
+F 1 "AOD417" V 4191 4450 50  0000 C CNN
+F 2 "" H 4050 4550 50  0001 C CNN
+F 3 "~" H 3850 4450 50  0001 C CNN
+	1    3850 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5DA2D9F0
+P 3300 4350
+F 0 "#PWR?" H 3300 4200 50  0001 C CNN
+F 1 "+BATT" H 3315 4523 50  0000 C CNN
+F 2 "" H 3300 4350 50  0001 C CNN
+F 3 "" H 3300 4350 50  0001 C CNN
+	1    3300 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 4350 3300 4550
+Wire Wire Line
+	3300 4550 3650 4550
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5DA2D9F8
+P 2500 4450
+F 0 "Q?" H 2705 4496 50  0000 L CNN
+F 1 "DMG2302UK" H 2705 4405 50  0000 L CNN
+F 2 "" H 2700 4550 50  0001 C CNN
+F 3 "~" H 2500 4450 50  0001 C CNN
+	1    2500 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA2D9FE
+P 2600 4850
+F 0 "#PWR?" H 2600 4600 50  0001 C CNN
+F 1 "GND" H 2605 4677 50  0000 C CNN
+F 2 "" H 2600 4850 50  0001 C CNN
+F 3 "" H 2600 4850 50  0001 C CNN
+	1    2600 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 4650 2600 4850
+$Comp
+L power:+BATT #PWR?
+U 1 1 5DA2DA05
+P 3250 3450
+F 0 "#PWR?" H 3250 3300 50  0001 C CNN
+F 1 "+BATT" H 3265 3623 50  0000 C CNN
+F 2 "" H 3250 3450 50  0001 C CNN
+F 3 "" H 3250 3450 50  0001 C CNN
+	1    3250 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5DA2DA0B
+P 3250 3600
+F 0 "R?" H 3318 3646 50  0000 L CNN
+F 1 "15k" H 3318 3555 50  0000 L CNN
+F 2 "" V 3290 3590 50  0001 C CNN
+F 3 "~" H 3250 3600 50  0001 C CNN
+	1    3250 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 4250 3850 3950
+Wire Wire Line
+	3850 3950 3250 3950
+Wire Wire Line
+	2600 3950 2600 4250
+Wire Wire Line
+	3250 3750 3250 3950
+Connection ~ 3250 3950
+Wire Wire Line
+	3250 3950 2600 3950
+$Comp
+L Device:R_US R?
+U 1 1 5DA2DA17
+P 2100 4150
+F 0 "R?" H 2168 4196 50  0000 L CNN
+F 1 "10k" H 2168 4105 50  0000 L CNN
+F 2 "" V 2140 4140 50  0001 C CNN
+F 3 "~" H 2100 4150 50  0001 C CNN
+	1    2100 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4300 2100 4450
+Wire Wire Line
+	2100 4450 2300 4450
+$Comp
+L power:+5V #PWR?
+U 1 1 5DA2DA1F
+P 2100 4000
+F 0 "#PWR?" H 2100 3850 50  0001 C CNN
+F 1 "+5V" H 2115 4173 50  0000 C CNN
+F 2 "" H 2100 4000 50  0001 C CNN
+F 3 "" H 2100 4000 50  0001 C CNN
+	1    2100 4000
+	1    0    0    -1  
+$EndComp
+Text HLabel 1300 4450 0    50   Input ~ 0
+A2_ARM
+Wire Wire Line
+	4350 4450 4350 4150
+Wire Wire Line
+	4350 4150 4150 4150
+Wire Wire Line
+	4150 4150 4150 4250
+Text Notes 2550 5300 0    50   ~ 0
+Part numbers and mosfet layout roughly copied from injector board\nPart specs and resistor values should be checked for this design
+$Comp
+L Device:R_US R?
+U 1 1 5DA326C1
+P 1650 2550
+F 0 "R?" V 1445 2550 50  0000 C CNN
+F 1 "270R" V 1536 2550 50  0000 C CNN
+F 2 "" V 1690 2540 50  0001 C CNN
+F 3 "~" H 1650 2550 50  0001 C CNN
+	1    1650 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5DA32715
+P 1700 4450
+F 0 "R?" V 1495 4450 50  0000 C CNN
+F 1 "270R" V 1586 4450 50  0000 C CNN
+F 2 "" V 1740 4440 50  0001 C CNN
+F 3 "~" H 1700 4450 50  0001 C CNN
+	1    1700 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 2550 1800 2550
+Connection ~ 2100 2550
+Wire Wire Line
+	1500 2550 1300 2550
+Wire Wire Line
+	1850 4450 2100 4450
+Connection ~ 2100 4450
+Wire Wire Line
+	1550 4450 1300 4450
+$Comp
+L Device:D D?
+U 1 1 5DA67679
+P 5700 1900
+F 0 "D?" H 5700 1684 50  0000 C CNN
+F 1 "D" H 5700 1775 50  0000 C CNN
+F 2 "" H 5700 1900 50  0001 C CNN
+F 3 "~" H 5700 1900 50  0001 C CNN
+	1    5700 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q?
+U 1 1 5DA677CA
+P 6200 1900
+F 0 "Q?" H 6391 1946 50  0000 L CNN
+F 1 "2N3904" H 6391 1855 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6400 1825 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 6200 1900 50  0001 L CNN
+	1    6200 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 1900 5550 1900
+Wire Wire Line
+	5850 1900 6000 1900
+Wire Wire Line
+	6300 2100 6300 2250
+Wire Wire Line
+	6300 2250 6500 2250
+$Comp
+L power:+5V #PWR?
+U 1 1 5DA87CD0
+P 6300 1550
+F 0 "#PWR?" H 6300 1400 50  0001 C CNN
+F 1 "+5V" H 6315 1723 50  0000 C CNN
+F 2 "" H 6300 1550 50  0001 C CNN
+F 3 "" H 6300 1550 50  0001 C CNN
+	1    6300 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 1550 6300 1700
+$Comp
+L Device:R_US R?
+U 1 1 5DA88454
+P 6300 2500
+F 0 "R?" H 6368 2546 50  0000 L CNN
+F 1 "10k" H 6368 2455 50  0000 L CNN
+F 2 "" V 6340 2490 50  0001 C CNN
+F 3 "~" H 6300 2500 50  0001 C CNN
+	1    6300 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2250 6300 2350
+Connection ~ 6300 2250
+$Comp
+L power:GND #PWR?
+U 1 1 5DA88C14
+P 6300 2650
+F 0 "#PWR?" H 6300 2400 50  0001 C CNN
+F 1 "GND" H 6305 2477 50  0000 C CNN
+F 2 "" H 6300 2650 50  0001 C CNN
+F 3 "" H 6300 2650 50  0001 C CNN
+	1    6300 2650
+	1    0    0    -1  
+$EndComp
+Text HLabel 5950 4250 2    50   Input ~ 0
+A2_DROGUE
+Text HLabel 5950 4400 2    50   Input ~ 0
+A2_MAIN
+Text HLabel 4100 900  2    50   Input ~ 0
+A1_DROGUE
+Text HLabel 4100 1050 2    50   Input ~ 0
+A1_MAIN
+$EndSCHEMATC
