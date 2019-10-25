@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:gps_2-cache
-EELAYER 30 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -309,7 +309,7 @@ F 3 "" H 3390 2190 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L gps_2-rescue:PIC18LF26K83-canhw U?
+L canhw:PIC18LF26K83 U?
 U 1 1 5C99777C
 P 2640 3040
 AR Path="/5C0E59C4/5C99777C" Ref="U?"  Part="1" 
@@ -625,6 +625,19 @@ F 3 "" H 4140 4460 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+L Device:C C?
+U 1 1 5C9AF4C6
+P 4400 4710
+AR Path="/5C1E33EC/5C9AF4C6" Ref="C?"  Part="1" 
+AR Path="/5C9AF4C6" Ref="C1"  Part="1" 
+F 0 "C1" V 4652 4710 50  0000 C CNN
+F 1 "0.1µF" V 4561 4710 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4438 4560 50  0001 C CNN
+F 3 "~" H 4400 4710 50  0001 C CNN
+	1    4400 4710
+	0    -1   -1   0   
+$EndComp
+$Comp
 L power:GND #PWR08
 U 1 1 5C9AF4CD
 P 4990 4760
@@ -654,6 +667,8 @@ F 3 "~" H 1410 5410 50  0001 C CNN
 $EndComp
 Text Label 1260 5410 2    50   ~ 0
 VOUT
+Text Label 3950 5010 0    50   ~ 0
+VOUT
 Wire Wire Line
 	2350 5780 2350 5810
 Wire Wire Line
@@ -678,6 +693,68 @@ F 3 "~" H 2110 4660 50  0001 C CNN
 	1    2110 4660
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3950 5510 4170 5510
+Wire Wire Line
+	4170 5510 4170 5610
+$Comp
+L power:GND #PWR06
+U 1 1 5C9AF504
+P 4170 6530
+F 0 "#PWR06" H 4170 6280 50  0001 C CNN
+F 1 "GND" H 4175 6357 50  0000 C CNN
+F 2 "" H 4170 6530 50  0001 C CNN
+F 3 "" H 4170 6530 50  0001 C CNN
+	1    4170 6530
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 6410 4170 6410
+Connection ~ 4170 6410
+Wire Wire Line
+	4170 6410 4170 6530
+Wire Wire Line
+	3950 6310 4170 6310
+Connection ~ 4170 6310
+Wire Wire Line
+	4170 6310 4170 6410
+Wire Wire Line
+	3950 6210 4170 6210
+Connection ~ 4170 6210
+Wire Wire Line
+	4170 6210 4170 6310
+Wire Wire Line
+	3950 6110 4170 6110
+Connection ~ 4170 6110
+Wire Wire Line
+	4170 6110 4170 6210
+Wire Wire Line
+	3950 6010 4170 6010
+Connection ~ 4170 6010
+Wire Wire Line
+	4170 6010 4170 6110
+Wire Wire Line
+	3950 5910 4170 5910
+Connection ~ 4170 5910
+Wire Wire Line
+	4170 5910 4170 6010
+Wire Wire Line
+	3950 5810 4170 5810
+Connection ~ 4170 5810
+Wire Wire Line
+	4170 5810 4170 5910
+Wire Wire Line
+	3950 5710 4170 5710
+Connection ~ 4170 5710
+Wire Wire Line
+	4170 5710 4170 5810
+Wire Wire Line
+	3950 5610 4170 5610
+Connection ~ 4170 5610
+Wire Wire Line
+	4170 5610 4170 5710
+Wire Wire Line
+	3950 5310 4320 5310
 Wire Wire Line
 	2110 4810 2350 4810
 $Comp
@@ -754,6 +831,8 @@ Text Label 3340 3340 0    50   ~ 0
 PIC_RX_GPS_TX
 Text Label 4490 6350 0    50   ~ 0
 PIC_RX_GPS_TX
+Wire Wire Line
+	4320 6350 4490 6350
 Connection ~ 4200 3740
 Wire Wire Line
 	3990 3740 4200 3740
@@ -806,7 +885,23 @@ Wire Wire Line
 Wire Wire Line
 	5875 5370 6020 5370
 $Comp
-L gps_2-rescue:MCP2562-canhw U3
+L canhw:A2235-H U1
+U 1 1 5D425242
+P 3150 5510
+F 0 "U1" H 3150 6577 50  0000 C CNN
+F 1 "A2235-H" H 3150 6486 50  0000 C CNN
+F 2 "XCVR_A2235-H" H 3150 5510 50  0001 L BNN
+F 3 "http://www.mouser.com/catalog/specsheets/EVA2235-H.pdf" H 3150 5510 50  0001 L BNN
+F 4 "Maestro Wireless" H 3150 5510 50  0001 L BNN "Field4"
+F 5 "Gps Module, Mini Outline w/ Ant" H 3150 5510 50  0001 L BNN "Field5"
+F 6 "Module Maestro Wireless" H 3150 5510 50  0001 L BNN "Field6"
+F 7 "Unavailable" H 3150 5510 50  0001 L BNN "Field7"
+F 8 "A2235-H" H 3150 5510 50  0001 L BNN "Field8"
+	1    3150 5510
+	1    0    0    -1  
+$EndComp
+$Comp
+L canhw:MCP2562 U3
 U 1 1 5D44182C
 P 6520 5270
 F 0 "U3" H 6495 5535 50  0000 C CNN
@@ -817,7 +912,7 @@ F 3 "http://hades.mech.northwestern.edu/images/5/5e/MCP2562.pdf" H 6520 5270 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L gps_2-rescue:INA180-canhw U5
+L canhw:INA180 U5
 U 1 1 5D442338
 P 9940 2410
 F 0 "U5" H 9890 1937 50  0000 C CNN
@@ -828,7 +923,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/ina180.pdf" H 9940 2410 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L gps_2-rescue:MIC5504-3.3-canhw U4
+L canhw:MIC5504-3.3 U4
 U 1 1 5D442E97
 P 9400 5640
 F 0 "U4" H 9425 5865 50  0000 C CNN
@@ -838,6 +933,10 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550x-300mA-Single-Output
 	1    9400 5640
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4320 5310 4320 6350
+Wire Wire Line
+	3950 5110 4370 5110
 Wire Wire Line
 	1230 4910 2350 4910
 $Comp
@@ -966,7 +1065,7 @@ Wire Wire Line
 Text Label 9350 4160 0    50   ~ 0
 POWER_BATT
 $Comp
-L gps_2-rescue:INA180-canhw U6
+L canhw:INA180 U6
 U 1 1 5D4E8DE7
 P 8950 4160
 F 0 "U6" H 8900 3687 50  0000 C CNN
@@ -1011,103 +1110,66 @@ F 3 "" H 8700 3060 50  0001 C CNN
 $EndComp
 Text Label 1890 2740 2    50   ~ 0
 POWER_BATT
-Wire Wire Line
-	3950 5110 4370 5110
-Wire Wire Line
-	4320 5310 4320 6350
 $Comp
-L gps_2-rescue:A2235-H-canhw U1
-U 1 1 5D425242
-P 3150 5510
-F 0 "U1" H 3150 6577 50  0000 C CNN
-F 1 "A2235-H" H 3150 6486 50  0000 C CNN
-F 2 "XCVR_A2235-H" H 3150 5510 50  0001 L BNN
-F 3 "http://www.mouser.com/catalog/specsheets/EVA2235-H.pdf" H 3150 5510 50  0001 L BNN
-F 4 "Maestro Wireless" H 3150 5510 50  0001 L BNN "Field4"
-F 5 "Gps Module, Mini Outline w/ Ant" H 3150 5510 50  0001 L BNN "Field5"
-F 6 "Module Maestro Wireless" H 3150 5510 50  0001 L BNN "Field6"
-F 7 "Unavailable" H 3150 5510 50  0001 L BNN "Field7"
-F 8 "A2235-H" H 3150 5510 50  0001 L BNN "Field8"
-	1    3150 5510
+L Device:R R?
+U 1 1 5D539565
+P 5530 1720
+F 0 "R?" H 5600 1766 50  0000 L CNN
+F 1 "500R" H 5600 1675 50  0000 L CNN
+F 2 "" V 5460 1720 50  0001 C CNN
+F 3 "~" H 5530 1720 50  0001 C CNN
+	1    5530 1720
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5D539D1F
+P 5530 1270
+F 0 "#PWR?" H 5530 1120 50  0001 C CNN
+F 1 "+12V" H 5545 1443 50  0000 C CNN
+F 2 "" H 5530 1270 50  0001 C CNN
+F 3 "" H 5530 1270 50  0001 C CNN
+	1    5530 1270
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D53A4D3
+P 5530 1420
+F 0 "R?" H 5600 1466 50  0000 L CNN
+F 1 "700R" H 5600 1375 50  0000 L CNN
+F 2 "" V 5460 1420 50  0001 C CNN
+F 3 "~" H 5530 1420 50  0001 C CNN
+	1    5530 1420
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D53AE2B
+P 5530 1870
+F 0 "#PWR?" H 5530 1620 50  0001 C CNN
+F 1 "GND" H 5535 1697 50  0000 C CNN
+F 2 "" H 5530 1870 50  0001 C CNN
+F 3 "" H 5530 1870 50  0001 C CNN
+	1    5530 1870
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4320 6350 4490 6350
-Wire Wire Line
-	3950 5310 4320 5310
-Wire Wire Line
-	4170 5610 4170 5710
-Connection ~ 4170 5610
-Wire Wire Line
-	3950 5610 4170 5610
-Wire Wire Line
-	4170 5710 4170 5810
-Connection ~ 4170 5710
-Wire Wire Line
-	3950 5710 4170 5710
-Wire Wire Line
-	4170 5810 4170 5910
-Connection ~ 4170 5810
-Wire Wire Line
-	3950 5810 4170 5810
-Wire Wire Line
-	4170 5910 4170 6010
-Connection ~ 4170 5910
-Wire Wire Line
-	3950 5910 4170 5910
-Wire Wire Line
-	4170 6010 4170 6110
-Connection ~ 4170 6010
-Wire Wire Line
-	3950 6010 4170 6010
-Wire Wire Line
-	4170 6110 4170 6210
-Connection ~ 4170 6110
-Wire Wire Line
-	3950 6110 4170 6110
-Wire Wire Line
-	4170 6210 4170 6310
-Connection ~ 4170 6210
-Wire Wire Line
-	3950 6210 4170 6210
-Wire Wire Line
-	4170 6310 4170 6410
-Connection ~ 4170 6310
-Wire Wire Line
-	3950 6310 4170 6310
-Wire Wire Line
-	4170 6410 4170 6530
-Connection ~ 4170 6410
-Wire Wire Line
-	3950 6410 4170 6410
+	5900 1570 5900 1380
+Connection ~ 5530 1570
 $Comp
-L power:GND #PWR06
-U 1 1 5C9AF504
-P 4170 6530
-F 0 "#PWR06" H 4170 6280 50  0001 C CNN
-F 1 "GND" H 4175 6357 50  0000 C CNN
-F 2 "" H 4170 6530 50  0001 C CNN
-F 3 "" H 4170 6530 50  0001 C CNN
-	1    4170 6530
+L power:+5V #PWR?
+U 1 1 5D55377D
+P 5900 1380
+F 0 "#PWR?" H 5900 1230 50  0001 C CNN
+F 1 "+5V" H 5915 1553 50  0000 C CNN
+F 2 "" H 5900 1380 50  0001 C CNN
+F 3 "" H 5900 1380 50  0001 C CNN
+	1    5900 1380
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4170 5510 4170 5610
-Wire Wire Line
-	3950 5510 4170 5510
-Text Label 3950 5010 0    50   ~ 0
-VOUT
-$Comp
-L Device:C C?
-U 1 1 5C9AF4C6
-P 4400 4710
-AR Path="/5C1E33EC/5C9AF4C6" Ref="C?"  Part="1" 
-AR Path="/5C9AF4C6" Ref="C1"  Part="1" 
-F 0 "C1" V 4652 4710 50  0000 C CNN
-F 1 "0.1µF" V 4561 4710 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4438 4560 50  0001 C CNN
-F 3 "~" H 4400 4710 50  0001 C CNN
-	1    4400 4710
-	0    -1   -1   0   
-$EndComp
+	5530 1570 5900 1570
+Text Notes 5300 1020 0    50   ~ 0
+Voltage divider for \n12V down to 5V
 $EndSCHEMATC
