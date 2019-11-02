@@ -104,19 +104,6 @@ F 3 "~" H 4200 3290 50  0001 C CNN
 $EndComp
 $Comp
 L Device:R R?
-U 1 1 5C9976B6
-P 4500 3590
-AR Path="/5C0E59C4/5C9976B6" Ref="R?"  Part="1" 
-AR Path="/5C9976B6" Ref="R8"  Part="1" 
-F 0 "R8" H 4570 3636 50  0000 L CNN
-F 1 "330" H 4570 3545 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4430 3590 50  0001 C CNN
-F 3 "~" H 4500 3590 50  0001 C CNN
-	1    4500 3590
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
 U 1 1 5C9976BD
 P 4200 3590
 AR Path="/5C0E59C4/5C9976BD" Ref="R?"  Part="1" 
@@ -128,21 +115,6 @@ F 3 "~" H 4200 3590 50  0001 C CNN
 	1    4200 3590
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:LED D?
-U 1 1 5C9976CB
-P 4500 3290
-AR Path="/5C0E59C4/5C9976CB" Ref="D?"  Part="1" 
-AR Path="/5C9976CB" Ref="D3"  Part="1" 
-F 0 "D3" V 4550 3440 50  0000 C CNN
-F 1 "LED" V 4450 3440 50  0000 C CNN
-F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4500 3290 50  0001 C CNN
-F 3 "~" H 4500 3290 50  0001 C CNN
-	1    4500 3290
-	0    -1   -1   0   
-$EndComp
-Text Notes 4570 3200 0    50   ~ 0
-debug LEDs
 $Comp
 L Connector:Conn_01x05_Female J?
 U 1 1 5C9976E1
@@ -754,17 +726,10 @@ Text Label 3340 3340 0    50   ~ 0
 PIC_RX_GPS_TX
 Text Label 4490 6350 0    50   ~ 0
 PIC_RX_GPS_TX
-Connection ~ 4200 3740
 Wire Wire Line
 	3990 3740 4200 3740
 Wire Wire Line
-	4200 3740 4500 3740
-Wire Wire Line
-	4500 3040 4500 3140
-Wire Wire Line
 	3340 3140 4200 3140
-Wire Wire Line
-	3340 3040 4500 3040
 Text Label 8140 1610 0    50   ~ 0
 CANH
 Text Label 8140 1710 0    50   ~ 0
@@ -1109,5 +1074,40 @@ F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4438 4560 50  
 F 3 "~" H 4400 4710 50  0001 C CNN
 	1    4400 4710
 	0    -1   -1   0   
+$EndComp
+Connection ~ 4200 3740
+Wire Wire Line
+	3340 3040 4500 3040
+Wire Wire Line
+	4500 3040 4500 3140
+Wire Wire Line
+	4200 3740 4500 3740
+Text Notes 4570 3200 0    50   ~ 0
+debug LEDs
+$Comp
+L Device:LED D?
+U 1 1 5C9976CB
+P 4500 3290
+AR Path="/5C0E59C4/5C9976CB" Ref="D?"  Part="1" 
+AR Path="/5C9976CB" Ref="D3"  Part="1" 
+F 0 "D3" V 4550 3440 50  0000 C CNN
+F 1 "LED" V 4450 3440 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4500 3290 50  0001 C CNN
+F 3 "~" H 4500 3290 50  0001 C CNN
+	1    4500 3290
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C9976B6
+P 4500 3590
+AR Path="/5C0E59C4/5C9976B6" Ref="R?"  Part="1" 
+AR Path="/5C9976B6" Ref="R8"  Part="1" 
+F 0 "R8" H 4570 3636 50  0000 L CNN
+F 1 "330" H 4570 3545 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4430 3590 50  0001 C CNN
+F 3 "~" H 4500 3590 50  0001 C CNN
+	1    4500 3590
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
