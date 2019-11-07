@@ -247,7 +247,7 @@ F 1 "LED" V 5186 6478 50  0000 L CNN
 F 2 "" H 5150 6400 50  0001 C CNN
 F 3 "~" H 5150 6400 50  0001 C CNN
 	1    5150 6400
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED D2
@@ -258,7 +258,7 @@ F 1 "LED" V 4836 6478 50  0000 L CNN
 F 2 "" H 4800 6400 50  0001 C CNN
 F 3 "~" H 4800 6400 50  0001 C CNN
 	1    4800 6400
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED D1
@@ -269,7 +269,7 @@ F 1 "LED" V 4486 6478 50  0000 L CNN
 F 2 "" H 4450 6400 50  0001 C CNN
 F 3 "~" H 4450 6400 50  0001 C CNN
 	1    4450 6400
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+5V #PWR06
