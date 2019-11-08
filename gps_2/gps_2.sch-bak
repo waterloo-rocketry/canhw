@@ -693,7 +693,6 @@ F 3 "" H 4150 6000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3450 5750 3650 5750
-NoConn ~ 3450 5850
 Wire Wire Line
 	1400 5650 1600 5650
 Wire Wire Line
@@ -820,26 +819,10 @@ F 3 "~" H 3200 6500 50  0001 C CNN
 	1    3200 6500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C9
-U 1 1 5DD3F5B5
-P 3400 6750
-F 0 "C9" H 3515 6796 50  0000 L CNN
-F 1 "22pF" H 3515 6705 50  0000 L CNN
-F 2 "" H 3438 6600 50  0001 C CNN
-F 3 "~" H 3400 6750 50  0001 C CNN
-	1    3400 6750
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2550 5850 2850 5850
 Wire Wire Line
 	3200 6150 3200 6350
-Wire Wire Line
-	3200 6650 3200 6750
-Wire Wire Line
-	3250 6750 3200 6750
-Connection ~ 3200 6750
 $Comp
 L power:GND #PWR030
 U 1 1 5DD6AEA8
@@ -949,8 +932,6 @@ Wire Wire Line
 	4150 6050 4150 6000
 Wire Wire Line
 	3650 6050 4150 6050
-Wire Wire Line
-	3200 6750 3200 7250
 Connection ~ 8330 5640
 $Comp
 L gps_2-rescue:MCP2562-canhw U3
@@ -1080,16 +1061,31 @@ Wire Wire Line
 	6770 4070 6330 4070
 Wire Wire Line
 	2550 6950 2550 7400
-NoConn ~ 3300 6150
+Text Label 3340 3440 0    50   ~ 0
+PIC_TX_GPS_RX
+NoConn ~ 3450 5850
+Text Label 4420 7040 0    50   ~ 0
+PIC_TX_GPS_RX
+Text Label 1890 3640 2    50   ~ 0
+FIX
+Text Label 2550 7400 0    50   ~ 0
+FIX
+Connection ~ 3200 6750
+Wire Wire Line
+	3200 6750 3200 7250
+Wire Wire Line
+	3200 6650 3200 6750
+Wire Wire Line
+	3250 6750 3200 6750
 $Comp
-L power:GND #PWR?
-U 1 1 5DC782BC
-P 2550 7400
-F 0 "#PWR?" H 2550 7150 50  0001 C CNN
-F 1 "GND" H 2555 7227 50  0000 C CNN
-F 2 "" H 2550 7400 50  0001 C CNN
-F 3 "" H 2550 7400 50  0001 C CNN
-	1    2550 7400
-	1    0    0    -1  
+L Device:C C9
+U 1 1 5DD3F5B5
+P 3400 6750
+F 0 "C9" H 3515 6796 50  0000 L CNN
+F 1 "22pF" H 3515 6705 50  0000 L CNN
+F 2 "" H 3438 6600 50  0001 C CNN
+F 3 "~" H 3400 6750 50  0001 C CNN
+	1    3400 6750
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
