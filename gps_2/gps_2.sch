@@ -665,31 +665,16 @@ F 3 "~" H 2550 6800 50  0001 C CNN
 	1    2550 6800
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5DC89624
-P 2550 7200
-AR Path="/5C0E59C4/5DC89624" Ref="#PWR?"  Part="1" 
-AR Path="/5DC89624" Ref="#PWR026"  Part="1" 
-F 0 "#PWR026" H 2550 6950 50  0001 C CNN
-F 1 "GND" H 2555 7027 50  0000 C CNN
-F 2 "" H 2550 7200 50  0001 C CNN
-F 3 "" H 2550 7200 50  0001 C CNN
-	1    2550 7200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2550 5850 2550 6200
 Wire Wire Line
 	2550 6500 2550 6650
-Wire Wire Line
-	2550 6950 2550 7200
 $Comp
 L Device:R_US R3
 U 1 1 5DCB1485
 P 3650 5900
 F 0 "R3" V 3445 5900 50  0000 C CNN
-F 1 "1000R" V 3536 5900 50  0000 C CNN
+F 1 "1K" V 3536 5900 50  0000 C CNN
 F 2 "" V 3690 5890 50  0001 C CNN
 F 3 "~" H 3650 5900 50  0001 C CNN
 	1    3650 5900
@@ -708,7 +693,6 @@ F 3 "" H 4150 6000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3450 5750 3650 5750
-NoConn ~ 3450 5850
 Wire Wire Line
 	1400 5650 1600 5650
 Wire Wire Line
@@ -824,7 +808,6 @@ Wire Wire Line
 	3650 5400 3800 5400
 Text Label 3200 7250 0    50   ~ 0
 PIC_RX_GPS_TX
-NoConn ~ 3300 6150
 $Comp
 L Device:L L1
 U 1 1 5DD3A810
@@ -836,26 +819,10 @@ F 3 "~" H 3200 6500 50  0001 C CNN
 	1    3200 6500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C9
-U 1 1 5DD3F5B5
-P 3400 6750
-F 0 "C9" H 3515 6796 50  0000 L CNN
-F 1 "22pF" H 3515 6705 50  0000 L CNN
-F 2 "" H 3438 6600 50  0001 C CNN
-F 3 "~" H 3400 6750 50  0001 C CNN
-	1    3400 6750
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2550 5850 2850 5850
 Wire Wire Line
 	3200 6150 3200 6350
-Wire Wire Line
-	3200 6650 3200 6750
-Wire Wire Line
-	3250 6750 3200 6750
-Connection ~ 3200 6750
 $Comp
 L power:GND #PWR030
 U 1 1 5DD6AEA8
@@ -965,8 +932,6 @@ Wire Wire Line
 	4150 6050 4150 6000
 Wire Wire Line
 	3650 6050 4150 6050
-Wire Wire Line
-	3200 6750 3200 7250
 Connection ~ 8330 5640
 $Comp
 L gps_2-rescue:MCP2562-canhw U3
@@ -1094,4 +1059,33 @@ Wire Wire Line
 	6770 4170 6330 4170
 Wire Wire Line
 	6770 4070 6330 4070
+Wire Wire Line
+	2550 6950 2550 7400
+Text Label 3340 3440 0    50   ~ 0
+PIC_TX_GPS_RX
+NoConn ~ 3450 5850
+Text Label 4420 7040 0    50   ~ 0
+PIC_TX_GPS_RX
+Text Label 1890 3640 2    50   ~ 0
+FIX
+Text Label 2550 7400 0    50   ~ 0
+FIX
+Connection ~ 3200 6750
+Wire Wire Line
+	3200 6750 3200 7250
+Wire Wire Line
+	3200 6650 3200 6750
+Wire Wire Line
+	3250 6750 3200 6750
+$Comp
+L Device:C C9
+U 1 1 5DD3F5B5
+P 3400 6750
+F 0 "C9" H 3515 6796 50  0000 L CNN
+F 1 "22pF" H 3515 6705 50  0000 L CNN
+F 2 "" H 3438 6600 50  0001 C CNN
+F 3 "~" H 3400 6750 50  0001 C CNN
+	1    3400 6750
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
