@@ -40,4 +40,10 @@ Wire Wire Line
 	4400 2750 4850 2750
 Wire Wire Line
 	4400 2950 4850 2950
+Text HLabel 7400 2800 0    50   Output ~ 0
+VALVE_CONTROL
+Text HLabel 7950 2800 2    50   Output ~ 0
+VALVE_CONTROL
+Wire Wire Line
+	7400 2800 7950 2800
 $EndSCHEMATC
