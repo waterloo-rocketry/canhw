@@ -329,4 +329,85 @@ F 3 "http://hades.mech.northwestern.edu/images/5/5e/MCP2562.pdf" H 9200 3550 50 
 	1    9200 3550
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C C?
+U 1 1 5DCC9FEF
+P 8350 4250
+F 0 "C?" H 8465 4296 50  0000 L CNN
+F 1 "C" H 8465 4205 50  0000 L CNN
+F 2 "" H 8388 4100 50  0001 C CNN
+F 3 "~" H 8350 4250 50  0001 C CNN
+	1    8350 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DCCAAA4
+P 8350 3300
+F 0 "#PWR?" H 8350 3150 50  0001 C CNN
+F 1 "+5V" H 8365 3473 50  0000 C CNN
+F 2 "" H 8350 3300 50  0001 C CNN
+F 3 "" H 8350 3300 50  0001 C CNN
+	1    8350 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DCCAFB6
+P 9800 4100
+F 0 "#PWR?" H 9800 3850 50  0001 C CNN
+F 1 "GND" H 9805 3927 50  0000 C CNN
+F 2 "" H 9800 4100 50  0001 C CNN
+F 3 "" H 9800 4100 50  0001 C CNN
+	1    9800 4100
+	1    0    0    -1  
+$EndComp
+Text Label 8150 3750 2    50   ~ 0
+CAN_TX
+Text Label 8150 3850 2    50   ~ 0
+CAN_RX
+Wire Wire Line
+	8700 3750 8150 3750
+Wire Wire Line
+	8700 3850 8150 3850
+$Comp
+L power:GND #PWR?
+U 1 1 5DCCC80D
+P 8350 4400
+F 0 "#PWR?" H 8350 4150 50  0001 C CNN
+F 1 "GND" H 8355 4227 50  0000 C CNN
+F 2 "" H 8350 4400 50  0001 C CNN
+F 3 "" H 8350 4400 50  0001 C CNN
+	1    8350 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 4100 8350 3650
+Wire Wire Line
+	8700 3550 8350 3550
+Connection ~ 8350 3550
+Wire Wire Line
+	8350 3550 8350 3300
+Wire Wire Line
+	8700 3650 8350 3650
+Connection ~ 8350 3650
+Wire Wire Line
+	8350 3650 8350 3550
+Wire Wire Line
+	9650 3850 9800 3850
+Wire Wire Line
+	9800 3850 9800 4100
+Wire Wire Line
+	9800 3850 9800 3550
+Wire Wire Line
+	9800 3550 9650 3550
+Connection ~ 9800 3850
+Text GLabel 10000 3650 2    50   Input ~ 0
+CANH
+Text GLabel 10000 3750 2    50   Input ~ 0
+CANL
+Wire Wire Line
+	10000 3650 9650 3650
+Wire Wire Line
+	9650 3750 10000 3750
 $EndSCHEMATC
