@@ -124,21 +124,6 @@ F 3 "~" H 6700 3550 50  0001 C CNN
 	1    6700 3550
 	-1   0    0    -1  
 $EndComp
-$Comp
-L power:+12V #PWR?
-U 1 1 5DCB84B0
-P 7300 3250
-F 0 "#PWR?" H 7300 3100 50  0001 C CNN
-F 1 "+12V" H 7315 3423 50  0000 C CNN
-F 2 "" H 7300 3250 50  0001 C CNN
-F 3 "" H 7300 3250 50  0001 C CNN
-	1    7300 3250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7300 3250 7300 3350
-Wire Wire Line
-	7300 3350 6900 3350
 Text GLabel 7450 3650 2    50   Input ~ 0
 CANH
 Text GLabel 7450 3750 2    50   Input ~ 0
@@ -283,4 +268,5 @@ Wire Wire Line
 	9800 3700 9800 3750
 Text HLabel 9600 4200 2    50   Input ~ 0
 CURR_AMP
+NoConn ~ 6900 3350
 $EndSCHEMATC

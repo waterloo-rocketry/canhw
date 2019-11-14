@@ -146,7 +146,7 @@ Connection ~ 3750 5250
 Wire Wire Line
 	3750 5250 3850 5250
 Text Label 3150 3450 2    50   ~ 0
-Open
+CLOSE
 $Comp
 L power:GND #PWR?
 U 1 1 5DCE229A
