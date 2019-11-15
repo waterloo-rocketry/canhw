@@ -1,0 +1,377 @@
+EESchema Schematic File Version 4
+LIBS:telemetry_receiver-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L canhw:GAMMA-915-SO U3
+U 1 1 5DCEC185
+P 7150 4550
+F 0 "U3" H 7725 6615 50  0000 C CNN
+F 1 "GAMMA-915-SO" H 7725 6524 50  0000 C CNN
+F 2 "" H 7500 4500 50  0001 C CNN
+F 3 "https://www.rfsolutions.co.uk/downloads/1543336360DS-GAMMA-9.pdf" H 7500 4500 50  0001 C CNN
+	1    7150 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5DCECBE6
+P 8500 4500
+F 0 "#PWR09" H 8500 4250 50  0001 C CNN
+F 1 "GND" H 8505 4327 50  0000 C CNN
+F 2 "" H 8500 4500 50  0001 C CNN
+F 3 "" H 8500 4500 50  0001 C CNN
+	1    8500 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 4250 8500 4250
+Wire Wire Line
+	8500 4250 8500 4350
+Wire Wire Line
+	8400 4350 8500 4350
+Connection ~ 8500 4350
+Wire Wire Line
+	8500 4350 8500 4450
+Wire Wire Line
+	8500 4450 8400 4450
+Connection ~ 8500 4450
+Wire Wire Line
+	8500 4450 8500 4500
+$Comp
+L power:+3V3 #PWR07
+U 1 1 5DCEDB0F
+P 6900 2650
+F 0 "#PWR07" H 6900 2500 50  0001 C CNN
+F 1 "+3V3" H 6915 2823 50  0000 C CNN
+F 2 "" H 6900 2650 50  0001 C CNN
+F 3 "" H 6900 2650 50  0001 C CNN
+	1    6900 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR010
+U 1 1 5DCEE26F
+P 8550 2650
+F 0 "#PWR010" H 8550 2500 50  0001 C CNN
+F 1 "+3V3" H 8565 2823 50  0000 C CNN
+F 2 "" H 8550 2650 50  0001 C CNN
+F 3 "" H 8550 2650 50  0001 C CNN
+	1    8550 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5DCEEE40
+P 6600 2750
+F 0 "C5" V 6348 2750 50  0000 C CNN
+F 1 "0.1u" V 6439 2750 50  0000 C CNN
+F 2 "" H 6638 2600 50  0001 C CNN
+F 3 "~" H 6600 2750 50  0001 C CNN
+	1    6600 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5DCEFF1B
+P 8850 2750
+F 0 "C6" V 8598 2750 50  0000 C CNN
+F 1 "0.1u" V 8689 2750 50  0000 C CNN
+F 2 "" H 8888 2600 50  0001 C CNN
+F 3 "~" H 8850 2750 50  0001 C CNN
+	1    8850 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5DCF0AF0
+P 9050 2850
+F 0 "#PWR011" H 9050 2600 50  0001 C CNN
+F 1 "GND" H 9055 2677 50  0000 C CNN
+F 2 "" H 9050 2850 50  0001 C CNN
+F 3 "" H 9050 2850 50  0001 C CNN
+	1    9050 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5DCF120A
+P 6400 2850
+F 0 "#PWR06" H 6400 2600 50  0001 C CNN
+F 1 "GND" H 6405 2677 50  0000 C CNN
+F 2 "" H 6400 2850 50  0001 C CNN
+F 3 "" H 6400 2850 50  0001 C CNN
+	1    6400 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2850 6400 2750
+Wire Wire Line
+	6400 2750 6450 2750
+Wire Wire Line
+	9000 2750 9050 2750
+Wire Wire Line
+	9050 2750 9050 2850
+NoConn ~ 7050 3150
+$Comp
+L power:GND #PWR08
+U 1 1 5DCF810E
+P 6900 4600
+F 0 "#PWR08" H 6900 4350 50  0001 C CNN
+F 1 "GND" H 6905 4427 50  0000 C CNN
+F 2 "" H 6900 4600 50  0001 C CNN
+F 3 "" H 6900 4600 50  0001 C CNN
+	1    6900 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 4150 6900 4150
+Wire Wire Line
+	6900 4150 6900 4600
+$Comp
+L Logic_LevelTranslator:TXB0104D U2
+U 1 1 5DCF2976
+P 3800 3550
+F 0 "U2" H 3800 2761 50  0000 C CNN
+F 1 "TXB0104D" H 3800 2670 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3800 2800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/txb0104.pdf" H 3910 3645 50  0001 C CNN
+	1    3800 3550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2750 6900 2750
+Wire Wire Line
+	6900 2750 6900 2650
+Wire Wire Line
+	6750 2750 6900 2750
+Connection ~ 6900 2750
+Wire Wire Line
+	8400 2750 8550 2750
+Wire Wire Line
+	8550 2750 8550 2650
+Wire Wire Line
+	8700 2750 8550 2750
+Connection ~ 8550 2750
+$Comp
+L power:GND #PWR04
+U 1 1 5DD043E0
+P 4200 4350
+F 0 "#PWR04" H 4200 4100 50  0001 C CNN
+F 1 "GND" H 4205 4177 50  0000 C CNN
+F 2 "" H 4200 4350 50  0001 C CNN
+F 3 "" H 4200 4350 50  0001 C CNN
+	1    4200 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 4250 4200 4250
+Wire Wire Line
+	4200 4250 4200 4350
+$Comp
+L power:+3V3 #PWR03
+U 1 1 5DD09E44
+P 3900 2650
+F 0 "#PWR03" H 3900 2500 50  0001 C CNN
+F 1 "+3V3" H 3915 2823 50  0000 C CNN
+F 2 "" H 3900 2650 50  0001 C CNN
+F 3 "" H 3900 2650 50  0001 C CNN
+	1    3900 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 5DD0A407
+P 3700 2650
+F 0 "#PWR02" H 3700 2500 50  0001 C CNN
+F 1 "+5V" H 3715 2823 50  0000 C CNN
+F 2 "" H 3700 2650 50  0001 C CNN
+F 3 "" H 3700 2650 50  0001 C CNN
+	1    3700 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2850 3900 2750
+Wire Wire Line
+	3700 2850 3700 2750
+Wire Wire Line
+	4200 3450 4850 3450
+Wire Wire Line
+	4200 3250 4800 3250
+$Comp
+L Device:C C4
+U 1 1 5DD11179
+P 4350 2750
+F 0 "C4" V 4098 2750 50  0000 C CNN
+F 1 "0.1u" V 4189 2750 50  0000 C CNN
+F 2 "" H 4388 2600 50  0001 C CNN
+F 3 "~" H 4350 2750 50  0001 C CNN
+	1    4350 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5DD11637
+P 3250 2750
+F 0 "C3" V 2998 2750 50  0000 C CNN
+F 1 "0.1u" V 3089 2750 50  0000 C CNN
+F 2 "" H 3288 2600 50  0001 C CNN
+F 3 "~" H 3250 2750 50  0001 C CNN
+	1    3250 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 2750 3700 2750
+Connection ~ 3700 2750
+Wire Wire Line
+	3700 2750 3700 2650
+Wire Wire Line
+	4200 2750 3900 2750
+Connection ~ 3900 2750
+Wire Wire Line
+	3900 2750 3900 2650
+$Comp
+L power:GND #PWR05
+U 1 1 5DD15E09
+P 4600 2850
+F 0 "#PWR05" H 4600 2600 50  0001 C CNN
+F 1 "GND" H 4605 2677 50  0000 C CNN
+F 2 "" H 4600 2850 50  0001 C CNN
+F 3 "" H 4600 2850 50  0001 C CNN
+	1    4600 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5DD1645B
+P 3000 2850
+F 0 "#PWR01" H 3000 2600 50  0001 C CNN
+F 1 "GND" H 3005 2677 50  0000 C CNN
+F 2 "" H 3000 2850 50  0001 C CNN
+F 3 "" H 3000 2850 50  0001 C CNN
+	1    3000 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2850 3000 2750
+Wire Wire Line
+	3000 2750 3100 2750
+Wire Wire Line
+	4500 2750 4600 2750
+Wire Wire Line
+	4600 2750 4600 2850
+Text HLabel 3050 3250 0    50   Input ~ 0
+UART_RX
+Text HLabel 3050 3450 0    50   Input ~ 0
+UART_TX
+Wire Wire Line
+	3050 3450 3400 3450
+Wire Wire Line
+	3400 3250 3050 3250
+Wire Wire Line
+	4200 3050 4200 2750
+Wire Wire Line
+	3400 3650 3050 3650
+Wire Wire Line
+	3050 3850 3400 3850
+Text HLabel 3050 3850 0    50   Input ~ 0
+UART_CTS
+Text HLabel 3050 3650 0    50   Input ~ 0
+UART_RTS
+Wire Wire Line
+	4850 4350 4850 3450
+Wire Wire Line
+	4800 4450 4800 3250
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5DD0EE54
+P 5700 3650
+F 0 "JP1" H 5700 3855 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 5700 3764 50  0000 C CNN
+F 2 "" H 5700 3650 50  0001 C CNN
+F 3 "~" H 5700 3650 50  0001 C CNN
+	1    5700 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 5DD1934A
+P 5700 3750
+F 0 "JP2" H 5700 3525 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 5700 3616 50  0000 C CNN
+F 2 "" H 5700 3750 50  0001 C CNN
+F 3 "~" H 5700 3750 50  0001 C CNN
+	1    5700 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3650 4750 3850
+Wire Wire Line
+	4750 3850 4200 3850
+Wire Wire Line
+	4650 3750 4650 3650
+Wire Wire Line
+	4650 3650 4200 3650
+Connection ~ 4200 2750
+Wire Wire Line
+	5850 3650 7050 3650
+Wire Wire Line
+	5850 3750 6700 3750
+$Comp
+L Device:R_US R4
+U 1 1 5DD3000E
+P 6700 3900
+F 0 "R4" H 6768 3946 50  0000 L CNN
+F 1 "10k" H 6768 3855 50  0000 L CNN
+F 2 "" V 6740 3890 50  0001 C CNN
+F 3 "~" H 6700 3900 50  0001 C CNN
+	1    6700 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 6700 3750
+Wire Wire Line
+	6700 3750 7050 3750
+$Comp
+L power:GND #PWR017
+U 1 1 5DD342DE
+P 6700 4050
+F 0 "#PWR017" H 6700 3800 50  0001 C CNN
+F 1 "GND" H 6705 3877 50  0000 C CNN
+F 2 "" H 6700 4050 50  0001 C CNN
+F 3 "" H 6700 4050 50  0001 C CNN
+	1    6700 4050
+	1    0    0    -1  
+$EndComp
+Text Notes 5050 3400 0    50   ~ 0
+RTS/CTS aren't currently being used for \nRS-232 flow control. But in case there is a \nneed to scramble something together, \nsolder jumpers are being put here. 
+Wire Wire Line
+	4750 3650 5550 3650
+Wire Wire Line
+	4650 3750 5550 3750
+Wire Wire Line
+	4850 4350 7050 4350
+Wire Wire Line
+	4800 4450 7050 4450
+Text Notes 5200 4250 0    50   ~ 0
+Pull down for RTS when not in use.
+NoConn ~ 7050 3850
+NoConn ~ 7050 4050
+NoConn ~ 7050 3450
+NoConn ~ 7050 3350
+NoConn ~ 7050 3250
+NoConn ~ 7050 3050
+NoConn ~ 7050 2950
+NoConn ~ 8400 2950
+$EndSCHEMATC

@@ -1,0 +1,512 @@
+EESchema Schematic File Version 4
+LIBS:telemetry_transmitter-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L canhw:PIC18F26K83 U1
+U 1 1 5DB4F95A
+P 5850 3650
+F 0 "U1" H 5825 4565 50  0000 C CNN
+F 1 "PIC18F26K83" H 5825 4474 50  0000 C CNN
+F 2 "" H 6300 3650 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001943A.pdf" H 6300 3650 50  0001 C CNN
+	1    5850 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3000 4700 3000
+$Comp
+L power:+5V #PWR0101
+U 1 1 5DB51D90
+P 4700 2650
+F 0 "#PWR0101" H 4700 2500 50  0001 C CNN
+F 1 "+5V" H 4715 2823 50  0000 C CNN
+F 2 "" H 4700 2650 50  0001 C CNN
+F 3 "" H 4700 2650 50  0001 C CNN
+	1    4700 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5DB54163
+P 6550 2650
+F 0 "#PWR0102" H 6550 2500 50  0001 C CNN
+F 1 "+5V" H 6565 2823 50  0000 C CNN
+F 2 "" H 6550 2650 50  0001 C CNN
+F 3 "" H 6550 2650 50  0001 C CNN
+	1    6550 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3000 4700 2950
+$Comp
+L Device:C C1
+U 1 1 5DB55931
+P 6750 2800
+F 0 "C1" V 7002 2800 50  0000 C CNN
+F 1 "0.1u" V 6911 2800 50  0000 C CNN
+F 2 "" H 6788 2650 50  0001 C CNN
+F 3 "~" H 6750 2800 50  0001 C CNN
+	1    6750 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6550 3000 6550 2800
+Wire Wire Line
+	6600 2800 6550 2800
+Connection ~ 6550 2800
+$Comp
+L power:GND #PWR0103
+U 1 1 5DB58627
+P 6950 2850
+F 0 "#PWR0103" H 6950 2600 50  0001 C CNN
+F 1 "GND" H 6955 2677 50  0000 C CNN
+F 2 "" H 6950 2850 50  0001 C CNN
+F 3 "" H 6950 2850 50  0001 C CNN
+	1    6950 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2850 6950 2800
+Wire Wire Line
+	6950 2800 6900 2800
+$Comp
+L Device:R_US R1
+U 1 1 5DB60B01
+P 4700 2800
+F 0 "R1" H 4632 2754 50  0000 R CNN
+F 1 "10K" H 4632 2845 50  0000 R CNN
+F 2 "" V 4740 2790 50  0001 C CNN
+F 3 "~" H 4700 2800 50  0001 C CNN
+	1    4700 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5DB64327
+P 6750 4400
+F 0 "#PWR0104" H 6750 4150 50  0001 C CNN
+F 1 "GND" H 6755 4227 50  0000 C CNN
+F 2 "" H 6750 4400 50  0001 C CNN
+F 3 "" H 6750 4400 50  0001 C CNN
+	1    6750 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 4200 6750 4200
+Wire Wire Line
+	6750 4200 6750 4300
+Wire Wire Line
+	6550 4300 6750 4300
+Connection ~ 6750 4300
+Wire Wire Line
+	6750 4300 6750 4400
+Text Label 6550 3100 0    50   ~ 0
+ICSPDAT
+Text Label 6550 3200 0    50   ~ 0
+ICSPCLK
+NoConn ~ 5100 3400
+Text Notes 4800 3450 0    50   ~ 0
+VREF+
+Text Label 4550 3700 2    50   ~ 0
+OSC1
+Text Label 4550 3800 2    50   ~ 0
+OSC2
+Text Label 4550 3900 2    50   ~ 0
+CAN_TX
+Text Label 4550 4000 2    50   ~ 0
+CAN_RX
+Text Label 2550 1950 0    50   ~ 0
+~MCLR
+Text Label 2550 2250 0    50   ~ 0
+ICSPDAT
+Text Label 2550 2350 0    50   ~ 0
+ICSPCLK
+$Comp
+L power:GND #PWR0105
+U 1 1 5DB6C1BD
+P 2250 2450
+F 0 "#PWR0105" H 2250 2200 50  0001 C CNN
+F 1 "GND" H 2255 2277 50  0000 C CNN
+F 2 "" H 2250 2450 50  0001 C CNN
+F 3 "" H 2250 2450 50  0001 C CNN
+	1    2250 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2150 2250 2450
+Wire Wire Line
+	4550 3700 5100 3700
+Wire Wire Line
+	4550 3800 5100 3800
+Wire Wire Line
+	4550 3900 5100 3900
+Wire Wire Line
+	4550 4000 5100 4000
+Text GLabel 10300 4750 2    50   Input ~ 0
+CANH
+Text GLabel 10300 4850 2    50   Input ~ 0
+CANL
+Wire Wire Line
+	9850 4650 10000 4650
+Wire Wire Line
+	10000 4650 10000 4950
+Wire Wire Line
+	9850 4950 10000 4950
+Wire Wire Line
+	9850 4750 10300 4750
+Wire Wire Line
+	9850 4850 10300 4850
+$Comp
+L Device:C C2
+U 1 1 5DB79E78
+P 8700 5150
+F 0 "C2" H 8815 5196 50  0000 L CNN
+F 1 "10u" H 8815 5105 50  0000 L CNN
+F 2 "" H 8738 5000 50  0001 C CNN
+F 3 "~" H 8700 5150 50  0001 C CNN
+	1    8700 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5DB7A312
+P 8700 5350
+F 0 "#PWR0106" H 8700 5100 50  0001 C CNN
+F 1 "GND" H 8705 5177 50  0000 C CNN
+F 2 "" H 8700 5350 50  0001 C CNN
+F 3 "" H 8700 5350 50  0001 C CNN
+	1    8700 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 5300 8700 5350
+$Comp
+L power:+5V #PWR0107
+U 1 1 5DB7C40F
+P 8700 4550
+F 0 "#PWR0107" H 8700 4400 50  0001 C CNN
+F 1 "+5V" H 8715 4723 50  0000 C CNN
+F 2 "" H 8700 4550 50  0001 C CNN
+F 3 "" H 8700 4550 50  0001 C CNN
+	1    8700 4550
+	1    0    0    -1  
+$EndComp
+Text Label 8500 4850 2    50   ~ 0
+CAN_TX
+Text Label 8500 4950 2    50   ~ 0
+CAN_RX
+Wire Wire Line
+	8500 4950 8900 4950
+Wire Wire Line
+	8900 4850 8500 4850
+$Comp
+L Device:Crystal Y1
+U 1 1 5DB874AD
+P 3250 5650
+F 0 "Y1" V 3204 5781 50  0000 L CNN
+F 1 "Crystal" V 3295 5781 50  0000 L CNN
+F 2 "" H 3250 5650 50  0001 C CNN
+F 3 "~" H 3250 5650 50  0001 C CNN
+	1    3250 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5DB888B6
+P 2750 5400
+F 0 "C3" V 2498 5400 50  0000 C CNN
+F 1 "26p" V 2589 5400 50  0000 C CNN
+F 2 "" H 2788 5250 50  0001 C CNN
+F 3 "~" H 2750 5400 50  0001 C CNN
+	1    2750 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5DB89801
+P 2750 5900
+F 0 "C4" V 2498 5900 50  0000 C CNN
+F 1 "26p" V 2589 5900 50  0000 C CNN
+F 2 "" H 2788 5750 50  0001 C CNN
+F 3 "~" H 2750 5900 50  0001 C CNN
+	1    2750 5900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3250 5500 3250 5400
+$Comp
+L power:GND #PWR0108
+U 1 1 5DB8CF15
+P 2250 5700
+F 0 "#PWR0108" H 2250 5450 50  0001 C CNN
+F 1 "GND" H 2255 5527 50  0000 C CNN
+F 2 "" H 2250 5700 50  0001 C CNN
+F 3 "" H 2250 5700 50  0001 C CNN
+	1    2250 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 5400 2500 5400
+Wire Wire Line
+	2600 5900 2500 5900
+Wire Wire Line
+	2500 5400 2500 5650
+Wire Wire Line
+	2250 5700 2250 5650
+Wire Wire Line
+	2250 5650 2500 5650
+Connection ~ 2500 5650
+Wire Wire Line
+	2500 5650 2500 5900
+Wire Wire Line
+	3250 5800 3250 5900
+Wire Wire Line
+	3250 5900 2900 5900
+Wire Wire Line
+	3250 5400 2900 5400
+Connection ~ 3250 5900
+Connection ~ 3250 5400
+Text Label 3750 5900 0    50   ~ 0
+OSC2
+Text Label 3750 5400 0    50   ~ 0
+OSC1
+Wire Wire Line
+	3250 5400 3750 5400
+Wire Wire Line
+	3250 5900 3750 5900
+Wire Wire Line
+	2550 2350 2050 2350
+Wire Wire Line
+	2550 2250 2050 2250
+Wire Wire Line
+	2550 1950 2050 1950
+Wire Wire Line
+	2250 2150 2050 2150
+$Comp
+L Connector:Conn_01x05_Female J1
+U 1 1 5DB5961D
+P 1850 2150
+F 0 "J1" H 1742 1725 50  0000 C CNN
+F 1 "Programming Header" H 1742 1816 50  0000 C CNN
+F 2 "" H 1850 2150 50  0001 C CNN
+F 3 "~" H 1850 2150 50  0001 C CNN
+	1    1850 2150
+	-1   0    0    1   
+$EndComp
+Connection ~ 10000 4950
+Wire Wire Line
+	10000 4950 10000 5100
+$Comp
+L power:GND #PWR0109
+U 1 1 5DB74F13
+P 10000 5100
+F 0 "#PWR0109" H 10000 4850 50  0001 C CNN
+F 1 "GND" H 10005 4927 50  0000 C CNN
+F 2 "" H 10000 5100 50  0001 C CNN
+F 3 "" H 10000 5100 50  0001 C CNN
+	1    10000 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L canhw:MCP2562 U2
+U 1 1 5DB73533
+P 9400 4650
+F 0 "U2" H 9375 4915 50  0000 C CNN
+F 1 "MCP2562" H 9375 4824 50  0000 C CNN
+F 2 "" H 9400 4650 50  0001 C CNN
+F 3 "http://hades.mech.northwestern.edu/images/5/5e/MCP2562.pdf" H 9400 4650 50  0001 C CNN
+	1    9400 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3400 8250 3400
+Wire Wire Line
+	6550 3500 8250 3500
+Wire Wire Line
+	6550 3600 8250 3600
+Wire Wire Line
+	6550 3700 8250 3700
+Wire Wire Line
+	8900 4650 8800 4650
+Wire Wire Line
+	8700 4550 8700 4650
+Connection ~ 8700 4650
+Wire Wire Line
+	8700 4650 8700 5000
+Wire Wire Line
+	8900 4750 8800 4750
+Wire Wire Line
+	8800 4750 8800 4650
+Connection ~ 8800 4650
+Wire Wire Line
+	8800 4650 8700 4650
+$Comp
+L power:+5V #PWR0110
+U 1 1 5DC7920B
+P 2400 1700
+F 0 "#PWR0110" H 2400 1550 50  0001 C CNN
+F 1 "+5V" H 2415 1873 50  0000 C CNN
+F 2 "" H 2400 1700 50  0001 C CNN
+F 3 "" H 2400 1700 50  0001 C CNN
+	1    2400 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2050 2400 2050
+Wire Wire Line
+	2400 2050 2400 1700
+$Comp
+L Device:R_US R4
+U 1 1 5DC8311E
+P 2000 3850
+F 0 "R4" H 2068 3896 50  0000 L CNN
+F 1 "330" H 2068 3805 50  0000 L CNN
+F 2 "" V 2040 3840 50  0001 C CNN
+F 3 "~" H 2000 3850 50  0001 C CNN
+	1    2000 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5DC8654A
+P 2350 3850
+F 0 "R3" H 2418 3896 50  0000 L CNN
+F 1 "330" H 2418 3805 50  0000 L CNN
+F 2 "" V 2390 3840 50  0001 C CNN
+F 3 "~" H 2350 3850 50  0001 C CNN
+	1    2350 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5DC87619
+P 2700 3850
+F 0 "R2" H 2768 3896 50  0000 L CNN
+F 1 "330" H 2768 3805 50  0000 L CNN
+F 2 "" V 2740 3840 50  0001 C CNN
+F 3 "~" H 2700 3850 50  0001 C CNN
+	1    2700 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 4100 2700 4000
+Wire Wire Line
+	2350 4200 2350 4000
+Wire Wire Line
+	2000 4300 2000 4000
+$Comp
+L Device:LED D3
+U 1 1 5DC9255B
+P 2000 3550
+F 0 "D3" V 2039 3433 50  0000 R CNN
+F 1 "LED" V 1948 3433 50  0000 R CNN
+F 2 "" H 2000 3550 50  0001 C CNN
+F 3 "~" H 2000 3550 50  0001 C CNN
+	1    2000 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5DC93AAF
+P 2350 3550
+F 0 "D2" V 2389 3433 50  0000 R CNN
+F 1 "LED" V 2298 3433 50  0000 R CNN
+F 2 "" H 2350 3550 50  0001 C CNN
+F 3 "~" H 2350 3550 50  0001 C CNN
+	1    2350 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5DC950BA
+P 2700 3550
+F 0 "D1" V 2739 3433 50  0000 R CNN
+F 1 "LED" V 2648 3433 50  0000 R CNN
+F 2 "" H 2700 3550 50  0001 C CNN
+F 3 "~" H 2700 3550 50  0001 C CNN
+	1    2700 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0111
+U 1 1 5DC96631
+P 2350 3150
+F 0 "#PWR0111" H 2350 3000 50  0001 C CNN
+F 1 "+5V" H 2365 3323 50  0000 C CNN
+F 2 "" H 2350 3150 50  0001 C CNN
+F 3 "" H 2350 3150 50  0001 C CNN
+	1    2350 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 3400 2000 3200
+Text Notes 8850 5400 0    50   ~ 0
+Should VIO be 3V3 not 5V?
+Text Label 4550 3000 2    50   ~ 0
+~MCLR
+Wire Wire Line
+	4550 3000 4700 3000
+Connection ~ 4700 3000
+Wire Wire Line
+	2700 4100 5100 4100
+Wire Wire Line
+	2350 4200 5100 4200
+Wire Wire Line
+	2000 4300 5100 4300
+Wire Wire Line
+	6550 2650 6550 2800
+$Sheet
+S 3400 2950 600  300 
+U 5DCE01AA
+F0 "power" 50
+F1 "power.sch" 50
+F2 "CURR_IN" I R 4000 3100 50 
+$EndSheet
+Wire Wire Line
+	4000 3100 5100 3100
+$Sheet
+S 8250 3300 900  500 
+U 5DCEE789
+F0 "radio" 50
+F1 "radio.sch" 50
+F2 "UART_RX" I L 8250 3400 50 
+F3 "UART_TX" I L 8250 3500 50 
+F4 "UART_CTS" I L 8250 3700 50 
+F5 "UART_RTS" I L 8250 3600 50 
+$EndSheet
+Wire Wire Line
+	2350 3150 2350 3200
+Connection ~ 2350 3200
+Wire Wire Line
+	2350 3200 2350 3400
+Wire Wire Line
+	2000 3200 2350 3200
+Wire Wire Line
+	2700 3400 2700 3200
+Wire Wire Line
+	2700 3200 2350 3200
+NoConn ~ 5100 3200
+NoConn ~ 5100 3300
+NoConn ~ 5100 3500
+NoConn ~ 5100 3600
+NoConn ~ 6550 3800
+NoConn ~ 6550 3900
+NoConn ~ 6550 4000
+NoConn ~ 6550 4100
+NoConn ~ 6550 3300
+Text Notes 7100 6950 0    50   ~ 0
+The purpose of the telemetry transmitter board is to take in data from\n the can bus and transmit this data to the telemetry receiver board. \nThe telemetry transmitter board will then transmit this data via a RF module.
+$EndSCHEMATC
