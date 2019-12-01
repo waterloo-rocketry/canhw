@@ -27,28 +27,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001943A.pdf" H 6300 3650 
 $EndComp
 Wire Wire Line
 	5100 3000 4700 3000
-$Comp
-L power:+5V #PWR0101
-U 1 1 5DB51D90
-P 4700 2650
-F 0 "#PWR0101" H 4700 2500 50  0001 C CNN
-F 1 "+5V" H 4715 2823 50  0000 C CNN
-F 2 "" H 4700 2650 50  0001 C CNN
-F 3 "" H 4700 2650 50  0001 C CNN
-	1    4700 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0102
-U 1 1 5DB54163
-P 6550 2650
-F 0 "#PWR0102" H 6550 2500 50  0001 C CNN
-F 1 "+5V" H 6565 2823 50  0000 C CNN
-F 2 "" H 6550 2650 50  0001 C CNN
-F 3 "" H 6550 2650 50  0001 C CNN
-	1    6550 2650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4700 3000 4700 2950
 $Comp
@@ -172,36 +150,36 @@ Wire Wire Line
 $Comp
 L Device:C C2
 U 1 1 5DB79E78
-P 8700 5150
-F 0 "C2" H 8815 5196 50  0000 L CNN
-F 1 "10u" H 8815 5105 50  0000 L CNN
-F 2 "" H 8738 5000 50  0001 C CNN
-F 3 "~" H 8700 5150 50  0001 C CNN
-	1    8700 5150
+P 8600 5150
+F 0 "C2" H 8715 5196 50  0000 L CNN
+F 1 "10u" H 8715 5105 50  0000 L CNN
+F 2 "" H 8638 5000 50  0001 C CNN
+F 3 "~" H 8600 5150 50  0001 C CNN
+	1    8600 5150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0106
 U 1 1 5DB7A312
-P 8700 5350
-F 0 "#PWR0106" H 8700 5100 50  0001 C CNN
-F 1 "GND" H 8705 5177 50  0000 C CNN
-F 2 "" H 8700 5350 50  0001 C CNN
-F 3 "" H 8700 5350 50  0001 C CNN
-	1    8700 5350
+P 8600 5350
+F 0 "#PWR0106" H 8600 5100 50  0001 C CNN
+F 1 "GND" H 8605 5177 50  0000 C CNN
+F 2 "" H 8600 5350 50  0001 C CNN
+F 3 "" H 8600 5350 50  0001 C CNN
+	1    8600 5350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8700 5300 8700 5350
+	8600 5300 8600 5350
 $Comp
 L power:+5V #PWR0107
 U 1 1 5DB7C40F
-P 8700 4550
-F 0 "#PWR0107" H 8700 4400 50  0001 C CNN
-F 1 "+5V" H 8715 4723 50  0000 C CNN
-F 2 "" H 8700 4550 50  0001 C CNN
-F 3 "" H 8700 4550 50  0001 C CNN
-	1    8700 4550
+P 8600 4550
+F 0 "#PWR0107" H 8600 4400 50  0001 C CNN
+F 1 "+5V" H 8615 4723 50  0000 C CNN
+F 2 "" H 8600 4550 50  0001 C CNN
+F 3 "" H 8600 4550 50  0001 C CNN
+	1    8600 4550
 	1    0    0    -1  
 $EndComp
 Text Label 8500 4850 2    50   ~ 0
@@ -340,19 +318,12 @@ Wire Wire Line
 Wire Wire Line
 	6550 3700 8250 3700
 Wire Wire Line
-	8900 4650 8800 4650
+	8600 4550 8600 4650
+Connection ~ 8600 4650
 Wire Wire Line
-	8700 4550 8700 4650
-Connection ~ 8700 4650
-Wire Wire Line
-	8700 4650 8700 5000
+	8600 4650 8600 5000
 Wire Wire Line
 	8900 4750 8800 4750
-Wire Wire Line
-	8800 4750 8800 4650
-Connection ~ 8800 4650
-Wire Wire Line
-	8800 4650 8700 4650
 $Comp
 L power:+5V #PWR0110
 U 1 1 5DC7920B
@@ -453,8 +424,6 @@ F 3 "" H 2350 3150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2000 3400 2000 3200
-Text Notes 8850 5400 0    50   ~ 0
-Should VIO be 3V3 not 5V?
 Text Label 4550 3000 2    50   ~ 0
 ~MCLR
 Wire Wire Line
@@ -509,4 +478,41 @@ NoConn ~ 6550 4100
 NoConn ~ 6550 3300
 Text Notes 7100 6950 0    50   ~ 0
 The purpose of the telemetry transmitter board is to take in data from\n the can bus and transmit this data to the telemetry receiver board. \nThe telemetry transmitter board will then transmit this data via a RF module.
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 5DE42E6B
+P 4700 2650
+F 0 "#PWR0101" H 4700 2500 50  0001 C CNN
+F 1 "+3V3" H 4715 2823 50  0000 C CNN
+F 2 "" H 4700 2650 50  0001 C CNN
+F 3 "" H 4700 2650 50  0001 C CNN
+	1    4700 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0102
+U 1 1 5DE4639A
+P 6550 2650
+F 0 "#PWR0102" H 6550 2500 50  0001 C CNN
+F 1 "+3V3" H 6565 2823 50  0000 C CNN
+F 2 "" H 6550 2650 50  0001 C CNN
+F 3 "" H 6550 2650 50  0001 C CNN
+	1    6550 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0126
+U 1 1 5DE483B0
+P 8800 4550
+F 0 "#PWR0126" H 8800 4400 50  0001 C CNN
+F 1 "+3V3" H 8815 4723 50  0000 C CNN
+F 2 "" H 8800 4550 50  0001 C CNN
+F 3 "" H 8800 4550 50  0001 C CNN
+	1    8800 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 4650 8900 4650
+Wire Wire Line
+	8800 4550 8800 4750
 $EndSCHEMATC

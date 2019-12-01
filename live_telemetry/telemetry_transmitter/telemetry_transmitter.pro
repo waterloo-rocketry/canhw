@@ -1,4 +1,4 @@
-update=2019-11-14 9:13:11 PM
+update=2019-12-01 1:44:51 PM
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=D:/Documents/Waterloo Rocketry/Live Telemetry/telemetry_receiver/
+PlotDirectoryName=./
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=

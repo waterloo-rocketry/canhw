@@ -16,7 +16,7 @@ Comment4 ""
 $EndDescr
 Text Notes 2300 2900 0    50   ~ 0
 12V NC
-Text Notes 3450 2550 0    50   ~ 0
+Text Notes 3400 2500 0    50   ~ 0
 max Id = 200 mA
 Text Notes 4850 4200 0    50   ~ 0
 GAIN 100V/V
@@ -208,7 +208,7 @@ F 1 "+5V" H 4465 3023 50  0000 C CNN
 F 2 "" H 4450 2850 50  0001 C CNN
 F 3 "" H 4450 2850 50  0001 C CNN
 	1    4450 2850
-	0    -1   -1   0   
+	1    0    0    -1  
 $EndComp
 Connection ~ 4050 2950
 Wire Wire Line
@@ -304,6 +304,6 @@ F 3 "" H 4250 4150 50  0001 C CNN
 	1    4250 4150
 	1    0    0    -1  
 $EndComp
-Text Notes 3300 2650 0    50   ~ 0
+Text Notes 3250 2600 0    50   ~ 0
 (max 100 mA from rf module)
 $EndSCHEMATC
