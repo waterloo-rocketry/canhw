@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:vent_2-cache
+LIBS:vent-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -52,17 +52,6 @@ F 1 "27K" H 3768 3505 50  0000 L CNN
 F 2 "" V 3740 3540 50  0001 C CNN
 F 3 "~" H 3700 3550 50  0001 C CNN
 	1    3700 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+BATT #PWR?
-U 1 1 5DBFA043
-P 4000 3250
-F 0 "#PWR?" H 4000 3100 50  0001 C CNN
-F 1 "+BATT" H 4015 3423 50  0000 C CNN
-F 2 "" H 4000 3250 50  0001 C CNN
-F 3 "" H 4000 3250 50  0001 C CNN
-	1    4000 3250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -269,4 +258,15 @@ Wire Wire Line
 Text HLabel 9600 4200 2    50   Input ~ 0
 CURR_AMP
 NoConn ~ 6900 3350
+$Comp
+L power:+12V #PWR?
+U 1 1 5DE4FAD4
+P 4000 3250
+F 0 "#PWR?" H 4000 3100 50  0001 C CNN
+F 1 "+12V" H 4015 3423 50  0000 C CNN
+F 2 "" H 4000 3250 50  0001 C CNN
+F 3 "" H 4000 3250 50  0001 C CNN
+	1    4000 3250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
