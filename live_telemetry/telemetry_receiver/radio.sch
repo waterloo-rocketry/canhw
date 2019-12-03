@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:telemetry_receiver-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -221,7 +220,7 @@ F 3 "" H 7500 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L telemetry_receiver-rescue:GAMMA-915-SO-canhw U3
+L canhw:GAMMA-915-SO U3
 U 1 1 5DCEC185
 P 6150 4850
 AR Path="/5DCEC185" Ref="U3"  Part="1" 
