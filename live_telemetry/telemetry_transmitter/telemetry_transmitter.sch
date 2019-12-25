@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:telemetry_transmitter-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -323,17 +324,6 @@ Wire Wire Line
 	8600 4650 8600 5000
 Wire Wire Line
 	8900 4750 8800 4750
-$Comp
-L power:+5V #PWR0110
-U 1 1 5DC7920B
-P 2400 1700
-F 0 "#PWR0110" H 2400 1550 50  0001 C CNN
-F 1 "+5V" H 2415 1873 50  0000 C CNN
-F 2 "" H 2400 1700 50  0001 C CNN
-F 3 "" H 2400 1700 50  0001 C CNN
-	1    2400 1700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2050 2050 2400 2050
 Wire Wire Line
@@ -410,19 +400,6 @@ F 3 "~" H 2700 3550 50  0001 C CNN
 	1    2700 3550
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:+5V #PWR0111
-U 1 1 5DC96631
-P 2350 3150
-F 0 "#PWR0111" H 2350 3000 50  0001 C CNN
-F 1 "+5V" H 2365 3323 50  0000 C CNN
-F 2 "" H 2350 3150 50  0001 C CNN
-F 3 "" H 2350 3150 50  0001 C CNN
-	1    2350 3150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2000 3400 2000 3200
 Text Label 4550 3000 2    50   ~ 0
 ~MCLR
 Wire Wire Line
@@ -460,8 +437,6 @@ Wire Wire Line
 Connection ~ 2350 3200
 Wire Wire Line
 	2350 3200 2350 3400
-Wire Wire Line
-	2000 3200 2350 3200
 Wire Wire Line
 	2700 3400 2700 3200
 Wire Wire Line
@@ -514,4 +489,30 @@ Wire Wire Line
 	8600 4650 8900 4650
 Wire Wire Line
 	8800 4550 8800 4750
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E043275
+P 2350 3150
+F 0 "#PWR?" H 2350 3000 50  0001 C CNN
+F 1 "+3V3" H 2365 3323 50  0000 C CNN
+F 2 "" H 2350 3150 50  0001 C CNN
+F 3 "" H 2350 3150 50  0001 C CNN
+	1    2350 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E04875A
+P 2400 1700
+F 0 "#PWR?" H 2400 1550 50  0001 C CNN
+F 1 "+3V3" H 2415 1873 50  0000 C CNN
+F 2 "" H 2400 1700 50  0001 C CNN
+F 3 "" H 2400 1700 50  0001 C CNN
+	1    2400 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 3400 2000 3200
+Wire Wire Line
+	2000 3200 2350 3200
 $EndSCHEMATC
