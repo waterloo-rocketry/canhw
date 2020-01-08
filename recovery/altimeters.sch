@@ -696,12 +696,12 @@ Connection ~ 3650 2000
 Wire Wire Line
 	3650 2000 3650 2250
 Wire Wire Line
-	4200 2000 4500 2000
+	4200 2000 4750 2000
 Wire Wire Line
-	4500 2000 4500 2750
-Connection ~ 4500 2750
+	4750 2000 4750 2750
+Connection ~ 4750 2750
 Wire Wire Line
-	4500 2750 3650 2750
+	4750 2750 3650 2750
 Wire Wire Line
 	2750 5750 3350 5750
 Wire Wire Line
@@ -791,7 +791,7 @@ Connection ~ 4150 5400
 Wire Wire Line
 	2400 4450 3350 4450
 Wire Wire Line
-	4500 4450 4500 2750
+	4750 4450 4750 2750
 $Comp
 L Connector:Conn_01x06_Female J9
 U 1 1 5E175935
@@ -836,7 +836,7 @@ Wire Wire Line
 Wire Wire Line
 	4900 2850 4900 3000
 Wire Wire Line
-	4500 2750 5250 2750
+	4750 2750 5250 2750
 Wire Wire Line
 	5250 2750 5250 3100
 $Comp
@@ -969,7 +969,7 @@ L Jumper:SolderJumper_2_Open JP7
 U 1 1 5E2D5DCA
 P 3350 4600
 F 0 "JP7" H 3350 4805 50  0000 C CNN
-F 1 "Bypass tie together" H 3350 4714 50  0000 C CNN
+F 1 "Bypass tie together" V 3350 4714 50  0000 L CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3350 4600 50  0001 C CNN
 F 3 "~" H 3350 4600 50  0001 C CNN
 	1    3350 4600
@@ -977,7 +977,7 @@ F 3 "~" H 3350 4600 50  0001 C CNN
 $EndComp
 Connection ~ 3350 4450
 Wire Wire Line
-	3350 4450 4500 4450
+	3350 4450 4750 4450
 Connection ~ 3350 4750
 Wire Wire Line
 	3350 4750 2400 4750
@@ -1081,4 +1081,42 @@ Wire Wire Line
 	9850 6050 9850 6000
 Wire Wire Line
 	9850 6000 10100 6000
+Text Notes 5150 3500 0    50   ~ 0
+To the first altimeter
+Text Notes 3250 7650 0    50   ~ 0
+Stratologgers have two pins for an E-match \nso M2 and D2 should just be wired into those.\nThe Raven only has one pin for each pyro, \nso the other pin of the pyro needs to be \nwired to +BATT, hence thease jumpers
+Wire Notes Line
+	3200 6550 3200 7650
+Wire Notes Line
+	3200 7650 5100 7650
+Wire Notes Line
+	5100 7650 5100 7250
+Wire Notes Line
+	5100 7250 3200 7250
+Text Notes 3700 2250 0    50   ~ 0
+P-MOS for controlling \npower to the altimeter
+Text Notes 3850 3650 0    50   ~ 0
+Makes noise when \nA1 is powered
+Text Notes 3800 7000 0    50   ~ 0
+Makes noise when \nA2 is powered
+Text Notes 2300 3250 0    50   ~ 0
+N-MOS for controlling \nthe P-MOS
+Text Notes 6850 5350 0    50   ~ 0
+V sensing for detecting pyro firing
+Text Notes 800  2250 0    50   ~ 0
+Pull up resistor so that if the \nmicrocontroller fails / losses \npower the system stays armed
+Wire Notes Line
+	1350 2300 1350 2700
+Wire Notes Line
+	1350 2700 1600 2700
+Text Notes 8000 1550 0    50   ~ 0
+recives altitude data from the stratologger over UART 
+Text Notes 9200 3250 0    50   ~ 0
+logic level shifting
+Text Notes 9150 4200 0    50   ~ 0
+Conectors for the E-matches\nThe jumpers alow the two lines to be tied together \nso each altimeter fires all the E-matches
+Text Notes 800  4600 0    50   ~ 0
+Alows external mag switches to be \nconnected that bypass the \narming MOSFETS
+Text Notes 4750 6800 0    50   ~ 0
+To the second altimeter
 $EndSCHEMATC

@@ -179,7 +179,7 @@ F 3 "" H 3350 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1900 1350 2800 1350
+	1900 1350 3350 1350
 $Comp
 L power:GND #PWR04
 U 1 1 5D95A4EB
@@ -531,21 +531,8 @@ Wire Wire Line
 Connection ~ 2200 5000
 Wire Wire Line
 	1200 6200 1200 6450
-$Comp
-L Device:D D1
-U 1 1 5DC3AC48
-P 2950 1350
-F 0 "D1" H 2950 1566 50  0000 C CNN
-F 1 "D" H 2950 1475 50  0000 C CNN
-F 2 "" H 2950 1350 50  0001 C CNN
-F 3 "~" H 2950 1350 50  0001 C CNN
-	1    2950 1350
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	3350 1250 3350 1350
-Wire Wire Line
-	3350 1350 3100 1350
 $Comp
 L Device:Buzzer BZ3
 U 1 1 5DC989E9
@@ -584,4 +571,8 @@ Wire Wire Line
 Connection ~ 1300 5400
 Wire Wire Line
 	1300 5400 1300 5550
+Text Notes 4450 7350 0    50   ~ 0
+Debuging / Indicator LEDs
+Text Notes 1550 1850 0    50   ~ 0
+Programing header
 $EndSCHEMATC
