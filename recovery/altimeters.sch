@@ -231,8 +231,6 @@ Wire Wire Line
 	4600 6150 4400 6150
 Wire Wire Line
 	4400 6150 4400 6250
-Text Notes 7200 6800 0    50   ~ 0
-Part numbers and mosfet layout roughly copied from injector board\nPart specs and resistor values should be checked for this design
 $Comp
 L Device:R_US R10
 U 1 1 5DA326C1
@@ -438,7 +436,7 @@ U 1 1 5DB51D2E
 P 3750 3400
 F 0 "BZ2" H 3903 3429 50  0000 L CNN
 F 1 "CMI-1295-1285T" H 3903 3338 50  0000 L CNN
-F 2 "" V 3725 3500 50  0001 C CNN
+F 2 "Buzzer_Beeper:Buzzer_12x9.5RM7.6" V 3725 3500 50  0001 C CNN
 F 3 "~" V 3725 3500 50  0001 C CNN
 	1    3750 3400
 	1    0    0    -1  
@@ -449,7 +447,7 @@ U 1 1 5DB51DB2
 P 3750 6700
 F 0 "BZ1" H 3903 6729 50  0000 L CNN
 F 1 "WST-1212BX" H 3903 6638 50  0000 L CNN
-F 2 "" V 3725 6800 50  0001 C CNN
+F 2 "Buzzer_Beeper:Buzzer_12x9.5RM7.6" V 3725 6800 50  0001 C CNN
 F 3 "~" V 3725 6800 50  0001 C CNN
 	1    3750 6700
 	1    0    0    -1  
@@ -554,7 +552,7 @@ U 1 1 5DCAB04B
 P 9450 2750
 F 0 "Q5" V 9700 2750 50  0000 C CNN
 F 1 "BSS138" V 9791 2750 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9650 2675 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 9650 2675 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 9450 2750 50  0001 L CNN
 	1    9450 2750
 	0    1    1    0   
@@ -760,13 +758,11 @@ U 1 1 5E13B637
 P 2200 4650
 F 0 "J5" H 2094 4125 50  0000 C CNN
 F 1 "Bypass Mag Switches" H 2094 4216 50  0000 C CNN
-F 2 "" H 2200 4650 50  0001 C CNN
+F 2 "canhw_footprints:connector_Harwin_M80-5000642" H 2200 4650 50  0001 C CNN
 F 3 "~" H 2200 4650 50  0001 C CNN
 	1    2200 4650
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2400 4850 2500 4850
 Wire Wire Line
 	2500 4850 2500 4950
 Wire Wire Line
@@ -798,7 +794,7 @@ U 1 1 5E175935
 P 10300 4700
 F 0 "J9" H 10327 4676 50  0000 L CNN
 F 1 "Main Pyros" H 10327 4585 50  0000 L CNN
-F 2 "" H 10300 4700 50  0001 C CNN
+F 2 "canhw_footprints:connector_Harwin_M80-5000642" H 10300 4700 50  0001 C CNN
 F 3 "~" H 10300 4700 50  0001 C CNN
 	1    10300 4700
 	1    0    0    -1  
@@ -809,7 +805,7 @@ U 1 1 5E182FBB
 P 10300 5900
 F 0 "J10" H 10327 5876 50  0000 L CNN
 F 1 "Drogue Pyro" H 10327 5785 50  0000 L CNN
-F 2 "" H 10300 5900 50  0001 C CNN
+F 2 "canhw_footprints:connector_Harwin_M80-5000642" H 10300 5900 50  0001 C CNN
 F 3 "~" H 10300 5900 50  0001 C CNN
 	1    10300 5900
 	1    0    0    -1  
@@ -824,7 +820,7 @@ U 1 1 5E1AFBF0
 P 5350 3300
 F 0 "J7" V 5197 2912 50  0000 R CNN
 F 1 "A1 Connector" V 5288 2912 50  0000 R CNN
-F 2 "" H 5350 3300 50  0001 C CNN
+F 2 "canhw_footprints:connector_Harwin_M80-5000642" H 5350 3300 50  0001 C CNN
 F 3 "~" H 5350 3300 50  0001 C CNN
 	1    5350 3300
 	0    -1   1    0   
@@ -845,7 +841,7 @@ U 1 1 5E23D02C
 P 4800 6650
 F 0 "J6" V 4647 6262 50  0000 R CNN
 F 1 "A2 Connector" V 4738 6262 50  0000 R CNN
-F 2 "" H 4800 6650 50  0001 C CNN
+F 2 "canhw_footprints:connector_Harwin_M80-5000642" H 4800 6650 50  0001 C CNN
 F 3 "~" H 4800 6650 50  0001 C CNN
 	1    4800 6650
 	0    -1   1    0   
@@ -942,7 +938,7 @@ U 1 1 5E2AF4BE
 P 8750 1700
 F 0 "J8" V 8810 1840 50  0000 L CNN
 F 1 "SL Data Connector" V 8901 1840 50  0000 L CNN
-F 2 "" H 8750 1700 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B03B-EH-A_1x03_P2.50mm_Vertical" H 8750 1700 50  0001 C CNN
 F 3 "~" H 8750 1700 50  0001 C CNN
 	1    8750 1700
 	0    1    1    0   
@@ -1119,4 +1115,6 @@ Text Notes 800  4600 0    50   ~ 0
 Alows external mag switches to be \nconnected that bypass the \narming MOSFETS
 Text Notes 4750 6800 0    50   ~ 0
 To the second altimeter
+Wire Wire Line
+	2400 4850 2500 4850
 $EndSCHEMATC

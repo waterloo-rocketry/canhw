@@ -261,7 +261,7 @@ L Device:C C4
 U 1 1 5DA1AC5D
 P 3000 6250
 F 0 "C4" H 3115 6296 50  0000 L CNN
-F 1 "0.22uF" H 3115 6205 50  0000 L CNN
+F 1 "0.1uF" H 3115 6205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3038 6100 50  0001 C CNN
 F 3 "~" H 3000 6250 50  0001 C CNN
 	1    3000 6250
@@ -299,15 +299,13 @@ Wire Wire Line
 Wire Wire Line
 	4600 6050 4600 6100
 Connection ~ 4600 6050
-Text Notes 5850 6750 2    50   ~ 0
-For failsafe arming control\n\ncap values copied from vent, not sure reasoning for specific values
 $Comp
 L Connector:Conn_01x02_Female J2
 U 1 1 5DA1E9A6
 P 2850 1300
 F 0 "J2" H 2744 975 50  0000 C CNN
 F 1 "Battery 1" H 2744 1066 50  0000 C CNN
-F 2 "" H 2850 1300 50  0001 C CNN
+F 2 "canhw_footprints:BarrierBlock_ED2945-ND" H 2850 1300 50  0001 C CNN
 F 3 "~" H 2850 1300 50  0001 C CNN
 	1    2850 1300
 	-1   0    0    1   
@@ -333,7 +331,7 @@ U 1 1 5DA20D83
 P 4000 1200
 F 0 "D4" H 4000 984 50  0000 C CNN
 F 1 "SM74611" H 4000 1075 50  0000 C CNN
-F 2 "" H 4000 1200 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 4000 1200 50  0001 C CNN
 F 3 "~" H 4000 1200 50  0001 C CNN
 	1    4000 1200
 	-1   0    0    1   
@@ -402,7 +400,7 @@ U 1 1 5DA275B8
 P 2850 3750
 F 0 "J3" H 2744 3425 50  0000 C CNN
 F 1 "Battery 2" H 2744 3516 50  0000 C CNN
-F 2 "" H 2850 3750 50  0001 C CNN
+F 2 "canhw_footprints:BarrierBlock_ED2945-ND" H 2850 3750 50  0001 C CNN
 F 3 "~" H 2850 3750 50  0001 C CNN
 	1    2850 3750
 	-1   0    0    1   
@@ -428,7 +426,7 @@ U 1 1 5DA275C6
 P 4000 3650
 F 0 "D5" H 4000 3434 50  0000 C CNN
 F 1 "SM74611" H 4000 3525 50  0000 C CNN
-F 2 "" H 4000 3650 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 4000 3650 50  0001 C CNN
 F 3 "~" H 4000 3650 50  0001 C CNN
 	1    4000 3650
 	-1   0    0    1   
@@ -510,7 +508,7 @@ AR Path="/5DA13D99/5DC49D42" Ref="U?"  Part="1"
 AR Path="/5DA13C95/5DC49D42" Ref="U7"  Part="1" 
 F 0 "U7" H 4420 3596 50  0000 R CNN
 F 1 "Mag Switch" H 4420 3505 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4650 3200 50  0001 L CIN
+F 2 "canhw_footprints:Mag Switch" H 4650 3200 50  0001 L CIN
 F 3 "http://www.allegromicro.com/en/Products/Part_Numbers/1101/1101.pdf" H 4650 4200 50  0001 C CNN
 	1    4650 3550
 	0    -1   -1   0   
@@ -538,7 +536,7 @@ AR Path="/5DA13D99/5DC4E792" Ref="U?"  Part="1"
 AR Path="/5DA13C95/5DC4E792" Ref="U6"  Part="1" 
 F 0 "U6" H 4420 1146 50  0000 R CNN
 F 1 "Mag Switch" H 4420 1055 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4650 750 50  0001 L CIN
+F 2 "canhw_footprints:Mag Switch" H 4650 750 50  0001 L CIN
 F 3 "http://www.allegromicro.com/en/Products/Part_Numbers/1101/1101.pdf" H 4650 1750 50  0001 C CNN
 	1    4650 1100
 	0    -1   -1   0   
@@ -568,7 +566,7 @@ U 1 1 5DCFFC19
 P 8200 1200
 F 0 "D3" H 8200 984 50  0000 C CNN
 F 1 "CUS08F30" H 8200 1075 50  0000 C CNN
-F 2 "" H 8200 1200 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 8200 1200 50  0001 C CNN
 F 3 "~" H 8200 1200 50  0001 C CNN
 	1    8200 1200
 	-1   0    0    1   
@@ -581,7 +579,7 @@ U 1 1 5DD02B86
 P 3000 5850
 F 0 "D2" V 2954 5929 50  0000 L CNN
 F 1 "CUS08F30" V 3045 5929 50  0000 L CNN
-F 2 "" H 3000 5850 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 3000 5850 50  0001 C CNN
 F 3 "~" H 3000 5850 50  0001 C CNN
 	1    3000 5850
 	0    1    1    0   
