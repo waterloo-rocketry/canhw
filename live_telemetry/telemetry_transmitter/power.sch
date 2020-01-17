@@ -699,10 +699,6 @@ Wire Wire Line
 	8000 5900 8000 5750
 Wire Wire Line
 	8000 5750 9000 5750
-Wire Wire Line
-	9000 5750 9000 5000
-Wire Wire Line
-	9000 5000 9450 5000
 $Comp
 L canhw:AP1509 U?
 U 1 1 5BB04A6A
@@ -1018,8 +1014,6 @@ Wire Wire Line
 Wire Wire Line
 	8000 4900 8000 5100
 Wire Wire Line
-	8000 4900 9450 4900
-Wire Wire Line
 	8000 5650 8150 5650
 Wire Wire Line
 	8000 5500 8000 5650
@@ -1035,4 +1029,68 @@ Text HLabel 5650 5550 0    50   Input ~ 0
 BUS_EN_5V
 Text Notes 7100 6900 0    50   ~ 0
 Note: This is the power sheet from what used to be radio board.
+$Comp
+L Device:Jumper JP1
+U 1 1 5E2252E1
+P 9150 4250
+F 0 "JP1" V 9104 4377 50  0000 L CNN
+F 1 "Jumper" V 9195 4377 50  0000 L CNN
+F 2 "" H 9150 4250 50  0001 C CNN
+F 3 "~" H 9150 4250 50  0001 C CNN
+	1    9150 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR047
+U 1 1 5E22A11C
+P 9150 3950
+F 0 "#PWR047" H 9150 3800 50  0001 C CNN
+F 1 "+5V" H 9165 4123 50  0000 C CNN
+F 2 "" H 9150 3950 50  0001 C CNN
+F 3 "" H 9150 3950 50  0001 C CNN
+	1    9150 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 5000 9450 5000
+Wire Wire Line
+	9150 4550 9150 4900
+$Comp
+L power:GND #PWR051
+U 1 1 5E2388F6
+P 10000 5650
+F 0 "#PWR051" H 10000 5400 50  0001 C CNN
+F 1 "GND" H 10005 5477 50  0000 C CNN
+F 2 "" H 10000 5650 50  0001 C CNN
+F 3 "" H 10000 5650 50  0001 C CNN
+	1    10000 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 5000 9000 5600
+Wire Wire Line
+	9950 5600 10000 5600
+Wire Wire Line
+	10000 5600 10000 5650
+Wire Wire Line
+	9350 5600 9000 5600
+Connection ~ 9000 5600
+Wire Wire Line
+	9000 5600 9000 5750
+Connection ~ 9150 4900
+Wire Wire Line
+	9150 4900 9450 4900
+Wire Wire Line
+	8000 4900 9150 4900
+$Comp
+L Device:Jumper JP2
+U 1 1 5E25E521
+P 9650 5600
+F 0 "JP2" H 9650 5864 50  0000 C CNN
+F 1 "Jumper" H 9650 5773 50  0000 C CNN
+F 2 "" H 9650 5600 50  0001 C CNN
+F 3 "~" H 9650 5600 50  0001 C CNN
+	1    9650 5600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

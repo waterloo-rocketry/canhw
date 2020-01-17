@@ -213,10 +213,10 @@ Connection ~ 5800 5650
 Wire Wire Line
 	5450 5350 5450 5650
 $Comp
-L Device:LED D1
+L Device:LED D2
 U 1 1 5DD62B92
 P 2450 4650
-F 0 "D1" V 2489 4533 50  0000 R CNN
+F 0 "D2" V 2489 4533 50  0000 R CNN
 F 1 "LED" V 2398 4533 50  0000 R CNN
 F 2 "" H 2450 4650 50  0001 C CNN
 F 3 "~" H 2450 4650 50  0001 C CNN
@@ -230,7 +230,7 @@ L Device:R_US R1
 U 1 1 5DD727AB
 P 2450 4350
 F 0 "R1" H 2518 4396 50  0000 L CNN
-F 1 "330" H 2518 4305 50  0000 L CNN
+F 1 "130" H 2518 4305 50  0000 L CNN
 F 2 "" V 2490 4340 50  0001 C CNN
 F 3 "~" H 2450 4350 50  0001 C CNN
 	1    2450 4350
@@ -241,7 +241,7 @@ L Device:R_US R2
 U 1 1 5DD73966
 P 2800 4350
 F 0 "R2" H 2868 4396 50  0000 L CNN
-F 1 "330" H 2868 4305 50  0000 L CNN
+F 1 "130" H 2868 4305 50  0000 L CNN
 F 2 "" V 2840 4340 50  0001 C CNN
 F 3 "~" H 2800 4350 50  0001 C CNN
 	1    2800 4350
@@ -254,10 +254,10 @@ Wire Wire Line
 Wire Wire Line
 	2800 4850 2800 4800
 $Comp
-L Device:LED D2
+L Device:LED D4
 U 1 1 5DD6414F
 P 2800 4650
-F 0 "D2" V 2839 4533 50  0000 R CNN
+F 0 "D4" V 2839 4533 50  0000 R CNN
 F 1 "LED" V 2748 4533 50  0000 R CNN
 F 2 "" H 2800 4650 50  0001 C CNN
 F 3 "~" H 2800 4650 50  0001 C CNN
@@ -607,36 +607,6 @@ Wire Wire Line
 	6700 2350 6950 2350
 Wire Wire Line
 	6950 1900 8400 1900
-$Comp
-L Switch:SW_Push SW?
-U 1 1 5E26E0DD
-P 7500 2350
-AR Path="/5E22EC09/5E26E0DD" Ref="SW?"  Part="1" 
-AR Path="/5E26E0DD" Ref="SW1"  Part="1" 
-F 0 "SW1" H 7500 2635 50  0000 C CNN
-F 1 "SW_Push" H 7500 2544 50  0000 C CNN
-F 2 "" H 7500 2550 50  0001 C CNN
-F 3 "~" H 7500 2550 50  0001 C CNN
-	1    7500 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7700 2350 8400 2350
-$Comp
-L power:GND #PWR?
-U 1 1 5E26E0E4
-P 7300 2450
-AR Path="/5E22EC09/5E26E0E4" Ref="#PWR?"  Part="1" 
-AR Path="/5E26E0E4" Ref="#PWR07"  Part="1" 
-F 0 "#PWR07" H 7300 2200 50  0001 C CNN
-F 1 "GND" H 7305 2277 50  0000 C CNN
-F 2 "" H 7300 2450 50  0001 C CNN
-F 3 "" H 7300 2450 50  0001 C CNN
-	1    7300 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7300 2450 7300 2350
 Wire Wire Line
 	9600 2000 9650 2000
 Wire Wire Line
@@ -676,9 +646,52 @@ Wire Wire Line
 	6700 1900 6950 1900
 Text Notes 4700 3950 0    50   ~ 0
 NOTE: The MOSI and SCK SPI lines are sharing pins 9 and 10 with ICSPCLK and ICSPDAT. \nThis will prevent the board from using the PIC in-circuit debugging and sending data over\nserial at the same time. However, this solution is currently being used by USB board, and is\nwhat is recommended to be done in order to communicate with SPI with this specific PIC chip.
-NoConn ~ 3900 5050
-NoConn ~ 3900 5150
 Wire Wire Line
 	9900 2150 9900 1850
 Connection ~ 9900 2150
+Text Label 8050 2350 2    50   ~ 0
+RESET
+Wire Wire Line
+	8050 2350 8400 2350
+$Comp
+L Device:LED D1
+U 1 1 5E2283BB
+P 2100 4650
+F 0 "D1" V 2139 4533 50  0000 R CNN
+F 1 "LED" V 2048 4533 50  0000 R CNN
+F 2 "" H 2100 4650 50  0001 C CNN
+F 3 "~" H 2100 4650 50  0001 C CNN
+	1    2100 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5E2283C2
+P 2100 4350
+F 0 "R?" H 2168 4396 50  0000 L CNN
+F 1 "130" H 2168 4305 50  0000 L CNN
+F 2 "" V 2140 4340 50  0001 C CNN
+F 3 "~" H 2100 4350 50  0001 C CNN
+	1    2100 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E2283C8
+P 2100 4200
+F 0 "#PWR?" H 2100 4050 50  0001 C CNN
+F 1 "+3V3" H 2115 4373 50  0000 C CNN
+F 2 "" H 2100 4200 50  0001 C CNN
+F 3 "" H 2100 4200 50  0001 C CNN
+	1    2100 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 5050 3900 5050
+Wire Wire Line
+	2100 4800 2100 5050
+Text Label 3600 5150 2    50   ~ 0
+RESET
+Wire Wire Line
+	3600 5150 3900 5150
 $EndSCHEMATC
