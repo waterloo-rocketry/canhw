@@ -115,7 +115,7 @@ L canhw:PIC16F1455 U1
 U 1 1 5DD2778A
 P 4450 4800
 F 0 "U1" H 4675 5115 50  0000 C CNN
-F 1 "PIC16F1455" H 4675 5024 50  0000 C CNN
+F 1 "PIC16LF1455" H 4675 5024 50  0000 C CNN
 F 2 "" H 4450 4800 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001639B.pdf" H 4450 4800 50  0001 C CNN
 	1    4450 4800
@@ -505,73 +505,70 @@ $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5E26E0BB
-P 6700 1800
+P 7150 1800
 AR Path="/5E22EC09/5E26E0BB" Ref="#PWR?"  Part="1" 
 AR Path="/5E26E0BB" Ref="#PWR04"  Part="1" 
-F 0 "#PWR04" H 6700 1650 50  0001 C CNN
-F 1 "+3V3" H 6715 1973 50  0000 C CNN
-F 2 "" H 6700 1800 50  0001 C CNN
-F 3 "" H 6700 1800 50  0001 C CNN
-	1    6700 1800
+F 0 "#PWR04" H 7150 1650 50  0001 C CNN
+F 1 "+3V3" H 7165 1973 50  0000 C CNN
+F 2 "" H 7150 1800 50  0001 C CNN
+F 3 "" H 7150 1800 50  0001 C CNN
+	1    7150 1800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5E26E0C1
-P 6950 2100
+P 7400 2100
 AR Path="/5E22EC09/5E26E0C1" Ref="C?"  Part="1" 
 AR Path="/5E26E0C1" Ref="C3"  Part="1" 
-F 0 "C3" H 7065 2146 50  0000 L CNN
-F 1 "0.1u" H 7065 2055 50  0000 L CNN
-F 2 "" H 6988 1950 50  0001 C CNN
-F 3 "~" H 6950 2100 50  0001 C CNN
-	1    6950 2100
+F 0 "C3" H 7515 2146 50  0000 L CNN
+F 1 "0.1u" H 7515 2055 50  0000 L CNN
+F 2 "" H 7438 1950 50  0001 C CNN
+F 3 "~" H 7400 2100 50  0001 C CNN
+	1    7400 2100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5E26E0C7
-P 6450 2100
+P 6900 2100
 AR Path="/5E22EC09/5E26E0C7" Ref="C?"  Part="1" 
 AR Path="/5E26E0C7" Ref="C1"  Part="1" 
-F 0 "C1" H 6565 2146 50  0000 L CNN
-F 1 "100p" H 6565 2055 50  0000 L CNN
-F 2 "" H 6488 1950 50  0001 C CNN
-F 3 "~" H 6450 2100 50  0001 C CNN
-	1    6450 2100
+F 0 "C1" H 7015 2146 50  0000 L CNN
+F 1 "100p" H 7015 2055 50  0000 L CNN
+F 2 "" H 6938 1950 50  0001 C CNN
+F 3 "~" H 6900 2100 50  0001 C CNN
+	1    6900 2100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6450 1950 6450 1900
+	6900 1950 6900 1900
 Wire Wire Line
-	6950 1900 6950 1950
-Connection ~ 6950 1900
+	7400 1900 7400 1950
 Wire Wire Line
-	6450 2250 6450 2350
+	6900 2250 6900 2350
 Wire Wire Line
-	6450 2350 6700 2350
+	6900 2350 7150 2350
 Wire Wire Line
-	6950 2350 6950 2250
+	7400 2350 7400 2250
 $Comp
 L power:GND #PWR?
 U 1 1 5E26E0D3
-P 6700 2400
+P 7150 2400
 AR Path="/5E22EC09/5E26E0D3" Ref="#PWR?"  Part="1" 
 AR Path="/5E26E0D3" Ref="#PWR05"  Part="1" 
-F 0 "#PWR05" H 6700 2150 50  0001 C CNN
-F 1 "GND" H 6705 2227 50  0000 C CNN
-F 2 "" H 6700 2400 50  0001 C CNN
-F 3 "" H 6700 2400 50  0001 C CNN
-	1    6700 2400
+F 0 "#PWR05" H 7150 2150 50  0001 C CNN
+F 1 "GND" H 7155 2227 50  0000 C CNN
+F 2 "" H 7150 2400 50  0001 C CNN
+F 3 "" H 7150 2400 50  0001 C CNN
+	1    7150 2400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6700 2400 6700 2350
-Connection ~ 6700 2350
+	7150 2400 7150 2350
+Connection ~ 7150 2350
 Wire Wire Line
-	6700 2350 6950 2350
-Wire Wire Line
-	6950 1900 8400 1900
+	7150 2350 7400 2350
 Wire Wire Line
 	9600 2000 9650 2000
 Wire Wire Line
@@ -603,12 +600,12 @@ Wire Wire Line
 Text Label 6300 4400 0    50   ~ 0
 MISO
 Wire Wire Line
-	6450 1900 6700 1900
+	6900 1900 7150 1900
 Wire Wire Line
-	6700 1800 6700 1900
-Connection ~ 6700 1900
+	7150 1800 7150 1900
+Connection ~ 7150 1900
 Wire Wire Line
-	6700 1900 6950 1900
+	7150 1900 7400 1900
 Text Notes 4700 3950 0    50   ~ 0
 NOTE: The MOSI and SCK SPI lines are sharing pins 9 and 10 with ICSPCLK and ICSPDAT. \nThis will prevent the board from using the PIC in-circuit debugging and sending data over\nserial at the same time. However, this solution is currently being used by USB board, and is\nwhat is recommended to be done in order to communicate with SPI with this specific PIC chip.
 Wire Wire Line
@@ -702,4 +699,7 @@ Wire Wire Line
 Wire Wire Line
 	5650 5600 5800 5600
 Connection ~ 5800 5600
+Wire Wire Line
+	7400 1900 8400 1900
+Connection ~ 7400 1900
 $EndSCHEMATC
