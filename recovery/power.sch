@@ -509,7 +509,7 @@ AR Path="/5DA13C95/5DC49D42" Ref="U7"  Part="1"
 F 0 "U7" H 4420 3596 50  0000 R CNN
 F 1 "Mag Switch" H 4420 3505 50  0000 R CNN
 F 2 "canhw_footprints:Mag Switch" H 4650 3200 50  0001 L CIN
-F 3 "http://www.allegromicro.com/en/Products/Part_Numbers/1101/1101.pdf" H 4650 4200 50  0001 C CNN
+F 3 "36-4884CT-ND" H 4650 4200 50  0001 C CNN
 	1    4650 3550
 	0    -1   -1   0   
 $EndComp
@@ -537,7 +537,7 @@ AR Path="/5DA13C95/5DC4E792" Ref="U6"  Part="1"
 F 0 "U6" H 4420 1146 50  0000 R CNN
 F 1 "Mag Switch" H 4420 1055 50  0000 R CNN
 F 2 "canhw_footprints:Mag Switch" H 4650 750 50  0001 L CIN
-F 3 "http://www.allegromicro.com/en/Products/Part_Numbers/1101/1101.pdf" H 4650 1750 50  0001 C CNN
+F 3 "36-4884CT-ND" H 4650 1750 50  0001 C CNN
 	1    4650 1100
 	0    -1   -1   0   
 $EndComp
