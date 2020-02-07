@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:sensors-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -39,7 +38,7 @@ $EndComp
 NoConn ~ 7550 3050
 NoConn ~ 7550 1850
 $Comp
-L device:C C?
+L Device:C C?
 U 1 1 5BB1B80C
 P 7700 1650
 F 0 "C?" V 7750 1700 50  0000 L CNN
@@ -76,7 +75,7 @@ Text Notes 7600 3250 0    60   ~ 0
 NoConn ~ 5000 4850
 NoConn ~ 4050 5050
 $Comp
-L device:C C?
+L Device:C C?
 U 1 1 5BB1B822
 P 5400 5100
 F 0 "C?" H 5300 5200 50  0000 L CNN
@@ -145,7 +144,7 @@ NoConn ~ 5000 2850
 NoConn ~ 5000 2950
 NoConn ~ 5000 3050
 $Comp
-L device:C C?
+L Device:C C?
 U 1 1 5BB1B85C
 P 5000 2050
 F 0 "C?" H 5025 2150 50  0000 L CNN
@@ -286,7 +285,7 @@ $EndComp
 NoConn ~ 7550 5350
 NoConn ~ 7550 4150
 $Comp
-L device:C C?
+L Device:C C?
 U 1 1 5BB1B935
 P 7700 3950
 F 0 "C?" V 7750 4000 50  0000 L CNN
@@ -427,5 +426,4 @@ Wire Wire Line
 	7450 4050 7450 4150
 Wire Wire Line
 	7350 5400 7350 5450
-Connection ~ 5400 4950
 $EndSCHEMATC
