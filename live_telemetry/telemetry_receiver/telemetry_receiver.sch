@@ -116,7 +116,7 @@ U 1 1 5DD2778A
 P 4450 4800
 F 0 "U1" H 4675 5115 50  0000 C CNN
 F 1 "PIC16LF1455" H 4675 5024 50  0000 C CNN
-F 2 "" H 4450 4800 50  0001 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4450 4800 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001639B.pdf" H 4450 4800 50  0001 C CNN
 	1    4450 4800
 	1    0    0    -1  
@@ -439,7 +439,7 @@ AR Path="/5E22EC09/5E26E098" Ref="U?"  Part="1"
 AR Path="/5E26E098" Ref="U2"  Part="1" 
 F 0 "U2" H 9000 4665 50  0000 C CNN
 F 1 "RFM95W" H 9000 4574 50  0000 C CNN
-F 2 "" H 8550 4550 50  0001 C CNN
+F 2 "canhw_footprints:XCVR_RFM95W-915S2" H 8550 4550 50  0001 C CNN
 F 3 "https://www.rfsolutions.co.uk/downloads/1463993415RFM95_96_97_98W.pdf" H 8550 4550 50  0001 C CNN
 	1    8500 3150
 	1    0    0    -1  
@@ -479,7 +479,7 @@ AR Path="/5E22EC09/5E26E0AC" Ref="J?"  Part="1"
 AR Path="/5E26E0AC" Ref="J1"  Part="1" 
 F 0 "J1" V 9782 2450 50  0000 L CNN
 F 1 "Conn_Coaxial" V 9873 2450 50  0000 L CNN
-F 2 "" H 9900 2350 50  0001 C CNN
+F 2 "canhw_footprints:AmphenolRF_coaxial_conn_901-10510-2" H 9900 2350 50  0001 C CNN
 F 3 " ~" H 9900 2350 50  0001 C CNN
 	1    9900 2350
 	0    1    1    0   
@@ -704,7 +704,7 @@ U 1 1 5E270EFB
 P 3150 5350
 F 0 "R5" H 3218 5396 50  0000 L CNN
 F 1 "10k" H 3218 5305 50  0000 L CNN
-F 2 "" V 3190 5340 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3190 5340 50  0001 C CNN
 F 3 "~" H 3150 5350 50  0001 C CNN
 	1    3150 5350
 	1    0    0    -1  
