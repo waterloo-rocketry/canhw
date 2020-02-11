@@ -1,6 +1,6 @@
-update=2019-11-06 9:45:25 PM
+update=2020-01-11 4:49:06 PM
 version=1
-last_client=kicad
+last_client=pcbnew
 [general]
 version=1
 RootSch=
@@ -26,8 +26,8 @@ PcbTextThickness=0.3
 ModuleTextSizeV=1
 ModuleTextSizeH=1
 ModuleTextSizeThickness=0.15
-SolderMaskClearance=0
-SolderMaskMinWidth=0
+SolderMaskClearance=0.0508
+SolderMaskMinWidth=0.25
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.09999999999999999
 ModuleOutlineThickness=0.15
