@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:vent-cache
-EELAYER 30 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -159,7 +159,7 @@ F 3 "~" H 8150 3450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L canhw:INA180 U1
+L vent-rescue:INA180-canhw U1
 U 1 1 5DCBAABA
 P 9200 4200
 F 0 "U1" H 9150 3727 50  0000 C CNN

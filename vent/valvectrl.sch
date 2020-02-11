@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:vent-cache
-EELAYER 30 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -30,20 +30,20 @@ $EndComp
 Wire Wire Line
 	5100 4700 5300 4700
 $Comp
-L Connector:Conn_01x02_Female J4
+L Connector:Conn_01x06_Female J4
 U 1 1 5DCDEFC3
-P 5950 2900
-F 0 "J4" H 5978 2876 50  0000 L CNN
-F 1 "Valve Connection" H 5978 2785 50  0000 L CNN
-F 2 "" H 5950 2900 50  0001 C CNN
-F 3 "~" H 5950 2900 50  0001 C CNN
-	1    5950 2900
+P 6150 2900
+F 0 "J4" H 6178 2876 50  0000 L CNN
+F 1 "Valve Connection" H 6178 2785 50  0000 L CNN
+F 2 "" H 6150 2900 50  0001 C CNN
+F 3 "~" H 6150 2900 50  0001 C CNN
+	1    6150 2900
 	1    0    0    -1  
 $EndComp
-Text Label 5500 3000 2    50   ~ 0
+Text Label 5850 2800 2    50   ~ 0
 RELAY-
 Wire Wire Line
-	5750 3000 5500 3000
+	5950 2800 5600 2800
 $Comp
 L Device:Q_NMOS_GDS Q1
 U 1 1 5DCE1675
@@ -74,10 +74,10 @@ Wire Wire Line
 	6050 4250 6050 4350
 Text Label 6150 3750 0    50   ~ 0
 RELAY+
-Text Label 5500 2900 2    50   ~ 0
+Text Label 5850 2700 2    50   ~ 0
 RELAY+
 Wire Wire Line
-	5500 2900 5750 2900
+	5600 2700 5950 2700
 $Comp
 L power:+12V #PWR0123
 U 1 1 5DCE3D3C
@@ -139,4 +139,90 @@ Wire Wire Line
 Connection ~ 6050 5100
 Wire Wire Line
 	6050 5100 6050 5150
+$Comp
+L power:GND #PWR?
+U 1 1 5E418E5D
+P 5700 3300
+F 0 "#PWR?" H 5700 3050 50  0001 C CNN
+F 1 "GND" H 5705 3127 50  0000 C CNN
+F 2 "" H 5700 3300 50  0001 C CNN
+F 3 "" H 5700 3300 50  0001 C CNN
+	1    5700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R11
+U 1 1 5E41905A
+P 5250 2700
+F 0 "R11" H 5318 2746 50  0000 L CNN
+F 1 "10K" H 5318 2655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5290 2690 50  0001 C CNN
+F 3 "~" H 5250 2700 50  0001 C CNN
+	1    5250 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R10
+U 1 1 5E4190F4
+P 4950 2700
+F 0 "R10" H 5018 2746 50  0000 L CNN
+F 1 "10K" H 5018 2655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4990 2690 50  0001 C CNN
+F 3 "~" H 4950 2700 50  0001 C CNN
+	1    4950 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3200 5700 3200
+Wire Wire Line
+	5700 3200 5700 3300
+Wire Wire Line
+	5700 3200 5700 3000
+Wire Wire Line
+	5700 3000 5950 3000
+Connection ~ 5700 3200
+$Comp
+L power:+5V #PWR?
+U 1 1 5E41AA86
+P 5250 2500
+F 0 "#PWR?" H 5250 2350 50  0001 C CNN
+F 1 "+5V" H 5265 2673 50  0000 C CNN
+F 2 "" H 5250 2500 50  0001 C CNN
+F 3 "" H 5250 2500 50  0001 C CNN
+	1    5250 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E41AAC5
+P 4950 2500
+F 0 "#PWR?" H 4950 2350 50  0001 C CNN
+F 1 "+5V" H 4965 2673 50  0000 C CNN
+F 2 "" H 4950 2500 50  0001 C CNN
+F 3 "" H 4950 2500 50  0001 C CNN
+	1    4950 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2550 4950 2500
+Wire Wire Line
+	5250 2500 5250 2550
+Text HLabel 4850 2900 0    50   Input ~ 0
+LIMIT_OPEN
+Text HLabel 4850 3100 0    50   Input ~ 0
+LIMIT_CLOSE
+Wire Wire Line
+	4850 3100 5250 3100
+Wire Wire Line
+	4850 2900 4950 2900
+Wire Wire Line
+	5250 2850 5250 3100
+Connection ~ 5250 3100
+Wire Wire Line
+	5250 3100 5950 3100
+Wire Wire Line
+	4950 2850 4950 2900
+Connection ~ 4950 2900
+Wire Wire Line
+	4950 2900 5950 2900
 $EndSCHEMATC
