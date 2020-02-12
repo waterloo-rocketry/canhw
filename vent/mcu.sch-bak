@@ -20,18 +20,18 @@ U 1 1 5DCC670A
 P 3950 1550
 F 0 "J3" H 3842 1125 50  0000 C CNN
 F 1 "Programming Header" H 3842 1216 50  0000 C CNN
-F 2 "" H 3950 1550 50  0001 C CNN
+F 2 "canhw_footprints:PinHeader_5x2.54_SMD_90deg_952-3198-1-ND" H 3950 1550 50  0001 C CNN
 F 3 "~" H 3950 1550 50  0001 C CNN
 	1    3950 1550
 	-1   0    0    1   
 $EndComp
 $Comp
-L canhw:PIC18F26K83 U3
+L vent-rescue:PIC18F26K83-canhw-vent-rescue U3
 U 1 1 5DCC6E57
 P 5050 3650
 F 0 "U3" H 5025 4565 50  0000 C CNN
 F 1 "PIC18F26K83" H 5025 4474 50  0000 C CNN
-F 2 "" H 5500 3650 50  0001 C CNN
+F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 5500 3650 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001943A.pdf" H 5500 3650 50  0001 C CNN
 	1    5050 3650
 	1    0    0    -1  
@@ -317,12 +317,12 @@ Connection ~ 6000 4300
 Text HLabel 5750 3300 2    50   Input ~ 0
 VALVE_CONTROL
 $Comp
-L canhw:MCP2562 U2
+L vent-rescue:MCP2562-canhw-vent-rescue U2
 U 1 1 5DCC9274
 P 9200 3550
 F 0 "U2" H 9175 3815 50  0000 C CNN
 F 1 "MCP2562" H 9175 3724 50  0000 C CNN
-F 2 "" H 9200 3550 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9200 3550 50  0001 C CNN
 F 3 "http://hades.mech.northwestern.edu/images/5/5e/MCP2562.pdf" H 9200 3550 50  0001 C CNN
 	1    9200 3550
 	1    0    0    -1  
@@ -477,4 +477,8 @@ Connection ~ 5050 5250
 Wire Wire Line
 	5400 5800 5050 5800
 Connection ~ 5050 5800
+Text HLabel 5750 3400 2    50   Output ~ 0
+LIMIT_OPEN
+Text HLabel 5750 3500 2    50   Output ~ 0
+LIMIT_CLOSE
 $EndSCHEMATC
