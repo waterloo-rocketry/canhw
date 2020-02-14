@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 3
+Sheet 3 3
 Title ""
 Date ""
 Rev ""
@@ -245,7 +245,7 @@ U 1 1 5BAC3C73
 P 2750 3150
 F 0 "J4" H 2644 2725 50  0000 C CNN
 F 1 "BUS CONN" H 2644 2816 50  0000 C CNN
-F 2 "canhw_footprints:connector_Harwin_M80-5420642" H 2750 3150 50  0001 C CNN
+F 2 "canhw_footprints:connector_Harwin_M80-5000642" H 2750 3150 50  0001 C CNN
 F 3 "~" H 2750 3150 50  0001 C CNN
 	1    2750 3150
 	-1   0    0    1   
