@@ -125,7 +125,7 @@ U 1 1 5E22B721
 P 6950 3650
 F 0 "J4" V 6832 3750 50  0000 L CNN
 F 1 "Conn_Coaxial" V 6923 3750 50  0000 L CNN
-F 2 "canhw_footprints:AmphenolRF_coaxial_conn_901-10510-2" H 6950 3650 50  0001 C CNN
+F 2 "canhw_footprints:RF_connector_SMA_3-1478978-1" H 6950 3650 50  0001 C CNN
 F 3 " ~" H 6950 3650 50  0001 C CNN
 	1    6950 3650
 	0    1    1    0   

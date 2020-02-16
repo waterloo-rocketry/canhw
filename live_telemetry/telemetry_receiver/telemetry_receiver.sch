@@ -479,7 +479,7 @@ AR Path="/5E22EC09/5E26E0AC" Ref="J?"  Part="1"
 AR Path="/5E26E0AC" Ref="J1"  Part="1" 
 F 0 "J1" V 9782 2450 50  0000 L CNN
 F 1 "Conn_Coaxial" V 9873 2450 50  0000 L CNN
-F 2 "canhw_footprints:AmphenolRF_coaxial_conn_901-10510-2" H 9900 2350 50  0001 C CNN
+F 2 "canhw_footprints:RF_connector_SMA_3-1478978-1" H 9900 2350 50  0001 C CNN
 F 3 " ~" H 9900 2350 50  0001 C CNN
 	1    9900 2350
 	0    1    1    0   
