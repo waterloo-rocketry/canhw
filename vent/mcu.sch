@@ -193,9 +193,9 @@ OSC1
 Text Label 4050 3800 2    50   ~ 0
 OSC2
 Text Label 4050 3900 2    50   ~ 0
-CAN_TX
-Text Label 4050 4000 2    50   ~ 0
 CAN_RX
+Text Label 4050 4000 2    50   ~ 0
+CAN_TX
 Wire Wire Line
 	4050 3700 4300 3700
 Wire Wire Line
