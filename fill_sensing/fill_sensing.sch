@@ -512,7 +512,7 @@ Wire Wire Line
 Wire Wire Line
 	2000 2850 2650 2850
 Text Label 1950 1150 0    50   ~ 0
-LCSPDAT
+ICSPDAT
 Text Label 1950 1250 0    50   ~ 0
 ICSPCLK
 Text Label 1950 850  0    50   ~ 0
