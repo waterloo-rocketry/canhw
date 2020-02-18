@@ -608,27 +608,27 @@ Text Label 5400 5250 2    50   ~ 0
 HALL_8
 Text Label 5400 5450 2    50   ~ 0
 HALL_10
-Text Label 4250 5250 0    50   ~ 0
-HALL_1
-Text Label 4250 5350 0    50   ~ 0
-HALL_2
-Text Label 4250 5450 0    50   ~ 0
-HALL_3
-Text Label 4250 5550 0    50   ~ 0
-HALL_4
-Text Label 4250 5650 0    50   ~ 0
-HALL_5
-Text Label 4250 5750 0    50   ~ 0
-HALL_6
-Text Label 4250 5850 0    50   ~ 0
-HALL_7
-Text Label 4250 5950 0    50   ~ 0
-HALL_8
 Text Label 4250 6050 0    50   ~ 0
+HALL_1
+Text Label 4250 5850 0    50   ~ 0
+HALL_2
+Text Label 4250 5650 0    50   ~ 0
+HALL_3
+Text Label 4250 5450 0    50   ~ 0
+HALL_4
+Text Label 4250 5250 0    50   ~ 0
+HALL_5
+Text Label 2800 6150 2    50   ~ 0
+HALL_6
+Text Label 2800 5950 2    50   ~ 0
+HALL_7
+Text Label 2800 5850 2    50   ~ 0
+HALL_8
+Text Label 2800 6050 2    50   ~ 0
 HALL_9
 Text Label 5400 5350 2    50   ~ 0
 HALL_9
-Text Label 2800 5850 2    50   ~ 0
+Text Label 4250 5550 0    50   ~ 0
 HALL_11
 Wire Wire Line
 	2550 5050 2800 5050
@@ -960,13 +960,13 @@ Text Label 5400 5650 2    50   ~ 0
 HALL_12
 Text Label 5400 5750 2    50   ~ 0
 HALL_13
-Text Label 2800 5950 2    50   ~ 0
+Text Label 4250 5750 0    50   ~ 0
 HALL_12
-Text Label 2800 6050 2    50   ~ 0
+Text Label 4250 5950 0    50   ~ 0
 HALL_13
-Text Label 2800 6150 2    50   ~ 0
-HALL_14
 Text Label 2800 6250 2    50   ~ 0
+HALL_14
+Text Label 4250 5350 0    50   ~ 0
 HALL_10
 Text Label 5400 5850 2    50   ~ 0
 HALL_14
