@@ -20,7 +20,7 @@ U 1 1 5DCD02C1
 P 1900 2300
 F 0 "J2" H 1792 1875 50  0000 C CNN
 F 1 "Programming Header" H 1792 1966 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal" H 1900 2300 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Horizontal" H 1900 2300 50  0001 C CNN
 F 3 "~" H 1900 2300 50  0001 C CNN
 	1    1900 2300
 	-1   0    0    1   
@@ -49,7 +49,7 @@ Text Label 2650 2100 0    50   ~ 0
 Text Label 2650 2400 0    50   ~ 0
 ICSPDAT
 Text Label 2650 2500 0    50   ~ 0
-ISCPCLK
+ICSPCLK
 Wire Wire Line
 	2650 2500 2100 2500
 Wire Wire Line
