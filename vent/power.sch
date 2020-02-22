@@ -159,7 +159,7 @@ F 3 "~" H 8150 3450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L vent-rescue:INA180-canhw-vent-rescue U1
+L vent-rescue:INA180-canhw-vent-rescue-vent-rescue U1
 U 1 1 5DCBAABA
 P 9200 4200
 AR Path="/5DCBAABA" Ref="U1"  Part="1" 

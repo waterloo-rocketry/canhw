@@ -44,17 +44,6 @@ Text Label 5850 2800 2    50   ~ 0
 RELAY-
 Wire Wire Line
 	5950 2800 5600 2800
-$Comp
-L Device:Q_NMOS_GDS Q1
-U 1 1 5DCE1675
-P 5950 4700
-F 0 "Q1" H 6156 4746 50  0000 L CNN
-F 1 "Q_NMOS_GDS" H 6156 4655 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 6150 4800 50  0001 C CNN
-F 3 "~" H 5950 4700 50  0001 C CNN
-	1    5950 4700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5600 4700 5750 4700
 $Comp
@@ -131,7 +120,6 @@ F 3 "~" H 5750 4950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5750 4700 5750 4800
-Connection ~ 5750 4700
 Wire Wire Line
 	5750 5100 6050 5100
 Wire Wire Line
@@ -225,4 +213,16 @@ Wire Wire Line
 Connection ~ 4950 2900
 Wire Wire Line
 	4950 2900 5950 2900
+$Comp
+L Device:Q_NMOS_GSD Q1
+U 1 1 5E50C37F
+P 5950 4700
+F 0 "Q1" H 6156 4746 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 6156 4655 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6150 4800 50  0001 C CNN
+F 3 "~" H 5950 4700 50  0001 C CNN
+	1    5950 4700
+	1    0    0    -1  
+$EndComp
+Connection ~ 5750 4700
 $EndSCHEMATC
