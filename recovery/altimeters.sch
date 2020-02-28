@@ -124,7 +124,7 @@ F 3 "" H 1700 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 900  3000 0    50   Input ~ 0
-SL_ARM
+A1_ARM
 $Comp
 L Device:Q_PMOS_GDS Q3
 U 1 1 5DA2D9EA
