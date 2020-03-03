@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:vent-cache
-EELAYER 30 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -26,7 +26,7 @@ F 3 "~" H 3950 1550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L vent-rescue:PIC18F26K83-canhw-vent-rescue-vent-rescue U3
+L canhw:PIC18F26K83 U3
 U 1 1 5DCC6E57
 P 5050 3650
 F 0 "U3" H 5025 4565 50  0000 C CNN
@@ -317,7 +317,7 @@ Connection ~ 6000 4300
 Text HLabel 5750 3300 2    50   Input ~ 0
 VALVE_CONTROL
 $Comp
-L vent-rescue:MCP2562-canhw-vent-rescue-vent-rescue U2
+L canhw:MCP2562 U2
 U 1 1 5DCC9274
 P 9200 3550
 F 0 "U2" H 9175 3815 50  0000 C CNN
