@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L fill_sensing-rescue:PIC18F26K83-canhw U1
+L canhw:PIC18F26K83 U1
 U 1 1 5E29F867
 P 3550 5600
 F 0 "U1" H 3525 6515 50  0000 C CNN
@@ -37,7 +37,7 @@ F 3 "~" H 1800 2650 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L fill_sensing-rescue:MCP2562-canhw U3
+L canhw:MCP2562 U3
 U 1 1 5E2A3092
 P 5800 1750
 F 0 "U3" H 5775 2015 50  0000 C CNN
@@ -341,7 +341,7 @@ F 3 "" H 4000 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L fill_sensing-rescue:INA180-canhw U2
+L canhw:INA180 U2
 U 1 1 5E2CD686
 P 4350 3350
 F 0 "U2" H 4300 2877 50  0000 C CNN
@@ -410,7 +410,6 @@ Wire Wire Line
 	4650 2900 4750 2900
 Wire Wire Line
 	4200 2800 4200 2900
-Connection ~ 4200 2900
 $Comp
 L power:GND #PWR09
 U 1 1 5E2D7BDF
