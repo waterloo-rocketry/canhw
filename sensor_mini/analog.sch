@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:sensors-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -79,17 +78,6 @@ Wire Wire Line
 	6100 4800 6300 4800
 Text HLabel 5300 5300 0    50   Input ~ 0
 TANK_PRESSURE
-$Comp
-L power:+1V8 #PWR010
-U 1 1 5C97111A
-P 6100 2900
-F 0 "#PWR010" H 6100 2750 50  0001 C CNN
-F 1 "+1V8" H 6115 3073 50  0000 C CNN
-F 2 "" H 6100 2900 50  0001 C CNN
-F 3 "" H 6100 2900 50  0001 C CNN
-	1    6100 2900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6100 2900 6100 3050
 Wire Wire Line
@@ -158,4 +146,17 @@ Wire Wire Line
 Connection ~ 5600 5300
 Wire Wire Line
 	5600 5300 5600 5350
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EADA013
+P 6100 2900
+AR Path="/5BB129A7/5EADA013" Ref="#PWR?"  Part="1" 
+AR Path="/5C970B4C/5EADA013" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6100 2750 50  0001 C CNN
+F 1 "+3V3" H 6115 3073 50  0000 C CNN
+F 2 "" H 6100 2900 50  0001 C CNN
+F 3 "" H 6100 2900 50  0001 C CNN
+	1    6100 2900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:sensors-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -44,11 +43,12 @@ Wire Wire Line
 Wire Wire Line
 	3600 4000 3700 4000
 $Comp
-L sensors-rescue:INA180-canhw-sensors-rescue U?
+L sensors-rescue:INA180-canhw-sensors-rescue-sensors-rescue U?
 U 1 1 5BB12B37
 P 4350 5000
 AR Path="/5BB11D6C/5BB12B37" Ref="U?"  Part="1" 
 AR Path="/5BB129A7/5BB12B37" Ref="U4"  Part="1" 
+AR Path="/5BB12B37" Ref="U4"  Part="1" 
 F 0 "U4" H 4300 4528 50  0000 C CNN
 F 1 "INA180" H 4300 4437 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 4350 5000 50  0001 C CNN
@@ -277,25 +277,14 @@ Connection ~ 9200 5350
 Wire Wire Line
 	9200 5350 9600 5350
 $Comp
-L sensors-rescue:MIC5365-1.8-canhw-sensors-rescue U8
+L sensors-rescue:MIC5365-1.8-canhw-sensors-rescue-sensors-rescue U8
 U 1 1 5BD847E8
 P 8400 5350
 F 0 "U8" H 8375 5575 50  0000 C CNN
-F 1 "MIC5365-1.8" H 8375 5484 50  0000 C CNN
+F 1 "MIC5365-3.3" H 8375 5484 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 8450 5350 50  0001 C CNN
 F 3 "" H 8450 5350 50  0001 C CNN
 	1    8400 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+1V8 #PWR043
-U 1 1 5BD849F7
-P 9600 5250
-F 0 "#PWR043" H 9600 5100 50  0001 C CNN
-F 1 "+1V8" H 9615 5423 50  0000 C CNN
-F 2 "" H 9600 5250 50  0001 C CNN
-F 3 "" H 9600 5250 50  0001 C CNN
-	1    9600 5250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -303,11 +292,12 @@ Wire Wire Line
 Wire Wire Line
 	3700 1600 3800 1600
 $Comp
-L sensors-rescue:INA180-canhw-sensors-rescue U?
+L sensors-rescue:INA180-canhw-sensors-rescue-sensors-rescue U?
 U 1 1 5C960D34
 P 4450 2600
 AR Path="/5BB11D6C/5C960D34" Ref="U?"  Part="1" 
 AR Path="/5BB129A7/5C960D34" Ref="U3"  Part="1" 
+AR Path="/5C960D34" Ref="U3"  Part="1" 
 F 0 "U3" H 4400 2128 50  0000 C CNN
 F 1 "INA180" H 4400 2037 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 4450 2600 50  0001 C CNN
@@ -545,4 +535,15 @@ Wire Wire Line
 	2750 4000 3200 4000
 Wire Wire Line
 	1850 4000 2450 4000
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EAC76AF
+P 9600 5250
+F 0 "#PWR?" H 9600 5100 50  0001 C CNN
+F 1 "+3V3" H 9615 5423 50  0000 C CNN
+F 2 "" H 9600 5250 50  0001 C CNN
+F 3 "" H 9600 5250 50  0001 C CNN
+	1    9600 5250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:sensors-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L sensors-rescue:MS5607-02BA03-flight_instr-sensors-rescue U10
+L sensors-rescue:MS5607-02BA03-flight_instr-sensors-rescue-sensors-rescue U10
 U 1 1 5BB1B7F7
 P 5600 5500
 F 0 "U10" H 5400 6050 60  0000 C CNN
@@ -79,17 +78,6 @@ SDA
 Text HLabel 6250 2600 0    50   Input ~ 0
 SCL
 $Comp
-L power:+1V8 #PWR0103
-U 1 1 5C60E7F4
-P 6050 4750
-F 0 "#PWR0103" H 6050 4600 50  0001 C CNN
-F 1 "+1V8" H 5950 4950 50  0000 C CNN
-F 2 "" H 6050 4750 50  0001 C CNN
-F 3 "" H 6050 4750 50  0001 C CNN
-	1    6050 4750
-	1    0    0    -1  
-$EndComp
-$Comp
 L flight_instr:LSM6DS3HTR U2
 U 1 1 5C601B49
 P 7550 2650
@@ -151,17 +139,6 @@ Wire Wire Line
 Connection ~ 7450 3250
 Wire Wire Line
 	7450 3250 7450 3350
-$Comp
-L power:+1V8 #PWR0111
-U 1 1 5C60A546
-P 7550 1450
-F 0 "#PWR0111" H 7550 1300 50  0001 C CNN
-F 1 "+1V8" H 7450 1650 50  0000 C CNN
-F 2 "" H 7550 1450 50  0001 C CNN
-F 3 "" H 7550 1450 50  0001 C CNN
-	1    7550 1450
-	-1   0    0    -1  
-$EndComp
 NoConn ~ 7650 1950
 $Comp
 L power:GND #PWR0112
@@ -213,31 +190,9 @@ Wire Wire Line
 Connection ~ 7550 1650
 Wire Wire Line
 	7550 1650 7550 1450
-$Comp
-L power:+1V8 #PWR0114
-U 1 1 5C619B2A
-P 7450 1450
-F 0 "#PWR0114" H 7450 1300 50  0001 C CNN
-F 1 "+1V8" H 7350 1650 50  0000 C CNN
-F 2 "" H 7450 1450 50  0001 C CNN
-F 3 "" H 7450 1450 50  0001 C CNN
-	1    7450 1450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7450 1650 7450 1450
 Connection ~ 7450 1650
-$Comp
-L power:+1V8 #PWR024
-U 1 1 5CA15587
-P 6650 2350
-F 0 "#PWR024" H 6650 2200 50  0001 C CNN
-F 1 "+1V8" H 6665 2523 50  0000 C CNN
-F 2 "" H 6650 2350 50  0001 C CNN
-F 3 "" H 6650 2350 50  0001 C CNN
-	1    6650 2350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6650 2500 6850 2500
 Wire Wire Line
@@ -259,17 +214,6 @@ F 1 "LSM303AGR" H 4000 2500 50  0000 C CNN
 F 2 "Package_LGA:LGA-12_2x2mm_P0.5mm" H 4400 2750 50  0001 C CNN
 F 3 "" H 4400 2750 50  0001 C CNN
 	1    3600 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+1V8 #PWR015
-U 1 1 5CA1B63F
-P 3600 1500
-F 0 "#PWR015" H 3600 1350 50  0001 C CNN
-F 1 "+1V8" H 3615 1673 50  0000 C CNN
-F 2 "" H 3600 1500 50  0001 C CNN
-F 3 "" H 3600 1500 50  0001 C CNN
-	1    3600 1500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -416,17 +360,6 @@ Wire Wire Line
 	2550 2750 2850 2750
 Wire Wire Line
 	2550 2850 2850 2850
-$Comp
-L power:+1V8 #PWR025
-U 1 1 5CA2A5EA
-P 2450 2450
-F 0 "#PWR025" H 2450 2300 50  0001 C CNN
-F 1 "+1V8" H 2465 2623 50  0000 C CNN
-F 2 "" H 2450 2450 50  0001 C CNN
-F 3 "" H 2450 2450 50  0001 C CNN
-	1    2450 2450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2450 2450 2450 2500
 Connection ~ 2450 2500
@@ -438,17 +371,6 @@ Text HLabel 4750 2500 2    50   Input ~ 0
 INT_MAG
 Wire Wire Line
 	4750 2500 4400 2500
-$Comp
-L power:+1V8 #PWR030
-U 1 1 5CA31D3E
-P 6550 5150
-F 0 "#PWR030" H 6550 5000 50  0001 C CNN
-F 1 "+1V8" H 6565 5323 50  0000 C CNN
-F 2 "" H 6550 5150 50  0001 C CNN
-F 3 "" H 6550 5150 50  0001 C CNN
-	1    6550 5150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6550 5250 6050 5250
 NoConn ~ 5100 5350
@@ -469,17 +391,110 @@ Text Notes 7650 3600 0    50   ~ 0
 Accel/Gyro IMU\nINT line shared for accel/gyro data ready
 Text Notes 3850 3700 0    50   ~ 0
 Accel/Mag IMU\nAccel interrupt unused
+Wire Wire Line
+	5100 4900 5100 5050
 $Comp
-L power:+1V8 #PWR?
-U 1 1 5CAC428E
+L power:+3V3 #PWR?
+U 1 1 5EAC8993
 P 5100 4900
+AR Path="/5BB129A7/5EAC8993" Ref="#PWR?"  Part="1" 
+AR Path="/5BB17361/5EAC8993" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 5100 4750 50  0001 C CNN
-F 1 "+1V8" H 5115 5073 50  0000 C CNN
+F 1 "+3V3" H 5115 5073 50  0000 C CNN
 F 2 "" H 5100 4900 50  0001 C CNN
 F 3 "" H 5100 4900 50  0001 C CNN
 	1    5100 4900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5100 4900 5100 5050
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EACA074
+P 6050 4750
+AR Path="/5BB129A7/5EACA074" Ref="#PWR?"  Part="1" 
+AR Path="/5BB17361/5EACA074" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6050 4600 50  0001 C CNN
+F 1 "+3V3" H 6065 4923 50  0000 C CNN
+F 2 "" H 6050 4750 50  0001 C CNN
+F 3 "" H 6050 4750 50  0001 C CNN
+	1    6050 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EACB2D5
+P 6650 2350
+AR Path="/5BB129A7/5EACB2D5" Ref="#PWR?"  Part="1" 
+AR Path="/5BB17361/5EACB2D5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6650 2200 50  0001 C CNN
+F 1 "+3V3" H 6665 2523 50  0000 C CNN
+F 2 "" H 6650 2350 50  0001 C CNN
+F 3 "" H 6650 2350 50  0001 C CNN
+	1    6650 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EACC1ED
+P 7450 1450
+AR Path="/5BB129A7/5EACC1ED" Ref="#PWR?"  Part="1" 
+AR Path="/5BB17361/5EACC1ED" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7450 1300 50  0001 C CNN
+F 1 "+3V3" H 7350 1600 50  0000 C CNN
+F 2 "" H 7450 1450 50  0001 C CNN
+F 3 "" H 7450 1450 50  0001 C CNN
+	1    7450 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EACD03E
+P 7550 1450
+AR Path="/5BB129A7/5EACD03E" Ref="#PWR?"  Part="1" 
+AR Path="/5BB17361/5EACD03E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7550 1300 50  0001 C CNN
+F 1 "+3V3" H 7650 1600 50  0000 C CNN
+F 2 "" H 7550 1450 50  0001 C CNN
+F 3 "" H 7550 1450 50  0001 C CNN
+	1    7550 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EACE20E
+P 3600 1500
+AR Path="/5BB129A7/5EACE20E" Ref="#PWR?"  Part="1" 
+AR Path="/5BB17361/5EACE20E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3600 1350 50  0001 C CNN
+F 1 "+3V3" H 3615 1673 50  0000 C CNN
+F 2 "" H 3600 1500 50  0001 C CNN
+F 3 "" H 3600 1500 50  0001 C CNN
+	1    3600 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EACF32E
+P 2450 2450
+AR Path="/5BB129A7/5EACF32E" Ref="#PWR?"  Part="1" 
+AR Path="/5BB17361/5EACF32E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2450 2300 50  0001 C CNN
+F 1 "+3V3" H 2465 2623 50  0000 C CNN
+F 2 "" H 2450 2450 50  0001 C CNN
+F 3 "" H 2450 2450 50  0001 C CNN
+	1    2450 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EAD0405
+P 6550 5150
+AR Path="/5BB129A7/5EAD0405" Ref="#PWR?"  Part="1" 
+AR Path="/5BB17361/5EAD0405" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6550 5000 50  0001 C CNN
+F 1 "+3V3" H 6565 5323 50  0000 C CNN
+F 2 "" H 6550 5150 50  0001 C CNN
+F 3 "" H 6550 5150 50  0001 C CNN
+	1    6550 5150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

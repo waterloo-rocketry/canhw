@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:sensors-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L sensors-rescue:MCP2562-canhw-sensors-rescue U?
+L sensors-rescue:MCP2562-canhw-sensors-rescue-sensors-rescue U?
 U 1 1 5BB14883
 P 8650 3850
 AR Path="/5B9CFC89/5BB14883" Ref="U?"  Part="1" 
@@ -378,73 +377,8 @@ Wire Wire Line
 Wire Wire Line
 	4550 5900 4550 6000
 Connection ~ 4550 6000
-$Comp
-L power:+1V8 #PWR?
-U 1 1 5C62C68F
-P 7800 3750
-AR Path="/5BB17361/5C62C68F" Ref="#PWR?"  Part="1" 
-AR Path="/5BB1460E/5C62C68F" Ref="#PWR0104"  Part="1" 
-F 0 "#PWR0104" H 7800 3600 50  0001 C CNN
-F 1 "+1V8" H 7700 3950 50  0000 C CNN
-F 2 "" H 7800 3750 50  0001 C CNN
-F 3 "" H 7800 3750 50  0001 C CNN
-	1    7800 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+1V8 #PWR?
-U 1 1 5C62D637
-P 3700 2100
-AR Path="/5BB17361/5C62D637" Ref="#PWR?"  Part="1" 
-AR Path="/5BB1460E/5C62D637" Ref="#PWR0105"  Part="1" 
-F 0 "#PWR0105" H 3700 1950 50  0001 C CNN
-F 1 "+1V8" H 3600 2300 50  0000 C CNN
-F 2 "" H 3700 2100 50  0001 C CNN
-F 3 "" H 3700 2100 50  0001 C CNN
-	1    3700 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+1V8 #PWR?
-U 1 1 5C63057A
-P 5350 4000
-AR Path="/5BB17361/5C63057A" Ref="#PWR?"  Part="1" 
-AR Path="/5BB1460E/5C63057A" Ref="#PWR0108"  Part="1" 
-F 0 "#PWR0108" H 5350 3850 50  0001 C CNN
-F 1 "+1V8" H 5250 4200 50  0000 C CNN
-F 2 "" H 5350 4000 50  0001 C CNN
-F 3 "" H 5350 4000 50  0001 C CNN
-	1    5350 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+1V8 #PWR?
-U 1 1 5C631522
-P 4350 4050
-AR Path="/5BB17361/5C631522" Ref="#PWR?"  Part="1" 
-AR Path="/5BB1460E/5C631522" Ref="#PWR0109"  Part="1" 
-F 0 "#PWR0109" H 4350 3900 50  0001 C CNN
-F 1 "+1V8" H 4250 4250 50  0000 C CNN
-F 2 "" H 4350 4050 50  0001 C CNN
-F 3 "" H 4350 4050 50  0001 C CNN
-	1    4350 4050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5350 4600 5350 5100
-$Comp
-L power:+1V8 #PWR?
-U 1 1 5C6001E1
-P 2600 4200
-AR Path="/5BB17361/5C6001E1" Ref="#PWR?"  Part="1" 
-AR Path="/5BB1460E/5C6001E1" Ref="#PWR0107"  Part="1" 
-F 0 "#PWR0107" H 2600 4050 50  0001 C CNN
-F 1 "+1V8" H 2500 4400 50  0000 C CNN
-F 2 "" H 2600 4200 50  0001 C CNN
-F 3 "" H 2600 4200 50  0001 C CNN
-	1    2600 4200
-	1    0    0    -1  
-$EndComp
 Text HLabel 2500 5100 0    50   Input ~ 0
 CURR_INPUT_12V
 Wire Wire Line
@@ -499,17 +433,6 @@ Wire Wire Line
 Connection ~ 2300 6000
 Wire Wire Line
 	2300 6000 2900 6000
-$Comp
-L power:+1V8 #PWR031
-U 1 1 5CA0FF70
-P 2150 5450
-F 0 "#PWR031" H 2150 5300 50  0001 C CNN
-F 1 "+1V8" H 2165 5623 50  0000 C CNN
-F 2 "" H 2150 5450 50  0001 C CNN
-F 3 "" H 2150 5450 50  0001 C CNN
-	1    2150 5450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2150 5450 2150 5500
 Wire Wire Line
@@ -519,4 +442,82 @@ Text HLabel 2900 5700 0    50   Input ~ 0
 INT_IMU
 Text HLabel 2900 5800 0    50   Input ~ 0
 INT_MAG
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EAD17DF
+P 7800 3750
+AR Path="/5BB129A7/5EAD17DF" Ref="#PWR?"  Part="1" 
+AR Path="/5BB1460E/5EAD17DF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7800 3600 50  0001 C CNN
+F 1 "+3V3" H 7815 3923 50  0000 C CNN
+F 2 "" H 7800 3750 50  0001 C CNN
+F 3 "" H 7800 3750 50  0001 C CNN
+	1    7800 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EAD2CDD
+P 3700 2100
+AR Path="/5BB129A7/5EAD2CDD" Ref="#PWR?"  Part="1" 
+AR Path="/5BB1460E/5EAD2CDD" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3700 1950 50  0001 C CNN
+F 1 "+3V3" H 3715 2273 50  0000 C CNN
+F 2 "" H 3700 2100 50  0001 C CNN
+F 3 "" H 3700 2100 50  0001 C CNN
+	1    3700 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EAD42E3
+P 5350 4000
+AR Path="/5BB129A7/5EAD42E3" Ref="#PWR?"  Part="1" 
+AR Path="/5BB1460E/5EAD42E3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5350 3850 50  0001 C CNN
+F 1 "+3V3" H 5365 4173 50  0000 C CNN
+F 2 "" H 5350 4000 50  0001 C CNN
+F 3 "" H 5350 4000 50  0001 C CNN
+	1    5350 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EAD594D
+P 4350 4050
+AR Path="/5BB129A7/5EAD594D" Ref="#PWR?"  Part="1" 
+AR Path="/5BB1460E/5EAD594D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4350 3900 50  0001 C CNN
+F 1 "+3V3" H 4365 4223 50  0000 C CNN
+F 2 "" H 4350 4050 50  0001 C CNN
+F 3 "" H 4350 4050 50  0001 C CNN
+	1    4350 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EAD7107
+P 2600 4200
+AR Path="/5BB129A7/5EAD7107" Ref="#PWR?"  Part="1" 
+AR Path="/5BB1460E/5EAD7107" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2600 4050 50  0001 C CNN
+F 1 "+3V3" H 2615 4373 50  0000 C CNN
+F 2 "" H 2600 4200 50  0001 C CNN
+F 3 "" H 2600 4200 50  0001 C CNN
+	1    2600 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EAD87D4
+P 2150 5450
+AR Path="/5BB129A7/5EAD87D4" Ref="#PWR?"  Part="1" 
+AR Path="/5BB1460E/5EAD87D4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2150 5300 50  0001 C CNN
+F 1 "+3V3" H 2165 5623 50  0000 C CNN
+F 2 "" H 2150 5450 50  0001 C CNN
+F 3 "" H 2150 5450 50  0001 C CNN
+	1    2150 5450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
