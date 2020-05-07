@@ -67,17 +67,6 @@ F 3 " ~" H 10150 3225 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10150 2850 10150 3025
-$Comp
-L Connector:Conn_01x07_Male J1
-U 1 1 5EB1793D
-P 1625 2625
-F 0 "J1" H 1750 3050 50  0000 C CNN
-F 1 "JST_01x07_Male" H 1650 2250 50  0000 C CNN
-F 2 "Connector_JST:JST_XH_B7B-XH-A_1x07_P2.50mm_Vertical" H 1625 2625 50  0001 C CNN
-F 3 "~" H 1625 2625 50  0001 C CNN
-	1    1625 2625
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5950 1925 6125 1925
 $Comp
@@ -143,17 +132,17 @@ Wire Wire Line
 	5950 4375 6125 4375
 Wire Wire Line
 	5950 4475 6125 4475
-Text Label 6125 3975 0    50   ~ 0
-DIO0
-Text Label 6125 4075 0    50   ~ 0
-DIO1
-Text Label 6125 4175 0    50   ~ 0
-DIO2
 Text Label 6125 4275 0    50   ~ 0
+DIO0
+Text Label 6125 4175 0    50   ~ 0
+DIO1
+Text Label 6125 4075 0    50   ~ 0
+DIO2
+Text Label 6125 4475 0    50   ~ 0
 DIO3
 Text Label 6125 4375 0    50   ~ 0
 DIO4
-Text Label 6125 4475 0    50   ~ 0
+Text Label 6125 3975 0    50   ~ 0
 DIO5
 Wire Wire Line
 	8500 2600 8600 2600
@@ -390,48 +379,18 @@ F 3 "" H 8050 3975 50  0001 C CNN
 	1    8050 3975
 	-1   0    0    -1  
 $EndComp
-Text Label 2000 3650 0    50   ~ 0
-DIO0_H
-Text Label 2000 3750 0    50   ~ 0
-DIO1_H
-Text Label 2000 3850 0    50   ~ 0
-DIO2_H
 Text Label 2000 3950 0    50   ~ 0
+DIO0_H
+Text Label 2000 3850 0    50   ~ 0
+DIO1_H
+Text Label 2000 3750 0    50   ~ 0
+DIO2_H
+Text Label 2000 4150 0    50   ~ 0
 DIO3_H
 Text Label 2000 4050 0    50   ~ 0
 DIO4_H
-Text Label 2000 4150 0    50   ~ 0
+Text Label 2000 3650 0    50   ~ 0
 DIO5_H
-Text Label 2425 2925 0    50   ~ 0
-RST_H
-Text Label 2425 2525 0    50   ~ 0
-MOSI_H
-Text Label 2425 2625 0    50   ~ 0
-MISO_H
-Text Label 2425 2825 0    50   ~ 0
-NSS_H
-Text Label 2425 2725 0    50   ~ 0
-SCK_H
-Text Label 4375 1725 2    50   ~ 0
-RST_H
-Text Label 4375 2025 2    50   ~ 0
-MOSI_H
-Text Label 4375 2125 2    50   ~ 0
-MISO_H
-Text Label 4375 1825 2    50   ~ 0
-NSS_H
-Text Label 4375 1925 2    50   ~ 0
-SCK_H
-Wire Wire Line
-	1825 2825 2425 2825
-Wire Wire Line
-	2425 2925 1825 2925
-Wire Wire Line
-	1825 2725 2425 2725
-Wire Wire Line
-	2425 2625 1825 2625
-Wire Wire Line
-	1825 2525 2425 2525
 $Comp
 L power:VCC #PWR0114
 U 1 1 5EBDA34C
@@ -458,28 +417,6 @@ Wire Wire Line
 	4550 2325 4450 2325
 Wire Wire Line
 	4025 1425 4025 2425
-$Comp
-L power:GND #PWR0115
-U 1 1 5EC79830
-P 2100 2975
-F 0 "#PWR0115" H 2100 2725 50  0001 C CNN
-F 1 "GND" H 2105 2802 50  0000 C CNN
-F 2 "" H 2100 2975 50  0001 C CNN
-F 3 "" H 2100 2975 50  0001 C CNN
-	1    2100 2975
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0116
-U 1 1 5EC79EBD
-P 2275 2225
-F 0 "#PWR0116" H 2275 2075 50  0001 C CNN
-F 1 "VCC" H 2292 2398 50  0000 C CNN
-F 2 "" H 2275 2225 50  0001 C CNN
-F 3 "" H 2275 2225 50  0001 C CNN
-	1    2275 2225
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	4550 1425 4025 1425
 Wire Wire Line
@@ -599,17 +536,17 @@ Wire Wire Line
 	4550 4075 4375 4075
 Wire Wire Line
 	4550 3975 4375 3975
-Text Label 4375 4475 2    50   ~ 0
+Text Label 4375 3975 2    50   ~ 0
 DIO5_H
 Text Label 4375 4375 2    50   ~ 0
 DIO4_H
-Text Label 4375 4275 2    50   ~ 0
+Text Label 4375 4475 2    50   ~ 0
 DIO3_H
-Text Label 4375 4175 2    50   ~ 0
-DIO2_H
 Text Label 4375 4075 2    50   ~ 0
+DIO2_H
+Text Label 4375 4175 2    50   ~ 0
 DIO1_H
-Text Label 4375 3975 2    50   ~ 0
+Text Label 4375 4275 2    50   ~ 0
 DIO0_H
 Wire Wire Line
 	4550 4675 4450 4675
@@ -706,12 +643,75 @@ Wire Wire Line
 	5950 2125 6125 2125
 NoConn ~ 5950 1625
 NoConn ~ 4550 1625
+Text Label 4375 2025 2    50   ~ 0
+MOSI_H
+Text Label 4375 2125 2    50   ~ 0
+MISO_H
+Text Label 4375 1925 2    50   ~ 0
+SCK_H
+Text Label 4375 1825 2    50   ~ 0
+NSS_H
+$Comp
+L power:GND #PWR0115
+U 1 1 5EC79830
+P 2075 3225
+F 0 "#PWR0115" H 2075 2975 50  0001 C CNN
+F 1 "GND" H 2080 3052 50  0000 C CNN
+F 2 "" H 2075 3225 50  0001 C CNN
+F 3 "" H 2075 3225 50  0001 C CNN
+	1    2075 3225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x07_Male J1
+U 1 1 5EB1793D
+P 1600 2825
+F 0 "J1" H 1725 2400 50  0000 C CNN
+F 1 "JST_01x07_Male" H 1625 3225 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B7B-XH-A_1x07_P2.50mm_Vertical" H 1600 2825 50  0001 C CNN
+F 3 "~" H 1600 2825 50  0001 C CNN
+	1    1600 2825
+	1    0    0    1   
+$EndComp
+Text Label 2400 2725 0    50   ~ 0
+MOSI_H
+Text Label 2400 2625 0    50   ~ 0
+MISO_H
+Text Label 2400 2925 0    50   ~ 0
+NSS_H
+Text Label 2400 2825 0    50   ~ 0
+SCK_H
 Wire Wire Line
-	1825 2325 2100 2325
+	1800 2625 2400 2625
 Wire Wire Line
-	2100 2325 2100 2975
+	1800 2725 2400 2725
 Wire Wire Line
-	1825 2425 2275 2425
+	2400 2825 1800 2825
 Wire Wire Line
-	2275 2425 2275 2225
+	1800 2925 2400 2925
+$Comp
+L power:VCC #PWR0116
+U 1 1 5EC79EBD
+P 2075 2425
+F 0 "#PWR0116" H 2075 2275 50  0001 C CNN
+F 1 "VCC" H 2092 2598 50  0000 C CNN
+F 2 "" H 2075 2425 50  0001 C CNN
+F 3 "" H 2075 2425 50  0001 C CNN
+	1    2075 2425
+	1    0    0    -1  
+$EndComp
+Text Label 2400 3025 0    50   ~ 0
+RST_H
+Text Label 4375 1725 2    50   ~ 0
+RST_H
+Wire Wire Line
+	2075 2425 2075 2525
+Wire Wire Line
+	2075 2525 1800 2525
+Wire Wire Line
+	1800 3125 2075 3125
+Wire Wire Line
+	2075 3125 2075 3225
+Wire Wire Line
+	1800 3025 2400 3025
 $EndSCHEMATC
