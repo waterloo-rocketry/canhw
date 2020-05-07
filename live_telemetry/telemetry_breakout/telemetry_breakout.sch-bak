@@ -92,22 +92,20 @@ F 3 "" H 4450 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 1625 6125 1625
-Wire Wire Line
 	5950 1725 6125 1725
 Wire Wire Line
 	5950 1825 6125 1825
 Wire Wire Line
 	5950 2025 6125 2025
-Text Label 6125 2025 0    50   ~ 0
-RST
-Text Label 6125 1625 0    50   ~ 0
-MOSI
 Text Label 6125 1725 0    50   ~ 0
+RST
+Text Label 6125 2025 0    50   ~ 0
+MOSI
+Text Label 6125 2125 0    50   ~ 0
 MISO
-Text Label 6125 1925 0    50   ~ 0
-NSS
 Text Label 6125 1825 0    50   ~ 0
+NSS
+Text Label 6125 1925 0    50   ~ 0
 SCK
 Wire Wire Line
 	8600 3250 8425 3250
@@ -257,7 +255,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/txb0106.pdf?ts=1588535347449" H 5250 2656 
 	1    5250 1925
 	-1   0    0    -1  
 $EndComp
-NoConn ~ 5950 2125
 Wire Wire Line
 	4550 2025 4375 2025
 Wire Wire Line
@@ -266,8 +263,6 @@ Wire Wire Line
 	4550 1825 4375 1825
 Wire Wire Line
 	4550 1725 4375 1725
-Wire Wire Line
-	4550 1625 4375 1625
 Wire Wire Line
 	2000 4150 1825 4150
 Wire Wire Line
@@ -384,7 +379,6 @@ Wire Wire Line
 Wire Wire Line
 	6375 1425 6375 2325
 Connection ~ 6375 1425
-NoConn ~ 4550 2125
 $Comp
 L power:GND #PWR0113
 U 1 1 5EC09FCE
@@ -418,15 +412,15 @@ Text Label 2425 2825 0    50   ~ 0
 NSS_H
 Text Label 2425 2725 0    50   ~ 0
 SCK_H
-Text Label 4375 2025 2    50   ~ 0
-RST_H
-Text Label 4375 1625 2    50   ~ 0
-MOSI_H
 Text Label 4375 1725 2    50   ~ 0
+RST_H
+Text Label 4375 2025 2    50   ~ 0
+MOSI_H
+Text Label 4375 2125 2    50   ~ 0
 MISO_H
-Text Label 4375 1925 2    50   ~ 0
-NSS_H
 Text Label 4375 1825 2    50   ~ 0
+NSS_H
+Text Label 4375 1925 2    50   ~ 0
 SCK_H
 Wire Wire Line
 	1825 2825 2425 2825
@@ -464,14 +458,6 @@ Wire Wire Line
 	4550 2325 4450 2325
 Wire Wire Line
 	4025 1425 4025 2425
-Wire Wire Line
-	1825 2425 2100 2425
-Wire Wire Line
-	2100 2425 2100 2975
-Wire Wire Line
-	1825 2325 2100 2325
-Wire Wire Line
-	2100 2325 2100 2200
 $Comp
 L power:GND #PWR0115
 U 1 1 5EC79830
@@ -486,12 +472,12 @@ $EndComp
 $Comp
 L power:VCC #PWR0116
 U 1 1 5EC79EBD
-P 2100 2200
-F 0 "#PWR0116" H 2100 2050 50  0001 C CNN
-F 1 "VCC" H 2117 2373 50  0000 C CNN
-F 2 "" H 2100 2200 50  0001 C CNN
-F 3 "" H 2100 2200 50  0001 C CNN
-	1    2100 2200
+P 2275 2225
+F 0 "#PWR0116" H 2275 2075 50  0001 C CNN
+F 1 "VCC" H 2292 2398 50  0000 C CNN
+F 2 "" H 2275 2225 50  0001 C CNN
+F 3 "" H 2275 2225 50  0001 C CNN
+	1    2275 2225
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -714,4 +700,18 @@ Wire Wire Line
 Connection ~ 7925 3050
 Wire Wire Line
 	7925 3050 7725 3050
+Wire Wire Line
+	4550 2125 4375 2125
+Wire Wire Line
+	5950 2125 6125 2125
+NoConn ~ 5950 1625
+NoConn ~ 4550 1625
+Wire Wire Line
+	1825 2325 2100 2325
+Wire Wire Line
+	2100 2325 2100 2975
+Wire Wire Line
+	1825 2425 2275 2425
+Wire Wire Line
+	2275 2425 2275 2225
 $EndSCHEMATC
