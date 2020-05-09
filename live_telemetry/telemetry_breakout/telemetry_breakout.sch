@@ -132,17 +132,17 @@ Wire Wire Line
 	5950 4375 6125 4375
 Wire Wire Line
 	5950 4475 6125 4475
-Text Label 6125 4275 0    50   ~ 0
+Text Label 6125 3975 0    50   ~ 0
 DIO0
 Text Label 6125 4175 0    50   ~ 0
 DIO1
 Text Label 6125 4075 0    50   ~ 0
 DIO2
-Text Label 6125 4475 0    50   ~ 0
+Text Label 6125 4275 0    50   ~ 0
 DIO3
 Text Label 6125 4375 0    50   ~ 0
 DIO4
-Text Label 6125 3975 0    50   ~ 0
+Text Label 6125 4475 0    50   ~ 0
 DIO5
 Wire Wire Line
 	8500 2600 8600 2600
@@ -379,17 +379,17 @@ F 3 "" H 8050 3975 50  0001 C CNN
 	1    8050 3975
 	-1   0    0    -1  
 $EndComp
-Text Label 2000 3950 0    50   ~ 0
+Text Label 2000 3650 0    50   ~ 0
 DIO0_H
-Text Label 2000 3850 0    50   ~ 0
-DIO1_H
 Text Label 2000 3750 0    50   ~ 0
+DIO1_H
+Text Label 2000 3850 0    50   ~ 0
 DIO2_H
-Text Label 2000 4150 0    50   ~ 0
+Text Label 2000 3950 0    50   ~ 0
 DIO3_H
 Text Label 2000 4050 0    50   ~ 0
 DIO4_H
-Text Label 2000 3650 0    50   ~ 0
+Text Label 2000 4150 0    50   ~ 0
 DIO5_H
 $Comp
 L power:VCC #PWR0114
@@ -536,17 +536,17 @@ Wire Wire Line
 	4550 4075 4375 4075
 Wire Wire Line
 	4550 3975 4375 3975
-Text Label 4375 3975 2    50   ~ 0
+Text Label 4375 4475 2    50   ~ 0
 DIO5_H
 Text Label 4375 4375 2    50   ~ 0
 DIO4_H
-Text Label 4375 4475 2    50   ~ 0
-DIO3_H
-Text Label 4375 4075 2    50   ~ 0
-DIO2_H
-Text Label 4375 4175 2    50   ~ 0
-DIO1_H
 Text Label 4375 4275 2    50   ~ 0
+DIO3_H
+Text Label 4375 4175 2    50   ~ 0
+DIO2_H
+Text Label 4375 4075 2    50   ~ 0
+DIO1_H
+Text Label 4375 3975 2    50   ~ 0
 DIO0_H
 Wire Wire Line
 	4550 4675 4450 4675
