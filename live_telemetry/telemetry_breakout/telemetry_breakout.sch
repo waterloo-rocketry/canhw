@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "Live Telemetry - Transceiver Breakout"
 Date "2020-05-03"
-Rev ""
-Comp ""
+Rev "v01"
+Comp "Waterloo Rocketry"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -714,4 +714,6 @@ Wire Wire Line
 	1825 2550 2000 2550
 Wire Wire Line
 	2350 3050 2350 2350
+Text Notes 7500 6950 0    50   ~ 0
+The purpose of this board is to break out the pins for the RFM95W Transceiver Module \nto be used on live telemetry. The Radio Module's pins are broken out into two connectors \n- a JST connector for the major pins and a regular pin header for the Digital I/O pins. \nAll pins are level-shifted to 3.3V
 $EndSCHEMATC
