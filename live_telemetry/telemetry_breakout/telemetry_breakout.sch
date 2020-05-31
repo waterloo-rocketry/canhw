@@ -134,9 +134,9 @@ Wire Wire Line
 	5950 4475 6125 4475
 Text Label 6125 3975 0    50   ~ 0
 DIO0
-Text Label 6125 4175 0    50   ~ 0
-DIO1
 Text Label 6125 4075 0    50   ~ 0
+DIO1
+Text Label 6125 4175 0    50   ~ 0
 DIO2
 Text Label 6125 4275 0    50   ~ 0
 DIO3
