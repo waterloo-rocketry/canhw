@@ -553,17 +553,6 @@ F 3 "" H 6375 6550 50  0001 C CNN
 	1    6375 6550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:LED D1
-U 1 1 5F2B75C3
-P 6375 6300
-F 0 "D1" V 6414 6183 50  0000 R CNN
-F 1 "LED_White" V 6323 6183 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 6375 6300 50  0001 C CNN
-F 3 "~" H 6375 6300 50  0001 C CNN
-	1    6375 6300
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	6375 6050 6375 6150
 Wire Wire Line
@@ -803,4 +792,17 @@ Wire Wire Line
 	7800 2600 7550 2600
 Wire Wire Line
 	8050 2600 8775 2600
+$Comp
+L Device:LED D1
+U 1 1 5F2B75C3
+P 6375 6300
+F 0 "D1" V 6414 6183 50  0000 R CNN
+F 1 "LED_White" V 6323 6183 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 6375 6300 50  0001 C CNN
+F 3 "~" H 6375 6300 50  0001 C CNN
+	1    6375 6300
+	0    -1   -1   0   
+$EndComp
+Text Notes 6475 6125 0    50   ~ 0
+Power indicator LED
 $EndSCHEMATC
