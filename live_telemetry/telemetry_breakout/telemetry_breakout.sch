@@ -492,29 +492,14 @@ Text Label 2000 2850 0    50   ~ 0
 MOSI_H
 Text Label 2000 2950 0    50   ~ 0
 MISO_H
-Text Label 2000 2650 0    50   ~ 0
-NSS_H
 Text Label 2000 2750 0    50   ~ 0
 SCK_H
-Wire Wire Line
-	1825 3050 2350 3050
 Wire Wire Line
 	1825 2950 2000 2950
 Wire Wire Line
 	2000 2850 1825 2850
 Wire Wire Line
 	1825 2750 2000 2750
-$Comp
-L power:VCC #PWR0116
-U 1 1 5EC79EBD
-P 2350 2350
-F 0 "#PWR0116" H 2350 2200 50  0001 C CNN
-F 1 "VCC" H 2367 2523 50  0000 C CNN
-F 2 "" H 2350 2350 50  0001 C CNN
-F 3 "" H 2350 2350 50  0001 C CNN
-	1    2350 2350
-	-1   0    0    -1  
-$EndComp
 Text Label 2000 2550 0    50   ~ 0
 RST_H
 Text Label 4375 1725 2    50   ~ 0
@@ -524,39 +509,35 @@ Wire Wire Line
 Wire Wire Line
 	2100 3150 1825 3150
 Wire Wire Line
-	1825 2650 2000 2650
-Wire Wire Line
 	1825 2550 2000 2550
-Wire Wire Line
-	2350 3050 2350 2350
 Text Notes 7500 6950 0    50   ~ 0
 The purpose of this board is to break out the pins for the RFM95W Transceiver Module \nto be used on live telemetry. The Radio Module's pins are broken out into two connectors \n- a JST connector for the major pins and a regular pin header for the Digital I/O pins. \nAll pins are level-shifted to 3.3V
 $Comp
 L power:+3.3V #PWR01
 U 1 1 5F2B4B37
-P 6375 6050
-F 0 "#PWR01" H 6375 5900 50  0001 C CNN
-F 1 "+3.3V" H 6390 6223 50  0000 C CNN
-F 2 "" H 6375 6050 50  0001 C CNN
-F 3 "" H 6375 6050 50  0001 C CNN
-	1    6375 6050
+P 6375 5800
+F 0 "#PWR01" H 6375 5650 50  0001 C CNN
+F 1 "+3.3V" H 6390 5973 50  0000 C CNN
+F 2 "" H 6375 5800 50  0001 C CNN
+F 3 "" H 6375 5800 50  0001 C CNN
+	1    6375 5800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 5F2B597A
-P 6375 6550
-F 0 "#PWR02" H 6375 6300 50  0001 C CNN
-F 1 "GND" H 6380 6377 50  0000 C CNN
-F 2 "" H 6375 6550 50  0001 C CNN
-F 3 "" H 6375 6550 50  0001 C CNN
-	1    6375 6550
+P 6375 6600
+F 0 "#PWR02" H 6375 6350 50  0001 C CNN
+F 1 "GND" H 6380 6427 50  0000 C CNN
+F 2 "" H 6375 6600 50  0001 C CNN
+F 3 "" H 6375 6600 50  0001 C CNN
+	1    6375 6600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6375 6050 6375 6150
+	6375 6100 6375 6200
 Wire Wire Line
-	6375 6450 6375 6550
+	6375 6500 6375 6600
 Wire Wire Line
 	7225 3050 7025 3050
 Connection ~ 7225 3050
@@ -795,14 +776,128 @@ Wire Wire Line
 $Comp
 L Device:LED D1
 U 1 1 5F2B75C3
-P 6375 6300
-F 0 "D1" V 6414 6183 50  0000 R CNN
-F 1 "LED_White" V 6323 6183 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 6375 6300 50  0001 C CNN
-F 3 "~" H 6375 6300 50  0001 C CNN
-	1    6375 6300
+P 6375 6350
+F 0 "D1" V 6414 6233 50  0000 R CNN
+F 1 "LED_White" V 6323 6233 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 6375 6350 50  0001 C CNN
+F 3 "~" H 6375 6350 50  0001 C CNN
+	1    6375 6350
 	0    -1   -1   0   
 $EndComp
-Text Notes 6475 6125 0    50   ~ 0
+Text Notes 6475 6175 0    50   ~ 0
 Power indicator LED
+Text Notes 5375 6700 0    50   ~ 0
+LDO MAX 250mA
+Text Notes 9200 5525 0    50   ~ 0
+Min 25V Rated Caps for C1, C2, C3\nAll else (on 3v3 power) 10V rating
+$Comp
+L Device:R_US R2
+U 1 1 5F5A01B7
+P 6375 5950
+F 0 "R2" H 6443 5996 50  0000 L CNN
+F 1 "5" H 6443 5905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6415 5940 50  0001 C CNN
+F 3 "~" H 6375 5950 50  0001 C CNN
+	1    6375 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR04
+U 1 1 5F5B5ED1
+P 7800 1275
+F 0 "#PWR04" H 7800 1125 50  0001 C CNN
+F 1 "+3V3" H 7815 1448 50  0000 C CNN
+F 2 "" H 7800 1275 50  0001 C CNN
+F 3 "" H 7800 1275 50  0001 C CNN
+	1    7800 1275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5F5BAA9B
+P 7800 1425
+F 0 "R3" H 7868 1471 50  0000 L CNN
+F 1 "15" H 7868 1380 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7840 1415 50  0001 C CNN
+F 3 "~" H 7800 1425 50  0001 C CNN
+	1    7800 1425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1825 2650 2000 2650
+Text Label 2000 2650 0    50   ~ 0
+NSS_H
+Wire Wire Line
+	7800 1575 7800 1650
+Wire Wire Line
+	7800 1650 7725 1650
+Text Label 7725 1650 2    50   ~ 0
+NSS
+$Comp
+L power:VCC #PWR0116
+U 1 1 5EC79EBD
+P 2350 2350
+F 0 "#PWR0116" H 2350 2200 50  0001 C CNN
+F 1 "VCC" H 2367 2523 50  0000 C CNN
+F 2 "" H 2350 2350 50  0001 C CNN
+F 3 "" H 2350 2350 50  0001 C CNN
+	1    2350 2350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3050 2350 2350
+Wire Wire Line
+	1825 3050 2350 3050
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5F66BAC5
+P 7700 4900
+F 0 "TP1" V 7650 5075 50  0000 L CNN
+F 1 "Test_3V3" V 7750 5075 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 7900 4900 50  0001 C CNN
+F 3 "~" H 7900 4900 50  0001 C CNN
+	1    7700 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5F66E8A2
+P 7700 5125
+F 0 "TP2" V 7654 5313 50  0000 L CNN
+F 1 "Test_GND" V 7745 5313 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 7900 5125 50  0001 C CNN
+F 3 "~" H 7900 5125 50  0001 C CNN
+	1    7700 5125
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5F6AB0AD
+P 7575 5250
+F 0 "#PWR06" H 7575 5000 50  0001 C CNN
+F 1 "GND" H 7580 5077 50  0000 C CNN
+F 2 "" H 7575 5250 50  0001 C CNN
+F 3 "" H 7575 5250 50  0001 C CNN
+	1    7575 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR05
+U 1 1 5F6AC18A
+P 7575 4775
+F 0 "#PWR05" H 7575 4625 50  0001 C CNN
+F 1 "+3V3" H 7590 4948 50  0000 C CNN
+F 2 "" H 7575 4775 50  0001 C CNN
+F 3 "" H 7575 4775 50  0001 C CNN
+	1    7575 4775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 4900 7575 4900
+Wire Wire Line
+	7575 4900 7575 4775
+Wire Wire Line
+	7700 5125 7575 5125
+Wire Wire Line
+	7575 5125 7575 5250
 $EndSCHEMATC
