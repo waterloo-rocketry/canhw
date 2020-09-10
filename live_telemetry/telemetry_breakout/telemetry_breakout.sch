@@ -854,7 +854,7 @@ U 1 1 5F66BAC5
 P 7700 4900
 F 0 "TP1" V 7650 5075 50  0000 L CNN
 F 1 "Test_3V3" V 7750 5075 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 7900 4900 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 7900 4900 50  0001 C CNN
 F 3 "~" H 7900 4900 50  0001 C CNN
 	1    7700 4900
 	0    1    1    0   
@@ -865,7 +865,7 @@ U 1 1 5F66E8A2
 P 7700 5125
 F 0 "TP2" V 7654 5313 50  0000 L CNN
 F 1 "Test_GND" V 7745 5313 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 7900 5125 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 7900 5125 50  0001 C CNN
 F 3 "~" H 7900 5125 50  0001 C CNN
 	1    7700 5125
 	0    1    1    0   
