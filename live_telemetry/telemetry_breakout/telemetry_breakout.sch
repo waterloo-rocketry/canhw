@@ -784,8 +784,8 @@ F 3 "~" H 6375 6350 50  0001 C CNN
 	1    6375 6350
 	0    -1   -1   0   
 $EndComp
-Text Notes 6475 6175 0    50   ~ 0
-Power indicator LED
+Text Notes 6600 6150 0    50   ~ 0
+Power indicator LED\n3.3V LED recommended\n
 Text Notes 5375 6700 0    50   ~ 0
 LDO MAX 250mA
 Text Notes 9200 5525 0    50   ~ 0
