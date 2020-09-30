@@ -16,12 +16,12 @@ $EndDescr
 $Comp
 L power:GND #PWR039
 U 1 1 5DA2A4A1
-P 5500 6450
-F 0 "#PWR039" H 5500 6200 50  0001 C CNN
-F 1 "GND" H 5505 6277 50  0000 C CNN
-F 2 "" H 5500 6450 50  0001 C CNN
-F 3 "" H 5500 6450 50  0001 C CNN
-	1    5500 6450
+P 5500 6300
+F 0 "#PWR039" H 5500 6050 50  0001 C CNN
+F 1 "GND" H 5505 6127 50  0000 C CNN
+F 2 "" H 5500 6300 50  0001 C CNN
+F 3 "" H 5500 6300 50  0001 C CNN
+	1    5500 6300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -508,12 +508,12 @@ Connection ~ 2750 5750
 $Comp
 L power:GND #PWR043
 U 1 1 5DC54AB0
-P 6000 3100
-F 0 "#PWR043" H 6000 2850 50  0001 C CNN
-F 1 "GND" H 6005 2927 50  0000 C CNN
-F 2 "" H 6000 3100 50  0001 C CNN
-F 3 "" H 6000 3100 50  0001 C CNN
-	1    6000 3100
+P 6000 2950
+F 0 "#PWR043" H 6000 2700 50  0001 C CNN
+F 1 "GND" H 6005 2777 50  0000 C CNN
+F 2 "" H 6000 2950 50  0001 C CNN
+F 3 "" H 6000 2950 50  0001 C CNN
+	1    6000 2950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -700,29 +700,29 @@ Wire Wire Line
 Wire Wire Line
 	3650 5950 3650 6050
 Wire Wire Line
-	5000 6050 4150 6050
+	5000 6050 4250 6050
 Connection ~ 3650 6050
 $Comp
 L Jumper:SolderJumper_2_Open JP1
 U 1 1 5DC92DE5
-P 3900 5400
-F 0 "JP1" H 3900 5605 50  0000 C CNN
-F 1 "Bypass Jumper" H 3900 5514 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3900 5400 50  0001 C CNN
-F 3 "~" H 3900 5400 50  0001 C CNN
-	1    3900 5400
+P 3950 5400
+F 0 "JP1" H 3950 5605 50  0000 C CNN
+F 1 "Bypass Jumper" H 3950 5514 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3950 5400 50  0001 C CNN
+F 3 "~" H 3950 5400 50  0001 C CNN
+	1    3950 5400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3750 5400 3650 5400
+	3800 5400 3650 5400
 Connection ~ 3650 5400
 Wire Wire Line
 	3650 5400 3650 5550
 Wire Wire Line
-	4050 5400 4150 5400
+	4100 5400 4250 5400
 Wire Wire Line
-	4150 5400 4150 6050
-Connection ~ 4150 6050
+	4250 5400 4250 6050
+Connection ~ 4250 6050
 $Comp
 L power:GND #PWR053
 U 1 1 5DE0777F
@@ -773,10 +773,10 @@ Connection ~ 2800 4350
 Wire Wire Line
 	2800 4350 2800 4650
 Wire Wire Line
-	4150 5400 4150 4750
+	4250 5400 4250 4750
 Wire Wire Line
-	4150 4750 3350 4750
-Connection ~ 4150 5400
+	4250 4750 3350 4750
+Connection ~ 4250 5400
 Wire Wire Line
 	2400 4450 3350 4450
 Wire Wire Line
@@ -832,7 +832,7 @@ M2+
 Text Label 4900 6450 1    50   ~ 0
 D2+
 Wire Wire Line
-	3650 6050 4150 6050
+	3650 6050 4250 6050
 Wire Wire Line
 	6650 5800 4800 5800
 Connection ~ 6650 5800
@@ -937,7 +937,7 @@ $Comp
 L Jumper:SolderJumper_2_Open JP7
 U 1 1 5E2D5DCA
 P 3350 4600
-F 0 "JP7" H 3350 4805 50  0000 C CNN
+F 0 "JP7" V 3350 4450 50  0000 C CNN
 F 1 "Bypass tie together" V 3350 4714 50  0000 L CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3350 4600 50  0001 C CNN
 F 3 "~" H 3350 4600 50  0001 C CNN
@@ -1063,7 +1063,7 @@ recives altitude data from the stratologger over UART
 Text Notes 9200 3250 0    50   ~ 0
 logic level shifting
 Text Notes 9150 4200 0    50   ~ 0
-Conectors for the E-matches\nThe jumpers alow the two lines to be tied together \nso each altimeter fires all the E-matches
+Connectors for the E-matches\nThe jumpers alow the two lines to be tied together \nso each altimeter fires all the E-matches
 Text Notes 800  4600 0    50   ~ 0
 Alows external mag switches to be \nconnected that bypass the \narming MOSFETS
 Text Notes 4750 6800 0    50   ~ 0
@@ -1101,13 +1101,13 @@ Wire Wire Line
 Wire Wire Line
 	5650 2850 6000 2850
 Wire Wire Line
-	6000 2850 6000 3100
+	6000 2850 6000 2950
 Wire Wire Line
-	5100 6450 5100 6250
+	5100 6450 5100 6150
 Wire Wire Line
-	5100 6250 5500 6250
+	5100 6150 5500 6150
 Wire Wire Line
-	5500 6250 5500 6450
+	5500 6150 5500 6300
 Wire Wire Line
 	5000 6050 5000 6450
 Wire Wire Line

@@ -267,30 +267,6 @@ F 3 "~" H 4450 6400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR06
-U 1 1 5DAA8A9F
-P 4800 5800
-F 0 "#PWR06" H 4800 5650 50  0001 C CNN
-F 1 "+5V" H 4815 5973 50  0000 C CNN
-F 2 "" H 4800 5800 50  0001 C CNN
-F 3 "" H 4800 5800 50  0001 C CNN
-	1    4800 5800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4450 6250 4450 6000
-Wire Wire Line
-	4450 6000 4800 6000
-Wire Wire Line
-	5150 6000 5150 6250
-Wire Wire Line
-	4800 6000 4800 6250
-Connection ~ 4800 6000
-Wire Wire Line
-	4800 6000 5150 6000
-Wire Wire Line
-	4800 6000 4800 5800
-$Comp
 L Device:R_US R3
 U 1 1 5DAA98F4
 P 5150 6700
@@ -557,9 +533,9 @@ Connection ~ 1300 5400
 Wire Wire Line
 	1300 5400 1300 5550
 Text Notes 4450 7350 0    50   ~ 0
-Debuging / Indicator LEDs
+Debugging / Indicator LEDs
 Text Notes 1550 1850 0    50   ~ 0
-Programing header
+Programming header
 $Comp
 L Transistor_FET:BSS138 Q6
 U 1 1 5E3AE07F
@@ -641,4 +617,45 @@ Wire Wire Line
 	4700 3350 4700 3100
 Wire Wire Line
 	4700 3100 5150 3100
+$Comp
+L power:+5V #PWR?
+U 1 1 5F7634CC
+P 4450 6050
+F 0 "#PWR?" H 4450 5900 50  0001 C CNN
+F 1 "+5V" H 4465 6223 50  0000 C CNN
+F 2 "" H 4450 6050 50  0001 C CNN
+F 3 "" H 4450 6050 50  0001 C CNN
+	1    4450 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 6250 4450 6050
+$Comp
+L power:+5V #PWR?
+U 1 1 5F765F12
+P 4800 6050
+F 0 "#PWR?" H 4800 5900 50  0001 C CNN
+F 1 "+5V" H 4815 6223 50  0000 C CNN
+F 2 "" H 4800 6050 50  0001 C CNN
+F 3 "" H 4800 6050 50  0001 C CNN
+	1    4800 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 6250 4800 6050
+$Comp
+L power:+5V #PWR?
+U 1 1 5F76895D
+P 5150 6050
+F 0 "#PWR?" H 5150 5900 50  0001 C CNN
+F 1 "+5V" H 5165 6223 50  0000 C CNN
+F 2 "" H 5150 6050 50  0001 C CNN
+F 3 "" H 5150 6050 50  0001 C CNN
+	1    5150 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 6250 5150 6050
+Text Notes 2650 5200 0    50   ~ 0
+12 MHz
 $EndSCHEMATC
