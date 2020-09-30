@@ -483,7 +483,7 @@ AR Path="/5DC49D42" Ref="U7"  Part="1"
 F 0 "U7" H 4020 4196 50  0000 R CNN
 F 1 "Mag Switch" H 4020 4105 50  0000 R CNN
 F 2 "canhw_footprints:Mag Switch" H 4250 3800 50  0001 L CIN
-F 3 "36-4884CT-ND" H 4250 4800 50  0001 C CNN
+F 3 "36-4884CT-ND /  https://www.featherweightaltimeters.com/store/p4/Magnetic_Switch.html" H 4250 4800 50  0001 C CNN
 	1    4250 4150
 	0    -1   -1   0   
 $EndComp
@@ -528,7 +528,7 @@ Wire Wire Line
 Wire Wire Line
 	7050 1200 7500 1200
 $Comp
-L Device:D D3
+L Device:D_Schottky D3
 U 1 1 5DCFFC19
 P 8200 1200
 F 0 "D3" H 8200 984 50  0000 C CNN
@@ -541,7 +541,7 @@ $EndComp
 Wire Wire Line
 	8050 1200 8000 1200
 $Comp
-L Device:D D2
+L Device:D_Schottky D2
 U 1 1 5DD02B86
 P 3000 5850
 F 0 "D2" V 2954 5929 50  0000 L CNN
@@ -740,11 +740,11 @@ F 3 "~" H 7750 3350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8000 3350 8000 3950
+	8000 3350 8000 3700
 Wire Wire Line
 	8000 3950 8450 3950
 Wire Wire Line
-	7500 3350 7500 4150
+	7500 3350 7500 3700
 Wire Wire Line
 	7500 4150 8450 4150
 Wire Wire Line
@@ -803,4 +803,10 @@ Wire Wire Line
 	7500 3700 7600 3700
 Text Notes 7500 3050 0    50   ~ 0
 Two shunts in parrallel\nto maintain single \nfault tollerance
+Connection ~ 7500 3700
+Wire Wire Line
+	7500 3700 7500 4150
+Connection ~ 8000 3700
+Wire Wire Line
+	8000 3700 8000 3950
 $EndSCHEMATC

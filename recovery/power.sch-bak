@@ -483,7 +483,7 @@ AR Path="/5DC49D42" Ref="U7"  Part="1"
 F 0 "U7" H 4020 4196 50  0000 R CNN
 F 1 "Mag Switch" H 4020 4105 50  0000 R CNN
 F 2 "canhw_footprints:Mag Switch" H 4250 3800 50  0001 L CIN
-F 3 "36-4884CT-ND" H 4250 4800 50  0001 C CNN
+F 3 "36-4884CT-ND /  https://www.featherweightaltimeters.com/store/p4/Magnetic_Switch.html" H 4250 4800 50  0001 C CNN
 	1    4250 4150
 	0    -1   -1   0   
 $EndComp
@@ -528,7 +528,7 @@ Wire Wire Line
 Wire Wire Line
 	7050 1200 7500 1200
 $Comp
-L Device:D D3
+L Device:D_Schottky D3
 U 1 1 5DCFFC19
 P 8200 1200
 F 0 "D3" H 8200 984 50  0000 C CNN
@@ -541,7 +541,7 @@ $EndComp
 Wire Wire Line
 	8050 1200 8000 1200
 $Comp
-L Device:D D2
+L Device:D_Schottky D2
 U 1 1 5DD02B86
 P 3000 5850
 F 0 "D2" V 2954 5929 50  0000 L CNN
@@ -582,7 +582,7 @@ U 1 1 5EF6CD11
 P 4550 3750
 F 0 "R30" V 4345 3750 50  0000 C CNN
 F 1 "27K" V 4436 3750 50  0000 C CNN
-F 2 "" V 4590 3740 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4590 3740 50  0001 C CNN
 F 3 "~" H 4550 3750 50  0001 C CNN
 	1    4550 3750
 	0    1    1    0   
@@ -593,7 +593,7 @@ U 1 1 5EF6CDEF
 P 4550 1500
 F 0 "R27" V 4345 1500 50  0000 C CNN
 F 1 "27K" V 4436 1500 50  0000 C CNN
-F 2 "" V 4590 1490 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4590 1490 50  0001 C CNN
 F 3 "~" H 4550 1500 50  0001 C CNN
 	1    4550 1500
 	0    1    1    0   
@@ -604,7 +604,7 @@ U 1 1 5EF6CE70
 P 4850 1750
 F 0 "R31" H 4918 1796 50  0000 L CNN
 F 1 "10K" H 4918 1705 50  0000 L CNN
-F 2 "" V 4890 1740 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4890 1740 50  0001 C CNN
 F 3 "~" H 4850 1750 50  0001 C CNN
 	1    4850 1750
 	1    0    0    -1  
@@ -615,7 +615,7 @@ U 1 1 5EF6CED4
 P 4850 4000
 F 0 "R32" H 4918 4046 50  0000 L CNN
 F 1 "10K" H 4918 3955 50  0000 L CNN
-F 2 "" V 4890 3990 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4890 3990 50  0001 C CNN
 F 3 "~" H 4850 4000 50  0001 C CNN
 	1    4850 4000
 	1    0    0    -1  
@@ -740,11 +740,11 @@ F 3 "~" H 7750 3350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8000 3350 8000 3950
+	8000 3350 8000 3700
 Wire Wire Line
 	8000 3950 8450 3950
 Wire Wire Line
-	7500 3350 7500 4150
+	7500 3350 7500 3700
 Wire Wire Line
 	7500 4150 8450 4150
 Wire Wire Line
@@ -787,10 +787,10 @@ Connection ~ 4250 3750
 Wire Wire Line
 	4250 3750 4250 3850
 $Comp
-L Device:R_US R?
+L Device:R_US R34
 U 1 1 5F702DED
 P 7750 3700
-F 0 "R?" V 7545 3700 50  0000 C CNN
+F 0 "R34" V 7545 3700 50  0000 C CNN
 F 1 "8mR" V 7636 3700 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7790 3690 50  0001 C CNN
 F 3 "~" H 7750 3700 50  0001 C CNN
@@ -803,4 +803,10 @@ Wire Wire Line
 	7500 3700 7600 3700
 Text Notes 7500 3050 0    50   ~ 0
 Two shunts in parrallel\nto maintain single \nfault tollerance
+Connection ~ 7500 3700
+Wire Wire Line
+	7500 3700 7500 4150
+Connection ~ 8000 3700
+Wire Wire Line
+	8000 3700 8000 3950
 $EndSCHEMATC
