@@ -145,7 +145,7 @@ F 1 "CAN connector" H 6044 966 50  0000 C CNN
 F 2 "canhw_footprints:connector_Harwin_M80-5000642" H 6150 1300 50  0001 C CNN
 F 3 "~" H 6150 1300 50  0001 C CNN
 	1    6150 1300
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	6350 1200 6750 1200
