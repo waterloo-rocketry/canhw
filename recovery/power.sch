@@ -122,17 +122,6 @@ Wire Wire Line
 Connection ~ 8000 1200
 Wire Wire Line
 	8000 1200 7900 1200
-$Comp
-L Device:Polyfuse F1
-U 1 1 5DA15C0F
-P 6900 1200
-F 0 "F1" V 6675 1200 50  0000 C CNN
-F 1 "Polyfuse" V 6766 1200 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6950 1000 50  0001 L CNN
-F 3 "~" H 6900 1200 50  0001 C CNN
-	1    6900 1200
-	0    1    1    0   
-$EndComp
 Connection ~ 7500 1200
 Wire Wire Line
 	7500 1200 7600 1200
@@ -471,7 +460,7 @@ Text Notes 3200 1900 0    50   ~ 0
 Text Notes 3200 4150 0    50   ~ 0
 15.1V MAX
 NoConn ~ 6350 1100
-Text Notes 6400 1100 0    50   ~ 0
+Text Notes 6150 1000 0    50   ~ 0
 12V line
 $Comp
 L recovery_CAN-rescue:A1101ELHL-Sensor_Magnetic U?
@@ -809,4 +798,15 @@ Wire Wire Line
 Connection ~ 8000 3700
 Wire Wire Line
 	8000 3700 8000 3950
+$Comp
+L Device:Polyfuse F1
+U 1 1 5DA15C0F
+P 6900 1200
+F 0 "F1" V 6675 1200 50  0000 C CNN
+F 1 "Polyfuse 350mA" V 6766 1200 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6950 1000 50  0001 L CNN
+F 3 "~" H 6900 1200 50  0001 C CNN
+	1    6900 1200
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
