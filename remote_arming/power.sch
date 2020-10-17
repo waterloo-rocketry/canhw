@@ -463,7 +463,7 @@ NoConn ~ 6350 1100
 Text Notes 6150 1000 0    50   ~ 0
 12V line
 $Comp
-L recovery_CAN-rescue:A1101ELHL-Sensor_Magnetic U?
+L remote_arming:Magnetic_Switch U?
 U 1 1 5DC49D42
 P 4250 4150
 AR Path="/5DA13D99/5DC49D42" Ref="U?"  Part="1" 
@@ -488,7 +488,7 @@ F 3 "" H 4850 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L recovery_CAN-rescue:A1101ELHL-Sensor_Magnetic U?
+L remote_arming:Magnetic_Switch U?
 U 1 1 5DC4E792
 P 4250 1900
 AR Path="/5DA13D99/5DC4E792" Ref="U?"  Part="1" 
