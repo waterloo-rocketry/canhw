@@ -4,69 +4,15 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "Live Telemetry - Transceiver Breakout"
 Date "2020-05-03"
-Rev ""
-Comp ""
+Rev "v01"
+Comp "Waterloo Rocketry"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L canhw:RFM95W U4
-U 1 1 5EAEF6FA
-P 8700 3850
-F 0 "U4" H 9200 5365 50  0000 C CNN
-F 1 "RFM95W-915S2" H 9200 5274 50  0000 C CNN
-F 2 "canhw:XCVR_RFM95W-915S2" H 8750 5250 50  0001 C CNN
-F 3 "https://www.rfsolutions.co.uk/downloads/1463993415RFM95_96_97_98W.pdf" H 8750 5250 50  0001 C CNN
-	1    8700 3850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9950 3750 9950 3975
-Connection ~ 9950 3750
-Wire Wire Line
-	9800 3750 9950 3750
-Wire Wire Line
-	9950 3650 9950 3750
-Connection ~ 9950 3650
-Wire Wire Line
-	9800 3650 9950 3650
-Wire Wire Line
-	9950 3550 9950 3650
-Wire Wire Line
-	9800 3550 9950 3550
-$Comp
-L power:GND #PWR0101
-U 1 1 5EAF383F
-P 9950 3975
-F 0 "#PWR0101" H 9950 3725 50  0001 C CNN
-F 1 "GND" H 9955 3802 50  0000 C CNN
-F 2 "" H 9950 3975 50  0001 C CNN
-F 3 "" H 9950 3975 50  0001 C CNN
-	1    9950 3975
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9950 3550 9950 3225
-Connection ~ 9950 3550
-Wire Wire Line
-	9800 2850 10150 2850
-$Comp
-L Connector:Conn_Coaxial J3
-U 1 1 5EB04E47
-P 10150 3225
-F 0 "J3" V 10032 3325 50  0000 L CNN
-F 1 "Conn_Coaxial" V 10123 3325 50  0000 L CNN
-F 2 "canhw:RF_connector_SMA_3-1478978-1" H 10150 3225 50  0001 C CNN
-F 3 " ~" H 10150 3225 50  0001 C CNN
-	1    10150 3225
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10150 2850 10150 3025
 Wire Wire Line
 	5950 1925 6125 1925
 $Comp
@@ -97,30 +43,6 @@ NSS
 Text Label 6125 1925 0    50   ~ 0
 SCK
 Wire Wire Line
-	8600 3250 8425 3250
-Wire Wire Line
-	8600 3350 8425 3350
-Wire Wire Line
-	8600 3450 8425 3450
-Wire Wire Line
-	8600 3550 8425 3550
-Wire Wire Line
-	8600 3650 8425 3650
-Wire Wire Line
-	8600 3750 8425 3750
-Text Label 8425 3250 2    50   ~ 0
-DIO0
-Text Label 8425 3350 2    50   ~ 0
-DIO1
-Text Label 8425 3450 2    50   ~ 0
-DIO2
-Text Label 8425 3550 2    50   ~ 0
-DIO3
-Text Label 8425 3650 2    50   ~ 0
-DIO4
-Text Label 8425 3750 2    50   ~ 0
-DIO5
-Wire Wire Line
 	5950 3975 6125 3975
 Wire Wire Line
 	5950 4075 6125 4075
@@ -134,9 +56,9 @@ Wire Wire Line
 	5950 4475 6125 4475
 Text Label 6125 3975 0    50   ~ 0
 DIO0
-Text Label 6125 4175 0    50   ~ 0
-DIO1
 Text Label 6125 4075 0    50   ~ 0
+DIO1
+Text Label 6125 4175 0    50   ~ 0
 DIO2
 Text Label 6125 4275 0    50   ~ 0
 DIO3
@@ -144,24 +66,6 @@ Text Label 6125 4375 0    50   ~ 0
 DIO4
 Text Label 6125 4475 0    50   ~ 0
 DIO5
-Wire Wire Line
-	8500 2600 8600 2600
-Wire Wire Line
-	8600 2700 8425 2700
-Wire Wire Line
-	8600 2800 8425 2800
-Wire Wire Line
-	8600 2900 8425 2900
-Text Label 8425 2700 2    50   ~ 0
-MISO
-Text Label 8425 2800 2    50   ~ 0
-SCK
-Text Label 8425 2900 2    50   ~ 0
-NSS
-Text Label 7725 3050 2    50   ~ 0
-RST
-Text Label 9900 2700 0    50   ~ 0
-MOSI
 $Comp
 L power:GND #PWR0104
 U 1 1 5EB49A70
@@ -368,17 +272,6 @@ Wire Wire Line
 Wire Wire Line
 	6375 1425 6375 2325
 Connection ~ 6375 1425
-$Comp
-L power:GND #PWR0113
-U 1 1 5EC09FCE
-P 8050 3975
-F 0 "#PWR0113" H 8050 3725 50  0001 C CNN
-F 1 "GND" H 8055 3802 50  0000 C CNN
-F 2 "" H 8050 3975 50  0001 C CNN
-F 3 "" H 8050 3975 50  0001 C CNN
-	1    8050 3975
-	-1   0    0    -1  
-$EndComp
 Text Label 2000 3650 0    50   ~ 0
 DIO0_H
 Text Label 2000 3750 0    50   ~ 0
@@ -434,39 +327,12 @@ F 3 "~" H 1625 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R1
-U 1 1 5ED39602
-P 8050 3525
-F 0 "R1" H 8125 3600 50  0000 L CNN
-F 1 "10K" H 8125 3475 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8090 3515 50  0001 C CNN
-F 3 "~" H 8050 3525 50  0001 C CNN
-	1    8050 3525
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	9800 2700 9900 2700
-$Comp
-L Device:Antenna #AE1
-U 1 1 5ED433AC
-P 10150 2200
-F 0 "#AE1" H 10230 2189 50  0000 L CNN
-F 1 "Antenna" H 10230 2098 50  0000 L CNN
-F 2 "" H 10150 2200 50  0001 C CNN
-F 3 "~" H 10150 2200 50  0001 C CNN
-	1    10150 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10150 2400 10150 2850
-Connection ~ 10150 2850
-$Comp
 L Regulator_Linear:AP2112K-3.3 U1
 U 1 1 5ED49129
 P 5250 6150
 F 0 "U1" H 5250 6492 50  0000 C CNN
 F 1 "LP5907MFX-3.3/NOPB" H 5250 6401 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5250 6475 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 5250 6475 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lp5907.pdf?ts=1588541953645" H 5250 6250 50  0001 C CNN
 	1    5250 6150
 	1    0    0    -1  
@@ -576,50 +442,6 @@ Connection ~ 6375 4675
 Wire Wire Line
 	6375 4675 6375 4775
 $Comp
-L Switch:SW_Push SW1
-U 1 1 5ECBE574
-P 7925 2600
-F 0 "SW1" V 7975 2900 50  0000 R CNN
-F 1 "SW_Reset" V 7875 3025 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 7925 2800 50  0001 C CNN
-F 3 "~" H 7925 2800 50  0001 C CNN
-	1    7925 2600
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	8500 2250 8500 2600
-$Comp
-L power:+3.3V #PWR0117
-U 1 1 5EC38D5D
-P 7925 2250
-F 0 "#PWR0117" H 7925 2100 50  0001 C CNN
-F 1 "+3.3V" H 7940 2423 50  0000 C CNN
-F 2 "" H 7925 2250 50  0001 C CNN
-F 3 "" H 7925 2250 50  0001 C CNN
-	1    7925 2250
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	8050 3675 8050 3975
-Wire Wire Line
-	8050 3050 8600 3050
-Wire Wire Line
-	7925 2250 7925 2400
-Connection ~ 8050 3050
-Wire Wire Line
-	8050 3050 7925 3050
-$Comp
-L power:+3.3V #PWR0118
-U 1 1 5ECDE672
-P 8500 2250
-F 0 "#PWR0118" H 8500 2100 50  0001 C CNN
-F 1 "+3.3V" H 8515 2423 50  0000 C CNN
-F 2 "" H 8500 2250 50  0001 C CNN
-F 3 "" H 8500 2250 50  0001 C CNN
-	1    8500 2250
-	-1   0    0    -1  
-$EndComp
-$Comp
 L power:+3.3V #PWR0119
 U 1 1 5ECDEC24
 P 6050 6050
@@ -630,13 +452,6 @@ F 3 "" H 6050 6050 50  0001 C CNN
 	1    6050 6050
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	8050 3050 8050 3375
-Wire Wire Line
-	7925 2800 7925 3050
-Connection ~ 7925 3050
-Wire Wire Line
-	7925 3050 7725 3050
 Wire Wire Line
 	4550 2125 4375 2125
 Wire Wire Line
@@ -677,18 +492,347 @@ Text Label 2000 2850 0    50   ~ 0
 MOSI_H
 Text Label 2000 2950 0    50   ~ 0
 MISO_H
-Text Label 2000 2650 0    50   ~ 0
-NSS_H
 Text Label 2000 2750 0    50   ~ 0
 SCK_H
-Wire Wire Line
-	1825 3050 2350 3050
 Wire Wire Line
 	1825 2950 2000 2950
 Wire Wire Line
 	2000 2850 1825 2850
 Wire Wire Line
 	1825 2750 2000 2750
+Text Label 2000 2550 0    50   ~ 0
+RST_H
+Text Label 4375 1725 2    50   ~ 0
+RST_H
+Wire Wire Line
+	2100 3250 2100 3150
+Wire Wire Line
+	2100 3150 1825 3150
+Wire Wire Line
+	1825 2550 2000 2550
+Text Notes 7500 6950 0    50   ~ 0
+The purpose of this board is to break out the pins for the RFM95W Transceiver Module \nto be used on live telemetry. The Radio Module's pins are broken out into two connectors \n- a JST connector for the major pins and a regular pin header for the Digital I/O pins. \nAll pins are level-shifted to 3.3V
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5F2B4B37
+P 6375 5800
+F 0 "#PWR01" H 6375 5650 50  0001 C CNN
+F 1 "+3.3V" H 6390 5973 50  0000 C CNN
+F 2 "" H 6375 5800 50  0001 C CNN
+F 3 "" H 6375 5800 50  0001 C CNN
+	1    6375 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5F2B597A
+P 6375 6600
+F 0 "#PWR02" H 6375 6350 50  0001 C CNN
+F 1 "GND" H 6380 6427 50  0000 C CNN
+F 2 "" H 6375 6600 50  0001 C CNN
+F 3 "" H 6375 6600 50  0001 C CNN
+	1    6375 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6375 6100 6375 6200
+Wire Wire Line
+	6375 6500 6375 6600
+Wire Wire Line
+	7225 3050 7025 3050
+Connection ~ 7225 3050
+Wire Wire Line
+	7225 2800 7225 3050
+Wire Wire Line
+	7350 3050 7350 3375
+Wire Wire Line
+	7350 3050 7225 3050
+Wire Wire Line
+	7225 2250 7225 2400
+Wire Wire Line
+	7350 3675 7350 3975
+$Comp
+L power:+3.3V #PWR0117
+U 1 1 5EC38D5D
+P 7225 2250
+F 0 "#PWR0117" H 7225 2100 50  0001 C CNN
+F 1 "+3.3V" H 7240 2423 50  0000 C CNN
+F 2 "" H 7225 2250 50  0001 C CNN
+F 3 "" H 7225 2250 50  0001 C CNN
+	1    7225 2250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5ECBE574
+P 7225 2600
+F 0 "SW1" V 7275 2900 50  0000 R CNN
+F 1 "SW_Reset" V 7175 3025 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 7225 2800 50  0001 C CNN
+F 3 "~" H 7225 2800 50  0001 C CNN
+	1    7225 2600
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5ED39602
+P 7350 3525
+F 0 "R1" H 7425 3600 50  0000 L CNN
+F 1 "10K" H 7425 3475 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7390 3515 50  0001 C CNN
+F 3 "~" H 7350 3525 50  0001 C CNN
+	1    7350 3525
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 5EC09FCE
+P 7350 3975
+F 0 "#PWR0113" H 7350 3725 50  0001 C CNN
+F 1 "GND" H 7355 3802 50  0000 C CNN
+F 2 "" H 7350 3975 50  0001 C CNN
+F 3 "" H 7350 3975 50  0001 C CNN
+	1    7350 3975
+	-1   0    0    -1  
+$EndComp
+Text Label 7025 3050 2    50   ~ 0
+RST
+Connection ~ 7350 3050
+$Comp
+L power:+3.3V #PWR0118
+U 1 1 5ECDE672
+P 7800 2250
+F 0 "#PWR0118" H 7800 2100 50  0001 C CNN
+F 1 "+3.3V" H 7815 2423 50  0000 C CNN
+F 2 "" H 7800 2250 50  0001 C CNN
+F 3 "" H 7800 2250 50  0001 C CNN
+	1    7800 2250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2250 7800 2600
+Connection ~ 10325 2850
+Wire Wire Line
+	10325 2400 10325 2850
+$Comp
+L Device:Antenna #AE1
+U 1 1 5ED433AC
+P 10325 2200
+F 0 "#AE1" H 10405 2189 50  0000 L CNN
+F 1 "Antenna" H 10405 2098 50  0000 L CNN
+F 2 "" H 10325 2200 50  0001 C CNN
+F 3 "~" H 10325 2200 50  0001 C CNN
+	1    10325 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9975 2700 10075 2700
+Text Label 10075 2700 0    50   ~ 0
+MOSI
+Text Label 8600 2900 2    50   ~ 0
+NSS
+Text Label 8600 2800 2    50   ~ 0
+SCK
+Text Label 8600 2700 2    50   ~ 0
+MISO
+Wire Wire Line
+	8775 2900 8600 2900
+Wire Wire Line
+	8775 2800 8600 2800
+Wire Wire Line
+	8775 2700 8600 2700
+Text Label 8600 3750 2    50   ~ 0
+DIO5
+Text Label 8600 3650 2    50   ~ 0
+DIO4
+Text Label 8600 3550 2    50   ~ 0
+DIO3
+Text Label 8600 3450 2    50   ~ 0
+DIO2
+Text Label 8600 3350 2    50   ~ 0
+DIO1
+Text Label 8600 3250 2    50   ~ 0
+DIO0
+Wire Wire Line
+	8775 3750 8600 3750
+Wire Wire Line
+	8775 3650 8600 3650
+Wire Wire Line
+	8775 3550 8600 3550
+Wire Wire Line
+	8775 3450 8600 3450
+Wire Wire Line
+	8775 3350 8600 3350
+Wire Wire Line
+	8775 3250 8600 3250
+Wire Wire Line
+	10325 2850 10325 3025
+$Comp
+L Connector:Conn_Coaxial J3
+U 1 1 5EB04E47
+P 10325 3225
+F 0 "J3" V 10207 3325 50  0000 L CNN
+F 1 "Conn_Coaxial" V 10298 3325 50  0000 L CNN
+F 2 "canhw:RF_connector_SMA_3-1478978-1_BIG_PADS" H 10325 3225 50  0001 C CNN
+F 3 " ~" H 10325 3225 50  0001 C CNN
+	1    10325 3225
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9975 2850 10325 2850
+Connection ~ 10125 3550
+Wire Wire Line
+	10125 3550 10125 3225
+$Comp
+L power:GND #PWR0101
+U 1 1 5EAF383F
+P 10125 3975
+F 0 "#PWR0101" H 10125 3725 50  0001 C CNN
+F 1 "GND" H 10130 3802 50  0000 C CNN
+F 2 "" H 10125 3975 50  0001 C CNN
+F 3 "" H 10125 3975 50  0001 C CNN
+	1    10125 3975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9975 3550 10125 3550
+Wire Wire Line
+	10125 3550 10125 3650
+Wire Wire Line
+	9975 3650 10125 3650
+Connection ~ 10125 3650
+Wire Wire Line
+	10125 3650 10125 3750
+Wire Wire Line
+	9975 3750 10125 3750
+Connection ~ 10125 3750
+Wire Wire Line
+	10125 3750 10125 3975
+$Comp
+L canhw:RFM95W U4
+U 1 1 5EAEF6FA
+P 8875 3850
+F 0 "U4" H 9375 5365 50  0000 C CNN
+F 1 "RFM95W-915S2" H 9375 5274 50  0000 C CNN
+F 2 "canhw:XCVR_RFM95W-915S2" H 8925 5250 50  0001 C CNN
+F 3 "https://www.rfsolutions.co.uk/downloads/1463993415RFM95_96_97_98W.pdf" H 8925 5250 50  0001 C CNN
+	1    8875 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5F2E81E0
+P 7800 3975
+F 0 "#PWR03" H 7800 3725 50  0001 C CNN
+F 1 "GND" H 7805 3802 50  0000 C CNN
+F 2 "" H 7800 3975 50  0001 C CNN
+F 3 "" H 7800 3975 50  0001 C CNN
+	1    7800 3975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 3050 8775 3050
+Connection ~ 7800 2925
+Wire Wire Line
+	8050 2925 7800 2925
+Wire Wire Line
+	7550 2925 7800 2925
+Wire Wire Line
+	7800 2925 7800 3975
+$Comp
+L Device:C C8
+U 1 1 5F2E699B
+P 8050 2775
+F 0 "C8" H 8165 2821 50  0000 L CNN
+F 1 "0.1u" H 8165 2730 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8088 2625 50  0001 C CNN
+F 3 "~" H 8050 2775 50  0001 C CNN
+	1    8050 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5F2E41DD
+P 7550 2775
+F 0 "C7" H 7665 2821 50  0000 L CNN
+F 1 "100p" H 7665 2730 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7588 2625 50  0001 C CNN
+F 3 "~" H 7550 2775 50  0001 C CNN
+	1    7550 2775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2600 7550 2625
+Wire Wire Line
+	8050 2625 8050 2600
+Connection ~ 8050 2600
+Wire Wire Line
+	8050 2600 7800 2600
+Connection ~ 7800 2600
+Wire Wire Line
+	7800 2600 7550 2600
+Wire Wire Line
+	8050 2600 8775 2600
+$Comp
+L Device:LED D1
+U 1 1 5F2B75C3
+P 6375 6350
+F 0 "D1" V 6414 6233 50  0000 R CNN
+F 1 "LED_White" V 6323 6233 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6375 6350 50  0001 C CNN
+F 3 "~" H 6375 6350 50  0001 C CNN
+	1    6375 6350
+	0    -1   -1   0   
+$EndComp
+Text Notes 6600 6150 0    50   ~ 0
+Power indicator LED\n3.3V LED recommended\n
+Text Notes 5375 6700 0    50   ~ 0
+LDO MAX 250mA
+Text Notes 9200 5525 0    50   ~ 0
+Min 25V Rated Caps for C1, C2, C3\nAll else (on 3v3 power) 10V rating
+$Comp
+L Device:R_US R2
+U 1 1 5F5A01B7
+P 6375 5950
+F 0 "R2" H 6443 5996 50  0000 L CNN
+F 1 "50" H 6443 5905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6415 5940 50  0001 C CNN
+F 3 "~" H 6375 5950 50  0001 C CNN
+	1    6375 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR04
+U 1 1 5F5B5ED1
+P 6675 1450
+F 0 "#PWR04" H 6675 1300 50  0001 C CNN
+F 1 "+3V3" H 6690 1623 50  0000 C CNN
+F 2 "" H 6675 1450 50  0001 C CNN
+F 3 "" H 6675 1450 50  0001 C CNN
+	1    6675 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5F5BAA9B
+P 6675 1600
+F 0 "R3" H 6743 1646 50  0000 L CNN
+F 1 "10k" H 6743 1555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6715 1590 50  0001 C CNN
+F 3 "~" H 6675 1600 50  0001 C CNN
+	1    6675 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1825 2650 2000 2650
+Text Label 2000 2650 0    50   ~ 0
+NSS_H
+Wire Wire Line
+	6675 1750 6675 1825
+Wire Wire Line
+	6675 1825 6600 1825
+Text Label 6600 1825 2    50   ~ 0
+NSS
 $Comp
 L power:VCC #PWR0116
 U 1 1 5EC79EBD
@@ -700,18 +844,90 @@ F 3 "" H 2350 2350 50  0001 C CNN
 	1    2350 2350
 	-1   0    0    -1  
 $EndComp
-Text Label 2000 2550 0    50   ~ 0
-RST_H
-Text Label 4375 1725 2    50   ~ 0
-RST_H
-Wire Wire Line
-	2100 3250 2100 3150
-Wire Wire Line
-	2100 3150 1825 3150
-Wire Wire Line
-	1825 2650 2000 2650
-Wire Wire Line
-	1825 2550 2000 2550
 Wire Wire Line
 	2350 3050 2350 2350
+Wire Wire Line
+	1825 3050 2350 3050
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5F66BAC5
+P 7700 4900
+F 0 "TP1" V 7650 5075 50  0000 L CNN
+F 1 "Test_3V3" V 7750 5075 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7900 4900 50  0001 C CNN
+F 3 "~" H 7900 4900 50  0001 C CNN
+	1    7700 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5F66E8A2
+P 7700 5125
+F 0 "TP2" V 7654 5313 50  0000 L CNN
+F 1 "Test_GND" V 7745 5313 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7900 5125 50  0001 C CNN
+F 3 "~" H 7900 5125 50  0001 C CNN
+	1    7700 5125
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5F6AB0AD
+P 7575 5250
+F 0 "#PWR06" H 7575 5000 50  0001 C CNN
+F 1 "GND" H 7580 5077 50  0000 C CNN
+F 2 "" H 7575 5250 50  0001 C CNN
+F 3 "" H 7575 5250 50  0001 C CNN
+	1    7575 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR05
+U 1 1 5F6AC18A
+P 7575 4775
+F 0 "#PWR05" H 7575 4625 50  0001 C CNN
+F 1 "+3V3" H 7590 4948 50  0000 C CNN
+F 2 "" H 7575 4775 50  0001 C CNN
+F 3 "" H 7575 4775 50  0001 C CNN
+	1    7575 4775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 4900 7575 4900
+Wire Wire Line
+	7575 4900 7575 4775
+Wire Wire Line
+	7700 5125 7575 5125
+Wire Wire Line
+	7575 5125 7575 5250
+$Comp
+L Device:R_US R4
+U 1 1 5F73E01F
+P 3575 1600
+F 0 "R4" H 3643 1646 50  0000 L CNN
+F 1 "10k" H 3643 1555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3615 1590 50  0001 C CNN
+F 3 "~" H 3575 1600 50  0001 C CNN
+	1    3575 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3575 1750 3575 1825
+Text Label 3650 1825 0    50   ~ 0
+NSS_H
+$Comp
+L power:VCC #PWR07
+U 1 1 5F74653B
+P 3575 1275
+F 0 "#PWR07" H 3575 1125 50  0001 C CNN
+F 1 "VCC" H 3592 1448 50  0000 C CNN
+F 2 "" H 3575 1275 50  0001 C CNN
+F 3 "" H 3575 1275 50  0001 C CNN
+	1    3575 1275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3575 1825 3650 1825
+Wire Wire Line
+	3575 1275 3575 1450
 $EndSCHEMATC
