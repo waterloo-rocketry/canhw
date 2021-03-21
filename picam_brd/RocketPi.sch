@@ -1,0 +1,538 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "RocketPi Electrical Board"
+Date "2020-12-31"
+Rev "v0"
+Comp "Waterloo Rocketry"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 1950 950  0    50   ~ 10
+EXTERNAL CONNECTOR
+Text Notes 5650 1000 0    50   ~ 10
+MICROCONTROLLER & CAN
+Text Notes 9050 1050 0    50   ~ 10
+MISC PERIPHERALS
+Wire Notes Line
+	4500 1000 4500 7450
+Wire Notes Line
+	8250 1050 8250 6350
+$Comp
+L RocketPi-rescue:PIC18LF26K83-canhw U1
+U 1 1 5FEEA841
+P 6500 2600
+F 0 "U1" H 6475 3465 50  0000 C CNN
+F 1 "PIC18LF26K83" H 6475 3374 50  0000 C CNN
+F 2 "" H 6500 3500 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001943A.pdf" H 6500 3500 50  0001 C CNN
+	1    6500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L RocketPi-rescue:MCP2562-canhw U2
+U 1 1 5FF028A8
+P 2300 4750
+F 0 "U2" H 2275 5015 50  0000 C CNN
+F 1 "MCP2562" H 2275 4924 50  0000 C CNN
+F 2 "" H 2300 4750 50  0001 C CNN
+F 3 "http://hades.mech.northwestern.edu/images/5/5e/MCP2562.pdf" H 2300 4750 50  0001 C CNN
+	1    2300 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L RocketPi-rescue:Conn_02x20_Counter_Clockwise_MountingPin-Connector_Generic_MountingPin J2
+U 1 1 5FF08333
+P 9600 2650
+F 0 "J2" H 9650 3767 50  0000 C CNN
+F 1 "Conn_02x20_Counter_Clockwise_MountingPin" H 9650 3676 50  0000 C CNN
+F 2 "" H 9600 2650 50  0001 C CNN
+F 3 "~" H 9600 2650 50  0001 C CNN
+	1    9600 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L RocketPi-rescue:Connector_Conn_01x05_Female-gps_2-cache J1
+U 1 1 5FF1C2F0
+P 900 2150
+F 0 "J1" H 792 1725 50  0000 C CNN
+F 1 "CAN Communication" H 792 1816 50  0000 C CNN
+F 2 "" H 900 2150 50  0001 C CNN
+F 3 "" H 900 2150 50  0001 C CNN
+	1    900  2150
+	-1   0    0    1   
+$EndComp
+NoConn ~ 1100 1950
+Wire Wire Line
+	1100 2150 1450 2150
+Wire Wire Line
+	1100 2250 1450 2250
+Wire Wire Line
+	1100 2350 1300 2350
+Wire Wire Line
+	1300 2350 1300 2450
+Text Label 1450 2150 0    50   ~ 0
+CANH
+Text Label 1450 2250 0    50   ~ 0
+CANL
+$Comp
+L RocketPi-rescue:power_GND-ee_tut-cache #PWR?
+U 1 1 5FF25B8D
+P 1300 2450
+F 0 "#PWR?" H 1300 2200 50  0001 C CNN
+F 1 "power_GND" H 1305 2277 50  0000 C CNN
+F 2 "" H 1300 2450 50  0001 C CNN
+F 3 "" H 1300 2450 50  0001 C CNN
+	1    1300 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L RocketPi-rescue:Device_LED-gps_2-cache D1
+U 1 1 5FF28EB3
+P 5300 3200
+F 0 "D1" H 5293 2945 50  0000 C CNN
+F 1 "Device_LED" H 5293 3036 50  0000 C CNN
+F 2 "" H 5300 3200 50  0001 C CNN
+F 3 "" H 5300 3200 50  0001 C CNN
+	1    5300 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3200 4800 3200
+Wire Wire Line
+	4800 3200 4800 3150
+$Comp
+L RocketPi-rescue:power_GND-ee_tut-cache #PWR?
+U 1 1 5FF29EBC
+P 4800 3150
+F 0 "#PWR?" H 4800 2900 50  0001 C CNN
+F 1 "power_GND" H 4805 2977 50  0000 C CNN
+F 2 "" H 4800 3150 50  0001 C CNN
+F 3 "" H 4800 3150 50  0001 C CNN
+	1    4800 3150
+	-1   0    0    1   
+$EndComp
+Text Notes 1400 4350 0    50   ~ 0
+TEMP LBL / HIGHSPEED CAN TRANSCEIVER 
+$Comp
+L RocketPi-rescue:INA180-canhw U3
+U 1 1 5FF88AFF
+P 3400 3050
+F 0 "U3" H 3350 2577 50  0000 C CNN
+F 1 "INA180" H 3350 2486 50  0000 C CNN
+F 2 "" H 3400 3050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina180.pdf" H 3400 3050 50  0001 C CNN
+	1    3400 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L RocketPi-rescue:Device_Polyfuse-gps_2-cache F1
+U 1 1 5FFBA93D
+P 1950 2050
+F 0 "F1" V 1725 2050 50  0000 C CNN
+F 1 "Device_Polyfuse" V 1816 2050 50  0000 C CNN
+F 2 "" H 2000 1850 50  0001 L CNN
+F 3 "" H 1950 2050 50  0001 C CNN
+	1    1950 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1100 2050 1800 2050
+Wire Wire Line
+	3200 2050 3200 1950
+$Comp
+L gps_2-cache:power_+5V #PWR?
+U 1 1 600502F3
+P 3200 1950
+F 0 "#PWR?" H 3200 1800 50  0001 C CNN
+F 1 "power_+5V" H 3215 2123 50  0000 C CNN
+F 2 "" H 3200 1950 50  0001 C CNN
+F 3 "" H 3200 1950 50  0001 C CNN
+	1    3200 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2050 2850 2050
+Connection ~ 2850 2050
+Wire Wire Line
+	2850 2050 3200 2050
+Wire Wire Line
+	2850 2050 2850 2950
+Wire Wire Line
+	2850 2950 2900 2950
+Wire Wire Line
+	2100 2050 2400 2050
+Connection ~ 2400 2050
+Wire Wire Line
+	2400 2050 2450 2050
+Wire Wire Line
+	2400 2050 2400 3150
+Wire Wire Line
+	2400 3150 2900 3150
+Wire Wire Line
+	2900 3250 2650 3250
+Wire Wire Line
+	2650 3250 2650 3400
+$Comp
+L gps_2-cache:power_GND #PWR?
+U 1 1 600533CB
+P 2650 3400
+F 0 "#PWR?" H 2650 3150 50  0001 C CNN
+F 1 "power_GND" H 2655 3227 50  0000 C CNN
+F 2 "" H 2650 3400 50  0001 C CNN
+F 3 "" H 2650 3400 50  0001 C CNN
+	1    2650 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2600 3250 2400
+$Comp
+L gps_2-cache:power_+5V #PWR?
+U 1 1 60054171
+P 3250 2300
+F 0 "#PWR?" H 3250 2150 50  0001 C CNN
+F 1 "power_+5V" H 3265 2473 50  0000 C CNN
+F 2 "" H 3250 2300 50  0001 C CNN
+F 3 "" H 3250 2300 50  0001 C CNN
+	1    3250 2300
+	1    0    0    -1  
+$EndComp
+Connection ~ 3250 2400
+Wire Wire Line
+	3250 2400 3250 2300
+Wire Wire Line
+	3250 2400 3800 2400
+$Comp
+L gps_2-cache:Device_C C1
+U 1 1 600554BF
+P 3800 2550
+F 0 "C1" H 3915 2596 50  0000 L CNN
+F 1 "Device_C" H 3915 2505 50  0000 L CNN
+F 2 "" H 3838 2400 50  0001 C CNN
+F 3 "" H 3800 2550 50  0001 C CNN
+	1    3800 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L gps_2-cache:power_GND #PWR?
+U 1 1 60055E37
+P 3800 2700
+F 0 "#PWR?" H 3800 2450 50  0001 C CNN
+F 1 "power_GND" H 3805 2527 50  0000 C CNN
+F 2 "" H 3800 2700 50  0001 C CNN
+F 3 "" H 3800 2700 50  0001 C CNN
+	1    3800 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 4950 1350 4950
+Wire Wire Line
+	1800 5050 1350 5050
+Text Label 3800 3050 0    50   ~ 0
+CURRENT_SENSE
+Wire Wire Line
+	2700 4850 3050 4850
+Wire Wire Line
+	2700 4950 3050 4950
+Text Label 3050 4850 0    50   ~ 0
+CANH
+Text Label 3050 4950 0    50   ~ 0
+CANL
+Wire Wire Line
+	2750 4750 2950 4750
+Wire Wire Line
+	2950 4750 2950 5050
+Wire Wire Line
+	2750 5050 2950 5050
+Connection ~ 2950 5050
+Wire Wire Line
+	2950 5050 2950 5350
+$Comp
+L gps_2-cache:power_GND #PWR?
+U 1 1 60067322
+P 2950 5350
+F 0 "#PWR?" H 2950 5100 50  0001 C CNN
+F 1 "power_GND" H 2955 5177 50  0000 C CNN
+F 2 "" H 2950 5350 50  0001 C CNN
+F 3 "" H 2950 5350 50  0001 C CNN
+	1    2950 5350
+	1    0    0    -1  
+$EndComp
+Text Label 1350 4950 2    50   ~ 0
+CAN_TX
+Text Label 1350 5050 2    50   ~ 0
+CAN_RX
+Wire Wire Line
+	1400 4750 1800 4750
+Wire Wire Line
+	1400 4750 1400 4650
+Connection ~ 1400 4750
+Wire Wire Line
+	1400 4750 1400 5300
+$Comp
+L gps_2-cache:power_+5V #PWR?
+U 1 1 6006E58E
+P 1400 4650
+F 0 "#PWR?" H 1400 4500 50  0001 C CNN
+F 1 "power_+5V" H 1415 4823 50  0000 C CNN
+F 2 "" H 1400 4650 50  0001 C CNN
+F 3 "" H 1400 4650 50  0001 C CNN
+	1    1400 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 4850 1700 4850
+Wire Wire Line
+	1700 4850 1700 4650
+$Comp
+L gps_2-cache:+3.3V #PWR?
+U 1 1 60072E35
+P 1700 4650
+F 0 "#PWR?" H 1700 4500 50  0001 C CNN
+F 1 "+3.3V" H 1715 4823 50  0000 C CNN
+F 2 "" H 1700 4650 50  0001 C CNN
+F 3 "" H 1700 4650 50  0001 C CNN
+	1    1700 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L gps_2-cache:Device_C C2
+U 1 1 60073ECD
+P 1400 5450
+F 0 "C2" H 1515 5496 50  0000 L CNN
+F 1 "Device_C" H 1515 5405 50  0000 L CNN
+F 2 "" H 1438 5300 50  0001 C CNN
+F 3 "" H 1400 5450 50  0001 C CNN
+	1    1400 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L gps_2-cache:power_GND #PWR?
+U 1 1 60074E03
+P 1400 5600
+F 0 "#PWR?" H 1400 5350 50  0001 C CNN
+F 1 "power_GND" H 1405 5427 50  0000 C CNN
+F 2 "" H 1400 5600 50  0001 C CNN
+F 3 "" H 1400 5600 50  0001 C CNN
+	1    1400 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 5150 6800 5400
+$Comp
+L gps_2-cache:power_GND #PWR?
+U 1 1 601A1FB1
+P 6800 5400
+F 0 "#PWR?" H 6800 5150 50  0001 C CNN
+F 1 "power_GND" H 6805 5227 50  0000 C CNN
+F 2 "" H 6800 5400 50  0001 C CNN
+F 3 "" H 6800 5400 50  0001 C CNN
+	1    6800 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L ee_tut-cache:power_GND #PWR?
+U 1 1 60293210
+P 6300 5300
+F 0 "#PWR?" H 6300 5050 50  0001 C CNN
+F 1 "power_GND" H 6305 5127 50  0000 C CNN
+F 2 "" H 6300 5300 50  0001 C CNN
+F 3 "" H 6300 5300 50  0001 C CNN
+	1    6300 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 5000 6300 4850
+Wire Wire Line
+	6300 4850 6600 4850
+Wire Wire Line
+	6300 4850 6300 3700
+Wire Wire Line
+	6300 3700 5750 3700
+Wire Wire Line
+	5750 3700 5750 3300
+Text Label 7200 4850 0    50   ~ 0
+Pi_Power
+Wire Wire Line
+	7000 4850 7200 4850
+Wire Wire Line
+	9400 3150 8950 3150
+Text Label 8950 3150 0    50   ~ 0
+Pi_Power
+$Comp
+L gps_2-cache:Connector_Conn_01x05_Female J2
+U 1 1 60299623
+P 6350 6200
+F 0 "J2" H 6378 6226 50  0000 L CNN
+F 1 "Connector_Conn_01x05_Female" H 6378 6135 50  0000 L CNN
+F 2 "" H 6350 6200 50  0001 C CNN
+F 3 "" H 6350 6200 50  0001 C CNN
+	1    6350 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 6000 5700 6000
+Wire Wire Line
+	6150 6100 5700 6100
+Wire Wire Line
+	6150 6200 5900 6200
+Wire Wire Line
+	5900 6200 5900 5850
+Wire Wire Line
+	6150 6400 5700 6400
+$Comp
+L Device:R R1
+U 1 1 603051D6
+P 2600 2050
+F 0 "R1" V 2393 2050 50  0000 C CNN
+F 1 "300mR" V 2484 2050 50  0000 C CNN
+F 2 "" V 2530 2050 50  0001 C CNN
+F 3 "~" H 2600 2050 50  0001 C CNN
+	1    2600 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 60306826
+P 6300 5150
+F 0 "R4" H 6370 5196 50  0000 L CNN
+F 1 "3K" H 6370 5105 50  0000 L CNN
+F 2 "" V 6230 5150 50  0001 C CNN
+F 3 "~" H 6300 5150 50  0001 C CNN
+	1    6300 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 603081CF
+P 5600 3200
+F 0 "R3" V 5807 3200 50  0000 C CNN
+F 1 "330R" V 5716 3200 50  0000 C CNN
+F 2 "" V 5530 3200 50  0001 C CNN
+F 3 "~" H 5600 3200 50  0001 C CNN
+	1    5600 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Q_PMOS_DGS Q1
+U 1 1 60308AE1
+P 6800 4950
+F 0 "Q1" V 7142 4950 50  0000 C CNN
+F 1 "Q_PMOS_DGS" V 7051 4950 50  0000 C CNN
+F 2 "" H 7000 5050 50  0001 C CNN
+F 3 "~" H 6800 4950 50  0001 C CNN
+	1    6800 4950
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6300 4850
+$Comp
+L power:GND #PWR?
+U 1 1 6031A531
+P 5900 5850
+F 0 "#PWR?" H 5900 5600 50  0001 C CNN
+F 1 "GND" H 5905 5677 50  0000 C CNN
+F 2 "" H 5900 5850 50  0001 C CNN
+F 3 "" H 5900 5850 50  0001 C CNN
+	1    5900 5850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6150 6300 5900 6300
+Wire Wire Line
+	5900 6300 5900 6600
+$Comp
+L power:+5V #PWR?
+U 1 1 60320117
+P 5900 6600
+F 0 "#PWR?" H 5900 6450 50  0001 C CNN
+F 1 "+5V" H 5915 6773 50  0000 C CNN
+F 2 "" H 5900 6600 50  0001 C CNN
+F 3 "" H 5900 6600 50  0001 C CNN
+	1    5900 6600
+	-1   0    0    1   
+$EndComp
+Text Label 5700 6100 2    50   ~ 0
+ICSPDAT
+Text Label 5700 6000 2    50   ~ 0
+ICSPCLK
+Text Label 5700 6400 2    50   ~ 0
+~MCLR
+Wire Wire Line
+	5750 2000 5400 2000
+Text Label 5200 2000 2    50   ~ 0
+~MCLR
+Wire Wire Line
+	5400 2000 5400 1900
+Connection ~ 5400 2000
+Wire Wire Line
+	5400 2000 5200 2000
+$Comp
+L Device:R R2
+U 1 1 6032734C
+P 5400 1750
+F 0 "R2" H 5470 1796 50  0000 L CNN
+F 1 "3K" H 5470 1705 50  0000 L CNN
+F 2 "" V 5330 1750 50  0001 C CNN
+F 3 "~" H 5400 1750 50  0001 C CNN
+	1    5400 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 1600 5400 1500
+$Comp
+L power:+5V #PWR?
+U 1 1 60329569
+P 5400 1500
+F 0 "#PWR?" H 5400 1350 50  0001 C CNN
+F 1 "+5V" H 5415 1673 50  0000 C CNN
+F 2 "" H 5400 1500 50  0001 C CNN
+F 3 "" H 5400 1500 50  0001 C CNN
+	1    5400 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2200 5200 2200
+Text Label 5200 2200 2    50   ~ 0
+CURRENT_SENSE
+Wire Wire Line
+	7200 3300 7450 3300
+Wire Wire Line
+	7200 3200 7450 3200
+Wire Wire Line
+	7450 3200 7450 3300
+Connection ~ 7450 3300
+Wire Wire Line
+	7450 3300 7450 3400
+$Comp
+L power:GND #PWR?
+U 1 1 60332C4F
+P 7450 3400
+F 0 "#PWR?" H 7450 3150 50  0001 C CNN
+F 1 "GND" H 7455 3227 50  0000 C CNN
+F 2 "" H 7450 3400 50  0001 C CNN
+F 3 "" H 7450 3400 50  0001 C CNN
+	1    7450 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 2100 7650 2100
+Wire Wire Line
+	7200 2200 7650 2200
+Text Label 7650 2100 0    50   ~ 0
+ICSPDAT
+Text Label 7650 2200 0    50   ~ 0
+ICSPCLK
+Wire Wire Line
+	5750 2900 5500 2900
+Wire Wire Line
+	5750 2800 5500 2800
+Text Label 5500 2800 2    50   ~ 0
+CAN_RX
+Text Label 5500 2900 2    50   ~ 0
+CAN_TX
+$EndSCHEMATC
