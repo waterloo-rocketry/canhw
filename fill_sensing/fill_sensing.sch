@@ -1019,10 +1019,6 @@ Wire Wire Line
 Connection ~ 2300 7400
 Wire Wire Line
 	2300 7400 2300 7500
-Entry Wire Line
-	3300 4400 3400 4500
-Entry Wire Line
-	3300 4400 3400 4500
 Connection ~ 3200 2550
 Wire Wire Line
 	3200 2550 3250 2550
