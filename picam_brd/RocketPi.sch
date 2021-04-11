@@ -22,7 +22,7 @@ MISC PERIPHERALS
 Wire Notes Line
 	4500 1000 4500 7450
 Wire Notes Line
-	8250 1050 8250 6350
+	8400 1100 8400 6400
 $Comp
 L RocketPi-rescue:PIC18LF26K83-canhw U1
 U 1 1 5FEEA841
@@ -535,4 +535,78 @@ Text Label 5500 2800 2    50   ~ 0
 CAN_RX
 Text Label 5500 2900 2    50   ~ 0
 CAN_TX
+$Comp
+L RocketPi-rescue:Device_LED-gps_2-cache D2
+U 1 1 60737D5A
+P 7650 2900
+F 0 "D2" H 7643 2645 50  0000 C CNN
+F 1 "Device_LED" H 7643 2736 50  0000 C CNN
+F 2 "" H 7650 2900 50  0001 C CNN
+F 3 "" H 7650 2900 50  0001 C CNN
+	1    7650 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7800 2900 8150 2900
+Wire Wire Line
+	8150 2900 8150 2950
+$Comp
+L RocketPi-rescue:power_GND-ee_tut-cache #PWR?
+U 1 1 60737D62
+P 8150 2950
+F 0 "#PWR?" H 8150 2700 50  0001 C CNN
+F 1 "power_GND" H 8155 2777 50  0000 C CNN
+F 2 "" H 8150 2950 50  0001 C CNN
+F 3 "" H 8150 2950 50  0001 C CNN
+	1    8150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 60737D68
+P 7350 2900
+F 0 "R5" V 7557 2900 50  0000 C CNN
+F 1 "330R" V 7466 2900 50  0000 C CNN
+F 2 "" V 7280 2900 50  0001 C CNN
+F 3 "~" H 7350 2900 50  0001 C CNN
+	1    7350 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7800 2500 8150 2500
+Wire Wire Line
+	8150 2500 8150 2550
+$Comp
+L RocketPi-rescue:power_GND-ee_tut-cache #PWR?
+U 1 1 6073DE1D
+P 8150 2550
+F 0 "#PWR?" H 8150 2300 50  0001 C CNN
+F 1 "power_GND" H 8155 2377 50  0000 C CNN
+F 2 "" H 8150 2550 50  0001 C CNN
+F 3 "" H 8150 2550 50  0001 C CNN
+	1    8150 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 6073DE23
+P 7350 2500
+F 0 "R6" V 7557 2500 50  0000 C CNN
+F 1 "330R" V 7466 2500 50  0000 C CNN
+F 2 "" V 7280 2500 50  0001 C CNN
+F 3 "~" H 7350 2500 50  0001 C CNN
+	1    7350 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L RocketPi-rescue:Device_LED-gps_2-cache D3
+U 1 1 6073DE15
+P 7650 2500
+F 0 "D3" H 7643 2245 50  0000 C CNN
+F 1 "Device_LED" H 7643 2336 50  0000 C CNN
+F 2 "" H 7650 2500 50  0001 C CNN
+F 3 "" H 7650 2500 50  0001 C CNN
+	1    7650 2500
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
