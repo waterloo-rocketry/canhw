@@ -323,43 +323,9 @@ F 3 "" H 1400 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6800 5150 6800 5400
-$Comp
-L gps_2-cache:power_GND #PWR?
-U 1 1 601A1FB1
-P 6800 5400
-F 0 "#PWR?" H 6800 5150 50  0001 C CNN
-F 1 "power_GND" H 6805 5227 50  0000 C CNN
-F 2 "" H 6800 5400 50  0001 C CNN
-F 3 "" H 6800 5400 50  0001 C CNN
-	1    6800 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L ee_tut-cache:power_GND #PWR?
-U 1 1 60293210
-P 6300 5300
-F 0 "#PWR?" H 6300 5050 50  0001 C CNN
-F 1 "power_GND" H 6305 5127 50  0000 C CNN
-F 2 "" H 6300 5300 50  0001 C CNN
-F 3 "" H 6300 5300 50  0001 C CNN
-	1    6300 5300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6300 5000 6300 4850
-Wire Wire Line
-	6300 4850 6600 4850
-Wire Wire Line
-	6300 4850 6300 3700
-Wire Wire Line
 	6300 3700 5750 3700
 Wire Wire Line
 	5750 3700 5750 3300
-Text Label 7200 4850 0    50   ~ 0
-Pi_Power
-Wire Wire Line
-	7000 4850 7200 4850
 Wire Wire Line
 	9400 3150 8950 3150
 Text Label 8950 3150 0    50   ~ 0
@@ -397,17 +363,6 @@ F 3 "~" H 2600 2050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R4
-U 1 1 60306826
-P 6300 5150
-F 0 "R4" H 6370 5196 50  0000 L CNN
-F 1 "3K" H 6370 5105 50  0000 L CNN
-F 2 "" V 6230 5150 50  0001 C CNN
-F 3 "~" H 6300 5150 50  0001 C CNN
-	1    6300 5150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R3
 U 1 1 603081CF
 P 5600 3200
@@ -418,18 +373,6 @@ F 3 "~" H 5600 3200 50  0001 C CNN
 	1    5600 3200
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:Q_PMOS_DGS Q1
-U 1 1 60308AE1
-P 6800 4950
-F 0 "Q1" V 7142 4950 50  0000 C CNN
-F 1 "Q_PMOS_DGS" V 7051 4950 50  0000 C CNN
-F 2 "" H 7000 5050 50  0001 C CNN
-F 3 "~" H 6800 4950 50  0001 C CNN
-	1    6800 4950
-	0    -1   -1   0   
-$EndComp
-Connection ~ 6300 4850
 $Comp
 L power:GND #PWR?
 U 1 1 6031A531
@@ -609,4 +552,91 @@ F 3 "" H 7650 2500 50  0001 C CNN
 	1    7650 2500
 	-1   0    0    1   
 $EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 608E1AB2
+P 7500 1550
+F 0 "#PWR?" H 7500 1400 50  0001 C CNN
+F 1 "+5V" H 7515 1723 50  0000 C CNN
+F 2 "" H 7500 1550 50  0001 C CNN
+F 3 "" H 7500 1550 50  0001 C CNN
+	1    7500 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 2000 7500 2000
+Wire Wire Line
+	7500 1550 7500 1750
+$Comp
+L vent-cache:Device_C C3
+U 1 1 608ECE68
+P 7650 1750
+F 0 "C3" V 7398 1750 50  0000 C CNN
+F 1 "Device_C" V 7489 1750 50  0000 C CNN
+F 2 "" H 7688 1600 50  0001 C CNN
+F 3 "" H 7650 1750 50  0001 C CNN
+	1    7650 1750
+	0    1    1    0   
+$EndComp
+Connection ~ 7500 1750
+Wire Wire Line
+	7500 1750 7500 2000
+Wire Wire Line
+	7800 1750 8150 1750
+Wire Wire Line
+	8150 1750 8150 1800
+$Comp
+L RocketPi-rescue:power_GND-ee_tut-cache #PWR?
+U 1 1 608F0908
+P 8150 1800
+F 0 "#PWR?" H 8150 1550 50  0001 C CNN
+F 1 "power_GND" H 8155 1627 50  0000 C CNN
+F 2 "" H 8150 1800 50  0001 C CNN
+F 3 "" H 8150 1800 50  0001 C CNN
+	1    8150 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_DGS Q1
+U 1 1 60308AE1
+P 6200 4500
+F 0 "Q1" V 6542 4500 50  0000 C CNN
+F 1 "Q_PMOS_DGS" V 6451 4500 50  0000 C CNN
+F 2 "" H 6400 4600 50  0001 C CNN
+F 3 "~" H 6200 4500 50  0001 C CNN
+	1    6200 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4500 6000 4500
+$Comp
+L gps_2-cache:power_GND #PWR?
+U 1 1 601A1FB1
+P 6300 5000
+F 0 "#PWR?" H 6300 4750 50  0001 C CNN
+F 1 "power_GND" H 6305 4827 50  0000 C CNN
+F 2 "" H 6300 5000 50  0001 C CNN
+F 3 "" H 6300 5000 50  0001 C CNN
+	1    6300 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3700 6300 4300
+Wire Wire Line
+	5700 4500 5700 4850
+Wire Wire Line
+	6300 4700 6300 5000
+$Comp
+L Device:R R4
+U 1 1 60926C22
+P 5700 5000
+F 0 "R4" H 5770 5046 50  0000 L CNN
+F 1 "3K" H 5770 4955 50  0000 L CNN
+F 2 "" V 5630 5000 50  0001 C CNN
+F 3 "~" H 5700 5000 50  0001 C CNN
+	1    5700 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 5150 5700 5300
 $EndSCHEMATC
