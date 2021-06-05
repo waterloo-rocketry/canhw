@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -33,9 +33,9 @@ L Device:R R?
 U 1 1 60B6FF75
 P 3250 1900
 AR Path="/60B6FF75" Ref="R?"  Part="1" 
-AR Path="/60B67E79/60B6FF75" Ref="R7"  Part="1" 
-AR Path="/60B27BC3/60B6FF75" Ref="R9"  Part="1" 
-F 0 "R9" H 3320 1946 50  0000 L CNN
+AR Path="/60B67E79/60B6FF75" Ref="R6"  Part="1" 
+AR Path="/60B27BC3/60B6FF75" Ref="R8"  Part="1" 
+F 0 "R8" H 3320 1946 50  0000 L CNN
 F 1 "10K" H 3320 1855 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3180 1900 50  0001 C CNN
 F 3 "~" H 3250 1900 50  0001 C CNN
@@ -47,9 +47,9 @@ L Device:R R?
 U 1 1 60B6FF7B
 P 4100 1900
 AR Path="/60B6FF7B" Ref="R?"  Part="1" 
-AR Path="/60B67E79/60B6FF7B" Ref="R8"  Part="1" 
-AR Path="/60B27BC3/60B6FF7B" Ref="R10"  Part="1" 
-F 0 "R10" H 4170 1946 50  0000 L CNN
+AR Path="/60B67E79/60B6FF7B" Ref="R7"  Part="1" 
+AR Path="/60B27BC3/60B6FF7B" Ref="R9"  Part="1" 
+F 0 "R9" H 4170 1946 50  0000 L CNN
 F 1 "10K" H 4170 1855 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4030 1900 50  0001 C CNN
 F 3 "~" H 4100 1900 50  0001 C CNN
