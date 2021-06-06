@@ -416,7 +416,7 @@ F 3 "" H 1300 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_PMOS_DGS Q2
+L Device:Q_PMOS_GDS Q2
 U 1 1 60A43FDA
 P 6900 4250
 F 0 "Q2" V 7243 4250 50  0000 C CNN
@@ -519,7 +519,6 @@ F 3 "" H 8950 3900 50  0001 C CNN
 	1    8950 3900
 	1    0    0    -1  
 $EndComp
-NoConn ~ 9650 3850
 NoConn ~ 9400 3550
 NoConn ~ 9400 3450
 NoConn ~ 9400 3350
