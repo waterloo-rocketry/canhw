@@ -492,7 +492,7 @@ Wire Wire Line
 Text Label 5700 3550 0    50   ~ 0
 pi_switching
 Wire Wire Line
-	5900 4950 6600 4950
+	5900 4950 6400 4950
 Wire Wire Line
 	9400 1750 8700 1750
 $Comp
@@ -1050,4 +1050,33 @@ Wire Wire Line
 	10300 3650 10400 3650
 Wire Wire Line
 	9900 3650 10000 3650
+$Comp
+L Device:R R12
+U 1 1 60C17605
+P 6400 5200
+F 0 "R12" H 6470 5246 50  0000 L CNN
+F 1 "50K" H 6470 5155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6330 5200 50  0001 C CNN
+F 3 "~" H 6400 5200 50  0001 C CNN
+	1    6400 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR029
+U 1 1 60C1821E
+P 6400 5450
+F 0 "#PWR029" H 6400 5200 50  0001 C CNN
+F 1 "GND" H 6405 5277 50  0000 C CNN
+F 2 "" H 6400 5450 50  0001 C CNN
+F 3 "" H 6400 5450 50  0001 C CNN
+	1    6400 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 5050 6400 4950
+Connection ~ 6400 4950
+Wire Wire Line
+	6400 4950 6600 4950
+Wire Wire Line
+	6400 5450 6400 5350
 $EndSCHEMATC
