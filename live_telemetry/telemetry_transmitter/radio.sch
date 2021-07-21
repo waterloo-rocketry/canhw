@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+LIBS:telemetry_transmitter-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -143,23 +144,6 @@ F 3 "" H 6750 4400 50  0001 C CNN
 	1    6750 4400
 	1    0    0    -1  
 $EndComp
-$Comp
-L canhw:RFM95W U4
-U 1 1 5E1CC61E
-P 5550 4450
-F 0 "U4" H 6050 5965 50  0000 C CNN
-F 1 "RFM95W" H 6050 5874 50  0000 C CNN
-F 2 "canhw_footprints:XCVR_RFM95W-915S2" H 5600 5850 50  0001 C CNN
-F 3 "" H 5600 5850 50  0001 C CNN
-	1    5550 4450
-	1    0    0    -1  
-$EndComp
-NoConn ~ 5450 3850
-NoConn ~ 5450 3950
-NoConn ~ 5450 4050
-NoConn ~ 5450 4150
-NoConn ~ 5450 4250
-NoConn ~ 5450 4350
 Wire Wire Line
 	6650 3300 6700 3300
 Wire Wire Line

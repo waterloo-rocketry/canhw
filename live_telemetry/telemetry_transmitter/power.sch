@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+LIBS:telemetry_transmitter-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -97,17 +98,6 @@ Wire Wire Line
 	5150 1500 5150 1400
 Wire Wire Line
 	5000 1050 5000 1100
-$Comp
-L Regulator_Linear:AP2112K-3.3 U3
-U 1 1 5B9DEFF0
-P 9150 2600
-F 0 "U3" H 9150 2942 50  0000 C CNN
-F 1 "AP2114H-3.3" H 9150 2851 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 9150 2925 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/AP2112.pdf" H 9150 2700 50  0001 C CNN
-	1    9150 2600
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:D_Zener D4
 U 1 1 5B9DF2F4
