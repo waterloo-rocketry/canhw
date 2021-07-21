@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:telemetry_receiver-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -110,17 +109,6 @@ Wire Wire Line
 	4600 2150 4900 2150
 Wire Wire Line
 	4600 2250 4900 2250
-$Comp
-L canhw:PIC16F1455 U1
-U 1 1 5DD2778A
-P 4450 4800
-F 0 "U1" H 4675 5115 50  0000 C CNN
-F 1 "PIC16LF1455" H 4675 5024 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4450 4800 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001639B.pdf" H 4450 4800 50  0001 C CNN
-	1    4450 4800
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R_US R3
 U 1 1 5DD2AD0A
@@ -413,8 +401,6 @@ Wire Wire Line
 	5450 4850 6150 4850
 Text Label 6300 4550 0    50   ~ 0
 SCK
-Text Label 8050 2100 2    50   ~ 0
-SCK
 Wire Wire Line
 	6150 4550 6150 4850
 Connection ~ 6150 4850
@@ -431,164 +417,6 @@ Wire Wire Line
 	6150 4550 6300 4550
 Wire Wire Line
 	6000 4400 6300 4400
-$Comp
-L canhw:RFM95W U?
-U 1 1 5E26E098
-P 8500 3150
-AR Path="/5E22EC09/5E26E098" Ref="U?"  Part="1" 
-AR Path="/5E26E098" Ref="U2"  Part="1" 
-F 0 "U2" H 9000 4665 50  0000 C CNN
-F 1 "RFM95W" H 9000 4574 50  0000 C CNN
-F 2 "canhw_footprints:XCVR_RFM95W-915S2" H 8550 4550 50  0001 C CNN
-F 3 "https://www.rfsolutions.co.uk/downloads/1463993415RFM95_96_97_98W.pdf" H 8550 4550 50  0001 C CNN
-	1    8500 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E26E09E
-P 9700 3100
-AR Path="/5E22EC09/5E26E09E" Ref="#PWR?"  Part="1" 
-AR Path="/5E26E09E" Ref="#PWR010"  Part="1" 
-F 0 "#PWR010" H 9700 2850 50  0001 C CNN
-F 1 "GND" H 9705 2927 50  0000 C CNN
-F 2 "" H 9700 3100 50  0001 C CNN
-F 3 "" H 9700 3100 50  0001 C CNN
-	1    9700 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9700 3100 9700 3050
-Wire Wire Line
-	9700 3050 9600 3050
-Wire Wire Line
-	9700 3050 9700 2950
-Wire Wire Line
-	9700 2950 9600 2950
-Connection ~ 9700 3050
-Wire Wire Line
-	9700 2950 9700 2850
-Wire Wire Line
-	9700 2850 9600 2850
-Connection ~ 9700 2950
-$Comp
-L Connector:Conn_Coaxial J?
-U 1 1 5E26E0AC
-P 9900 2350
-AR Path="/5E22EC09/5E26E0AC" Ref="J?"  Part="1" 
-AR Path="/5E26E0AC" Ref="J1"  Part="1" 
-F 0 "J1" V 9782 2450 50  0000 L CNN
-F 1 "Conn_Coaxial" V 9873 2450 50  0000 L CNN
-F 2 "canhw_footprints:RF_connector_SMA_3-1478978-1" H 9900 2350 50  0001 C CNN
-F 3 " ~" H 9900 2350 50  0001 C CNN
-	1    9900 2350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9600 2150 9900 2150
-Wire Wire Line
-	9700 2350 9700 2850
-Connection ~ 9700 2850
-$Comp
-L Device:Antenna AE?
-U 1 1 5E26E0B5
-P 9900 1650
-AR Path="/5E22EC09/5E26E0B5" Ref="AE?"  Part="1" 
-AR Path="/5E26E0B5" Ref="AE1"  Part="1" 
-F 0 "AE1" H 9980 1639 50  0000 L CNN
-F 1 "Antenna" H 9980 1548 50  0000 L CNN
-F 2 "" H 9900 1650 50  0001 C CNN
-F 3 "~" H 9900 1650 50  0001 C CNN
-	1    9900 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5E26E0BB
-P 7150 1800
-AR Path="/5E22EC09/5E26E0BB" Ref="#PWR?"  Part="1" 
-AR Path="/5E26E0BB" Ref="#PWR04"  Part="1" 
-F 0 "#PWR04" H 7150 1650 50  0001 C CNN
-F 1 "+3V3" H 7165 1973 50  0000 C CNN
-F 2 "" H 7150 1800 50  0001 C CNN
-F 3 "" H 7150 1800 50  0001 C CNN
-	1    7150 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5E26E0C1
-P 7400 2100
-AR Path="/5E22EC09/5E26E0C1" Ref="C?"  Part="1" 
-AR Path="/5E26E0C1" Ref="C3"  Part="1" 
-F 0 "C3" H 7515 2146 50  0000 L CNN
-F 1 "0.1u" H 7515 2055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7438 1950 50  0001 C CNN
-F 3 "~" H 7400 2100 50  0001 C CNN
-	1    7400 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5E26E0C7
-P 6900 2100
-AR Path="/5E22EC09/5E26E0C7" Ref="C?"  Part="1" 
-AR Path="/5E26E0C7" Ref="C1"  Part="1" 
-F 0 "C1" H 7015 2146 50  0000 L CNN
-F 1 "100p" H 7015 2055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6938 1950 50  0001 C CNN
-F 3 "~" H 6900 2100 50  0001 C CNN
-	1    6900 2100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6900 1950 6900 1900
-Wire Wire Line
-	7400 1900 7400 1950
-Wire Wire Line
-	6900 2250 6900 2350
-Wire Wire Line
-	6900 2350 7150 2350
-Wire Wire Line
-	7400 2350 7400 2250
-$Comp
-L power:GND #PWR?
-U 1 1 5E26E0D3
-P 7150 2400
-AR Path="/5E22EC09/5E26E0D3" Ref="#PWR?"  Part="1" 
-AR Path="/5E26E0D3" Ref="#PWR05"  Part="1" 
-F 0 "#PWR05" H 7150 2150 50  0001 C CNN
-F 1 "GND" H 7155 2227 50  0000 C CNN
-F 2 "" H 7150 2400 50  0001 C CNN
-F 3 "" H 7150 2400 50  0001 C CNN
-	1    7150 2400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 2400 7150 2350
-Connection ~ 7150 2350
-Wire Wire Line
-	7150 2350 7400 2350
-Wire Wire Line
-	9600 2000 9650 2000
-Wire Wire Line
-	8050 2000 8400 2000
-Wire Wire Line
-	8400 2100 8050 2100
-Wire Wire Line
-	8050 2200 8400 2200
-NoConn ~ 8400 2550
-NoConn ~ 8400 2650
-NoConn ~ 8400 2750
-NoConn ~ 8400 2850
-NoConn ~ 8400 2950
-NoConn ~ 8400 3050
-Text Label 8050 2000 2    50   ~ 0
-MISO
-Text Label 9650 2000 0    50   ~ 0
-MOSI
-Text Label 8050 2200 2    50   ~ 0
-~SS
 Text Label 3600 5350 2    50   ~ 0
 MOSI
 Text Label 3600 5250 2    50   ~ 0
@@ -599,20 +427,6 @@ Wire Wire Line
 	3600 5350 3900 5350
 Text Label 6300 4400 0    50   ~ 0
 MISO
-Wire Wire Line
-	6900 1900 7150 1900
-Wire Wire Line
-	7150 1800 7150 1900
-Connection ~ 7150 1900
-Wire Wire Line
-	7150 1900 7400 1900
-Text Notes 4700 3950 0    50   ~ 0
-NOTE: The MOSI and SCK SPI lines are sharing pins 9 and 10 with ICSPCLK and ICSPDAT. \nThis will prevent the board from using the PIC in-circuit debugging and sending data over\nserial at the same time. However, this solution is currently being used by USB board, and is\nwhat is recommended to be done in order to communicate with SPI with this specific PIC chip.
-Wire Wire Line
-	9900 2150 9900 1850
-Connection ~ 9900 2150
-Text Label 8050 2350 2    50   ~ 0
-RESET
 $Comp
 L Device:LED D1
 U 1 1 5E2283BB
@@ -664,17 +478,6 @@ F 3 "" H 3800 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 3800 4500
-$Comp
-L Regulator_Linear:AP2112K-3.3 U3
-U 1 1 5E23229E
-P 9100 4800
-F 0 "U3" H 9100 5142 50  0000 C CNN
-F 1 "AP2114H-3.3" H 9100 5051 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 9100 5125 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/AP2112.pdf" H 9100 4900 50  0001 C CNN
-	1    9100 4800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9100 5100 9100 5200
 Text Label 6300 5250 0    50   ~ 0
@@ -695,9 +498,6 @@ Wire Wire Line
 Wire Wire Line
 	5650 5600 5800 5600
 Connection ~ 5800 5600
-Wire Wire Line
-	7400 1900 8400 1900
-Connection ~ 7400 1900
 $Comp
 L Device:R_US R5
 U 1 1 5E270EFB
@@ -727,6 +527,164 @@ Wire Wire Line
 Wire Wire Line
 	3150 5150 3900 5150
 Connection ~ 3150 5150
+Text Notes 4700 3950 0    50   ~ 0
+NOTE: The MOSI and SCK SPI lines are sharing pins 9 and 10 with ICSPCLK and ICSPDAT. \nThis will prevent the board from using the PIC in-circuit debugging and sending data over\nserial at the same time. However, this solution is currently being used by USB board, and is\nwhat is recommended to be done in order to communicate with SPI with this specific PIC chip.
 Wire Wire Line
 	8050 2350 8400 2350
+Text Label 8050 2350 2    50   ~ 0
+RESET
+Wire Wire Line
+	9900 2150 9900 1850
+Wire Wire Line
+	7150 1800 7150 1900
+Connection ~ 7150 1900
+Wire Wire Line
+	6900 1900 7150 1900
+Text Label 8050 2200 2    50   ~ 0
+~SS
+Text Label 9650 2000 0    50   ~ 0
+MOSI
+Text Label 8050 2000 2    50   ~ 0
+MISO
+Wire Wire Line
+	8050 2200 8400 2200
+Wire Wire Line
+	8400 2100 8050 2100
+Wire Wire Line
+	8050 2000 8400 2000
+Wire Wire Line
+	9600 2000 9650 2000
+Wire Wire Line
+	7150 2350 7400 2350
+Wire Wire Line
+	7150 2400 7150 2350
+$Comp
+L power:GND #PWR?
+U 1 1 5E26E0D3
+P 7150 2400
+AR Path="/5E22EC09/5E26E0D3" Ref="#PWR?"  Part="1" 
+AR Path="/5E26E0D3" Ref="#PWR05"  Part="1" 
+F 0 "#PWR05" H 7150 2150 50  0001 C CNN
+F 1 "GND" H 7155 2227 50  0000 C CNN
+F 2 "" H 7150 2400 50  0001 C CNN
+F 3 "" H 7150 2400 50  0001 C CNN
+	1    7150 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 2350 7400 2250
+Connection ~ 7150 2350
+Wire Wire Line
+	6900 2350 7150 2350
+Wire Wire Line
+	6900 2250 6900 2350
+Wire Wire Line
+	7400 1900 8400 1900
+Wire Wire Line
+	7150 1900 7400 1900
+Connection ~ 7400 1900
+Wire Wire Line
+	7400 1900 7400 1950
+Wire Wire Line
+	6900 1950 6900 1900
+$Comp
+L Device:C C?
+U 1 1 5E26E0C7
+P 6900 2100
+AR Path="/5E22EC09/5E26E0C7" Ref="C?"  Part="1" 
+AR Path="/5E26E0C7" Ref="C1"  Part="1" 
+F 0 "C1" H 7015 2146 50  0000 L CNN
+F 1 "100p" H 7015 2055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6938 1950 50  0001 C CNN
+F 3 "~" H 6900 2100 50  0001 C CNN
+	1    6900 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E26E0C1
+P 7400 2100
+AR Path="/5E22EC09/5E26E0C1" Ref="C?"  Part="1" 
+AR Path="/5E26E0C1" Ref="C3"  Part="1" 
+F 0 "C3" H 7515 2146 50  0000 L CNN
+F 1 "0.1u" H 7515 2055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7438 1950 50  0001 C CNN
+F 3 "~" H 7400 2100 50  0001 C CNN
+	1    7400 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E26E0BB
+P 7150 1800
+AR Path="/5E22EC09/5E26E0BB" Ref="#PWR?"  Part="1" 
+AR Path="/5E26E0BB" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 7150 1650 50  0001 C CNN
+F 1 "+3V3" H 7165 1973 50  0000 C CNN
+F 2 "" H 7150 1800 50  0001 C CNN
+F 3 "" H 7150 1800 50  0001 C CNN
+	1    7150 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Antenna AE?
+U 1 1 5E26E0B5
+P 9900 1650
+AR Path="/5E22EC09/5E26E0B5" Ref="AE?"  Part="1" 
+AR Path="/5E26E0B5" Ref="AE1"  Part="1" 
+F 0 "AE1" H 9980 1639 50  0000 L CNN
+F 1 "Antenna" H 9980 1548 50  0000 L CNN
+F 2 "" H 9900 1650 50  0001 C CNN
+F 3 "~" H 9900 1650 50  0001 C CNN
+	1    9900 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 2150 9900 2150
+Connection ~ 9900 2150
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5E26E0AC
+P 9900 2350
+AR Path="/5E22EC09/5E26E0AC" Ref="J?"  Part="1" 
+AR Path="/5E26E0AC" Ref="J1"  Part="1" 
+F 0 "J1" V 9782 2450 50  0000 L CNN
+F 1 "Conn_Coaxial" V 9873 2450 50  0000 L CNN
+F 2 "canhw_footprints:RF_connector_SMA_3-1478978-1" H 9900 2350 50  0001 C CNN
+F 3 " ~" H 9900 2350 50  0001 C CNN
+	1    9900 2350
+	0    1    1    0   
+$EndComp
+Text Label 8050 2100 2    50   ~ 0
+SCK
+$Comp
+L power:GND #PWR?
+U 1 1 5E26E09E
+P 9700 3100
+AR Path="/5E22EC09/5E26E09E" Ref="#PWR?"  Part="1" 
+AR Path="/5E26E09E" Ref="#PWR010"  Part="1" 
+F 0 "#PWR010" H 9700 2850 50  0001 C CNN
+F 1 "GND" H 9705 2927 50  0000 C CNN
+F 2 "" H 9700 3100 50  0001 C CNN
+F 3 "" H 9700 3100 50  0001 C CNN
+	1    9700 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 3100 9700 3050
+Connection ~ 9700 3050
+Wire Wire Line
+	9700 3050 9600 3050
+Wire Wire Line
+	9700 3050 9700 2950
+Connection ~ 9700 2950
+Wire Wire Line
+	9700 2950 9600 2950
+Wire Wire Line
+	9700 2950 9700 2850
+Wire Wire Line
+	9700 2350 9700 2850
+Connection ~ 9700 2850
+Wire Wire Line
+	9700 2850 9600 2850
 $EndSCHEMATC
