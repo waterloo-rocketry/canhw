@@ -5,9 +5,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
-Title ""
-Date ""
-Rev ""
+Title "Live Telemetry Transmitter"
+Date "2021-09-27"
+Rev "2.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -15,146 +15,123 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	6650 4150 6750 4150
+	7050 3600 7150 3600
 Wire Wire Line
-	6750 4150 6750 4250
+	7150 3600 7150 3700
 Wire Wire Line
-	6650 4250 6750 4250
-Connection ~ 6750 4250
+	7050 3700 7150 3700
+Connection ~ 7150 3700
 Wire Wire Line
-	6750 4250 6750 4350
+	7150 3700 7150 3800
 Wire Wire Line
-	6650 4350 6750 4350
-$Comp
-L Device:C C14
-U 1 1 5E1EB228
-P 4000 3400
-F 0 "C14" H 4115 3446 50  0000 L CNN
-F 1 "0.1u" H 4115 3355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4038 3250 50  0001 C CNN
-F 3 "~" H 4000 3400 50  0001 C CNN
-	1    4000 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C13
-U 1 1 5E1EB88B
-P 3500 3400
-F 0 "C13" H 3615 3446 50  0000 L CNN
-F 1 "100p" H 3615 3355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3538 3250 50  0001 C CNN
-F 3 "~" H 3500 3400 50  0001 C CNN
-	1    3500 3400
-	1    0    0    -1  
-$EndComp
+	7050 3800 7150 3800
 Wire Wire Line
-	4000 3200 4000 3250
+	5900 2800 5900 2750
+Connection ~ 7150 3800
 Wire Wire Line
-	3500 3200 3500 3250
-Wire Wire Line
-	4000 3550 4000 3650
-Wire Wire Line
-	3500 3650 3500 3550
-$Comp
-L power:GND #PWR049
-U 1 1 5E1EEF5A
-P 3750 3700
-F 0 "#PWR049" H 3750 3450 50  0001 C CNN
-F 1 "GND" H 3755 3527 50  0000 C CNN
-F 2 "" H 3750 3700 50  0001 C CNN
-F 3 "" H 3750 3700 50  0001 C CNN
-	1    3750 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3500 3200 3750 3200
-Connection ~ 4000 3200
-Wire Wire Line
-	3500 3650 3750 3650
-Wire Wire Line
-	3750 3700 3750 3650
-Connection ~ 3750 3650
-Wire Wire Line
-	3750 3650 4000 3650
-$Comp
-L power:+3V3 #PWR048
-U 1 1 5E1FB08F
-P 3750 3150
-F 0 "#PWR048" H 3750 3000 50  0001 C CNN
-F 1 "+3V3" H 3765 3323 50  0000 C CNN
-F 2 "" H 3750 3150 50  0001 C CNN
-F 3 "" H 3750 3150 50  0001 C CNN
-	1    3750 3150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3750 3200 3750 3150
-Connection ~ 3750 3200
-Wire Wire Line
-	3750 3200 4000 3200
-Text HLabel 5150 3500 0    50   Input ~ 0
-~SS
-Text HLabel 5150 3400 0    50   Input ~ 0
-SCK
-Text HLabel 5150 3300 0    50   Input ~ 0
-SDI
-Text HLabel 6700 3300 2    50   Input ~ 0
-SDO
-Wire Wire Line
-	5150 3300 5450 3300
-Wire Wire Line
-	5150 3400 5450 3400
-Wire Wire Line
-	5150 3500 5450 3500
-Wire Wire Line
-	4000 3200 5450 3200
-$Comp
-L Device:Antenna AE1
-U 1 1 5E21EAFA
-P 6950 2950
-F 0 "AE1" H 7030 2939 50  0000 L CNN
-F 1 "Antenna" H 7030 2848 50  0000 L CNN
-F 2 "" H 6950 2950 50  0001 C CNN
-F 3 "~" H 6950 2950 50  0001 C CNN
-	1    6950 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_Coaxial J4
-U 1 1 5E22B721
-P 6950 3650
-F 0 "J4" V 6832 3750 50  0000 L CNN
-F 1 "Conn_Coaxial" V 6923 3750 50  0000 L CNN
-F 2 "canhw_footprints:RF_connector_SMA_3-1478978-1" H 6950 3650 50  0001 C CNN
-F 3 " ~" H 6950 3650 50  0001 C CNN
-	1    6950 3650
-	0    1    1    0   
-$EndComp
-Connection ~ 6750 4350
-Wire Wire Line
-	6750 4350 6750 4400
+	7150 3800 7150 3850
 $Comp
 L power:GND #PWR050
 U 1 1 5E1CEE95
-P 6750 4400
-F 0 "#PWR050" H 6750 4150 50  0001 C CNN
-F 1 "GND" H 6755 4227 50  0000 C CNN
-F 2 "" H 6750 4400 50  0001 C CNN
-F 3 "" H 6750 4400 50  0001 C CNN
-	1    6750 4400
+P 7150 3850
+AR Path="/5E233576/5E1CEE95" Ref="#PWR050"  Part="1" 
+AR Path="/61530260/5E1CEE95" Ref="#PWR?"  Part="1" 
+F 0 "#PWR050" H 7150 3600 50  0001 C CNN
+F 1 "GND" H 7155 3677 50  0000 C CNN
+F 2 "" H 7150 3850 50  0001 C CNN
+F 3 "" H 7150 3850 50  0001 C CNN
+	1    7150 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L canhw:RFD900x U?
+U 1 1 6151ADB0
+P 6500 3950
+AR Path="/5E233576/6151ADB0" Ref="U?"  Part="1" 
+AR Path="/61530260/6151ADB0" Ref="U?"  Part="1" 
+F 0 "U?" H 6500 5365 50  0000 C CNN
+F 1 "RFD900x" H 6500 5274 50  0000 C CNN
+F 2 "" H 5450 4900 50  0001 C CNN
+F 3 "http://files.rfdesign.com.au/Files/documents/RFD900x%20DataSheet%20V1.1.pdf" H 5450 4900 50  0001 C CNN
+	1    6500 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 615258A5
+P 5900 2750
+AR Path="/5E233576/615258A5" Ref="#PWR?"  Part="1" 
+AR Path="/61530260/615258A5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5900 2600 50  0001 C CNN
+F 1 "+5V" H 5915 2923 50  0000 C CNN
+F 2 "" H 5900 2750 50  0001 C CNN
+F 3 "" H 5900 2750 50  0001 C CNN
+	1    5900 2750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5950 2900
+NoConn ~ 5950 3000
+NoConn ~ 7050 2800
+NoConn ~ 7050 2900
+NoConn ~ 7050 3000
+NoConn ~ 7050 3100
+NoConn ~ 7050 3300
+NoConn ~ 7050 3400
+Text HLabel 5800 3250 0    50   Output ~ 0
+RX
+Text HLabel 5800 3350 0    50   Input ~ 0
+TX
+Text HLabel 5800 3550 0    50   BiDi ~ 0
+RTS
+Text HLabel 5800 3450 0    50   BiDi ~ 0
+CTS
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 6153619E
+P 5350 4100
+F 0 "J?" H 5458 4281 50  0000 C CNN
+F 1 "Bootload Short" H 5458 4190 50  0000 C CNN
+F 2 "" H 5350 4100 50  0001 C CNN
+F 3 "~" H 5350 4100 50  0001 C CNN
+	1    5350 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 615383F3
+P 5850 4300
+F 0 "#PWR?" H 5850 4050 50  0001 C CNN
+F 1 "GND" H 5855 4127 50  0000 C CNN
+F 2 "" H 5850 4300 50  0001 C CNN
+F 3 "" H 5850 4300 50  0001 C CNN
+	1    5850 4300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6650 3300 6700 3300
+	5850 4200 5850 4300
 Wire Wire Line
-	6750 3650 6750 4150
-Connection ~ 6750 4150
+	5550 4100 5850 4100
 Wire Wire Line
-	6650 3450 6950 3450
+	5850 4200 5550 4200
 Wire Wire Line
-	6950 3450 6950 3150
-Text HLabel 5150 3650 0    50   Input ~ 0
-RESET
+	5850 3350 5850 4100
 Wire Wire Line
-	5150 3650 5450 3650
+	5800 3550 5950 3550
+Wire Wire Line
+	5950 3450 5800 3450
+Wire Wire Line
+	5800 3350 5850 3350
+Connection ~ 5850 3350
+Wire Wire Line
+	5850 3350 5950 3350
+Wire Wire Line
+	5950 3250 5800 3250
+Text Notes 4650 4800 0    50   ~ 0
+1x2 Male Connector here to short pin 9 to GND, \ncausing radio to go into bootload mode to load\nfirmware.
+Text Notes 6050 4050 0    50   ~ 10
+900 MHz RADIO MODEM
+Wire Wire Line
+	5900 2800 5950 2800
+Text Notes 5250 2450 0    50   ~ 0
+No mention of decoupling/bypass\ncaps in the RFD900x datasheet.
 $EndSCHEMATC
