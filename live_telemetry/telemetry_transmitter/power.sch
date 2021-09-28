@@ -5,9 +5,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
-Title ""
-Date ""
-Rev ""
+Title "Live Telemetry Transmitter"
+Date "2021-09-27"
+Rev "2.0"
 Comp ""
 Comment1 ""
 Comment2 ""
