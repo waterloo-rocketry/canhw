@@ -44,12 +44,12 @@ F 3 "" H 7150 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L canhw:RFD900x U?
+L canhw:RFD900x U4
 U 1 1 6151ADB0
 P 6500 3950
-AR Path="/5E233576/6151ADB0" Ref="U?"  Part="1" 
+AR Path="/5E233576/6151ADB0" Ref="U4"  Part="1" 
 AR Path="/61530260/6151ADB0" Ref="U?"  Part="1" 
-F 0 "U?" H 6500 5365 50  0000 C CNN
+F 0 "U4" H 6500 5365 50  0000 C CNN
 F 1 "RFD900x" H 6500 5274 50  0000 C CNN
 F 2 "" H 5450 4900 50  0001 C CNN
 F 3 "http://files.rfdesign.com.au/Files/documents/RFD900x%20DataSheet%20V1.1.pdf" H 5450 4900 50  0001 C CNN
@@ -57,12 +57,12 @@ F 3 "http://files.rfdesign.com.au/Files/documents/RFD900x%20DataSheet%20V1.1.pdf
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR049
 U 1 1 615258A5
 P 5900 2750
-AR Path="/5E233576/615258A5" Ref="#PWR?"  Part="1" 
+AR Path="/5E233576/615258A5" Ref="#PWR049"  Part="1" 
 AR Path="/61530260/615258A5" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5900 2600 50  0001 C CNN
+F 0 "#PWR049" H 5900 2600 50  0001 C CNN
 F 1 "+5V" H 5915 2923 50  0000 C CNN
 F 2 "" H 5900 2750 50  0001 C CNN
 F 3 "" H 5900 2750 50  0001 C CNN
@@ -86,10 +86,10 @@ RTS
 Text HLabel 5800 3450 0    50   BiDi ~ 0
 CTS
 $Comp
-L Connector:Conn_01x02_Male J?
+L Connector:Conn_01x02_Male J4
 U 1 1 6153619E
 P 5350 4100
-F 0 "J?" H 5458 4281 50  0000 C CNN
+F 0 "J4" H 5458 4281 50  0000 C CNN
 F 1 "Bootload Short" H 5458 4190 50  0000 C CNN
 F 2 "" H 5350 4100 50  0001 C CNN
 F 3 "~" H 5350 4100 50  0001 C CNN
@@ -97,10 +97,10 @@ F 3 "~" H 5350 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR048
 U 1 1 615383F3
 P 5850 4300
-F 0 "#PWR?" H 5850 4050 50  0001 C CNN
+F 0 "#PWR048" H 5850 4050 50  0001 C CNN
 F 1 "GND" H 5855 4127 50  0000 C CNN
 F 2 "" H 5850 4300 50  0001 C CNN
 F 3 "" H 5850 4300 50  0001 C CNN
