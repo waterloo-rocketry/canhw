@@ -560,4 +560,9 @@ Text Notes 1400 4450 0    50   ~ 10
 DEBUG LEDS
 Text Notes 5750 4550 0    50   ~ 10
 MCU
+NoConn ~ 6550 3800
+NoConn ~ 6550 3300
+NoConn ~ 6550 3900
+NoConn ~ 6550 4000
+NoConn ~ 6550 4100
 $EndSCHEMATC

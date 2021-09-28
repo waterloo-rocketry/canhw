@@ -134,12 +134,12 @@ $EndComp
 $Comp
 L Device:C C11
 U 1 1 5B9E51A5
-P 8400 2750
-F 0 "C11" H 8285 2704 50  0000 R CNN
-F 1 "4.7u" H 8285 2795 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8438 2600 50  0001 C CNN
-F 3 "~" H 8400 2750 50  0001 C CNN
-	1    8400 2750
+P 8350 2750
+F 0 "C11" H 8235 2704 50  0000 R CNN
+F 1 "1uF" H 8235 2795 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8388 2600 50  0001 C CNN
+F 3 "~" H 8350 2750 50  0001 C CNN
+	1    8350 2750
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -147,20 +147,16 @@ L Device:C C12
 U 1 1 5B9E5217
 P 9750 2700
 F 0 "C12" H 9635 2654 50  0000 R CNN
-F 1 "4.7u" H 9635 2745 50  0000 R CNN
+F 1 "1uF" H 9635 2745 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9788 2550 50  0001 C CNN
 F 3 "~" H 9750 2700 50  0001 C CNN
 	1    9750 2700
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	9450 2500 9750 2500
-Wire Wire Line
 	9750 2500 9750 2550
 Wire Wire Line
-	8400 2500 8400 2600
-Wire Wire Line
-	8850 2600 8750 2600
+	8350 2500 8350 2600
 $Comp
 L power:+5V #PWR042
 U 1 1 5B9E687C
@@ -197,12 +193,12 @@ $EndComp
 $Comp
 L power:GND #PWR043
 U 1 1 5B9E6978
-P 8400 2900
-F 0 "#PWR043" H 8400 2650 50  0001 C CNN
-F 1 "GND" H 8405 2727 50  0000 C CNN
-F 2 "" H 8400 2900 50  0001 C CNN
-F 3 "" H 8400 2900 50  0001 C CNN
-	1    8400 2900
+P 8350 2900
+F 0 "#PWR043" H 8350 2650 50  0001 C CNN
+F 1 "GND" H 8355 2727 50  0000 C CNN
+F 2 "" H 8350 2900 50  0001 C CNN
+F 3 "" H 8350 2900 50  0001 C CNN
+	1    8350 2900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -222,17 +218,9 @@ Connection ~ 9750 2500
 Wire Wire Line
 	10000 2400 10000 2500
 Wire Wire Line
-	8750 2600 8750 2500
-Wire Wire Line
-	8400 2500 8750 2500
-Connection ~ 8750 2500
-Wire Wire Line
-	8750 2500 8850 2500
-Wire Wire Line
 	8250 2400 8250 2500
 Wire Wire Line
-	8250 2500 8400 2500
-Connection ~ 8400 2500
+	8250 2500 8350 2500
 Text GLabel 9450 5100 0    50   Input ~ 0
 CANH
 Text GLabel 9450 5200 0    50   Input ~ 0
@@ -1082,4 +1070,42 @@ F 3 "~" H 9650 5600 50  0001 C CNN
 	1    9650 5600
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	9550 2500 9750 2500
+Wire Wire Line
+	9450 2500 9550 2500
+Connection ~ 9550 2500
+$Comp
+L Regulator_Linear:NCV8114ASN330T1G U?
+U 1 1 61536AE4
+P 9150 2600
+F 0 "U?" H 9150 2967 50  0000 C CNN
+F 1 "?" H 9150 2876 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 9150 2200 50  0001 C CIN
+F 3 "https://ru.mouser.com/datasheet/2/308/NCV8114-D-1107616.pdf" H 9150 2100 50  0001 C CNN
+	1    9150 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 2700 8650 2700
+Wire Wire Line
+	8650 2700 8650 2500
+Connection ~ 8650 2500
+Wire Wire Line
+	8650 2500 8750 2500
+Connection ~ 8350 2500
+Wire Wire Line
+	8350 2500 8650 2500
+Wire Notes Line
+	8050 2150 8050 3300
+Wire Notes Line
+	8050 3300 10200 3300
+Wire Notes Line
+	10200 3300 10200 2150
+Wire Notes Line
+	10200 2150 8050 2150
+Text Notes 8550 3250 0    50   ~ 10
+5V to 3.3V VOLTAGE REGULATOR
+Text Notes 7700 2100 0    50   ~ 10
+Note: The actual voltage regulator part # has not been selected yet. TBD ASAP.
 $EndSCHEMATC

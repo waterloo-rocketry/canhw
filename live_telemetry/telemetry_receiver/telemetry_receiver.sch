@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
-Title ""
-Date ""
-Rev ""
+Title "Live Telemetry Receiver"
+Date "2021-09-27"
+Rev "2.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -493,7 +493,7 @@ P 8950 3600
 AR Path="/61564D33" Ref="C?"  Part="1" 
 AR Path="/6109AF45/61564D33" Ref="C?"  Part="1" 
 F 0 "C?" H 9065 3646 50  0000 L CNN
-F 1 "1u" H 9065 3555 50  0000 L CNN
+F 1 "1uF" H 9065 3555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8988 3450 50  0001 C CNN
 F 3 "~" H 8950 3600 50  0001 C CNN
 	1    8950 3600
@@ -506,7 +506,7 @@ P 10550 3600
 AR Path="/61564D39" Ref="C?"  Part="1" 
 AR Path="/6109AF45/61564D39" Ref="C?"  Part="1" 
 F 0 "C?" H 10665 3646 50  0000 L CNN
-F 1 "1u" H 10665 3555 50  0000 L CNN
+F 1 "1uF" H 10665 3555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10588 3450 50  0001 C CNN
 F 3 "~" H 10550 3600 50  0001 C CNN
 	1    10550 3600
@@ -744,4 +744,8 @@ NoConn ~ 4150 5350
 NoConn ~ 4150 5450
 Text Notes 4350 5900 0    50   ~ 10
 MCU
+Text Notes 6900 1700 0    50   ~ 0
+Note: This PIC has lots of unused pins,\nbut not many PICs had USB support. \nThis PIC also has CAN support for \npotential future CAN debugging on LTR.
+Text Notes 8100 3050 0    50   ~ 10
+Note: The actual voltage regulator part # has not been selected yet. TBD ASAP.
 $EndSCHEMATC
