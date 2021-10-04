@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
 Title "Live Telemetry Transmitter"
-Date "2021-09-27"
-Rev "2.0"
+Date "2021-10-01"
+Rev "2.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -128,10 +128,18 @@ Wire Wire Line
 	5950 3250 5800 3250
 Text Notes 4650 4800 0    50   ~ 0
 1x2 Male Connector here to short pin 9 to GND, \ncausing radio to go into bootload mode to load\nfirmware.
-Text Notes 6050 4050 0    50   ~ 10
+Text Notes 5450 4950 0    50   ~ 10
 900 MHz RADIO MODEM
 Wire Wire Line
 	5900 2800 5950 2800
 Text Notes 5250 2450 0    50   ~ 0
 No mention of decoupling/bypass\ncaps in the RFD900x datasheet.
+Wire Notes Line
+	4550 2200 7350 2200
+Wire Notes Line
+	4550 5050 7350 5050
+Wire Notes Line
+	4550 2200 4550 5050
+Wire Notes Line
+	7350 2200 7350 5050
 $EndSCHEMATC

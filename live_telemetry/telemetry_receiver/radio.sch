@@ -1,12 +1,13 @@
 EESchema Schematic File Version 4
+LIBS:telemetry_receiver-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
 Title "Live Telemetry Receiver"
-Date "2021-09-27"
-Rev "2.0"
+Date "2021-10-01"
+Rev "2.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -125,6 +126,14 @@ F 3 "" H 5250 4600 50  0001 C CNN
 $EndComp
 Text Notes 4150 5100 0    50   ~ 0
 1x2 Male Connector here to short pin 9 to GND, \ncausing radio to go into bootload mode to load\nfirmware.
-Text Notes 5400 4300 0    50   ~ 10
+Text Notes 4850 5300 0    50   ~ 10
 900 MHz RADIO MODEM
+Wire Notes Line
+	3950 2500 6700 2500
+Wire Notes Line
+	3950 5400 6700 5400
+Wire Notes Line
+	3950 2500 3950 5400
+Wire Notes Line
+	6700 2500 6700 5400
 $EndSCHEMATC
