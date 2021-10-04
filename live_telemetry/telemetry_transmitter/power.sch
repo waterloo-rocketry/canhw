@@ -523,8 +523,6 @@ Wire Notes Line
 	10650 2300 8500 2300
 Text Notes 9000 3400 0    50   ~ 10
 5V to 3.3V VOLTAGE REGULATOR
-Text Notes 8150 2250 0    50   ~ 10
-Note: The actual voltage regulator part # has not been selected yet. TBD ASAP.
 Text Notes 6250 1100 0    50   ~ 0
 0.2R with \n1/4 W rating 
 Wire Wire Line
@@ -1146,12 +1144,12 @@ Wire Wire Line
 Wire Wire Line
 	5800 1100 5800 1400
 $Comp
-L canhw:TLV70233QDBVRQ1 U?
+L canhw:TLV70233QDBVRQ1 U3
 U 1 1 615CA06D
 P 9600 3000
-F 0 "U?" H 9600 3615 50  0000 C CNN
+F 0 "U3" H 9600 3615 50  0000 C CNN
 F 1 "TLV70233QDBVRQ1" H 9600 3524 50  0000 C CNN
-F 2 "" H 9600 2950 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 9600 2950 50  0001 C CNN
 F 3 "" H 9600 2950 50  0001 C CNN
 	1    9600 3000
 	1    0    0    -1  
