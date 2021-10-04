@@ -1,12 +1,13 @@
 EESchema Schematic File Version 4
+LIBS:telemetry_receiver-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title "Live Telemetry Receiver"
-Date "2021-09-27"
-Rev "2.0"
+Date "2021-10-01"
+Rev "2.1"
 Comp ""
 Comment1 ""
 Comment2 ""

@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title "Live Telemetry Transmitter"
-Date "2021-09-27"
-Rev "2.0"
+Date "2021-10-01"
+Rev "2.1"
 Comp ""
 Comment1 ""
 Comment2 ""
