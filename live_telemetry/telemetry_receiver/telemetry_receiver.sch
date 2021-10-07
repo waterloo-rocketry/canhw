@@ -483,7 +483,7 @@ U 1 1 61678A71
 P 4800 2900
 F 0 "JP1" V 4850 3150 50  0000 R CNN
 F 1 "Jumper_2_Open" V 4750 3550 50  0000 R CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm" H 4800 2900 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 4800 2900 50  0001 C CNN
 F 3 "~" H 4800 2900 50  0001 C CNN
 	1    4800 2900
 	0    -1   -1   0   
@@ -645,4 +645,6 @@ Wire Wire Line
 	7550 3350 7650 3350
 Wire Wire Line
 	7650 3350 7650 3250
+Text Notes 7750 1350 0    50   ~ 0
+These decoupling caps \nare listed in datasheet.
 $EndSCHEMATC
