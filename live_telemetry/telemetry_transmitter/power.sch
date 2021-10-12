@@ -121,17 +121,6 @@ F 3 "~" H 2650 3000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C9
-U 1 1 5B9E08AC
-P 3000 3250
-F 0 "C9" H 2885 3204 50  0000 R CNN
-F 1 "100u" H 2885 3295 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D7.5mm_P2.50mm" H 3038 3100 50  0001 C CNN
-F 3 "~" H 3000 3250 50  0001 C CNN
-	1    3000 3250
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C C11
 U 1 1 5B9E51A5
 P 8800 2850
@@ -396,8 +385,6 @@ Wire Wire Line
 Wire Wire Line
 	2250 3000 2500 3000
 Wire Wire Line
-	3000 3100 3000 3000
-Wire Wire Line
 	3000 3000 2800 3000
 $Comp
 L power:+5V #PWR035
@@ -474,12 +461,12 @@ $Comp
 L Device:C C5
 U 1 1 5BB56714
 P 2050 1350
-F 0 "C5" V 1900 1400 50  0000 R CNN
-F 1 "100u" V 1800 1450 50  0000 R CNN
+F 0 "C5" V 2200 1400 50  0000 R CNN
+F 1 "100u" V 2300 1450 50  0000 R CNN
 F 2 "Capacitor_THT:CP_Radial_D7.5mm_P2.50mm" H 2088 1200 50  0001 C CNN
 F 3 "~" H 2050 1350 50  0001 C CNN
 	1    2050 1350
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	2200 1350 2300 1350
@@ -558,8 +545,6 @@ Wire Wire Line
 	2800 3500 2800 3550
 Wire Wire Line
 	2800 3500 3000 3500
-Wire Wire Line
-	3000 3500 3000 3400
 Connection ~ 2800 3500
 Wire Wire Line
 	3000 3500 3450 3500
@@ -1168,4 +1153,19 @@ Wire Wire Line
 Connection ~ 8800 2650
 Wire Wire Line
 	8800 2650 9100 2650
+Wire Wire Line
+	3000 3100 3000 3000
+Wire Wire Line
+	3000 3500 3000 3400
+$Comp
+L Device:C C9
+U 1 1 5B9E08AC
+P 3000 3250
+F 0 "C9" H 3200 3300 50  0000 R CNN
+F 1 "100u" H 3300 3200 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D7.5mm_P2.50mm" H 3038 3100 50  0001 C CNN
+F 3 "~" H 3000 3250 50  0001 C CNN
+	1    3000 3250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
