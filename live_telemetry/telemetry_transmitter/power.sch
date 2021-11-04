@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
 Title "Live Telemetry Transmitter"
-Date "2021-10-01"
+Date "2021-11-03"
 Rev "2.1"
 Comp ""
 Comment1 ""
@@ -1099,7 +1099,7 @@ $EndComp
 Wire Wire Line
 	6950 4650 6950 4100
 Wire Wire Line
-	6950 4650 8400 4650
+	6950 4650 7600 4650
 Wire Notes Line
 	6900 6400 10100 6400
 Wire Notes Line
@@ -1168,4 +1168,31 @@ F 3 "~" H 3000 3250 50  0001 C CNN
 	1    3000 3250
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:Jumper JP3
+U 1 1 6183E0F8
+P 7600 4100
+F 0 "JP3" V 7554 4227 50  0000 L CNN
+F 1 "Jumper" V 7645 4227 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7600 4100 50  0001 C CNN
+F 3 "~" H 7600 4100 50  0001 C CNN
+	1    7600 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7600 4400 7600 4650
+$Comp
+L power:+12V #PWR028
+U 1 1 6184BB09
+P 7600 3800
+F 0 "#PWR028" H 7600 3650 50  0001 C CNN
+F 1 "+12V" H 7615 3973 50  0000 C CNN
+F 2 "" H 7600 3800 50  0001 C CNN
+F 3 "" H 7600 3800 50  0001 C CNN
+	1    7600 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 7600 4650
+Wire Wire Line
+	7600 4650 8400 4650
 $EndSCHEMATC
