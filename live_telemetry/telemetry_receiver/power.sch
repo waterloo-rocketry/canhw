@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
 Title ""
-Date "2021-10-04"
+Date "2021-11-04"
 Rev "2.2"
 Comp ""
 Comment1 ""
@@ -494,10 +494,6 @@ Wire Wire Line
 Connection ~ 7750 5000
 Wire Wire Line
 	7750 5000 7750 5050
-Text Label 8350 4550 0    50   ~ 0
-USB_D+
-Text Label 8350 4650 0    50   ~ 0
-USB_D-
 Wire Wire Line
 	8050 4550 8350 4550
 Wire Wire Line
@@ -690,4 +686,8 @@ Wire Wire Line
 Wire Wire Line
 	8800 2300 8800 2400
 Connection ~ 8800 2300
+Text HLabel 8350 4550 2    50   Input ~ 0
+D+
+Text HLabel 8350 4650 2    50   Input ~ 0
+D-
 $EndSCHEMATC

@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title "Live Telemetry Receiver"
-Date "2021-10-04"
+Date "2021-11-04"
 Rev "2.2"
 Comp ""
 Comment1 ""
@@ -67,9 +67,9 @@ F 3 "~" H 4800 2500 50  0001 C CNN
 	1    4800 2500
 	1    0    0    -1  
 $EndComp
-Text Label 7650 3750 0    50   ~ 0
+Text Label 5000 4950 0    50   ~ 0
 USB_D+
-Text Label 7650 3850 0    50   ~ 0
+Text Label 5000 5050 0    50   ~ 0
 USB_D-
 Text Label 7650 2750 0    50   ~ 0
 ICSPDAT
@@ -590,6 +590,8 @@ U 615FBFAD
 F0 "power" 50
 F1 "power.sch" 50
 F2 "CURR_BATT" I R 4850 4800 50 
+F3 "D+" I R 4850 4950 50 
+F4 "D-" I R 4850 5050 50 
 $EndSheet
 Wire Wire Line
 	3700 3900 5750 3900
@@ -647,4 +649,16 @@ Wire Wire Line
 	7650 3350 7650 3250
 Text Notes 7750 1350 0    50   ~ 0
 These decoupling caps \nare listed in datasheet.
+Text Label 7650 3750 0    50   ~ 0
+USB_D+
+Text Label 7650 3850 0    50   ~ 0
+USB_D-
+Wire Wire Line
+	4850 4950 5000 4950
+Wire Wire Line
+	5000 5050 4850 5050
+Text Label 4700 2700 2    50   ~ 0
+~MCLR
+Wire Wire Line
+	4700 2700 4800 2700
 $EndSCHEMATC
