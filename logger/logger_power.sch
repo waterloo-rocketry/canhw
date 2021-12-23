@@ -260,9 +260,9 @@ Wire Wire Line
 Wire Wire Line
 	2950 3150 3100 3150
 Text Notes 5000 4350 0    50   ~ 0
-200V/V
+100V/V
 Text Notes 3700 2750 0    50   ~ 0
-62mR * I  * 200v/v = 3.3V\nImax = 266mA
+62mR * Imax * 100v/v = 3.3V\nImax = 532mA
 Wire Wire Line
 	3250 3250 2950 3250
 Wire Wire Line
