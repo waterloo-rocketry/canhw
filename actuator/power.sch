@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:vent-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -22,13 +21,6 @@ Wire Wire Line
 	3700 3400 3700 3250
 Wire Wire Line
 	3700 3250 3150 3250
-Connection ~ 3700 3250
-Wire Wire Line
-	3700 3250 4000 3250
-Wire Wire Line
-	2500 3350 3250 3350
-Wire Wire Line
-	3250 3350 3250 3450
 Wire Wire Line
 	4000 3850 3700 3850
 $Comp
@@ -65,28 +57,15 @@ F 3 "~" H 3000 3250 50  0001 C CNN
 	1    3000 3250
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2850 3250 2500 3250
-$Comp
-L Connector:Conn_01x02_Male J1
-U 1 1 5DBFD273
-P 2300 3250
-F 0 "J1" H 2408 3431 50  0000 C CNN
-F 1 "Valve Control" H 2408 3340 50  0000 C CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 2300 3250 50  0001 C CNN
-F 3 "~" H 2300 3250 50  0001 C CNN
-	1    2300 3250
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0114
 U 1 1 5DBFE2A2
-P 3250 3450
-F 0 "#PWR0114" H 3250 3200 50  0001 C CNN
-F 1 "GND" H 3255 3277 50  0000 C CNN
-F 2 "" H 3250 3450 50  0001 C CNN
-F 3 "" H 3250 3450 50  0001 C CNN
-	1    3250 3450
+P 2350 2750
+F 0 "#PWR0114" H 2350 2500 50  0001 C CNN
+F 1 "GND" H 2355 2577 50  0000 C CNN
+F 2 "" H 2350 2750 50  0001 C CNN
+F 3 "" H 2350 2750 50  0001 C CNN
+	1    2350 2750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -100,8 +79,6 @@ F 3 "" H 3700 4150 50  0001 C CNN
 	1    3700 4150
 	1    0    0    -1  
 $EndComp
-Text Notes 4100 3250 0    50   ~ 0
-12V Lipo\n
 $Comp
 L Connector:Conn_01x05_Female J2
 U 1 1 5DCB70EE
@@ -227,7 +204,7 @@ F 3 "" H 8700 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6900 3450 7450 3450
+	6900 3450 7250 3450
 Wire Wire Line
 	7750 3450 7900 3450
 Wire Wire Line
@@ -259,16 +236,99 @@ Wire Wire Line
 	9800 3700 9800 3750
 Text HLabel 9600 4200 2    50   Input ~ 0
 CURR_AMP
-NoConn ~ 6900 3350
+Wire Wire Line
+	3700 2900 3700 3250
+Connection ~ 3700 3250
+Text GLabel 3700 2900 2    50   Input ~ 0
+Actuator_Power
 $Comp
-L power:+12V #PWR0121
-U 1 1 5DE4FAD4
-P 4000 3250
-F 0 "#PWR0121" H 4000 3100 50  0001 C CNN
-F 1 "+12V" H 4015 3423 50  0000 C CNN
-F 2 "" H 4000 3250 50  0001 C CNN
-F 3 "" H 4000 3250 50  0001 C CNN
-	1    4000 3250
+L Connector:Conn_01x02_Male J1
+U 1 1 5DBFD273
+P 2450 2050
+F 0 "J1" H 2558 2231 50  0000 C CNN
+F 1 "Valve Control" H 2558 2140 50  0000 C CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 2450 2050 50  0001 C CNN
+F 3 "~" H 2450 2050 50  0001 C CNN
+	1    2450 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2350 2250 2350 2750
+Wire Wire Line
+	2450 2250 2450 3250
+Wire Wire Line
+	2450 3250 2850 3250
+$Comp
+L power:+12V #PWR02
+U 1 1 6029A7D9
+P 1800 2150
+F 0 "#PWR02" H 1800 2000 50  0001 C CNN
+F 1 "+12V" H 1815 2323 50  0000 C CNN
+F 2 "" H 1800 2150 50  0001 C CNN
+F 3 "" H 1800 2150 50  0001 C CNN
+	1    1800 2150
 	1    0    0    -1  
 $EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 6029C62F
+P 1800 2650
+F 0 "JP2" V 1754 2718 50  0000 L CNN
+F 1 "+12v conn" V 1845 2718 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1800 2650 50  0001 C CNN
+F 3 "~" H 1800 2650 50  0001 C CNN
+	1    1800 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 6029C9F7
+P 1250 2650
+F 0 "JP1" V 1204 2718 50  0000 L CNN
+F 1 "+5V conn" V 1295 2718 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1250 2650 50  0001 C CNN
+F 3 "~" H 1250 2650 50  0001 C CNN
+	1    1250 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 2150 1250 2500
+Wire Wire Line
+	1800 2150 1800 2500
+Wire Wire Line
+	1800 2800 1800 3250
+Wire Wire Line
+	1800 3250 2450 3250
+Connection ~ 2450 3250
+Wire Wire Line
+	1250 2800 1250 3250
+Wire Wire Line
+	1250 3250 1800 3250
+Connection ~ 1800 3250
+$Comp
+L power:+12V #PWR03
+U 1 1 6028B760
+P 7050 3000
+F 0 "#PWR03" H 7050 2850 50  0001 C CNN
+F 1 "+12V" H 7065 3173 50  0000 C CNN
+F 2 "" H 7050 3000 50  0001 C CNN
+F 3 "" H 7050 3000 50  0001 C CNN
+	1    7050 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 3000 7050 3350
+Wire Wire Line
+	7050 3350 6900 3350
+Wire Wire Line
+	7250 3450 7250 2950
+Wire Wire Line
+	7250 2950 7450 2950
+Connection ~ 7250 3450
+Wire Wire Line
+	7250 3450 7450 3450
+Text Label 7450 2950 0    50   ~ 0
+5V_IN
+Text Label 1250 2150 0    50   ~ 0
+5V_IN
 $EndSCHEMATC
