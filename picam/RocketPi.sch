@@ -1079,4 +1079,10 @@ Wire Wire Line
 	6400 4950 6600 4950
 Wire Wire Line
 	6400 5450 6400 5350
+Text Notes 10650 4100 0    50   ~ 0
+RED LED\n
+Text Notes 4650 4000 0    50   ~ 0
+BLUE LED\n
+Text Notes 7650 3100 0    50   ~ 0
+WHITE\nLED
 $EndSCHEMATC
