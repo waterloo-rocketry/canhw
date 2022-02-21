@@ -477,17 +477,6 @@ F 3 "" H 4800 3400 50  0001 C CNN
 	1    4800 3400
 	1    0    0    -1  
 $EndComp
-$Comp
-L Jumper:Jumper_2_Open JP1
-U 1 1 61678A71
-P 4800 2900
-F 0 "JP1" V 4850 3150 50  0000 R CNN
-F 1 "Jumper_2_Open" V 4750 3550 50  0000 R CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 4800 2900 50  0001 C CNN
-F 3 "~" H 4800 2900 50  0001 C CNN
-	1    4800 2900
-	0    -1   -1   0   
-$EndComp
 Connection ~ 4800 2700
 Wire Wire Line
 	4800 2700 5150 2700
@@ -661,4 +650,25 @@ Text Label 4700 2700 2    50   ~ 0
 ~MCLR
 Wire Wire Line
 	4700 2700 4800 2700
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 6216FE29
+P 4325 2925
+AR Path="/6107F682/6216FE29" Ref="J?"  Part="1" 
+AR Path="/6216FE29" Ref="J6"  Part="1" 
+F 0 "J6" H 4433 3106 50  0000 C CNN
+F 1 "~MCLR~ Cap Jumper" H 4433 3015 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4325 2925 50  0001 C CNN
+F 3 "~" H 4325 2925 50  0001 C CNN
+	1    4325 2925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2700 4800 2925
+Wire Wire Line
+	4800 3025 4800 3100
+Wire Wire Line
+	4525 2925 4800 2925
+Wire Wire Line
+	4525 3025 4800 3025
 $EndSCHEMATC
