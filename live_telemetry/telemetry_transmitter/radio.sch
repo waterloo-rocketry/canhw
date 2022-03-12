@@ -1,176 +1,155 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+LIBS:telemetry_transmitter-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
-Title ""
-Date ""
-Rev ""
+Title "Live Telemetry Transmitter"
+Date "2021-10-01"
+Rev "2.1"
 Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	6650 4150 6750 4150
-Wire Wire Line
-	6750 4150 6750 4250
-Wire Wire Line
-	6650 4250 6750 4250
-Connection ~ 6750 4250
-Wire Wire Line
-	6750 4250 6750 4350
-Wire Wire Line
-	6650 4350 6750 4350
 $Comp
-L Device:C C14
-U 1 1 5E1EB228
-P 4000 3400
-F 0 "C14" H 4115 3446 50  0000 L CNN
-F 1 "0.1u" H 4115 3355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4038 3250 50  0001 C CNN
-F 3 "~" H 4000 3400 50  0001 C CNN
-	1    4000 3400
+L Connector:Conn_01x02_Male J4
+U 1 1 6153619E
+P 5100 3950
+F 0 "J4" H 5208 4131 50  0000 C CNN
+F 1 "Bootload Short" H 5200 4050 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5100 3950 50  0001 C CNN
+F 3 "~" H 5100 3950 50  0001 C CNN
+	1    5100 3950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C13
-U 1 1 5E1EB88B
-P 3500 3400
-F 0 "C13" H 3615 3446 50  0000 L CNN
-F 1 "100p" H 3615 3355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3538 3250 50  0001 C CNN
-F 3 "~" H 3500 3400 50  0001 C CNN
-	1    3500 3400
+L power:GND #PWR048
+U 1 1 615383F3
+P 5600 4150
+F 0 "#PWR048" H 5600 3900 50  0001 C CNN
+F 1 "GND" H 5605 3977 50  0000 C CNN
+F 2 "" H 5600 4150 50  0001 C CNN
+F 3 "" H 5600 4150 50  0001 C CNN
+	1    5600 4150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4000 3200 4000 3250
+	5600 4050 5600 4150
 Wire Wire Line
-	3500 3200 3500 3250
+	5600 4050 5300 4050
+Text Notes 6200 4700 2    50   ~ 0
+1x2 Male Connector here to short\npin 9 to GND, causing radio to go\ninto bootload mode to load\nfirmware.
+Wire Notes Line
+	7350 2200 7350 5050
 Wire Wire Line
-	4000 3550 4000 3650
-Wire Wire Line
-	3500 3650 3500 3550
+	5300 3950 5800 3950
 $Comp
-L power:GND #PWR049
-U 1 1 5E1EEF5A
-P 3750 3700
-F 0 "#PWR049" H 3750 3450 50  0001 C CNN
-F 1 "GND" H 3755 3527 50  0000 C CNN
-F 2 "" H 3750 3700 50  0001 C CNN
-F 3 "" H 3750 3700 50  0001 C CNN
-	1    3750 3700
+L power:GND #PWR0101
+U 1 1 615FA3AD
+P 5250 3250
+F 0 "#PWR0101" H 5250 3000 50  0001 C CNN
+F 1 "GND" H 5255 3077 50  0000 C CNN
+F 2 "" H 5250 3250 50  0001 C CNN
+F 3 "" H 5250 3250 50  0001 C CNN
+	1    5250 3250
+	1    0    0    -1  
+$EndComp
+Text HLabel 5750 3700 0    50   BiDi ~ 0
+RTS
+Text HLabel 5750 3300 0    50   BiDi ~ 0
+CTS
+$Comp
+L power:GND #PWR0102
+U 1 1 615F178A
+P 6650 4000
+F 0 "#PWR0102" H 6650 3750 50  0001 C CNN
+F 1 "GND" H 6655 3827 50  0000 C CNN
+F 2 "" H 6650 4000 50  0001 C CNN
+F 3 "" H 6650 4000 50  0001 C CNN
+	1    6650 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 3200 3750 3200
-Connection ~ 4000 3200
-Wire Wire Line
-	3500 3650 3750 3650
-Wire Wire Line
-	3750 3700 3750 3650
-Connection ~ 3750 3650
-Wire Wire Line
-	3750 3650 4000 3650
+	6650 3900 6650 4000
 $Comp
-L power:+3V3 #PWR048
-U 1 1 5E1FB08F
-P 3750 3150
-F 0 "#PWR048" H 3750 3000 50  0001 C CNN
-F 1 "+3V3" H 3765 3323 50  0000 C CNN
-F 2 "" H 3750 3150 50  0001 C CNN
-F 3 "" H 3750 3150 50  0001 C CNN
-	1    3750 3150
+L Connector_Generic:Conn_02x08_Odd_Even J5
+U 1 1 615EA1BD
+P 6250 3500
+F 0 "J5" H 6300 4050 50  0000 C CNN
+F 1 "RFD900x RADIO MODEM CONN" H 6300 3950 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Horizontal" H 6250 3500 50  0001 C CNN
+F 3 "~" H 6250 3500 50  0001 C CNN
+	1    6250 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3750 3200 3750 3150
-Connection ~ 3750 3200
+	6550 3900 6650 3900
 Wire Wire Line
-	3750 3200 4000 3200
-Text HLabel 5150 3500 0    50   Input ~ 0
-~SS
-Text HLabel 5150 3400 0    50   Input ~ 0
-SCK
-Text HLabel 5150 3300 0    50   Input ~ 0
-SDI
-Text HLabel 6700 3300 2    50   Input ~ 0
-SDO
+	6550 3200 6650 3200
 Wire Wire Line
-	5150 3300 5450 3300
-Wire Wire Line
-	5150 3400 5450 3400
-Wire Wire Line
-	5150 3500 5450 3500
-Wire Wire Line
-	4000 3200 5450 3200
+	6650 3200 6650 3900
+Connection ~ 6650 3900
 $Comp
-L Device:Antenna AE1
-U 1 1 5E21EAFA
-P 6950 2950
-F 0 "AE1" H 7030 2939 50  0000 L CNN
-F 1 "Antenna" H 7030 2848 50  0000 L CNN
-F 2 "" H 6950 2950 50  0001 C CNN
-F 3 "~" H 6950 2950 50  0001 C CNN
-	1    6950 2950
+L power:+5V #PWR0103
+U 1 1 615FD2A7
+P 7050 3200
+AR Path="/5E233576/615FD2A7" Ref="#PWR0103"  Part="1" 
+AR Path="/61530260/615FD2A7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0103" H 7050 3050 50  0001 C CNN
+F 1 "+5V" H 7065 3373 50  0000 C CNN
+F 2 "" H 7050 3200 50  0001 C CNN
+F 3 "" H 7050 3200 50  0001 C CNN
+	1    7050 3200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_Coaxial J4
-U 1 1 5E22B721
-P 6950 3650
-F 0 "J4" V 6832 3750 50  0000 L CNN
-F 1 "Conn_Coaxial" V 6923 3750 50  0000 L CNN
-F 2 "canhw_footprints:RF_connector_SMA_3-1478978-1" H 6950 3650 50  0001 C CNN
-F 3 " ~" H 6950 3650 50  0001 C CNN
-	1    6950 3650
-	0    1    1    0   
-$EndComp
-Connection ~ 6750 4350
 Wire Wire Line
-	6750 4350 6750 4400
-$Comp
-L power:GND #PWR050
-U 1 1 5E1CEE95
-P 6750 4400
-F 0 "#PWR050" H 6750 4150 50  0001 C CNN
-F 1 "GND" H 6755 4227 50  0000 C CNN
-F 2 "" H 6750 4400 50  0001 C CNN
-F 3 "" H 6750 4400 50  0001 C CNN
-	1    6750 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L canhw:RFM95W U4
-U 1 1 5E1CC61E
-P 5550 4450
-F 0 "U4" H 6050 5965 50  0000 C CNN
-F 1 "RFM95W" H 6050 5874 50  0000 C CNN
-F 2 "canhw_footprints:XCVR_RFM95W-915S2" H 5600 5850 50  0001 C CNN
-F 3 "" H 5600 5850 50  0001 C CNN
-	1    5550 4450
-	1    0    0    -1  
-$EndComp
-NoConn ~ 5450 3850
-NoConn ~ 5450 3950
-NoConn ~ 5450 4050
-NoConn ~ 5450 4150
-NoConn ~ 5450 4250
-NoConn ~ 5450 4350
+	7050 3300 7050 3200
+Text HLabel 5750 3600 0    50   Input ~ 0
+TX
+Text HLabel 5750 3500 0    50   Output ~ 0
+RX
 Wire Wire Line
-	6650 3300 6700 3300
+	9150 2300 9150 2250
+Text Notes 5750 2400 0    50   ~ 0
+Note: No mention of decoupling/bypass\ncaps in the RFD900x datasheet.
+Text Notes 5400 4950 0    50   ~ 10
+900 MHz RADIO MODEM CONNECTOR
+NoConn ~ 6050 3900
+NoConn ~ 6050 3800
+NoConn ~ 6550 3800
+NoConn ~ 6550 3700
+NoConn ~ 6550 3600
+NoConn ~ 6550 3500
+NoConn ~ 6550 3400
+NoConn ~ 6050 3400
 Wire Wire Line
-	6750 3650 6750 4150
-Connection ~ 6750 4150
+	7050 3300 6550 3300
 Wire Wire Line
-	6650 3450 6950 3450
+	6050 3600 5800 3600
 Wire Wire Line
-	6950 3450 6950 3150
-Text HLabel 5150 3650 0    50   Input ~ 0
-RESET
+	5800 3600 5800 3950
+Connection ~ 5800 3600
 Wire Wire Line
-	5150 3650 5450 3650
+	5800 3600 5750 3600
+Wire Wire Line
+	5750 3300 6050 3300
+Wire Wire Line
+	5750 3500 6050 3500
+Wire Wire Line
+	5750 3700 6050 3700
+Wire Wire Line
+	6050 3200 5250 3200
+Wire Wire Line
+	5250 3200 5250 3250
+Text Notes 5100 2850 0    50   ~ 0
+2x8 female connector for RFD900x Radio Modem.
+Wire Notes Line
+	4800 2200 4800 5050
+Wire Notes Line
+	7350 2200 4800 2200
+Wire Notes Line
+	4800 5050 7350 5050
 $EndSCHEMATC
