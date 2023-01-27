@@ -1,4 +1,4 @@
-# On the Pad Charging
+# Charging On the Pad 
 A charger board on the CAN bus that includes the battery, charging port connection, and additional power connections to live telemetry transmitter.
 Clickup: https://app.clickup.com/8608989/v/li/176275976
 Drive: https://drive.google.com/drive/folders/1WU_OsI1vf2b53sMAvz4AfjsN1jmYpsuN?usp=sharing
