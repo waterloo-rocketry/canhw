@@ -547,11 +547,11 @@
         )
       )
     )
-    (symbol "Device:Q_NMOS_SGD" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+    (symbol "Device:Q_NMOS_GSD" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
       (property "Reference" "Q" (id 0) (at 5.08 1.27 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Value" "Q_NMOS_SGD" (id 1) (at 5.08 -1.27 0)
+      (property "Value" "Q_NMOS_GSD" (id 1) (at 5.08 -1.27 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
       (property "Footprint" "" (id 2) (at 5.08 2.54 0)
@@ -563,10 +563,10 @@
       (property "ki_keywords" "transistor NMOS N-MOS N-MOSFET" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "N-MOSFET transistor, source/gate/drain" (id 5) (at 0 0 0)
+      (property "ki_description" "N-MOSFET transistor, gate/source/drain" (id 5) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "Q_NMOS_SGD_0_1"
+      (symbol "Q_NMOS_GSD_0_1"
         (polyline
           (pts
             (xy 0.254 0)
@@ -677,13 +677,13 @@
           (fill (type outline))
         )
       )
-      (symbol "Q_NMOS_SGD_1_1"
-        (pin passive line (at 2.54 -5.08 90) (length 2.54)
-          (name "S" (effects (font (size 1.27 1.27))))
+      (symbol "Q_NMOS_GSD_1_1"
+        (pin input line (at -5.08 0 0) (length 2.54)
+          (name "G" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at -5.08 0 0) (length 5.08)
-          (name "G" (effects (font (size 1.27 1.27))))
+        (pin passive line (at 2.54 -5.08 90) (length 2.54)
+          (name "S" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
         )
         (pin passive line (at 2.54 5.08 270) (length 2.54)
@@ -2707,7 +2707,7 @@
     (pin "1" (uuid bb96f5e6-dd45-4e17-a67b-47eae0479e12))
   )
 
-  (symbol (lib_id "Device:Q_NMOS_SGD") (at 182.88 48.26 0) (mirror y) (unit 1)
+  (symbol (lib_id "Device:Q_NMOS_GSD") (at 182.88 48.26 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 3d2bc70c-aff5-4bb2-8bd0-55afc7d88de8)
     (property "Reference" "Q2" (id 0) (at 186.69 46.99 0)
@@ -2719,7 +2719,7 @@
     (property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering" (id 2) (at 177.8 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.taiwansemi.com/assets/uploads/datasheet/TSM2306_B15.pdf" (id 3) (at 182.88 48.26 0)
+    (property "Datasheet" "~" (id 3) (at 182.88 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 830a61f4-3fba-4296-be6d-bae3e8819787))
