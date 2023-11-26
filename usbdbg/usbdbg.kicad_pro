@@ -3,7 +3,7 @@
     "3dviewports": [],
     "design_settings": {
       "defaults": {
-        "board_outline_line_width": 0.15,
+        "board_outline_line_width": 0.09999999999999999,
         "copper_line_width": 0.19999999999999998,
         "copper_text_italic": false,
         "copper_text_size_h": 1.5,
@@ -27,16 +27,16 @@
         "fab_text_size_v": 1.0,
         "fab_text_thickness": 0.15,
         "fab_text_upright": false,
-        "other_line_width": 0.09999999999999999,
+        "other_line_width": 0.15,
         "other_text_italic": false,
         "other_text_size_h": 1.0,
         "other_text_size_v": 1.0,
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.92,
-          "height": 1.7,
-          "width": 1.5
+          "drill": 0.762,
+          "height": 1.524,
+          "width": 1.524
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -45,13 +45,12 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.2032
+          "min_clearance": 0.5
         }
       },
       "diff_pair_dimensions": [],
       "drc_exclusions": [],
       "meta": {
-        "filename": "board_design_settings.json",
         "version": 2
       },
       "rule_severities": {
@@ -108,7 +107,7 @@
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.075,
+        "min_copper_edge_clearance": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
@@ -118,9 +117,11 @@
         "min_text_height": 0.7999999999999999,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.15239999999999998,
+        "min_track_width": 0.0,
         "min_via_annular_width": 0.09999999999999999,
-        "min_via_diameter": 0.39999999999999997,
+        "min_via_diameter": 0.5,
+        "solder_mask_clearance": 0.0,
+        "solder_mask_min_width": 0.0,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -164,11 +165,7 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [
-        0.0,
-        0.1524,
-        0.381
-      ],
+      "track_widths": [],
       "via_dimensions": [],
       "zones_allow_external_fillets": false
     },
@@ -402,7 +399,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.1524,
+        "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -412,26 +409,9 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.1524,
+        "track_width": 0.25,
         "via_diameter": 0.8,
-        "via_drill": 0.44,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.254,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "Power",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.508,
-        "via_diameter": 0.8,
-        "via_drill": 0.44,
+        "via_drill": 0.4,
         "wire_width": 6
       }
     ],
@@ -440,128 +420,7 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": [
-      {
-        "netclass": "Default",
-        "pattern": "/CAN_INT"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/CLKOUT"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/CS"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/ICSPCLK"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/ICSPDAT"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/MOSI"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/USB_D+"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/USB_D-"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/~{MCLR}"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(D1-Pad1)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(D1-Pad2)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(D2-Pad1)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(D2-Pad2)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(J3-Pad1)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(J3-Pad4)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(J3-Pad5)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(JP1-Pad1)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(TP1-Pad1)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(TP2-Pad1)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(U2-Pad10)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(U2-Pad11)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(U2-Pad3)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(U2-Pad4)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(U2-Pad5)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(U2-Pad6)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(U2-Pad7)"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "+5V"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "GND"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "Net-(C2-Pad1)"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "Net-(J3-Pad2)"
-      }
-    ]
+    "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {
@@ -588,9 +447,9 @@
       "intersheets_ref_show": false,
       "intersheets_ref_suffix": "",
       "junction_size_choice": 3,
-      "label_size_ratio": 0.25,
-      "pin_symbol_size": 0.0,
-      "text_offset_ratio": 0.08
+      "label_size_ratio": 0.375,
+      "pin_symbol_size": 25.0,
+      "text_offset_ratio": 0.15
     },
     "legacy_lib_dir": "",
     "legacy_lib_list": [],
@@ -600,7 +459,6 @@
     "net_format_name": "",
     "page_layout_descr_file": "",
     "plot_directory": "",
-    "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
@@ -611,7 +469,7 @@
   },
   "sheets": [
     [
-      "33ac1893-161d-4d11-8d24-23f2c35d884a",
+      "beda4cfe-3d79-4b44-bc04-a373de6dd18a",
       ""
     ]
   ],
