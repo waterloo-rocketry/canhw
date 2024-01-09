@@ -1170,9 +1170,6 @@
   (junction (at 132.08 99.06) (diameter 0) (color 0 0 0 0)
     (uuid bc3bec6f-e1bc-4835-9faa-9f93b3841e5f)
   )
-  (junction (at 67.31 99.06) (diameter 0) (color 0 0 0 0)
-    (uuid c7135dab-81b1-4b45-889d-78e09f27ce42)
-  )
   (junction (at 44.45 161.29) (diameter 0) (color 0 0 0 0)
     (uuid d6156c18-3b42-4e8b-920c-bfc07c35017c)
   )
@@ -1199,6 +1196,9 @@
   )
   (junction (at 144.78 99.06) (diameter 0) (color 0 0 0 0)
     (uuid fc382b37-e9bb-42a8-8d51-08a7751b764d)
+  )
+  (junction (at 67.31 99.06) (diameter 0) (color 0 0 0 0)
+    (uuid fe11c9f0-674d-4579-922b-f4c1692597a7)
   )
 
   (wire (pts (xy 132.08 106.68) (xy 132.08 99.06))
@@ -1808,11 +1808,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 507416c2-73ae-4981-893c-97793d76fbae)
   )
-  (text "can't find a standard package\ninductor that meets specs"
-    (at 102.87 151.13 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 54555c14-2156-4328-8341-a28f6eb3fef7)
-  )
   (text "0.02R 1W" (at 150.495 90.805 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5e18ef09-339d-48d1-a443-fb53d827f878)
@@ -1937,7 +1932,7 @@
   (symbol (lib_id "power:GND") (at 29.21 111.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 00d518f6-66d1-4026-88c4-6b41cd7ef0e1)
-    (property "Reference" "#PWR0152" (at 29.21 118.11 0)
+    (property "Reference" "#PWR045" (at 29.21 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 29.21 116.84 0)
@@ -1953,7 +1948,42 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0152") (unit 1)
+          (reference "#PWR045") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "charging_on_the_pad:TPS562201DDCR") (at 69.85 96.52 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 02b2353a-8caa-4a69-a659-003ae44da4ba)
+    (property "Reference" "U4" (at 76.2 91.44 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "TPS562201DDCR" (at 76.2 93.98 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" (at 69.85 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 69.85 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e184c34a-e4a5-4510-a405-7190ee166dff))
+    (pin "2" (uuid 5f57fd8e-1aaa-400b-8787-6b76adb4fdb9))
+    (pin "3" (uuid bcf8b479-c295-4045-9248-e178086b8de8))
+    (pin "4" (uuid 0a18ab82-63a5-4c20-a554-b5103f11a6a7))
+    (pin "5" (uuid 27e40e28-bb76-4d48-b5cb-46a545640475))
+    (pin "6" (uuid 679b1a5d-a3c8-4a85-a4db-4213354fb467))
+    (instances
+      (project "charging_on_the_pad"
+        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
+          (reference "U4") (unit 1)
+        )
+      )
+      (project "Power(1)"
+        (path "/e30ade95-3ad7-4cab-af49-ad0660a5d3be"
+          (reference "U?") (unit 1)
         )
       )
     )
@@ -1962,7 +1992,7 @@
   (symbol (lib_id "power:+5V") (at 168.91 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 04073d16-a040-4c96-8651-69b2eb2eec95)
-    (property "Reference" "#PWR0166" (at 168.91 99.06 0)
+    (property "Reference" "#PWR066" (at 168.91 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 168.91 91.44 0)
@@ -1978,7 +2008,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0166") (unit 1)
+          (reference "#PWR066") (unit 1)
         )
       )
     )
@@ -2067,7 +2097,7 @@
   (symbol (lib_id "power:+BATT") (at 63.5 30.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0a8277e7-5599-4781-af1d-07df2c182ceb)
-    (property "Reference" "#PWR0175" (at 63.5 34.29 0)
+    (property "Reference" "#PWR052" (at 63.5 34.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 63.5 25.4 0)
@@ -2083,7 +2113,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0175") (unit 1)
+          (reference "#PWR052") (unit 1)
         )
       )
     )
@@ -2092,7 +2122,7 @@
   (symbol (lib_id "Device:C") (at 140.97 172.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0b5d44aa-a0f8-4043-a9cf-a33302cbaed9)
-    (property "Reference" "C29" (at 144.78 171.45 0)
+    (property "Reference" "C27" (at 144.78 171.45 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "22uF" (at 144.78 173.99 0)
@@ -2109,7 +2139,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "C29") (unit 1)
+          (reference "C27") (unit 1)
         )
       )
     )
@@ -2118,7 +2148,7 @@
   (symbol (lib_id "Device:C") (at 55.88 166.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 10cd7f3a-5329-4297-83ad-ab73ad9c17da)
-    (property "Reference" "C21" (at 59.69 165.1 0)
+    (property "Reference" "C22" (at 59.69 165.1 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1uF" (at 59.69 167.64 0)
@@ -2135,7 +2165,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "C21") (unit 1)
+          (reference "C22") (unit 1)
         )
       )
     )
@@ -2144,7 +2174,7 @@
   (symbol (lib_id "power:GND") (at 95.25 175.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1116bb1b-63ec-4c60-b955-e6f74aa9006b)
-    (property "Reference" "#PWR0167" (at 95.25 181.61 0)
+    (property "Reference" "#PWR058" (at 95.25 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 95.25 180.34 0)
@@ -2160,7 +2190,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0167") (unit 1)
+          (reference "#PWR058") (unit 1)
         )
       )
     )
@@ -2169,7 +2199,7 @@
   (symbol (lib_id "power:GND") (at 66.04 111.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 115d3422-9fbb-47ea-bddd-1b83c0af1670)
-    (property "Reference" "#PWR0154" (at 66.04 118.11 0)
+    (property "Reference" "#PWR053" (at 66.04 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 66.04 116.84 0)
@@ -2185,7 +2215,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0154") (unit 1)
+          (reference "#PWR053") (unit 1)
         )
       )
     )
@@ -2194,7 +2224,7 @@
   (symbol (lib_id "power:GND") (at 144.78 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1e2df975-7102-474e-a8b4-38fb39eb1013)
-    (property "Reference" "#PWR0161" (at 144.78 128.27 0)
+    (property "Reference" "#PWR063" (at 144.78 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 144.78 127 0)
@@ -2210,7 +2240,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0161") (unit 1)
+          (reference "#PWR063") (unit 1)
         )
       )
     )
@@ -2219,7 +2249,7 @@
   (symbol (lib_id "power:VCC") (at 177.8 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1f39c16f-aa95-473b-a1a4-7727753916a4)
-    (property "Reference" "#PWR0162" (at 177.8 40.64 0)
+    (property "Reference" "#PWR067" (at 177.8 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VCC" (at 177.8 31.75 0)
@@ -2235,7 +2265,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0162") (unit 1)
+          (reference "#PWR067") (unit 1)
         )
       )
     )
@@ -2244,7 +2274,7 @@
   (symbol (lib_id "power:GND") (at 233.68 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 215352bb-f3f9-422e-8110-cf491743f676)
-    (property "Reference" "#PWR0150" (at 233.68 52.07 0)
+    (property "Reference" "#PWR069" (at 233.68 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 233.68 50.8 0)
@@ -2260,33 +2290,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0150") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "pspice:INDUCTOR") (at 115.57 161.29 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 25ba6163-fc4d-46c1-a282-3b60547a9bac)
-    (property "Reference" "L3" (at 115.57 154.94 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "10uH, SRP1265A-100M" (at 115.57 157.48 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Inductor_SMD:L_Bourns_SRP1245A" (at 115.57 161.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/SRP1265A.pdf" (at 115.57 161.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0ec42b06-ac8d-4159-acf1-6eebdfb50dd6))
-    (pin "2" (uuid 5f5a3a15-fecd-4d4e-b556-4dc9c87043ef))
-    (instances
-      (project "charging_on_the_pad"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "L3") (unit 1)
+          (reference "#PWR069") (unit 1)
         )
       )
     )
@@ -2295,7 +2299,7 @@
   (symbol (lib_id "power:GND") (at 158.75 46.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 287ec15d-8774-4015-8ad7-94f6a224d06b)
-    (property "Reference" "#PWR0165" (at 158.75 53.34 0)
+    (property "Reference" "#PWR065" (at 158.75 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 158.75 52.07 0)
@@ -2311,7 +2315,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0165") (unit 1)
+          (reference "#PWR065") (unit 1)
         )
       )
     )
@@ -2320,7 +2324,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 27.94 33.02 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 287f0451-ebb4-4489-89f1-709c7768ac97)
-    (property "Reference" "J4" (at 27.94 26.67 0)
+    (property "Reference" "J3" (at 27.94 26.67 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "OSTYK42102030" (at 27.94 29.21 0)
@@ -2337,37 +2341,38 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "J4") (unit 1)
+          (reference "J3") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "charging_on_the_pad:TPS562201DDCR") (at 69.85 96.52 0) (unit 1)
+  (symbol (lib_id "pspice:INDUCTOR") (at 107.95 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 2e1f5f4c-af0e-429e-a091-4403bf9441d9)
-    (property "Reference" "U4" (at 76.2 91.44 0)
+    (uuid 32f78bcc-1236-4c02-bc6c-60440700a627)
+    (property "Reference" "L2" (at 107.95 92.71 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "TPS562201DDCR" (at 76.2 93.98 0)
+    (property "Value" "3.3uH, DR74-3R3-R" (at 107.95 95.25 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" (at 69.85 96.52 0)
+    (property "Footprint" "charging_on_the_pad:DR74-3R3-R" (at 107.95 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 69.85 96.52 0)
+    (property "Datasheet" "~" (at 107.95 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b8af1cbf-6927-43b5-954e-5c3bab1d25ab))
-    (pin "2" (uuid 3fa1c120-c724-44e0-bf55-6df17eea785f))
-    (pin "3" (uuid ba651b68-b25e-4297-8994-ee10a0b2eac4))
-    (pin "4" (uuid 834f42fd-0ecf-4796-b2cb-914315a43b68))
-    (pin "5" (uuid 77c65ef1-701f-4244-9b40-7fc1b422228a))
-    (pin "6" (uuid 58f77be9-9564-41df-9395-121d6ff9b5c1))
+    (pin "1" (uuid 3f0ebcd5-553c-409a-9a9e-3ac7e9666d00))
+    (pin "2" (uuid 54cef483-6dfb-4431-b4ac-e80e02c5c84b))
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "U4") (unit 1)
+          (reference "L2") (unit 1)
+        )
+      )
+      (project "Power"
+        (path "/e30ade95-3ad7-4cab-af49-ad0660a5d3be"
+          (reference "L?") (unit 1)
         )
       )
     )
@@ -2376,7 +2381,7 @@
   (symbol (lib_id "Device:C") (at 158.75 43.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 331f9ad1-a25a-45da-b1e4-a646b262add9)
-    (property "Reference" "C28" (at 162.56 41.9099 0)
+    (property "Reference" "C30" (at 162.56 41.9099 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF" (at 162.56 44.4499 0)
@@ -2393,7 +2398,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "C28") (unit 1)
+          (reference "C30") (unit 1)
         )
       )
     )
@@ -2402,7 +2407,7 @@
   (symbol (lib_id "power:GND") (at 147.32 46.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 34d54b50-a2c7-4d71-a467-b9eebbfcb3b9)
-    (property "Reference" "#PWR0164" (at 147.32 53.34 0)
+    (property "Reference" "#PWR064" (at 147.32 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 147.32 52.07 0)
@@ -2418,7 +2423,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0164") (unit 1)
+          (reference "#PWR064") (unit 1)
         )
       )
     )
@@ -2427,7 +2432,7 @@
   (symbol (lib_id "power:GND") (at 219.71 49.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 352ea3b3-d632-4894-af41-f875c11fed6b)
-    (property "Reference" "#PWR0163" (at 219.71 55.88 0)
+    (property "Reference" "#PWR068" (at 219.71 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 219.71 53.975 0)
@@ -2443,7 +2448,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0163") (unit 1)
+          (reference "#PWR068") (unit 1)
         )
       )
     )
@@ -2452,7 +2457,7 @@
   (symbol (lib_id "power:VCC") (at 24.13 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 36a6b4c0-7080-4b75-a474-508b522544fb)
-    (property "Reference" "#PWR0173" (at 24.13 100.33 0)
+    (property "Reference" "#PWR044" (at 24.13 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VCC" (at 24.13 91.44 0)
@@ -2468,7 +2473,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0173") (unit 1)
+          (reference "#PWR044") (unit 1)
         )
       )
     )
@@ -2507,7 +2512,7 @@
   (symbol (lib_id "power:+BATT") (at 76.2 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 416bacfc-9399-4e75-b9bb-a4a75dd936df)
-    (property "Reference" "#PWR0151" (at 76.2 41.91 0)
+    (property "Reference" "#PWR056" (at 76.2 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 76.2 33.02 0)
@@ -2523,7 +2528,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0151") (unit 1)
+          (reference "#PWR056") (unit 1)
         )
       )
     )
@@ -2532,7 +2537,7 @@
   (symbol (lib_id "Device:C") (at 44.45 166.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 41bdd881-9e08-47cc-99b2-16757f01dda5)
-    (property "Reference" "C19" (at 48.26 165.1 0)
+    (property "Reference" "C20" (at 48.26 165.1 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 48.26 167.64 0)
@@ -2549,7 +2554,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "C19") (unit 1)
+          (reference "C20") (unit 1)
         )
       )
     )
@@ -2558,7 +2563,7 @@
   (symbol (lib_id "power:GND") (at 44.45 171.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 41d3f012-1871-4eeb-9bfd-100cdf12c7d3)
-    (property "Reference" "#PWR0156" (at 44.45 177.8 0)
+    (property "Reference" "#PWR049" (at 44.45 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 44.45 176.53 0)
@@ -2574,7 +2579,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0156") (unit 1)
+          (reference "#PWR049") (unit 1)
         )
       )
     )
@@ -2610,7 +2615,7 @@
   (symbol (lib_id "power:GND") (at 120.65 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4572dd25-d22b-4dc9-939f-4c8d07f3adf9)
-    (property "Reference" "#PWR0168" (at 120.65 128.27 0)
+    (property "Reference" "#PWR059" (at 120.65 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 120.65 127 0)
@@ -2626,7 +2631,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0168") (unit 1)
+          (reference "#PWR059") (unit 1)
         )
       )
     )
@@ -2635,7 +2640,7 @@
   (symbol (lib_id "Device:C") (at 40.64 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4c9b935b-3e8f-462c-9587-dd6fadd4f6f8)
-    (property "Reference" "C22" (at 44.45 104.1399 0)
+    (property "Reference" "C19" (at 44.45 104.1399 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF" (at 44.45 106.6799 0)
@@ -2652,7 +2657,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "C22") (unit 1)
+          (reference "C19") (unit 1)
         )
       )
     )
@@ -2661,7 +2666,7 @@
   (symbol (lib_id "power:GND") (at 55.88 171.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 51d05dd1-bf2a-4191-98fd-3e55f2756abb)
-    (property "Reference" "#PWR0158" (at 55.88 177.8 0)
+    (property "Reference" "#PWR051" (at 55.88 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 55.88 176.53 0)
@@ -2677,7 +2682,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0158") (unit 1)
+          (reference "#PWR051") (unit 1)
         )
       )
     )
@@ -2686,7 +2691,7 @@
   (symbol (lib_id "charging_on_the_pad:+5V_SW") (at 278.13 21.59 0) (unit 1)
     (in_bom no) (on_board no) (dnp no)
     (uuid 536a5ac9-8a1b-45af-9c38-f32a5acbecf2)
-    (property "Reference" "#PWR0146" (at 285.115 17.145 0)
+    (property "Reference" "#PWR072" (at 285.115 17.145 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V_SW" (at 274.32 16.51 0)
@@ -2702,7 +2707,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0146") (unit 1)
+          (reference "#PWR072") (unit 1)
         )
       )
     )
@@ -2711,7 +2716,7 @@
   (symbol (lib_id "power:+5V") (at 240.03 21.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5af54a4f-437d-4876-ba9e-7ea53b80269b)
-    (property "Reference" "#PWR0149" (at 240.03 25.4 0)
+    (property "Reference" "#PWR070" (at 240.03 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 240.03 17.78 0)
@@ -2727,7 +2732,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0149") (unit 1)
+          (reference "#PWR070") (unit 1)
         )
       )
     )
@@ -2736,7 +2741,7 @@
   (symbol (lib_id "Device:R_US") (at 120.65 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5e9cd572-43e8-4dee-8590-6b8e057dcca7)
-    (property "Reference" "R18" (at 123.19 104.1399 0)
+    (property "Reference" "R19" (at 123.19 104.1399 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "56.2k" (at 123.19 106.6799 0)
@@ -2753,7 +2758,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "R18") (unit 1)
+          (reference "R19") (unit 1)
         )
       )
     )
@@ -2762,7 +2767,7 @@
   (symbol (lib_id "power:GND") (at 129.54 184.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 60c2dace-ad1b-4989-8f2e-bc506a1c2981)
-    (property "Reference" "#PWR0169" (at 129.54 190.5 0)
+    (property "Reference" "#PWR060" (at 129.54 190.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 129.54 189.23 0)
@@ -2778,7 +2783,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0169") (unit 1)
+          (reference "#PWR060") (unit 1)
         )
       )
     )
@@ -2787,7 +2792,7 @@
   (symbol (lib_id "power:GND") (at 21.59 171.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 65f6f97c-0bcc-4611-8a39-4bde92390b3f)
-    (property "Reference" "#PWR0157" (at 21.59 177.8 0)
+    (property "Reference" "#PWR043" (at 21.59 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 21.59 176.53 0)
@@ -2803,7 +2808,33 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0157") (unit 1)
+          (reference "#PWR043") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "pspice:INDUCTOR") (at 115.57 161.29 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 73fdb0af-783f-4af4-9bc5-040fbdf68e3a)
+    (property "Reference" "L3" (at 115.57 154.94 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "118-SRP1038CC-100M" (at 115.57 157.48 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Inductor_SMD:L_Bourns_SRP1038C_10.0x10.0mm" (at 115.57 161.29 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/SRP1038CC.pdf" (at 115.57 161.29 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c40611b5-884a-4411-b19d-122f4c680fc0))
+    (pin "2" (uuid 664f12df-070e-4937-b10e-185332104469))
+    (instances
+      (project "charging_on_the_pad"
+        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
+          (reference "L3") (unit 1)
         )
       )
     )
@@ -2812,7 +2843,7 @@
   (symbol (lib_id "Device:R_US") (at 154.94 161.29 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 76c6d02e-8786-4405-9de5-8b2b9c5af02f)
-    (property "Reference" "R32" (at 154.94 154.94 90)
+    (property "Reference" "R24" (at 154.94 154.94 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0.01R" (at 154.94 157.48 90)
@@ -2829,7 +2860,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "R32") (unit 1)
+          (reference "R24") (unit 1)
         )
       )
     )
@@ -2838,7 +2869,7 @@
   (symbol (lib_id "Device:C") (at 21.59 166.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 87d16ee3-e66b-4852-94cd-7b0f86ce9b6a)
-    (property "Reference" "C17" (at 25.4 165.1 0)
+    (property "Reference" "C16" (at 25.4 165.1 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 25.4 167.64 0)
@@ -2855,7 +2886,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "C17") (unit 1)
+          (reference "C16") (unit 1)
         )
       )
     )
@@ -2864,7 +2895,7 @@
   (symbol (lib_id "Device:R_US") (at 212.09 40.64 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 89836871-592f-4522-851a-5195fa4a309e)
-    (property "Reference" "R24" (at 212.09 43.18 90)
+    (property "Reference" "R25" (at 212.09 43.18 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "120R" (at 212.09 45.72 90)
@@ -2881,7 +2912,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "R24") (unit 1)
+          (reference "R25") (unit 1)
         )
       )
     )
@@ -2890,7 +2921,7 @@
   (symbol (lib_id "power:GND") (at 74.93 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8cb005de-7c0a-4578-bee6-79a72b8f4878)
-    (property "Reference" "#PWR0172" (at 74.93 63.5 0)
+    (property "Reference" "#PWR055" (at 74.93 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 74.93 62.23 0)
@@ -2906,7 +2937,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0172") (unit 1)
+          (reference "#PWR055") (unit 1)
         )
       )
     )
@@ -2915,7 +2946,7 @@
   (symbol (lib_id "power:GND") (at 33.02 171.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 94489c8a-e146-4c28-8b84-fc344c89c7e8)
-    (property "Reference" "#PWR0159" (at 33.02 177.8 0)
+    (property "Reference" "#PWR046" (at 33.02 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 33.02 176.53 0)
@@ -2931,7 +2962,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0159") (unit 1)
+          (reference "#PWR046") (unit 1)
         )
       )
     )
@@ -2940,7 +2971,7 @@
   (symbol (lib_id "Device:C") (at 29.21 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9597b76a-19cd-445a-9c61-512a53408e69)
-    (property "Reference" "C20" (at 33.02 104.1399 0)
+    (property "Reference" "C17" (at 33.02 104.1399 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF" (at 33.02 106.6799 0)
@@ -2957,7 +2988,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "C20") (unit 1)
+          (reference "C17") (unit 1)
         )
       )
     )
@@ -2966,7 +2997,7 @@
   (symbol (lib_id "charging_on_the_pad:+13V") (at 166.37 161.29 0) (unit 1)
     (in_bom no) (on_board no) (dnp no)
     (uuid 96d1f4ff-84d1-4658-8eca-f1ae05c9e6fb)
-    (property "Reference" "#U0104" (at 173.99 158.75 0)
+    (property "Reference" "#U03" (at 173.99 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+13V" (at 163.83 157.48 0)
@@ -2982,7 +3013,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#U0104") (unit 1)
+          (reference "#U03") (unit 1)
         )
       )
     )
@@ -3014,36 +3045,10 @@
     )
   )
 
-  (symbol (lib_id "pspice:INDUCTOR") (at 107.95 99.06 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid a8ef46d1-db9d-46c2-86b2-d57be175e86d)
-    (property "Reference" "L2" (at 107.95 92.71 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "118-SRP1038CC-100M" (at 107.95 95.25 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Inductor_SMD:L_Bourns_SRP1038C_10.0x10.0mm" (at 107.95 99.06 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/SRP1038CC.pdf" (at 107.95 99.06 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 83875966-717a-4afa-a400-e8020da6e202))
-    (pin "2" (uuid fc5bdb8d-84c0-4bf2-b74e-664399785620))
-    (instances
-      (project "charging_on_the_pad"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "L2") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:R_US") (at 116.84 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ac87d7b2-bce0-4c9d-b85f-4441e5336e1f)
-    (property "Reference" "R17" (at 119.38 55.8799 0)
+    (property "Reference" "R18" (at 119.38 55.8799 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "47k" (at 119.38 58.4199 0)
@@ -3060,7 +3065,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "R17") (unit 1)
+          (reference "R18") (unit 1)
         )
       )
     )
@@ -3069,7 +3074,7 @@
   (symbol (lib_id "power:+BATT") (at 72.39 48.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid adb41589-9337-485c-8fb7-414dce0ec9c5)
-    (property "Reference" "#PWR0176" (at 72.39 52.07 0)
+    (property "Reference" "#PWR054" (at 72.39 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 72.39 43.18 0)
@@ -3085,7 +3090,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0176") (unit 1)
+          (reference "#PWR054") (unit 1)
         )
       )
     )
@@ -3146,7 +3151,7 @@
   (symbol (lib_id "Device:C") (at 132.08 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b6bd7dae-efa6-465e-9ae0-a97664b36c9d)
-    (property "Reference" "C27" (at 135.89 109.2199 0)
+    (property "Reference" "C26" (at 135.89 109.2199 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "22uF" (at 135.89 111.7599 0)
@@ -3163,7 +3168,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "C27") (unit 1)
+          (reference "C26") (unit 1)
         )
       )
     )
@@ -3172,7 +3177,7 @@
   (symbol (lib_id "power:GND") (at 83.82 64.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b7ad7627-3b0d-45b5-acf7-9ef122b6c2cc)
-    (property "Reference" "#PWR0171" (at 83.82 71.12 0)
+    (property "Reference" "#PWR057" (at 83.82 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 83.82 69.215 0)
@@ -3188,7 +3193,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0171") (unit 1)
+          (reference "#PWR057") (unit 1)
         )
       )
     )
@@ -3197,7 +3202,7 @@
   (symbol (lib_id "power:GND") (at 132.08 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c58f2706-fd05-44ef-921f-601721e12fb0)
-    (property "Reference" "#PWR0160" (at 132.08 128.27 0)
+    (property "Reference" "#PWR061" (at 132.08 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 132.08 127 0)
@@ -3213,7 +3218,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0160") (unit 1)
+          (reference "#PWR061") (unit 1)
         )
       )
     )
@@ -3222,7 +3227,7 @@
   (symbol (lib_id "Device:C") (at 54.61 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c8caef69-4e88-4ace-829b-8ac03c216a65)
-    (property "Reference" "C33" (at 58.42 104.1399 0)
+    (property "Reference" "C21" (at 58.42 104.1399 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1uF" (at 58.42 106.6799 0)
@@ -3239,7 +3244,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "C33") (unit 1)
+          (reference "C21") (unit 1)
         )
       )
     )
@@ -3248,7 +3253,7 @@
   (symbol (lib_id "Device:C") (at 144.78 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cc678a54-a64e-4386-bce3-65ab90c57775)
-    (property "Reference" "C30" (at 148.59 109.2199 0)
+    (property "Reference" "C28" (at 148.59 109.2199 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "22uF" (at 148.59 111.7599 0)
@@ -3265,7 +3270,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "C30") (unit 1)
+          (reference "C28") (unit 1)
         )
       )
     )
@@ -3274,7 +3279,7 @@
   (symbol (lib_id "Device:R_US") (at 120.65 115.57 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cec7bee1-4c8f-48cc-a88b-a9cb6ec82ad5)
-    (property "Reference" "R19" (at 123.19 114.2999 0)
+    (property "Reference" "R20" (at 123.19 114.2999 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 123.19 116.8399 0)
@@ -3291,7 +3296,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "R19") (unit 1)
+          (reference "R20") (unit 1)
         )
       )
     )
@@ -3300,7 +3305,7 @@
   (symbol (lib_id "Device:R_US") (at 87.63 39.37 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d137de3d-3f89-458c-907f-186278240069)
-    (property "Reference" "R33" (at 87.63 33.02 90)
+    (property "Reference" "R17" (at 87.63 33.02 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0.01R" (at 87.63 35.56 90)
@@ -3317,7 +3322,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "R33") (unit 1)
+          (reference "R17") (unit 1)
         )
       )
     )
@@ -3326,7 +3331,7 @@
   (symbol (lib_id "Device:R_US") (at 129.54 177.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d3db6dea-327b-4b37-b88b-a35d1a134eed)
-    (property "Reference" "R21" (at 132.08 176.53 0)
+    (property "Reference" "R22" (at 132.08 176.53 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4k" (at 132.08 179.07 0)
@@ -3343,7 +3348,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "R21") (unit 1)
+          (reference "R22") (unit 1)
         )
       )
     )
@@ -3352,7 +3357,7 @@
   (symbol (lib_id "Device:C") (at 147.32 43.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d510c21b-f3ea-4ef2-bd40-74c44c3583fa)
-    (property "Reference" "C26" (at 151.13 41.9099 0)
+    (property "Reference" "C29" (at 151.13 41.9099 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF" (at 151.13 44.4499 0)
@@ -3369,7 +3374,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "C26") (unit 1)
+          (reference "C29") (unit 1)
         )
       )
     )
@@ -3378,7 +3383,7 @@
   (symbol (lib_id "Device:R_US") (at 129.54 167.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d9b92201-061c-48af-a242-a13f452c0fb2)
-    (property "Reference" "R20" (at 132.08 166.37 0)
+    (property "Reference" "R21" (at 132.08 166.37 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "83k" (at 132.08 168.91 0)
@@ -3395,7 +3400,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "R20") (unit 1)
+          (reference "R21") (unit 1)
         )
       )
     )
@@ -3404,7 +3409,7 @@
   (symbol (lib_id "power:GND") (at 40.64 111.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dc784ff2-46be-4ede-9174-c55f4e095c89)
-    (property "Reference" "#PWR0153" (at 40.64 118.11 0)
+    (property "Reference" "#PWR048" (at 40.64 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 40.64 116.84 0)
@@ -3420,7 +3425,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0153") (unit 1)
+          (reference "#PWR048") (unit 1)
         )
       )
     )
@@ -3429,7 +3434,7 @@
   (symbol (lib_id "power:+24V") (at 16.51 158.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dd0e4f2e-8b63-4fbe-9a12-88e2046ca296)
-    (property "Reference" "#PWR0155" (at 16.51 162.56 0)
+    (property "Reference" "#PWR042" (at 16.51 162.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+24V" (at 16.51 153.67 0)
@@ -3445,7 +3450,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0155") (unit 1)
+          (reference "#PWR042") (unit 1)
         )
       )
     )
@@ -3481,7 +3486,7 @@
   (symbol (lib_id "power:GND") (at 140.97 184.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ef5ccf7b-1b49-424a-bf2e-2e8108acc851)
-    (property "Reference" "#PWR0170" (at 140.97 190.5 0)
+    (property "Reference" "#PWR062" (at 140.97 190.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 140.97 189.23 0)
@@ -3497,7 +3502,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0170") (unit 1)
+          (reference "#PWR062") (unit 1)
         )
       )
     )
@@ -3532,7 +3537,7 @@
   (symbol (lib_id "power:GND") (at 35.56 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f3f2f835-c2e4-4880-bd1e-d26ad48f2ee5)
-    (property "Reference" "#PWR0174" (at 35.56 43.18 0)
+    (property "Reference" "#PWR047" (at 35.56 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 35.56 41.91 0)
@@ -3548,7 +3553,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0174") (unit 1)
+          (reference "#PWR047") (unit 1)
         )
       )
     )
@@ -3583,7 +3588,7 @@
   (symbol (lib_name "+13V_1") (lib_id "charging_on_the_pad:+13V") (at 116.84 29.21 0) (unit 1)
     (in_bom no) (on_board no) (dnp no)
     (uuid f51f9216-7ed4-407c-8f47-7be385ae7bfd)
-    (property "Reference" "#U01" (at 124.46 26.67 0)
+    (property "Reference" "#U02" (at 124.46 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+13V" (at 114.3 25.4 0)
@@ -3599,7 +3604,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#U01") (unit 1)
+          (reference "#U02") (unit 1)
         )
       )
     )
@@ -3640,7 +3645,7 @@
   (symbol (lib_id "Device:R_US") (at 219.71 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f8f9b85f-66e9-4a59-a738-a8f3c1f9e4d7)
-    (property "Reference" "R25" (at 222.25 44.4499 0)
+    (property "Reference" "R26" (at 222.25 44.4499 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 222.25 46.9899 0)
@@ -3657,7 +3662,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "R25") (unit 1)
+          (reference "R26") (unit 1)
         )
       )
     )
@@ -3666,7 +3671,7 @@
   (symbol (lib_id "power:+5V") (at 254 21.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fb4cc355-0726-4b3b-bd2e-eecaf0c76558)
-    (property "Reference" "#PWR0147" (at 254 25.4 0)
+    (property "Reference" "#PWR071" (at 254 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 254 17.78 0)
@@ -3682,7 +3687,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR0147") (unit 1)
+          (reference "#PWR071") (unit 1)
         )
       )
     )
@@ -3691,7 +3696,7 @@
   (symbol (lib_id "Device:R_US") (at 240.03 26.67 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fd05bc1f-22e7-4d57-8b4a-fbc40f5f3126)
-    (property "Reference" "R26" (at 242.57 25.3999 0)
+    (property "Reference" "R27" (at 242.57 25.3999 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 242.57 27.9399 0)
@@ -3708,7 +3713,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "R26") (unit 1)
+          (reference "R27") (unit 1)
         )
       )
     )
@@ -3717,7 +3722,7 @@
   (symbol (lib_id "power:GND") (at 54.61 111.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fe3aa66d-3f1c-4b7d-8128-b947dff2a2ea)
-    (property "Reference" "#PWR04" (at 54.61 118.11 0)
+    (property "Reference" "#PWR050" (at 54.61 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 54.61 116.84 0)
@@ -3733,7 +3738,7 @@
     (instances
       (project "charging_on_the_pad"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/71baefca-6493-48ee-98d6-64ce84b4b2e9"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR050") (unit 1)
         )
       )
     )
