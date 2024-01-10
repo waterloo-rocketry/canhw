@@ -1326,44 +1326,6 @@
     )
   )
 
-  (symbol (lib_id "power:+5V") (at 118.11 63.5 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 0fddeeab-065c-4669-af35-47e8524895c0)
-    (property "Reference" "#PWR032" (at 118.11 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 118.491 59.1058 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 118.11 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 118.11 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ff26686e-3294-4df3-b00d-a0c4794b1d63))
-    (instances
-      (project "Propulsion Board"
-        (path "/86ef6f38-2ca7-486c-b303-e50327233806/2a5b7a2b-3ae2-414c-8e1d-0d79dc80db2c"
-          (reference "#PWR032") (unit 1)
-        )
-        (path "/86ef6f38-2ca7-486c-b303-e50327233806/bf343782-99a1-4812-8819-35e437fe11fb"
-          (reference "#PWR048") (unit 1)
-        )
-      )
-      (project "PropulsionBoard"
-        (path "/88c97d1e-364a-4c8a-b8a3-08e5c7306646/b23f8977-7563-46e0-bcaa-7fcc400b574c"
-          (reference "#PWR024") (unit 1)
-        )
-      )
-      (project "sensors"
-        (path "/d5641ac9-9be7-46bf-90b3-6c83d852b5ba/00000000-0000-0000-0000-00005bb129a7"
-          (reference "#PWR041") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:R_US") (at 204.47 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 14132665-23b5-48d8-a781-cfe2fa881fec)
@@ -1482,13 +1444,13 @@
   (symbol (lib_id "Device:Fuse") (at 85.09 54.61 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1ad89013-0eb7-4e1d-bcad-c17d52b10187)
-    (property "Reference" "F1" (at 85.09 49.6062 90)
+    (property "Reference" "F1" (at 83.82 49.53 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "2A" (at 85.09 51.9176 90)
+    (property "Value" "2A (FUSE 0805-FF PW 2A0)" (at 83.82 52.07 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "canhw_footprints:Fuseholder_36-3557-15-ND" (at 85.09 52.832 90)
+    (property "Footprint" "Fuse:Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder" (at 85.09 52.832 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 85.09 54.61 0)
@@ -1639,7 +1601,7 @@
     (property "Reference" "R31" (at 101.6 49.403 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "200 mR" (at 101.6 51.7144 90)
+    (property "Value" "20 mR" (at 102.87 52.07 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" (at 101.346 55.626 90)
@@ -2139,6 +2101,44 @@
     )
   )
 
+  (symbol (lib_id "power:+3V3") (at 118.11 124.46 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid b6dbc4dd-9917-4991-aa7e-b92d51846ca6)
+    (property "Reference" "#PWR043" (at 118.11 128.27 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 118.491 120.0658 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 118.11 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 118.11 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4f932336-c8d7-4522-b207-84120d320062))
+    (instances
+      (project "Propulsion Board"
+        (path "/86ef6f38-2ca7-486c-b303-e50327233806/2a5b7a2b-3ae2-414c-8e1d-0d79dc80db2c"
+          (reference "#PWR043") (unit 1)
+        )
+        (path "/86ef6f38-2ca7-486c-b303-e50327233806/bf343782-99a1-4812-8819-35e437fe11fb"
+          (reference "#PWR059") (unit 1)
+        )
+      )
+      (project "PropulsionBoard"
+        (path "/88c97d1e-364a-4c8a-b8a3-08e5c7306646/b23f8977-7563-46e0-bcaa-7fcc400b574c"
+          (reference "#PWR026") (unit 1)
+        )
+      )
+      (project "sensors"
+        (path "/d5641ac9-9be7-46bf-90b3-6c83d852b5ba/00000000-0000-0000-0000-00005bb129a7"
+          (reference "#PWR050") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 107.95 87.63 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c1803b01-0347-4b0d-b30f-e52a0b083037)
@@ -2221,7 +2221,7 @@
     (property "Reference" "R32" (at 101.6 110.363 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "200 mR" (at 101.6 112.6744 90)
+    (property "Value" "100 mR" (at 101.6 112.6744 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" (at 101.346 116.586 90)
@@ -2249,6 +2249,44 @@
       (project "sensors"
         (path "/d5641ac9-9be7-46bf-90b3-6c83d852b5ba/00000000-0000-0000-0000-00005bb129a7"
           (reference "R32") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3V3") (at 118.11 63.5 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid ca967e6b-68cd-42e0-8973-2ab9dbb57675)
+    (property "Reference" "#PWR043" (at 118.11 67.31 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 118.491 59.1058 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 118.11 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 118.11 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 1febbd60-52b8-40f6-97a9-45998450b690))
+    (instances
+      (project "Propulsion Board"
+        (path "/86ef6f38-2ca7-486c-b303-e50327233806/2a5b7a2b-3ae2-414c-8e1d-0d79dc80db2c"
+          (reference "#PWR043") (unit 1)
+        )
+        (path "/86ef6f38-2ca7-486c-b303-e50327233806/bf343782-99a1-4812-8819-35e437fe11fb"
+          (reference "#PWR059") (unit 1)
+        )
+      )
+      (project "PropulsionBoard"
+        (path "/88c97d1e-364a-4c8a-b8a3-08e5c7306646/b23f8977-7563-46e0-bcaa-7fcc400b574c"
+          (reference "#PWR024") (unit 1)
+        )
+      )
+      (project "sensors"
+        (path "/d5641ac9-9be7-46bf-90b3-6c83d852b5ba/00000000-0000-0000-0000-00005bb129a7"
+          (reference "#PWR050") (unit 1)
         )
       )
     )
@@ -2439,44 +2477,6 @@
       (project "sensors"
         (path "/d5641ac9-9be7-46bf-90b3-6c83d852b5ba/00000000-0000-0000-0000-00005bb129a7"
           (reference "TP13") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 118.11 124.46 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid fbe503f1-30ba-4a2c-99c2-f3c0b45c15a6)
-    (property "Reference" "#PWR034" (at 118.11 128.27 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 118.491 120.0658 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 118.11 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 118.11 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 569fa1e0-d0a6-4e84-a276-0246e7a88052))
-    (instances
-      (project "Propulsion Board"
-        (path "/86ef6f38-2ca7-486c-b303-e50327233806/2a5b7a2b-3ae2-414c-8e1d-0d79dc80db2c"
-          (reference "#PWR034") (unit 1)
-        )
-        (path "/86ef6f38-2ca7-486c-b303-e50327233806/bf343782-99a1-4812-8819-35e437fe11fb"
-          (reference "#PWR050") (unit 1)
-        )
-      )
-      (project "PropulsionBoard"
-        (path "/88c97d1e-364a-4c8a-b8a3-08e5c7306646/b23f8977-7563-46e0-bcaa-7fcc400b574c"
-          (reference "#PWR026") (unit 1)
-        )
-      )
-      (project "sensors"
-        (path "/d5641ac9-9be7-46bf-90b3-6c83d852b5ba/00000000-0000-0000-0000-00005bb129a7"
-          (reference "#PWR043") (unit 1)
         )
       )
     )

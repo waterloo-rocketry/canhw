@@ -62,14 +62,14 @@
         )
       )
     )
-    (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "R" (at 2.032 0 90)
+    (symbol "Device:R_US" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "R" (at 2.54 0 90)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "R" (at 0 0 90)
+      (property "Value" "R_US" (at -2.54 0 90)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Footprint" "" (at -1.778 0 90)
+      (property "Footprint" "" (at 1.016 -0.254 90)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Datasheet" "~" (at 0 0 0)
@@ -78,19 +78,64 @@
       (property "ki_keywords" "R res resistor" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Resistor" (at 0 0 0)
+      (property "ki_description" "Resistor, US symbol" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_fp_filters" "R_*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "R_0_1"
-        (rectangle (start -1.016 -2.54) (end 1.016 2.54)
-          (stroke (width 0.254) (type default))
+      (symbol "R_US_0_1"
+        (polyline
+          (pts
+            (xy 0 -2.286)
+            (xy 0 -2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.286)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 -0.762)
+            (xy 1.016 -1.143)
+            (xy 0 -1.524)
+            (xy -1.016 -1.905)
+            (xy 0 -2.286)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0.762)
+            (xy 1.016 0.381)
+            (xy 0 0)
+            (xy -1.016 -0.381)
+            (xy 0 -0.762)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.286)
+            (xy 1.016 1.905)
+            (xy 0 1.524)
+            (xy -1.016 1.143)
+            (xy 0 0.762)
+          )
+          (stroke (width 0) (type default))
           (fill (type none))
         )
       )
-      (symbol "R_1_1"
+      (symbol "R_US_1_1"
         (pin passive line (at 0 3.81 270) (length 1.27)
           (name "~" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
@@ -367,7 +412,7 @@
   )
 
   (junction (at 154.94 109.22) (diameter 0) (color 0 0 0 0)
-    (uuid 4aabec67-9dc0-451d-94bd-bf218e7cda2c)
+    (uuid 0ef9263e-8804-41af-bc85-26c589af2be8)
   )
   (junction (at 154.94 90.17) (diameter 0) (color 0 0 0 0)
     (uuid 58d1b67a-d0d1-4856-9d13-ad3facd02ca3)
@@ -448,35 +493,27 @@
     (uuid 09c29a02-eccb-4eed-bfaf-6bd0370ff919)
   )
 
-  (symbol (lib_id "Device:R") (at 154.94 105.41 0) (mirror x) (unit 1)
+  (symbol (lib_id "Device:R_US") (at 154.94 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
-    (uuid 01aae488-81e0-4acf-9c02-2ed3cae9ffac)
-    (property "Reference" "R25" (at 152.654 104.4702 0)
-      (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 40910cc0-9b45-43be-834c-b314248915dc)
+    (property "Reference" "R47" (at 156.6672 104.2416 0)
+      (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "TBD" (at 152.4 106.68 0)
-      (effects (font (size 1.27 1.27)) (justify right))
+    (property "Value" "TBD" (at 156.6672 106.553 0)
+      (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 153.162 105.41 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 155.956 105.664 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 154.94 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f2be1467-6cd1-4d40-9151-3030a3fcf8d8))
-    (pin "2" (uuid 8729121c-5c78-4992-9ebe-0c5157572ac1))
+    (pin "1" (uuid 037569ec-1bdc-42e1-b140-47f92c2de835))
+    (pin "2" (uuid 04f0ed6b-e6db-47ce-a3c9-151872b09df4))
     (instances
-      (project "Propulsion Board"
-        (path "/86ef6f38-2ca7-486c-b303-e50327233806/f21c8aca-a129-4c68-8870-6884fb809a07"
-          (reference "R25") (unit 1)
-        )
-      )
       (project "PropulsionBoard"
-        (path "/88c97d1e-364a-4c8a-b8a3-08e5c7306646/d8d6c0f2-25e3-4e03-a317-b95fc4402aed"
-          (reference "R?") (unit 1)
-        )
-        (path "/88c97d1e-364a-4c8a-b8a3-08e5c7306646/d8d6c0f2-25e3-4e03-a317-b95fc4402aed/084e61f0-d5dd-4d05-8ec0-1fbad9c86dca"
-          (reference "R16") (unit 1)
+        (path "/88c97d1e-364a-4c8a-b8a3-08e5c7306646/4e2b4277-1aab-4bb4-bea2-f8a4db26a376"
+          (reference "R47") (unit 1)
         )
         (path "/88c97d1e-364a-4c8a-b8a3-08e5c7306646/d8d6c0f2-25e3-4e03-a317-b95fc4402aed/391c8613-08b3-4795-ac85-3f32cca9774f"
           (reference "R13") (unit 1)
@@ -485,9 +522,46 @@
           (reference "R19") (unit 1)
         )
       )
-      (project "sensors"
-        (path "/d5641ac9-9be7-46bf-90b3-6c83d852b5ba/00000000-0000-0000-0000-00005c970b4c"
-          (reference "R25") (unit 1)
+      (project "actuator"
+        (path "/e7472985-70e4-4471-a07f-511a0c5ddc2a/00000000-0000-0000-0000-00005dbb5457"
+          (reference "R9") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R_US") (at 154.94 115.57 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 46f5bad1-f97c-4acc-a276-578a8ab55a04)
+    (property "Reference" "R47" (at 156.6672 114.4016 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "TBD" (at 156.6672 116.713 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 155.956 115.824 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 154.94 115.57 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid fc961016-0041-4120-80fa-0ea954269d04))
+    (pin "2" (uuid 2efd5aa5-1da3-4e54-ad86-d149443f5931))
+    (instances
+      (project "PropulsionBoard"
+        (path "/88c97d1e-364a-4c8a-b8a3-08e5c7306646/4e2b4277-1aab-4bb4-bea2-f8a4db26a376"
+          (reference "R47") (unit 1)
+        )
+        (path "/88c97d1e-364a-4c8a-b8a3-08e5c7306646/d8d6c0f2-25e3-4e03-a317-b95fc4402aed/391c8613-08b3-4795-ac85-3f32cca9774f"
+          (reference "R18") (unit 1)
+        )
+        (path "/88c97d1e-364a-4c8a-b8a3-08e5c7306646/d8d6c0f2-25e3-4e03-a317-b95fc4402aed/589405cf-bb4e-4fc0-8d58-22dfbd0ff0b5"
+          (reference "R20") (unit 1)
+        )
+      )
+      (project "actuator"
+        (path "/e7472985-70e4-4471-a07f-511a0c5ddc2a/00000000-0000-0000-0000-00005dbb5457"
+          (reference "R9") (unit 1)
         )
       )
     )
@@ -552,7 +626,7 @@
     (property "Value" "+12V" (at 147.32 85.09 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 144.78 83.82 0)
+    (property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" (at 144.78 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 144.78 83.82 0)
@@ -587,7 +661,7 @@
     (property "Value" "+5V" (at 157.48 85.09 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 154.94 83.82 0)
+    (property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" (at 154.94 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 154.94 83.82 0)
@@ -608,51 +682,6 @@
         )
         (path "/88c97d1e-364a-4c8a-b8a3-08e5c7306646/d8d6c0f2-25e3-4e03-a317-b95fc4402aed/589405cf-bb4e-4fc0-8d58-22dfbd0ff0b5"
           (reference "JP11") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 154.94 115.57 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 7c6fe64b-46ee-4897-8c14-d84b2b8d107e)
-    (property "Reference" "R26" (at 160.909 113.9952 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "TBD" (at 160.909 116.5352 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 153.162 115.57 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 154.94 115.57 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 571f2803-07b9-42ca-b5a3-56e22e7041f5))
-    (pin "2" (uuid 633eecab-81a9-4953-b62c-a3e437949866))
-    (instances
-      (project "Propulsion Board"
-        (path "/86ef6f38-2ca7-486c-b303-e50327233806/f21c8aca-a129-4c68-8870-6884fb809a07"
-          (reference "R26") (unit 1)
-        )
-      )
-      (project "PropulsionBoard"
-        (path "/88c97d1e-364a-4c8a-b8a3-08e5c7306646/d8d6c0f2-25e3-4e03-a317-b95fc4402aed"
-          (reference "R?") (unit 1)
-        )
-        (path "/88c97d1e-364a-4c8a-b8a3-08e5c7306646/d8d6c0f2-25e3-4e03-a317-b95fc4402aed/084e61f0-d5dd-4d05-8ec0-1fbad9c86dca"
-          (reference "R17") (unit 1)
-        )
-        (path "/88c97d1e-364a-4c8a-b8a3-08e5c7306646/d8d6c0f2-25e3-4e03-a317-b95fc4402aed/391c8613-08b3-4795-ac85-3f32cca9774f"
-          (reference "R18") (unit 1)
-        )
-        (path "/88c97d1e-364a-4c8a-b8a3-08e5c7306646/d8d6c0f2-25e3-4e03-a317-b95fc4402aed/589405cf-bb4e-4fc0-8d58-22dfbd0ff0b5"
-          (reference "R20") (unit 1)
-        )
-      )
-      (project "sensors"
-        (path "/d5641ac9-9be7-46bf-90b3-6c83d852b5ba/00000000-0000-0000-0000-00005c970b4c"
-          (reference "R26") (unit 1)
         )
       )
     )
@@ -789,7 +818,7 @@
     (property "Value" "+3.3V" (at 168.91 85.09 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 166.37 83.82 0)
+    (property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" (at 166.37 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 166.37 83.82 0)
