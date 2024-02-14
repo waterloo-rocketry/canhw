@@ -5,11 +5,11 @@
   (paper "A4")
 
   (lib_symbols
-    (symbol "Connector:Screw_Terminal_01x04" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 0 5.08 0)
+    (symbol "Connector:Screw_Terminal_01x05" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "J" (at 0 7.62 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "Screw_Terminal_01x04" (at 0 -7.62 0)
+      (property "Value" "Screw_Terminal_01x05" (at 0 -7.62 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 0 0 0)
@@ -21,14 +21,14 @@
       (property "ki_keywords" "screw terminal" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
+      (property "ki_description" "Generic screw terminal, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_fp_filters" "TerminalBlock*:*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "Screw_Terminal_01x04_1_1"
-        (rectangle (start -1.27 3.81) (end 1.27 -6.35)
+      (symbol "Screw_Terminal_01x05_1_1"
+        (rectangle (start -1.27 6.35) (end 1.27 -6.35)
           (stroke (width 0.254) (type default))
           (fill (type background))
         )
@@ -74,6 +74,14 @@
         )
         (polyline
           (pts
+            (xy -0.5334 5.4102)
+            (xy 0.3302 4.572)
+          )
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
             (xy -0.3556 -4.572)
             (xy 0.508 -5.4102)
           )
@@ -104,6 +112,14 @@
           (stroke (width 0.1524) (type default))
           (fill (type none))
         )
+        (polyline
+          (pts
+            (xy -0.3556 5.588)
+            (xy 0.508 4.7498)
+          )
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
         (circle (center 0 0) (radius 0.635)
           (stroke (width 0.1524) (type default))
           (fill (type none))
@@ -112,21 +128,29 @@
           (stroke (width 0.1524) (type default))
           (fill (type none))
         )
-        (pin passive line (at -5.08 2.54 0) (length 3.81)
+        (circle (center 0 5.08) (radius 0.635)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (pin passive line (at -5.08 5.08 0) (length 3.81)
           (name "Pin_1" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at -5.08 0 0) (length 3.81)
+        (pin passive line (at -5.08 2.54 0) (length 3.81)
           (name "Pin_2" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at -5.08 -2.54 0) (length 3.81)
+        (pin passive line (at -5.08 0 0) (length 3.81)
           (name "Pin_3" (effects (font (size 1.27 1.27))))
           (number "3" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at -5.08 -5.08 0) (length 3.81)
+        (pin passive line (at -5.08 -2.54 0) (length 3.81)
           (name "Pin_4" (effects (font (size 1.27 1.27))))
           (number "4" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 -5.08 0) (length 3.81)
+          (name "Pin_5" (effects (font (size 1.27 1.27))))
+          (number "5" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -1473,7 +1497,7 @@
     (stroke (width 0) (type default))
     (uuid 281496d4-2447-4a14-b5b2-936242f97d5f)
   )
-  (wire (pts (xy 210.82 76.2) (xy 210.82 82.55))
+  (wire (pts (xy 210.82 76.2) (xy 210.82 96.52))
     (stroke (width 0) (type default))
     (uuid 29380d4c-faa5-4919-95b6-7b123efa3628)
   )
@@ -1581,6 +1605,10 @@
     (stroke (width 0) (type default))
     (uuid 6ef52233-d4b7-421f-9c59-1157d6e87e89)
   )
+  (wire (pts (xy 236.22 85.09) (xy 236.22 99.06))
+    (stroke (width 0) (type default))
+    (uuid 72017a87-2ef6-47d7-be18-b9be691cac5d)
+  )
   (wire (pts (xy 132.08 137.16) (xy 146.05 137.16))
     (stroke (width 0) (type default))
     (uuid 79adbde3-4d3a-4655-837f-7ab085d6c3de)
@@ -1605,10 +1633,6 @@
     (stroke (width 0) (type default))
     (uuid 82067ac0-358a-491f-a55f-7b3de7068f49)
   )
-  (wire (pts (xy 245.11 87.63) (xy 248.92 87.63))
-    (stroke (width 0) (type default))
-    (uuid 828111da-827c-44ea-b037-f17779dbd033)
-  )
   (wire (pts (xy 200.66 58.42) (xy 200.66 60.96))
     (stroke (width 0) (type default))
     (uuid 83777c9c-bca6-40ff-b365-f43ba059762e)
@@ -1625,9 +1649,9 @@
     (stroke (width 0) (type default))
     (uuid 871be3de-1424-43f1-9d40-b3cfa45305c6)
   )
-  (wire (pts (xy 210.82 82.55) (xy 248.92 82.55))
+  (wire (pts (xy 210.82 96.52) (xy 247.65 96.52))
     (stroke (width 0) (type default))
-    (uuid 89f75303-f8f6-4eee-b9e6-4ff5b6145788)
+    (uuid 885b5e13-3dbf-45c2-9965-06559befdaa3)
   )
   (wire (pts (xy 132.08 139.7) (xy 146.05 139.7))
     (stroke (width 0) (type default))
@@ -1644,6 +1668,14 @@
   (wire (pts (xy 101.6 138.43) (xy 101.6 143.51))
     (stroke (width 0) (type default))
     (uuid 98c1f671-c006-4e82-81cb-856874fd64bc)
+  )
+  (wire (pts (xy 232.41 93.98) (xy 232.41 102.87))
+    (stroke (width 0) (type default))
+    (uuid a2875a43-faf1-404f-867a-6a77e4b4dbcd)
+  )
+  (wire (pts (xy 243.84 91.44) (xy 247.65 91.44))
+    (stroke (width 0) (type default))
+    (uuid a5608cfb-3fd9-456e-b5c5-77bb4ddc5f06)
   )
   (wire (pts (xy 83.82 69.85) (xy 95.25 69.85))
     (stroke (width 0) (type default))
@@ -1665,6 +1697,10 @@
     (stroke (width 0) (type default))
     (uuid aeccfd8e-82cd-49db-babc-58ad36ea8a90)
   )
+  (wire (pts (xy 232.41 93.98) (xy 247.65 93.98))
+    (stroke (width 0) (type default))
+    (uuid af613a3b-b85c-4f74-94b0-588d3eb32171)
+  )
   (wire (pts (xy 105.41 128.27) (xy 107.95 128.27))
     (stroke (width 0) (type default))
     (uuid afc95b1c-c198-4708-957b-70f544d20c03)
@@ -1681,10 +1717,6 @@
     (stroke (width 0) (type default))
     (uuid b1aa00ba-32b9-4b64-8c5a-0b0bdc25d331)
   )
-  (wire (pts (xy 245.11 90.17) (xy 248.92 90.17))
-    (stroke (width 0) (type default))
-    (uuid b25ad291-400e-4905-96ef-c69671d30f67)
-  )
   (wire (pts (xy 91.44 74.93) (xy 91.44 67.31))
     (stroke (width 0) (type default))
     (uuid b2ede75a-6de1-48c1-bb6c-8ed53b3e2b14)
@@ -1700,6 +1732,10 @@
   (wire (pts (xy 200.66 88.9) (xy 200.66 91.44))
     (stroke (width 0) (type default))
     (uuid baa5dcb7-e95b-426d-9593-1ac935889aeb)
+  )
+  (wire (pts (xy 236.22 99.06) (xy 247.65 99.06))
+    (stroke (width 0) (type default))
+    (uuid c0b6dcf1-af3c-4348-9f9e-071e69c2dc50)
   )
   (wire (pts (xy 53.34 135.89) (xy 59.69 135.89))
     (stroke (width 0) (type default))
@@ -1745,10 +1781,6 @@
     (stroke (width 0) (type default))
     (uuid d9c15f5e-19fd-4bcc-839a-a38e2c57dba8)
   )
-  (wire (pts (xy 234.95 85.09) (xy 234.95 88.9))
-    (stroke (width 0) (type default))
-    (uuid da7b0ab5-4333-479e-b5a7-e2e67aa99b45)
-  )
   (wire (pts (xy 173.99 127) (xy 195.58 127))
     (stroke (width 0) (type default))
     (uuid dace8159-8d1e-4458-8e66-6659d1865306)
@@ -1785,11 +1817,15 @@
     (stroke (width 0) (type default))
     (uuid f9fe6d00-d71a-4d17-ad7d-d8e4733fcb3f)
   )
-  (wire (pts (xy 248.92 85.09) (xy 234.95 85.09))
+  (wire (pts (xy 243.84 88.9) (xy 247.65 88.9))
     (stroke (width 0) (type default))
-    (uuid ff0f6fe0-ee59-459c-a8de-edf6b78f5178)
+    (uuid ff62dd08-8d46-4110-8228-514791d2d5b6)
   )
 
+  (label "CANL" (at 243.84 88.9 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid 03f404c7-fde1-4294-a1bf-8158dc06f8c1)
+  )
   (label "~{MCLR}" (at 107.95 123.19 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 0df9db1e-67de-4c1b-84a0-7240727bb8ac)
@@ -1797,10 +1833,6 @@
   (label "ICSPDAT" (at 107.95 125.73 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 176fb4b1-371e-420b-b243-30dc51b04838)
-  )
-  (label "CANH" (at 245.11 87.63 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 2341030f-e1d7-496f-b19c-6b7959bdda26)
   )
   (label "ICSPCLK" (at 95.25 72.39 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -1846,6 +1878,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 86b54c15-dcc7-42d9-a5f5-0d2bc3255889)
   )
+  (label "CANH" (at 243.84 91.44 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid 8b39f461-5678-424b-bb1d-89117f8ae162)
+  )
   (label "MOSI" (at 53.34 138.43 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 8ea47ed6-f473-4187-9faa-4cdc62199e45)
@@ -1853,10 +1889,6 @@
   (label "ICSPDAT" (at 95.25 69.85 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 97c3f82d-128e-4c39-943a-a1b7d4d3afe8)
-  )
-  (label "CANL" (at 245.11 90.17 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 9c8cfde6-2188-4d5c-a339-34e666f51fbf)
   )
   (label "CLKOUT" (at 53.34 125.73 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
@@ -1906,7 +1938,7 @@
   (symbol (lib_id "Relay:G5Q-1A") (at 205.74 68.58 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 055060d4-8c97-494b-930a-8cd2f054f81f)
-    (property "Reference" "K2" (at 214.63 67.31 0)
+    (property "Reference" "K1" (at 214.63 67.31 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "G5Q-1A" (at 214.63 69.85 0)
@@ -1925,7 +1957,7 @@
     (instances
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "K2") (unit 1)
+          (reference "K1") (unit 1)
         )
       )
     )
@@ -1934,7 +1966,7 @@
   (symbol (lib_id "Device:C") (at 106.68 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 067215f5-550f-4c1e-95d9-44c5d73b52c3)
-    (property "Reference" "C2" (at 109.601 138.5316 0)
+    (property "Reference" "C?" (at 109.601 138.5316 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1u" (at 109.601 140.843 0)
@@ -1951,7 +1983,7 @@
     (instances
       (project "usbdbg"
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "C2") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "DAQ CAN support"
@@ -1987,12 +2019,12 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -2001,7 +2033,7 @@
   (symbol (lib_id "power:+24V") (at 210.82 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1877c563-c917-4767-841d-ca4b3a945a77)
-    (property "Reference" "#PWR021" (at 210.82 59.69 0)
+    (property "Reference" "#PWR020" (at 210.82 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+24V" (at 210.82 52.07 0)
@@ -2017,7 +2049,7 @@
     (instances
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
       )
     )
@@ -2026,7 +2058,7 @@
   (symbol (lib_id "power:GND") (at 200.66 91.44 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1c8ed76b-d82b-4321-b4ee-1ceb2e152eca)
-    (property "Reference" "#PWR01" (at 200.66 97.79 0)
+    (property "Reference" "#PWR019" (at 200.66 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 200.66 96.52 0)
@@ -2042,7 +2074,7 @@
     (instances
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
     )
@@ -2051,7 +2083,7 @@
   (symbol (lib_id "usbdbg-rescue:MCP2562-canhw") (at 208.28 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2840effa-d278-4de0-8193-0ed8947b84fc)
-    (property "Reference" "U3" (at 207.645 115.189 0)
+    (property "Reference" "U?" (at 207.645 115.189 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MCP2562" (at 207.645 117.5004 0)
@@ -2074,7 +2106,7 @@
     (instances
       (project "usbdbg"
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "U3") (unit 1)
+          (reference "U?") (unit 1)
         )
       )
       (project "DAQ CAN support"
@@ -2094,7 +2126,7 @@
     (property "Value" "USB_B" (at 132.08 68.58 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Connector_USB:USB_B_TE_5787834_Vertical" (at 135.89 80.01 0)
+    (property "Footprint" "Connector_USB:USB_Micro-B_Molex-105017-0001" (at 135.89 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" " ~" (at 135.89 80.01 0)
@@ -2117,7 +2149,7 @@
   (symbol (lib_id "Device:LED") (at 36.83 124.46 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2b753041-96ca-4183-b24c-6c9105190cd5)
-    (property "Reference" "D2" (at 39.8018 123.4948 90)
+    (property "Reference" "D?" (at 39.8018 123.4948 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Red" (at 39.37 125.73 90)
@@ -2134,12 +2166,12 @@
     (instances
       (project "usbdbg"
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "D2") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "D2") (unit 1)
+          (reference "D1") (unit 1)
         )
       )
     )
@@ -2148,7 +2180,7 @@
   (symbol (lib_id "Device:R_US") (at 181.61 83.82 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 346cdf94-2309-40b8-9b9f-50ee7fd29237)
-    (property "Reference" "R9" (at 181.61 77.47 90)
+    (property "Reference" "R4" (at 181.61 77.47 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "250R" (at 181.61 80.01 90)
@@ -2165,7 +2197,7 @@
     (instances
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "R9") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -2174,7 +2206,7 @@
   (symbol (lib_id "Device:Polyfuse") (at 151.13 73.66 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 35a64bbf-729d-471d-84f3-976bc2e7574a)
-    (property "Reference" "F2" (at 151.13 67.31 90)
+    (property "Reference" "F1" (at 151.13 67.31 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "350 mA PTC" (at 151.13 69.85 90)
@@ -2191,7 +2223,7 @@
     (instances
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "F2") (unit 1)
+          (reference "F1") (unit 1)
         )
       )
     )
@@ -2200,7 +2232,7 @@
   (symbol (lib_id "Device:R_US") (at 36.83 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 44744677-73ff-432d-8af9-eac9687610ad)
-    (property "Reference" "R6" (at 39.37 115.57 0)
+    (property "Reference" "R1" (at 39.37 115.57 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "330R" (at 39.37 118.11 0)
@@ -2217,7 +2249,7 @@
     (instances
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "R6") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
     )
@@ -2252,7 +2284,7 @@
           (reference "J?") (unit 1)
         )
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "J1") (unit 1)
+          (reference "J?") (unit 1)
         )
       )
       (project "DAQ CAN support"
@@ -2266,7 +2298,7 @@
   (symbol (lib_id "power:+5V") (at 36.83 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4b68c62e-cc48-4300-97ea-ff7dc43663ef)
-    (property "Reference" "#PWR02" (at 36.83 116.84 0)
+    (property "Reference" "#PWR?" (at 36.83 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 37.211 108.6358 0)
@@ -2282,12 +2314,12 @@
     (instances
       (project "usbdbg"
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR01") (unit 1)
         )
       )
     )
@@ -2296,7 +2328,7 @@
   (symbol (lib_id "power:+5V") (at 160.02 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4ecaae65-3fb8-4750-a526-1abfc093de09)
-    (property "Reference" "#PWR013" (at 160.02 74.93 0)
+    (property "Reference" "#PWR?" (at 160.02 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 160.401 66.7258 0)
@@ -2312,7 +2344,7 @@
     (instances
       (project "usbdbg"
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "DAQ CAN support"
@@ -2326,7 +2358,7 @@
   (symbol (lib_id "Device:C") (at 191.77 135.89 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 59673347-693d-4d86-9bdd-f87b4fb974d7)
-    (property "Reference" "C4" (at 194.691 134.7216 0)
+    (property "Reference" "C?" (at 194.691 134.7216 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 194.691 137.033 0)
@@ -2343,7 +2375,7 @@
     (instances
       (project "usbdbg"
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "C4") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "DAQ CAN support"
@@ -2357,7 +2389,7 @@
   (symbol (lib_id "Device:R_US") (at 190.5 92.71 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 59c70dd0-5e05-4e1d-9efa-8d9eda0c3a19)
-    (property "Reference" "R10" (at 193.04 91.44 0)
+    (property "Reference" "R5" (at 193.04 91.44 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 193.04 93.98 0)
@@ -2374,7 +2406,7 @@
     (instances
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "R10") (unit 1)
+          (reference "R5") (unit 1)
         )
       )
     )
@@ -2383,7 +2415,7 @@
   (symbol (lib_id "power:GND") (at 190.5 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 726e3670-d2fd-41e0-87b2-4582383d8107)
-    (property "Reference" "#PWR019" (at 190.5 105.41 0)
+    (property "Reference" "#PWR?" (at 190.5 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 190.627 103.4542 0)
@@ -2399,12 +2431,12 @@
     (instances
       (project "usbdbg"
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -2413,7 +2445,7 @@
   (symbol (lib_id "power:GND") (at 106.68 143.51 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 776f7a74-d323-44e3-a198-222bd8f455fb)
-    (property "Reference" "#PWR08" (at 106.68 149.86 0)
+    (property "Reference" "#PWR?" (at 106.68 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 106.807 147.9042 0)
@@ -2429,7 +2461,7 @@
     (instances
       (project "usbdbg"
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "DAQ CAN support"
@@ -2443,7 +2475,7 @@
   (symbol (lib_id "power:GND") (at 132.08 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7ea7f44a-8375-4405-8ea5-f845f945a272)
-    (property "Reference" "#PWR012" (at 132.08 99.06 0)
+    (property "Reference" "#PWR?" (at 132.08 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 132.207 97.1042 0)
@@ -2459,12 +2491,12 @@
     (instances
       (project "usbdbg"
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -2473,7 +2505,7 @@
   (symbol (lib_id "power:GND") (at 223.52 132.08 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8059edbe-74e0-4bf9-880f-746f984a8211)
-    (property "Reference" "#PWR017" (at 223.52 138.43 0)
+    (property "Reference" "#PWR?" (at 223.52 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 223.647 136.4742 0)
@@ -2489,12 +2521,12 @@
     (instances
       (project "usbdbg"
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
     )
@@ -2503,7 +2535,7 @@
   (symbol (lib_id "usbdbg-rescue:MCP2515-canhw") (at 160.02 132.08 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 86303cee-38ed-454b-960a-fe01e99fe87c)
-    (property "Reference" "U2" (at 160.02 120.269 0)
+    (property "Reference" "U?" (at 160.02 120.269 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MCP2515" (at 160.02 122.5804 0)
@@ -2536,40 +2568,12 @@
     (instances
       (project "usbdbg"
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "U2") (unit 1)
+          (reference "U?") (unit 1)
         )
       )
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
           (reference "U2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:Screw_Terminal_01x04") (at 254 85.09 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 8afa7d1e-2593-49ff-926f-526a60bdd4bb)
-    (property "Reference" "J4" (at 256.54 85.725 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Screw_Terminal_01x04" (at 256.54 88.265 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal" (at 254 85.09 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 254 85.09 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b5779510-fe05-4479-913f-25ad82cccfc3))
-    (pin "2" (uuid 1b61817d-a047-4386-879d-144941d7a1e0))
-    (pin "3" (uuid b25b3b4e-c0b3-4bb1-85ba-d8881e009e77))
-    (pin "4" (uuid 0897a206-f927-49d0-8e3f-bcb87e0111b8))
-    (instances
-      (project "DAQ CAN support"
-        (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "J4") (unit 1)
         )
       )
     )
@@ -2578,7 +2582,7 @@
   (symbol (lib_id "power:GND") (at 191.77 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8b21ed7d-7d73-406a-8aa9-ea5fdbc1b48c)
-    (property "Reference" "#PWR016" (at 191.77 146.05 0)
+    (property "Reference" "#PWR?" (at 191.77 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 191.897 144.0942 0)
@@ -2594,12 +2598,12 @@
     (instances
       (project "usbdbg"
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -2608,7 +2612,7 @@
   (symbol (lib_id "power:GND") (at 142.24 156.21 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8ba3120f-8085-4df4-9c97-d825a3cd378d)
-    (property "Reference" "#PWR011" (at 142.24 162.56 0)
+    (property "Reference" "#PWR?" (at 142.24 162.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 142.367 160.6042 0)
@@ -2624,12 +2628,12 @@
     (instances
       (project "usbdbg"
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -2638,7 +2642,7 @@
   (symbol (lib_id "Device:D") (at 193.04 69.85 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8e04ce92-64d1-4ec8-a004-e5b298c9a7a4)
-    (property "Reference" "D1" (at 190.5 69.215 90)
+    (property "Reference" "D2" (at 190.5 69.215 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1N4148WX-TP" (at 190.5 71.755 90)
@@ -2661,7 +2665,7 @@
     (instances
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "D1") (unit 1)
+          (reference "D2") (unit 1)
         )
       )
     )
@@ -2670,7 +2674,7 @@
   (symbol (lib_id "power:+5V") (at 57.15 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9c04d81a-7e0f-4742-a3e6-bc10a3514081)
-    (property "Reference" "#PWR03" (at 57.15 120.65 0)
+    (property "Reference" "#PWR?" (at 57.15 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 57.531 112.4458 0)
@@ -2686,12 +2690,12 @@
     (instances
       (project "usbdbg"
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
     )
@@ -2700,7 +2704,7 @@
   (symbol (lib_id "usbdbg-rescue:PIC16F1455-canhw") (at 73.66 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a3eca712-e14d-4452-8991-fb92022d3a23)
-    (property "Reference" "U1" (at 79.375 116.459 0)
+    (property "Reference" "U?" (at 79.375 116.459 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "PIC16F1455" (at 79.375 118.7704 0)
@@ -2729,7 +2733,7 @@
     (instances
       (project "usbdbg"
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "U1") (unit 1)
+          (reference "U?") (unit 1)
         )
       )
       (project "DAQ CAN support"
@@ -2743,7 +2747,7 @@
   (symbol (lib_id "power:GND") (at 57.15 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b8760ec9-deef-47de-8355-6984e548ae22)
-    (property "Reference" "#PWR04" (at 57.15 156.21 0)
+    (property "Reference" "#PWR?" (at 57.15 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 57.277 154.2542 0)
@@ -2759,12 +2763,12 @@
     (instances
       (project "usbdbg"
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -2773,7 +2777,7 @@
   (symbol (lib_id "power:+5V") (at 135.89 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b93273e6-a14e-4bbe-9a32-5b54aa2c2f2e)
-    (property "Reference" "#PWR09" (at 135.89 125.73 0)
+    (property "Reference" "#PWR?" (at 135.89 125.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 136.271 117.5258 0)
@@ -2789,12 +2793,12 @@
     (instances
       (project "usbdbg"
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -2803,7 +2807,7 @@
   (symbol (lib_id "Device:C") (at 57.15 146.05 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b97656cd-a710-42f5-aa9b-b2b47ccfa83f)
-    (property "Reference" "C1" (at 60.071 144.8816 0)
+    (property "Reference" "C?" (at 60.071 144.8816 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1u" (at 60.071 147.193 0)
@@ -2820,7 +2824,7 @@
     (instances
       (project "usbdbg"
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "C1") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "DAQ CAN support"
@@ -2831,10 +2835,35 @@
     )
   )
 
+  (symbol (lib_id "power:+24V") (at 236.22 85.09 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid bbc3251e-9f8f-4d54-90d1-a8574ec904e3)
+    (property "Reference" "#PWR023" (at 236.22 88.9 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+24V" (at 236.22 81.28 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 236.22 85.09 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 236.22 85.09 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid da674737-9d9a-4977-a860-3d81cc13652d))
+    (instances
+      (project "DAQ CAN support"
+        (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
+          (reference "#PWR023") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:R_US") (at 135.89 125.73 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bc3dbd68-3867-43ef-a6e1-f9978b5ca7bb)
-    (property "Reference" "R11" (at 137.16 124.46 0)
+    (property "Reference" "R3" (at 137.16 124.46 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 137.16 127 0)
@@ -2851,7 +2880,36 @@
     (instances
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "R11") (unit 1)
+          (reference "R3") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:Screw_Terminal_01x05") (at 252.73 93.98 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid bdca990e-5347-4a30-9c55-5e5404ae3220)
+    (property "Reference" "J4" (at 255.27 92.71 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Screw_Terminal_01x05" (at 255.27 95.25 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-5-5.0-H_1x05_P5.00mm_Horizontal" (at 252.73 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 252.73 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid fbe641b1-92ee-4387-a25b-1ac9a6766317))
+    (pin "4" (uuid ee5a90e4-98d4-415c-bb22-fb0966e24990))
+    (pin "3" (uuid fbac835d-e0d8-430c-a731-47c4959a9789))
+    (pin "2" (uuid e096c80b-ddbe-49b3-8ff5-75b0661d75ec))
+    (pin "5" (uuid 3844ebf9-5a43-4161-a6cf-24e1ecef2c95))
+    (instances
+      (project "DAQ CAN support"
+        (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
+          (reference "J4") (unit 1)
         )
       )
     )
@@ -2860,7 +2918,7 @@
   (symbol (lib_id "power:GND") (at 101.6 143.51 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c9c756e9-7bf0-45e3-b1ab-1524bc599256)
-    (property "Reference" "#PWR08" (at 101.6 149.86 0)
+    (property "Reference" "#PWR?" (at 101.6 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 101.727 147.9042 0)
@@ -2876,12 +2934,12 @@
     (instances
       (project "usbdbg"
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -2926,7 +2984,7 @@
   (symbol (lib_id "power:+5V") (at 191.77 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d02e687f-5d75-41ee-9b2f-ea1a9da83bc6)
-    (property "Reference" "#PWR015" (at 191.77 123.19 0)
+    (property "Reference" "#PWR?" (at 191.77 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 192.151 114.9858 0)
@@ -2942,12 +3000,12 @@
     (instances
       (project "usbdbg"
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -2956,7 +3014,7 @@
   (symbol (lib_id "Device:R_US") (at 100.33 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d3e1ad2d-c5cf-4b99-8473-403a17ef145d)
-    (property "Reference" "R7" (at 102.87 107.95 0)
+    (property "Reference" "R2" (at 102.87 107.95 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 102.87 110.49 0)
@@ -2973,7 +3031,7 @@
     (instances
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "R7") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -3004,12 +3062,12 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -3018,7 +3076,7 @@
   (symbol (lib_id "power:+24V") (at 200.66 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d994919d-0d3e-450b-ae4b-3fde49ffee46)
-    (property "Reference" "#PWR020" (at 200.66 59.69 0)
+    (property "Reference" "#PWR018" (at 200.66 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+24V" (at 200.66 52.07 0)
@@ -3034,7 +3092,7 @@
     (instances
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -3043,7 +3101,7 @@
   (symbol (lib_id "Device:C") (at 142.24 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid df77c0c5-1cd9-4d36-ae24-0e2a0db619a2)
-    (property "Reference" "C3" (at 145.161 151.2316 0)
+    (property "Reference" "C?" (at 145.161 151.2316 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1u" (at 145.161 153.543 0)
@@ -3060,7 +3118,7 @@
     (instances
       (project "usbdbg"
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "C3") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "DAQ CAN support"
@@ -3074,7 +3132,7 @@
   (symbol (lib_id "power:+5V") (at 100.33 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e1a1a4dc-be13-4bb6-8528-c6d87d5dfbdb)
-    (property "Reference" "#PWR07" (at 100.33 109.22 0)
+    (property "Reference" "#PWR?" (at 100.33 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 100.711 101.0158 0)
@@ -3090,12 +3148,12 @@
     (instances
       (project "usbdbg"
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -3104,7 +3162,7 @@
   (symbol (lib_id "power:+5V") (at 142.24 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid eb248dad-627b-4221-bf0a-773d949b14e5)
-    (property "Reference" "#PWR010" (at 142.24 125.73 0)
+    (property "Reference" "#PWR?" (at 142.24 125.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 142.621 117.5258 0)
@@ -3120,12 +3178,37 @@
     (instances
       (project "usbdbg"
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR011") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 232.41 102.87 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid f1551707-526f-431e-8225-7149b4c2182a)
+    (property "Reference" "#PWR022" (at 232.41 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 232.41 107.95 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 232.41 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 232.41 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid aa320251-ca0b-4198-90bb-d89e53d039af))
+    (instances
+      (project "DAQ CAN support"
+        (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
+          (reference "#PWR022") (unit 1)
         )
       )
     )
@@ -3134,7 +3217,7 @@
   (symbol (lib_id "power:GND") (at 177.8 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f6465617-ce26-4c6f-8abf-b6890ef8ece6)
-    (property "Reference" "#PWR014" (at 177.8 156.21 0)
+    (property "Reference" "#PWR?" (at 177.8 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 177.927 154.2542 0)
@@ -3150,42 +3233,12 @@
     (instances
       (project "usbdbg"
         (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "DAQ CAN support"
         (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
           (reference "#PWR014") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 234.95 88.9 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid fc168fe5-afa6-4dec-8c23-aa3dbd0175f8)
-    (property "Reference" "#PWR019" (at 234.95 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 235.077 93.2942 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 234.95 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 234.95 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9bb54878-50de-4ee5-b90b-ece1419c3c71))
-    (instances
-      (project "usbdbg"
-        (path "/86bfa271-ee23-4965-81d5-59585b1c32ae"
-          (reference "#PWR019") (unit 1)
-        )
-      )
-      (project "DAQ CAN support"
-        (path "/b1cb4dd2-7efb-4e28-9170-45535c1a7d75"
-          (reference "#PWR019") (unit 1)
         )
       )
     )
