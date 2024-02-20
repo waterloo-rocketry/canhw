@@ -1237,10 +1237,6 @@
     (stroke (width 0) (type default))
     (uuid bdc12e11-ae2a-4602-af5e-273e5c5af033)
   )
-  (wire (pts (xy 101.6 138.43) (xy 101.6 156.21))
-    (stroke (width 0) (type default))
-    (uuid c28bc1e7-199a-4b85-ac9d-ee7e70ee137b)
-  )
   (wire (pts (xy 107.95 128.27) (xy 110.49 128.27))
     (stroke (width 0) (type default))
     (uuid c6336e4c-05c4-41ab-96d4-74e6ac9602e8)
@@ -1354,10 +1350,6 @@
     (uuid ff7fc2d4-814a-4ab5-b938-5e6b62406861)
   )
 
-  (text "12V \n" (at 266.7 111.76 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 36e218ba-3ca6-4387-b01e-c17d5b52a70f)
-  )
   (text "These are through hole fuse clips. A ceramic fuse connects these to contacts.\n\nUSB 2.0 ports are rated at 500mA so a 400mA fuse is recommended here."
     (at 187.96 57.15 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -1472,7 +1464,7 @@
     (property "Value" "Programming Header" (at 71.12 73.66 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Horizontal" (at 71.12 64.77 0)
+    (property "Footprint" "canhw_footprints:PinSocket_5x2.54_SMD_90deg_952-3198-1-ND" (at 71.12 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 71.12 64.77 0)
@@ -2045,7 +2037,7 @@
   (symbol (lib_id "usbdbg-rescue:MCP2562-canhw") (at 214.63 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 08d2cc0b-0c2a-4677-8523-bc129829474e)
-    (property "Reference" "Ue1" (at 213.995 106.299 0)
+    (property "Reference" "U3" (at 213.995 106.299 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MCP2562" (at 213.995 108.6104 0)
@@ -2068,7 +2060,7 @@
     (instances
       (project "usbdbg"
         (path "/beda4cfe-3d79-4b44-bc04-a373de6dd18a"
-          (reference "Ue1") (unit 1)
+          (reference "U3") (unit 1)
         )
       )
       (project "usbdbg-v2"
@@ -2204,7 +2196,7 @@
   (symbol (lib_id "Jumper:Jumper_2_Open") (at 256.54 102.87 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 57f4b329-61c5-47cf-b0c9-762b5fa882c9)
-    (property "Reference" "JPe1" (at 263.2456 102.87 0)
+    (property "Reference" "JP2" (at 263.2456 102.87 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Jumper" (at 260.9342 102.87 0)
@@ -2221,7 +2213,7 @@
     (instances
       (project "usbdbg"
         (path "/beda4cfe-3d79-4b44-bc04-a373de6dd18a"
-          (reference "JPe1") (unit 1)
+          (reference "JP2") (unit 1)
         )
       )
       (project "usbdbg-v2"
@@ -2272,7 +2264,7 @@
     (property "Value" "BUS CONN" (at 266.7 115.57 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal" (at 264.16 113.03 0)
+    (property "Footprint" "canhw_footprints:PinSocket_4x2.54_SMD_90deg_952-3198-1-ND" (at 264.16 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.te.com/usa-en/product-147721-3.datasheet.pdf" (at 264.16 113.03 0)
@@ -2649,7 +2641,7 @@
     (property "Value" "400mA" (at 170.18 53.34 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "canhw_footprints:Fuseholder_36-3557-15-ND" (at 170.18 54.102 90)
+    (property "Footprint" "Fuse:Fuseholder_Clip-5x20mm_Littelfuse_111_Inline_P20.00x5.00mm_D1.05mm_Horizontal" (at 170.18 54.102 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2413/617Series_Fuse_DS_v1%200.pdf" (at 170.18 55.88 0)
