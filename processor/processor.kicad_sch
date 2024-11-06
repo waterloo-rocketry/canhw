@@ -2866,6 +2866,16 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 118.11) (xy 148.59 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "133baf6b-35f8-4175-8181-9d61bb4b4a5b")
+	)
+	(wire
+		(pts
 			(xy 33.02 144.78) (xy 66.04 144.78)
 		)
 		(stroke
@@ -4394,7 +4404,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 25.4 118.11 90)
+		(at 25.4 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4403,7 +4413,7 @@
 		(fields_autoplaced yes)
 		(uuid "2adf8ed4-a950-4ea3-aea9-29538dae8f55")
 		(property "Reference" "#PWR062"
-			(at 29.21 118.11 0)
+			(at 25.4 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4412,12 +4422,11 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 21.59 118.1099 90)
+			(at 25.4 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -5044,7 +5053,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "TLV62568ADRLR"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv62568a.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1730858639864&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Ftlv62568a"
 			(at 60.96 125.73 0)
 			(effects
 				(font
@@ -5512,7 +5521,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 148.59 118.11 270)
+		(at 157.48 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5521,7 +5530,7 @@
 		(fields_autoplaced yes)
 		(uuid "8450e2f4-e413-45c3-8166-5c7605c0a808")
 		(property "Reference" "#PWR063"
-			(at 144.78 118.11 0)
+			(at 157.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5530,16 +5539,15 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 152.4 118.1099 90)
+			(at 157.48 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 148.59 118.11 0)
+			(at 157.48 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5548,7 +5556,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 118.11 0)
+			(at 157.48 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5557,7 +5565,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 148.59 118.11 0)
+			(at 157.48 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5596,7 +5604,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100kΩ"
+		(property "Value" "100k"
 			(at 101.6 134.6199 0)
 			(effects
 				(font
@@ -5809,7 +5817,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "453kΩ"
+		(property "Value" "453k"
 			(at 101.6 124.4599 0)
 			(effects
 				(font
@@ -6980,16 +6988,6 @@
 			)
 			(uuid "3e14a597-4b57-4340-a3d1-4c0445d9f1e3")
 		)
-		(pin "Pololu_spi_addr" input
-			(at 226.06 53.34 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "cc9cdb0a-27c1-4841-9675-cf7e5f62369b")
-		)
 		(pin "ST_addr_sel" input
 			(at 226.06 36.83 180)
 			(effects
@@ -7089,6 +7087,16 @@
 				(justify left)
 			)
 			(uuid "6c268217-a0d6-47f1-b16c-20857b967f5a")
+		)
+		(pin "Pololu_i2c_addr" input
+			(at 226.06 53.34 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6e431e24-355f-4527-98a3-3fea825c0f0e")
 		)
 		(instances
 			(project "processor"
