@@ -831,12 +831,6 @@
 		(uuid "085eb2b7-e092-4b80-a88c-e45199ebd300")
 	)
 	(junction
-		(at 180.34 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6c045c5e-991a-4336-ae07-a8e4b41a98dc")
-	)
-	(junction
 		(at 156.21 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -847,6 +841,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "874c77d0-38ec-427a-8cd1-0b3f4803bd96")
+	)
+	(junction
+		(at 173.99 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "95a2f3ae-e6f1-49ec-9aa8-f2e52a85d7ba")
 	)
 	(junction
 		(at 144.78 102.87)
@@ -896,13 +896,23 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 82.55) (xy 180.34 102.87)
+			(xy 173.99 82.55) (xy 173.99 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "05b27ae3-ae15-43ed-9929-f3feb5bf5453")
+	)
+	(wire
+		(pts
+			(xy 179.07 105.41) (xy 184.15 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "160b5a98-32ce-40bb-904d-229d6a3b238a")
 	)
 	(wire
 		(pts
@@ -926,6 +936,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 102.87) (xy 184.15 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "307ba940-a574-4488-a68a-3338c7577acd")
+	)
+	(wire
+		(pts
 			(xy 144.78 91.44) (xy 144.78 102.87)
 		)
 		(stroke
@@ -946,23 +966,13 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 97.79) (xy 182.88 105.41)
+			(xy 179.07 97.79) (xy 179.07 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "54144fa3-a0d3-4204-ae33-8de3c8679a4b")
-	)
-	(wire
-		(pts
-			(xy 182.88 105.41) (xy 184.15 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ca6ea0a-5ee7-4406-8a2a-b568e2e56486")
 	)
 	(wire
 		(pts
@@ -973,16 +983,6 @@
 			(type default)
 		)
 		(uuid "6036b512-01fa-484d-a546-dbfdb3c1b682")
-	)
-	(wire
-		(pts
-			(xy 180.34 102.87) (xy 184.15 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72dccfb1-9ffe-48a7-b0db-95f1dea32936")
 	)
 	(wire
 		(pts
@@ -1026,7 +1026,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 102.87) (xy 180.34 102.87)
+			(xy 156.21 102.87) (xy 173.99 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1330,7 +1330,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 180.34 82.55 0)
+		(at 173.99 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1339,7 +1339,7 @@
 		(fields_autoplaced yes)
 		(uuid "1b214882-8fb9-47c4-b94a-82d42aa3ceea")
 		(property "Reference" "TP2"
-			(at 182.88 77.9779 0)
+			(at 176.53 77.9779 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1348,7 +1348,7 @@
 			)
 		)
 		(property "Value" "SDA1"
-			(at 182.88 80.5179 0)
+			(at 176.53 80.5179 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1357,7 +1357,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature"
-			(at 185.42 82.55 0)
+			(at 179.07 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1366,7 +1366,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 185.42 82.55 0)
+			(at 179.07 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1375,7 +1375,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 180.34 82.55 0)
+			(at 173.99 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1414,7 +1414,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10kΩ"
+		(property "Value" "10k"
 			(at 118.11 88.8999 0)
 			(effects
 				(font
@@ -1533,7 +1533,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 182.88 97.79 0)
+		(at 179.07 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1542,7 +1542,7 @@
 		(fields_autoplaced yes)
 		(uuid "72f464ca-fd55-4b0f-95c4-28c9a41934c8")
 		(property "Reference" "#PWR062"
-			(at 182.88 101.6 0)
+			(at 179.07 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1551,7 +1551,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 182.88 92.71 0)
+			(at 179.07 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1559,7 +1559,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 182.88 97.79 0)
+			(at 179.07 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1568,7 +1568,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 97.79 0)
+			(at 179.07 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1577,7 +1577,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 182.88 97.79 0)
+			(at 179.07 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1691,7 +1691,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "canhw:connector_Harwin_G125–MG10605M4P"
+		(property "Footprint" "canhw_footprints:connector_Harwin_G125–MG10605M4P"
 			(at 189.23 102.87 0)
 			(effects
 				(font
@@ -1764,7 +1764,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10kΩ"
+		(property "Value" "10k"
 			(at 147.32 88.8999 0)
 			(effects
 				(font
@@ -1834,7 +1834,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10kΩ"
+		(property "Value" "10k"
 			(at 158.75 88.8999 0)
 			(effects
 				(font
@@ -1970,7 +1970,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10kΩ"
+		(property "Value" "10k"
 			(at 129.54 88.8999 0)
 			(effects
 				(font
