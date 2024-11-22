@@ -373,7 +373,8 @@
   },
   "erc": {
     "erc_exclusions": [
-      "multiple_net_names|2032000|635000|8e3f3630-a7e3-4247-bab7-32864796ee3a|ef23405c-086e-4fc5-85f3-c4873c5eb261|/1c83cbb7-e34f-4809-a8f5-fdc162f95138/a58ace94-798f-4e60-88f6-7c28c0ab5020|/1c83cbb7-e34f-4809-a8f5-fdc162f95138/a58ace94-798f-4e60-88f6-7c28c0ab5020|/1c83cbb7-e34f-4809-a8f5-fdc162f95138/a58ace94-798f-4e60-88f6-7c28c0ab5020"
+      "multiple_net_names|2032000|635000|8e3f3630-a7e3-4247-bab7-32864796ee3a|ef23405c-086e-4fc5-85f3-c4873c5eb261|/1c83cbb7-e34f-4809-a8f5-fdc162f95138/a58ace94-798f-4e60-88f6-7c28c0ab5020|/1c83cbb7-e34f-4809-a8f5-fdc162f95138/a58ace94-798f-4e60-88f6-7c28c0ab5020|/1c83cbb7-e34f-4809-a8f5-fdc162f95138/a58ace94-798f-4e60-88f6-7c28c0ab5020",
+      "multiple_net_names|838200|317500|8e3f3630-a7e3-4247-bab7-32864796ee3a|130fcbd9-53b4-4121-b068-f1e28d2cd238|/1c83cbb7-e34f-4809-a8f5-fdc162f95138/a58ace94-798f-4e60-88f6-7c28c0ab5020|/1c83cbb7-e34f-4809-a8f5-fdc162f95138/a58ace94-798f-4e60-88f6-7c28c0ab5020|/1c83cbb7-e34f-4809-a8f5-fdc162f95138/a58ace94-798f-4e60-88f6-7c28c0ab5020"
     ],
     "meta": {
       "version": 0
@@ -586,7 +587,9 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "Device_Custom"
+    ]
   },
   "meta": {
     "filename": "processor.kicad_pro",
@@ -725,7 +728,7 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -740,15 +743,45 @@
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Design Doc",
+          "name": "Design Doc",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC Part #",
+          "name": "LCSC Part #",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Part Number",
+          "name": "Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
