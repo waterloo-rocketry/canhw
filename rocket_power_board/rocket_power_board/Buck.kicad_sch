@@ -705,6 +705,126 @@
 				)
 			)
 		)
+		(symbol "power:+12V"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+12V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+12V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+12V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+12V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
@@ -922,6 +1042,16 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 71.12) (xy 217.17 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a6561c7-043c-4c41-8133-268881664d0a")
+	)
+	(wire
+		(pts
 			(xy 43.18 69.85) (xy 57.15 69.85)
 		)
 		(stroke
@@ -1052,16 +1182,6 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 71.12) (xy 210.82 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9219600d-9be6-49f6-ae5f-e15544745f4a")
-	)
-	(wire
-		(pts
 			(xy 148.59 71.12) (xy 162.56 71.12)
 		)
 		(stroke
@@ -1069,6 +1189,16 @@
 			(type default)
 		)
 		(uuid "985ebe2b-da68-44ee-9087-3239f37c7c78")
+	)
+	(wire
+		(pts
+			(xy 43.18 68.58) (xy 43.18 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98c5fba5-b404-4d14-9435-b6f8a989440a")
 	)
 	(wire
 		(pts
@@ -1192,7 +1322,7 @@
 	)
 	(rectangle
 		(start 31.75 40.64)
-		(end 208.28 107.95)
+		(end 231.14 107.95)
 		(stroke
 			(width 0)
 			(type default)
@@ -1222,17 +1352,17 @@
 		)
 		(uuid "a86b0e93-8fc0-4ffc-8450-44c05f9b2f64")
 	)
-	(hierarchical_label "Buck_Vin"
+	(hierarchical_label "5V_Out"
 		(shape input)
-		(at 43.18 69.85 180)
+		(at 217.17 71.12 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "f461ba32-cf49-4319-98bd-11cef0f55961")
+		(uuid "f8d62ffe-461d-4fe7-844c-636a06596a21")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -1328,7 +1458,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 58.1152 80.01 0)
 			(effects
 				(font
@@ -1398,7 +1528,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 182.626 78.994 90)
 			(effects
 				(font
@@ -1468,7 +1598,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 68.2752 80.01 0)
 			(effects
 				(font
@@ -1538,7 +1668,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 149.5552 67.31 0)
 			(effects
 				(font
@@ -1608,7 +1738,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 182.626 91.694 90)
 			(effects
 				(font
@@ -1717,6 +1847,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+12V")
+		(at 43.18 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b38ded7b-b9bb-42d1-a6ed-40ab0eaaf5a3")
+		(property "Reference" "#PWR027"
+			(at 43.18 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 43.18 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 43.18 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "da889d06-1d74-4318-b2c1-15e43106a8e8")
+		)
+		(instances
+			(project ""
+				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/b32125e2-87cc-4a2b-9fb8-759a06ce456e"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "2024-11-08_04-01-59:LMR51430XDDCR")
 		(at 97.79 76.2 0)
 		(mirror x)
@@ -1742,7 +1938,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOT-23-THIN-6_DDC_TEX"
+		(property "Footprint" "LMR51430XDDCR:SOT-23-THIN-6_DDC_TEX"
 			(at 96.266 84.074 0)
 			(effects
 				(font
@@ -1752,7 +1948,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "LMR51430XDDCR"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lmr51430.pdf?ts=1731011945492"
 			(at 95.758 81.788 0)
 			(effects
 				(font
@@ -1825,7 +2021,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 199.0852 86.36 0)
 			(effects
 				(font
@@ -1893,7 +2089,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Altium_WE-MAIA (rev24b):WE-MAIA_5020"
 			(at 166.37 71.12 0)
 			(effects
 				(font
@@ -1902,7 +2098,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/78438367068.pdf"
 			(at 166.37 71.12 0)
 			(effects
 				(font
