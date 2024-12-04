@@ -5,9 +5,69 @@
 	(uuid "dba0825d-f4bc-4750-857e-1e3e550de350")
 	(paper "A4")
 	(lib_symbols)
+	(wire
+		(pts
+			(xy 165.1 76.2) (xy 179.07 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0623539d-dd8d-402b-808b-886ae059ffe2")
+	)
+	(wire
+		(pts
+			(xy 165.1 83.82) (xy 179.07 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "151ee411-b281-4111-b7e7-744055647605")
+	)
+	(wire
+		(pts
+			(xy 165.1 57.15) (xy 179.07 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b0eb322-be53-4d35-a2b6-3a49c06f8eb8")
+	)
+	(wire
+		(pts
+			(xy 165.1 72.39) (xy 179.07 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c8829ec-7ba2-4ea4-8c41-0100690f0ee3")
+	)
+	(wire
+		(pts
+			(xy 96.52 60.96) (xy 109.22 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed162f2b-764a-4dc1-8e71-0495f7320477")
+	)
+	(wire
+		(pts
+			(xy 165.1 80.01) (xy 179.07 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd54227e-4d95-4def-a324-514098c3c49b")
+	)
 	(sheet
-		(at 152.4 40.64)
-		(size 45.72 43.18)
+		(at 179.07 40.005)
+		(size 55.88 52.705)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -18,7 +78,7 @@
 		)
 		(uuid "5ae4edbf-f10b-4963-80d7-77d9dc986325")
 		(property "Sheetname" "RF"
-			(at 152.4 39.9284 0)
+			(at 179.07 39.2934 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27,13 +87,63 @@
 			)
 		)
 		(property "Sheetfile" "rf.kicad_sch"
-			(at 152.4 84.4046 0)
+			(at 179.07 93.2946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
+		)
+		(pin "RESET" input
+			(at 179.07 57.15 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9def7a41-ef16-496e-88dc-2a7ffd3836ac")
+		)
+		(pin "MISO" input
+			(at 179.07 83.82 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a4a144b0-b3dd-4ebf-88f0-e9a1007eedb2")
+		)
+		(pin "SCLK" input
+			(at 179.07 76.2 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "2ebca6d2-7092-48d6-bf3c-00cc23e5f917")
+		)
+		(pin "MOSI" input
+			(at 179.07 80.01 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "942c3e94-f84f-4ae1-9436-7e2849b8ae03")
+		)
+		(pin "CS" input
+			(at 179.07 72.39 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "25b2ab82-b7fd-4b0c-b217-1a87c4195fc6")
 		)
 		(instances
 			(project "LTT"
@@ -44,8 +154,56 @@
 		)
 	)
 	(sheet
-		(at 53.34 34.29)
-		(size 40.64 52.07)
+		(at 40.64 40.005)
+		(size 55.88 52.705)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d6cfeff6-3ca9-4b06-a7a7-9dadf88ba24f")
+		(property "Sheetname" "Power"
+			(at 40.64 39.2934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 40.64 93.2946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CURR_AMP_CAN" input
+			(at 96.52 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "6bc53663-57e3-492b-92db-adb90e9ad46d")
+		)
+		(instances
+			(project "LTT"
+				(path "/dba0825d-f4bc-4750-857e-1e3e550de350"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 109.22 40.005)
+		(size 55.88 52.705)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -56,7 +214,7 @@
 		)
 		(uuid "deb1315d-c738-4804-b21b-d33bc6e28c3c")
 		(property "Sheetname" "MCU"
-			(at 53.34 33.5784 0)
+			(at 109.22 39.2934 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65,13 +223,73 @@
 			)
 		)
 		(property "Sheetfile" "mcu.kicad_sch"
-			(at 53.34 86.9446 0)
+			(at 109.22 93.2946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
+		)
+		(pin "SCLK" input
+			(at 165.1 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a9be4711-24c9-4d12-8b25-7d8382f5e649")
+		)
+		(pin "MOSI" input
+			(at 165.1 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e5129397-e7e7-4cf5-b7bb-b5881a12acb8")
+		)
+		(pin "CS" input
+			(at 165.1 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a8ca346c-dcc4-48fe-94e2-8bc37c75541b")
+		)
+		(pin "MISO" input
+			(at 165.1 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "933eb5f4-dd1c-402f-ac63-b19380ef6f41")
+		)
+		(pin "RESET" input
+			(at 165.1 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "cd1d9b63-1d56-457a-93b4-a7ee5e13df2f")
+		)
+		(pin "CURR_AMP_CAN" input
+			(at 109.22 60.96 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "1bcac7cb-1d02-46be-95a0-e3c5c8a45649")
 		)
 		(instances
 			(project "LTT"
