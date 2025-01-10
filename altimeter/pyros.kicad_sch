@@ -1042,12 +1042,12 @@
 				)
 			)
 		)
-		(symbol "canhw:INA212AIDCKT"
+		(symbol "altimeter:INA212AIDCKT"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 0 2.54 0)
+			(property "Reference" "U9"
+				(at 0 3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1055,7 +1055,7 @@
 				)
 			)
 			(property "Value" "INA212AIDCKT"
-				(at 0 0 0)
+				(at 0 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2165,6 +2165,90 @@
 		(uuid "d0353af6-14c7-455e-91eb-c387346a5d0e")
 	)
 	(symbol
+		(lib_id "altimeter:INA212AIDCKT")
+		(at 241.3 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "249bec31-5aad-4e7f-8a13-5c44c2c405d4")
+		(property "Reference" "U9"
+			(at 241.3 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "INA212AIDCKT"
+			(at 241.3 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering"
+			(at 241.3 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina210.pdf"
+			(at 241.3 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "INA212 1000V/V Current Sense Amp"
+			(at 241.3 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "0e3c7fd6-6f17-4eee-b03f-a5017b72d8c6")
+		)
+		(pin "4"
+			(uuid "30e14d35-5b20-4e35-85ce-d390a11b2e54")
+		)
+		(pin "5"
+			(uuid "05ce7b10-1113-4500-8fa3-27f487be4729")
+		)
+		(pin "1"
+			(uuid "24f31569-74e6-4da5-895c-60d9f17a6f41")
+		)
+		(pin "3"
+			(uuid "50115df0-9ba8-494a-bba6-a415240ea386")
+		)
+		(pin "2"
+			(uuid "7e60d579-e1ad-4503-bd93-062c8d5e4f14")
+		)
+		(instances
+			(project ""
+				(path "/d279ec14-0cf9-4295-bb74-26f70799167d/ab8c92f6-cdf6-4de2-8fcd-f4345bf03ce0"
+					(reference "U9")
+					(unit 1)
+				)
+				(path "/d279ec14-0cf9-4295-bb74-26f70799167d/daa2df12-9b23-47ea-bde9-69cc9a763513"
+					(reference "U12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 99.06 81.28 90)
 		(unit 1)
@@ -2519,90 +2603,6 @@
 				)
 				(path "/d279ec14-0cf9-4295-bb74-26f70799167d/daa2df12-9b23-47ea-bde9-69cc9a763513"
 					(reference "R47")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "canhw:INA212AIDCKT")
-		(at 241.3 92.71 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "71218f3d-bbe2-4988-9944-c7c1c4245a4b")
-		(property "Reference" "U9"
-			(at 241.3 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "INA212AIDCKT"
-			(at 241.3 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering"
-			(at 241.3 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina210.pdf"
-			(at 241.3 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "INA212 1000V/V Current Sense Amp"
-			(at 241.3 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c38df770-8f42-4bf6-863c-3d017d0df1e0")
-		)
-		(pin "2"
-			(uuid "a7bf3107-7210-4fab-9b90-3ff649013f74")
-		)
-		(pin "3"
-			(uuid "79fcb0af-08ef-4105-96d8-fb460a17c517")
-		)
-		(pin "4"
-			(uuid "8d94c2a6-a715-4e89-815b-94bba378cd48")
-		)
-		(pin "5"
-			(uuid "189e2765-72ff-4c40-b857-ad0067d32b01")
-		)
-		(pin "6"
-			(uuid "1b48727e-9aca-4b60-96a5-69a820855d89")
-		)
-		(instances
-			(project "altimeter"
-				(path "/d279ec14-0cf9-4295-bb74-26f70799167d/ab8c92f6-cdf6-4de2-8fcd-f4345bf03ce0"
-					(reference "U9")
-					(unit 1)
-				)
-				(path "/d279ec14-0cf9-4295-bb74-26f70799167d/daa2df12-9b23-47ea-bde9-69cc9a763513"
-					(reference "U12")
 					(unit 1)
 				)
 			)
