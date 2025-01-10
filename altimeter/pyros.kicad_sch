@@ -1429,6 +1429,126 @@
 				)
 			)
 		)
+		(symbol "power:VCC"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "VCC"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VCC\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VCC_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VCC_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 189.23 101.6)
@@ -1646,16 +1766,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 76.2) (xy 115.57 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c3a9051-f507-4746-882b-d97c8fd6540a")
-	)
-	(wire
-		(pts
 			(xy 115.57 96.52) (xy 127 96.52)
 		)
 		(stroke
@@ -1693,6 +1803,16 @@
 			(type default)
 		)
 		(uuid "5c120785-d362-4692-821e-46acd5121fb3")
+	)
+	(wire
+		(pts
+			(xy 87.63 81.28) (xy 95.25 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c7fa7f6-68ef-4e50-9a3a-498a09e7398f")
 	)
 	(wire
 		(pts
@@ -1786,6 +1906,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 80.01) (xy 87.63 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b485b6cc-a989-4926-87b8-16adc61deded")
+	)
+	(wire
+		(pts
 			(xy 115.57 76.2) (xy 115.57 83.82)
 		)
 		(stroke
@@ -1856,16 +1986,6 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 81.28) (xy 95.25 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9d0d429-b12a-429c-9366-e9d3e6c385c8")
-	)
-	(wire
-		(pts
 			(xy 231.14 101.6) (xy 231.14 104.14)
 		)
 		(stroke
@@ -1873,16 +1993,6 @@
 			(type default)
 		)
 		(uuid "cc68b2d4-0862-432e-88b6-2544e69a2ec1")
-	)
-	(wire
-		(pts
-			(xy 139.7 73.66) (xy 144.78 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cef2713a-2378-47af-bfbd-a28f00530da9")
 	)
 	(wire
 		(pts
@@ -2092,42 +2202,6 @@
 		)
 		(uuid "1730142d-b1c3-42c8-9705-d2aec2e755d9")
 	)
-	(hierarchical_label "+PYRO"
-		(shape input)
-		(at 92.71 81.28 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "210ccd54-d323-41e3-85ab-31839f4e4533")
-	)
-	(hierarchical_label "+PYRO"
-		(shape input)
-		(at 139.7 73.66 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "46fdffb0-a395-4743-9eae-ac6b1d3e6aad")
-	)
-	(hierarchical_label "+PYRO"
-		(shape input)
-		(at 113.03 76.2 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4a33aa4d-2a46-4faf-a6f6-992a1fa09cc4")
-	)
 	(hierarchical_label "FIRE"
 		(shape input)
 		(at 60.96 93.98 180)
@@ -2321,6 +2395,76 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 87.63 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "566e6a72-8e9a-470b-887d-a5a0fcffd3b5")
+		(property "Reference" "#PWR040"
+			(at 87.63 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+PYRO"
+			(at 83.82 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 87.63 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c29f8b04-e6d7-431a-83ee-e258e3fb00a6")
+		)
+		(instances
+			(project "altimeter"
+				(path "/d279ec14-0cf9-4295-bb74-26f70799167d/ab8c92f6-cdf6-4de2-8fcd-f4345bf03ce0"
+					(reference "#PWR040")
+					(unit 1)
+				)
+				(path "/d279ec14-0cf9-4295-bb74-26f70799167d/daa2df12-9b23-47ea-bde9-69cc9a763513"
+					(reference "#PWR0104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 137.16 128.27 0)
 		(unit 1)
@@ -2385,6 +2529,76 @@
 				)
 				(path "/d279ec14-0cf9-4295-bb74-26f70799167d/daa2df12-9b23-47ea-bde9-69cc9a763513"
 					(reference "#PWR081")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 115.57 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5f30deef-81c1-4452-b79e-865dc019de75")
+		(property "Reference" "#PWR0106"
+			(at 115.57 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+PYRO"
+			(at 111.76 71.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 115.57 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 115.57 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 115.57 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "126992bf-e1b8-4bfe-878e-0afc60b19e14")
+		)
+		(instances
+			(project "altimeter"
+				(path "/d279ec14-0cf9-4295-bb74-26f70799167d/ab8c92f6-cdf6-4de2-8fcd-f4345bf03ce0"
+					(reference "#PWR0106")
+					(unit 1)
+				)
+				(path "/d279ec14-0cf9-4295-bb74-26f70799167d/daa2df12-9b23-47ea-bde9-69cc9a763513"
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
@@ -3549,6 +3763,76 @@
 				)
 				(path "/d279ec14-0cf9-4295-bb74-26f70799167d/daa2df12-9b23-47ea-bde9-69cc9a763513"
 					(reference "#PWR086")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 144.78 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c6dca8d0-ffa1-4b8e-b35e-3c104de05af2")
+		(property "Reference" "#PWR0108"
+			(at 144.78 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+PYRO"
+			(at 140.97 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.78 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 144.78 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7f0abcc1-3ca6-406d-9690-7a305d794c3a")
+		)
+		(instances
+			(project "altimeter"
+				(path "/d279ec14-0cf9-4295-bb74-26f70799167d/ab8c92f6-cdf6-4de2-8fcd-f4345bf03ce0"
+					(reference "#PWR0108")
+					(unit 1)
+				)
+				(path "/d279ec14-0cf9-4295-bb74-26f70799167d/daa2df12-9b23-47ea-bde9-69cc9a763513"
+					(reference "#PWR0109")
 					(unit 1)
 				)
 			)
