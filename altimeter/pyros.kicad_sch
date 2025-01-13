@@ -2094,7 +2094,7 @@
 		)
 		(uuid "fa49f0e0-1b5d-45d0-872d-1ca1650b5442")
 	)
-	(text "I_{pyros} = 12.6/(R_{limit}+R_{ematch})\nMinimum I_{pyros} - 2 in parallel, minimum single fire current is 0.5A\nFOS 2 -> I_{pyros} = 2A\nR_{limit} = 4.75 (round down to 4 to get I_{pyros} = 2.3A\n\nWorst Case (shorted ematch): P = V^2/R = (12.6)^2/4 = 39.69W\nNominal Case : P = I^2 * R = 20.99W"
+	(text "I_{pyros} = 12.6/(R_{limit}+R_{ematch})\nMinimum I_{pyros} - 2 in parallel, minimum single fire current is 0.5A\nTake R_{ematch} when firing to be 1.5R, so R_{ematches} is 0.75R\nR_{limit} = 4 -> get I_{pyros} = 2.66A\nI_{resistor} when shorted ematches -> 12.6/4 -> 3.15A\n\nWorst Case (shorted ematch): P = V^2/R = (12.6)^2/4 = 39.69W\nNominal Case : P = I^2 * R = 28.14W"
 		(exclude_from_sim no)
 		(at 21.59 58.42 0)
 		(effects
