@@ -4371,7 +4371,7 @@
 		)
 		(uuid "54dcf779-1f5a-404d-981f-85467f1b72e7")
 	)
-	(text "100V/V Gain\n"
+	(text "200V/V Gain\n"
 		(exclude_from_sim no)
 		(at 196.85 134.62 0)
 		(effects
@@ -4402,9 +4402,9 @@
 		)
 		(uuid "97f5efb7-1028-4e7f-8a1b-cc903826a6b9")
 	)
-	(text "7.5A"
+	(text "7.5A hold PTC"
 		(exclude_from_sim no)
-		(at 57.15 43.18 0)
+		(at 52.705 42.545 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4412,6 +4412,17 @@
 			(justify left bottom)
 		)
 		(uuid "dd4f9d3b-d0c7-4e41-8979-d9da07fd9288")
+	)
+	(text "Curr Sense:\nI_{max} = 2A\nV_{r}=IR=2*0.008=0.016V\nV_{out}=GV_{r}=200(0.016)=3.2V"
+		(exclude_from_sim no)
+		(at 179.07 24.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ea40f313-e337-460f-ad5b-697ce7061f16")
 	)
 	(text "Maintain 3V3 voltage within operating level for STM32 for 100ms\n(in case of brief disconnections of battery caused by vibration"
 		(exclude_from_sim no)
@@ -4422,6 +4433,17 @@
 			)
 		)
 		(uuid "efe97a5a-8fbb-44da-8980-a9e29c98befc")
+	)
+	(text "Curr Sense:\nI_{max} = 7.5A\nV_{r}=IR=7.5*0.002=0.015V\nV_{out}=GV_{r}=200(0.015)=3V"
+		(exclude_from_sim no)
+		(at 75.565 20.955 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f82a635a-88d6-47b2-8cc3-5337a43cbb45")
 	)
 	(text "12V to 3V3 buck converter (2A Max)"
 		(exclude_from_sim no)
@@ -7214,7 +7236,7 @@
 				)
 			)
 		)
-		(property "Value" "0.025R"
+		(property "Value" "0.002R"
 			(at 87.63 34.29 90)
 			(effects
 				(font
@@ -7903,8 +7925,8 @@
 				)
 			)
 		)
-		(property "Value" "UAI-1206-7A500-SMD-0F-AU"
-			(at 62.23 34.29 90)
+		(property "Value" "2920L700/12MR"
+			(at 59.69 34.29 90)
 			(effects
 				(font
 					(size 1.27 1.27)
