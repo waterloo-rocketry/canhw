@@ -3,3 +3,5 @@
 [Schematic Checklist](https://uwaterloo.atlassian.net/wiki/spaces/ROCKETRY/pages/42646503921/Schematics)
 [Layout Checklist](https://uwaterloo.atlassian.net/wiki/spaces/ROCKETRY/pages/42646667708/PCBs)
 
+
+The requirements for this project can be found at LINK.
