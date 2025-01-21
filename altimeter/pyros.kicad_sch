@@ -5,31 +5,48 @@
 	(uuid "e4c911c5-d38d-4696-b8f9-394dc1e2e609")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:Conn_01x02_Socket"
+		(symbol "Connector:TestPoint"
+			(pin_numbers hide)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 0.762) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J7"
-				(at 0.6351 -3.81 90)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
 				)
 			)
-			(property "Value" "e-match"
-				(at -1.9049 -3.81 90)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
 				)
 			)
-			(property "Footprint" "canhw_footprints:connector_Harwin_M80-5000642"
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
 				(at 0 0 0)
 				(effects
 					(font
@@ -38,7 +55,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://cdn.harwin.com/pdfs/M80-500.pdf"
+			(property "ki_keywords" "test point tp"
 				(at 0 0 0)
 				(effects
 					(font
@@ -47,7 +64,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x02, script generated"
+			(property "ki_fp_filters" "Pin* Test*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -56,85 +73,24 @@
 					(hide yes)
 				)
 			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x02_Socket_1_1"
-				(arc
-					(start 0 -2.032)
-					(mid -0.5058 -2.54)
-					(end 0 -3.048)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
 					(stroke
-						(width 0.1524)
+						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -1.27 -2.54) (xy -0.508 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -0.508 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0.508)
-					(mid -0.5058 0)
-					(end 0 -0.508)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			)
+			(symbol "TestPoint_1_1"
 				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -142,24 +98,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1666,6 +1604,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 85.09) (xy 127 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bbae38d-8793-4eb9-8a0c-74dfb8632915")
+	)
+	(wire
+		(pts
 			(xy 105.41 99.06) (xy 105.41 93.98)
 		)
 		(stroke
@@ -1726,7 +1674,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 90.17) (xy 127 96.52)
+			(xy 127 85.09) (xy 127 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1816,6 +1764,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.975 136.525) (xy 180.975 133.985)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f56a462-e6a5-4cdc-866c-c83f5cef95e7")
+	)
+	(wire
+		(pts
 			(xy 102.87 99.06) (xy 105.41 99.06)
 		)
 		(stroke
@@ -1823,6 +1781,26 @@
 			(type default)
 		)
 		(uuid "607ef25b-b358-4350-904b-391ee0e7fbaa")
+	)
+	(wire
+		(pts
+			(xy 198.755 136.525) (xy 198.755 133.985)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "625e42b5-bf34-4ea8-aa12-dc80b20f6e92")
+	)
+	(wire
+		(pts
+			(xy 129.54 88.265) (xy 132.08 88.265)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66c9bf5b-c05a-4857-a7dc-fc283e4154a4")
 	)
 	(wire
 		(pts
@@ -1893,6 +1871,16 @@
 			(type default)
 		)
 		(uuid "97ff6e1a-28ce-446f-8c14-2c926d8ec09d")
+	)
+	(wire
+		(pts
+			(xy 211.455 136.525) (xy 198.755 136.525)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e022068-a86c-4797-bdab-e59c147da24a")
 	)
 	(wire
 		(pts
@@ -1986,6 +1974,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.675 136.525) (xy 180.975 136.525)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6ac55a9-ef6a-4aa9-a635-407a99cdedcf")
+	)
+	(wire
+		(pts
 			(xy 231.14 101.6) (xy 231.14 104.14)
 		)
 		(stroke
@@ -1993,6 +1991,16 @@
 			(type default)
 		)
 		(uuid "cc68b2d4-0862-432e-88b6-2544e69a2ec1")
+	)
+	(wire
+		(pts
+			(xy 129.54 88.265) (xy 129.54 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d415f6d3-39f8-41a3-9119-4f540532d3b0")
 	)
 	(wire
 		(pts
@@ -2084,16 +2092,6 @@
 		)
 		(uuid "f55dcaa7-5f71-49b7-b46c-ea318e7a67cc")
 	)
-	(wire
-		(pts
-			(xy 129.54 96.52) (xy 129.54 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa49f0e0-1b5d-45d0-872d-1ca1650b5442")
-	)
 	(text "I_{pyros} = 12.6/(R_{limit}+R_{ematch})\nMinimum I_{pyros} - 2 in parallel, minimum single fire current is 0.5A\nTake R_{ematch} when firing to be 1.5R, so R_{ematches} is 0.75R\nR_{limit} = 4 -> get I_{pyros} = 2.66A\nI_{resistor} when shorted ematches -> 12.6/4 -> 3.15A\n\nWorst Case (shorted ematch): P = V^2/R = (12.6)^2/4 = 39.69W\nNominal Case : P = I^2 * R = 28.14W"
 		(exclude_from_sim no)
 		(at 21.59 58.42 0)
@@ -2125,16 +2123,6 @@
 		)
 		(uuid "cfd41f3a-6b17-44b4-9b85-1e5f896c7f0f")
 	)
-	(text "M80-5000642"
-		(exclude_from_sim no)
-		(at 128.27 81.28 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "fcbe3e4a-43f0-4b07-ae63-0ef0a883552f")
-	)
 	(label "PY+"
 		(at 127 96.52 180)
 		(fields_autoplaced yes)
@@ -2146,6 +2134,17 @@
 		)
 		(uuid "09d8666c-ca4d-45a8-9e2a-b939be16cb38")
 	)
+	(label "SENSE_I"
+		(at 211.455 136.525 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "65598871-c4f7-4429-8903-e06cb95abfe0")
+	)
 	(label "PY-"
 		(at 130.81 96.52 0)
 		(fields_autoplaced yes)
@@ -2156,6 +2155,17 @@
 			(justify left bottom)
 		)
 		(uuid "734b0735-a930-4a2e-a465-6a8782b902c0")
+	)
+	(label "SENSE"
+		(at 193.675 136.525 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7c838aa6-96e0-4df0-be62-8e315ecc05af")
 	)
 	(label "PY-"
 		(at 255.27 99.06 180)
@@ -2226,6 +2236,18 @@
 		)
 		(uuid "add7b474-69fe-4461-be03-654a2259cbb5")
 	)
+	(hierarchical_label "FIRE-"
+		(shape output)
+		(at 132.08 88.265 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bc06692e-68c9-4ba4-a907-4791b1518ad0")
+	)
 	(hierarchical_label "SENSE_I"
 		(shape output)
 		(at 256.54 96.52 0)
@@ -2237,6 +2259,18 @@
 			(justify left)
 		)
 		(uuid "d0353af6-14c7-455e-91eb-c387346a5d0e")
+	)
+	(hierarchical_label "FIRE+"
+		(shape output)
+		(at 132.08 85.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d69c7e0c-8dfc-4ce1-81f1-18aee7fbab64")
 	)
 	(symbol
 		(lib_id "altimeter:INA212AIDCKT")
@@ -3107,79 +3141,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Socket")
-		(at 127 85.09 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8147e8d7-7f8d-4569-a127-80ec23483d31")
-		(property "Reference" "J7"
-			(at 130.81 84.4549 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "e-match"
-			(at 130.81 86.9949 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "canhw_footprints:connector_Harwin_M80-5000642"
-			(at 127 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn.harwin.com/pdfs/M80-500.pdf"
-			(at 127 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 127 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "84da7e9f-46ff-4458-aabe-a303c1722b72")
-		)
-		(pin "2"
-			(uuid "5f3dfc4d-7bd8-495c-977d-c315a1b2a41c")
-		)
-		(instances
-			(project "altimeter"
-				(path "/d279ec14-0cf9-4295-bb74-26f70799167d/ab8c92f6-cdf6-4de2-8fcd-f4345bf03ce0"
-					(reference "J7")
-					(unit 1)
-				)
-				(path "/d279ec14-0cf9-4295-bb74-26f70799167d/daa2df12-9b23-47ea-bde9-69cc9a763513"
-					(reference "J8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 115.57 87.63 0)
 		(unit 1)
@@ -3699,6 +3660,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 198.755 133.985 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c3e272cf-8046-4af3-ab73-dcd8b43e1cad")
+		(property "Reference" "TP6"
+			(at 200.66 129.4129 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SENSE_I"
+			(at 200.66 131.9529 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature"
+			(at 203.835 133.985 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 203.835 133.985 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 198.755 133.985 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06f6531b-4bac-474f-9b38-a0bfddb59737")
+		)
+		(instances
+			(project "altimeter"
+				(path "/d279ec14-0cf9-4295-bb74-26f70799167d/ab8c92f6-cdf6-4de2-8fcd-f4345bf03ce0"
+					(reference "TP6")
+					(unit 1)
+				)
+				(path "/d279ec14-0cf9-4295-bb74-26f70799167d/daa2df12-9b23-47ea-bde9-69cc9a763513"
+					(reference "TP14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 231.14 104.14 0)
 		(unit 1)
@@ -4049,6 +4081,77 @@
 				)
 				(path "/d279ec14-0cf9-4295-bb74-26f70799167d/daa2df12-9b23-47ea-bde9-69cc9a763513"
 					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 180.975 133.985 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d5caed3a-67ac-4d63-8f1e-d7ae1dd59079")
+		(property "Reference" "TP1"
+			(at 182.88 129.4129 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SENSE_DIV"
+			(at 182.88 131.9529 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature"
+			(at 186.055 133.985 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 186.055 133.985 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 180.975 133.985 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38aec0e6-bc3e-43d2-bc24-68c7f7fe7ca4")
+		)
+		(instances
+			(project "altimeter"
+				(path "/d279ec14-0cf9-4295-bb74-26f70799167d/ab8c92f6-cdf6-4de2-8fcd-f4345bf03ce0"
+					(reference "TP1")
+					(unit 1)
+				)
+				(path "/d279ec14-0cf9-4295-bb74-26f70799167d/daa2df12-9b23-47ea-bde9-69cc9a763513"
+					(reference "TP13")
 					(unit 1)
 				)
 			)
