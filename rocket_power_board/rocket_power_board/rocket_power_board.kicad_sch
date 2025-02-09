@@ -2942,7 +2942,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 104.14) (xy 212.09 104.14)
+			(xy 209.55 88.9) (xy 212.09 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2992,7 +2992,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 88.9) (xy 212.09 88.9)
+			(xy 157.48 143.51) (xy 160.02 143.51)
 		)
 		(stroke
 			(width 0)
@@ -3356,7 +3356,7 @@
 		)
 		(uuid e6cd2455-8928-4ab7-a873-27cc932ce5a3)
 	)
-	(text "Things to do\nFix up 12V sensing and clean up schmatic markers\nFinish e-fuse charge circuit\nFinish 5V mosfet clean-up"
+	(text "Things to do\nFix up 12V sensing and clean up schmatic markers\nChange efuse to x21 or x31 varient for autoreset\nFinish e-fuse charge circuit\nFinish 5V mosfet clean-up"
 		(exclude_from_sim no)
 		(at 258.826 123.444 0)
 		(effects
@@ -3447,7 +3447,7 @@
 		(uuid "21053098-c59b-4881-b721-53e4dd0b9a97")
 	)
 	(label "Charge_Line"
-		(at 209.55 88.9 180)
+		(at 157.48 143.51 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3787,7 +3787,7 @@
 		(uuid "f3074194-17d4-4686-9fa6-8e5039056775")
 	)
 	(label "5V_EN"
-		(at 209.55 104.14 180)
+		(at 209.55 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7100,7 +7100,7 @@
 	)
 	(sheet
 		(at 212.09 62.23)
-		(size 50.8 52.07)
+		(size 50.8 34.29)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -7120,7 +7120,7 @@
 			)
 		)
 		(property "Sheetfile" "5V_Enable.kicad_sch"
-			(at 212.09 114.8846 0)
+			(at 212.09 97.1046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7129,7 +7129,7 @@
 			)
 		)
 		(pin "5V_EN" input
-			(at 212.09 104.14 180)
+			(at 212.09 88.9 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7167,16 +7167,6 @@
 				(justify right)
 			)
 			(uuid "88fdd2c9-3fc4-472e-9aa2-b594b8c73352")
-		)
-		(pin "Charging_Current" output
-			(at 212.09 88.9 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "9b6968c3-e730-4648-a679-3ac590815bd5")
 		)
 		(instances
 			(project "rocket_power_board"
@@ -7236,7 +7226,7 @@
 	)
 	(sheet
 		(at 160.02 138.43)
-		(size 35.56 15.24)
+		(size 43.18 20.32)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -7256,13 +7246,33 @@
 			)
 		)
 		(property "Sheetfile" "charge.kicad_sch"
-			(at 160.02 154.2546 0)
+			(at 160.02 159.3346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
+		)
+		(pin "Batt_CurrentSense" input
+			(at 203.2 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "0655cfa7-ecf2-45ff-be3f-b50b85d517b0")
+		)
+		(pin "Charging_Current" output
+			(at 160.02 143.51 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "1cb55def-fd42-41f5-8d67-21bf6d208384")
 		)
 		(instances
 			(project "rocket_power_board"
