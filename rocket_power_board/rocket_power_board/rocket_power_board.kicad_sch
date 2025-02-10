@@ -3356,7 +3356,7 @@
 		)
 		(uuid e6cd2455-8928-4ab7-a873-27cc932ce5a3)
 	)
-	(text "Things to do\nFix up 12V sensing by adding INA 180\nFinish 5V Efuse and mosfet setup\nFinish 5V mosfet clean-up"
+	(text "Things to do\nSize 12V Current Sense Resistor\nDetermine Inrush Current limit for 12V and 5V line\nFinish 5V Efuse and mosfet setup\nFinish 5V mosfet clean-up"
 		(exclude_from_sim no)
 		(at 258.826 123.444 0)
 		(effects
@@ -7186,16 +7186,6 @@
 				(justify left top)
 			)
 		)
-		(pin "Batt_CurrentSense" input
-			(at 71.12 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "0655cfa7-ecf2-45ff-be3f-b50b85d517b0")
-		)
 		(pin "Charging_Current" output
 			(at 27.94 113.03 180)
 			(effects
@@ -7225,6 +7215,26 @@
 				(justify right)
 			)
 			(uuid "70a70081-6653-48ac-b18f-1392827f2fd3")
+		)
+		(pin "12V_Current_Sense" input
+			(at 71.12 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "fa5375a9-57c1-4dff-8a32-fac34d53a79a")
+		)
+		(pin "BATT_Current_Sense" input
+			(at 71.12 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "218084c5-8426-49e0-8bfa-81d2172cc351")
 		)
 		(instances
 			(project "rocket_power_board"

@@ -2,7 +2,7 @@
 	(version 20231120)
 	(generator "eeschema")
 	(generator_version "8.0")
-	(uuid "e4bfd347-bff2-49f2-bc30-ac148551e948")
+	(uuid "d4126331-fe8f-4d41-97da-4cea12d3f18b")
 	(paper "A4")
 	(lib_symbols
 		(symbol "2024-11-08_04-01-59:LMR51430XDDCR"
@@ -1837,6 +1837,12 @@
 		(uuid "2e5b0298-890a-47c3-972f-27227de3760d")
 	)
 	(junction
+		(at 251.46 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "36d0cf9c-5922-4139-b5de-9db40fa6fbf8")
+	)
+	(junction
 		(at 40.64 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2232,6 +2238,16 @@
 	)
 	(wire
 		(pts
+			(xy 247.65 85.09) (xy 251.46 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c8e5dc0-84a5-49eb-8bb8-6ab33e877bc4")
+	)
+	(wire
+		(pts
 			(xy 187.96 63.5) (xy 187.96 64.77)
 		)
 		(stroke
@@ -2559,6 +2575,16 @@
 			(type default)
 		)
 		(uuid "c6efe518-566f-4e77-a899-941f4a39df4d")
+	)
+	(wire
+		(pts
+			(xy 251.46 85.09) (xy 261.62 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9a1f8db-292e-4b0b-85b4-eff35feb3ae8")
 	)
 	(wire
 		(pts
@@ -2916,7 +2942,7 @@
 	)
 	(hierarchical_label "BATT_Current_Sense"
 		(shape input)
-		(at 240.03 85.09 0)
+		(at 261.62 85.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3157,6 +3183,72 @@
 			(project "rocket_power_board"
 				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
 					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 251.46 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1226c652-b6c9-4278-aee6-03f9a90ba14e")
+		(property "Reference" "#PWR022"
+			(at 251.46 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 251.46 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.46 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 251.46 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 251.46 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d5ac35ec-7642-4ce5-9ad7-6b2585207195")
+		)
+		(instances
+			(project "rocket_power_board"
+				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -4071,6 +4163,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 251.46 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8215ea29-eeb2-4845-9dd5-f3cdc5930ca4")
+		(property "Reference" "C10"
+			(at 254.508 89.408 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1.6nF"
+			(at 254.508 91.948 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 252.4252 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 251.46 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 251.46 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "74c9dcb5-3e06-42c0-a4d3-8c612b0506f2")
+		)
+		(pin "1"
+			(uuid "25871a5e-1fe1-4e73-a9eb-c7f63bd36e9e")
+		)
+		(instances
+			(project "rocket_power_board"
+				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 220.98 93.98 0)
 		(mirror y)
@@ -4340,6 +4501,74 @@
 			(project "rocket_power_board"
 				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 243.84 85.09 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ac8fd8e1-f437-42cd-a1f6-f04ad8eee455")
+		(property "Reference" "R18"
+			(at 243.84 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "500R"
+			(at 243.84 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 243.586 84.074 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 243.84 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 243.84 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c174483e-45a1-45b6-98ad-4e536d2e4427")
+		)
+		(pin "2"
+			(uuid "aca87c5d-a408-471c-b62d-b6e27db270f0")
+		)
+		(instances
+			(project "rocket_power_board"
+				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
+					(reference "R18")
 					(unit 1)
 				)
 			)
