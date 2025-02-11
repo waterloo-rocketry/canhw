@@ -2059,6 +2059,10 @@
 		(uuid "f50b79ef-ada2-4c5e-905f-0e35577412d6")
 	)
 	(no_connect
+		(at 172.72 48.26)
+		(uuid "3ac482d8-51ae-4ca3-ab6c-ba3c9cf694a4")
+	)
+	(no_connect
 		(at 127 53.34)
 		(uuid "fc9d0108-c638-4fb8-b1a8-5498a1463398")
 	)
@@ -2274,6 +2278,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 50.8) (xy 176.53 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a0c5dc8-ac9e-4724-8866-6dadf6ff947d")
+	)
+	(wire
+		(pts
 			(xy 74.93 123.19) (xy 78.74 123.19)
 		)
 		(stroke
@@ -2351,6 +2365,16 @@
 			(type default)
 		)
 		(uuid "535a5ef6-3e50-4ccf-838c-33f512dc12b7")
+	)
+	(wire
+		(pts
+			(xy 176.53 50.8) (xy 176.53 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "548eb66e-5b1e-451e-bafc-04bebf8fb5da")
 	)
 	(wire
 		(pts
@@ -2973,6 +2997,16 @@
 			)
 		)
 		(uuid "570eebeb-fc5a-44c5-a9aa-c27b34ace9be")
+	)
+	(text "Calculated for Slew Rate of 15V/ms \nand inrush current of 1.5A"
+		(exclude_from_sim no)
+		(at 175.006 77.216 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8f4e8665-384b-4425-a774-c1433a2adc1e")
 	)
 	(text "Lipo Input"
 		(exclude_from_sim no)
@@ -3781,6 +3815,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 176.53 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3f3ef61f-fba5-492e-b1d8-197d18653eac")
+		(property "Reference" "C15"
+			(at 168.402 62.484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.8nF"
+			(at 167.894 64.262 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.4952 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 176.53 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 176.53 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e8b810ff-303d-4dea-8c2d-85880d632d3c")
+		)
+		(pin "2"
+			(uuid "4afb1979-216e-4a0e-a038-2f3f27654a54")
+		)
+		(instances
+			(project "rocket_power_board"
+				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
+					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 115.57 25.4 0)
 		(unit 1)
@@ -4456,6 +4559,72 @@
 			(project "rocket_power_board"
 				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 176.53 67.31 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "80405800-e684-438d-95ca-20422c3313eb")
+		(property "Reference" "#PWR032"
+			(at 176.53 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 176.53 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 176.53 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cbf19425-7026-41c1-9bfc-ac415b290db6")
+		)
+		(instances
+			(project "rocket_power_board"
+				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
