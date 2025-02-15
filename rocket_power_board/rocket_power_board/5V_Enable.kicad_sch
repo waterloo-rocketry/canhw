@@ -963,10 +963,6 @@
 		(color 0 0 0 0)
 		(uuid "c9e2b896-ed94-45c7-bb84-77aabb4da882")
 	)
-	(no_connect
-		(at 161.29 87.63)
-		(uuid "70557526-082d-4b0f-8928-63ed9980e352")
-	)
 	(wire
 		(pts
 			(xy 176.53 92.71) (xy 176.53 95.25)
@@ -1169,6 +1165,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 87.63) (xy 176.53 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6473370-93d6-489c-bada-86b42ad05ca2")
+	)
+	(wire
+		(pts
 			(xy 172.72 78.74) (xy 172.72 95.25)
 		)
 		(stroke
@@ -1230,7 +1236,6 @@
 	(hierarchical_label "5V_Current_Sense"
 		(shape output)
 		(at 182.88 92.71 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1239,10 +1244,20 @@
 		)
 		(uuid "151dd86b-18bd-419d-beee-fa4f0951512c")
 	)
+	(hierarchical_label "5V_Fuse_Fault"
+		(shape input)
+		(at 176.53 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6b2349fc-2b7d-4f78-80b3-df6b9e7772fe")
+	)
 	(hierarchical_label "5V_Fuse_RST{slash}EN"
 		(shape input)
 		(at 120.65 62.23 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1672,7 +1687,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "455R"
+		(property "Value" "475R"
 			(at 179.07 100.3299 0)
 			(effects
 				(font
@@ -2365,7 +2380,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "TPS259620DDAR"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps2596.pdf?ts=1739064695581&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTPS2596%252Fpart-details%252FTPS259630DDAR"
 			(at 115.57 87.63 0)
 			(effects
 				(font
