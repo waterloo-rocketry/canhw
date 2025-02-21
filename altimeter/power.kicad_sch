@@ -4,6 +4,12 @@
 	(generator_version "8.0")
 	(uuid "4d720ac9-76cb-43bc-93ad-46ee0d1f94d1")
 	(paper "A4")
+	(title_block
+		(title "SRAD Altimeter")
+		(date "2025-02-20")
+		(company "Waterloo Rocketry")
+		(comment 1 "Designer: Ash Lang")
+	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
 			(pin_numbers hide)
@@ -1907,8 +1913,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 0 2.032 0)
+			(property "Reference" "U5"
+				(at 0 3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1916,7 +1922,7 @@
 				)
 			)
 			(property "Value" "NCV33275ST5.0T3G"
-				(at 0 0 0)
+				(at 0 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1963,24 +1969,6 @@
 					)
 				)
 				(pin power_in line
-					(at 7.62 -3.81 180)
-					(length 2.54)
-					(name "V_{out}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
 					(at -7.62 -3.81 0)
 					(length 2.54)
 					(name "V_{in}"
@@ -2009,6 +1997,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 7.62 -3.81 180)
+					(length 2.54)
+					(name "V_{out}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3011,12 +3017,6 @@
 		(uuid "63692d7b-4fce-45db-b732-f97e340ceb4f")
 	)
 	(junction
-		(at 149.86 166.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "63e3cf07-2603-41dd-b12d-042523821833")
-	)
-	(junction
 		(at 189.865 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3599,16 +3599,6 @@
 			(type default)
 		)
 		(uuid "580e39bd-4ba4-4381-b270-812f6d77c09d")
-	)
-	(wire
-		(pts
-			(xy 149.86 166.37) (xy 149.86 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58362758-c574-44d1-82bd-e61cd4b650f5")
 	)
 	(wire
 		(pts
@@ -4556,6 +4546,16 @@
 		)
 		(uuid "3113f85f-28f1-41b1-b562-b804dbf4d27d")
 	)
+	(text "Gain: 200V/V\n"
+		(exclude_from_sim no)
+		(at 225.425 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3172cd2f-bd8c-4c82-9f88-f7d642f2f737")
+	)
 	(text "12V to 5V LDO (for MCP2562 only)\n"
 		(exclude_from_sim no)
 		(at 49.53 88.9 0)
@@ -5278,71 +5278,6 @@
 			(project "altimeter"
 				(path "/d279ec14-0cf9-4295-bb74-26f70799167d/96c49d61-3d80-4e7d-ba45-7dde0b325a8c"
 					(reference "#PWR067")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 149.86 185.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1a5deb79-32c7-45ef-a7c1-a4a24647a266")
-		(property "Reference" "#PWR0119"
-			(at 149.86 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 149.86 189.865 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 149.86 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 149.86 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 149.86 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d317e6f7-2c31-412a-abdb-ff118050b686")
-		)
-		(instances
-			(project "altimeter"
-				(path "/d279ec14-0cf9-4295-bb74-26f70799167d/96c49d61-3d80-4e7d-ba45-7dde0b325a8c"
-					(reference "#PWR0119")
 					(unit 1)
 				)
 			)
@@ -6431,7 +6366,7 @@
 		(pin "2"
 			(uuid "31adb9bc-2d16-4eeb-bb4e-8a9cb32ce72a")
 		)
-		(pin ""
+		(pin "3"
 			(uuid "c9405875-4721-47ce-bff1-18821c1c1631")
 		)
 		(instances
