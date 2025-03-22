@@ -631,6 +631,24 @@
 					)
 				)
 				(pin output line
+					(at 45.72 0 180)
+					(length 7.62)
+					(name "*FLT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
 					(at 45.72 -5.08 180)
 					(length 7.62)
 					(name "ILM"
@@ -677,26 +695,6 @@
 						)
 					)
 					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "TPS259620DDAR_1_1"
-				(pin output line
-					(at 45.72 0 180)
-					(length 7.62)
-					(name "~{FLT}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1050,22 +1048,16 @@
 		(uuid "096f9c06-8eae-4589-85f2-49f7ab92e585")
 	)
 	(junction
-		(at 107.95 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "09a44e4f-497e-400e-b13d-77281cf152ec")
-	)
-	(junction
-		(at 172.72 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2aa522ee-8bf4-46ad-a950-bfe5d02933de")
-	)
-	(junction
 		(at 176.53 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "515efd90-7d83-41c3-af90-741ecd05bfc5")
+	)
+	(junction
+		(at 107.95 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5f0f16be-31da-40ab-8f8e-2c5535e3a154")
 	)
 	(junction
 		(at 113.03 107.95)
@@ -1078,6 +1070,22 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c9e2b896-ed94-45c7-bb84-77aabb4da882")
+	)
+	(junction
+		(at 172.72 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "edaa0907-7c97-4a14-bce4-5adf23a54b80")
+	)
+	(wire
+		(pts
+			(xy 107.95 90.17) (xy 115.57 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "021e81f9-5f42-41e4-8f4f-152961a3f839")
 	)
 	(wire
 		(pts
@@ -1098,16 +1106,6 @@
 			(type default)
 		)
 		(uuid "182b8655-5cf3-4df2-b9de-65f51d8a7922")
-	)
-	(wire
-		(pts
-			(xy 172.72 81.28) (xy 172.72 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c0d7012-140a-4228-a804-86704d907115")
 	)
 	(wire
 		(pts
@@ -1211,13 +1209,13 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 90.17) (xy 115.57 90.17)
+			(xy 172.72 80.01) (xy 172.72 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9980be08-d33c-4a57-b897-2d4e9f6feff6")
+		(uuid "99b559e4-7c1c-4a95-b7db-63eccd1c0d0a")
 	)
 	(wire
 		(pts
@@ -1311,7 +1309,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 78.74) (xy 172.72 81.28)
+			(xy 172.72 78.74) (xy 172.72 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1358,6 +1356,16 @@
 			)
 		)
 		(uuid "b1c3ea81-ed29-4562-918f-d27c0dffcfcc")
+	)
+	(text "Set Overvoltage Protection\n400k=5.7V max clamp\n"
+		(exclude_from_sim no)
+		(at 87.122 103.632 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c2180210-108f-4b8f-ab5a-1b9e04b0619b")
 	)
 	(text "Calculated for Slew Rate of 15V/ms \nand inrush current of 1.5A"
 		(exclude_from_sim no)
@@ -1538,6 +1546,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 91.44 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1f5b81e8-1dbf-4afe-8321-b508dc478d19")
+		(property "Reference" "C16"
+			(at 83.058 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 81.788 84.582 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 92.4052 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 91.44 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 91.44 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a7478187-a3bb-4c95-a9d2-1ff794da5d3d")
+		)
+		(pin "2"
+			(uuid "926772e3-c10c-4548-9a40-82dcb8891108")
+		)
+		(instances
+			(project "rocket_power_board"
+				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/7eeeb7f6-036b-4de7-994b-9c7d5f53146a"
+					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 107.95 90.17 0)
 		(unit 1)
@@ -1545,10 +1622,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1bb2c143-19ae-44a2-b18d-b6c84d84c496")
-		(property "Reference" "TP3"
-			(at 110.49 85.5979 0)
+		(uuid "278d5fd8-2458-4859-abaa-468c57907ebe")
+		(property "Reference" "TP1"
+			(at 109.982 85.344 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1593,81 +1669,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "fd65bf9a-4e4c-474a-a198-eaf7e894bd49")
+			(uuid "57b78e2b-638e-42d7-865f-41f1e3016f6f")
 		)
 		(instances
-			(project "rocket_power_board"
+			(project ""
 				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/7eeeb7f6-036b-4de7-994b-9c7d5f53146a"
-					(reference "TP3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 92.71 90.17 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1f5b81e8-1dbf-4afe-8321-b508dc478d19")
-		(property "Reference" "C16"
-			(at 84.328 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.01uF"
-			(at 83.058 90.932 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 93.6752 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 92.71 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 92.71 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a7478187-a3bb-4c95-a9d2-1ff794da5d3d")
-		)
-		(pin "2"
-			(uuid "926772e3-c10c-4548-9a40-82dcb8891108")
-		)
-		(instances
-			(project "rocket_power_board"
-				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/7eeeb7f6-036b-4de7-994b-9c7d5f53146a"
-					(reference "C16")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -1675,7 +1682,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 92.71 86.36 0)
+		(at 91.44 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1684,7 +1691,7 @@
 		(fields_autoplaced yes)
 		(uuid "285406e8-4b0b-41f1-b5ee-b51f5e1b7eef")
 		(property "Reference" "#PWR053"
-			(at 92.71 90.17 0)
+			(at 91.44 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1693,7 +1700,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 92.71 81.28 0)
+			(at 91.44 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1701,7 +1708,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 86.36 0)
+			(at 91.44 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1710,7 +1717,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 86.36 0)
+			(at 91.44 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1719,7 +1726,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 92.71 86.36 0)
+			(at 91.44 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1807,7 +1814,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 92.71 93.98 0)
+		(at 91.44 87.63 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1816,7 +1823,7 @@
 		(dnp no)
 		(uuid "4f32679f-9ce8-493f-bee1-2d89f201ed74")
 		(property "Reference" "#PWR054"
-			(at 92.71 100.33 0)
+			(at 91.44 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1825,7 +1832,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 92.71 99.06 0)
+			(at 91.44 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1833,7 +1840,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 93.98 0)
+			(at 91.44 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1842,7 +1849,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 93.98 0)
+			(at 91.44 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1851,7 +1858,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 92.71 93.98 0)
+			(at 91.44 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1936,6 +1943,72 @@
 			(project "rocket_power_board"
 				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/7eeeb7f6-036b-4de7-994b-9c7d5f53146a"
 					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 172.72 80.01 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "680895ea-7e8e-4397-b969-5900ec5a1308")
+		(property "Reference" "TP2"
+			(at 175.768 77.978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5V_SW"
+			(at 174.7521 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature"
+			(at 172.72 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 172.72 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 172.72 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9ca4bc24-437d-43f2-9729-213b6d0e50af")
+		)
+		(instances
+			(project "rocket_power_board"
+				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/7eeeb7f6-036b-4de7-994b-9c7d5f53146a"
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -2482,73 +2555,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 172.72 81.28 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f2bb0a35-5ab2-4eef-894c-0a822b67bbfd")
-		(property "Reference" "TP2"
-			(at 177.8 80.0099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5V_SW"
-			(at 177.8 82.5499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature"
-			(at 172.72 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 172.72 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 172.72 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ab6d2044-1383-44ff-890f-9a02e9def936")
-		)
-		(instances
-			(project "rocket_power_board"
-				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/7eeeb7f6-036b-4de7-994b-9c7d5f53146a"
-					(reference "TP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 113.03 110.49 0)
 		(mirror y)
@@ -2650,7 +2656,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "TPS259620DDAR"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps2596.pdf?ts=1739064695581&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTPS2596%252Fpart-details%252FTPS259630DDAR"
 			(at 115.57 87.63 0)
 			(effects
 				(font
