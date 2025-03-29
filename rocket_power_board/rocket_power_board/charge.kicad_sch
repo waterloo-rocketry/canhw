@@ -2275,6 +2275,12 @@
 		(uuid "cb8f4b98-6aad-4551-9d9c-0de8c77efae3")
 	)
 	(junction
+		(at 173.99 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e8748d7f-729d-4641-b315-93630e7c0f0b")
+	)
+	(junction
 		(at 220.98 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2762,6 +2768,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 48.26) (xy 194.31 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89dfc9a9-bc4d-4de3-8190-03677172b55c")
+	)
+	(wire
+		(pts
 			(xy 119.38 132.08) (xy 120.65 132.08)
 		)
 		(stroke
@@ -3002,6 +3018,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 44.45) (xy 173.99 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c83cb810-7d38-4c5f-b38a-97223f966b61")
+	)
+	(wire
+		(pts
 			(xy 251.46 85.09) (xy 261.62 85.09)
 		)
 		(stroke
@@ -3162,7 +3188,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 48.26) (xy 194.31 48.26)
+			(xy 172.72 48.26) (xy 173.99 48.26)
 		)
 		(stroke
 			(width 0)
@@ -3551,6 +3577,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 173.99 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "051ffa0a-b472-4f73-8eea-287d3353eaf5")
+		(property "Reference" "R3"
+			(at 176.53 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "20k"
+			(at 176.53 41.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 175.006 40.894 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.99 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 173.99 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2f98a319-95cf-474e-a0ba-ae767d2adc89")
+		)
+		(pin "2"
+			(uuid "1f534f3f-1aea-4df1-9b2c-df5009408110")
+		)
+		(instances
+			(project "rocket_power_board"
+				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "2024-11-08_04-01-59:LMR51430XDDCR")
 		(at 78.74 129.54 0)
 		(mirror x)
@@ -3777,22 +3873,22 @@
 		(dnp no)
 		(uuid "194e7ff2-ffe6-4d89-9802-772f324b47d4")
 		(property "Reference" "F1"
-			(at 88.646 62.738 0)
+			(at 84.836 61.722 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "C1F 5 (Bel Fuse) 5A"
-			(at 88.138 59.944 0)
+		(property "Value" "BK/AGA-5 5A"
+			(at 85.09 59.436 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
+		(property "Footprint" "FuseClips:FUSE_122SERIES_BOWED_LTF"
 			(at 77.978 60.96 90)
 			(effects
 				(font
@@ -4188,6 +4284,73 @@
 			(project "rocket_power_board"
 				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
 					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 173.99 36.83 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "338f8522-80fb-4171-9e1d-ac098a9923ab")
+		(property "Reference" "#PWR057"
+			(at 173.99 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 173.99 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 173.99 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f8d8429c-ea98-4578-acb5-a3f565840062")
+		)
+		(instances
+			(project "rocket_power_board"
+				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -5646,7 +5809,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Altium_WE-MAIA (rev24b):WE-MAIA_5020"
+		(property "Footprint" "Inductor_SMD:L_Wuerth_HCI-1050"
 			(at 147.32 124.46 0)
 			(effects
 				(font
@@ -5655,7 +5818,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/78438367068.pdf"
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/744325650.pdf"
 			(at 147.32 124.46 0)
 			(effects
 				(font

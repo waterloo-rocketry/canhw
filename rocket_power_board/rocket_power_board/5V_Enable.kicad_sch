@@ -1072,6 +1072,12 @@
 		(uuid "c9e2b896-ed94-45c7-bb84-77aabb4da882")
 	)
 	(junction
+		(at 162.56 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e3f9a9f3-4181-4c9c-a54d-ffd46321bf49")
+	)
+	(junction
 		(at 172.72 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1269,6 +1275,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 85.09) (xy 162.56 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c59e1d24-fc51-4b13-8f35-ca3d9a74c7af")
+	)
+	(wire
+		(pts
 			(xy 102.87 105.41) (xy 102.87 110.49)
 		)
 		(stroke
@@ -1276,6 +1292,16 @@
 			(type default)
 		)
 		(uuid "c61f85d4-bf7e-4e48-a3b4-8a620fab8ee2")
+	)
+	(wire
+		(pts
+			(xy 162.56 87.63) (xy 176.53 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9a4bb02-cd16-4bc3-b94c-9e3e5d4f6899")
 	)
 	(wire
 		(pts
@@ -1299,7 +1325,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 87.63) (xy 176.53 87.63)
+			(xy 161.29 87.63) (xy 162.56 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2549,6 +2575,142 @@
 			(project "rocket_power_board"
 				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/7eeeb7f6-036b-4de7-994b-9c7d5f53146a"
 					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 162.56 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d43dde5a-8fd9-4a09-86bc-ee7e43b45b5e")
+		(property "Reference" "R13"
+			(at 165.1 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "20k"
+			(at 165.1 82.5499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 163.576 81.534 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 162.56 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1ff25694-aa2b-4226-8837-ab226851ee19")
+		)
+		(pin "2"
+			(uuid "4705455c-6259-4fab-bc94-50168af9da3a")
+		)
+		(instances
+			(project "rocket_power_board"
+				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/7eeeb7f6-036b-4de7-994b-9c7d5f53146a"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 162.56 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f381d30e-2bcb-46b4-8fea-b384fca62fe3")
+		(property "Reference" "#PWR058"
+			(at 162.56 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 162.56 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 162.56 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "75163071-e3f2-4ed8-b1eb-e88689e84b37")
+		)
+		(instances
+			(project "rocket_power_board"
+				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/7eeeb7f6-036b-4de7-994b-9c7d5f53146a"
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
