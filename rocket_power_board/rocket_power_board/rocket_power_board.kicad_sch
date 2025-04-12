@@ -2725,6 +2725,12 @@
 		(uuid "0b44a7fd-a29f-425b-97de-60de48005387")
 	)
 	(junction
+		(at 105.41 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "14a34922-7ff2-42cf-b4b4-8dfed2713317")
+	)
+	(junction
 		(at 172.72 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2765,12 +2771,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e188d95a-f63f-4874-af09-696575c0cfbe")
-	)
-	(junction
-		(at 105.41 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f438e212-c2c4-44cf-b302-02894e2c18e0")
 	)
 	(no_connect
 		(at 133.35 107.95)
@@ -2838,7 +2838,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 95.25) (xy 133.35 95.25)
+			(xy 124.46 92.71) (xy 127 92.71)
 		)
 		(stroke
 			(width 0)
@@ -2875,6 +2875,16 @@
 			(type default)
 		)
 		(uuid "22d77188-d18e-40cd-933e-f40ccaea51cc")
+	)
+	(wire
+		(pts
+			(xy 127 95.25) (xy 133.35 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2309ac06-64f0-438d-a64f-992ede2a8866")
 	)
 	(wire
 		(pts
@@ -3158,6 +3168,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 92.71) (xy 116.84 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7839fec9-f711-4919-8195-6a7d75ee76af")
+	)
+	(wire
+		(pts
 			(xy 71.12 125.73) (xy 72.39 125.73)
 		)
 		(stroke
@@ -3388,7 +3408,17 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 90.17) (xy 105.41 95.25)
+			(xy 105.41 92.71) (xy 105.41 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd0df589-a6b8-4597-b2eb-e17cbcb6d1a8")
+	)
+	(wire
+		(pts
+			(xy 105.41 90.17) (xy 105.41 92.71)
 		)
 		(stroke
 			(width 0)
@@ -3438,17 +3468,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 95.25) (xy 116.84 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce0fc1d8-71a0-4256-9590-6705a061e43b")
-	)
-	(wire
-		(pts
-			(xy 100.33 95.25) (xy 105.41 95.25)
+			(xy 100.33 92.71) (xy 105.41 92.71)
 		)
 		(stroke
 			(width 0)
@@ -3515,6 +3535,16 @@
 			(type default)
 		)
 		(uuid "e1d623ee-ea83-4d38-a34e-b3eb1a8a21d0")
+	)
+	(wire
+		(pts
+			(xy 127 92.71) (xy 127 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2e16f03-71ea-4ce4-84fe-a005a401e08f")
 	)
 	(wire
 		(pts
@@ -3591,16 +3621,6 @@
 			(type none)
 		)
 		(uuid e6cd2455-8928-4ab7-a873-27cc932ce5a3)
-	)
-	(text "Things to do\nAdd Test Points (Reviewer's Add Suggestions)"
-		(exclude_from_sim no)
-		(at 258.826 113.284 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "18c282b1-c84e-4770-9fba-0d7f3f90e3c8")
 	)
 	(text "Voltage Divider Calculated assuming \nLipo Voltage Range of 9V - 13V\nVref: 5V\nLipo Voltage Max 13V\n"
 		(exclude_from_sim no)
@@ -3682,7 +3702,7 @@
 		)
 		(uuid "09ffb38c-d7d3-42b4-8ef2-97e93ec2642d")
 	)
-	(label "12V_RST"
+	(label "12V_RST{slash}EN"
 		(at 170.18 115.57 0)
 		(effects
 			(font
@@ -3923,7 +3943,7 @@
 		(uuid "8148cf70-6647-45b4-be8b-bfd284beb4f2")
 	)
 	(label "~{MCLR}"
-		(at 100.33 95.25 180)
+		(at 100.33 92.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3962,7 +3982,7 @@
 		)
 		(uuid "986976be-e07c-43cc-8ec5-972d7c1c3b51")
 	)
-	(label "12V_RST"
+	(label "12V_RST{slash}EN"
 		(at 72.39 111.76 0)
 		(effects
 			(font
@@ -7527,7 +7547,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 120.65 95.25 270)
+		(at 120.65 92.71 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7535,7 +7555,7 @@
 		(dnp no)
 		(uuid "f2368f66-9397-45a2-a40b-7fa84a9d26f3")
 		(property "Reference" "R5"
-			(at 120.904 90.17 90)
+			(at 120.904 87.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7543,7 +7563,7 @@
 			)
 		)
 		(property "Value" "120R"
-			(at 120.904 92.71 90)
+			(at 120.904 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7551,7 +7571,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 120.396 96.266 90)
+			(at 120.396 93.726 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7560,7 +7580,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 120.65 95.25 0)
+			(at 120.65 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7569,7 +7589,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 120.65 95.25 0)
+			(at 120.65 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8078,16 +8098,6 @@
 			)
 			(uuid "218084c5-8426-49e0-8bfa-81d2172cc351")
 		)
-		(pin "12V_Fuse_RST" input
-			(at 71.12 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "ff52244c-da94-46e5-8510-d4a75881854f")
-		)
 		(pin "12V_Fuse_Fault" input
 			(at 71.12 125.73 0)
 			(effects
@@ -8097,6 +8107,16 @@
 				(justify right)
 			)
 			(uuid "4d74a8be-7f1a-4ccb-b27a-31e56317de8d")
+		)
+		(pin "12V_Fuse_RST{slash}EN" input
+			(at 71.12 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ff403167-91d2-4166-a185-20bff5ddfeb6")
 		)
 		(instances
 			(project "rocket_power_board"
