@@ -1414,16 +1414,16 @@
 		(uuid "45f3bcc2-2130-4b1d-a165-b49c0d48ed6c")
 	)
 	(junction
-		(at 72.39 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5b6012eb-b237-47d8-be60-5d72033ea2b5")
-	)
-	(junction
 		(at 222.25 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6166a512-54c9-4141-a09c-77a99a1f944e")
+	)
+	(junction
+		(at 71.12 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7bfb4758-2b59-4551-a45d-2c128793c147")
 	)
 	(junction
 		(at 78.74 58.42)
@@ -1795,6 +1795,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 78.74) (xy 71.12 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b11a49e-1d73-4318-8a76-8ebc4036ea0d")
+	)
+	(wire
+		(pts
 			(xy 208.28 63.5) (xy 208.28 68.58)
 		)
 		(stroke
@@ -1995,7 +2005,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 77.47) (xy 72.39 77.47)
+			(xy 64.77 77.47) (xy 71.12 77.47)
 		)
 		(stroke
 			(width 0)
@@ -2215,16 +2225,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 77.47) (xy 78.74 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e52f766f-599a-4dbb-a467-ddaee52aa3c3")
-	)
-	(wire
-		(pts
 			(xy 233.68 134.62) (xy 233.68 133.35)
 		)
 		(stroke
@@ -2262,6 +2262,16 @@
 			(type default)
 		)
 		(uuid "f1588887-8b4a-4861-87a6-338025d62062")
+	)
+	(wire
+		(pts
+			(xy 71.12 77.47) (xy 78.74 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f503f5c8-2a7f-4c69-800d-f26dcf9b7142")
 	)
 	(wire
 		(pts
@@ -2507,7 +2517,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 72.39 77.47 0)
+		(at 71.12 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2516,7 +2526,7 @@
 		(fields_autoplaced yes)
 		(uuid "06bef8e4-6226-43bb-a693-5d7b9bf0c827")
 		(property "Reference" "#PWR038"
-			(at 72.39 83.82 0)
+			(at 71.12 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2525,7 +2535,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 72.39 82.55 0)
+			(at 71.12 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2533,7 +2543,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 72.39 77.47 0)
+			(at 71.12 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2542,7 +2552,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 77.47 0)
+			(at 71.12 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2551,7 +2561,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 72.39 77.47 0)
+			(at 71.12 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3815,7 +3825,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TPS259474ARPWR:RPW0010A-MFG"
+		(property "Footprint" "Texas_RPW0010A_VQFN:Texas_RPW0010A_VQFN-10_2x2mm"
 			(at 133.35 58.42 0)
 			(effects
 				(font
@@ -3825,7 +3835,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "TPS259474ARPWR"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps25947.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1744473923121"
 			(at 133.35 58.42 0)
 			(effects
 				(font
@@ -4741,7 +4751,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/D5V0F1U2S9.pdf"
+		(property "Datasheet" "~"
 			(at 64.77 67.31 0)
 			(effects
 				(font
