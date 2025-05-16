@@ -736,6 +736,164 @@
 				)
 			)
 		)
+		(symbol "Device:C_Polarized"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Polarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "C_Polarized_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:D_Schottky"
 			(pin_numbers hide)
 			(pin_names
@@ -3122,7 +3280,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 78.74) (xy 30.48 82.55)
+			(xy 30.48 83.82) (xy 30.48 87.63)
 		)
 		(stroke
 			(width 0)
@@ -3502,7 +3660,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 78.74) (xy 30.48 78.74)
+			(xy 25.4 83.82) (xy 30.48 83.82)
 		)
 		(stroke
 			(width 0)
@@ -4012,6 +4170,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 81.28) (xy 69.85 83.185)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f42c4606-ca19-4447-b6a2-311c38339aa4")
+	)
+	(wire
+		(pts
 			(xy 254 95.25) (xy 257.81 95.25)
 		)
 		(stroke
@@ -4102,6 +4270,16 @@
 		)
 		(uuid "570eebeb-fc5a-44c5-a9aa-c27b34ace9be")
 	)
+	(text "20TQC100MD2"
+		(exclude_from_sim no)
+		(at 80.01 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "662ac03e-f508-4046-a66b-0573f59de417")
+	)
 	(text "Calculated for Slew Rate of 10V/ms \nand inrush current of 1.0A"
 		(exclude_from_sim no)
 		(at 162.56 77.47 0)
@@ -4124,7 +4302,7 @@
 	)
 	(text "Lipo Input"
 		(exclude_from_sim no)
-		(at 20.955 85.725 0)
+		(at 20.955 87.63 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4300,7 +4478,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 20.32 78.74 0)
+		(at 20.32 81.28 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4309,14 +4487,6 @@
 		(dnp no)
 		(uuid "040e3546-087d-4d4a-99cd-3325ea574679")
 		(property "Reference" "J3"
-			(at 21.844 71.628 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4DB-P108-02"
 			(at 21.844 74.168 0)
 			(effects
 				(font
@@ -4324,8 +4494,16 @@
 				)
 			)
 		)
+		(property "Value" "4DB-P108-02"
+			(at 21.844 76.708 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Footprint" "canhw_footprints:TE_2-1437667-4"
-			(at 20.32 78.74 0)
+			(at 20.32 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4334,7 +4512,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 20.32 78.74 0)
+			(at 20.32 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4343,7 +4521,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 20.32 78.74 0)
+			(at 20.32 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4368,7 +4546,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 30.48 82.55 0)
+		(at 30.48 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4376,7 +4554,7 @@
 		(dnp no)
 		(uuid "04696d91-0d75-4977-9a75-e93ad14f9410")
 		(property "Reference" "#PWR29"
-			(at 30.48 88.9 0)
+			(at 30.48 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4385,7 +4563,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 30.48 87.884 0)
+			(at 30.48 92.964 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4393,7 +4571,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 30.48 82.55 0)
+			(at 30.48 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4402,7 +4580,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 30.48 82.55 0)
+			(at 30.48 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4411,7 +4589,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 30.48 82.55 0)
+			(at 30.48 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5466,7 +5644,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "47uF"
 			(at 271.018 57.15 0)
 			(effects
 				(font
@@ -5579,6 +5757,75 @@
 			(project "rocket_power_board"
 				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
 					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 69.85 86.995 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4d429534-1326-4767-a4c5-9ad43905ca27")
+		(property "Reference" "C25"
+			(at 73.66 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100uF"
+			(at 73.66 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "rocket_power_board:CAP_TQC_D2_PAN"
+			(at 70.8152 90.805 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/AAA8000/AAA8000C62.pdf"
+			(at 69.85 86.995 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 69.85 86.995 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b81ffbe-c70a-4e3b-b016-b2b9f8d3b0c8")
+		)
+		(pin "2"
+			(uuid "84e8b77a-27f6-495e-aa2c-7693870291be")
+		)
+		(instances
+			(project ""
+				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -8136,6 +8383,72 @@
 			(project "rocket_power_board"
 				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
 					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 69.85 90.805 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d1c9bac7-3692-43d4-af23-891ca45f067e")
+		(property "Reference" "#PWR66"
+			(at 69.85 97.155 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 69.85 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 90.805 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 90.805 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 69.85 90.805 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "47761987-80bb-42c7-a968-8bc6904f8efc")
+		)
+		(instances
+			(project ""
+				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
+					(reference "#PWR66")
 					(unit 1)
 				)
 			)
