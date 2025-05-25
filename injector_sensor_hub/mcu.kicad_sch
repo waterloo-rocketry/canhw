@@ -416,6 +416,108 @@
 				)
 			)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:C"
 			(pin_numbers hide)
 			(pin_names
@@ -2159,6 +2261,12 @@
 		)
 	)
 	(junction
+		(at 95.25 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "147c12cb-8143-4cea-a63d-2c7b1f877d9a")
+	)
+	(junction
 		(at 118.745 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2175,6 +2283,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3be1f4eb-f792-4a0e-ae83-37e5a5b77420")
+	)
+	(junction
+		(at 95.25 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "46e6a30f-4216-4704-8381-0170f303bd50")
 	)
 	(junction
 		(at 163.83 80.01)
@@ -2310,6 +2424,16 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 153.67) (xy 95.25 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15ab5878-0194-4c7c-be8e-775e996fa549")
+	)
+	(wire
+		(pts
 			(xy 55.88 157.48) (xy 63.5 157.48)
 		)
 		(stroke
@@ -2340,7 +2464,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 160.02) (xy 93.345 160.02)
+			(xy 87.63 160.02) (xy 95.25 160.02)
 		)
 		(stroke
 			(width 0)
@@ -2460,6 +2584,16 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 160.02) (xy 95.25 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62c5cf73-b27d-4a4b-81a4-02756ab46ebe")
+	)
+	(wire
+		(pts
 			(xy 109.22 101.6) (xy 122.555 101.6)
 		)
 		(stroke
@@ -2487,6 +2621,16 @@
 			(type default)
 		)
 		(uuid "7198fe57-c15d-4605-b823-4a347e1ed3ba")
+	)
+	(wire
+		(pts
+			(xy 95.25 160.02) (xy 99.06 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7564b28d-2f55-49cd-8aa1-fe6ea50249a9")
 	)
 	(wire
 		(pts
@@ -2650,7 +2794,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 157.48) (xy 93.345 157.48)
+			(xy 87.63 157.48) (xy 95.25 157.48)
 		)
 		(stroke
 			(width 0)
@@ -2817,6 +2961,16 @@
 			(type default)
 		)
 		(uuid "da434d35-e0ec-4966-b450-99cb2c4c9cae")
+	)
+	(wire
+		(pts
+			(xy 95.25 157.48) (xy 99.06 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de93cf51-8446-4b8d-abe7-190a86941203")
 	)
 	(wire
 		(pts
@@ -3142,7 +3296,7 @@
 	)
 	(global_label "CANH"
 		(shape input)
-		(at 93.345 157.48 0)
+		(at 99.06 157.48 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3152,7 +3306,7 @@
 		)
 		(uuid "0fafeb1f-95b5-41dd-8e20-7fc1d09f053e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at -149.225 57.15 0)
+			(at -143.51 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3163,7 +3317,7 @@
 	)
 	(global_label "CANL"
 		(shape input)
-		(at 93.345 160.02 0)
+		(at 99.06 160.02 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3173,7 +3327,7 @@
 		)
 		(uuid "27a25c22-1298-481e-ab3c-d8a3536d8b38")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at -149.225 57.15 0)
+			(at -143.51 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4293,6 +4447,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 95.25 163.83 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6c9ee49e-cf37-4b9f-9632-803c8e0b2f05")
+		(property "Reference" "TP11"
+			(at 97.79 165.8619 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 97.79 168.4019 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5005-5009_Compact"
+			(at 90.17 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 90.17 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 95.25 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1df32558-1d1e-46cc-8bb0-0e6f34cf9fd8")
+		)
+		(instances
+			(project ""
+				(path "/65b6af08-52d0-4269-bf55-02b67cf42271/39ac2d46-be06-492f-bec7-ce85b54c0a9a"
+					(reference "TP11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "canhw:PIC18F26K83")
 		(at 141.605 105.41 0)
 		(unit 1)
@@ -5028,6 +5249,73 @@
 			(project "injector_sensor_hub"
 				(path "/65b6af08-52d0-4269-bf55-02b67cf42271/39ac2d46-be06-492f-bec7-ce85b54c0a9a"
 					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 95.25 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "93b18e2c-4f77-4a32-a005-c15b8903e9d9")
+		(property "Reference" "TP12"
+			(at 97.79 149.0979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 97.79 151.6379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5005-5009_Compact"
+			(at 100.33 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 100.33 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 95.25 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e233260b-f0bf-4d95-b514-4f6d761dcb57")
+		)
+		(instances
+			(project "injector_sensor_hub"
+				(path "/65b6af08-52d0-4269-bf55-02b67cf42271/39ac2d46-be06-492f-bec7-ce85b54c0a9a"
+					(reference "TP12")
 					(unit 1)
 				)
 			)
