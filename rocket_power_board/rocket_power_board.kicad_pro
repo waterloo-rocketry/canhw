@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0,
+          "height": 2.4,
+          "width": 0.3
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -64,7 +64,7 @@
       },
       "rule_severities": {
         "annular_width": "error",
-        "clearance": "error",
+        "clearance": "warning",
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
@@ -76,7 +76,7 @@
         "extra_footprint": "warning",
         "footprint": "error",
         "footprint_symbol_mismatch": "warning",
-        "footprint_type_mismatch": "ignore",
+        "footprint_type_mismatch": "warning",
         "hole_clearance": "error",
         "hole_near_hole": "error",
         "holes_co_located": "warning",
@@ -92,9 +92,9 @@
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
         "net_conflict": "warning",
-        "npth_inside_courtyard": "ignore",
+        "npth_inside_courtyard": "warning",
         "padstack": "warning",
-        "pth_inside_courtyard": "ignore",
+        "pth_inside_courtyard": "warning",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
@@ -116,7 +116,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.2032,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_hole_clearance": 0.25,
@@ -127,11 +127,11 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
+        "min_through_hole_diameter": 0.381,
+        "min_track_width": 0.2032,
         "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "min_via_diameter": 0.762,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -179,7 +179,19 @@
       ],
       "track_widths": [
         0.0,
-        0.2032
+        0.0,
+        0.2032,
+        0.2794,
+        0.29,
+        0.3048,
+        0.599948,
+        1.016,
+        1.08162,
+        1.27,
+        2.032,
+        2.433,
+        2.76552,
+        6.47
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -211,6 +223,10 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.762,
+          "drill": 0.381
         }
       ],
       "zones_allow_external_fillets": false
@@ -445,7 +461,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "injector_sensor_hub.kicad_pro",
+    "filename": "rocket_power_board.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -480,7 +496,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -578,7 +594,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "./",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
@@ -590,16 +606,16 @@
   },
   "sheets": [
     [
-      "65b6af08-52d0-4269-bf55-02b67cf42271",
+      "12f7d4ae-e07e-4683-b1a3-f6f037b17f60",
       "Root"
     ],
     [
-      "39ac2d46-be06-492f-bec7-ce85b54c0a9a",
-      "MCU"
+      "d40cad7b-226c-47e1-8b5f-46908a366917",
+      "Charge Circuitry+12V-5V Buck"
     ],
     [
-      "da799eb7-bba1-4958-aae0-274165f38354",
-      "Analog Sensor Input"
+      "7eeeb7f6-036b-4de7-994b-9c7d5f53146a",
+      "5V_Enable"
     ]
   ],
   "text_variables": {}
