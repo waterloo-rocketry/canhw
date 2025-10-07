@@ -402,7 +402,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "78243af2-5eea-48f5-811a-91865538cf4e")
-		(property "Sheetname" "Connectors"
+		(property "Sheetname" "SD_Card"
 			(at 132.08 32.3084 0)
 			(effects
 				(font
@@ -411,13 +411,73 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "connectors.kicad_sch"
+		(property "Sheetfile" "SD_Card.kicad_sch"
 			(at 132.08 59.0046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "SD_D0" bidirectional
+			(at 132.08 38.1 180)
+			(uuid "8d439811-4e50-4d79-b09e-882f3940220f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SD_CLK" input
+			(at 132.08 41.91 180)
+			(uuid "e57c9123-7163-4626-bef1-28474ba68e3d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SD_D2" bidirectional
+			(at 132.08 45.72 180)
+			(uuid "76e35954-69c5-4d2c-a5bd-892a2a5cdce3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SD_D3" bidirectional
+			(at 132.08 50.8 180)
+			(uuid "5010bb3b-8e39-4f74-bb15-920f225ef72f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SD_CMD" input
+			(at 132.08 54.61 180)
+			(uuid "e01eca88-72f5-4deb-854d-cdc00207cc81")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SD_D1" bidirectional
+			(at 167.64 53.34 0)
+			(uuid "bc3f485c-8ea7-4faa-9552-aa947c8182d0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -460,6 +520,86 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "SD_CLK" input
+			(at 40.64 43.18 180)
+			(uuid "22d2c186-a427-41ff-b48d-e0dc04f82936")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SD_CMD" input
+			(at 40.64 48.26 180)
+			(uuid "8b9fd94d-318f-4220-9f3d-11262203b020")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SD_D3" input
+			(at 40.64 52.07 180)
+			(uuid "82cc662d-8b80-42af-a40e-3a40144fb917")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SD_D2" input
+			(at 76.2 52.07 0)
+			(uuid "6bf17d46-a673-41f8-a337-ba2f725c90d3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SD_D1" input
+			(at 76.2 46.99 0)
+			(uuid "8a4c4fab-432b-46b8-8ad3-eb2312867d69")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SD_D0" input
+			(at 76.2 43.18 0)
+			(uuid "8c2a0ac0-211a-4f05-b6f6-92ffda4dbd06")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "USB_D+" bidirectional
+			(at 40.64 36.83 180)
+			(uuid "34735ff3-c38a-4cc4-9e18-539fd9893bb8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB_D-" bidirectional
+			(at 40.64 39.37 180)
+			(uuid "529416a9-afd5-4246-884d-58c7e9725f94")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -550,6 +690,68 @@
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998"
 					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 196.85 73.66)
+		(size 30.48 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f35f6632-7a6b-41d3-bd93-dffb4a5e22b1")
+		(property "Sheetname" "USB"
+			(at 196.85 72.9484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "USB.kicad_sch"
+			(at 196.85 98.3746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "USB_D+" bidirectional
+			(at 196.85 82.55 180)
+			(uuid "92605419-d7d3-4e60-8a1a-32f36758ef97")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB_D-" bidirectional
+			(at 196.85 86.36 180)
+			(uuid "1f59c598-f027-49ae-971f-b7b5f472b372")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "CanardBoard"
+				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998"
+					(page "7")
 				)
 			)
 		)
