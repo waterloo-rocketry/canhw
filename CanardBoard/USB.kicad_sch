@@ -1045,6 +1045,155 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Polyfuse_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at -1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Polyfuse_Small"
+				(at 1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.27 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resettable fuse, polymeric positive temperature coefficient, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "resettable fuse PTC PPTC polyfuse polyswitch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*polyfuse* *PTC*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Polyfuse_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.016 1.27) (xy -1.016 0.762) (xy 1.016 -0.762) (xy 1.016 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -0.508 1.27)
+					(end 0.508 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Polyfuse_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.635)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.635)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device_Custom:R_Small_US"
 			(pin_numbers
 				(hide yes)
@@ -1432,12 +1581,6 @@
 		(uuid "447e2045-5baf-46fe-a065-1c95f2d33ad6")
 	)
 	(junction
-		(at 138.43 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "599c19de-aa04-4a98-b46f-2466a1931fbf")
-	)
-	(junction
 		(at 158.75 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1448,6 +1591,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "71b76c97-a1db-43ca-a871-1cbe78969ad7")
+	)
+	(junction
+		(at 138.43 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75deaae3-f9fd-4d3c-acb6-6dd909f33af3")
 	)
 	(junction
 		(at 189.23 68.58)
@@ -1633,6 +1782,26 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 76.2) (xy 138.43 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66541482-debd-4937-a41e-f3d994d28669")
+	)
+	(wire
+		(pts
+			(xy 138.43 68.58) (xy 138.43 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6eb0f0ce-5b8c-4af7-aa10-21ae653a0880")
+	)
+	(wire
+		(pts
 			(xy 185.42 102.87) (xy 195.58 102.87)
 		)
 		(stroke
@@ -1720,16 +1889,6 @@
 			(type default)
 		)
 		(uuid "bd095382-b513-4be0-bc24-d3ef10ff9f1c")
-	)
-	(wire
-		(pts
-			(xy 138.43 68.58) (xy 138.43 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c91a0971-c455-4f9d-90f6-1bdf52e8a9b8")
 	)
 	(wire
 		(pts
@@ -2372,6 +2531,76 @@
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/f35f6632-7a6b-41d3-bd93-dffb4a5e22b1"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Polyfuse_Small")
+		(at 138.43 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8a3e4046-b48d-4d6f-957e-41472d01bbf7")
+		(property "Reference" "F3"
+			(at 139.954 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1.5A"
+			(at 139.954 74.422 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resettable fuse, polymeric positive temperature coefficient, small symbol"
+			(at 138.43 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5cc3fa57-74c3-4cfe-ad67-e109a9fe5943")
+		)
+		(pin "2"
+			(uuid "86008ffa-b949-469b-b4c3-a349568cf0a6")
+		)
+		(instances
+			(project "CanardBoard"
+				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/f35f6632-7a6b-41d3-bd93-dffb4a5e22b1"
+					(reference "F3")
 					(unit 1)
 				)
 			)
