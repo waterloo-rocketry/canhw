@@ -5,154 +5,10 @@
 	(uuid "db13ad23-b6c2-42f9-a32d-b7c158bff20b")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device_Custom:R_Small_US"
+		(symbol "Device:Q_PMOS"
 			(pin_numbers
 				(hide yes)
 			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 0.762 0.508 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "R_Small_US"
-				(at 0.762 -1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor, small US symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC Part #" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "r resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_Small_US_1_1"
-				(polyline
-					(pts
-						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 2.54 270)
-					(length 1.016)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 1.016)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Transistor_FET:Q_Dual_PMOS_G1S2G2D2S1D1"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -161,7 +17,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "Q"
-				(at 5.08 1.905 0)
+				(at 5.08 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -169,8 +25,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "Q_Dual_PMOS_G1S2G2D2S1D1"
-				(at 5.08 0 0)
+			(property "Value" "Q_PMOS"
+				(at 5.08 -1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -179,7 +35,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 1.27 0 0)
+				(at 5.08 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -188,15 +44,6 @@
 				)
 			)
 			(property "Datasheet" "~"
-				(at 1.27 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Dual PMOS transistor, 6 pin package"
 				(at 0 0 0)
 				(effects
 					(font
@@ -205,7 +52,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "transistor PMOS P-MOS P-MOSFET"
+			(property "Description" "P-MOSFET transistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -214,7 +61,16 @@
 					(hide yes)
 				)
 			)
-			(symbol "Q_Dual_PMOS_G1S2G2D2S1D1_0_1"
+			(property "ki_keywords" "PMOS P-MOS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Q_PMOS_0_1"
 				(polyline
 					(pts
 						(xy 0.254 1.905) (xy 0.254 -1.905)
@@ -381,11 +237,176 @@
 					)
 				)
 			)
-			(symbol "Q_Dual_PMOS_G1S2G2D2S1D1_1_1"
+			(symbol "Q_PMOS_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device_Custom:R_Small_US"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small_US"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small US symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part #" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "r resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_US_1_1"
+				(polyline
+					(pts
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.016)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -401,83 +422,9 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "Q_Dual_PMOS_G1S2G2D2S1D1_2_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
+					(at 0 -2.54 90)
+					(length 1.016)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1863,88 +1810,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_Dual_PMOS_G1S2G2D2S1D1")
-		(at 118.11 80.01 90)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "04675e14-04fa-459e-9d09-b84c94c2774c")
-		(property "Reference" "Q3"
-			(at 118.11 73.66 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Q_Dual_PMOS_G1S2G2D2S1D1"
-			(at 119.3799 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 118.11 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 118.11 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual PMOS transistor, 6 pin package"
-			(at 118.11 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "c7e7baa1-659d-4c80-b2bb-5fc269efb6d5")
-		)
-		(pin "1"
-			(uuid "111b81d2-561f-4f8a-a19a-09d954e31849")
-		)
-		(pin "3"
-			(uuid "ca871a29-681c-412a-90ae-c86bd3e52d43")
-		)
-		(pin "4"
-			(uuid "b5be197f-afbb-497d-b157-d57bf1e9c9de")
-		)
-		(pin "5"
-			(uuid "dcf4a02b-6575-4570-a1ac-f2860659c4d8")
-		)
-		(pin "2"
-			(uuid "fdda0d2c-01e5-48d3-978d-9dc98bd6e89b")
-		)
-		(instances
-			(project "CanardBoard"
-				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/0c7f3b60-6d7c-49e1-9aca-866371c834cd"
-					(reference "Q3")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 135.89 71.12 0)
 		(unit 1)
@@ -2137,6 +2002,77 @@
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/0c7f3b60-6d7c-49e1-9aca-866371c834cd"
 					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Q_PMOS")
+		(at 118.11 80.01 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "102d0368-e853-43dd-b789-a819609db171")
+		(property "Reference" "Q3"
+			(at 118.11 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Q_PMOS"
+			(at 118.11 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 115.57 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "P-MOSFET transistor"
+			(at 118.11 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "D"
+			(uuid "d06d1832-9eab-4fc7-8a19-e171e4d230a8")
+		)
+		(pin "S"
+			(uuid "533a846d-90d3-4bb4-b8df-25c0fd2591ef")
+		)
+		(pin "G"
+			(uuid "df6ec147-527c-45f4-a054-4126a914f39e")
+		)
+		(instances
+			(project "CanardBoard"
+				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/0c7f3b60-6d7c-49e1-9aca-866371c834cd"
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -2985,7 +2921,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_Dual_PMOS_G1S2G2D2S1D1")
+		(lib_id "Device:Q_PMOS")
 		(at 57.15 80.01 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2993,8 +2929,16 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4cf2c3a7-06e5-4463-988e-0dcbc8c2ee3a")
-		(property "Reference" "Q3"
+		(uuid "4b308e21-d056-4dd7-a68e-3ba43b3e8eb7")
+		(property "Reference" "Q5"
+			(at 57.15 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Q_PMOS"
 			(at 57.15 73.66 90)
 			(effects
 				(font
@@ -3002,18 +2946,8 @@
 				)
 			)
 		)
-		(property "Value" "Q_Dual_PMOS_G1S2G2D2S1D1"
-			(at 58.4199 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
 		(property "Footprint" ""
-			(at 57.15 78.74 0)
+			(at 54.61 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3022,15 +2956,6 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 57.15 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual PMOS transistor, 6 pin package"
 			(at 57.15 80.01 0)
 			(effects
 				(font
@@ -3039,28 +2964,28 @@
 				(hide yes)
 			)
 		)
-		(pin "6"
-			(uuid "c7e7baa1-659d-4c80-b2bb-5fc269efb6d6")
+		(property "Description" "P-MOSFET transistor"
+			(at 57.15 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "1"
-			(uuid "111b81d2-561f-4f8a-a19a-09d954e3184a")
+		(pin "D"
+			(uuid "5a322115-dd55-4caf-b961-a11b8fa83871")
 		)
-		(pin "3"
-			(uuid "ca871a29-681c-412a-90ae-c86bd3e52d44")
+		(pin "S"
+			(uuid "e9d00cbd-5e01-448d-ace2-e315d808f40d")
 		)
-		(pin "4"
-			(uuid "b5be197f-afbb-497d-b157-d57bf1e9c9df")
-		)
-		(pin "5"
-			(uuid "dcf4a02b-6575-4570-a1ac-f2860659c4d9")
-		)
-		(pin "2"
-			(uuid "fdda0d2c-01e5-48d3-978d-9dc98bd6e89c")
+		(pin "G"
+			(uuid "122d9f68-0f5d-4915-8afb-49e72c98547a")
 		)
 		(instances
-			(project "CanardBoard"
+			(project ""
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/0c7f3b60-6d7c-49e1-9aca-866371c834cd"
-					(reference "Q3")
+					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -3128,88 +3053,6 @@
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/0c7f3b60-6d7c-49e1-9aca-866371c834cd"
 					(reference "#PWR036")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:Q_Dual_PMOS_G1S2G2D2S1D1")
-		(at 232.41 80.01 90)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5e1f790a-b7d8-428c-9163-945a2dfe5fdc")
-		(property "Reference" "Q4"
-			(at 232.41 73.66 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Q_Dual_PMOS_G1S2G2D2S1D1"
-			(at 233.6799 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 232.41 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 232.41 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual PMOS transistor, 6 pin package"
-			(at 232.41 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "c7e7baa1-659d-4c80-b2bb-5fc269efb6d7")
-		)
-		(pin "1"
-			(uuid "111b81d2-561f-4f8a-a19a-09d954e3184b")
-		)
-		(pin "3"
-			(uuid "7bb4847e-0f1c-4f76-b078-b5733e483f81")
-		)
-		(pin "4"
-			(uuid "e3410c5b-dab7-478c-9234-10ff6fc10646")
-		)
-		(pin "5"
-			(uuid "dcf4a02b-6575-4570-a1ac-f2860659c4da")
-		)
-		(pin "2"
-			(uuid "d71ec2c3-14cc-4a1f-865a-46227a9032f0")
-		)
-		(instances
-			(project "CanardBoard"
-				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/0c7f3b60-6d7c-49e1-9aca-866371c834cd"
-					(reference "Q4")
-					(unit 2)
 				)
 			)
 		)
@@ -3489,88 +3332,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_Dual_PMOS_G1S2G2D2S1D1")
-		(at 176.53 80.01 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "92a3ffb2-89b1-43ce-a7f8-6db99ba911fb")
-		(property "Reference" "Q4"
-			(at 176.53 73.66 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Q_Dual_PMOS_G1S2G2D2S1D1"
-			(at 177.7999 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 176.53 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 176.53 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual PMOS transistor, 6 pin package"
-			(at 176.53 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "94386921-10ed-426d-8f84-0f4828d70ee9")
-		)
-		(pin "1"
-			(uuid "e068b490-01dd-4d5f-a6da-8ba021d0a900")
-		)
-		(pin "3"
-			(uuid "ca871a29-681c-412a-90ae-c86bd3e52d45")
-		)
-		(pin "4"
-			(uuid "b5be197f-afbb-497d-b157-d57bf1e9c9e0")
-		)
-		(pin "5"
-			(uuid "1ab57614-a137-4793-8ec1-b208b8161c89")
-		)
-		(pin "2"
-			(uuid "fdda0d2c-01e5-48d3-978d-9dc98bd6e89d")
-		)
-		(instances
-			(project "CanardBoard"
-				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/0c7f3b60-6d7c-49e1-9aca-866371c834cd"
-					(reference "Q4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 215.9 116.84 0)
 		(unit 1)
@@ -3631,6 +3392,77 @@
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/0c7f3b60-6d7c-49e1-9aca-866371c834cd"
 					(reference "#PWR066")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Q_PMOS")
+		(at 176.53 80.01 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad33d260-d862-4e14-8255-e299f7198f70")
+		(property "Reference" "Q4"
+			(at 176.53 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Q_PMOS"
+			(at 176.53 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 176.53 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "P-MOSFET transistor"
+			(at 176.53 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "D"
+			(uuid "893a19eb-8e05-4301-afc4-64af27dbb1d9")
+		)
+		(pin "S"
+			(uuid "8168d4e2-722b-4e31-b593-e62099a18ac6")
+		)
+		(pin "G"
+			(uuid "4c29e248-1610-43e3-8525-3223979929f1")
+		)
+		(instances
+			(project "CanardBoard"
+				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/0c7f3b60-6d7c-49e1-9aca-866371c834cd"
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -3863,7 +3695,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+VRKT"
+		(property "Value" "+12V_RKT"
 			(at 101.6 66.04 0)
 			(effects
 				(font
@@ -3905,6 +3737,77 @@
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/0c7f3b60-6d7c-49e1-9aca-866371c834cd"
 					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Q_PMOS")
+		(at 232.41 80.01 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e063343f-394c-4f02-b520-07c43cf0a0a1")
+		(property "Reference" "Q6"
+			(at 232.41 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Q_PMOS"
+			(at 232.41 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 232.41 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "P-MOSFET transistor"
+			(at 232.41 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "D"
+			(uuid "3c99e04d-5623-49bd-8501-5067f835e38c")
+		)
+		(pin "S"
+			(uuid "912a262f-b05a-46ff-befa-9f16ac407302")
+		)
+		(pin "G"
+			(uuid "e6f373a4-c1fc-4824-a148-15f1ae28fc07")
+		)
+		(instances
+			(project "CanardBoard"
+				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/0c7f3b60-6d7c-49e1-9aca-866371c834cd"
+					(reference "Q6")
 					(unit 1)
 				)
 			)

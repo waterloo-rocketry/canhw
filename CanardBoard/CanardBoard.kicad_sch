@@ -531,8 +531,8 @@
 		)
 	)
 	(sheet
-		(at 48.26 106.68)
-		(size 26.67 20.32)
+		(at 179.07 60.96)
+		(size 24.13 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -546,8 +546,8 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "4fea5507-ad74-497c-bf16-b3654a0fa101")
-		(property "Sheetname" "CAN"
-			(at 48.26 105.9684 0)
+		(property "Sheetname" "RocketCAN"
+			(at 179.07 60.2484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -555,13 +555,43 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "can.kicad_sch"
-			(at 48.26 127.5846 0)
+		(property "Sheetfile" "rocketcan.kicad_sch"
+			(at 179.07 79.3246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "RCAN_TX" output
+			(at 179.07 66.04 180)
+			(uuid "e167a306-a964-412f-877b-437e63a1872a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RCAN_STB" input
+			(at 179.07 71.12 180)
+			(uuid "bc2e2165-895f-45f7-8af8-91f39a05b2ea")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RCAN_RX" input
+			(at 179.07 74.93 180)
+			(uuid "0cb7a272-4332-466a-a142-e92069da4c53")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -574,7 +604,7 @@
 	)
 	(sheet
 		(at 144.78 100.33)
-		(size 19.05 13.97)
+		(size 19.05 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -598,7 +628,7 @@
 			)
 		)
 		(property "Sheetfile" "power_rails.kicad_sch"
-			(at 144.78 114.8846 0)
+			(at 144.78 116.1546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -606,9 +636,29 @@
 				(justify left top)
 			)
 		)
-		(pin "I3V3_SENS" output
-			(at 144.78 105.41 180)
-			(uuid "7c246066-1b16-4f6f-bcd3-14a8f2d8559c")
+		(pin "5V_EN" input
+			(at 144.78 104.14 180)
+			(uuid "fb5dc0c6-dc3d-4f85-a5d4-fe596802681f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "5V_ISENS" output
+			(at 144.78 107.95 180)
+			(uuid "2820a7df-85df-4739-af46-5ad69ffb050c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3V3_ISENS" output
+			(at 144.78 111.76 180)
+			(uuid "b9b4e546-39e9-45da-bb6e-fdcbe035a707")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -951,6 +1001,88 @@
 		)
 	)
 	(sheet
+		(at 191.77 111.76)
+		(size 21.59 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d085afc3-1fd0-49b9-b6c3-745b1d294dd7")
+		(property "Sheetname" "32g IMU"
+			(at 191.77 111.0484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "32g_imu.kicad_sch"
+			(at 191.77 127.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "IMU_SCL" input
+			(at 191.77 116.84 180)
+			(uuid "e0606f00-552e-4cb6-af91-3bdc7609fef8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IMU_SDA" bidirectional
+			(at 191.77 120.65 180)
+			(uuid "0b0665a5-c05a-42d8-bd9d-978d5afe54d3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IMU_INT1" output
+			(at 213.36 116.84 0)
+			(uuid "5815cd3e-a3f2-4f05-b58f-272699e2e89b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "IMU_INT2" output
+			(at 213.36 120.65 0)
+			(uuid "8da251b8-0650-459b-9cb0-f2d8e62b6ba1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "CanardBoard"
+				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998"
+					(page "14")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 87.63 104.14)
 		(size 33.02 25.4)
 		(exclude_from_sim no)
@@ -1055,8 +1187,8 @@
 		)
 	)
 	(sheet
-		(at 182.88 127)
-		(size 19.05 15.24)
+		(at 144.78 130.81)
+		(size 24.13 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1071,7 +1203,7 @@
 		)
 		(uuid "dd6c3a07-f583-422a-8cea-effd238d6377")
 		(property "Sheetname" "Movella"
-			(at 182.88 126.2884 0)
+			(at 144.78 130.0984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1080,12 +1212,92 @@
 			)
 		)
 		(property "Sheetfile" "movella.kicad_sch"
-			(at 182.88 142.8246 0)
+			(at 144.78 149.1746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "SYNC_IN2" input
+			(at 144.78 139.7 180)
+			(uuid "0e3956cb-b3f4-4fb4-b9e6-d6674ce3f69d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SYNC_OUT" output
+			(at 144.78 143.51 180)
+			(uuid "60e410c1-0f4a-467c-b77a-cd3a2ae11830")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "UART_TXD" output
+			(at 168.91 134.62 0)
+			(uuid "384d561c-e781-457e-b210-855e23dfa14a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "UART_RXD" input
+			(at 168.91 137.16 0)
+			(uuid "98546e68-50be-4276-baaf-4e0ae65428a9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SYNC_IN1" input
+			(at 144.78 135.89 180)
+			(uuid "5a8978bd-4569-4ff9-96b8-2e64a54740b0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MCAN_TX" output
+			(at 168.91 140.97 0)
+			(uuid "dc3b99d9-0990-4925-8374-13faa47b32af")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MCAN_RX" input
+			(at 168.91 143.51 0)
+			(uuid "e16e1693-84dc-4ca6-b295-cf08af3cb7a4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MCAN_STB" input
+			(at 168.91 146.05 0)
+			(uuid "b7dd29f1-3c08-4446-a20c-8fd623a51076")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
