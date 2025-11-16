@@ -5,31 +5,33 @@
 	(uuid "97a9deb7-383e-4c3d-9149-ee3509849888")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:D_Schottky"
+		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 1.016)
+				(offset 0.254)
 				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "D_Schottky"
-				(at 0 -2.54 0)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -50,7 +52,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Schottky diode"
+			(property "Description" "Unpolarized capacitor, small symbol"
 				(at 0 0 0)
 				(effects
 					(font
@@ -59,7 +61,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "diode Schottky"
+			(property "ki_keywords" "capacitor cap"
 				(at 0 0 0)
 				(effects
 					(font
@@ -68,7 +70,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -77,13 +79,13 @@
 					(hide yes)
 				)
 			)
-			(symbol "D_Schottky_0_1"
+			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.254)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -92,22 +94,10 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -115,11 +105,11 @@
 					)
 				)
 			)
-			(symbol "D_Schottky_1_1"
+			(symbol "C_Small_1_1"
 				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -135,9 +125,9 @@
 					)
 				)
 				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -352,302 +342,6 @@
 				)
 			)
 			(property "Description" "Resistor, small US symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "r resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_Small_US_1_1"
-				(polyline
-					(pts
-						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 2.54 270)
-					(length 1.016)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 1.016)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device_Custom:C_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.254 1.778 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Small"
-				(at 0.254 -2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC Part #" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "capacitor cap"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_Small_0_1"
-				(polyline
-					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
-					)
-					(stroke
-						(width 0.3302)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 2.032)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.032)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device_Custom:R_Small_US"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 0.762 0.508 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "R_Small_US"
-				(at 0.762 -1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor, small US symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC Part #" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -2282,22 +1976,10 @@
 		(uuid "5bb0c656-dcec-4aa3-aca3-e8b8057f96c3")
 	)
 	(junction
-		(at 241.3 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "810bb340-ed92-4652-921d-5f87cebefefd")
-	)
-	(junction
 		(at 135.89 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "841334c2-f7f2-43de-ae95-852bc655ab2e")
-	)
-	(junction
-		(at 254 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a244aad5-04bb-4206-bca5-398366579b3b")
 	)
 	(junction
 		(at 144.78 127)
@@ -2577,16 +2259,6 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 76.2) (xy 241.3 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5dc545c6-716d-4d53-a1e7-43a293befcd9")
-	)
-	(wire
-		(pts
 			(xy 205.74 64.77) (xy 205.74 62.23)
 		)
 		(stroke
@@ -2594,16 +2266,6 @@
 			(type default)
 		)
 		(uuid "6047be3c-3a1b-418d-a0f5-7b346e15ddac")
-	)
-	(wire
-		(pts
-			(xy 254 76.2) (xy 256.54 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61641691-df48-4dda-8407-f86370c5d3bc")
 	)
 	(wire
 		(pts
@@ -2704,16 +2366,6 @@
 			(type default)
 		)
 		(uuid "741f8789-9ec6-424e-b051-04d820d3d610")
-	)
-	(wire
-		(pts
-			(xy 254 76.2) (xy 254 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78230526-54c9-4fee-bda6-974e72bbd9d9")
 	)
 	(wire
 		(pts
@@ -2844,16 +2496,6 @@
 			(type default)
 		)
 		(uuid "a771f4ee-9fcd-42ef-837e-5d63f5341b7a")
-	)
-	(wire
-		(pts
-			(xy 241.3 83.82) (xy 241.3 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a7e3752f-8964-44fa-a4e9-a7a47ca90bcf")
 	)
 	(wire
 		(pts
@@ -3007,26 +2649,6 @@
 	)
 	(wire
 		(pts
-			(xy 254 66.04) (xy 254 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf99dd76-6122-4f2c-8f58-6e47df9aaeb3")
-	)
-	(wire
-		(pts
-			(xy 241.3 76.2) (xy 254 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d14946bc-612b-4524-ad24-e3306436195e")
-	)
-	(wire
-		(pts
 			(xy 71.12 120.65) (xy 71.12 123.19)
 		)
 		(stroke
@@ -3094,16 +2716,6 @@
 			(type default)
 		)
 		(uuid "e59ca747-3822-45c8-b395-4b9e3e9bdea0")
-	)
-	(wire
-		(pts
-			(xy 241.3 66.04) (xy 241.3 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e72318a7-2733-4ef6-b092-cd44d7f7db20")
 	)
 	(wire
 		(pts
@@ -3175,16 +2787,6 @@
 		)
 		(uuid "fd0a59af-48ea-4eb3-9b1c-0462572a625f")
 	)
-	(wire
-		(pts
-			(xy 241.3 73.66) (xy 241.3 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd397c19-9162-4fb1-a299-cbdbad7a7f9e")
-	)
 	(label "RCAN_H"
 		(at 71.12 73.66 180)
 		(effects
@@ -3225,7 +2827,7 @@
 		)
 		(uuid "cfc7ecec-b365-4b91-beb2-6d4b0702cc87")
 	)
-	(hierarchical_label "5V_EXT_FLT"
+	(hierarchical_label "FLT_EXT_5V"
 		(shape output)
 		(at 134.62 77.47 180)
 		(effects
@@ -3236,19 +2838,8 @@
 		)
 		(uuid "11a61c04-eab0-4144-b3cf-03c153765000")
 	)
-	(hierarchical_label "RKT_PGOOD"
-		(shape output)
-		(at 256.54 76.2 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "632c53a0-ee37-48d6-9f2a-2ae94b9c7263")
-	)
 	(hierarchical_label "RCAN_TX"
-		(shape output)
+		(shape input)
 		(at 86.36 130.81 180)
 		(effects
 			(font
@@ -3259,7 +2850,7 @@
 		(uuid "65d8c823-e139-4164-8c96-dc0013855110")
 	)
 	(hierarchical_label "RCAN_RX"
-		(shape input)
+		(shape output)
 		(at 86.36 133.35 180)
 		(effects
 			(font
@@ -3269,7 +2860,7 @@
 		)
 		(uuid "81c35cea-5ec6-4158-b944-4f983516d8c8")
 	)
-	(hierarchical_label "5V_EXT_EN"
+	(hierarchical_label "EN_EXT_5V"
 		(shape input)
 		(at 189.23 74.93 0)
 		(effects
@@ -3292,7 +2883,7 @@
 		(uuid "eca4ebbe-8a5c-4dd9-ad05-10dd3641932c")
 	)
 	(symbol
-		(lib_id "Device_Custom:R_Small_US")
+		(lib_id "Device:R_Small_US")
 		(at 144.78 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3300,7 +2891,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "02f2fdc6-1279-47b8-b682-1316e7c3338b")
-		(property "Reference" "R43"
+		(property "Reference" "R48"
 			(at 142.24 132.08 90)
 			(effects
 				(font
@@ -3316,7 +2907,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 144.78 132.08 0)
 			(effects
 				(font
@@ -3361,7 +2952,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "R43")
+					(reference "R48")
 					(unit 1)
 				)
 			)
@@ -3377,7 +2968,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "04263ece-e7f7-444f-b80e-901ca11cafef")
-		(property "Reference" "#PWR0122"
+		(property "Reference" "#PWR0136"
 			(at 181.61 97.79 0)
 			(effects
 				(font
@@ -3427,14 +3018,14 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "#PWR0122")
+					(reference "#PWR0136")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device_Custom:C_Small")
+		(lib_id "Device:C_Small")
 		(at 200.66 85.09 0)
 		(mirror y)
 		(unit 1)
@@ -3444,7 +3035,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "092b1cf7-b67a-4de7-879b-e14144a251f9")
-		(property "Reference" "C73"
+		(property "Reference" "C55"
 			(at 203.2 83.8262 0)
 			(effects
 				(font
@@ -3507,80 +3098,14 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "C73")
+					(reference "C55")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 241.3 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0c871382-2a2c-4e5b-88e5-f3ef65f33666")
-		(property "Reference" "#PWR066"
-			(at 241.3 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 241.3 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 241.3 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 241.3 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 241.3 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2daaa68d-ccb0-4194-840c-c6af0cdd3655")
-		)
-		(instances
-			(project "CanardBoard"
-				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "#PWR066")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device_Custom:R_Small_US")
+		(lib_id "Device:R_Small_US")
 		(at 135.89 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3588,7 +3113,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "11ef654e-d686-4c8b-b9fb-20696604af09")
-		(property "Reference" "R54"
+		(property "Reference" "R47"
 			(at 133.35 86.36 90)
 			(effects
 				(font
@@ -3649,7 +3174,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "R54")
+					(reference "R47")
 					(unit 1)
 				)
 			)
@@ -3665,7 +3190,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1864da9d-1c43-4355-8dea-81168d2d9067")
-		(property "Reference" "J6"
+		(property "Reference" "J10"
 			(at 56.8325 57.15 0)
 			(effects
 				(font
@@ -3735,80 +3260,14 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "J6")
+					(reference "J10")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 241.3 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "19bc22cb-ff5c-43c3-a129-96687b42cbd3")
-		(property "Reference" "#PWR064"
-			(at 241.3 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V_RKT"
-			(at 241.3 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 241.3 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 241.3 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 241.3 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ffd0eb28-9c14-4264-8bc6-0c3d4ce94144")
-		)
-		(instances
-			(project "CanardBoard"
-				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "#PWR064")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device_Custom:C_Small")
+		(lib_id "Device:C_Small")
 		(at 125.73 118.11 0)
 		(mirror y)
 		(unit 1)
@@ -3818,7 +3277,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "281fdaaf-61be-4aa3-b9cd-39c2d1d03c85")
-		(property "Reference" "C52"
+		(property "Reference" "C53"
 			(at 128.27 116.8462 0)
 			(effects
 				(font
@@ -3881,7 +3340,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "C52")
+					(reference "C53")
 					(unit 1)
 				)
 			)
@@ -3897,7 +3356,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "338128c2-d52d-4caa-9fd0-31724804a716")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR0124"
 			(at 74.93 87.63 0)
 			(effects
 				(font
@@ -3947,149 +3406,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "#PWR033")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device_Custom:R_Small_US")
-		(at 241.3 71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "41c07679-afd9-484c-a260-f56463b3e190")
-		(property "Reference" "R30"
-			(at 238.76 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100k"
-			(at 243.84 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 241.3 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 241.3 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 241.3 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C17630"
-			(at 241.3 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0c5ff8dc-7383-4ceb-9fe8-26ae175e3bbf")
-		)
-		(pin "2"
-			(uuid "33129770-36ff-42ac-a6b1-7391e33f71c8")
-		)
-		(instances
-			(project "CanardBoard"
-				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "R30")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 254 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "48b73084-765d-4824-b701-d7b415ae0b4f")
-		(property "Reference" "#PWR067"
-			(at 254 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 254 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 254 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 254 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 254 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a283814d-2dec-436f-8734-11e246214be2")
-		)
-		(instances
-			(project "CanardBoard"
-				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "#PWR067")
+					(reference "#PWR0124")
 					(unit 1)
 				)
 			)
@@ -4105,7 +3422,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4ed37724-26c3-4769-825b-172b3b57f679")
-		(property "Reference" "#PWR0158"
+		(property "Reference" "#PWR0137"
 			(at 189.23 97.79 0)
 			(effects
 				(font
@@ -4155,7 +3472,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "#PWR0158")
+					(reference "#PWR0137")
 					(unit 1)
 				)
 			)
@@ -4171,7 +3488,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4f7687b8-507c-4fe1-b94e-e2b6bc82c7f4")
-		(property "Reference" "#PWR0103"
+		(property "Reference" "#PWR0126"
 			(at 81.28 149.86 0)
 			(effects
 				(font
@@ -4221,7 +3538,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "#PWR0103")
+					(reference "#PWR0126")
 					(unit 1)
 				)
 			)
@@ -4237,7 +3554,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "510eabf7-c8b7-4dee-b47c-c820f07828ea")
-		(property "Reference" "#PWR0105"
+		(property "Reference" "#PWR0131"
 			(at 125.73 129.54 0)
 			(effects
 				(font
@@ -4287,7 +3604,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "#PWR0105")
+					(reference "#PWR0131")
 					(unit 1)
 				)
 			)
@@ -4303,7 +3620,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5fc1b7e0-f6bf-409f-9425-f0d1c6c8b78d")
-		(property "Reference" "#PWR0125"
+		(property "Reference" "#PWR0134"
 			(at 156.21 161.29 0)
 			(effects
 				(font
@@ -4353,14 +3670,14 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "#PWR0125")
+					(reference "#PWR0134")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device_Custom:R_Small_US")
+		(lib_id "Device:R_Small_US")
 		(at 187.96 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4368,7 +3685,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6c3ea75a-d504-4355-a478-2f9dd9a54eb5")
-		(property "Reference" "R48"
+		(property "Reference" "R49"
 			(at 185.42 68.58 90)
 			(effects
 				(font
@@ -4429,7 +3746,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "R48")
+					(reference "R49")
 					(unit 1)
 				)
 			)
@@ -4445,7 +3762,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "71559b89-5f44-4315-b82a-45cf24f38e01")
-		(property "Reference" "#PWR0162"
+		(property "Reference" "#PWR0132"
 			(at 135.89 57.15 0)
 			(effects
 				(font
@@ -4495,7 +3812,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "#PWR0162")
+					(reference "#PWR0132")
 					(unit 1)
 				)
 			)
@@ -4511,7 +3828,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "777102d0-76d2-451b-bfd0-5d81a5bebcf7")
-		(property "Reference" "#PWR0159"
+		(property "Reference" "#PWR0138"
 			(at 200.66 97.79 0)
 			(effects
 				(font
@@ -4561,14 +3878,14 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "#PWR0159")
+					(reference "#PWR0138")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device_Custom:R_Small_US")
+		(lib_id "Device:R_Small_US")
 		(at 115.57 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4576,7 +3893,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "890296d7-38ac-48aa-a520-cfcaefad05b6")
-		(property "Reference" "R56"
+		(property "Reference" "R44"
 			(at 113.03 71.12 90)
 			(effects
 				(font
@@ -4637,7 +3954,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "R56")
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -4653,7 +3970,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a8a25fc-d959-414e-9f5f-8b8da90f62ab")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR0127"
 			(at 90.17 54.61 0)
 			(effects
 				(font
@@ -4703,7 +4020,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "#PWR035")
+					(reference "#PWR0127")
 					(unit 1)
 				)
 			)
@@ -4719,7 +4036,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "946f38e3-0d1c-4390-bd65-388476910673")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR0123"
 			(at 74.93 54.61 0)
 			(effects
 				(font
@@ -4769,7 +4086,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "#PWR034")
+					(reference "#PWR0123")
 					(unit 1)
 				)
 			)
@@ -4785,7 +4102,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9d46ceef-a4d3-4e6f-b6f6-7fb1c1e2854e")
-		(property "Reference" "#PWR0100"
+		(property "Reference" "#PWR0125"
 			(at 81.28 114.3 0)
 			(effects
 				(font
@@ -4835,7 +4152,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "#PWR0100")
+					(reference "#PWR0125")
 					(unit 1)
 				)
 			)
@@ -4850,7 +4167,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a7bd594e-4e7d-4e61-a026-ca02beafa3c0")
-		(property "Reference" "F1"
+		(property "Reference" "F9"
 			(at 80.518 62.738 90)
 			(effects
 				(font
@@ -4905,77 +4222,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "F1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 254 71.12 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a9b4f7f2-4d88-46e9-b07d-8f0f7de63877")
-		(property "Reference" "D19"
-			(at 256.54 69.5324 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "RB520S30T1G"
-			(at 256.54 72.0724 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-523"
-			(at 254 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 254 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Schottky diode"
-			(at 254 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "63cf306b-97de-42e1-baa6-b2006c19fed7")
-		)
-		(pin "2"
-			(uuid "1bc2794d-8522-4fbe-b91d-7aa11ff2cab2")
-		)
-		(instances
-			(project "CanardBoard"
-				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "D19")
+					(reference "F9")
 					(unit 1)
 				)
 			)
@@ -4991,7 +4238,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b06a06bf-65a5-419d-a634-0373eafc0570")
-		(property "Reference" "#PWR0104"
+		(property "Reference" "#PWR0130"
 			(at 116.84 114.3 0)
 			(effects
 				(font
@@ -5041,14 +4288,14 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "#PWR0104")
+					(reference "#PWR0130")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device_Custom:R_Small_US")
+		(lib_id "Device:R_Small_US")
 		(at 115.57 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5056,7 +4303,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b1fe1ef1-dfc3-402b-94d8-43bf18fec328")
-		(property "Reference" "R57"
+		(property "Reference" "R45"
 			(at 113.03 78.74 90)
 			(effects
 				(font
@@ -5117,7 +4364,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "R57")
+					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -5133,7 +4380,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b4d0aaa7-82c6-4db8-b65f-4125d6636fcf")
-		(property "Reference" "#PWR0123"
+		(property "Reference" "#PWR0135"
 			(at 181.61 63.5 0)
 			(effects
 				(font
@@ -5183,14 +4430,14 @@
 		(instances
 			(project ""
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "#PWR0123")
+					(reference "#PWR0135")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device_Custom:R_Small_US")
+		(lib_id "Device:R_Small_US")
 		(at 135.89 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5198,7 +4445,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ba1fa9d2-ba05-4f06-9524-f5b9eb2b6e6e")
-		(property "Reference" "R58"
+		(property "Reference" "R46"
 			(at 133.35 59.69 90)
 			(effects
 				(font
@@ -5259,7 +4506,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "R58")
+					(reference "R46")
 					(unit 1)
 				)
 			)
@@ -5274,7 +4521,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ba65b5a8-2653-4a69-a4e1-294cdb9192d8")
-		(property "Reference" "F2"
+		(property "Reference" "F8"
 			(at 76.454 54.61 0)
 			(effects
 				(font
@@ -5329,84 +4576,14 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "F2")
+					(reference "F8")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 241.3 81.28 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bb7a71a0-55ab-4c4c-82c7-ed25c65aa201")
-		(property "Reference" "R28"
-			(at 243.84 80.0099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "31.6k"
-			(at 243.84 82.5499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 241.3 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 241.3 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 241.3 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "cf522b83-b207-4819-a21b-2d9ac8f299d5")
-		)
-		(pin "1"
-			(uuid "c28ef1cb-2dc2-490f-be0e-dc64682d5f9f")
-		)
-		(instances
-			(project "CanardBoard"
-				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "R28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device_Custom:C_Small")
+		(lib_id "Device:C_Small")
 		(at 205.74 67.31 0)
 		(mirror y)
 		(unit 1)
@@ -5416,7 +4593,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bd94c314-749d-49d3-9fd3-b7cd51971cd5")
-		(property "Reference" "C60"
+		(property "Reference" "C56"
 			(at 208.28 66.0462 0)
 			(effects
 				(font
@@ -5479,14 +4656,14 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "C60")
+					(reference "C56")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device_Custom:C_Small")
+		(lib_id "Device:C_Small")
 		(at 189.23 85.09 0)
 		(mirror y)
 		(unit 1)
@@ -5496,7 +4673,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be34f664-50fd-4ed5-8a59-c4da0f5a49a5")
-		(property "Reference" "C72"
+		(property "Reference" "C54"
 			(at 191.77 83.8262 0)
 			(effects
 				(font
@@ -5559,7 +4736,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "C72")
+					(reference "C54")
 					(unit 1)
 				)
 			)
@@ -5575,7 +4752,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bf2e42ca-8abc-4166-95c8-62f7c7b5efa9")
-		(property "Reference" "U15"
+		(property "Reference" "U16"
 			(at 165.1 64.77 0)
 			(effects
 				(font
@@ -5703,7 +4880,7 @@
 		(instances
 			(project ""
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "U15")
+					(reference "U16")
 					(unit 1)
 				)
 			)
@@ -5719,7 +4896,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bfc12dd8-f123-4a9f-a0d5-88823dbdadfc")
-		(property "Reference" "U17"
+		(property "Reference" "U15"
 			(at 100.33 120.65 0)
 			(effects
 				(font
@@ -5841,7 +5018,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "U17")
+					(reference "U15")
 					(unit 1)
 				)
 			)
@@ -5857,7 +5034,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c88c6097-a510-43fd-b3f3-1408484a4609")
-		(property "Reference" "#PWR0124"
+		(property "Reference" "#PWR0139"
 			(at 205.74 78.74 0)
 			(effects
 				(font
@@ -5907,14 +5084,14 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "#PWR0124")
+					(reference "#PWR0139")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device_Custom:C_Small")
+		(lib_id "Device:C_Small")
 		(at 71.12 118.11 0)
 		(mirror y)
 		(unit 1)
@@ -6003,7 +5180,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd2a3dec-3225-40d9-a18c-d790b91e8859")
-		(property "Reference" "D1"
+		(property "Reference" "D16"
 			(at 162.56 144.7799 0)
 			(effects
 				(font
@@ -6061,7 +5238,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "D1")
+					(reference "D16")
 					(unit 1)
 				)
 			)
@@ -6077,7 +5254,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e06c4c24-ede0-4ded-bb47-92c14a0a2271")
-		(property "Reference" "#PWR0161"
+		(property "Reference" "#PWR0129"
 			(at 115.57 97.79 0)
 			(effects
 				(font
@@ -6127,7 +5304,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "#PWR0161")
+					(reference "#PWR0129")
 					(unit 1)
 				)
 			)
@@ -6143,7 +5320,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e66fe316-ea19-4dbd-9158-f3aecd5fecd9")
-		(property "Reference" "#PWR099"
+		(property "Reference" "#PWR0122"
 			(at 71.12 129.54 0)
 			(effects
 				(font
@@ -6193,14 +5370,14 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "#PWR099")
+					(reference "#PWR0122")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device_Custom:C_Small")
+		(lib_id "Device:C_Small")
 		(at 90.17 74.93 0)
 		(mirror y)
 		(unit 1)
@@ -6210,7 +5387,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ea98771b-4cc7-4ed3-bffa-b785b035e066")
-		(property "Reference" "C59"
+		(property "Reference" "C52"
 			(at 92.71 73.6662 0)
 			(effects
 				(font
@@ -6273,7 +5450,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "C59")
+					(reference "C52")
 					(unit 1)
 				)
 			)
@@ -6289,7 +5466,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f03c260f-6260-479d-9788-f60f7d098ba3")
-		(property "Reference" "#PWR0121"
+		(property "Reference" "#PWR0128"
 			(at 90.17 87.63 0)
 			(effects
 				(font
@@ -6339,7 +5516,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "#PWR0121")
+					(reference "#PWR0128")
 					(unit 1)
 				)
 			)
@@ -6355,7 +5532,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f3cfc3cc-1c1f-446c-9ea3-a55884422e8c")
-		(property "Reference" "#PWR0160"
+		(property "Reference" "#PWR0133"
 			(at 135.89 97.79 0)
 			(effects
 				(font
@@ -6405,7 +5582,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "#PWR0160")
+					(reference "#PWR0133")
 					(unit 1)
 				)
 			)
