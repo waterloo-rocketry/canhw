@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 1.5,
-          "width": 3.5
+          "height": 4.56,
+          "width": 0.85
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -52,13 +52,7 @@
           "min_clearance": 0.1524
         }
       },
-      "diff_pair_dimensions": [
-        {
-          "gap": 0.0,
-          "via_gap": 0.0,
-          "width": 0.0
-        }
-      ],
+      "diff_pair_dimensions": [],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -130,7 +124,7 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.2032,
+        "min_clearance": 0.0,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.025,
         "min_groove_width": 0.0,
@@ -142,10 +136,10 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.381,
-        "min_track_width": 0.2032,
+        "min_through_hole_diameter": 0.3,
+        "min_track_width": 0.0889,
         "min_via_annular_width": 0.05,
-        "min_via_diameter": 0.762,
+        "min_via_diameter": 0.2032,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -161,7 +155,7 @@
       "teardrop_parameters": [
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 0,
+          "td_curve_segcount": 1,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -172,7 +166,7 @@
         },
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 0,
+          "td_curve_segcount": 1,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -183,7 +177,7 @@
         },
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 0,
+          "td_curve_segcount": 1,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -195,9 +189,9 @@
       ],
       "track_widths": [
         0.0,
-        0.12,
-        0.2032,
-        1.11
+        0.3048,
+        2.286,
+        2.4638
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -225,20 +219,7 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [
-        {
-          "diameter": 0.0,
-          "drill": 0.0
-        },
-        {
-          "diameter": 0.5,
-          "drill": 0.2
-        },
-        {
-          "diameter": 0.762,
-          "drill": 0.381
-        }
-      ],
+      "via_dimensions": [],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
@@ -250,44 +231,7 @@
       "mpn": ""
     },
     "layer_pairs": [],
-    "layer_presets": [
-      {
-        "activeLayer": -2,
-        "flipBoard": false,
-        "layers": [
-          0,
-          2,
-          5,
-          7,
-          19,
-          25,
-          29,
-          31
-        ],
-        "name": "Review_Preset",
-        "renderLayers": [
-          "vias",
-          "footprint_text",
-          "footprint_anchors",
-          "ratsnest",
-          "grid",
-          "footprints_front",
-          "footprints_back",
-          "footprint_values",
-          "footprint_references",
-          "tracks",
-          "drc_errors",
-          "drawing_sheet",
-          "bitmaps",
-          "pads",
-          "zones",
-          "drc_warnings",
-          "locked_item_shadows",
-          "conflict_shadows",
-          "shapes"
-        ]
-      }
-    ],
+    "layer_presets": [],
     "viewports": []
   },
   "boards": [],
@@ -475,7 +419,6 @@
       "bus_label_syntax": "error",
       "bus_to_bus_conflict": "error",
       "bus_to_net_conflict": "error",
-      "conflicting_netclasses": "error",
       "different_unit_footprint": "error",
       "different_unit_net": "error",
       "duplicate_reference": "error",
@@ -561,7 +504,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "gps_2.step",
+      "step": "K:/Waterloo Rocketry/2026 - Testflight 2 Electric Boogaloo/Flight CAD/1000 Nosecone + Recovery/1.2.0 Recovery Assembly/Rec Elec Sled/gps_2.step",
       "svg": "",
       "vrml": ""
     },
@@ -569,7 +512,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "",
+    "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -591,24 +534,6 @@
           "show": true
         },
         {
-          "group_by": true,
-          "label": "Value",
-          "name": "Value",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Datasheet",
-          "name": "Datasheet",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Footprint",
-          "name": "Footprint",
-          "show": true
-        },
-        {
           "group_by": false,
           "label": "Qty",
           "name": "${QUANTITY}",
@@ -616,15 +541,45 @@
         },
         {
           "group_by": true,
+          "label": "Value",
+          "name": "Value",
+          "show": true
+        },
+        {
+          "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from BOM",
+          "name": "${EXCLUDE_FROM_BOM}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from Board",
+          "name": "${EXCLUDE_FROM_BOARD}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Footprint",
+          "name": "Footprint",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet",
+          "name": "Datasheet",
           "show": true
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "include_excluded_from_bom": false,
-      "name": "Grouped By Value",
+      "include_excluded_from_bom": true,
+      "name": "Default Editing",
       "sort_asc": true,
       "sort_field": "Reference"
     },
