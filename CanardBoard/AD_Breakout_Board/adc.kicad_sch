@@ -1037,6 +1037,16 @@
 		)
 		(uuid "844d578e-2ee1-4586-82a0-7f6a9ab36503")
 	)
+	(text "Gyro uses left-handed coordinate system\ninverting in hardware to match board"
+		(exclude_from_sim no)
+		(at 91.186 101.346 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "eeee9895-c5d7-412c-94d5-a6b2a8debf1e")
+	)
 	(junction
 		(at 191.77 100.33)
 		(diameter 0)
@@ -1056,12 +1066,6 @@
 		(uuid "0e20faa8-9fb9-40b8-aaf7-d2a5d8e3e869")
 	)
 	(junction
-		(at 113.03 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "35b2e7aa-9f5a-482c-a30a-3e7714d8585e")
-	)
-	(junction
 		(at 113.03 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1078,6 +1082,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "63172d15-8899-4bdd-9b34-7fde02d1e84d")
+	)
+	(junction
+		(at 113.03 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "74b422a3-f413-459a-9221-92b64d669029")
 	)
 	(junction
 		(at 162.56 113.03)
@@ -1215,7 +1225,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 97.79) (xy 113.03 102.87)
+			(xy 113.03 97.79) (xy 113.03 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1232,16 +1242,6 @@
 			(type default)
 		)
 		(uuid "3f1931ac-5a75-463e-a1fc-cfc04a7de372")
-	)
-	(wire
-		(pts
-			(xy 113.03 102.87) (xy 130.81 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c156eb1-1805-498a-b197-e76eb6f0517c")
 	)
 	(wire
 		(pts
@@ -1315,16 +1315,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 107.95) (xy 113.03 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "770b6835-870b-486d-8858-bbc6f0862001")
-	)
-	(wire
-		(pts
 			(xy 191.77 87.63) (xy 191.77 90.17)
 		)
 		(stroke
@@ -1362,6 +1352,16 @@
 			(type default)
 		)
 		(uuid "8d80ff51-7674-4606-9ebd-9781d144dcf2")
+	)
+	(wire
+		(pts
+			(xy 113.03 100.33) (xy 113.03 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d9426b6-c632-4bb7-89bb-ea92e7e1f0a4")
 	)
 	(wire
 		(pts
@@ -1452,6 +1452,16 @@
 			(type default)
 		)
 		(uuid "c147c08d-71cf-45c0-82e6-8f9d2e40f073")
+	)
+	(wire
+		(pts
+			(xy 113.03 100.33) (xy 130.81 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c38b3a3d-4013-402e-9d2f-9d5b9f28bcfd")
 	)
 	(wire
 		(pts
@@ -1563,17 +1573,6 @@
 		)
 		(uuid "ff3099b8-57f7-4c20-a048-d15b819ee770")
 	)
-	(hierarchical_label "GYRO_OUT"
-		(shape input)
-		(at 130.81 100.33 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0cc7397c-d8e8-4ec4-a806-33cdd1f9ef70")
-	)
 	(hierarchical_label "ADC_ALERT"
 		(shape output)
 		(at 158.75 105.41 0)
@@ -1606,6 +1605,17 @@
 			(justify left)
 		)
 		(uuid "65f15100-fc5b-41b2-8bb9-ae260c99c1c8")
+	)
+	(hierarchical_label "GYRO_OUT"
+		(shape input)
+		(at 130.81 102.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7dea8d9e-5d65-45d8-b3a0-e0d9e5dbd3c2")
 	)
 	(hierarchical_label "ADI_SCL"
 		(shape input)
