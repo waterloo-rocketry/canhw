@@ -501,7 +501,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 40.64) (xy 121.92 40.64)
+			(xy 96.52 43.18) (xy 121.92 43.18)
 		)
 		(stroke
 			(width 0)
@@ -538,16 +538,6 @@
 			(type default)
 		)
 		(uuid "705b06e0-776a-4440-8a0d-4477b60e4105")
-	)
-	(wire
-		(pts
-			(xy 96.52 35.56) (xy 121.92 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "73c39296-40be-431b-a579-90bd3872ebef")
 	)
 	(wire
 		(pts
@@ -671,7 +661,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 38.1) (xy 121.92 38.1)
+			(xy 96.52 40.64) (xy 121.92 40.64)
 		)
 		(stroke
 			(width 0)
@@ -821,6 +811,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 35.56) (xy 121.92 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e041a533-97b8-4e7f-8be6-e73f4888b30f")
+	)
+	(wire
+		(pts
 			(xy 96.52 95.25) (xy 121.92 95.25)
 		)
 		(stroke
@@ -891,16 +891,6 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 43.18) (xy 121.92 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0866f11-0f85-4d15-a659-f0f3dba358f6")
-	)
-	(wire
-		(pts
 			(xy 176.53 30.48) (xy 198.12 30.48)
 		)
 		(stroke
@@ -948,6 +938,16 @@
 			(type default)
 		)
 		(uuid "f7055c3b-d7d0-4d87-a2aa-b3246eb3003f")
+	)
+	(wire
+		(pts
+			(xy 96.52 38.1) (xy 121.92 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb290a22-962d-4a8c-9ffa-7ea073fac38b")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -2207,16 +2207,6 @@
 				(justify right)
 			)
 		)
-		(pin "IBAT_SENS" input
-			(at 121.92 35.56 180)
-			(uuid "39c8d0b0-c971-4289-9e60-795031b60428")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "VBAT_SENS1" input
 			(at 121.92 30.48 180)
 			(uuid "e90edc75-369b-48e8-9963-96c2ac0ec1c8")
@@ -2227,18 +2217,8 @@
 				(justify left)
 			)
 		)
-		(pin "BAT_PG" input
-			(at 121.92 43.18 180)
-			(uuid "61c209e5-5a79-4edf-beb8-b8e1d44812d5")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "BAT_FLT1" input
-			(at 121.92 38.1 180)
+			(at 121.92 40.64 180)
 			(uuid "3ab4a909-e9b6-44bd-bd9f-713956fe185d")
 			(effects
 				(font
@@ -2248,7 +2228,7 @@
 			)
 		)
 		(pin "BAT_FLT2" input
-			(at 121.92 40.64 180)
+			(at 121.92 43.18 180)
 			(uuid "29d8d64c-848e-4d70-8774-bb76c44a394c")
 			(effects
 				(font
@@ -2730,6 +2710,26 @@
 		(pin "S_CAN_TX" output
 			(at 121.92 95.25 180)
 			(uuid "f454934f-3426-4ebc-aa72-0994d11a4d21")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IBAT1_SENS" input
+			(at 121.92 35.56 180)
+			(uuid "8a084aa6-a8d5-4f6e-8333-00a78e550c8e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IBAT2_SENS" input
+			(at 121.92 38.1 180)
+			(uuid "7d667c35-3a8e-47a1-8c61-6e90d982c7d7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3381,28 +3381,8 @@
 				(justify right)
 			)
 		)
-		(pin "BAT_PG" output
-			(at 96.52 43.18 0)
-			(uuid "44dc0927-32d2-4a06-8fbd-8a565ec5897c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "IBAT_SENS" output
-			(at 96.52 35.56 0)
-			(uuid "c045e875-e6c4-48fe-83c2-2afe16893214")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "BAT_FLT2" output
-			(at 96.52 40.64 0)
+			(at 96.52 43.18 0)
 			(uuid "14dcc06d-a6b1-490c-a130-aaf27329efa0")
 			(effects
 				(font
@@ -3412,7 +3392,7 @@
 			)
 		)
 		(pin "BAT_FLT1" output
-			(at 96.52 38.1 0)
+			(at 96.52 40.64 0)
 			(uuid "78377ec1-2988-4ffd-a355-b049c5fd37e2")
 			(effects
 				(font
@@ -3434,6 +3414,26 @@
 		(pin "VBAT_SENS2" output
 			(at 96.52 33.02 0)
 			(uuid "cac2064c-a32e-49d1-91bf-b623e2c4e90b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "IBAT1_SENS" output
+			(at 96.52 35.56 0)
+			(uuid "a30770f1-5806-4d9e-b955-edba076d3c0e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "IBAT2_SENS" output
+			(at 96.52 38.1 0)
+			(uuid "59ce04b9-585c-4b10-9d78-14756e160406")
 			(effects
 				(font
 					(size 1.27 1.27)
