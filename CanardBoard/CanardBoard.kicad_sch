@@ -1801,19 +1801,9 @@
 				(justify left top)
 			)
 		)
-		(pin "V_USB" output
-			(at 63.5 57.15 0)
-			(uuid "255ff0b7-42d2-407f-b6f0-9bfdf2b259b6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "V_RKT" output
+		(pin "VSENS_RKT" output
 			(at 63.5 54.61 0)
-			(uuid "a3b85790-5c41-4438-a8c5-bb9f6bd06237")
+			(uuid "3d4f0087-d63a-4c6e-83cc-f77753f317ca")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1821,9 +1811,19 @@
 				(justify right)
 			)
 		)
-		(pin "V_CHG" output
+		(pin "VSENS_USB" output
+			(at 63.5 57.15 0)
+			(uuid "e761dafc-ac87-41fc-b84d-f39ec9de2f2c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VSENS_CHG" output
 			(at 63.5 52.07 0)
-			(uuid "ba2f6013-64a3-4ebb-ae93-185e44c34e8c")
+			(uuid "4b5b8e88-c4e0-4c91-a543-3258b58f0cd6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2493,16 +2493,6 @@
 				(justify right)
 			)
 		)
-		(pin "VBAT_SENS1" input
-			(at 121.92 30.48 180)
-			(uuid "e90edc75-369b-48e8-9963-96c2ac0ec1c8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "BAT_FLT1" input
 			(at 121.92 40.64 180)
 			(uuid "3ab4a909-e9b6-44bd-bd9f-713956fe185d")
@@ -2526,16 +2516,6 @@
 		(pin "PWR_EN" output
 			(at 121.92 45.72 180)
 			(uuid "c0bf5d04-2cba-4690-afe3-6b82c2bac764")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VBAT_SENS2" input
-			(at 121.92 33.02 180)
-			(uuid "45684deb-9359-4dcb-b0cc-96dcfffb21ba")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2873,36 +2853,6 @@
 				(justify left)
 			)
 		)
-		(pin "V_CHG" input
-			(at 121.92 52.07 180)
-			(uuid "f128daef-1180-4942-b6e2-4d52c660264d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "V_RKT" input
-			(at 121.92 54.61 180)
-			(uuid "f6e49ded-cac8-4842-9154-65498be7392c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "V_USB" input
-			(at 121.92 57.15 180)
-			(uuid "c0118d5a-1eb7-4397-b1d6-10e39631ca17")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "MOVELLA_TX" output
 			(at 176.53 146.05 0)
 			(uuid "21d2e1ee-0c4a-4335-88a8-6bae800fab73")
@@ -3003,9 +2953,9 @@
 				(justify left)
 			)
 		)
-		(pin "IBAT1_SENS" input
-			(at 121.92 35.56 180)
-			(uuid "8a084aa6-a8d5-4f6e-8333-00a78e550c8e")
+		(pin "VSENS_RKT" input
+			(at 121.92 54.61 180)
+			(uuid "2909ab77-8838-4b26-9e0b-a9fbd967c635")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3013,9 +2963,59 @@
 				(justify left)
 			)
 		)
-		(pin "IBAT2_SENS" input
+		(pin "VSENS_CHG" input
+			(at 121.92 52.07 180)
+			(uuid "ced74c97-2834-4755-8ed6-2802c8c4daca")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VSENS_USB" input
+			(at 121.92 57.15 180)
+			(uuid "4c11299d-1ae7-4757-b7a5-89338e1b8518")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ISENS_BAT1" input
+			(at 121.92 35.56 180)
+			(uuid "a10555e8-a82b-4e1a-b222-82efda5894e7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ISENS_BAT2" input
 			(at 121.92 38.1 180)
-			(uuid "7d667c35-3a8e-47a1-8c61-6e90d982c7d7")
+			(uuid "2db7b520-c026-40c1-8683-0f4f9d2fd2b5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VSENS_BAT1" input
+			(at 121.92 30.48 180)
+			(uuid "3db9621c-8948-4f9b-ba6d-c49663438f0f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VSENS_BAT2" input
+			(at 121.92 33.02 180)
+			(uuid "057f78a2-c5a3-48f5-a138-c8fc8e73bd27")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3687,29 +3687,9 @@
 				(justify right)
 			)
 		)
-		(pin "VBAT_SENS1" output
-			(at 96.52 30.48 0)
-			(uuid "a41227c8-82ac-41ad-83ea-f7db4b4e2e8e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "VBAT_SENS2" output
-			(at 96.52 33.02 0)
-			(uuid "cac2064c-a32e-49d1-91bf-b623e2c4e90b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "IBAT1_SENS" output
+		(pin "ISENS_BAT1" output
 			(at 96.52 35.56 0)
-			(uuid "a30770f1-5806-4d9e-b955-edba076d3c0e")
+			(uuid "259596a7-84c4-4529-bf89-e578b6406827")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3717,9 +3697,29 @@
 				(justify right)
 			)
 		)
-		(pin "IBAT2_SENS" output
+		(pin "ISENS_BAT2" output
 			(at 96.52 38.1 0)
-			(uuid "59ce04b9-585c-4b10-9d78-14756e160406")
+			(uuid "0ba768c9-3655-4a12-8136-d5e07ca10d48")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VSENS_BAT2" output
+			(at 96.52 33.02 0)
+			(uuid "ee5402e7-680d-4239-ba6b-1828abf283a3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VSENS_BAT1" output
+			(at 96.52 30.48 0)
+			(uuid "5218ce6b-c5a3-487d-a73a-3bb5352683b0")
 			(effects
 				(font
 					(size 1.27 1.27)
