@@ -732,6 +732,170 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:L_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L"
+				(at 0.762 1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "L_Small"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Inductor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "L_Small_0_1"
+				(arc
+					(start 0 2.032)
+					(mid 0.5058 1.524)
+					(end 0 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.016)
+					(mid 0.5058 0.508)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.5058 -0.508)
+					(end 0 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.016)
+					(mid 0.5058 -1.524)
+					(end 0 -2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "L_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.508)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.508)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R_US"
 			(pin_numbers
 				(hide yes)
@@ -2644,6 +2808,17 @@
 		)
 		(uuid "b4a709e6-93c5-4197-866c-0fa88b226ee9")
 	)
+	(text "Impedance matching values \ncalculated with help from\nGuerilla engineers"
+		(exclude_from_sim no)
+		(at 131.064 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b6811dca-8f67-4357-8f5f-e4184fdd9248")
+	)
 	(text "Reciever"
 		(exclude_from_sim no)
 		(at 216.154 56.134 0)
@@ -3257,6 +3432,16 @@
 			(type default)
 		)
 		(uuid "2d8a85c2-7e74-496c-91fd-e4ef7d09253b")
+	)
+	(wire
+		(pts
+			(xy 162.56 90.17) (xy 162.56 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fb47f28-22d7-4a92-9ed8-58297b83a0db")
 	)
 	(wire
 		(pts
@@ -4764,7 +4949,7 @@
 		(fields_autoplaced yes)
 		(uuid "014605b4-868b-43cf-bf8e-5a64c5d4cd5c")
 		(property "Reference" "L11"
-			(at 163.8272 82.6078 0)
+			(at 163.83 82.5499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4772,8 +4957,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4nH"
-			(at 163.8272 85.0321 0)
+		(property "Value" "33nH"
+			(at 163.83 85.0899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6730,7 +6915,7 @@
 				)
 			)
 		)
-		(property "Value" "4nH"
+		(property "Value" "8.2nH"
 			(at 156.21 87.63 90)
 			(effects
 				(font
@@ -7132,15 +7317,15 @@
 		(fields_autoplaced yes)
 		(uuid "5e624b52-7ff5-4990-96ca-658f2f9799ef")
 		(property "Reference" "C20"
-			(at 172.72 83.8665 90)
+			(at 172.72 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "6.8pF"
-			(at 172.72 86.2908 90)
+		(property "Value" "6.2pF"
+			(at 172.72 85.09 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10041,6 +10226,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 162.56 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da120a52-6f5b-440c-9fbe-e9525cc4b6c7")
+		(property "Reference" "#PWR021"
+			(at 162.56 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 162.56 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 162.56 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d82d88bf-aff4-49f0-bb70-df8e2ebb3f85")
+		)
+		(instances
+			(project ""
+				(path "/dba0825d-f4bc-4750-857e-1e3e550de350/5ae4edbf-f10b-4963-80d7-77d9dc986325"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_Coaxial")
 		(at 128.27 171.45 270)
 		(unit 1)
@@ -10640,6 +10891,75 @@
 			(project "LTT"
 				(path "/dba0825d-f4bc-4750-857e-1e3e550de350/5ae4edbf-f10b-4963-80d7-77d9dc986325"
 					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L_Small")
+		(at 162.56 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f5030d2b-0e85-4742-903b-b7ad3681dcc4")
+		(property "Reference" "L2"
+			(at 163.83 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "8.2nH"
+			(at 163.83 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor, small symbol"
+			(at 162.56 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b93d2d65-c9dc-4e01-8107-0234afe45245")
+		)
+		(pin "1"
+			(uuid "195de0f3-8468-497e-b57b-3906d0fb7ed1")
+		)
+		(instances
+			(project ""
+				(path "/dba0825d-f4bc-4750-857e-1e3e550de350/5ae4edbf-f10b-4963-80d7-77d9dc986325"
+					(reference "L2")
 					(unit 1)
 				)
 			)
