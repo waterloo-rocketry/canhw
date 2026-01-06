@@ -2051,12 +2051,6 @@
 		(uuid "7fe76b3e-4226-4239-95d0-2c1a32989118")
 	)
 	(junction
-		(at 36.83 128.27)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "803a1536-350a-4bcd-9dbe-4c08cefda74f")
-	)
-	(junction
 		(at 78.74 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2127,6 +2121,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c9e2b896-ed94-45c7-bb84-77aabb4da882")
+	)
+	(junction
+		(at 36.83 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d4818bf9-2bba-4e85-9482-e846a287ed42")
 	)
 	(junction
 		(at 184.15 68.58)
@@ -2335,16 +2335,6 @@
 			(type default)
 		)
 		(uuid "268c7f4f-c897-494b-8cf1-05649ffd3c58")
-	)
-	(wire
-		(pts
-			(xy 33.02 128.27) (xy 36.83 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "28d419a7-9577-4333-bbad-50decc6f370b")
 	)
 	(wire
 		(pts
@@ -3168,7 +3158,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 124.46) (xy 22.86 128.27)
+			(xy 36.83 124.46) (xy 36.83 128.27)
 		)
 		(stroke
 			(width 0)
@@ -3345,16 +3335,6 @@
 			(type default)
 		)
 		(uuid "f503f5c8-2a7f-4c69-800d-f26dcf9b7142")
-	)
-	(wire
-		(pts
-			(xy 22.86 128.27) (xy 25.4 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5704619-6d8d-40a0-b7e5-a5ada8833a00")
 	)
 	(wire
 		(pts
@@ -4031,7 +4011,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 22.86 124.46 0)
+		(at 36.83 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4040,7 +4020,7 @@
 		(fields_autoplaced yes)
 		(uuid "27f71744-83dc-4b2d-9476-b0e826e01118")
 		(property "Reference" "#PWR047"
-			(at 22.86 128.27 0)
+			(at 36.83 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4049,7 +4029,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 22.86 119.38 0)
+			(at 36.83 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4057,7 +4037,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 22.86 124.46 0)
+			(at 36.83 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4066,7 +4046,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 22.86 124.46 0)
+			(at 36.83 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4075,7 +4055,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 22.86 124.46 0)
+			(at 36.83 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5434,73 +5414,6 @@
 			(project "rocket_power_board"
 				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/7eeeb7f6-036b-4de7-994b-9c7d5f53146a"
 					(reference "#PWR065")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 29.21 128.27 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "99d77191-acb6-4915-9fba-f4903c1937eb")
-		(property "Reference" "D7"
-			(at 30.48 122.428 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PMEG3030EP"
-			(at 31.242 124.714 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-128"
-			(at 29.21 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG3030EP.pdf"
-			(at 29.21 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Schottky diode"
-			(at 29.21 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bec91949-aedd-4af3-ab99-29de17cf6fd3")
-		)
-		(pin "2"
-			(uuid "328210c9-d61d-4e53-9046-670d1a5fff7c")
-		)
-		(instances
-			(project "rocket_power_board"
-				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/7eeeb7f6-036b-4de7-994b-9c7d5f53146a"
-					(reference "D7")
 					(unit 1)
 				)
 			)
