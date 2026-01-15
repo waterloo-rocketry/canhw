@@ -4118,12 +4118,20 @@
 		(uuid "30efab94-78f7-4482-bee8-99bbfbc35b31")
 	)
 	(no_connect
+		(at 81.28 87.63)
+		(uuid "369805a4-03e9-42fc-aef8-60521f697856")
+	)
+	(no_connect
 		(at 124.46 49.53)
 		(uuid "421066db-907f-4254-911e-6613797d3215")
 	)
 	(no_connect
 		(at 81.28 125.73)
 		(uuid "44dc6c62-64f0-46bf-b6cf-05677197775c")
+	)
+	(no_connect
+		(at 81.28 100.33)
+		(uuid "474a3143-0463-4e41-81bf-ff851a23dcd4")
 	)
 	(no_connect
 		(at 124.46 107.95)
@@ -4146,10 +4154,6 @@
 		(uuid "504bd88e-58b8-4fc5-a9f0-4cb1aeb76008")
 	)
 	(no_connect
-		(at 124.46 95.25)
-		(uuid "52ea4a14-deaf-4ea6-bd96-bb075016c627")
-	)
-	(no_connect
 		(at 124.46 140.97)
 		(uuid "581928d7-fb22-4a0e-8fa4-48ed8915b324")
 	)
@@ -4162,24 +4166,12 @@
 		(uuid "5de3ff96-100a-4484-b082-c2ed86f31513")
 	)
 	(no_connect
-		(at 124.46 64.77)
-		(uuid "6bbfba24-29de-46fe-90d1-24e48288862d")
-	)
-	(no_connect
 		(at 124.46 54.61)
 		(uuid "6e8c393b-98ec-4608-87ec-212483c05429")
 	)
 	(no_connect
 		(at 124.46 151.13)
 		(uuid "71bf6669-edea-4141-b9c0-00cb8af56f5d")
-	)
-	(no_connect
-		(at 124.46 59.69)
-		(uuid "7e9d67f8-fdb9-4b18-8f37-ad10cd83725f")
-	)
-	(no_connect
-		(at 81.28 102.87)
-		(uuid "7ea2e6e8-7b15-4683-8b3e-9f3c8a9c9a59")
 	)
 	(no_connect
 		(at 81.28 143.51)
@@ -4190,12 +4182,12 @@
 		(uuid "8edc56fa-15ec-44fd-aa4f-63aba69eb835")
 	)
 	(no_connect
-		(at 81.28 105.41)
-		(uuid "9acafe92-2d3c-4cfa-821d-20a3c9da1db3")
+		(at 81.28 97.79)
+		(uuid "91d9551b-59ee-4453-9d47-1709c9bae8c8")
 	)
 	(no_connect
-		(at 124.46 62.23)
-		(uuid "a273637b-79e9-4665-8201-85867cb62acd")
+		(at 81.28 105.41)
+		(uuid "9acafe92-2d3c-4cfa-821d-20a3c9da1db3")
 	)
 	(no_connect
 		(at 124.46 92.71)
@@ -4212,6 +4204,10 @@
 	(no_connect
 		(at 124.46 118.11)
 		(uuid "a758d49c-950b-41a4-8d29-41accf38714f")
+	)
+	(no_connect
+		(at 81.28 92.71)
+		(uuid "abe38492-7d90-4678-8295-07cca6147ec2")
 	)
 	(no_connect
 		(at 81.28 85.09)
@@ -4242,8 +4238,8 @@
 		(uuid "b9ec98b8-62bb-4453-9211-f56b716fe921")
 	)
 	(no_connect
-		(at 124.46 115.57)
-		(uuid "c324f131-cccc-4a24-b786-5e794e7664fb")
+		(at 81.28 90.17)
+		(uuid "bc85fd07-e84d-491a-a12f-5b6973342cf4")
 	)
 	(no_connect
 		(at 124.46 153.67)
@@ -4264,6 +4260,10 @@
 	(no_connect
 		(at 81.28 64.77)
 		(uuid "ce185815-a8c2-47f9-9e79-7589ee419f28")
+	)
+	(no_connect
+		(at 81.28 95.25)
+		(uuid "d1eaf310-0362-4a76-8f29-c467b4d8f0ec")
 	)
 	(no_connect
 		(at 124.46 46.99)
@@ -4805,6 +4805,16 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 67.31) (xy 124.46 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d7c4096-0248-4bad-8a9e-ebd0c7ed74c4")
+	)
+	(wire
+		(pts
 			(xy 232.41 30.48) (xy 232.41 31.75)
 		)
 		(stroke
@@ -5274,7 +5284,7 @@
 		(uuid "5a22ebb7-bca6-412f-afa6-fdd02371f8cd")
 	)
 	(label "LED_G"
-		(at 124.46 67.31 0)
+		(at 137.16 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5444,16 +5454,27 @@
 		)
 		(uuid "1c2d76f0-ed0b-4843-8460-546cf9204a1c")
 	)
-	(hierarchical_label "FLASH_NCS"
-		(shape output)
-		(at 81.28 97.79 180)
+	(hierarchical_label "FLASH_IO3"
+		(shape bidirectional)
+		(at 81.28 102.87 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "2773ecf8-0081-4630-8100-d85589eebc8f")
+		(uuid "1e1060cf-e5b1-457b-8189-daeef63868ad")
+	)
+	(hierarchical_label "FLASH_CLK"
+		(shape output)
+		(at 124.46 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "27451b42-c91b-4dbb-b84c-fe7f4b4485ad")
 	)
 	(hierarchical_label "SD_D1"
 		(shape bidirectional)
@@ -5477,17 +5498,6 @@
 		)
 		(uuid "3766a613-06e9-42a7-a74c-e014856d6f1b")
 	)
-	(hierarchical_label "FLASH_IO2"
-		(shape bidirectional)
-		(at 81.28 92.71 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3a0d3067-3903-4ef7-a635-40122775784e")
-	)
 	(hierarchical_label "SD_CLK"
 		(shape output)
 		(at 81.28 128.27 180)
@@ -5509,6 +5519,17 @@
 			(justify left)
 		)
 		(uuid "4e8f6076-749d-4553-a32e-e5b195b36e41")
+	)
+	(hierarchical_label "FLASH_IO0"
+		(shape bidirectional)
+		(at 124.46 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "50f0bc83-07b3-4bde-a130-c249384282cd")
 	)
 	(hierarchical_label "CURR_SENS"
 		(shape input)
@@ -5543,17 +5564,6 @@
 		)
 		(uuid "706ef479-9096-495c-9fc5-d323081893d7")
 	)
-	(hierarchical_label "FLASH_IO3"
-		(shape bidirectional)
-		(at 81.28 95.25 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "73099eec-f628-400b-b11d-94a9a65e1319")
-	)
 	(hierarchical_label "V_SENS"
 		(shape input)
 		(at 124.46 135.89 0)
@@ -5564,6 +5574,17 @@
 			(justify left)
 		)
 		(uuid "92a0bf91-d7c8-4275-822e-b5d96c474d85")
+	)
+	(hierarchical_label "FLASH_IO1"
+		(shape bidirectional)
+		(at 124.46 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "92e4d1cb-279d-4539-83e7-365366acf4ae")
 	)
 	(hierarchical_label "SD_D3"
 		(shape bidirectional)
@@ -5587,17 +5608,6 @@
 		)
 		(uuid "9a877aee-3356-4f19-9af3-b039d3052c0c")
 	)
-	(hierarchical_label "FLASH_CLK"
-		(shape output)
-		(at 81.28 100.33 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "acbd99e6-f786-412d-9ad9-07ba0c859c18")
-	)
 	(hierarchical_label "CAN_RX"
 		(shape input)
 		(at 81.28 113.03 180)
@@ -5609,27 +5619,16 @@
 		)
 		(uuid "b786e61d-b67a-4b41-a69c-5d4d767a41c4")
 	)
-	(hierarchical_label "FLASH_IO1"
-		(shape bidirectional)
-		(at 81.28 90.17 180)
+	(hierarchical_label "FLASH_NCS"
+		(shape output)
+		(at 124.46 115.57 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "c7565bed-4655-4c83-9000-d292033b76ca")
-	)
-	(hierarchical_label "FLASH_IO0"
-		(shape bidirectional)
-		(at 81.28 87.63 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c9f54ebf-b420-42cf-81f7-a3ed4a9a9b2f")
+		(uuid "c5935c0e-2a69-4a08-981f-e8f6d6647c2f")
 	)
 	(hierarchical_label "USB_D+"
 		(shape bidirectional)
@@ -5641,6 +5640,17 @@
 			(justify left)
 		)
 		(uuid "de4032c4-5935-4fee-af78-f3dfa3861719")
+	)
+	(hierarchical_label "FLASH_IO2"
+		(shape bidirectional)
+		(at 124.46 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e4e4ad3e-c8b0-4b0c-8860-4a3d81cc0ff3")
 	)
 	(hierarchical_label "SD_CMD"
 		(shape bidirectional)
