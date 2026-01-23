@@ -2316,12 +2316,6 @@
 		(uuid "942a0cbe-e835-4e2c-bb17-61c25220d29c")
 	)
 	(junction
-		(at 266.7 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9cf83fae-8b12-46d1-bb14-7011b8d079b7")
-	)
-	(junction
 		(at 110.49 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2669,7 +2663,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 36.83) (xy 266.7 44.45)
+			(xy 266.7 35.56) (xy 266.7 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3199,16 +3193,6 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 35.56) (xy 266.7 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f31187ea-e3bb-4da6-b5f4-21f4c5407a1b")
-	)
-	(wire
-		(pts
 			(xy 153.67 76.2) (xy 153.67 74.93)
 		)
 		(stroke
@@ -3297,6 +3281,16 @@
 		)
 		(uuid "66ad8b5b-13ab-498d-ba76-663399fb8d25")
 	)
+	(label "12V_I_Sense_Op_Amp_In"
+		(at 193.04 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c5d49363-5254-456e-9fcd-af2bd499344b")
+	)
 	(label "BATT_ISense_+"
 		(at 214.63 144.78 180)
 		(effects
@@ -3381,6 +3375,73 @@
 			(justify left)
 		)
 		(uuid "d6de0fca-d24f-4f78-b2b1-21d462d4ecb3")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 193.04 104.14 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "03db5350-00fe-47c1-aaa6-f77478e79f7f")
+		(property "Reference" "TP1"
+			(at 198.12 102.8699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 198.12 105.4099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 193.04 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 193.04 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 193.04 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e91e359-cd6a-48b4-842a-8fe3c8e26fe5")
+		)
+		(instances
+			(project ""
+				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
@@ -4124,73 +4185,6 @@
 			(project "rocket_power_board"
 				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
 					(reference "#PWR032")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 266.7 36.83 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "34fbec31-2473-46b4-a046-bc5d1f87d0ac")
-		(property "Reference" "TP1"
-			(at 271.78 35.5599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "12V_Voltage"
-			(at 271.78 38.0999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature"
-			(at 266.7 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 266.7 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 266.7 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "215c609d-bf12-4d1a-8145-3350a6f368e2")
-		)
-		(instances
-			(project "rocket_power_board"
-				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
-					(reference "TP1")
 					(unit 1)
 				)
 			)
