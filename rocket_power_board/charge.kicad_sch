@@ -2167,6 +2167,27 @@
 		)
 		(uuid "2c373f64-71b7-4a8b-b1eb-6f7500e84877")
 	)
+	(text "F_{c}= 1/(2 * pi * RC)\n  = 1/(2 * 3.14 * 1500 * 0.1u)\n  = 1061.03Hz"
+		(exclude_from_sim no)
+		(at 250.19 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "35d90a71-5390-45a2-9c5b-3605945df660")
+	)
+	(text "0-0.6V scales to 0-2A output"
+		(exclude_from_sim no)
+		(at 187.706 98.806 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "39831e59-79c5-4f87-83ec-2e707703c88f")
+	)
 	(text "Old diode: SMBJ13CA"
 		(exclude_from_sim no)
 		(at 95.504 39.37 0)
@@ -2250,12 +2271,6 @@
 		(uuid "0a2b4a3f-e9b8-449f-aeaa-0108588e45c8")
 	)
 	(junction
-		(at 256.54 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "36d0cf9c-5922-4139-b5de-9db40fa6fbf8")
-	)
-	(junction
 		(at 207.01 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2266,6 +2281,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3dcf0b30-a4c9-4596-9505-cd67a672e53b")
+	)
+	(junction
+		(at 256.54 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4a2ab584-9e11-4dc3-aaea-086ffd1b457c")
 	)
 	(junction
 		(at 245.11 95.25)
@@ -2993,6 +3014,16 @@
 	)
 	(wire
 		(pts
+			(xy 256.54 147.32) (xy 259.08 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b300bef9-3385-4653-b255-87165eba94f8")
+	)
+	(wire
+		(pts
 			(xy 229.87 97.79) (xy 228.6 97.79)
 		)
 		(stroke
@@ -3050,16 +3081,6 @@
 			(type default)
 		)
 		(uuid "c7f81f3e-4bdc-4894-a5e6-940fc375b8cb")
-	)
-	(wire
-		(pts
-			(xy 256.54 147.32) (xy 259.08 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9a1f8db-292e-4b0b-85b4-eff35feb3ae8")
 	)
 	(wire
 		(pts
@@ -3739,7 +3760,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1.6nF"
+		(property "Value" "0.1u"
 			(at 260.858 102.108 0)
 			(effects
 				(font
@@ -4252,6 +4273,74 @@
 			(project "rocket_power_board"
 				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
 					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 248.92 147.32 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3c6fdda0-e12c-474f-9c6a-e88fe7d59afa")
+		(property "Reference" "R20"
+			(at 248.92 153.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.5k"
+			(at 248.92 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 248.666 146.304 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 248.92 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 248.92 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "02983bdf-c7d1-431f-b774-54727a25ec2d")
+		)
+		(pin "2"
+			(uuid "6752071e-e4db-4573-b30a-5abd5f436702")
+		)
+		(instances
+			(project "rocket_power_board"
+				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -5084,75 +5173,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 256.54 151.13 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8215ea29-eeb2-4845-9dd5-f3cdc5930ca4")
-		(property "Reference" "C10"
-			(at 259.588 151.638 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1.6nF"
-			(at 259.588 154.178 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 257.5052 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 256.54 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 256.54 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "74c9dcb5-3e06-42c0-a4d3-8c612b0506f2")
-		)
-		(pin "1"
-			(uuid "25871a5e-1fe1-4e73-a9eb-c7f63bd36e9e")
-		)
-		(instances
-			(project "rocket_power_board"
-				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
-					(reference "C10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+BATT")
 		(at 69.85 39.37 0)
 		(unit 1)
@@ -5709,7 +5729,7 @@
 				)
 			)
 		)
-		(property "Value" "500R"
+		(property "Value" "1.5k"
 			(at 250.19 99.06 90)
 			(effects
 				(font
@@ -5754,74 +5774,6 @@
 			(project "rocket_power_board"
 				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
 					(reference "R21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 248.92 147.32 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ac8fd8e1-f437-42cd-a1f6-f04ad8eee455")
-		(property "Reference" "R20"
-			(at 248.92 153.67 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "500R"
-			(at 248.92 151.13 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 248.666 146.304 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 248.92 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 248.92 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c174483e-45a1-45b6-98ad-4e536d2e4427")
-		)
-		(pin "2"
-			(uuid "aca87c5d-a408-471c-b62d-b6e27db270f0")
-		)
-		(instances
-			(project "rocket_power_board"
-				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
-					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -6323,6 +6275,75 @@
 			(project "rocket_power_board"
 				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 256.54 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d8508d35-72e2-4df8-883b-9af894b56554")
+		(property "Reference" "C10"
+			(at 259.588 151.638 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 259.588 154.178 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 257.5052 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 256.54 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 256.54 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5d7d73fb-669f-4b2d-8160-3c35dc21706e")
+		)
+		(pin "1"
+			(uuid "96be7d6d-f9d1-430f-8551-37db4d55d686")
+		)
+		(instances
+			(project "rocket_power_board"
+				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/d40cad7b-226c-47e1-8b5f-46908a366917"
+					(reference "C10")
 					(unit 1)
 				)
 			)

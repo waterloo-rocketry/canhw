@@ -1953,6 +1953,16 @@
 		)
 		(uuid "13982904-77e7-4603-bd59-18ed77d05a09")
 	)
+	(text "0-0.6V scales to 0-2A output"
+		(exclude_from_sim no)
+		(at 195.326 96.012 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2aa494da-f475-45ad-bf84-0280f337e588")
+	)
 	(text "Buck Converter Design Using Webench:\nhttps://webench.ti.com/appinfo/webench/scripts/SDP.cgi?ID=FB21E4F96B649334"
 		(exclude_from_sim no)
 		(at 59.69 110.49 0)
@@ -2071,6 +2081,12 @@
 		(uuid "81701f48-80bc-4686-a84b-7240decf69fe")
 	)
 	(junction
+		(at 233.68 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "871ae5c2-42b7-4685-8dff-86b4bf4bc8d0")
+	)
+	(junction
 		(at 101.6 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2111,12 +2127,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bce11d7f-2aa3-4d63-96e7-ef23a345faf8")
-	)
-	(junction
-		(at 233.68 133.35)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bfdbde07-f86c-4a7f-8d0c-c7ea264b6ab0")
 	)
 	(junction
 		(at 245.11 58.42)
@@ -2219,6 +2229,16 @@
 			(type default)
 		)
 		(uuid "04a29096-19ef-4857-91b7-9eefc3df989b")
+	)
+	(wire
+		(pts
+			(xy 233.68 133.35) (xy 237.49 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "085fc466-0865-4804-a399-d70be6fb34bb")
 	)
 	(wire
 		(pts
@@ -2442,16 +2462,6 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 142.24) (xy 233.68 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "36c65f3d-10d9-48b1-bea5-692b5a7c2a96")
-	)
-	(wire
-		(pts
 			(xy 78.74 58.42) (xy 78.74 63.5)
 		)
 		(stroke
@@ -2669,16 +2679,6 @@
 			(type default)
 		)
 		(uuid "6a3bbc9d-e286-4af7-8bde-c28c8dc9486a")
-	)
-	(wire
-		(pts
-			(xy 229.87 133.35) (xy 233.68 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c7d7e86-9713-4bf5-b315-b7583502ea0f")
 	)
 	(wire
 		(pts
@@ -3242,16 +3242,6 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 134.62) (xy 233.68 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e54cb317-bc91-40c1-8c2c-0e773e19b63d")
-	)
-	(wire
-		(pts
 			(xy 110.49 38.1) (xy 109.22 38.1)
 		)
 		(stroke
@@ -3292,7 +3282,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 133.35) (xy 237.49 133.35)
+			(xy 229.87 133.35) (xy 233.68 133.35)
 		)
 		(stroke
 			(width 0)
@@ -3859,6 +3849,75 @@
 			(project "rocket_power_board"
 				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/7eeeb7f6-036b-4de7-994b-9c7d5f53146a"
 					(reference "R28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 233.68 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "171e1f62-1ad2-4baf-9cdf-3ec5edd519c6")
+		(property "Reference" "C23"
+			(at 236.728 137.668 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 236.728 140.208 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 234.6452 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 233.68 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f95f35b7-fcc5-4a12-97d8-7b296512117d")
+		)
+		(pin "1"
+			(uuid "9cab9a75-51bf-43dd-a078-06950b63f735")
+		)
+		(instances
+			(project "rocket_power_board"
+				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/7eeeb7f6-036b-4de7-994b-9c7d5f53146a"
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -4470,75 +4529,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 233.68 138.43 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5d0d66b0-8932-4b88-a357-749c02a83b8e")
-		(property "Reference" "C23"
-			(at 236.728 138.938 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1.6nF"
-			(at 236.728 141.478 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 234.6452 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 233.68 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 233.68 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e574fb78-7885-4fc5-be06-3cebfb5bbd5b")
-		)
-		(pin "1"
-			(uuid "7f6a60a7-7682-4c72-a78a-dfbdbdbb194b")
-		)
-		(instances
-			(project "rocket_power_board"
-				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/7eeeb7f6-036b-4de7-994b-9c7d5f53146a"
-					(reference "C23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 118.11 92.71 0)
 		(unit 1)
@@ -5022,7 +5012,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SS24FL"
+		(property "Value" "PMEG1020EH,115"
 			(at 247.65 69.5324 90)
 			(effects
 				(font
@@ -5040,7 +5030,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/ss26fl-d.pdf"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG1020EH.pdf"
 			(at 245.11 68.58 0)
 			(effects
 				(font
@@ -6483,6 +6473,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 226.06 133.35 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d9f5de63-a3e4-4611-809b-cfce975b6f20")
+		(property "Reference" "R34"
+			(at 226.06 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.5k"
+			(at 226.06 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 225.806 132.334 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 226.06 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 226.06 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "57214032-5981-40ee-b956-167608e39ee4")
+		)
+		(pin "2"
+			(uuid "fba43423-33fe-44ab-a6da-720f9b3d61ec")
+		)
+		(instances
+			(project "rocket_power_board"
+				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/7eeeb7f6-036b-4de7-994b-9c7d5f53146a"
+					(reference "R34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 148.59 140.97 0)
 		(unit 1)
@@ -6616,74 +6674,6 @@
 			(project "rocket_power_board"
 				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/7eeeb7f6-036b-4de7-994b-9c7d5f53146a"
 					(reference "R33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 226.06 133.35 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ed9d6e82-e982-491a-b0db-5918b2816546")
-		(property "Reference" "R34"
-			(at 226.06 139.7 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "500R"
-			(at 226.06 137.16 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 225.806 132.334 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 226.06 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 226.06 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cdf24afc-dbc0-435c-aed8-a6d2529e5877")
-		)
-		(pin "2"
-			(uuid "2f311165-63f5-4975-8342-a5ff66628242")
-		)
-		(instances
-			(project "rocket_power_board"
-				(path "/12f7d4ae-e07e-4683-b1a3-f6f037b17f60/7eeeb7f6-036b-4de7-994b-9c7d5f53146a"
-					(reference "R34")
 					(unit 1)
 				)
 			)
