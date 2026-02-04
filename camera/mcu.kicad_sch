@@ -3908,6 +3908,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "nitpicky but this should be N_FLASH_CS or ~{FLASH_CS}"
+		(exclude_from_sim no)
+		(at 154.178 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 44 34 1)
+			)
+		)
+		(uuid "130e6339-bdca-49d4-8eaf-2b5f8cb61ce2")
+	)
 	(text "1x 4.7u overall\n100n per vdd/vbat/vdda\n1u on vdda"
 		(exclude_from_sim no)
 		(at 207.01 49.53 0)
@@ -5390,7 +5401,7 @@
 		)
 		(uuid "de4032c4-5935-4fee-af78-f3dfa3861719")
 	)
-	(hierarchical_label "FLASH_NCS"
+	(hierarchical_label "N_FLASH_CS"
 		(shape output)
 		(at 124.46 115.57 0)
 		(effects
@@ -5512,7 +5523,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "1cdfe5bc-9cb2-4d2e-a731-4ac80039aa08")
 		(property "Reference" "#PWR027"
 			(at 96.52 38.1 0)
@@ -5523,12 +5533,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+2V8"
-			(at 96.52 30.1569 0)
+		(property "Value" "+3V3"
+			(at 96.52 29.718 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -6496,7 +6507,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "85c270c2-9395-4dff-b9aa-52b6f67293fe")
 		(property "Reference" "#PWR031"
 			(at 180.34 132.08 0)
@@ -6507,12 +6517,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+2V8"
-			(at 180.34 124.1369 0)
+		(property "Value" "+3V3"
+			(at 177.546 124.206 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -6573,8 +6584,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+2V8"
-			(at 207.01 25.0769 0)
+		(property "Value" "+3V3"
+			(at 207.01 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
