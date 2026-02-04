@@ -4526,12 +4526,12 @@
 		(uuid "2b2d9301-a899-4dc5-b17d-8863b1a7ceef")
 	)
 	(no_connect
-		(at 78.74 83.82)
-		(uuid "6496e0e4-737e-4a82-be73-49c9f496b955")
+		(at 139.7 147.32)
+		(uuid "4d961ac5-55ba-4d92-98c2-b387b3401cb8")
 	)
 	(no_connect
-		(at 139.7 152.4)
-		(uuid "6efb8d82-5cc7-4122-887c-d9080169baa8")
+		(at 78.74 83.82)
+		(uuid "6496e0e4-737e-4a82-be73-49c9f496b955")
 	)
 	(no_connect
 		(at 78.74 63.5)
@@ -5786,17 +5786,6 @@
 		)
 		(uuid "0405f66e-d347-48b5-b1cc-53f45ae558a8")
 	)
-	(hierarchical_label "M_SYNC_IN1"
-		(shape output)
-		(at 139.7 149.86 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "084b5693-082c-4b4d-a019-967ced406a0c")
-	)
 	(hierarchical_label "S_CAN_RX"
 		(shape input)
 		(at 78.74 111.76 180)
@@ -5940,7 +5929,7 @@
 		)
 		(uuid "42dbb522-448e-432e-8d45-1e8d2bc812fd")
 	)
-	(hierarchical_label "FLT_EXT_5V"
+	(hierarchical_label "PG_EXT_5V"
 		(shape input)
 		(at 78.74 147.32 180)
 		(effects
@@ -5983,6 +5972,17 @@
 			(justify left)
 		)
 		(uuid "49227b00-f01c-4376-ac88-3b5843e624cd")
+	)
+	(hierarchical_label "M_SYNC_IN1"
+		(shape output)
+		(at 139.7 152.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4a267608-2fa6-4ef2-a6cf-5f91291462c3")
 	)
 	(hierarchical_label "INT1_MAG_ACCEL"
 		(shape input)
@@ -6204,17 +6204,6 @@
 		)
 		(uuid "8cff9f14-43a0-4631-8a78-8ff5201b5c9b")
 	)
-	(hierarchical_label "M_SYNC_OUT"
-		(shape input)
-		(at 139.7 147.32 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8db71752-c3d3-47f4-8cb4-53edda02765b")
-	)
 	(hierarchical_label "SD_CMD"
 		(shape output)
 		(at 139.7 45.72 0)
@@ -6434,6 +6423,17 @@
 			(justify right)
 		)
 		(uuid "cfdc038d-aff8-4c8c-aa5b-5f4cd25ee3de")
+	)
+	(hierarchical_label "M_SYNC_OUT"
+		(shape input)
+		(at 139.7 149.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cfe5ed99-2d3e-4ab2-9f6e-eb0e4f55c669")
 	)
 	(hierarchical_label "ISENS_BAT2"
 		(shape input)
@@ -6859,7 +6859,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1d377ff6-1b5b-455d-ba0b-86b913a8f8bf")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR015"
 			(at 111.76 189.23 0)
 			(effects
 				(font
@@ -6909,7 +6909,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/c3eaca24-e896-4435-8cd5-c6ef0e7fece3"
-					(reference "#PWR013")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -7005,7 +7005,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23aa348c-992d-4d8c-886a-093bbd52a62e")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR019"
 			(at 198.12 41.91 0)
 			(effects
 				(font
@@ -7055,7 +7055,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/c3eaca24-e896-4435-8cd5-c6ef0e7fece3"
-					(reference "#PWR017")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -7071,7 +7071,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23fe5ec7-6cc4-42a1-985f-56703f69a6ad")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR08"
 			(at 41.91 69.85 0)
 			(effects
 				(font
@@ -7121,7 +7121,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/c3eaca24-e896-4435-8cd5-c6ef0e7fece3"
-					(reference "#PWR06")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -7220,7 +7220,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "30420135-2788-4edb-bf07-53646e669f82")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR09"
 			(at 52.07 69.85 0)
 			(effects
 				(font
@@ -7270,7 +7270,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/c3eaca24-e896-4435-8cd5-c6ef0e7fece3"
-					(reference "#PWR07")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -7367,7 +7367,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3547dea0-8477-406e-b4b1-fca2350bb200")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR018"
 			(at 198.12 22.86 0)
 			(effects
 				(font
@@ -7417,7 +7417,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/c3eaca24-e896-4435-8cd5-c6ef0e7fece3"
-					(reference "#PWR016")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -7510,7 +7510,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3fcfb598-23ec-4c87-81f2-00337e8db5c1")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR016"
 			(at 177.8 29.21 0)
 			(effects
 				(font
@@ -7560,7 +7560,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/c3eaca24-e896-4435-8cd5-c6ef0e7fece3"
-					(reference "#PWR014")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -7731,7 +7731,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5604a644-4c04-4414-a182-a11c4e6b5db9")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR011"
 			(at 60.96 69.85 0)
 			(effects
 				(font
@@ -7781,7 +7781,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/c3eaca24-e896-4435-8cd5-c6ef0e7fece3"
-					(reference "#PWR09")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -7797,7 +7797,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5cf13746-0066-4306-ae9d-ecf203c50a14")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR023"
 			(at 243.84 151.13 0)
 			(effects
 				(font
@@ -7847,7 +7847,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/c3eaca24-e896-4435-8cd5-c6ef0e7fece3"
-					(reference "#PWR021")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -8316,7 +8316,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "78547a79-895d-4adc-b4f0-f424ed0377bf")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR012"
 			(at 69.85 172.72 0)
 			(effects
 				(font
@@ -8366,7 +8366,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/c3eaca24-e896-4435-8cd5-c6ef0e7fece3"
-					(reference "#PWR010")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -8459,7 +8459,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81c51032-996a-45ba-8599-bec6c94a691d")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR021"
 			(at 198.12 109.22 0)
 			(effects
 				(font
@@ -8509,7 +8509,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/c3eaca24-e896-4435-8cd5-c6ef0e7fece3"
-					(reference "#PWR019")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -8840,7 +8840,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "873e9797-e5e1-4923-8311-b185f00aa728")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR017"
 			(at 177.8 41.91 0)
 			(effects
 				(font
@@ -8890,7 +8890,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/c3eaca24-e896-4435-8cd5-c6ef0e7fece3"
-					(reference "#PWR015")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -9146,7 +9146,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a8ed07e5-b5b7-4755-9367-5c96e2c53174")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR013"
 			(at 77.47 29.21 0)
 			(effects
 				(font
@@ -9196,7 +9196,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/c3eaca24-e896-4435-8cd5-c6ef0e7fece3"
-					(reference "#PWR011")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -9368,7 +9368,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d92503a5-b481-4c57-b752-06bd9754541d")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR014"
 			(at 77.47 41.91 0)
 			(effects
 				(font
@@ -9418,7 +9418,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/c3eaca24-e896-4435-8cd5-c6ef0e7fece3"
-					(reference "#PWR012")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -9595,7 +9595,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e17df7fd-c3a7-4b6d-82c7-ab47a9c5e7b7")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR024"
 			(at 265.43 66.04 0)
 			(effects
 				(font
@@ -9645,7 +9645,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/c3eaca24-e896-4435-8cd5-c6ef0e7fece3"
-					(reference "#PWR022")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -9661,7 +9661,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e3155dcc-ab15-4946-b9e4-a081d46304af")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR022"
 			(at 243.84 125.73 0)
 			(effects
 				(font
@@ -9711,7 +9711,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/c3eaca24-e896-4435-8cd5-c6ef0e7fece3"
-					(reference "#PWR020")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -9727,7 +9727,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ea2a446c-d4d4-46f5-8e97-2d7fb2db0674")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR010"
 			(at 58.42 172.72 0)
 			(effects
 				(font
@@ -9777,7 +9777,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/c3eaca24-e896-4435-8cd5-c6ef0e7fece3"
-					(reference "#PWR08")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -9867,7 +9867,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ee0d4ea2-217b-483a-a34a-5106f6c66b12")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR07"
 			(at 41.91 29.21 0)
 			(effects
 				(font
@@ -9917,7 +9917,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/c3eaca24-e896-4435-8cd5-c6ef0e7fece3"
-					(reference "#PWR05")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -9934,7 +9934,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd7116fb-c1e5-4afe-9f66-f6e1dd6312a3")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR020"
 			(at 198.12 74.93 0)
 			(effects
 				(font
@@ -9984,7 +9984,7 @@
 		(instances
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/c3eaca24-e896-4435-8cd5-c6ef0e7fece3"
-					(reference "#PWR018")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
