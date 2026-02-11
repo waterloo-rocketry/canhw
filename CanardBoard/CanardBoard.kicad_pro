@@ -125,7 +125,7 @@
         "max_error": 0.005,
         "min_clearance": 0.1,
         "min_connection": 0.1,
-        "min_copper_edge_clearance": 0.5,
+        "min_copper_edge_clearance": 0.4,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.2,
         "min_hole_to_hole": 0.25,
@@ -188,9 +188,16 @@
       ],
       "track_widths": [
         0.0,
+        0.0,
+        0.0,
         0.127,
+        0.2032,
         0.254,
+        0.293116,
+        0.33528,
         0.381,
+        0.508,
+        1.27,
         1.5
       ],
       "tuning_pattern_settings": {
@@ -494,6 +501,30 @@
         "via_diameter": 0.45,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.127,
+        "name": "SDMMC",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.293116
+      },
+      {
+        "clearance": 0.127,
+        "name": "SDMMC_Card",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.33528
+      },
+      {
+        "clearance": 0.635,
+        "name": "Shield",
+        "pcb_color": "rgb(150, 62, 255)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.635
       }
     ],
     "meta": {
@@ -501,7 +532,60 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Shield",
+        "pattern": "\\SHIELD"
+      },
+      {
+        "netclass": "SDMMC",
+        "pattern": "/Processor/SD_D2"
+      },
+      {
+        "netclass": "SDMMC",
+        "pattern": "/Processor/SD_D3"
+      },
+      {
+        "netclass": "SDMMC",
+        "pattern": "/Processor/SD_CMD"
+      },
+      {
+        "netclass": "SDMMC",
+        "pattern": "/Processor/SD_CLK"
+      },
+      {
+        "netclass": "SDMMC",
+        "pattern": "/Processor/SD_D0"
+      },
+      {
+        "netclass": "SDMMC",
+        "pattern": "/Processor/SD_D1"
+      },
+      {
+        "netclass": "SDMMC_Card",
+        "pattern": "/SD_Card/DAT2_CARD"
+      },
+      {
+        "netclass": "SDMMC_Card",
+        "pattern": "/SD_Card/DAT3_CARD"
+      },
+      {
+        "netclass": "SDMMC_Card",
+        "pattern": "/SD_Card/CMD_CARD"
+      },
+      {
+        "netclass": "SDMMC_Card",
+        "pattern": "/SD_Card/CLK_CARD"
+      },
+      {
+        "netclass": "SDMMC_Card",
+        "pattern": "/SD_Card/DAT0_CARD"
+      },
+      {
+        "netclass": "SDMMC_Card",
+        "pattern": "/SD_Card/DAT1_CARD"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
