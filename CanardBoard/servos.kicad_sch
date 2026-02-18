@@ -696,7 +696,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:SMAJ28CA"
+		(symbol "Diode:SMAJ28A"
 			(pin_numbers
 				(hide yes)
 			)
@@ -715,7 +715,7 @@
 					)
 				)
 			)
-			(property "Value" "SMAJ28CA"
+			(property "Value" "SMAJ28A"
 				(at 0 -2.54 0)
 				(effects
 					(font
@@ -733,6 +733,15 @@
 				)
 			)
 			(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
+				(at -1.27 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "400W unidirectional Transient Voltage Suppressor, 28.0Vr, SMA(DO-214AC)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -741,16 +750,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "400W bidirectional Transient Voltage Suppressor, 28.0Vr, SMA(DO-214AC)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "bidirectional diode TVS voltage suppressor"
+			(property "ki_keywords" "unidirectional diode TVS voltage suppressor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -768,13 +768,13 @@
 					(hide yes)
 				)
 			)
-			(symbol "SMAJ28CA_0_1"
+			(symbol "SMAJ28A_0_1"
 				(polyline
 					(pts
-						(xy -2.54 -1.27) (xy 0 0) (xy -2.54 1.27) (xy -2.54 -1.27)
+						(xy -0.762 1.27) (xy -1.27 1.27) (xy -1.27 -1.27)
 					)
 					(stroke
-						(width 0.2032)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -783,34 +783,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
 					)
 					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy 2.54 -1.27) (xy 0 0) (xy 2.54 1.27)
-					)
-					(stroke
-						(width 0.2032)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -818,7 +794,7 @@
 					)
 				)
 			)
-			(symbol "SMAJ28CA_1_1"
+			(symbol "SMAJ28A_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -4375,18 +4351,17 @@
 		(uuid "fc69245f-8425-4e1a-9053-63253c2df2c7")
 	)
 	(symbol
-		(lib_id "Diode:SMAJ28CA")
-		(at 171.45 44.45 270)
+		(lib_id "Diode:SMAJ28A")
+		(at 171.45 44.45 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0fd16e5f-316a-4e9a-8780-781605845d62")
 		(property "Reference" "D12"
-			(at 168.91 43.1799 90)
+			(at 160.274 43.688 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4395,7 +4370,7 @@
 			)
 		)
 		(property "Value" "SMAJ28CA"
-			(at 168.91 45.7199 90)
+			(at 160.274 46.228 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4404,7 +4379,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 166.37 44.45 0)
+			(at 176.53 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4413,7 +4388,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
-			(at 171.45 44.45 0)
+			(at 171.45 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4421,7 +4396,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "400W bidirectional Transient Voltage Suppressor, 28.0Vr, SMA(DO-214AC)"
+		(property "Description" "400W unidirectional Transient Voltage Suppressor, 28.0Vr, SMA(DO-214AC)"
 			(at 171.45 44.45 0)
 			(effects
 				(font
@@ -8315,18 +8290,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:SMAJ28CA")
-		(at 43.18 44.45 270)
+		(lib_id "Diode:SMAJ28A")
+		(at 43.18 44.45 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c9815777-f22a-4d34-b68d-969e4f47d4ac")
 		(property "Reference" "D9"
-			(at 40.64 43.1799 90)
+			(at 31.75 43.6879 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8335,7 +8309,7 @@
 			)
 		)
 		(property "Value" "SMAJ28CA"
-			(at 40.64 45.7199 90)
+			(at 31.75 46.228 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8344,7 +8318,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 38.1 44.45 0)
+			(at 48.26 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8353,7 +8327,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
-			(at 43.18 44.45 0)
+			(at 43.18 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8361,7 +8335,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "400W bidirectional Transient Voltage Suppressor, 28.0Vr, SMA(DO-214AC)"
+		(property "Description" "400W unidirectional Transient Voltage Suppressor, 28.0Vr, SMA(DO-214AC)"
 			(at 43.18 44.45 0)
 			(effects
 				(font
@@ -8588,18 +8562,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:SMAJ28CA")
-		(at 109.22 44.45 270)
+		(lib_id "Diode:SMAJ28A")
+		(at 109.22 44.45 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "cf73e943-b933-4edc-ac85-066307adf2d8")
 		(property "Reference" "D8"
-			(at 106.68 43.1799 90)
+			(at 98.044 43.434 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8608,7 +8581,7 @@
 			)
 		)
 		(property "Value" "SMAJ28CA"
-			(at 106.68 45.7199 90)
+			(at 98.044 45.974 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8617,7 +8590,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 104.14 44.45 0)
+			(at 114.3 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8626,7 +8599,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
-			(at 109.22 44.45 0)
+			(at 109.22 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8634,7 +8607,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "400W bidirectional Transient Voltage Suppressor, 28.0Vr, SMA(DO-214AC)"
+		(property "Description" "400W unidirectional Transient Voltage Suppressor, 28.0Vr, SMA(DO-214AC)"
 			(at 109.22 44.45 0)
 			(effects
 				(font
@@ -8950,18 +8923,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:SMAJ28CA")
-		(at 236.22 44.45 270)
+		(lib_id "Diode:SMAJ28A")
+		(at 236.22 44.45 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f02f26fc-c32a-4206-b786-96654bcdc64c")
 		(property "Reference" "D11"
-			(at 233.68 43.1799 90)
+			(at 224.536 43.688 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8970,7 +8942,7 @@
 			)
 		)
 		(property "Value" "SMAJ28CA"
-			(at 233.68 45.7199 90)
+			(at 224.536 46.228 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8979,7 +8951,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 231.14 44.45 0)
+			(at 241.3 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8988,7 +8960,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
-			(at 236.22 44.45 0)
+			(at 236.22 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8996,7 +8968,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "400W bidirectional Transient Voltage Suppressor, 28.0Vr, SMA(DO-214AC)"
+		(property "Description" "400W unidirectional Transient Voltage Suppressor, 28.0Vr, SMA(DO-214AC)"
 			(at 236.22 44.45 0)
 			(effects
 				(font
