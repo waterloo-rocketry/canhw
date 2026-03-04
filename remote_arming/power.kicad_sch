@@ -115,6 +115,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -2237,7 +2344,7 @@
 	)
 	(text "100V/V"
 		(exclude_from_sim no)
-		(at 254 67.31 0)
+		(at 251.714 68.072 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2343,6 +2450,12 @@
 		(uuid "3a220f0b-ca81-4454-8e54-946772bb7db1")
 	)
 	(junction
+		(at 251.46 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "51c770a4-0ae0-494c-9d80-e5845629d762")
+	)
+	(junction
 		(at 92.71 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2359,6 +2472,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "584fdf3e-1df6-4636-b215-01e1e614e8e0")
+	)
+	(junction
+		(at 256.54 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6cb7b605-8bb0-4534-b758-c20081f77551")
 	)
 	(junction
 		(at 77.47 48.26)
@@ -2518,6 +2637,16 @@
 	)
 	(wire
 		(pts
+			(xy 251.46 132.08) (xy 243.84 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b18d014-ce5b-4858-b7aa-742a8972ad34")
+	)
+	(wire
+		(pts
 			(xy 74.93 173.99) (xy 74.93 175.26)
 		)
 		(stroke
@@ -2585,6 +2714,26 @@
 			(type default)
 		)
 		(uuid "27beb01f-2a47-42e0-a1ec-995d98e136a6")
+	)
+	(wire
+		(pts
+			(xy 262.89 62.23) (xy 256.54 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a4da45b-f59a-45dd-a24e-aac40db4d346")
+	)
+	(wire
+		(pts
+			(xy 261.62 132.08) (xy 251.46 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c8d871e-5650-41ae-ad3b-d32012097f3b")
 	)
 	(wire
 		(pts
@@ -2958,6 +3107,16 @@
 	)
 	(wire
 		(pts
+			(xy 256.54 62.23) (xy 254 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5a46021-791e-4abc-b4d6-bf4748264aab")
+	)
+	(wire
+		(pts
 			(xy 92.71 60.96) (xy 92.71 64.77)
 		)
 		(stroke
@@ -3220,7 +3379,7 @@
 	)
 	(hierarchical_label "CURR_AMP_BATT1"
 		(shape input)
-		(at 243.84 132.08 0)
+		(at 261.62 132.08 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3231,7 +3390,7 @@
 	)
 	(hierarchical_label "CURR_AMP_CAN"
 		(shape input)
-		(at 254 62.23 0)
+		(at 262.89 62.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5491,6 +5650,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 256.54 62.23 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3970ec10-a9b6-4e99-86b6-927dcf3e9412")
+		(property "Reference" "TP2"
+			(at 262.636 67.818 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TP_CURR_AMP_CAN"
+			(at 270.51 70.358 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 251.46 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 251.46 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 256.54 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "85c6c8f8-00e8-45a1-b648-cfe3378e5c35")
+		)
+		(instances
+			(project ""
+				(path "/66ac2ba2-aeaf-4c0b-bff0-9252049e25ae/00000000-0000-0000-0000-00005da13c95"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "kicad-symbol:G125-MH104M4-04AD000P")
 		(at 175.26 35.56 0)
 		(unit 1)
@@ -5570,6 +5795,72 @@
 			(project ""
 				(path "/66ac2ba2-aeaf-4c0b-bff0-9252049e25ae/00000000-0000-0000-0000-00005da13c95"
 					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 251.46 132.08 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6a549ecf-ef65-472a-9748-73002c5d4386")
+		(property "Reference" "TP3"
+			(at 255.27 137.668 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TP_CURR_AMP_BATT1"
+			(at 264.414 139.954 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 246.38 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 251.46 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3d0e4840-a7b2-4b7c-ae20-c99493ff19e7")
+		)
+		(instances
+			(project ""
+				(path "/66ac2ba2-aeaf-4c0b-bff0-9252049e25ae/00000000-0000-0000-0000-00005da13c95"
+					(reference "TP3")
 					(unit 1)
 				)
 			)
