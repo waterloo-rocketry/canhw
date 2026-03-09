@@ -252,26 +252,27 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Polyfuse_Small"
+		(symbol "Device:Fuse_Small"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 0)
+				(offset 0.254)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "F"
-				(at -1.905 0 90)
+				(at 0 -1.524 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Polyfuse_Small"
-				(at 1.905 0 90)
+			(property "Value" "Fuse_Small"
+				(at 0 1.524 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -279,12 +280,11 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 1.27 -5.08 0)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 					(hide yes)
 				)
 			)
@@ -297,7 +297,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resettable fuse, polymeric positive temperature coefficient, small symbol"
+			(property "Description" "Fuse, small symbol"
 				(at 0 0 0)
 				(effects
 					(font
@@ -306,7 +306,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "resettable fuse PTC PPTC polyfuse polyswitch"
+			(property "ki_keywords" "fuse"
 				(at 0 0 0)
 				(effects
 					(font
@@ -315,7 +315,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "*polyfuse* *PTC*"
+			(property "ki_fp_filters" "*Fuse*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -324,22 +324,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "Polyfuse_Small_0_1"
-				(polyline
-					(pts
-						(xy -1.016 1.27) (xy -1.016 0.762) (xy 1.016 -0.762) (xy 1.016 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			(symbol "Fuse_Small_0_1"
 				(rectangle
-					(start -0.508 1.27)
-					(end 0.508 -1.27)
+					(start -1.27 0.508)
+					(end 1.27 -0.508)
 					(stroke
 						(width 0)
 						(type default)
@@ -350,7 +338,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0 -2.54)
+						(xy -1.27 0) (xy 1.27 0)
 					)
 					(stroke
 						(width 0)
@@ -361,10 +349,10 @@
 					)
 				)
 			)
-			(symbol "Polyfuse_Small_1_1"
+			(symbol "Fuse_Small_1_1"
 				(pin passive line
-					(at 0 2.54 270)
-					(length 0.635)
+					(at -2.54 0 0)
+					(length 1.27)
 					(name "~"
 						(effects
 							(font
@@ -381,8 +369,8 @@
 					)
 				)
 				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.635)
+					(at 2.54 0 180)
+					(length 1.27)
 					(name "~"
 						(effects
 							(font
@@ -3412,7 +3400,7 @@
 		(at 172.72 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -3739,7 +3727,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C416567"
 			(at 127 81.28 0)
 			(effects
 				(font
@@ -3881,7 +3869,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C278596"
 			(at 195.58 76.2 0)
 			(effects
 				(font
@@ -4174,7 +4162,7 @@
 		(at 77.47 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -4454,7 +4442,7 @@
 		(at 77.47 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "88d88f0a-44f9-40fc-9c8f-581183ee610c")
@@ -4715,8 +4703,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Polyfuse_Small")
-		(at 83.82 64.77 270)
+		(lib_id "Device:Fuse_Small")
+		(at 83.82 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4724,30 +4712,29 @@
 		(dnp no)
 		(uuid "a7bd594e-4e7d-4e61-a026-ca02beafa3c0")
 		(property "Reference" "F9"
-			(at 80.518 62.738 90)
+			(at 85.09 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "3A"
-			(at 84.582 62.738 90)
+		(property "Value" "5A"
+			(at 85.09 62.738 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_0805_2012Metric"
-			(at 78.74 66.04 0)
+		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
+			(at 83.82 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -4760,7 +4747,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resettable fuse, polymeric positive temperature coefficient, small symbol"
+		(property "Description" "Fuse, small symbol"
+			(at 83.82 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C41367229"
 			(at 83.82 64.77 0)
 			(effects
 				(font
@@ -4855,7 +4851,7 @@
 		(at 172.72 127 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -4919,8 +4915,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Polyfuse_Small")
-		(at 74.93 55.88 0)
+		(lib_id "Device:Fuse_Small")
+		(at 74.93 55.88 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4928,30 +4924,29 @@
 		(dnp no)
 		(uuid "ba65b5a8-2653-4a69-a4e1-294cdb9192d8")
 		(property "Reference" "F8"
-			(at 76.454 54.61 0)
+			(at 76.454 54.864 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "3A"
-			(at 76.454 56.642 0)
+		(property "Value" "5A"
+			(at 76.454 56.896 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_0805_2012Metric"
-			(at 76.2 60.96 0)
+		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
+			(at 74.93 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -4964,8 +4959,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resettable fuse, polymeric positive temperature coefficient, small symbol"
+		(property "Description" "Fuse, small symbol"
 			(at 74.93 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C41367229"
+			(at 74.93 55.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5178,7 +5182,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C144809"
 			(at 114.3 71.12 0)
 			(effects
 				(font
@@ -5334,7 +5338,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C144809"
 			(at 132.08 62.23 0)
 			(effects
 				(font
@@ -5410,7 +5414,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C144809"
 			(at 195.58 66.04 0)
 			(effects
 				(font
@@ -5649,7 +5653,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C227006"
 			(at 114.3 80.01 0)
 			(effects
 				(font
@@ -6277,6 +6281,15 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C2870148"
+			(at 165.1 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
