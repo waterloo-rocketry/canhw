@@ -4,6 +4,15 @@
 	(generator_version "9.0")
 	(uuid "dba0825d-f4bc-4750-857e-1e3e550de350")
 	(paper "A4")
+	(title_block
+		(title "Live Telemetry Transmitter")
+		(date "2026-03-12")
+		(rev "2")
+		(company "Waterloo Rocketry")
+		(comment 1 "Manav Toor")
+		(comment 2 "Rio Liu")
+		(comment 3 "JLC04161H-7628(Standard/Finished thickness1.59mm±10%)")
+	)
 	(lib_symbols)
 	(wire
 		(pts
@@ -34,6 +43,36 @@
 			(type default)
 		)
 		(uuid "1b0eb322-be53-4d35-a2b6-3a49c06f8eb8")
+	)
+	(wire
+		(pts
+			(xy 165.1 68.58) (xy 179.07 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bec6327-2e8a-42fa-85eb-a1c96174b351")
+	)
+	(wire
+		(pts
+			(xy 165.1 60.96) (xy 179.07 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6458d8e9-6e16-4fd6-bdfc-d64f43f55b9c")
+	)
+	(wire
+		(pts
+			(xy 165.1 64.77) (xy 179.07 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b3c0ec3-6409-4b9f-a8f0-30ae428894af")
 	)
 	(wire
 		(pts
@@ -142,6 +181,36 @@
 		(pin "CS" input
 			(at 179.07 72.39 180)
 			(uuid "25b2ab82-b7fd-4b0c-b217-1a87c4195fc6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIS1" input
+			(at 179.07 60.96 180)
+			(uuid "e5a7d737-8f81-4bdf-84a3-75d26aa482a8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIS2" input
+			(at 179.07 64.77 180)
+			(uuid "b4c856f0-659f-48ef-a382-5b3e906a584e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GPIO2" bidirectional
+			(at 179.07 68.58 180)
+			(uuid "dba98bfe-f66a-4492-9bcb-ff403fdff847")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -301,6 +370,36 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "DIS1" bidirectional
+			(at 165.1 60.96 0)
+			(uuid "fa3a13f8-8a1c-4415-bf36-9b463b21b444")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DIS2" bidirectional
+			(at 165.1 64.77 0)
+			(uuid "78a6a786-c56d-46cd-8b40-cd8fa6e616d0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GPIO2" bidirectional
+			(at 165.1 68.58 0)
+			(uuid "67700610-ef43-4a12-bec7-d726e854b3ef")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
