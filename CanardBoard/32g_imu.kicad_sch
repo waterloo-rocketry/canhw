@@ -5,6 +5,113 @@
 	(uuid "0f6cfedd-355b-49e5-b02a-fe71ae44c0c7")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint_Small"
+				(at 0 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_Small_0_1"
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_Small_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 0)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -906,6 +1013,18 @@
 		(uuid "7fb583f0-bfc2-491e-8e15-92a6c656fb24")
 	)
 	(junction
+		(at 190.5 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "889ceb3d-17ed-43d9-919a-b301e55cc0ba")
+	)
+	(junction
+		(at 190.5 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "947cc460-4aa9-4ac2-8d3e-e305b3d42712")
+	)
+	(junction
 		(at 119.38 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1007,7 +1126,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 99.06) (xy 210.82 99.06)
+			(xy 165.1 99.06) (xy 190.5 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1024,6 +1143,16 @@
 			(type default)
 		)
 		(uuid "2b8ea5bc-fe7e-4592-ae49-0f7d85a5eff6")
+	)
+	(wire
+		(pts
+			(xy 190.5 99.06) (xy 190.5 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33ec46de-ada8-46f7-b681-f38a3f5ad6e6")
 	)
 	(wire
 		(pts
@@ -1127,6 +1256,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 96.52) (xy 198.12 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dc49de3-449a-46b3-9524-3660082c5e4e")
+	)
+	(wire
+		(pts
 			(xy 106.68 77.47) (xy 119.38 77.47)
 		)
 		(stroke
@@ -1217,7 +1356,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 96.52) (xy 198.12 96.52)
+			(xy 165.1 96.52) (xy 190.5 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1264,6 +1403,26 @@
 			(type default)
 		)
 		(uuid "e1f3f9ba-807e-45c2-98b0-dd22672a019e")
+	)
+	(wire
+		(pts
+			(xy 190.5 93.98) (xy 190.5 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee3bb969-5030-4b57-aae9-afd5857b3825")
+	)
+	(wire
+		(pts
+			(xy 190.5 99.06) (xy 210.82 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9dd10bd-a189-4a93-aec8-93753fc36d94")
 	)
 	(hierarchical_label "IMU_INT1"
 		(shape output)
@@ -2050,6 +2209,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 190.5 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "e052743d-52bc-49db-bd6a-97f65f065bfa")
+		(property "Reference" "TP14"
+			(at 188.468 103.632 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IMU_SCL"
+			(at 191.77 102.8699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 195.58 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 190.5 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a772f45c-f13a-451c-abe3-5b6b1d39fcf8")
+		)
+		(instances
+			(project "CanardBoard"
+				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/d085afc3-1fd0-49b9-b6c3-745b1d294dd7"
+					(reference "TP14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 198.12 90.17 0)
 		(unit 1)
@@ -2120,6 +2346,73 @@
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/d085afc3-1fd0-49b9-b6c3-745b1d294dd7"
 					(reference "R74")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 190.5 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "f941f7f9-f511-4322-b25a-756c56357dd3")
+		(property "Reference" "TP15"
+			(at 188.976 92.456 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IMU_SDA"
+			(at 191.77 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 195.58 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 190.5 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "70092f51-240d-4e70-9533-d4d93e1f76ae")
+		)
+		(instances
+			(project "CanardBoard"
+				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/d085afc3-1fd0-49b9-b6c3-745b1d294dd7"
+					(reference "TP15")
 					(unit 1)
 				)
 			)
