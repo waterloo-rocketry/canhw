@@ -1,0 +1,6115 @@
+[33mcommit efb646c622cc490afd6a7ed62acbbc3f38983020[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mra_respin_2025[m[33m, [m[1;31morigin/ra_respin_2025[m[33m)[m
+Author: Skyler Ma <skyler@skylerma.com>
+Date:   Thu Mar 12 22:08:03 2026 -0400
+
+    Change to 500mA LDO
+
+[33mcommit 4d155be50d66efa0135a27091fd23b8aabf223ac[m
+Author: Skyler Ma <skyler@skylerma.com>
+Date:   Wed Mar 11 22:04:13 2026 -0400
+
+    Fix silkscreen date
+
+[33mcommit f29db5735effb3126da3b3a46ff7fec735a2ff78[m
+Author: Skyler Ma <skyler@skylerma.com>
+Date:   Wed Mar 11 21:59:16 2026 -0400
+
+    Fix silkscreens and make them all the same rotation
+
+[33mcommit 0e5df0f2be7bd1b45049394e3b8e544ccc57d5e2[m
+Author: Skyler Ma <skyler@skylerma.com>
+Date:   Wed Mar 11 01:13:01 2026 -0400
+
+    Darien, Ash, Jason H requested changes, silkscreen todo.
+    - Add 4 different frequency buzzers to schematic (same footprint)
+    - Don't daisy chain decoupling caps and move them a little farther from chip on LDO, current sense, CAN
+    - Widen battery ground spokes
+    - Add 100nF caps on VDD and VIO of CAN transceiver, keep 10uF and change to 0805
+    - Change R24 to 10k
+    - Remove D2 since we only have 1 battery now
+
+[33mcommit bff5673e57ea467c908d48b828dd127ce02f7871[m
+Author: Skyler Ma <skyler@skylerma.com>
+Date:   Wed Mar 4 00:30:32 2026 -0500
+
+    Pranav and Ash requested changes.
+    - Thick M1/D1+ trace
+    - Move around CAN layout to reduce trace length
+    - Connect SL_TX to PORTB since it requires UART
+    - Add test points on SL_TX and output of current sensing op-amps for CAN and battery
+    - Fix alignment of D2 3d model
+    - Thinner ground and batt traces from LDO
+
+[33mcommit b886cd2c88984c612491c8a279bea637f1f84091[m
+Author: Skyler Ma <skyler@skylerma.com>
+Date:   Sat Feb 28 00:08:27 2026 -0500
+
+    Manav, Pranav requested changes.
+    - Switch battery and magswitch locations
+    - Change curr_amp_can to pin 15
+    and others
+
+[33mcommit f7a37d7a332b2365e9c0033fa07e49d924bf65f9[m
+Author: Skyler Ma <skyler@skylerma.com>
+Date:   Mon Feb 23 22:16:37 2026 -0500
+
+    A couple more minor routing changes
+
+[33mcommit a1d1dd0a4ebe1cbc70ce42f9630e7b374ba0a688[m
+Author: Skyler Ma <skyler@skylerma.com>
+Date:   Mon Feb 23 22:08:37 2026 -0500
+
+    Manav's requested changes
+
+[33mcommit 21812b248c55c0bd98e7a94710f825a189a92428[m
+Author: Skyler Ma <skyler@skylerma.com>
+Date:   Sun Feb 22 01:14:51 2026 -0500
+
+    Make review changes
+
+[33mcommit b4c85bd27a567651e6a2454753d009d03313d11e[m
+Author: Skyler Ma <skyler@skylerma.com>
+Date:   Sat Feb 21 00:44:19 2026 -0500
+
+    Completed initial version of routing
+
+[33mcommit 88b961777498656cbb329ed6082e001113a75f15[m
+Author: Skyler Ma <skyler@skylerma.com>
+Date:   Fri Feb 20 00:00:59 2026 -0500
+
+    More routing
+
+[33mcommit 4e904bedfe359c6ca7065e8d38399b49c1c1b283[m
+Author: Skyler Ma <skyler@skylerma.com>
+Date:   Thu Feb 19 00:45:02 2026 -0500
+
+    A few RA layout changes and a tiny bit of routing
+
+[33mcommit fcc8f990748d17c150615922e8bb37d9c74ae7ae[m
+Author: Skyler Ma <skyler@skylerma.com>
+Date:   Tue Feb 10 22:11:01 2026 -0500
+
+    Minor layout changes
+
+[33mcommit f8c12cd1c1a4a40858e4d524fe20df3002b73d5e[m
+Author: Skyler Ma <skyler@skylerma.com>
+Date:   Mon Feb 9 23:02:06 2026 -0500
+
+    Smaller layout
+
+[33mcommit 917be8e7c47af421a5ed0c069ee9eb7cf2bd8219[m
+Author: Skyler Ma <skyler@skylerma.com>
+Date:   Sun Feb 8 17:52:46 2026 -0500
+
+    Initial RA layout
+
+[33mcommit 11a3b553506665ce5d93a20923c8fd6f2450f4b3[m
+Author: Skyler Ma <skyler@skylerma.com>
+Date:   Sat Feb 7 17:08:27 2026 -0500
+
+    Remove second circuit from RA schematic
+
+[33mcommit c7e0fad7a522566ddb5f35f183f55fad0c289b7a[m
+Author: dare-eee-enn <darienhyng1@gmail.com>
+Date:   Fri Jan 23 17:44:01 2026 -0500
+
+    Changed some silkscreens
+
+[33mcommit 24ef0e9363e0d443c295f88a92ce48bb29956d02[m
+Author: Pranav Mahabal <95592003+Pdada1@users.noreply.github.com>
+Date:   Wed Jan 21 23:46:57 2026 -0500
+
+    Fixed Board Outline Error
+
+[33mcommit e05cb03cb243ff862bab1055bba693049fe76f0a[m
+Author: Pranav Mahabal <95592003+Pdada1@users.noreply.github.com>
+Date:   Wed Jan 21 23:43:58 2026 -0500
+
+    Changed Connector Location for Better Integration
+
+[33mcommit 2405d7c88f84180b1c098c7bb100397782d085c9[m
+Author: AshTheEngiqueer <145697648+AshTheEngiqueer@users.noreply.github.com>
+Date:   Wed Jan 21 21:22:33 2026 -0500
+
+    regen build files + minor aesthetic touchups
+
+[33mcommit 5fdd8539c3e84d65c50c57e4f1d6220f0aa691d7[m
+Author: Pranav Mahabal <95592003+Pdada1@users.noreply.github.com>
+Date:   Wed Jan 21 18:03:00 2026 -0500
+
+    Fixed unconnected gnd pour while keeping MCLR resistor wihin 6mm, also increased gnd connection to can transciever
+
+[33mcommit efecb39465508bb3fda6fff60634d3371ce6f74e[m
+Author: dare-eee-enn <darienhyng1@gmail.com>
+Date:   Wed Jan 21 15:15:13 2026 -0500
+
+    Updated schematic PDF
+
+[33mcommit c502e798a89049a7efb08370637522c5863813f5[m
+Author: AshTheEngiqueer <145697648+AshTheEngiqueer@users.noreply.github.com>
+Date:   Wed Jan 21 09:35:16 2026 -0500
+
+    add logo, move R1, regen gerbers and step
+
+[33mcommit 4537ad5c928d5b853009114bb04b0794041cb289[m
+Author: Pranav Mahabal <95592003+Pdada1@users.noreply.github.com>
+Date:   Tue Jan 20 09:10:18 2026 -0500
+
+    Fixed Miles Changes and ran via and trace cleanup, need to regen gerbers and prod files
+
+[33mcommit 65a4394c0a68bffdc6751b82d9b651dec311956d[m
+Author: AshTheEngiqueer <145697648+AshTheEngiqueer@users.noreply.github.com>
+Date:   Mon Jan 19 12:37:23 2026 -0500
+
+    tidy up RA folder, delete spare footprints, tidy up routing, create step and prod files
+
+[33mcommit d67a7781fe526168badfe963c6a99b97c11c3ec8[m
+Author: Pranav Mahabal <95592003+Pdada1@users.noreply.github.com>
+Date:   Sat Jan 17 15:29:52 2026 -0500
+
+    Fixed some silkscreen and minor routing changes
+
+[33mcommit c78b3ca1c03e8b70c43b59828044ee664cfb2985[m
+Author: Rio Liu <rio@r26.me>
+Date:   Fri Jan 16 21:37:25 2026 -0500
+
+    separate current sensing line for U7
+
+[33mcommit 2d280151f8c83b96895947e395a6853f5c3362ae[m
+Author: Lucifersan <xiaotongexiong@gmail.com>
+Date:   Fri Jan 16 20:48:46 2026 -0500
+
+    moved the buzzer and managed to fix a bunch of drc errors
+
+[33mcommit 1a3f1c7618885f2ad59787cdd6af1c1260392a23[m
+Author: Lucifersan <xiaotongexiong@gmail.com>
+Date:   Fri Jan 16 20:38:01 2026 -0500
+
+    fixed footprints and silkscreen overlaps, I think. idk hopefully didnt break it
+
+[33mcommit 5c49f5ce24baca1bb82ae2d4cce98f6a86b1e7d0[m
+Author: Rio Liu <rio@r26.me>
+Date:   Thu Jan 15 22:56:22 2026 -0500
+
+    Move more passives to 0603
+
+[33mcommit ec2546021b45b4fab2770cf903fe147631365437[m
+Author: Pranav Mahabal <95592003+Pdada1@users.noreply.github.com>
+Date:   Thu Jan 15 22:31:55 2026 -0500
+
+    Fixed Silkscreen Fully
+
+[33mcommit 0d454bc8f19d1308e504c31b0948dabcc8ba1ddc[m
+Author: Pranav Mahabal <95592003+Pdada1@users.noreply.github.com>
+Date:   Thu Jan 15 22:27:55 2026 -0500
+
+    Fix Silkscreen
+
+[33mcommit 23c39be077e2e1cc5301e7c4d72f8f1ddb9b4c81[m
+Author: Pranav Mahabal <95592003+Pdada1@users.noreply.github.com>
+Date:   Thu Jan 15 22:12:11 2026 -0500
+
+    Passives to 0603
+
+[33mcommit 9d01a87df8fd301fb4945f316e0c9bc33e296453[m
+Author: Andrew <53021706+awzheng@users.noreply.github.com>
+Date:   Wed Dec 24 21:44:01 2025 -0500
+
+    pranav feedback pt2, improved copper flow around CAN chips. todo: check drc on J5
+
+[33mcommit 3948bba204e5905417292e3fe0ef5cd1d1e59bec[m
+Author: unknown <thomas.duongh@gmail.com>
+Date:   Sun Dec 14 13:22:05 2025 -0500
+
+    dec 14, pranav's feedback
+
+[33mcommit fb8652fba2d83b2ca4e5684807ce8180784317df[m
+Author: unknown <thomas.duongh@gmail.com>
+Date:   Tue Dec 9 21:43:27 2025 -0500
+
+    silkscreen fixes
+
+[33mcommit b51c86cf583b670b63b412133017f409b6e503fb[m
+Author: unknown <thomas.duongh@gmail.com>
+Date:   Tue Dec 9 21:22:49 2025 -0500
+
+    completed ash and pranav's feedback
+
+[33mcommit a78393b7d57d7218f993967dd8281c06b5f5e315[m
+Author: unknown <thomas.duongh@gmail.com>
+Date:   Sun Nov 30 19:03:59 2025 -0500
+
+    silkscreen fixes
+
+[33mcommit f35ba752d161a49a66b452913b4d424364a6f3a3[m
+Author: unknown <thomas.duongh@gmail.com>
+Date:   Sun Nov 30 13:28:14 2025 -0500
+
+    confirmed jumper trace thickness. improved internal track width of BATT1/2 pours. relabeled buzzers.
+
+[33mcommit 662a6815693fe606fe880ea8250cc2439e64541b[m
+Author: unknown <thomas.duongh@gmail.com>
+Date:   Sun Nov 30 01:52:14 2025 -0500
+
+    nov 30 push with manav's feedback
+
+[33mcommit eb0c7d2bf7eb1fa64a4ea6994d3667a48c931cec[m
+Author: unknown <thomas.duongh@gmail.com>
+Date:   Sat Nov 29 20:43:16 2025 -0500
+
+    second nov 29 push, fixed ematches according to last year's specs
+
+[33mcommit 970abb24c720d783a9879f87a21ca584796fa580[m
+Author: unknown <thomas.duongh@gmail.com>
+Date:   Sat Nov 29 19:04:04 2025 -0500
+
+    nov 29, todo: ematch traces are too thin
+
+[33mcommit b647e29375898f824cc551ea6ea6f32bc63a614c[m
+Author: unknown <thomas.duongh@gmail.com>
+Date:   Wed Nov 26 18:49:47 2025 -0500
+
+    nov 26, made fixes to PR with pranav's feedback
+
+[33mcommit 18083093d714943c32f1a851d17f3b943074ba53[m
+Author: unknown <thomas.duongh@gmail.com>
+Date:   Sat Nov 22 10:15:33 2025 -0500
+
+    addition to nov 22 push
+
+[33mcommit 7ed57f4ae772caa29eb56cb96bfcc8a731f63854[m
+Author: unknown <thomas.duongh@gmail.com>
+Date:   Sat Nov 22 09:59:51 2025 -0500
+
+    nov 22, more fixes in accordance with manav's feedback
+
+[33mcommit 386b76b73ff2902937a778b35e999324ad487678[m
+Merge: 621c17e 9782be7
+Author: Andrew <53021706+awzheng@users.noreply.github.com>
+Date:   Thu Nov 20 22:15:47 2025 -0500
+
+    fixes made with review from manav
+
+[33mcommit 621c17e7b7dd9f73b6be95b8bbdeb94f9c06ecd8[m
+Author: unknown <thomas.duongh@gmail.com>
+Date:   Wed Nov 19 21:03:30 2025 -0500
+
+    added changed schematic
+
+[33mcommit 05aab1b625dc282ac16ca8df967845d187eb5808[m
+Author: unknown <thomas.duongh@gmail.com>
+Date:   Wed Nov 19 21:01:32 2025 -0500
+
+    nov 19 work session with andrew zheng, improved design in accordance with electrical standard
+
+[33mcommit 8fea1dddadcb325d99acf65c8bb2152752bd0e3f[m
+Author: unknown <thomas.duongh@gmail.com>
+Date:   Tue Nov 18 22:45:17 2025 -0500
+
+    got rid of all fixable, relevant errors
+
+[33mcommit f4b05989fa67ba96d8b714cf9d04a3ea8053271b[m
+Author: Andrew <53021706+awzheng@users.noreply.github.com>
+Date:   Tue Nov 18 20:25:04 2025 -0500
+
+    fixed aesthetics, moved LEDs, shortened effective board length, improved tracing
+
+[33mcommit cc5a72c9191b7e3f2b8bd9e70b60dd9d24fa53c8[m
+Author: unknown <thomas.duongh@gmail.com>
+Date:   Mon Nov 17 20:41:57 2025 -0500
+
+    nov 17 push, finished traces, changes to GPIO pins
+
+[33mcommit 14a6617a523a1c71a956f949355fb36096c9ce91[m
+Author: Andrew <53021706+awzheng@users.noreply.github.com>
+Date:   Sun Nov 16 19:38:15 2025 -0500
+
+    feat: Fit status LEDs and route connectors
+
+[33mcommit 8e542c2bcde0038ffe8bf176bc07ba0d4946dd8a[m
+Author: unknown <thomas.duongh@gmail.com>
+Date:   Sat Nov 15 01:33:32 2025 -0500
+
+    changed some layouts, add lots of traces, check altimeter page mostly. also redid the layers. todo: add it in the final components into the pcb. also, add the rest of the traces, esp the signal traces ie. current sensing from CAN line to PIC18
+
+[33mcommit 1c232d167d0c3594cfb91ed14b5371d0e0a95457[m
+Author: Andrew <53021706+awzheng@users.noreply.github.com>
+Date:   Thu Nov 13 22:22:15 2025 -0500
+
+    answered tracing concerns, plan to continue the tracing process on the right backside of the board by alternating daily.
+
+[33mcommit 5cb43aa66f99b2a2a35e570a2628f1e8b0618404[m
+Author: Andrew <53021706+awzheng@users.noreply.github.com>
+Date:   Thu Nov 6 19:48:25 2025 -0500
+
+    untangled some of the backside resistors
+
+[33mcommit 8f47740989b11ad643d81333dc41c21dc3b41216[m
+Author: Andrew <53021706+awzheng@users.noreply.github.com>
+Date:   Thu Nov 6 19:19:33 2025 -0500
+
+    6 nov fixed the osc
+
+[33mcommit 2e5871ab98b99acedb59aaa7d4fb0f3c3ba36838[m
+Author: Andrew <53021706+awzheng@users.noreply.github.com>
+Date:   Wed Nov 5 12:34:32 2025 -0500
+
+    pcb layout changes
+
+[33mcommit 9f692a28d2519c88265dc4089ba7ccecc28d933d[m
+Author: Andrew <53021706+awzheng@users.noreply.github.com>
+Date:   Thu Oct 30 17:27:16 2025 -0400
+
+    30 oct meeting, discussed layout, added footprints and mounting holes
+
+[33mcommit 9782be791a6c5e1ff740fbf4899fb90da16535d8[m[33m ([m[1;31morigin/RPB_Frm_Fac_Chg[m[33m, [m[1;31morigin/Logger_Relayout[m[33m)[m
+Author: Ash Lang <145697648+StarlightDescender@users.noreply.github.com>
+Date:   Sat Oct 11 23:22:28 2025 -0400
+
+    update kicad footprints to main (#109)
+    
+    Co-authored-by: AshTheEngiqueer <145697648+AshTheEngiqueer@users.noreply.github.com>
+
+[33mcommit b75922cb7dbd2792bb5d037c1cd3094a96419a02[m
+Author: unknown <thomas.duongh@gmail.com>
+Date:   Sat Oct 11 14:01:29 2025 -0400
+
+    redesigned layout after meeting with manav on friday oct 10, discussed placements of root, power, and altimeter sections. made dimensions of board smaller. fixed courtyard overlap issues. currently, no traces. notes for next push: think about placement of pic18 and change pinouts if desired.
+
+[33mcommit 8685f43faf66b66b3d059bec9c8623938533eff8[m
+Author: unknown <thomas.duongh@gmail.com>
+Date:   Mon Oct 6 18:47:30 2025 -0400
+
+    added canhw_footprints to ra folder, since pcb editor had massive issues with locating the footprints for many of the connectors, read slack messages to properly configure footprint library with pcb editor
+
+[33mcommit 2fcb3068092e94117e68da6758372b8eedbabdeb[m
+Author: unknown <thomas.duongh@gmail.com>
+Date:   Mon Oct 6 17:48:50 2025 -0400
+
+    recreated pcb file, avoiding some weird issues i faced
+
+[33mcommit 955c723a2ac7562a098fd374330f0b29af171649[m
+Author: Andrew Zheng <andrewzheng@eduroam-campus-10-36-18-165.campus-dynamic.uwaterloo.ca>
+Date:   Mon Oct 6 16:14:39 2025 -0400
+
+    made the edgecut ratio 1.5 to 5
+
+[33mcommit e67a04bf3feca0b560b9a31806a2ad73e2e035db[m
+Author: unknown <thomas.duongh@gmail.com>
+Date:   Mon Oct 6 13:34:15 2025 -0400
+
+    added new footprint for f1
+
+[33mcommit 04a73dec02341ee6fb225816a0d7f9e9b479785d[m
+Author: unknown <thomas.duongh@gmail.com>
+Date:   Thu Oct 2 21:57:19 2025 -0400
+
+    removed crystal
+
+[33mcommit 993d7f313533c4975298bc93a7d787a491d23265[m
+Author: Andrew Zheng <andrewzheng@eduroam-campus-10-36-37-110.campus-dynamic.uwaterloo.ca>
+Date:   Thu Oct 2 21:45:31 2025 -0400
+
+    added extra xtal
+
+[33mcommit 695a496d10a578f30c8914f13c775b2db2aa3eab[m[33m ([m[1;31morigin/altimeter-respin[m[33m)[m
+Author: Elizabeth <35873939+Lucifersan@users.noreply.github.com>
+Date:   Mon Aug 4 18:42:17 2025 -0400
+
+    change r12 so it actually sets uvlo/ovlo corectly for the 12v line (#104)
+
+[33mcommit 75bd900f56e1af430b46d9145dce467f8ad06bd2[m
+Author: Eleanor <165438575+eleanorsrw@users.noreply.github.com>
+Date:   Tue Jun 10 01:59:39 2025 -0400
+
+    Novatel breakout schematic for review (#102)
+    
+    Co-authored-by: AshTheEngiqueer <145697648+AshTheEngiqueer@users.noreply.github.com>
+
+[33mcommit 5a80cdd813751e43083cc54172c80fdc5318d97f[m
+Author: StarlightDescender <145697648+StarlightDescender@users.noreply.github.com>
+Date:   Mon Jun 9 23:46:35 2025 -0400
+
+    SRAD Altimeter (#91)
+    
+    Co-authored-by: AshTheEngiqueer <145697648+AshTheEngiqueer@users.noreply.github.com>
+
+[33mcommit 44b5b48b7a097b6fac8ce4b1f3596667d44c1f48[m
+Author: Pranav Mahabal <95592003+Pdada1@users.noreply.github.com>
+Date:   Mon Jun 2 00:05:15 2025 -0400
+
+    Rocket power board (#93)
+    
+    Co-authored-by: AshTheEngiqueer <145697648+AshTheEngiqueer@users.noreply.github.com>
+    Co-authored-by: Joe <joedolina@gmail.com>
+    Co-authored-by: Lucifersan <xiaotongexiong@gmail.com>
+
+[33mcommit 41e9ec258cdfc5019c6000bae9c69379aa54c3ee[m
+Author: Ella <Ella.shan@computingstack.com>
+Date:   Sat May 31 13:35:39 2025 -0400
+
+    Injector sensor hub (#92)
+    
+    Co-authored-by: AshTheEngiqueer <145697648+AshTheEngiqueer@users.noreply.github.com>
+    Co-authored-by: Miles <1milnemil@gmail.com>
+    Co-authored-by: Hexamech <106445217+Hexamech@users.noreply.github.com>
+    Co-authored-by: Joe <joedolina@gmail.com>
+    Co-authored-by: Pranav Mahabal <95592003+Pdada1@users.noreply.github.com>
+
+[33mcommit 001090e656c72e4075363f19e0a4816f538a27ef[m
+Author: Ash Lang <145697648+StarlightDescender@users.noreply.github.com>
+Date:   Wed Mar 12 10:16:21 2025 -0400
+
+    Create PR template (#98)
+    
+    Co-authored-by: AshTheEngiqueer <145697648+AshTheEngiqueer@users.noreply.github.com>
+
+[33mcommit 7342fba05b389f86e9421920748c4d9bafa98da9[m
+Author: ManavToor <68403400+ManavToor@users.noreply.github.com>
+Date:   Sat Mar 1 14:24:46 2025 -0500
+
+    Ltt respin (#97)
+    
+    * made schematics, deleted old ltt
+    
+    * updated curr sense
+    
+    * fixed R16 voltage divider value
+    
+    * switched pic and test led's to 5v from 3v
+    
+    * implemented comments, added footprints
+    
+    * final schematic updates, components sources, footprints selected
+    
+    * initial layout structure
+    
+    * initial pcb layout
+    
+    * final schematic changes
+    
+    * completed layout
+    
+    * forgot to push pcb file
+    
+    * added guard ring
+    
+    * added remaining changes
+    
+    * make shield shape rectangle and make ground continuous
+    
+    * minor drc fixes
+    
+    * update rx matching
+    
+    * gerbers and bom
+    
+    * fix PA matching
+    
+    * update production files
+    
+    * update rf switch DNM to 100pf
+    
+    * extra last second changes
+    
+    * new production files
+    
+    ---------
+    
+    Co-authored-by: Rio <rio@r26.me>
+
+[33mcommit 4d821bdd7e93e55076b9379fe540db6d4aa5897b[m
+Author: Armaan Sengupta <senguptaarmaan@gmail.com>
+Date:   Mon Nov 25 20:27:31 2024 -0500
+
+    Processor 2025 Full Review (#90)
+    
+    * old VN IMU connection removed and replaced with sparkfun I2C IMU lines with a 6 pin gecko
+    
+    * Added SPI select for pololu IMU
+    
+    * Added schematic for ST IMU
+    
+    * Movella UART added + DRC errors fixed
+    
+    Added Movella IMU UART 8 connection and fixed a bunch of DRC errors
+    
+    * update canlib footprint + symbol
+    
+    Updated kicad footprints and symbols to match new rebased structure
+    
+    * External libraries moved within project
+    
+    Moved my two vendor libraries within the project now rather than to my local disk
+    
+    * Connected sync out to timer 8 + cosmetic changes
+    
+    https://github.com/waterloo-rocketry/canhw/pull/90#issuecomment-2458643710
+    
+    * Schematic Finalized PCB updated w/ components
+    
+    Next step is to start PCB routing
+    
+    * Moved a lot of componentes off board
+    
+    Moved the harwins into the right place, still need to route those, got rid of board outline, and moved a bunch of components off the pcb to reorganize
+    
+    * Buck routed PRILEM
+    
+    NEED TO CHECK
+    
+    * All components routed and placed on board
+    
+    DRC errors still need to be solved
+    
+    * Fixed some DRC issues
+    
+    More DRC issues to fix
+    
+    * Connected SCL test point
+    
+    Connected unconnected SCL test point
+    Removed redundant via
+    Removed daisy chained ground
+    
+    * Silk screen 1
+    
+    2024-11-11 silk screen updates
+    
+    * Prettied up
+    
+    Minor DRC warnings adressed, and silk screen prettied up
+    
+    * Addressing Joe's feedback
+    
+    Problems to solve: https://github.com/waterloo-rocketry/canhw/pull/90#issuecomment-2472651524
+    
+    Solutions: https://github.com/waterloo-rocketry/canhw/pull/90#issuecomment-2475319090
+    
+    Summary:
+    Mounting hole spacing changed
+    Harness connection order flipped to make it safer to plugging the wrong one in
+    Silk screen label renames
+    daisy changing pad and random fill zone removed
+    SD card lines length matched
+    
+    * Final Tweeks Pre-Production
+    
+    * Pre-deletion backup
+    
+    * Deleted useless files + added updated pdf and step file
+    
+    * Harwin connections modified
+    
+    Harwins flipped to other side of the board and Pololu + Movella pins re-aranged to make the connections safe in case someone plugs the wrong one in, details: https://docs.google.com/document/d/1ESQr2ki7eqf_K064cuU7I857oRs_P2dz_hfp1vAU-G0/edit?usp=sharing (modified V2)
+    
+    * R17 SilkScreen Label Orientation Flipped
+    
+    * Fixed foot print overlap + relinked all libraries
+    
+    When flipping the harwin to the back side of the board it accidentally overlapped with the SD card so moved and re-routed it. Also all the libraries both footprint and schematic went missing so relinked all.
+    
+    * Assifgned LCSC part numbers to all components
+    
+    Sourced similar parts for all chosen components for JLCPCB to assemble onto the board, linked these as a part property for each symbol (updating common symbol library for resistors and capacitors to include this by default). Also updated which components (harwins, SD card, and test points dont need to be in the BOM)
+    
+    * Silkscreen adjustments + Production files updated
+    
+    BOM is very clean now
+    
+    * Minor
+    
+    added names to sheets + minor reroute of 5V cause y not
+    
+    * Delete stale gerber files
+    
+    * Regen production files with most recent changes
+
+[33mcommit 006368dfe7b2b98b35bad43f2e043834008ea886[m
+Author: Jason Xu <40355221+JasonBrave@users.noreply.github.com>
+Date:   Sun Oct 27 14:09:08 2024 -0400
+
+    2024 cleanup (#88)
+    
+    * Move lib to a separate git repo
+    
+    * Remove old boards
+
+[33mcommit 357f4fa2c7116d944a73b72df473423a9677361a[m[33m ([m[1;33mtag: [m[1;33mcomp-2024[m[33m)[m
+Author: BluCode <22122986+BluCodeGH@users.noreply.github.com>
+Date:   Sat Jul 6 10:13:52 2024 -0400
+
+    Camera board mirrored connector (#85)
+    
+    * Fix flipped camera connector, and minor tweaks
+    
+    * Add programming silkscreen
+    
+    * Generated gerbers
+
+[33mcommit 47e5aeb998555a8925def91beb1931e53f6e42a5[m
+Author: Elizabeth <35873939+Lucifersan@users.noreply.github.com>
+Date:   Tue Jun 25 20:57:14 2024 -0400
+
+    voltage divider changed to stop 24V from destroying the pic (#83)
+    
+    * voltage divider changed
+    
+    * try 2
+    
+    * added pdf
+
+[33mcommit f424272f4c0ba8c2e8f0fcb9b5e04523c0d6e189[m
+Author: ManavToor <68403400+ManavToor@users.noreply.github.com>
+Date:   Wed Jun 12 09:02:21 2024 -0400
+
+    Remote arming respin (#81)
+    
+    * removed redundant shunt resistor
+    
+    * split RAW_BATT, added second CURR_AMP_BAT connected to PIC pin RB5
+    
+    * removed interconnects JP8 JP9 JP10 JP11
+    
+    * removed bypass mag switches J5 and bypass jumpers JP1 JP2
+    
+    * split BATT into BATT1 BATT2, LDO powered with BATT1
+    
+    * connected BATT1 BATT2 with 10A polyfuse
+    
+    * changed 5v pull up resistors to BATT pwr with voltage divider
+    
+    * changed Main/Drogue connectors to Altimeter1/Altimeter2
+    
+    * organized schematic
+    
+    * batt supplies 9v not 15v :p, fixed voltage divider values
+    
+    * fixed inconsistent altimeter outputs
+    
+    * fixed +BATT1 & +BATT2 symbols not showing
+    
+    * adjusted shunt and voltage divider resistors
+    
+    * fixed +BATT1 and +BATT2 showing up as only +BATT
+    
+    * redid routing
+    
+    * updated silkscreens, added some ground stitching
+    
+    * rounded corners, cleaned up some traces
+    
+    * moved fuse between raw_bats
+    
+    * changed fuse value, removed daisy chaining, fixed layout
+    
+    * fixed mogged silkscreen labels
+    
+    * created schematic pdf and gerbers
+    
+    * beefed up pull up traces
+    
+    * added gerbers
+
+[33mcommit e95406b0c1500281a5a0c322cbc595a65c5710b4[m
+Author: Joe <joedolina@gmail.com>
+Date:   Sat Apr 27 12:52:12 2024 -0400
+
+    Add plated mounting holes, soldermask to 10 pin Datamate; regen gerbers; :certified-joement: (#79)
+
+[33mcommit 15e0b903db0416fe361c4c2677a4be5bf1b976d7[m
+Author: Ishman M <119248686+IshmanM@users.noreply.github.com>
+Date:   Sun Apr 14 22:13:49 2024 -0400
+
+    Vibration Board (Actually for ordering) (#78)
+    
+    * vibration board 1st iteration
+    
+    * incorporated much of PR1 feedback
+    
+    * Add PropulsionBoard
+    
+    * Add propulsion board
+    
+    * Address Jack's comment on the propulsion board
+    
+    * Propulsion Board Address Comments Final Revision
+    
+    * Propulsion Board Address Jack's Comments Final Revision
+    
+    * Revert "Add propulsion board"
+    
+    This reverts commit 4b1eeec09cc4060f319076640d95fd3068bfa2a7.
+    
+    * propulsion board address second review changes
+    
+    * addressed most of latest coments, fuse details pending
+    
+    * fuse details added, pending review
+    
+    * replaced accelerometer and other edite
+    
+    * trying to remove autosave files
+    
+    * trying to remove autosave files
+    
+    * trying to remove autosave files
+    
+    * trying to remove autosave files
+    
+    * updated library
+    
+    * minor schematic edits
+    
+    * updated lib
+    
+    * assigned footprints
+    
+    * addressing latest comments
+    
+    * propulsion board address third review changes
+    
+    * created pcb layout v1
+    
+    * removed lck file, changed cap to 10nF
+    
+    * realligned to grid
+    
+    * 2nd INT pin of accelerometer connected to PIC
+    
+    * restarted PCB layout
+    
+    * propulsion board address forth review changes
+    
+    * removed -M and -L variant
+    
+    * fixed grid, moved oscilator and CAN connector
+    
+    * some routing progress
+    
+    * routing done
+    
+    * updated date
+    
+    * designators updated, BOM file generated
+    
+    * propulsion board address fifth review changes
+    
+    * routing cleanup
+    
+    * routing cleanup
+    
+    * routing cleanup
+    
+    * routing cleanup
+    
+    * implementing latest feedbacks, not done yet
+    
+    * implementing latest feedbacks, not done yet
+    
+    * implementing latest feedbacks, not done yet
+    
+    * implemented latest feedbacks
+    
+    * implemented latest feedbacks
+    
+    * updated date
+    
+    * switched diode side and added more continuity to planes
+    
+    * latest progress of the propulsion board layout, but at last I got some issues on routing the 3.3V and GND and may need help for that
+    
+    * updated version, layout is all routed now, and DRC errors are also resolved
+    
+    * touch up
+    
+    * Second Revision of the Propulsion Board PCB
+    
+    * Third Revision of the Propulsion Board PCB
+    
+    * added wheatstone bridge to sch only so far
+    
+    * external sensor PT and thms added
+    
+    * Forth Revision of the Propulsion Board PCB
+    
+    * PT connector pinout order changed
+    
+    * connector footprints confirmed
+    
+    * layout
+    
+    * routing begins
+    
+    * everything routed except gnd
+    
+    * oscillator gnd added
+    
+    * more gnd added
+    
+    * more gnd
+    
+    * finito
+    
+    * most comments addressed
+    
+    * all comments addressed
+    
+    * added a 3d model
+    
+    * osc gnd back seperated
+    
+    * minor err fixed
+    
+    * git
+    
+    * oscillator brush up
+    
+    * oscillator brush up
+    
+    * branch fix
+    
+    * sch accel change and flow sense added. pcb change pending
+    
+    * sch accel change and flow sense added. pcb change pending
+    
+    * pcb updated
+    
+    * pcb updated
+    
+    * pcb updated
+    
+    * pcb updated
+    
+    * uniform silk orientation
+    
+    * zone overlap fix
+    
+    * zone overlap fix
+    
+    * gerbers made
+    
+    * gerbers regened
+    
+    * TPs added
+    
+    * gerbers regened
+    
+    * old BOM file gone
+    
+    * gerbers regened
+    
+    * TPs added
+    
+    * old BOM file gone
+    
+    * rio comments addressed, gerbers regened
+    
+    * rio comments addressed, gerbers regened
+    
+    * gerbers regen
+    
+    * gerbers gone
+    
+    * address rio comment
+    
+    * clean
+    
+    * new gerbers
+    
+    ---------
+    
+    Co-authored-by: ishman1-admin <ishman03@gmail.com>
+    Co-authored-by: HY <hy@v1041-wn-rt-b-161-166.campus-dynamic.uwaterloo.ca>
+    Co-authored-by: wilsonchenghy <wilsonchenghy@gmail.com>
+    Co-authored-by: wilsonchenghy <150957380+wilsonchenghy@users.noreply.github.com>
+    Co-authored-by: Jason Xu <40355221+JasonBrave@users.noreply.github.com>
+
+[33mcommit 4bfa8f696f3cb5a28346e1dcb944ac5c1d15736b[m
+Author: Joe <joedolina@gmail.com>
+Date:   Sun Apr 14 21:27:43 2024 -0400
+
+    Processor respin (#77)
+    
+    * fix prog connector pitch
+    
+    * i2c pullups, MCU reset jumper, main page layout
+    
+    * vectornav connector
+    
+    * Add 4 pin JST for IMU breakout
+    
+    * Map vn-200 pins to STM; move 5V sense to ADC
+    
+    * delete temp files
+    
+    * Update footprints
+    
+    * Reflect board-side programming connector
+    
+    * really need to add files to gitignore oops
+    
+    * break out IMU RS232 for debugging
+    
+    * Add IMU power reset capability
+    
+    * Add FET bypass and use actual FETs
+    
+    * Cook layout v1. Traces size to be verified
+    
+    * Fix J7; routing changes; stitching vias
+    
+    * Update trace width; silkscreen fixes
+    
+    * Casual oscillator
+    
+    * Add and route TVS and reverse polarity protection to IMU power line
+    
+    * Swap PN, add datasheets, fix silkscreen fix routing
+    
+    * Update schematic PDF
+    
+    * Rm GNDDETECT jumper; reroute prog connector
+    
+    * Fix silkscreen, traces
+    
+    * Fix traces, reroute 5V path, gerbers
+    
+    * Address Jack comments
+    
+    * regen schematic PDF
+    
+    * Implement Ishman fixes; regen gerbers
+    
+    * Add DNP note to jumper headers
+    
+    * Shorten SD traces, regen gerbers
+
+[33mcommit c293dd569f58c8dd2f85172b0e5ed6f70e272189[m
+Author: Ishman M <119248686+IshmanM@users.noreply.github.com>
+Date:   Thu Apr 11 14:14:51 2024 -0400
+
+    Vibration Board (#75)
+    
+    * vibration board 1st iteration
+    
+    * incorporated much of PR1 feedback
+    
+    * Add PropulsionBoard
+    
+    * Add propulsion board
+    
+    * Address Jack's comment on the propulsion board
+    
+    * Propulsion Board Address Comments Final Revision
+    
+    * Propulsion Board Address Jack's Comments Final Revision
+    
+    * Revert "Add propulsion board"
+    
+    This reverts commit 4b1eeec09cc4060f319076640d95fd3068bfa2a7.
+    
+    * propulsion board address second review changes
+    
+    * addressed most of latest coments, fuse details pending
+    
+    * fuse details added, pending review
+    
+    * replaced accelerometer and other edite
+    
+    * trying to remove autosave files
+    
+    * trying to remove autosave files
+    
+    * trying to remove autosave files
+    
+    * trying to remove autosave files
+    
+    * updated library
+    
+    * minor schematic edits
+    
+    * updated lib
+    
+    * assigned footprints
+    
+    * addressing latest comments
+    
+    * propulsion board address third review changes
+    
+    * created pcb layout v1
+    
+    * removed lck file, changed cap to 10nF
+    
+    * realligned to grid
+    
+    * 2nd INT pin of accelerometer connected to PIC
+    
+    * restarted PCB layout
+    
+    * propulsion board address forth review changes
+    
+    * removed -M and -L variant
+    
+    * fixed grid, moved oscilator and CAN connector
+    
+    * some routing progress
+    
+    * routing done
+    
+    * updated date
+    
+    * designators updated, BOM file generated
+    
+    * propulsion board address fifth review changes
+    
+    * routing cleanup
+    
+    * routing cleanup
+    
+    * routing cleanup
+    
+    * routing cleanup
+    
+    * implementing latest feedbacks, not done yet
+    
+    * implementing latest feedbacks, not done yet
+    
+    * implementing latest feedbacks, not done yet
+    
+    * implemented latest feedbacks
+    
+    * implemented latest feedbacks
+    
+    * updated date
+    
+    * switched diode side and added more continuity to planes
+    
+    * latest progress of the propulsion board layout, but at last I got some issues on routing the 3.3V and GND and may need help for that
+    
+    * updated version, layout is all routed now, and DRC errors are also resolved
+    
+    * touch up
+    
+    * Second Revision of the Propulsion Board PCB
+    
+    * Third Revision of the Propulsion Board PCB
+    
+    * added wheatstone bridge to sch only so far
+    
+    * external sensor PT and thms added
+    
+    * Forth Revision of the Propulsion Board PCB
+    
+    * PT connector pinout order changed
+    
+    * connector footprints confirmed
+    
+    * layout
+    
+    * routing begins
+    
+    * everything routed except gnd
+    
+    * oscillator gnd added
+    
+    * more gnd added
+    
+    * more gnd
+    
+    * finito
+    
+    * most comments addressed
+    
+    * all comments addressed
+    
+    * added a 3d model
+    
+    * osc gnd back seperated
+    
+    * minor err fixed
+    
+    * git
+    
+    * oscillator brush up
+    
+    * oscillator brush up
+    
+    * branch fix
+    
+    * sch accel change and flow sense added. pcb change pending
+    
+    * sch accel change and flow sense added. pcb change pending
+    
+    * pcb updated
+    
+    * pcb updated
+    
+    * pcb updated
+    
+    * pcb updated
+    
+    * uniform silk orientation
+    
+    * zone overlap fix
+    
+    * zone overlap fix
+    
+    * gerbers made
+    
+    * gerbers regened
+    
+    ---------
+    
+    Co-authored-by: ishman1-admin <ishman03@gmail.com>
+    Co-authored-by: HY <hy@v1041-wn-rt-b-161-166.campus-dynamic.uwaterloo.ca>
+    Co-authored-by: wilsonchenghy <wilsonchenghy@gmail.com>
+    Co-authored-by: wilsonchenghy <150957380+wilsonchenghy@users.noreply.github.com>
+
+[33mcommit 8d52d30014fc4dac5096c252cca429e334b77ea5[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Fri Mar 29 14:21:35 2024 -0400
+
+    regenerated gerbers, changed layer names
+
+[33mcommit cb4f6170d2011ab46b3081a0409e898f0356e4a8[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Thu Mar 28 00:15:05 2024 -0400
+
+    final vias added (for now)
+
+[33mcommit 8402f69e70b97fdef32c6bbc6c1cc3c93b8676b8[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Wed Mar 27 18:16:05 2024 -0400
+
+    fixed gerbers
+
+[33mcommit 25463acd8f6cf2296b47fcd224e0a6cbbc52e370[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Wed Mar 27 10:25:43 2024 -0400
+
+    fixed more traces and vias
+
+[33mcommit b5db617cacf2808ed042a004d69b47df0972977b[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Tue Mar 26 20:15:43 2024 -0400
+
+    more trace fixes
+
+[33mcommit f0cfe15ad751db796d812f4d2f9882357276b6c7[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Tue Mar 26 01:13:33 2024 -0400
+
+    replaced battery block with one in stock
+
+[33mcommit 454d7473299f7168ddd09c4f32b5f27559e498ae[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Mon Mar 25 16:44:08 2024 -0400
+
+    fixed connector on wrong side
+
+[33mcommit ec735c64a79911cd0f88f7912ab73795fd0ecee0[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Sat Mar 23 18:35:44 2024 -0400
+
+    addressed comments in thread
+
+[33mcommit 65a8adb6ab21277778bb3c9ff7b462df2a367a09[m
+Merge: 07f8c99 61453d4
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Thu Mar 21 21:50:17 2024 -0400
+
+    Merge branch 'charging-board-respin' of https://github.com/waterloo-rocketry/canhw into charging-board-respin
+
+[33mcommit 07f8c99eb47d266388dadc408c091c743db66fc1[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Thu Mar 21 21:50:02 2024 -0400
+
+    fixed traces again, regen gerbers
+
+[33mcommit 61453d4c43b5c3fc0dec95038f0d4a981fc3293e[m
+Merge: e843603 59819ae
+Author: Joe <joedolina@gmail.com>
+Date:   Wed Mar 20 19:40:23 2024 -0400
+
+    Merge branch 'master' into charging-board-respin
+
+[33mcommit e8436032bebc9ac432f4f5b97ffc14ae40788876[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Wed Mar 20 14:16:43 2024 -0400
+
+    whoops .lck removed
+
+[33mcommit 56f68adce55be10f8c5020d5c31943b32531fd87[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Wed Mar 20 14:16:05 2024 -0400
+
+    fixed more traces, remade gerbers
+
+[33mcommit d8a565de87e255f9ea3ae66ad5af37497df325f3[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Wed Mar 20 10:39:43 2024 -0400
+
+    updated gerbers
+
+[33mcommit 59819aebbc21ccb3e68e527c2b89b5b5dca70c11[m
+Author: Kavin Satheeskumar <71559920+KavinSatheeskumar@users.noreply.github.com>
+Date:   Tue Mar 19 14:44:26 2024 -0400
+
+    DAQ CAN Support (#74)
+    
+    * initial usb_relay schematics
+    
+    * Add screw terminal and part numbers, remove old connector
+    
+    * Address all of Dom's comments, except for adding a female USB connector and the electrical rules check
+    
+    * change connector to female
+    
+    * add footprints
+    
+    * Address jack's comments
+    
+    * Forgot to save last time
+    
+    * resolved comments
+    
+    * fixed foorprints
+    
+    * added usb footprint
+    
+    * began layout
+    
+    * added datasheet link to pic
+    
+    * added esd protection and termination resistor
+    
+    * implemented changes
+    
+    * implemented changes
+    
+    * removed unecessary via
+    
+    * reduced traces on bottom layer
+    
+    * changed jumper to pinheader
+    
+    * add mclr silkscreen
+    
+    ---------
+    
+    Co-authored-by: ManavToor <manavhockey13@gmail.com>
+
+[33mcommit 805535e1162e19bfdba25507d56acd1089e1eb29[m
+Author: WilsonC1234 <150563863+WilsonC1234@users.noreply.github.com>
+Date:   Tue Mar 19 14:43:44 2024 -0400
+
+    Propulsion board (#72)
+    
+    * Add PropulsionBoard
+    
+    * Add propulsion board
+    
+    * Address Jack's comment on the propulsion board
+    
+    * Propulsion Board Address Comments Final Revision
+    
+    * Propulsion Board Address Jack's Comments Final Revision
+    
+    * Revert "Add propulsion board"
+    
+    This reverts commit 4b1eeec09cc4060f319076640d95fd3068bfa2a7.
+    
+    * propulsion board address second review changes
+    
+    * addressing latest comments
+    
+    * propulsion board address third review changes
+    
+    * propulsion board address forth review changes
+    
+    * propulsion board address fifth review changes
+    
+    * latest progress of the propulsion board layout, but at last I got some issues on routing the 3.3V and GND and may need help for that
+    
+    * updated version, layout is all routed now, and DRC errors are also resolved
+    
+    * Second Revision of the Propulsion Board PCB
+    
+    * Third Revision of the Propulsion Board PCB
+    
+    * Forth Revision of the Propulsion Board PCB
+    
+    ---------
+    
+    Co-authored-by: HY <hy@v1041-wn-rt-b-161-166.campus-dynamic.uwaterloo.ca>
+    Co-authored-by: wilsonchenghy <wilsonchenghy@gmail.com>
+    Co-authored-by: wilsonchenghy <150957380+wilsonchenghy@users.noreply.github.com>
+    Co-authored-by: Jason Xu <40355221+JasonBrave@users.noreply.github.com>
+
+[33mcommit faa2a93f45cc7c6768c4675712d306cf3f7b7409[m
+Author: Miles <145514435+miles-milne@users.noreply.github.com>
+Date:   Tue Mar 19 14:42:04 2024 -0400
+
+    USB Debug Respin (#71)
+    
+    * Updated usb debug schematic for review
+    
+    * - Added data sheet for fuse
+    - Changed symbols for USB-B and fuse/fuse holder
+    - Deleted duplicate files
+    
+    * - Added symbol libraries for real this time
+    
+    * Added name to schematic
+    Deleted unnecesary files
+    Updated .gitignore
+    
+    * Added kikad symbol
+    
+    * Made small fix with symbol library file path
+    
+    * - updated symbols
+    - CAN connector now uses 4 pin smd
+    - made several minor changes to presentation. Would make for a nice game of spot the differences.
+    
+    * - Updated footprints
+    - Added a datasheet
+    
+    * added missing canhw_footprints
+    
+    * created (very rough) pcb layout
+    
+    * modified pcb layout
+    
+    * Modified layout, updated footprints
+    
+    * Changed jumper footprints to pinheader
+    
+    * revamped PCB layout
+    
+    * Modified PCB silkscreen
+    
+    * Updated silkscreen again
+    
+    * Minor revisions
+    
+    ---------
+    
+    Co-authored-by: Jason Xu <40355221+JasonBrave@users.noreply.github.com>
+
+[33mcommit 1f6e748e8565721003f19dd6023ad7aee8230e6d[m
+Author: BluCode <22122986+BluCodeGH@users.noreply.github.com>
+Date:   Tue Mar 19 14:40:41 2024 -0400
+
+    SRAD Camera (#70)
+    
+    * SRAD camera schematic
+    
+    * Update LED, fuse footprints 1210->1206
+    
+    * Add 100V/V label to INA180
+    
+    * Add testpoint and clean up schematic, layout WIP
+    
+    * Complete layout along with high-speed routing
+    
+    * Complete routing, ready for review
+
+[33mcommit 3c6c63b5bd39ae3aaacc5b1a11c8b2388ce89156[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Tue Mar 19 13:29:43 2024 -0400
+
+    fixed power traces
+
+[33mcommit 2201276f15aa6737fd6a9f89c334dbcb6865f702[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Mon Mar 18 22:13:44 2024 -0400
+
+    updated gerbers
+
+[33mcommit 6a0c9481736f8c1481abb37b79d2b633be82e641[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Mon Mar 18 22:11:07 2024 -0400
+
+    fixed a few more traces
+
+[33mcommit 4b0e29650f3d9de6edd6949c704ccc19e00d7032[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Mon Mar 18 18:47:43 2024 -0400
+
+    fixed gerbers
+
+[33mcommit 5003f284a3d067ebe2a45c4f0759147384975afc[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Mon Mar 18 15:26:26 2024 -0400
+
+    generated gerbers
+
+[33mcommit fd4d18ff40cfef8897a97597b2b515a27da6fcef[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Mon Mar 18 14:55:47 2024 -0400
+
+    touched up silkscreens a bit
+
+[33mcommit 0fb098cfb7e351c5ac508f652189cc5ef6d7833e[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Sun Mar 17 20:21:22 2024 -0400
+
+    fixed traces and silkscreens-ish
+
+[33mcommit 5e685160691af7edddadb68daa0cf12b7f8472d8[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Sun Mar 17 18:38:55 2024 -0400
+
+    fixed thermals
+
+[33mcommit 3f8a6aa81d73b517a217816b80db0ace0ec2ff8d[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Fri Mar 15 00:13:50 2024 -0400
+
+    final changes, fixed some minor errors
+
+[33mcommit be30a7fc12e75feabec0aa2f34b9ecb8c29b3334[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Tue Mar 12 23:06:53 2024 -0400
+
+    fixed a few traces
+
+[33mcommit ac902e65d9f66d7792bfc9df4a762ec26d47696a[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Tue Mar 12 21:54:03 2024 -0400
+
+    fixed joe feedback
+
+[33mcommit a3981f79fc4c6d48d74406fc612220bf1cc05259[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Tue Mar 12 18:31:14 2024 -0400
+
+    fixed via spacing for osc
+
+[33mcommit 1d4b790cbd7e61837a3e092273d40d241537bb6f[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Tue Mar 12 17:22:55 2024 -0400
+
+    cooked really hard
+
+[33mcommit 51a8069f25a0c8fd1133844a7d21baa5798ff2c8[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Sun Mar 10 23:44:45 2024 -0400
+
+    fixed most errors, only remaining errors are unfixable (two pads on a chip too close together)
+
+[33mcommit d6159ad5a19ffbc607368ca98c4b37f93b00e281[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Sun Mar 10 19:41:28 2024 -0400
+
+    added logo
+
+[33mcommit ca2cd77424df9d21db464bb3e5dbea1e01400036[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Sun Mar 10 19:10:10 2024 -0400
+
+    removed a few traces
+
+[33mcommit 7bc956f3f3785e0b76748ce1ff08e1a5eb591e67[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Sun Mar 10 18:59:28 2024 -0400
+
+    routing speedrun any%
+
+[33mcommit 7095276e4a131da2ebca5dec847c0cff1b592d0d[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Mon Mar 4 21:20:24 2024 -0500
+
+    cooked very hard plz roast
+
+[33mcommit 3d2abdf15c5911b804f179f31bd59bb8f7c82af1[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Wed Feb 21 15:34:05 2024 -0800
+
+    added MCLR label
+
+[33mcommit 1c8ee412323f32040f19d93b7c1aecf73b3a8382[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Wed Feb 21 15:30:07 2024 -0800
+
+    tried again and did better
+
+[33mcommit 20dc3ef7a5c148049f85f5a6ec7164d26fe37494[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Sat Feb 17 01:19:02 2024 -0500
+
+    lots of cooking, a few traces that will end up kinda scuffed but overall fairly routable I think
+
+[33mcommit 34d2b689552433e3a6f181a881d619316819f7c6[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Mon Jan 29 11:23:13 2024 -0500
+
+    fixed fuse
+
+[33mcommit afaf321a048ed5f1a6170fb56cf7c96e1bf91462[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Mon Jan 29 10:48:42 2024 -0500
+
+    fixed schematic
+
+[33mcommit a71061ca6311343e8e0d8b40ea8fe1f6c2f4d97a[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Mon Jan 22 09:55:59 2024 -0500
+
+    added note re: max current from battery
+
+[33mcommit 8f0e26f1361571fc3d8118a891218b6df42d929a[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Sat Jan 20 23:50:11 2024 -0500
+
+    an attempt has been made
+
+[33mcommit 0814d2cb5425cea65bae50ecf351f15e0b2205f2[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Fri Jan 19 17:00:40 2024 -0500
+
+    more progress
+
+[33mcommit 813b7c447f386ca61829f4bb8f9d77a500c63400[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Fri Jan 19 12:54:16 2024 -0500
+
+    removed lck from prev commit
+
+[33mcommit 5f37a6df8ab76799aa308fa59ab4e8f92288ee53[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Fri Jan 19 12:53:31 2024 -0500
+
+    more progress
+
+[33mcommit 8543698e1e973c961273b267723240750a8d7e58[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Thu Jan 18 23:42:12 2024 -0500
+
+    started routing
+
+[33mcommit a1a08f320c130c83cdedc5556c615def7a07af9d[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Tue Jan 16 21:05:45 2024 -0500
+
+    added footprints
+
+[33mcommit f86bfdf0e2f7783c3487a5fd6b3fded3eeef33af[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Tue Jan 16 20:57:00 2024 -0500
+
+    replaced 0hms with solder jumpers
+
+[33mcommit cb47a6c6c1e6e7273bf0ad82a171b3cfd51e0b11[m
+Merge: 006f91c 91b02b8
+Author: Lucifersan <xiaotongxiong@v1040-wn-rt-a-112-131.campus-dynamic.uwaterloo.ca>
+Date:   Tue Jan 16 19:23:51 2024 -0500
+
+    Merge branch 'charging-board-respin' of https://github.com/waterloo-rocketry/canhw into charging-board-respin
+
+[33mcommit 006f91ce81916a8da5deae3c7fe5414de364e8a7[m
+Author: Lucifersan <xiaotongxiong@v1040-wn-rt-a-112-131.campus-dynamic.uwaterloo.ca>
+Date:   Tue Jan 16 19:22:45 2024 -0500
+
+    pcb bad
+
+[33mcommit 91b02b85c7cedf016f0255d7c6b6cb5b0bcc8dca[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Fri Jan 12 16:49:54 2024 -0500
+
+    fixed pin numbering on ina4180
+
+[33mcommit 3df55159cf3141f0c3b7bbb860325fc8d05e9e0e[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Fri Jan 12 16:24:43 2024 -0500
+
+    added 0R @ 5V output
+
+[33mcommit 2ca01b7d9954aa126e24d7af56ac328d7c2ee444[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Fri Jan 12 16:19:40 2024 -0500
+
+    added 0R resistor
+
+[33mcommit 4f1babbcf6c5d578f784f3ceb6200c553f98a4fb[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Fri Jan 12 15:40:20 2024 -0500
+
+    added .pdf
+
+[33mcommit 436983b83e991e886cc2723899bf1d32e0048ad5[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Fri Jan 12 15:31:07 2024 -0500
+
+    re-added old pcb design
+
+[33mcommit 5f81ed4d4b9c2a541e8ee62b45f6133e6316509b[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Fri Jan 12 14:33:46 2024 -0500
+
+    delete lck
+
+[33mcommit aad244f563a8f9b0479dbf20335d0844a627d229[m
+Merge: 2834610 e618447
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Fri Jan 12 14:26:35 2024 -0500
+
+    Merge branch 'charging-board-respin' of https://github.com/waterloo-rocketry/canhw into charging-board-respin
+
+[33mcommit 28346101a950220b186f3ce36844f30fbc87bf29[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Fri Jan 12 14:23:59 2024 -0500
+
+    fixed motor connector for real this time
+
+[33mcommit e618447a14f4de5bec2065c79b2232770471afbe[m
+Author: Lucifersan <xiaotongxiong@v1040-wn-rt-a-26-60.campus-dynamic.uwaterloo.ca>
+Date:   Wed Jan 10 23:55:15 2024 -0500
+
+    minor edits made
+
+[33mcommit 9e262bc6a414df38621f4133f9367a18feecc679[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Mon Jan 8 21:48:17 2024 -0500
+
+    schematic changes done
+
+[33mcommit 6b588c11cd4fb42c950069188afb80efddb42821[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Mon Jan 8 21:37:04 2024 -0500
+
+    fixed everything but bucks
+
+[33mcommit 0d67713201eb2ef8f54d826cdbabfa4f93f5996f[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Fri Dec 29 11:09:49 2023 -0800
+
+    modified servo connector (8)
+
+[33mcommit fe1371998929a7a9c1249627240c3140e3518406[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Fri Dec 29 09:25:37 2023 -0800
+
+    actually fixed 9 this time, also fixed the rest of 11 by changing the fuse (no new footprint needed now)
+
+[33mcommit 86b15c1b70c0d49d6b85a2aece19d804908a8965[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Fri Dec 29 09:19:30 2023 -0800
+
+    fixed 9, 10, 12, 13
+
+[33mcommit 3bf999862d13cac81cb9d432aecfc19f6ab876e0[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Wed Dec 27 14:04:29 2023 -0800
+
+    progress on fixing libraries/footprints
+
+[33mcommit 250af0f09642a3786ac61f973546dcbc97348abf[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Tue Dec 26 21:00:17 2023 -0800
+
+    fixed 4 (5 was fixed last commit)
+
+[33mcommit a3f91f3505d7871667a1e41af231db8aa1162668[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Tue Dec 26 20:37:18 2023 -0800
+
+    fixed 1-3, 6, 7
+
+[33mcommit 3146b24e46e9b7d004a014338bd6b31172f0a417[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Sun Dec 24 21:47:23 2023 -0800
+
+    fixed remote arming for some reason?? ;-; i dont know what I did wrong initially but ive checked and with this commit there's no changes to remote arming compared to master
+
+[33mcommit e97c8c24b58d92753b825c2f28786202a1a8819f[m
+Author: Ash Lang <a7lang@uwaterloo.ca>
+Date:   Sun Dec 24 21:44:57 2023 -0800
+
+    fixed everything I believe?
+
+[33mcommit e9f56a26d0ae22b6b288e9ae8e6c1eecfe0cdc25[m
+Author: Ash Lang <ashtheengiqueer@gmail.com>
+Date:   Thu Dec 21 20:57:37 2023 -0800
+
+    added INA4180 chip and connections
+
+[33mcommit 96fa73a9781cd3eb7d4a73cd15fb300ef97c7826[m
+Author: Ash Lang <ashtheengiqueer@gmail.com>
+Date:   Tue Dec 19 22:33:53 2023 -0800
+
+    added more current sensing, fixed inductor
+
+[33mcommit a24fdead2526884ea47e23a35b760069b3513782[m
+Author: Ash Lang <ashtheengiqueer@gmail.com>
+Date:   Mon Dec 18 15:13:55 2023 -0800
+
+    fixed ICHG_EN, FET between +BATT and MOTOR_V, Resistor Divider on 13V buck
+
+[33mcommit c4c3b4b4c809f623706af75a4588c92311754266[m
+Author: Lucifersan <xiaotongxiong@v1040-wn-rt-a-45-111.campus-dynamic.uwaterloo.ca>
+Date:   Sat Dec 16 17:20:56 2023 -0500
+
+    removed all CAN/VSENSE testpoints
+
+[33mcommit 6f7d6a225fb7587688992415be14f7ecdf695498[m
+Author: Lucifersan <xiaotongxiong@v1040-wn-rt-a-45-111.campus-dynamic.uwaterloo.ca>
+Date:   Sat Dec 16 17:16:09 2023 -0500
+
+    add webench link, change capacitor footprints from 1206 to 0805
+
+[33mcommit 557de493185052ea840c42c086556b7c296fc134[m
+Author: Lucifersan <xiaotongxiong@v1040-wn-rt-a-45-111.campus-dynamic.uwaterloo.ca>
+Date:   Sat Dec 16 01:13:12 2023 -0500
+
+    fuse to smd for real this time, netlabel connection points fixed, motor now connected to +BATT rather than +13V
+
+[33mcommit c8ec2bd5faa903095e7e6f6c6f6d89e2c2493423[m
+Author: AshTheEngiqueer <a7lang@uwaterloo.ca>
+Date:   Sun Nov 26 17:59:18 2023 -0500
+
+    added motor connectors and allocated pins
+
+[33mcommit 37319cf23eb12cb12892e44e0564d1179e8807fc[m
+Author: Joe-Joe-Joe-Joe <joedolina@gmail.com>
+Date:   Sun Nov 5 11:45:07 2023 -0500
+
+    fix model paths
+
+[33mcommit 28abf7660fcf09ad3bf31ff2ccd8132bec397c53[m
+Author: Joe <joedolina@gmail.com>
+Date:   Sat Nov 4 11:21:11 2023 -0400
+
+    Add SD card slot
+
+[33mcommit 77530108b5862cf2f86d5fcca2fb154bba2c6cda[m
+Author: Joe <joedolina@gmail.com>
+Date:   Sat Nov 4 11:07:34 2023 -0400
+
+    Add gecko 3D model
+
+[33mcommit c062cd0b1783dca7923cd0b43f925158f8a2649c[m
+Author: Lucifersan <xiaotongxiong@v1040-wn-rt-b-48-211.campus-dynamic.uwaterloo.ca>
+Date:   Mon Nov 20 22:33:21 2023 -0500
+
+    found an inductor
+
+[33mcommit a1a5ccfc8bc61aef02ce07f6c2514de3b1fcb8dd[m
+Author: Lucifersan <xiaotongxiong@v1040-wn-rt-b-48-211.campus-dynamic.uwaterloo.ca>
+Date:   Mon Nov 20 22:24:02 2023 -0500
+
+    added datasheet link
+
+[33mcommit b992434b9940c667bfd450e8bcaec505e7f148af[m
+Author: Lucifersan <xiaotongxiong@v1040-wn-rt-b-48-211.campus-dynamic.uwaterloo.ca>
+Date:   Mon Nov 20 22:22:00 2023 -0500
+
+    add new buck and update schematic to match
+
+[33mcommit 5d9a0cc9154174b30936921985814c577d19403b[m
+Author: Lucifersan <xiaotongxiong@v1040-wn-rt-a-45-43.campus-dynamic.uwaterloo.ca>
+Date:   Mon Nov 20 21:22:57 2023 -0500
+
+    added new buck symbol
+
+[33mcommit 086ddc23aa3e6f0b3cfd076efc45a1a690ede8d9[m[33m ([m[1;31morigin/readme-update[m[33m)[m
+Author: Joe <joedolina@gmail.com>
+Date:   Sat Oct 21 12:48:59 2023 -0400
+
+    Undo minisensor changes
+
+[33mcommit bf52411ad4eebec849313e73578f54b97c408817[m
+Author: Joe <joedolina@gmail.com>
+Date:   Sat Oct 21 12:32:13 2023 -0400
+
+    zip for JLCPCB
+
+[33mcommit 57059175ab2554916bc373a44c48c5d10e3f48b8[m
+Author: Joe <joedolina@gmail.com>
+Date:   Sat Oct 21 12:18:07 2023 -0400
+
+    Rename gerbers so I don't get an email from JLCPCB
+
+[33mcommit 67a3b4ab1629be50792af744e24da5dd445e31c6[m
+Author: Joe <joedolina@gmail.com>
+Date:   Sat Oct 21 12:16:08 2023 -0400
+
+    Generate STEP, gerbers
+
+[33mcommit 46023a99f1017f78c560dc7c5476f0f06ec8f2b4[m
+Author: Joe <joedolina@gmail.com>
+Date:   Fri Oct 20 13:25:53 2023 -0400
+
+    fix blokc diagram
+
+[33mcommit 8f866def096051cfed88f0aaef76886b21f02310[m
+Author: Joe <joedolina@gmail.com>
+Date:   Thu Oct 19 20:36:03 2023 -0400
+
+    Update hw block diagram, pdf
+
+[33mcommit 48f091248350f4e794a4740df58d92558684f0d0[m
+Author: Joe <joedolina@gmail.com>
+Date:   Thu Oct 19 18:05:35 2023 -0400
+
+    fixed SD traces; added TP markings
+
+[33mcommit 6a1f93ec7125b5fa6ba0f97ef686db02b086d5da[m
+Author: Joe <joedolina@gmail.com>
+Date:   Thu Oct 19 16:54:07 2023 -0400
+
+    remove 3V3 from VCAP
+
+[33mcommit 95c2a88ed01f17e9e4fc23c5107653c006aa8dea[m
+Author: Joe <joedolina@gmail.com>
+Date:   Thu Oct 19 16:48:59 2023 -0400
+
+    add hardware block diagram
+
+[33mcommit 6b9d2525a0e4db833b3a3faa3948aae58f4a5cc2[m
+Author: Joe <joedolina@gmail.com>
+Date:   Thu Oct 19 09:42:52 2023 -0400
+
+    Update pdf, BOM
+
+[33mcommit 6ead9eb413355e96d44a21c2d6ca77088e397da5[m
+Author: Joe <joedolina@gmail.com>
+Date:   Tue Oct 17 09:36:09 2023 -0400
+
+    Fix spacing
+
+[33mcommit be9ce9dc94ff88bd63e53a9b0a8ff881db3b50df[m
+Author: Joe <joedolina@gmail.com>
+Date:   Tue Oct 17 08:25:10 2023 -0400
+
+    Fix footprints
+
+[33mcommit 0a55bfe2ea3cb9015eb4a56f671d8d99e5050246[m
+Author: Joe-Joe-Joe-Joe <joedolina@gmail.com>
+Date:   Sun Oct 15 23:47:39 2023 -0400
+
+    Connect RCLK to GND
+
+[33mcommit d4b5fb1e9c022f6017150e40aabf1f69d86da62b[m
+Author: Joe-Joe-Joe-Joe <joedolina@gmail.com>
+Date:   Sun Oct 15 23:42:07 2023 -0400
+
+    fix LDO symbol
+
+[33mcommit 8c05a8820b5057e7b29dae2f7a2ed7c0450d21a2[m
+Author: Joe-Joe-Joe-Joe <joedolina@gmail.com>
+Date:   Sun Oct 15 23:38:39 2023 -0400
+
+    PCB v3
+
+[33mcommit 9ff2af1d7e5421d5f97a36b8aaa4c0db4c366230[m
+Author: Joe-Joe-Joe-Joe <joedolina@gmail.com>
+Date:   Sun Oct 1 21:28:42 2023 -0400
+
+    Add dedicated low ESR output cap to LDO
+
+[33mcommit ea80e3107b99f501fd07661c0def42f5652e042d[m
+Author: Joe <joedolina@gmail.com>
+Date:   Sun Oct 1 19:28:11 2023 -0400
+
+    Add GND TPs
+
+[33mcommit 45ed06fb599a18db4b469cddfafeef9b93ae8dbe[m
+Author: Joe <joedolina@gmail.com>
+Date:   Sun Oct 1 12:08:55 2023 -0400
+
+    Add GND tps
+
+[33mcommit 28002d41ae6beefb2156771f20aee505c952fad0[m
+Author: Joe-Joe-Joe-Joe <joedolina@gmail.com>
+Date:   Fri Sep 29 23:02:14 2023 -0400
+
+    add logo; fix silkscreen layout
+
+[33mcommit 320011d2c394ffbc24121f2c5778482dbd9c8ebf[m
+Author: Joe-Joe-Joe-Joe <joedolina@gmail.com>
+Date:   Fri Sep 29 22:27:27 2023 -0400
+
+    actually check and fix DRC
+
+[33mcommit dac61460266ccec1178c18f850c14186751e5781[m
+Author: Joe-Joe-Joe-Joe <joedolina@gmail.com>
+Date:   Fri Sep 29 22:10:32 2023 -0400
+
+    update PDF
+
+[33mcommit 50001c6238828fb8d18e56ba6abf40c13d87b46e[m
+Author: Joe-Joe-Joe-Joe <joedolina@gmail.com>
+Date:   Fri Sep 29 22:08:30 2023 -0400
+
+    pcb routing v2
+
+[33mcommit da68fcc2df9818c168f60363b6efd60258b249bf[m
+Author: Joe <joedolina@gmail.com>
+Date:   Thu Sep 28 16:33:27 2023 -0400
+
+    Add processor board project back to canhw
+
+[33mcommit 090d943b5396fbbfd7cba38170a7dd1b1a8a5ebf[m
+Merge: 3a7d044 cab0359
+Author: Joe <joedolina@gmail.com>
+Date:   Thu Sep 28 16:31:51 2023 -0400
+
+    AHHHHHHH git why
+
+[33mcommit 3a7d0442bd16afe952b57bd1914ef3e0fa9b3187[m
+Author: Joe <joedolina@gmail.com>
+Date:   Thu Sep 28 16:29:05 2023 -0400
+
+    Bypass cap routing
+
+[33mcommit 50f201ccce2e4f147fb2a830191f4f9274a5d84f[m
+Author: Joe <joedolina@gmail.com>
+Date:   Thu Sep 28 15:31:09 2023 -0400
+
+    Update refdes, footprints
+
+[33mcommit 3a24d176c75f78f7f0befd0ab699d466e12a744a[m
+Author: Joe <joedolina@gmail.com>
+Date:   Wed Sep 27 19:37:07 2023 -0400
+
+    update 5V fuse/Rsense
+
+[33mcommit 9d85be65613031b0aee46d560423efc14db3869d[m
+Author: Joe <joedolina@gmail.com>
+Date:   Wed Sep 27 19:23:45 2023 -0400
+
+    update pdf
+
+[33mcommit 1b67048aca90c5524bc3c41d74661dcef917aa48[m
+Author: Joe <joedolina@gmail.com>
+Date:   Wed Sep 27 19:22:29 2023 -0400
+
+    replace LDO
+
+[33mcommit 3b20e0bd4ab256f35f29acd77265cf2386fb3b89[m
+Author: Joe <joedolina@gmail.com>
+Date:   Wed Sep 27 19:21:46 2023 -0400
+
+    add LM3940 symbol
+
+[33mcommit dfa5245cef75e3038c45636d16de58bce9e8c614[m
+Author: Joe <joedolina@gmail.com>
+Date:   Tue Sep 26 11:20:06 2023 -0400
+
+    Swap SD card; fix caps
+
+[33mcommit a0abc899639f72b9940c3c5bb7462a05ad01a017[m
+Author: Joe <joedolina@gmail.com>
+Date:   Mon Sep 25 11:06:38 2023 -0400
+
+    updated footprints layout
+
+[33mcommit 85c2783c7752306dd7a780b9ca8cf9c8c0f7de69[m
+Author: Joe <joedolina@gmail.com>
+Date:   Mon Sep 25 10:16:59 2023 -0400
+
+    update footprints; restart PCB
+
+[33mcommit 3063bcdec3564570d6135178460781a17fe53196[m
+Author: Joe <joedolina@gmail.com>
+Date:   Mon Sep 25 10:14:05 2023 -0400
+
+    add more plating to IMU mounting holes
+
+[33mcommit 5d308274721af7a53875e29621b73cca5ae91031[m
+Author: Joe <joedolina@gmail.com>
+Date:   Thu Sep 14 20:31:49 2023 -0400
+
+    gen PDF
+
+[33mcommit 66a491c04a6c0997174bfece3bb8d4b32f5a3fa9[m
+Author: Joe <joedolina@gmail.com>
+Date:   Thu Sep 14 19:56:41 2023 -0400
+
+    Complete schematic v1; pls ignore PCB
+
+[33mcommit fb6e59494f1c927d68f771867c781a96a9de5c1e[m
+Author: Joe <joedolina@gmail.com>
+Date:   Thu Sep 14 10:10:17 2023 -0400
+
+    v1 pcb layout
+
+[33mcommit 2881c17b335fe0c410efdb91563a9f74a90fea46[m
+Author: Joe <joedolina@gmail.com>
+Date:   Tue Sep 12 09:50:31 2023 -0400
+
+    Finish edge cuts; fix DRC
+
+[33mcommit 3ffbc98fc22c68de85cba6b40cb8be05db5cc269[m
+Author: Joe <joedolina@gmail.com>
+Date:   Tue Sep 12 09:22:35 2023 -0400
+
+    this is the one with the lib changes - move to another PR at some point?
+
+[33mcommit b8f34f10863128842b315ece223b6cffea7ceb9d[m
+Author: Joe <joedolina@gmail.com>
+Date:   Tue Sep 12 09:22:07 2023 -0400
+
+    add imu subsheet???
+
+[33mcommit ee6ef519f606cfa65257e238938e9da869929d48[m
+Author: Joe <joedolina@gmail.com>
+Date:   Tue Sep 12 09:18:37 2023 -0400
+
+    update canhw lib; add caps; route PCB
+
+[33mcommit c714ed176511f2e65659e8076782bb4b9e203496[m
+Author: Joe-Joe-Joe-Joe <joedolina@gmail.com>
+Date:   Wed Sep 6 15:25:23 2023 -0400
+
+    create processor board proj
+
+[33mcommit cab0359090fde4a2184f66b610eaa0d3fc63e117[m
+Author: Joe <joedolina@gmail.com>
+Date:   Thu Sep 28 15:31:09 2023 -0400
+
+    Update refdes, footprints
+
+[33mcommit 13397db1cbc0e1ecc2fac81a6b187e34b7ef22dc[m
+Author: Joe <joedolina@gmail.com>
+Date:   Wed Sep 27 09:49:49 2023 -0400
+
+    Expand pin holes to 0.6mm drill
+
+[33mcommit c293f0b17386df36900aae1d5c402b544871c8ef[m
+Author: Joe <joedolina@gmail.com>
+Date:   Tue Sep 26 12:59:01 2023 -0400
+
+    Fix keepout area
+
+[33mcommit ed0f0dc1d33c16e668981927e698c15f3b9617c6[m
+Author: Joe <joedolina@gmail.com>
+Date:   Tue Sep 26 12:54:48 2023 -0400
+
+    Up courtyard clearance; add keepout for THT pads
+
+[33mcommit a312549ad3361a177d8f0d705d7c9e58291c9d9b[m
+Author: Joe <joedolina@gmail.com>
+Date:   Tue Sep 26 12:42:57 2023 -0400
+
+    0.1mm courtyard clearance
+
+[33mcommit 1e07f4cea242efe07be3c9a9f0b67ba2e9feb1d7[m
+Author: Joe <joedolina@gmail.com>
+Date:   Tue Sep 26 07:29:49 2023 -0400
+
+    Fix mount holes; silkscreen
+
+[33mcommit c58745ab63009cc431d1c1739f89a1710fe184e5[m
+Author: Joe <joedolina@gmail.com>
+Date:   Mon Sep 25 09:02:48 2023 -0400
+
+    update Gecko footprint
+
+[33mcommit eef0410b913683aa87b65cdf59802bb1dcccb963[m
+Author: Joe <joedolina@gmail.com>
+Date:   Thu Sep 14 18:19:40 2023 -0400
+
+    add JUST gecko footprint to lib
+
+[33mcommit 146a08b6767c23481a02689a0bb9cb795ddc57a3[m
+Author: Joe <joedolina@gmail.com>
+Date:   Wed Sep 27 19:37:07 2023 -0400
+
+    update 5V fuse/Rsense
+
+[33mcommit 97c1852e83a369d83831e06ee2bf8cff62e64e5c[m
+Author: Joe <joedolina@gmail.com>
+Date:   Wed Sep 27 19:23:45 2023 -0400
+
+    update pdf
+
+[33mcommit f318f33d856673eea3855d57de682dad082a8974[m
+Author: Joe <joedolina@gmail.com>
+Date:   Wed Sep 27 19:22:29 2023 -0400
+
+    replace LDO
+
+[33mcommit b8a4192d52876b7d21179d67f09fbdda7a991d42[m
+Author: Joe <joedolina@gmail.com>
+Date:   Wed Sep 27 19:21:46 2023 -0400
+
+    add LM3940 symbol
+
+[33mcommit c152f7f8079e838bcc683fe743ac99fcfb8cbc54[m
+Author: Joe <joedolina@gmail.com>
+Date:   Tue Sep 26 11:20:06 2023 -0400
+
+    Swap SD card; fix caps
+
+[33mcommit 43a3c2ac2e8391ea701b3f8a514c24af689f9802[m
+Author: Joe <joedolina@gmail.com>
+Date:   Mon Sep 25 11:06:38 2023 -0400
+
+    updated footprints layout
+
+[33mcommit 515e4785e37d270e26f28be3448f2ef02a9f1349[m
+Author: Joe <joedolina@gmail.com>
+Date:   Mon Sep 25 10:16:59 2023 -0400
+
+    update footprints; restart PCB
+
+[33mcommit 4f80d5eeeca1de68becd87afe9fcab1c26ed67fd[m
+Author: Joe <joedolina@gmail.com>
+Date:   Mon Sep 25 10:14:05 2023 -0400
+
+    add more plating to IMU mounting holes
+
+[33mcommit 1b24e264f1430cede2aaff15c22b4c50dfabad3e[m
+Author: Joe <joedolina@gmail.com>
+Date:   Thu Sep 14 20:31:49 2023 -0400
+
+    gen PDF
+
+[33mcommit 9cdd38e57d11dc07ba617a63b7acd81d9059f5b3[m
+Author: Joe <joedolina@gmail.com>
+Date:   Thu Sep 14 19:56:41 2023 -0400
+
+    Complete schematic v1; pls ignore PCB
+
+[33mcommit fb46e27a98509c8b2280b2a648d0e5a40849432e[m
+Author: Joe <joedolina@gmail.com>
+Date:   Thu Sep 14 10:10:17 2023 -0400
+
+    v1 pcb layout
+
+[33mcommit dd411912f7f67ee3c751010c959f96c382835522[m
+Author: Joe <joedolina@gmail.com>
+Date:   Tue Sep 12 09:50:31 2023 -0400
+
+    Finish edge cuts; fix DRC
+
+[33mcommit 462eea6cec40c8c5613c54b2cdb65ee63035cbff[m
+Author: Joe <joedolina@gmail.com>
+Date:   Tue Sep 12 09:22:35 2023 -0400
+
+    this is the one with the lib changes - move to another PR at some point?
+
+[33mcommit 14d4fb76665b5787739233b55cae4eb662c8bb58[m
+Author: Joe <joedolina@gmail.com>
+Date:   Tue Sep 12 09:22:07 2023 -0400
+
+    add imu subsheet???
+
+[33mcommit 652f0b13667117f19048997f6a1822d0e35e345b[m
+Author: Joe <joedolina@gmail.com>
+Date:   Tue Sep 12 09:18:37 2023 -0400
+
+    update canhw lib; add caps; route PCB
+
+[33mcommit cbcc7bb6bb240d738d2c753f9c08d5e7c1ed42c0[m
+Author: Joe-Joe-Joe-Joe <joedolina@gmail.com>
+Date:   Wed Sep 6 15:25:23 2023 -0400
+
+    create processor board proj
+
+[33mcommit 7953d5cab264a09648a7f78df75664a60e903a65[m
+Author: jasonskells <jason.skells@uwaterloo.ca>
+Date:   Thu Apr 13 16:03:12 2023 -0400
+
+    fixing the gerber folders
+
+[33mcommit 47bf047001de13240ed939591e21e79a638448fc[m
+Author: jasonskells <jason.skells@uwaterloo.ca>
+Date:   Thu Apr 13 15:54:18 2023 -0400
+
+    adding rev 2 charging board here
+
+[33mcommit 4e5b0bc0b1026529ed2eff063ed3b5344a4cc84f[m
+Author: Rio Liu <rio.liu@r26.me>
+Date:   Thu Apr 13 18:22:04 2023 -0400
+
+    update gps and logger pdf
+
+[33mcommit 1bf4160976ca0205c370ad0e9db7610eef80ea2b[m
+Author: Rio Liu <rio.liu@r26.me>
+Date:   Sun Apr 9 17:02:45 2023 -0400
+
+    fix gps ldo part value
+
+[33mcommit 143a594a8c56b157bc1810141402d807fedff665[m
+Author: Rio Liu <rio.liu@r26.me>
+Date:   Mon Mar 20 17:24:41 2023 -0400
+
+    bump ltt version
+
+[33mcommit 8c38145be1f3ddcfeb72006860303886288f7d03[m
+Author: Rio Liu <rio.liu@r26.me>
+Date:   Sun Mar 19 12:33:21 2023 -0400
+
+    change logger and gps ldo to SPX3819M5-L-3-3, fix ltt nmos symbol
+
+[33mcommit e6f63377461b961ebbdfe0b78fcaf12a5c02853e[m
+Author: Rio Liu <rio.liu@r26.me>
+Date:   Sun Mar 19 12:35:52 2023 -0400
+
+    add wires to full harwin model
+
+[33mcommit 2accc9b60818566aea991e98e75f66dfc429442e[m
+Author: Rio Liu <rio.liu@r26.me>
+Date:   Sun Mar 12 22:52:46 2023 -0400
+
+    add harwin connector 3d models to repo
+    
+    also add full models with the large male connector
+    use compressed stpZ format to reduce size
+
+[33mcommit f53b584b0d40a04b9e66a2dd010884d63c17c33f[m
+Author: jasonskells <jason.skells@uwaterloo.ca>
+Date:   Fri Jan 27 20:49:12 2023 -0500
+
+    fixed a ss issue, generated gerbers. good to fab
+
+[33mcommit 37a992cd56d233c53cf922976a69243cec113741[m
+Author: jasonskells <jason.skells@uwaterloo.ca>
+Date:   Fri Jan 27 10:49:19 2023 -0500
+
+    swapped a 1206 cap on 0805 cap. generated gerbers. changed PN for 5A fuse on schematic. PCB looks good, only change was the footprint swap.
+
+[33mcommit cdcfde7f012a782d9ef981ece3185a2d41c6ca93[m
+Author: jasonskells <jason.skells@gmail.com>
+Date:   Thu Jan 26 23:04:24 2023 -0500
+
+    changed the LED colours and resistor in schematic, moved the readme from the on_pad_charging folder to charging_on_the_pad. No PCB changes were made
+
+[33mcommit 09b10bc00dc0f686277945ad974868b5571260a9[m
+Author: jasonskells <jason.skells@uwaterloo.ca>
+Date:   Wed Jan 25 00:58:45 2023 -0500
+
+    fixed jack's point #5, connecting VCC (always ON) to the connector and not 13V (only ON when 24V is connected)
+
+[33mcommit c3433ad25b66063d20b88a23a94b2cd29df9fe98[m
+Author: jasonskells <jason.skells@uwaterloo.ca>
+Date:   Fri Jan 20 17:40:55 2023 -0500
+
+    all fixes have been made. Issue with the ICH/EN pin has also been fixed (changed the battery charger's CSR and increased charging current to 300mA. Also changed R24 to 220R for BOM count. Ready for last review before fabbing
+
+[33mcommit ad4a335788ff4da7c2acb663150bb6a714150f83[m
+Author: jasonskells <jason.skells@uwaterloo.ca>
+Date:   Fri Jan 20 12:14:16 2023 -0500
+
+    implemented jack's and randy's feedback. currently, the only thing left to do is decide what I will do with an issue regarding the ICH/EN pin.
+
+[33mcommit 7046087c1344bff7e556cf5e2e5d1a1add3e814c[m
+Author: jasonskells <jason.skells@uwaterloo.ca>
+Date:   Tue Jan 17 19:57:30 2023 -0500
+
+    implementing changes from the review
+
+[33mcommit 47e35ff77305b802566bd92f5673883d767e0990[m
+Author: jasonskells <jason.skells@uwaterloo.ca>
+Date:   Mon Jan 16 21:17:35 2023 -0500
+
+    added logo, board name, date and my name to the silk. ready for to be reviewed. :)
+
+[33mcommit 867e5dc74ac0aa7836e756102a7f2644e7d08261[m
+Author: jasonskells <jason.skells@uwaterloo.ca>
+Date:   Mon Jan 16 18:49:13 2023 -0500
+
+    Board layout and routing is finished and ready to be reviewed. I need to add a few things to the silk (logo, project name, etc.).
+
+[33mcommit 2cb7d4ffdccdcfa8f3b0d275b712e257d292ece3[m
+Author: jasonskells <jason.skells@gmail.com>
+Date:   Mon Jan 16 03:40:53 2023 -0500
+
+    board is 95% finished, need to make a few small changes and do via stitching, and then fix the silkscreen.
+
+[33mcommit 36e4e9d7f088fbdc2cfb255e3ac173b9ff08dc94[m
+Author: jasonskells <jason.skells@uwaterloo.ca>
+Date:   Sat Jan 14 03:33:12 2023 -0500
+
+    component placement finished, working on routing
+
+[33mcommit fdd29bc3062cb446a6b912bf09e50dc36334e23d[m
+Author: jasonskells <jason.skells@gmail.com>
+Date:   Fri Jan 13 02:03:56 2023 -0500
+
+    Still WIP, layout will be completed soon
+
+[33mcommit fe9b1210ec4ff1839d4206390aa8238e35b593cf[m
+Author: jasonskells <jason.skells@uwaterloo.ca>
+Date:   Wed Jan 11 23:19:55 2023 -0500
+
+    Still WIP, uploading to my desktop
+
+[33mcommit 9a399943fed31c4359df4e6360dd226414a79941[m
+Author: jasonskells <jason.skells@uwaterloo.ca>
+Date:   Mon Jan 9 14:00:45 2023 -0500
+
+    updating lauout, still a work  in pogress
+
+[33mcommit c07095b529e5704798ed9c967a362420641d65f4[m
+Author: jasonskells <jason.skells@gmail.com>
+Date:   Sun Jan 8 11:35:17 2023 -0500
+
+    WIP - updating git to move the project to my laptop
+
+[33mcommit 78995414a352c77060ccf01fac5e367f283ef768[m
+Author: jasonskells <jason.skells@gmail.com>
+Date:   Sun Dec 25 23:14:35 2022 -0500
+
+    Swapped the battery charger and mosfets for ones that are more easily soldered
+
+[33mcommit 940c5ca703d376ba1f509297e4732769f5b4c3f4[m
+Author: jasonskells <jason.skells@gmail.com>
+Date:   Sun Nov 27 17:59:53 2022 -0800
+
+    Implemented changes from previous PR and other architectural decisions made in #electrical
+
+[33mcommit c92f8a8bdcc5565e99000db91ab4f16b4b6fe5c2[m
+Author: jasonskells <jason.skells@gmail.com>
+Date:   Thu Nov 17 01:40:21 2022 -0800
+
+    Possibly fixing a not saved properly error
+
+[33mcommit 0b66a95310c871a2f1b0f8b1c0b0616315dcf6c8[m
+Author: jasonskells <jason.skells@gmail.com>
+Date:   Tue Nov 15 02:35:04 2022 -0800
+
+    Annotated schematic, added part numbers for diodes and fets, removed the LTC4414 ideal diode source selector and replaced it with a diode OR circuit.
+
+[33mcommit cc1139b297d23ad28afe2d3382f01accbd3e96c4[m
+Author: jasonskells <jason.skells@gmail.com>
+Date:   Mon Nov 14 04:03:51 2022 -0800
+
+    Functionally finished schematic (I need to confirm some values for resistor, caps and inductors).
+
+[33mcommit c9040dbd97ce165f27e4b52bee12042cad4f4ab3[m
+Author: jasonskells <jason.skells@gmail.com>
+Date:   Sun Oct 30 16:55:26 2022 -0700
+
+    wip
+
+[33mcommit 985c81fe3ba814722896517c924a079570b818f7[m
+Author: Lana Tomlin <lana.motom@gmail.com>
+Date:   Thu Sep 15 22:22:09 2022 +0200
+
+    initial commit
+
+[33mcommit 86d4d936b9d3965b76f2df140b9336677d3b5ae0[m
+Author: eliaskountouris <eliaskountouris9@gmail.com>
+Date:   Thu Jan 26 22:32:47 2023 -0500
+
+    Added Gerbers
+
+[33mcommit 2ceb0c54c99ab2f2daf2ba3beff511b3900ade03[m
+Author: Rio Liu <rio.liu@r26.me>
+Date:   Wed Jan 18 20:00:20 2023 -0500
+
+    update routing
+
+[33mcommit 06e0d3fb96e9fe57fa2c6534c0bce8571c2177d0[m
+Author: Rio Liu <rio.liu@r26.me>
+Date:   Tue Jan 17 20:32:21 2023 -0500
+
+    update routing
+
+[33mcommit 47c0502dedfcf903f42a675f5b082ccf641a0f97[m
+Author: Rio Liu <rio.liu@r26.me>
+Date:   Mon Jan 16 20:18:59 2023 -0500
+
+    update routing
+
+[33mcommit 169c6ee53198007a3833ee5330b6ada74d44af21[m
+Author: Rio Liu <rio.liu@r26.me>
+Date:   Mon Jan 16 20:15:13 2023 -0500
+
+    update some silkscreen locations
+
+[33mcommit 40e91cf729b1b8dc8c55c86a69e11faf469ab2fb[m
+Author: Rio Liu <rio.liu@r26.me>
+Date:   Sun Jan 15 10:42:41 2023 -0500
+
+    flip radio connector and add logo
+
+[33mcommit 0fe18fda38003fac89258b08c982d11190f3ab6a[m
+Author: Rio Liu <rio.liu@r26.me>
+Date:   Sat Jan 14 15:43:37 2023 -0500
+
+    route pcb
+
+[33mcommit 8b1f198b197f920a9ea992738f165d7a01c56ea0[m
+Author: Rio Liu <rio.liu@r26.me>
+Date:   Thu Jan 12 22:07:12 2023 -0500
+
+    update layout
+
+[33mcommit 9213e723bdbc28b85d6146f4676427f258906ca9[m
+Author: Rio Liu <rio.liu@r26.me>
+Date:   Thu Jan 12 21:53:11 2023 -0500
+
+    new ltt layout
+
+[33mcommit 4a9d1c0aedc8a83e5714afb180b4180454b82c2d[m
+Author: Joe <domenichampson@gmail.com>
+Date:   Thu Dec 29 12:58:25 2022 -0500
+
+    Updated cap values
+
+[33mcommit 0352b969901b35d5480db203c40b0160bb2595c9[m
+Author: Joe <domenichampson@gmail.com>
+Date:   Fri Dec 23 13:54:50 2022 -0500
+
+    Addressed remaining comments, unsure about caps for U3. Datasheet was unclear
+
+[33mcommit 439d86ae4efa59f1544cadce7f364dafa5a97daf[m
+Author: Joe <domenichampson@gmail.com>
+Date:   Thu Dec 22 17:27:16 2022 -0500
+
+    Addressed comments
+
+[33mcommit 7161e2629b5d0925735605d1e780bb9310f75e7f[m
+Author: Joe <domenichampson@gmail.com>
+Date:   Thu Dec 8 17:50:49 2022 -0500
+
+    Addressed comments, radio pinout looks ok will double check in person tomorrow
+
+[33mcommit 1e95cffd93359cbe017c6b433c9b929067b8ad6e[m
+Author: Joe <domenichampson@gmail.com>
+Date:   Wed Nov 30 12:54:23 2022 -0500
+
+    Added new diodes
+
+[33mcommit 1f87b7bbf7479e22be061d1d9cc756637cc16648[m
+Author: Joe <domenichampson@gmail.com>
+Date:   Tue Nov 29 23:56:31 2022 -0500
+
+    added dual diode to control board reset with radio gpio
+
+[33mcommit 227ac3ff187e8937f02fc21a816aac744d02d04e[m
+Author: Joe <domenichampson@gmail.com>
+Date:   Wed Nov 16 22:36:32 2022 -0500
+
+    Updated LTT to only provide power to its own radio
+
+[33mcommit 58b71713e3cd74856da931eb2454b07612384f52[m
+Author: rdakhil <randdakhil20@gmail.com>
+Date:   Fri Jan 27 00:01:16 2023 -0500
+
+    add plating to IMU breakout board standoffs
+
+[33mcommit ca8276ceaa081d499d1e9d67d323bd31831e4081[m
+Author: rdakhil <randdakhil20@gmail.com>
+Date:   Thu Jan 26 19:55:37 2023 -0500
+
+    move programming connector & components further from holes
+
+[33mcommit e5afbcb1481aadf9824ebe8f34512083b9b57cc1[m
+Author: rdakhil <randdakhil20@gmail.com>
+Date:   Thu Jan 26 00:18:34 2023 -0500
+
+    address reviews, generate gerbers
+
+[33mcommit ca8e01e770315b4aaea7f66bf0de1a8977a95f6f[m
+Author: rdakhil <randdakhil20@gmail.com>
+Date:   Wed Jan 25 02:00:14 2023 -0500
+
+    address layout/routing reviews
+
+[33mcommit 40cb45abb15519c950c5174489811e53c19a0943[m
+Author: rdakhil <randdakhil20@gmail.com>
+Date:   Tue Jan 24 10:51:24 2023 -0500
+
+    minor fixes to PCB
+
+[33mcommit a9e1b32ca981d950abf7de80376621c8663009b7[m
+Author: rdakhil <randdakhil20@gmail.com>
+Date:   Tue Jan 24 10:24:41 2023 -0500
+
+    add some labels for IMU breakout
+
+[33mcommit 26082621d60d1d05cd01b44bb77ce1cc06a88ae8[m
+Author: rdakhil <randdakhil20@gmail.com>
+Date:   Tue Jan 24 01:18:46 2023 -0500
+
+    finish layout + routing
+
+[33mcommit 34a36a3b67c4f0f9819b2a6768e2e21a7c3ab01b[m
+Author: rdakhil <randdakhil20@gmail.com>
+Date:   Mon Jan 23 00:23:18 2023 -0500
+
+    inital layout + routing, need to clean up and place test points
+
+[33mcommit 7feed651bc81b2d332b7c55d51a7c8436037e328[m
+Author: Artem Sotnikov <artemis.sotnikov12@gmail>
+Date:   Thu Jan 12 22:53:46 2023 -0500
+
+    Re-add all lib changes, clean up shcematic for missing library references
+
+[33mcommit 97276526385490ed45c95b5f3b0cd7f45c37f8e0[m
+Author: Artem Sotnikov <artemis.sotnikov12@gmail>
+Date:   Thu Jan 12 22:03:50 2023 -0500
+
+    Preparing rebase
+
+[33mcommit 3e4206f68033e4d3448f21a037a18dc5e5f2fa30[m
+Author: Artem Sotnikov <artemis.sotnikov12@gmail>
+Date:   Thu Jan 12 21:08:25 2023 -0500
+
+    Clean up some outstanding PR comments
+
+[33mcommit 8678431761d483b86e578003f59c1c3b63f91df0[m
+Author: Artem Sotnikov <artemis.sotnikov12@gmail>
+Date:   Thu Jan 12 02:01:18 2023 -0500
+
+    Finish addressing PR comments
+
+[33mcommit 453882842a545e99f8b3faa776c9e0071000a08d[m
+Author: Artem Sotnikov <artemis.sotnikov12@gmail>
+Date:   Wed Jan 11 03:04:48 2023 -0500
+
+    Continue addressing PR comments
+
+[33mcommit 9050483cf1a1d7d6465931e176b443e5cd798961[m
+Author: Artem Sotnikov <artemis.sotnikov12@gmail>
+Date:   Tue Jan 10 01:44:22 2023 -0500
+
+    Begin addressing PR comments
+    
+    Added values, replaced 5->3.3regulator, added decoupling caps, fixed barometer address, accommodated 3-pin connectors, added LEDs, addedd interrupt pin, changed inductor formatting
+
+[33mcommit 8497529b7286d6bd41765e0284f3a2613b36b6e6[m
+Author: Artem Sotnikov <artemis.sotnikov12@gmail>
+Date:   Sun Jan 8 23:58:55 2023 -0500
+
+    Generate new pdf (keep old one for reference; remove after PR)
+
+[33mcommit da0c74463b2631f15aea02822f08772f861e3d26[m
+Author: Artem Sotnikov <artemis.sotnikov12@gmail>
+Date:   Sun Jan 8 23:54:42 2023 -0500
+
+    Clean up schematic, add trims on bridge legs
+
+[33mcommit 714b73d5bf1772087bf250369134b1bf6e67ac3e[m
+Author: Artem Sotnikov <artemis.sotnikov12@gmail>
+Date:   Sun Jan 8 23:25:15 2023 -0500
+
+    Clean up the festering cesspool that was the minisensor folder
+
+[33mcommit c07a0d0ec002ab58fb37a8ebca7167f2b882ef17[m
+Author: Artem Sotnikov <artemis.sotnikov12@gmail>
+Date:   Sun Nov 13 21:45:44 2022 -0500
+
+    Added Test Points For the People
+
+[33mcommit 7a01bc8caba5b34f1c0b27e2f01eccd92bbc8626[m
+Author: Artem Sotnikov <artemis.sotnikov12@gmail>
+Date:   Sun Nov 13 21:01:40 2022 -0500
+
+    Finish digital sensors schematic
+
+[33mcommit 077f87f19948954ac617045a648e2bc675b82456[m
+Author: Artem Sotnikov <artemis.sotnikov12@gmail>
+Date:   Sun Nov 13 18:33:57 2022 -0500
+
+    Finish Analog Sensors Schematic
+
+[33mcommit b3666b60c404e4a50c8169549c4457dac0f64567[m
+Author: AesthicEthics <thakuraryan377@gmail.com>
+Date:   Thu Nov 10 22:05:40 2022 -0500
+
+    ICM-20948
+
+[33mcommit 837a31f60fdceb740fe9256e40ac07f075fbc878[m
+Author: Joe-Joe-Joe-Joe <joedolina@gmail.com>
+Date:   Fri Dec 23 16:18:06 2022 -0500
+
+    Move old libs back to root directory
+
+[33mcommit d28f099c3164ec9380248ce5204b5d68a9b64e57[m
+Author: Joe-Joe-Joe-Joe <joedolina@gmail.com>
+Date:   Fri Dec 23 16:12:15 2022 -0500
+
+    add canhw v6 lib
+
+[33mcommit 3f7efbd2ba123cd67069c6c0ff20bd792fcc6a6c[m
+Author: Joe-Joe-Joe-Joe <joedolina@gmail.com>
+Date:   Fri Dec 23 16:11:44 2022 -0500
+
+    delete canhw v6 lib
+
+[33mcommit a9c1ad10aef44107a59fcc73a800a4eb7808702a[m
+Author: Joe-Joe-Joe-Joe <joedolina@gmail.com>
+Date:   Fri Dec 23 16:05:50 2022 -0500
+
+    Add TCAN1042 symbol
+
+[33mcommit bf641d9d604b833c38bafc1cf97866c1da07521e[m
+Author: Joe-Joe-Joe-Joe <joedolina@gmail.com>
+Date:   Fri Dec 23 15:55:53 2022 -0500
+
+    Generate v6 symbol libs; move old symbol libs to archive
+
+[33mcommit 002fc6d27d809cd1facc393c0cea4386181c00a8[m
+Author: Joe-Joe-Joe-Joe <joedolina@gmail.com>
+Date:   Mon Sep 26 06:23:02 2022 -0400
+
+    Add v6 lib format and TCAN1042 transciever
+
+[33mcommit f0a423bbc407e4f85c6de9d831145ae7e8a01437[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Tue Mar 8 20:05:35 2022 -0500
+
+    Increase power rail track size for LTB, update dates on silkscreens
+
+[33mcommit 9436ed0c07967f8ab3dfce63d1d0fb6ed8e77cf6[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Tue Mar 8 01:22:52 2022 -0500
+
+    Increase power rail tracks for LTT and LTR
+
+[33mcommit 08d5ea0be3839250e047a848dca6b6511f9d2f14[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Sun Mar 6 17:08:09 2022 -0500
+
+    Add gerbers for LTT, LTR, and LTB
+
+[33mcommit 5ad3669ed25f03422dd2c11c7d62456e81f45d92[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Sat Mar 5 11:34:15 2022 -0500
+
+    Address PR comments about clearances
+
+[33mcommit 053830fefacd84d56b921379660df82500d80bc7[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Thu Feb 24 21:27:51 2022 -0500
+
+    Update silkscreen dates and L1 routing on LTT
+
+[33mcommit 2b473678607c74b2c1b3f8d062cfccec20f4aba3[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Mon Feb 21 18:10:40 2022 -0500
+
+    Update LTT and LTR routing based on PR comments
+
+[33mcommit f13411e7914d761c29e784a44eb19dbfffdaaaf3[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Wed Jan 26 16:31:43 2022 -0500
+
+    Move J1 silkscreen and generate gerbes/drill files
+
+[33mcommit ddd4b379a1d6762a1f5942934b2080572bb89137[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Tue Jan 25 15:29:59 2022 -0500
+
+    Update Voltage Translator Component and Re-route
+
+[33mcommit 7491f5ff37e8b5fe0c7491c83a4a70a2561118e7[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Mon Jan 24 23:48:53 2022 -0500
+
+    Address PR comments
+
+[33mcommit aa9ab28fb9e91762fb2ec8f89b87de315b1c5d6b[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Fri Dec 24 22:16:04 2021 -0600
+
+    Update LTB for LTS V2
+
+[33mcommit b7dbba68421ebe640ff5ad6a4a5ee267db6716b8[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Sun Dec 5 16:17:25 2021 -0800
+
+    Add LTT and LTR Gerbers
+
+[33mcommit 0fe9083a1aebe11eb32e97401f4e48e048ecca87[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Sun Dec 5 16:01:38 2021 -0800
+
+    Remove unnecessary 5V and GND traces on opposing sides
+
+[33mcommit 11b8efbfef04e901cf585105249ff2d319d6e8be[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Mon Nov 29 19:45:43 2021 -0800
+
+    Update 3.3V LDO Part Num
+
+[33mcommit d74a78f0ea6f599749447509f61312b757289e21[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Sun Nov 28 16:35:19 2021 -0800
+
+    Address group PR comments
+
+[33mcommit 059137754eded05acfcf36d299bfb1f1b3e1f9e7[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Sat Nov 27 21:16:47 2021 -0800
+
+    Update routing from Jack and Chamath reviews
+
+[33mcommit 3fd83bb232263f4256200ab0181f3602131c4cd7[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Thu Nov 4 22:57:44 2021 -0700
+
+    Add first routing attempt for LTR
+
+[33mcommit bf78bb244430d3454484513bf426d067fe2b384e[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Wed Nov 3 22:46:33 2021 -0700
+
+    Address Jack's PR comments
+
+[33mcommit 2aee73bc5c2e2d11942a800c5f8ad05531fdcef6[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Wed Nov 3 00:11:10 2021 -0700
+
+    Finish inital routing for LTT
+
+[33mcommit c033eba309af8330a4e3e573a9e6f26404953a77[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Mon Nov 1 21:17:56 2021 -0700
+
+    1st pass routing complete with slight modifications needed
+
+[33mcommit 7f268938c02a4e6ddbe837b124d1d2ab6000c95a[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Sun Oct 31 22:02:39 2021 -0700
+
+    Add some initial LTT routing
+
+[33mcommit 27b43b8e0df69aaf9c94bbe76a48e4c6f46d001a[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Mon Oct 11 21:15:51 2021 -0700
+
+    Update LTT first pass layout
+
+[33mcommit 3cf01ba9e4f8426e0c16aec2ee94064b3cca52d8[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Wed Oct 6 22:00:45 2021 -0700
+
+    Update LTR layout and add some silkscreens
+    
+    Note:
+    - layout definitely subject to change when routing
+    - Still a few odd silkscreens, test points, and mount holes to add but the majority of things are there
+
+[33mcommit 0f64b423999f5fc1894a7bba16129fbd10c2a415[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Wed Oct 6 20:57:13 2021 -0700
+
+    Initial rough layout of LTR
+
+[33mcommit fd70c83878ebe5ca5b343c5d01148a49f1a80ba9[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Tue Oct 5 23:11:49 2021 -0700
+
+    Add footprint for LTR MCU
+
+[33mcommit b64bd59b32632531187a98788fa5a3c2477eb9b9[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Mon Oct 4 23:04:46 2021 -0700
+
+    Update LTR PIC to new part #
+
+[33mcommit d52d397893ca6ba08ffe7240489f284e43b6421a[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Sun Oct 3 21:17:29 2021 -0700
+
+    Update radio schematics and set foot print associations
+
+[33mcommit 2dd42d0ab4bad7dba566e3787b6f7bb993f03581[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Sun Oct 3 19:55:48 2021 -0700
+
+    Address PR comments and add in missing part #'s
+
+[33mcommit ef0fec585d7c176ec0d24912e02527bb1a115eab[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Mon Sep 27 22:30:22 2021 -0700
+
+    Add back LTR power.sch with battery connection, label symbols
+
+[33mcommit be978d840de97867be829903aac130526a553bec[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Mon Sep 27 21:32:47 2021 -0700
+
+    Add placeholder LDOs for LTT and LTR
+
+[33mcommit eefdcd2826797004e1e6532f59a89cd4c26b6ca1[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Mon Sep 27 21:22:20 2021 -0700
+
+    remove unused power.sch for LTR
+
+[33mcommit a5a2e676e90e9fa2d6b31dc2ab55d83c65c951fe[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Mon Sep 27 21:21:30 2021 -0700
+
+    Add radios and label LTT and LTR
+
+[33mcommit 40cd9c62ded3050e54f36f58bd5ab1d4d6b69398[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Wed Sep 1 19:46:45 2021 -0400
+
+    Remove unused parts from LTS and add in new LTR MCU
+
+[33mcommit c13b151be09824703bcd703b86ca14b90c4b5ba9[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Sun Jul 25 21:42:18 2021 -0400
+
+    Add LTR PIC and update LTR LDO
+
+[33mcommit f386ca13e93026b7490ea8a56b7e6d0a04067fad[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Tue Jul 20 21:52:46 2021 -0400
+
+    Remove old/replaced components for LTT and LTR
+
+[33mcommit c685154474f812043ce1e7ad5d1074c25f0c6d9b[m
+Author: BluCodeGH <22122986+BluCodeGH@users.noreply.github.com>
+Date:   Thu Feb 3 15:40:55 2022 -0500
+
+    Update gerbers to include reference designators
+
+[33mcommit b1f0ebfe666f9319ddd2527d42bc67c7cc504d0f[m
+Author: BluCodeGH <22122986+BluCodeGH@users.noreply.github.com>
+Date:   Thu Feb 3 14:34:23 2022 -0500
+
+    Actually add the silkscreen to the commit
+
+[33mcommit 4153137f90c2811d0c6d2be571afda29d025d2f8[m
+Author: BluCodeGH <22122986+BluCodeGH@users.noreply.github.com>
+Date:   Thu Feb 3 14:33:14 2022 -0500
+
+    Fix silkscreen overline broken by kicad 6, regernate gerbers
+
+[33mcommit 3148eebbd15cccaa1cab34b3b296c016c1aed0dc[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Sun Jan 16 11:13:55 2022 -0500
+
+    Make sure everything is up to date and update schematic PDF
+
+[33mcommit b5a818f09e3c7da9ade2194a0928ebe2ebd96fc5[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Mon Dec 27 19:45:08 2021 -0500
+
+    Add new 5V regulator PNs
+
+[33mcommit f21987484cf88e536cf967f280f80bfe8f5d5da3[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Thu Dec 9 22:59:44 2021 -0500
+
+    Fix silkscreen and mounting holes
+
+[33mcommit 06bc4dca24acb1058e9dfef78b5c8e0182382faa[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Thu Dec 9 22:06:29 2021 -0500
+
+    update mag switch footprints and uprev board to V2.1
+
+[33mcommit 02227e3a8c42450e45b0f991ea5d8ab72387e037[m
+Author: BluCodeGH <22122986+BluCodeGH@users.noreply.github.com>
+Date:   Thu Feb 3 15:37:28 2022 -0500
+
+    Update gerbers for SMT assembly
+
+[33mcommit adfe97a5b43075cfcc8be8e21380ab0d91c6754a[m
+Author: Elias Kountouris <eliaskountouris9@gmail.com>
+Date:   Sat Jan 29 17:05:48 2022 -0500
+
+    Updated Silksreen
+
+[33mcommit 5d92a5fb4673cad2293ec1fbe2624dbbc3a9838f[m
+Author: Elias Kountouris <eliaskountouris9@gmail.com>
+Date:   Sat Jan 29 11:29:22 2022 -0500
+
+    Cleanup
+
+[33mcommit a69d08de809fb89492d732660c45920c5fca652c[m
+Author: Elias Kountouris <eliaskountouris9@gmail.com>
+Date:   Fri Jan 28 10:39:54 2022 -0500
+
+    Clean Up
+
+[33mcommit 1a823515b4d733a75e72089122b75c4e6d64edd8[m
+Author: Elias Kountouris <eliaskountouris9@gmail.com>
+Date:   Thu Jan 27 21:24:56 2022 -0500
+
+    Clean Up
+    
+    Removed old files
+    Cleaned up Schematics
+    Created new PDFs
+
+[33mcommit 71e2e5fb131302cdf013cff923531458356700a7[m
+Author: Elias Kountouris <eliaskountouris9@gmail.com>
+Date:   Tue Jan 25 22:28:43 2022 -0500
+
+    spaced out components
+
+[33mcommit f332320a12b94e19f618dd73904510259ce3c264[m
+Author: Elias Kountouris <eliaskountouris9@gmail.com>
+Date:   Fri Jan 14 22:56:08 2022 -0500
+
+    Aesthetic changes
+    
+    Fixed overlapping vias and silkscreens, ugly tracks
+
+[33mcommit 359109aafdbd7a09f57f45b6e0168ae7758bbdc4[m
+Author: Elias Kountouris <eliaskountouris9@gmail.com>
+Date:   Fri Jan 14 22:10:31 2022 -0500
+
+    Fixed GND and +3V3 tracks
+
+[33mcommit 5b73a99d806ef82b36c70e0db5f52fb315795ee7[m
+Author: Elias Kountouris <eliaskountouris9@gmail.com>
+Date:   Mon Jan 10 18:00:01 2022 -0500
+
+    Updated PCB
+    
+    modified tracks so +3V3 and GND were on respective sides
+
+[33mcommit a7a2e32194051d289441856eb6d7b9acafcab690[m
+Author: Elias Kountouris <eliaskountouris9@gmail.com>
+Date:   Wed Jan 5 13:11:42 2022 -0500
+
+    Changed minisensor pcb
+
+[33mcommit bda8b28ec37ba85a58559063cee45880c2b7bbb8[m
+Author: Elias Kountouris <eliaskountouris9@gmail.com>
+Date:   Mon Dec 27 13:09:57 2021 -0500
+
+    Updated TestPoint footprint
+
+[33mcommit 0ecd8ae57ac75066adbd63e273c64cfa171dd87f[m
+Author: Elias Kountouris <eliaskountouris9@gmail.com>
+Date:   Sun Dec 26 23:20:31 2021 -0500
+
+    Updated MiniSensor PCB
+    
+    Added testpoints for SCL, SDA, INT_IMU, INT_MAG, THERM_0 and TANK_PREASURE Lines
+    Switched IMU to MPU-6050
+    Changed most of the 6 mil tracks on previous design to 8 tracks
+
+[33mcommit 586cbb7a1d4e1b2dd01502a9b0b8e9ccbf41c5c7[m
+Author: Elias Kountouris <eliaskountouris9@gmail.com>
+Date:   Mon Dec 20 10:17:02 2021 -0500
+
+    Small layout changes
+
+[33mcommit a596c3ac43bde99ad4015adbd677c1365a30d358[m
+Author: Elias Kountouris <eliaskountouris9@gmail.com>
+Date:   Sun Dec 12 15:15:02 2021 -0500
+
+    Cleaned up schematic
+
+[33mcommit 922005147dd3e9273aa5eb7c2de4fcd7811b0f6d[m
+Author: Elias Kountouris <eliaskountouris9@gmail.com>
+Date:   Sat Dec 11 22:43:05 2021 -0500
+
+    Fixed typo
+
+[33mcommit e509cd66fcb029d6bd1898b1a9ff4ffa3746a6b9[m
+Author: Elias Kountouris <eliaskountouris9@gmail.com>
+Date:   Sat Dec 11 22:35:11 2021 -0500
+
+    Changed IMU to MPU-6050
+    
+    Removed ICM-20789 from schematic / symbol library, replaced it with MPU-6050
+
+[33mcommit 9f81ea1c5fba5db5d84da6916d37a6a2aa7b1449[m
+Author: Elias Kountouris <eliaskountouris9@gmail.com>
+Date:   Sat Dec 11 22:22:37 2021 -0500
+
+    Changed IMU to MPU-6050
+
+[33mcommit 35ad53bd1c77901cb85b3530369e4fa5e0c2f524[m
+Author: Elias Kountouris <eliaskountouris9@gmail.com>
+Date:   Fri Dec 10 18:03:10 2021 -0500
+
+    Cleaned up schematic
+    
+    Relabbeled pin 20 (NC) on ICM-20289 to RSV
+    Cleaned up digital_sense schematic
+
+[33mcommit 5f3e585e000f79c91c59c817422ccfe7ba6dbe7e[m
+Author: Elias Kountouris <eliaskountouris9@gmail.com>
+Date:   Thu Dec 9 22:12:04 2021 -0500
+
+    Added LDO to MiniSensor
+
+[33mcommit 6b9f61e16fe78298bd84ad8a67717f5366eac717[m
+Author: Elias Kountouris <eliaskountouris9@gmail.com>
+Date:   Sun Nov 21 17:45:43 2021 -0500
+
+    Changed minisensor IMU to ICM-20789
+
+[33mcommit b93fdb63a8db9a3b8e06b2db407f942428c5031d[m
+Author: BluCodeGH <22122986+BluCodeGH@users.noreply.github.com>
+Date:   Tue Jan 4 22:49:20 2022 -0500
+
+    Update gerbers
+
+[33mcommit 3eb51693415ad47fdb3694843874c144efa131bc[m
+Author: BluCodeGH <22122986+BluCodeGH@users.noreply.github.com>
+Date:   Tue Jan 4 22:46:21 2022 -0500
+
+    Rename jumpers to say what they do
+
+[33mcommit 5a93748f6d9a7da33050ad9848cfe51dfa575791[m
+Author: BluCodeGH <22122986+BluCodeGH@users.noreply.github.com>
+Date:   Tue Jan 4 22:43:11 2022 -0500
+
+    Fix folder structure
+
+[33mcommit 67681c349b5287b4251f296b07cf975a88f21bca[m
+Author: BluCodeGH <22122986+BluCodeGH@users.noreply.github.com>
+Date:   Thu Dec 9 23:30:34 2021 -0500
+
+    Update pdf, generate gerbers
+
+[33mcommit 70bf31bb6b8e230cac53b42bf622c23a5b236e5b[m
+Author: BluCodeGH <22122986+BluCodeGH@users.noreply.github.com>
+Date:   Sun Dec 5 22:11:34 2021 -0500
+
+    Add silkscreen labels, terminating resistor
+
+[33mcommit fa8c6bcb87924ecbef8e133852d1f9825c5e6267[m
+Author: BluCodeGH <22122986+BluCodeGH@users.noreply.github.com>
+Date:   Tue Jan 4 22:41:03 2022 -0500
+
+    Update schematic title blocks, pdf and gerber files
+
+[33mcommit ebd7dfc627e5eb9802c296516f3600a8d029f80e[m
+Author: BluCodeGH <22122986+BluCodeGH@users.noreply.github.com>
+Date:   Thu Dec 23 17:28:50 2021 -0500
+
+    Update for 100V/V ina180
+
+[33mcommit bf36a0d9dcf5ebd088738215a0f066031543662c[m
+Author: BluCodeGH <22122986+BluCodeGH@users.noreply.github.com>
+Date:   Thu Dec 23 12:35:29 2021 -0500
+
+    Fix CAN connector pinout, various part values
+
+[33mcommit 6d361e9a9d039d94dc81805ad450127b6d8f7ba5[m
+Author: Zachary Teper <zachary.teper@gmail.com>
+Date:   Tue Jul 13 12:33:28 2021 -0400
+
+    Add LED colour labels, generate drill files
+
+[33mcommit 3c195be3d70d66246ba58b7caf69f1bd850d218f[m
+Author: Zachary Teper <zachary.teper@gmail.com>
+Date:   Fri Jul 2 22:22:07 2021 -0700
+
+    Add Gerber files to the PiCAM project
+
+[33mcommit 9128b2698e18585e6cc579f00aab237e334682e5[m
+Author: Zachary Teper <zachary.teper@gmail.com>
+Date:   Wed Jun 23 15:13:37 2021 -0400
+
+    Fix routing and implement Lana's comments
+
+[33mcommit 4f7978db98894b68d96080163ca55dbbfed993ff[m
+Author: Zachary Teper <zachary.teper@gmail.com>
+Date:   Wed Jun 9 17:47:16 2021 -0400
+
+    Add gate resistor and redo some routing
+
+[33mcommit f3571b0fbb1796e444a5c3486046fceb1d0a1a5a[m
+Author: Zachary Teper <zachary.teper@gmail.com>
+Date:   Sun Jun 6 17:24:58 2021 -0400
+
+    Rotate CAN connector 180 degrees
+
+[33mcommit ec979491ce0b2c77435afce889bd91d2e898219c[m
+Author: Zachary Teper <zachary.teper@gmail.com>
+Date:   Sun Jun 6 17:15:56 2021 -0400
+
+    Fix AOD417 wiring
+
+[33mcommit 168cac0d7fa9347da3f08cfa6d737d1fd07d4fbe[m
+Author: Zachary Teper <zachary.teper@gmail.com>
+Date:   Sun Jun 6 13:26:41 2021 -0400
+
+    Add PCB layout PDF of PiCAM board
+
+[33mcommit 8293cd5113189d3e986d0febbb30338462f50dc0[m
+Author: Zachary Teper <zachary.teper@gmail.com>
+Date:   Sun Jun 6 12:11:04 2021 -0400
+
+    Finished initial PCB layout for PiCAM board
+
+[33mcommit f9ae243cb32a0b965718476d53c80e20553d4c48[m
+Author: Zachary Teper <zachary.teper@gmail.com>
+Date:   Sun Jun 6 11:50:01 2021 -0400
+
+    Route GND and +5V traces for the PiCAM board
+
+[33mcommit 7fcf1c0a5b5b5c865a885f8630fd8aafc0f11be9[m
+Author: Zachary Teper <zachary.teper@gmail.com>
+Date:   Sun Jun 6 11:22:16 2021 -0400
+
+    Set design rules and layers for the PiCAM board
+
+[33mcommit 5b6a60d7e1811aa1a3c76a5dd688a33a9c2ed304[m
+Author: Zachary Teper <zachary.teper@gmail.com>
+Date:   Sat Jun 5 15:26:20 2021 -0400
+
+    Complete initial PCB layout for PiCAM board
+
+[33mcommit c019e4089db558ee9f0d2ca4f34dbf23ea4b5a7c[m
+Author: Zachary Teper <zachary.teper@gmail.com>
+Date:   Sat Jun 5 12:39:55 2021 -0400
+
+    Finish editing schematic for the PiCAM board
+
+[33mcommit e0d264a9db661a916ee909dcee39f64cd446f8f8[m
+Author: Zachary Teper <zachary.teper@gmail.com>
+Date:   Fri Jun 4 17:29:28 2021 -0400
+
+    Remove "picam_brd" folder
+
+[33mcommit 414f1702de13909f3833d9df51a7c33be702cab2[m
+Author: Zachary Teper <zachary.teper@gmail.com>
+Date:   Fri Jun 4 17:20:02 2021 -0400
+
+    Change folder name to "picam"
+
+[33mcommit b762b21aeb34bde7a1db56e5ebf68b752ff2d5ed[m
+Author: Zachary Teper <zachary.teper@gmail.com>
+Date:   Sat May 29 13:34:09 2021 -0400
+
+    Implement some fixes to the PiCAM board schematic.
+
+[33mcommit d7e8007031ef9601a3d8d5254b1859ba7a9d250e[m
+Author: Zachary Teper <zachary.teper@gmail.com>
+Date:   Fri May 28 11:41:49 2021 -0400
+
+    Finish the initial design of the PiCAM board schematic.
+
+[33mcommit 9602a2731d379b23e9f98badb5206885e56df6c4[m
+Author: Zachary Teper <zachary.teper@gmail.com>
+Date:   Mon May 17 12:52:04 2021 -0400
+
+    Repair "rescued" symbols
+
+[33mcommit 71cb43709d8a3df7f98328928d158416e0434143[m
+Author: Esha Shah <67078410+Eshah7@users.noreply.github.com>
+Date:   Sun May 16 10:07:07 2021 -0400
+
+    Updated Schematic
+
+[33mcommit cebbfdd96d79026f0adf60a1bde30228d5c7ed44[m
+Author: Esha Shah <67078410+Eshah7@users.noreply.github.com>
+Date:   Sun Apr 11 12:45:09 2021 -0400
+
+    Updated LED lights on Schematic
+
+[33mcommit 197534f40464ba429d1013f7a1dde854f30a00cf[m
+Author: Esha Shah <67078410+Eshah7@users.noreply.github.com>
+Date:   Sun Mar 21 13:34:03 2021 -0400
+
+    Uploaded Current KiCad files of the PiCam Board
+
+[33mcommit 90d8de2490938a59fd28e8a282cfde754c23cf3b[m
+Author: unknown <sineadazam7@gmail.com>
+Date:   Tue Jun 1 10:25:41 2021 -0400
+
+    moved print so it's not on top of metal
+
+[33mcommit 12c1e0a187ae247b8d40259b0b85fa14b4a7fcc1[m
+Author: unknown <sineadazam7@gmail.com>
+Date:   Mon May 31 19:18:43 2021 -0400
+
+    renamed vent to actuator
+
+[33mcommit 8b3dd71d57e3054b6041630e6d7025e9614d720a[m
+Author: unknown <sineadazam7@gmail.com>
+Date:   Fri May 28 14:20:24 2021 -0400
+
+    renamed vent to actuator
+
+[33mcommit abfadc7b4a55938050e6143e96f45bac1b3c5161[m
+Author: Wendi <wendi.yu@yahoo.ca>
+Date:   Sat Apr 3 15:44:41 2021 -0600
+
+    Switch CAN and HALL pins
+
+[33mcommit 3906b35e3d116a14d524c0e4a29f0b8325218fff[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Tue Feb 16 04:28:25 2021 -0500
+
+    Add Jumper Lables and fix 5V supply to draw strait from bus.
+
+[33mcommit 14af698d12ba23c35f765ea8b32f2dc66560e44e[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Tue Feb 16 02:48:20 2021 -0500
+
+    Create Rev 2.1 of Vent board including thicker main current traces and Jumpers for powering the actuator of of 5 or 12V from the CAN bus.
+
+[33mcommit d6c0653448ef43d63387cfb99acb4b5571fd711f[m
+Author: QuantumManiac <chamath2.wijesekera@gmail.com>
+Date:   Tue Dec 29 13:21:51 2020 -0500
+
+    Copy over files from latest iteration
+
+[33mcommit b6aaa3dca140e1dfd65985873636956f6f6d445c[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Thu Nov 26 23:23:40 2020 -0500
+
+    Remove unessisary project file for power sheet.
+
+[33mcommit cdf99129e4f342914ccd5d282e307b7096a42d7b[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Sat Oct 17 17:02:53 2020 -0400
+
+    Rename project to remote arming, and tidy up some lib stuff.
+
+[33mcommit ee1f24d2d0413000a136642ff0a339a74a23152f[m
+Author: Chamath Wijesekera <chamath2.wijesekera@gmail.com>
+Date:   Fri May 22 09:47:38 2020 -0400
+
+    Update silkscreen labels for DIO pins
+
+[33mcommit 78bb276e7e6fbfc9d45b02df58fe121b2cdd75a8[m
+Author: Chamath Wijesekera <chamath2.wijesekera@gmail.com>
+Date:   Sat May 9 23:03:09 2020 -0400
+
+    Addressed review comments
+    
+    - Vias near bottom of RF isolated zone removed
+    - Filter caps for U1 voltage regulator moved to other side of board
+    - Rearranged pins on JST connector for better routing (GND moved to bottom of connector)
+    - Silkscreen labels for JST pins now lined up
+
+[33mcommit 5a71d04075b1adeb1d20d4b118868619e79d0331[m
+Author: Chamath Wijesekera <chamath2.wijesekera@gmail.com>
+Date:   Sat May 9 18:26:24 2020 -0400
+
+    Addressed review comments
+    
+    - Pad size has been increased as much as possible given space constraints
+    - Voltage regulator moved to back
+    - RF Isolated using vias
+    - IO pin order organized and silkscreens added for pin labelling
+
+[33mcommit 6905b48ae01f8c7bfa0688b280a41b30931b3bd5[m
+Author: Chamath Wijesekera <chamath2.wijesekera@gmail.com>
+Date:   Sat May 9 14:06:39 2020 -0400
+
+    Moved header pins and reset switch to decrease overall board size
+
+[33mcommit bc4cabc097b6543afa159053d62aeb076c360e49[m
+Author: Chamath Wijesekera <chamath2.wijesekera@gmail.com>
+Date:   Thu May 7 00:13:29 2020 -0400
+
+    Moved decoupling capacitors and rerouted traces as described by latest comments in #21
+
+[33mcommit 31d50530f9b9bb19cc87ff8958c7e817e4596041[m
+Author: Chamath Wijesekera <chamath2.wijesekera@gmail.com>
+Date:   Wed May 6 13:20:19 2020 -0400
+
+    Finished first pass of layout and routing
+
+[33mcommit 52acd3a562a76cb54059d270d9fb89d17437f4c1[m
+Author: Chamath Wijesekera <chamath2.wijesekera@gmail.com>
+Date:   Tue May 5 14:29:34 2020 -0400
+
+    Assigned PCB footprints to symbols
+
+[33mcommit 6bbf95b9f31e6097c77a7d866bec430399486f7f[m
+Author: Chamath Wijesekera <chamath2.wijesekera@gmail.com>
+Date:   Tue May 5 10:55:27 2020 -0400
+
+    Quick fix on reset switch layout
+
+[33mcommit c9eb2c41d5512e588152a19cfdb92ff9b1fa7258[m
+Author: Chamath Wijesekera <chamath2.wijesekera@gmail.com>
+Date:   Tue May 5 10:50:03 2020 -0400
+
+    Cleaned up symbol schematics, notably for reset switch and level shifter caps
+
+[33mcommit b9cc3dbc32528698f36dbab97f399a78cfdfd147[m
+Author: Chamath Wijesekera <chamath2.wijesekera@gmail.com>
+Date:   Mon May 4 09:53:06 2020 -0400
+
+    Added refdes annotations to symbols
+
+[33mcommit a122a075b1216c2463db35c6a456474c6729c662[m
+Author: Chamath Wijesekera <chamath2.wijesekera@gmail.com>
+Date:   Sun May 3 22:46:20 2020 -0400
+
+    Added value to pull-down resistor
+
+[33mcommit 15ce797c3d81c21cb5a084d60fb6791363c21b09[m
+Author: Chamath Wijesekera <chamath2.wijesekera@gmail.com>
+Date:   Sun May 3 18:37:15 2020 -0400
+
+    Initial commit for transceiver breakout
+
+[33mcommit 95973ce83a64d3e8b29205ee5371bff381c2ad6e[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Thu Oct 8 15:10:26 2020 -0400
+
+    Fix lib paths and add PTC value.
+
+[33mcommit 4c8a5c34f4f90b611c1a5339601d3ac51d505329[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Mon Oct 5 12:16:15 2020 -0400
+
+    Address Dawson's comments and generate gerbers.
+
+[33mcommit 6322e8ef5adb9d029357584b4699da87cf83dfa4[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Sun Oct 4 21:06:56 2020 -0400
+
+    Update schematic PDF.
+
+[33mcommit 510271095fe5e9cfe9c5bb8b7ff65669ff583c92[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Sat Oct 3 23:34:27 2020 -0400
+
+    Finish adjusting silk screen.
+
+[33mcommit 6bfddfa190cf3a8e397aab38de2a421d8bf12b6b[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Sat Oct 3 14:32:15 2020 -0400
+
+    Finish initial routing of arming V2 including switching to 4 laer board and improving clearance on harwin connectors.
+
+[33mcommit 93ea9579c7618fa5072cf936edbb3a05d9d547fb[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Tue Sep 29 21:40:34 2020 -0400
+
+    Address Lance's comments, begin work on V2 routing (still onging).
+
+[33mcommit 7691b0065f9b374a23f870a52f97b381d01696a1[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Fri Sep 25 01:16:36 2020 -0400
+
+    Finish making schematic and footprint changes for V2.
+
+[33mcommit 4575f8bad0d7fd700c347ce9d7b165a9f6ed28ce[m
+Author: Zachariah Mears <zach.mears@canadensys.com>
+Date:   Fri Jun 26 00:53:41 2020 -0400
+
+    Begin mods for V2 board.
+
+[33mcommit 227c2fb355aa76b05be723b087bbd35354e51fa7[m
+Author: Chamath Wijesekera <chamath2.wijesekera@gmail.com>
+Date:   Thu Jul 9 17:41:41 2020 -0400
+
+    Remove all files in .gitignore
+
+[33mcommit a5728130eb0e08a45185d8abac9207632d96a5f2[m
+Author: Chamath Wijesekera <cwijesek@uwaterloo.ca>
+Date:   Thu Jul 9 15:16:47 2020 -0400
+
+    Add unneeded KiCad files to .gitignore
+    
+    All KiCad file exclusions from the official KiCad .gitignore template, except for the BOM files, have been added.
+    
+    While .bak and .bck temporary files were being ignored, there are many more  KiCad file types that should not be on the VCS. These include auto-saves, cache files, backup files, netlist files (they should be regenerated when the schematic is altered anyway), and autorouter files. *-rescue files are not included as they should be removed manually once the errored files are recovered and remedied.
+
+[33mcommit 132e059459d358633d7068c59397a74c5911205a[m
+Author: Chamath Wijesekera <chamath2.wijesekera@gmail.com>
+Date:   Mon May 18 11:48:42 2020 -0400
+
+    Fixed all layer-asymmetric pads to be DRC-friendly
+    
+    - Fix made by taking F.Cu pads and making them both layers, taking B.Cu pads and changing them to SMD pads
+    - Also reverted center pad to two-pad layout
+
+[33mcommit 1a81563162d61eb91e7441538822b45f69ad20e7[m
+Author: Chamath Wijesekera <chamath2.wijesekera@gmail.com>
+Date:   Mon May 18 11:21:25 2020 -0400
+
+    Reverted center pad to be same size on both layers
+    
+    - Removed B.Cu center pad and changed F.Cu pad to be bother layers
+    - Results in same size for both pads so size increased to 2.5 mm
+    - Fixes issue with DRC where it falsely reports a trace too close to the thru-hole
+
+[33mcommit 68906a8093e7453d2091d2dd49cc5fc0972c9df9[m
+Author: Chamath Wijesekera <chamath2.wijesekera@gmail.com>
+Date:   Sun May 17 20:43:08 2020 -0400
+
+    Changed symbol to match footprint for connector
+
+[33mcommit 1f6a5f33695f41991944f3e87e47e1c6079c66c5[m
+Author: Chamath Wijesekera <chamath2.wijesekera@gmail.com>
+Date:   Wed May 13 10:36:51 2020 -0400
+
+    Decrease F.Cu pad size to 2 mm
+
+[33mcommit 81952b3aa2e95efd31843bf44287dde248bc8721[m
+Author: Chamath Wijesekera <chamath2.wijesekera@gmail.com>
+Date:   Tue May 12 11:48:10 2020 -0400
+
+    Create RF_connector_SMA_3-1478978-1_BIG_PADS.kicad_mod
+
+[33mcommit e93c4fa409349d86cad88950a23984b60cd489e1[m
+Author: Chamath Wijesekera <chamath2.wijesekera@gmail.com>
+Date:   Wed May 13 09:38:30 2020 -0400
+
+    Update logo footprint path to relative
+    
+    - Updated the path for 'Team_Logo.pretty' from an absolute path to a relative path to ensure compatibility between user systems.
+
+[33mcommit af6c73942eaded04b36c9017d549b78da5b203d4[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Tue May 12 19:22:41 2020 -0400
+
+    Update minisensor PCB from netlist file
+    
+    I had previously updated the minisensor schematic to run off of 3v3
+    instead of 1v8, but hadn't updated the PCB. So this fixes that.
+
+[33mcommit 705830dfd718feb57d9190d01f3c689bb55ee356[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Fri May 1 12:11:25 2020 -0400
+
+    Switch minisensor to run off 3v3, not 1v8
+    
+    We weren't able to program the microcontroller on minisensor when it was
+    running on 1v8 VDD, so we swapped the voltage regulator for a 3v3
+    regulator and it all worked fine. The original reason for 1v8 was that
+    there was a digital sensor we wanted to use that couldn't run on 3 volts
+    (the ICM-20948). This sensor got removed in the move from macrosensor to
+    minisensor, so there's no reason not to use 3v3 on minisensor. The three
+    digital sensors on the latter all work at 3v3, datasheets below:
+    
+    - https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5607-02BA03&DocType=Data+Sheet&DocLang=English
+    - https://www.st.com/content/ccc/resource/technical/document/datasheet/group0/38/96/79/af/ab/62/42/c3/DM00229854/files/DM00229854.pdf/jcr:content/translations/en.DM00229854.pdf
+    - https://www.st.com/content/ccc/resource/technical/document/datasheet/74/c4/19/54/62/c5/46/13/DM00177685.pdf/files/DM00177685.pdf/jcr:content/translations/en.DM00177685.pdf
+
+[33mcommit 8b725b4998a995494625a03185f25af798436024[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sun Mar 8 13:59:57 2020 -0400
+
+    Clean up logger directory
+    
+    - rename from rocketlog to logger
+    - get rid of unreferenced schematic (logger_can.sch)
+
+[33mcommit ac6cfa6a2df630c2c32a38dd9e6480b5804a335e[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sun Mar 8 13:47:24 2020 -0400
+
+    Update schematic pdfs
+
+[33mcommit e5b8cf59886affa248a1491db91002cdfcad42b7[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Sat Mar 7 12:35:06 2020 -0500
+
+    Fix typo in radio board readme
+
+[33mcommit 67364f263aa1c19f7e25a8c305a6dc9f2110bb6c[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Wed Mar 4 22:04:37 2020 -0500
+
+    Update PDF for remote arming.
+
+[33mcommit 664e8c27eb5c0d9b7ccdb7d6699237f9b3293b94[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Tue Mar 3 18:04:28 2020 -0500
+
+    Fix usbdbg symbol library path
+
+[33mcommit 537802ed4601e1b5135b2eaccdbe543847dbf9fd[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Tue Mar 3 18:03:25 2020 -0500
+
+    Change oscillator caps to 27pF
+    
+    There aren't actually any 26pF caps on Digikey and we've been using 25
+    and 27pF instead. Changed in all schematics.
+
+[33mcommit 74548f3a377038370ca60edacb2dd22cabdd6750[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Mon Feb 17 18:56:54 2020 -0400
+
+    Add rocketlog gerber files
+
+[33mcommit b9572a0bafef2a5c7db2580dca47ca0851e1d2c7[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Mon Feb 17 18:55:46 2020 -0400
+
+    Add board name
+
+[33mcommit 608c38df689f07eb10304310e33048a9da35205e[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Mon Feb 17 15:12:55 2020 -0400
+
+    Rename rocketlog_2 to rocketlog
+
+[33mcommit 5ce030e9f8ae2983fe0dd9fb2ceddb5bdc955dd9[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Mon Feb 17 15:04:15 2020 -0400
+
+    Remove old logger files
+
+[33mcommit 8b6a5805339ac60ec6ae56d37589c4be3f8b81a4[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Mon Feb 17 14:47:26 2020 -0400
+
+    Change name and fix mounting holes
+
+[33mcommit d8957f0738c0b02a10780ecd7d15d0614a15741c[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sun Feb 16 19:23:42 2020 -0400
+
+    Fix tracing around current amp
+
+[33mcommit a2dd82ae6c2b4dead7c8840682d3cefbead54674[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sun Feb 16 18:40:50 2020 -0400
+
+    Partial review fixes
+    
+    - Move C9, C10 to be inline
+    - Move LEDs down to leave more room for soldering
+
+[33mcommit b6beb7c9ab750a954a204d256bbc3ea6814116e4[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sun Feb 16 08:31:04 2020 -0400
+
+    Clean up silkscreen
+
+[33mcommit 47fe39ee4a71ba7021e71610195a50135039bebd[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Fri Feb 14 19:41:52 2020 -0400
+
+    Add first pass of traces
+    
+    Also
+    - make LEDs run on 3v3 instead of 5V
+    - change footprints for CAN connector and crystal
+
+[33mcommit db60fc32437dd2fca8a0bc443e17ae49a9179158[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Fri Feb 14 16:36:18 2020 -0500
+
+    Inital minilogger layout
+
+[33mcommit 57a0951c02cd47bd4baf29918d02f493c0697d29[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Sat Feb 22 17:58:12 2020 -0500
+
+    Add final review comments:
+    
+    - Update board date
+    - Add JST polarity silkscreen
+    - Change gerber file extensions
+    - Add zip file of gerbers
+
+[33mcommit f05f7b60160655b593f23a93610800a85ec3b55e[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Fri Feb 21 23:08:19 2020 -0500
+
+    Add gerbers for fab review
+
+[33mcommit 74fed391e37a9b3ff99959ae5bacbb6a0ee2044b[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Thu Feb 20 13:00:44 2020 -0500
+
+    Increase assembly and fabrication ease:
+    - Move C2, R7, R8 to allow solderability
+    - Move 5V trace and R9-U5 trace to add >6 mils clearance
+
+[33mcommit 837830faa39bc94170adbfb76311b9ae788d7414[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Wed Feb 19 22:39:17 2020 -0500
+
+    Move D1, R1 next to D2, D3 for easier debugging
+
+[33mcommit 6121a74bb9545a64d5b2513a8ea2b111f6958592[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Wed Feb 19 18:48:25 2020 -0500
+
+    Update silkscreen and beautify traces
+
+[33mcommit f16028dc6bc5d091832bdd66205ccbdf010d8860[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Wed Feb 19 15:14:18 2020 -0500
+
+    Address Aaron's comments:
+    - Change D1, D2, D3 from 323_handsolering to 1206_handsoldering
+    - Add LED colour silkscreen
+    - Connect islands on GND, 3V3 pours
+    - Move U3 up for cleaner CANH, CANL routing
+    - Change INA180 routing to a 4T setup
+    - Add team logo and board creation info
+
+[33mcommit d32185abce3b340482df98ccab2cc0e696e96dee[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Tue Feb 18 23:08:17 2020 -0500
+
+    Add initial tracing
+
+[33mcommit 2258e17e01214042670183ecff45e56ffd5a9dae[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Sun Feb 9 20:01:22 2020 -0500
+
+    Move gps_2 to gps
+
+[33mcommit d0e677b63887e7a051f74b8c55d2a965d811b168[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Sun Feb 9 20:01:02 2020 -0500
+
+    Delete gps
+
+[33mcommit 17f0e90e94a29e85827ae88aa8836036d6f68cfb[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Sun Feb 9 16:58:03 2020 -0500
+
+    Address Aaron's comments:
+    - Move U1 so RF_IN is aligned with U6
+    - Move C5 row up to allow hand soldering
+    - Adjust mounting hole pattern to 1.25"x1.5" for easy hand assembly
+
+[33mcommit 3df9b2873260eb251361aa0bcd0019b507ec3ee2[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Sat Feb 8 12:42:06 2020 -0500
+
+    Add third round of layout:
+    - Replace SMA connector for horizontal connection and clearance
+    - Move GPS away from Y1 to reduce interferance
+    - Increase component spacing to ease soldering
+
+[33mcommit 7377054233f882cae560277e525f707672865a71[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Fri Feb 7 16:46:48 2020 -0500
+
+    Change spacing to allow soldering iron, Add edge cuts
+
+[33mcommit 18a82d240b4a11e55c6add1389d3ad129150b7b8[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Fri Feb 7 13:56:31 2020 -0500
+
+    Change board layout to reduce overall dimensions
+
+[33mcommit 63221f4b8821f6c9ee7a21e625f4d6b72fe09e56[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Fri Feb 7 11:24:40 2020 -0500
+
+    Add second layout
+
+[33mcommit 41f6f465544afed8650d58e8361bc3903a39bdb7[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Fri Jan 24 21:10:26 2020 -0500
+
+    Add fooptprints for SMA connector, new GPS module
+    Add initial PCB layout
+
+[33mcommit 23a380b9741d7dfa1a82f8cccafba3a76cf03a30[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Mon Jan 13 20:11:50 2020 -0500
+
+    Add decoupling cap to HWR line and change baudrate of U2 to 9600
+
+[33mcommit 3757071b2647753fd0a9007327797ef3d2151fa1[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Sun Jan 12 11:30:17 2020 -0500
+
+    Address Aaron's comments:
+    - Fix inductor values to align with datasheet recomendations
+    - Change C1 to 2.2uF to fix off by 10
+    - Change R7, R8 to 160 to fix current flow on D2, D3
+    - Change labels on D2, D3 to clarify colour
+    - Add Y1 to increase CAN timing accuracy
+    - Change U2 from PIC18LF26K83 to PIC18F26K83 to reuse parts
+    - Add HWR line from U2 to allow software reset of U1
+
+[33mcommit e0304320d5ec71b058ff9652f22a8631bababf2f[m
+Author: Alexander Kitaev <alex.kitaev58@gmail.com>
+Date:   Sun Nov 17 11:18:59 2019 -0500
+
+    Make capacitor value labels all use uF for microfarads
+
+[33mcommit 0b0bbf18d861a11f750eda3c29b8ba08f1825d2e[m
+Author: Alexander Kitaev <alex.kitaev58@gmail.com>
+Date:   Fri Nov 15 22:53:58 2019 -0500
+
+    Add voltage divider for monitoring aux. battery voltage
+
+[33mcommit 8549b0d3b8ad79b34b0f462d393fa660f263d8ad[m
+Author: Alexander Kitaev <alex.kitaev58@gmail.com>
+Date:   Fri Nov 15 22:24:51 2019 -0500
+
+    Replace diode in auxiliary battery protection circuit
+
+[33mcommit 4e5cb02b6e8742bb837b9e516448384ea289c547[m
+Author: Alexander Kitaev <alex.kitaev58@gmail.com>
+Date:   Fri Nov 15 20:52:16 2019 -0500
+
+    Add auxiliary battery connection
+
+[33mcommit daa41a1ead226c329202119ccaff3ec95ed5c1aa[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Wed Nov 13 08:10:20 2019 -0500
+
+    Update layout of GPS module, label on current sensor
+
+[33mcommit 9b31e3ecf0b77b6c05d3fb8469c9a644553a738b[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Thu Nov 7 20:42:36 2019 -0500
+
+    Update labels on schematic
+
+[33mcommit 2103894b150f32cdb48c6cdd96d77f0827fd10e6[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Thu Nov 7 20:26:18 2019 -0500
+
+    Add fix line, gps rx line
+
+[33mcommit 0d860f786378fd9e389e79ce74aa270303f836ee[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Wed Nov 6 20:08:42 2019 -0500
+
+    Add connections to new module and antenna
+
+[33mcommit a526af10e0163ffe5aca017ba35545a930f6ff5e[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Sat Nov 2 19:08:11 2019 -0400
+
+    Added M10578-A2 symbol to KiCad library
+
+[33mcommit 63e576d3c60f23eee17fc8c1086c5589388e917a[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Thu Oct 24 22:17:31 2019 -0400
+
+    removed voltage divider from gps_2
+
+[33mcommit b3c2fd441584b059b019d733ef48ce8eaef1d2c9[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Tue Jul 23 23:25:42 2019 -0400
+
+    Add external battery connection
+    
+    Will need a review on this part of the design. Not too sure how to implement safety compenents for the case where both the battery and the canbus 5V line are both connected
+    
+    Signed-off-by: Aidan Ha <qbha@edu.uwaterloo.ca>
+
+[33mcommit 4ecfa88519ee48f8b4acd20e894c7cfdef40cd7a[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Tue Jul 23 00:54:28 2019 -0400
+
+    Add base schematic for GPS V2
+    Remove all 0 ohm resistors
+    Remove GPS Module LED and one of the PIC debug LED
+    Remove external Oscillator
+    Remove GPS_RX_PIC_TX line
+    
+    To be added:
+    External Antenna for Module
+    External connector for the board
+    More stuff. Schematic is incomplete
+    
+    Signed-off-by: Aidan Ha <qbha@edu.uwaterloo.ca>
+
+[33mcommit a33de0f74e6a55475bb0bef5eeb3488aabfa7f97[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Tue Mar 3 17:48:21 2020 -0500
+
+    Fix symbol mapping in fill sensing
+    
+    Use symbols from canhw instead of rescue libraries.
+
+[33mcommit bbd38a5b369450909e0f5fc49b6db714cc27ef07[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Sat Feb 22 23:07:29 2020 -0500
+
+    Fix MCLR silkscreen.
+
+[33mcommit 267b5fba2ce0c91d80649711ef799e946679cded[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Sat Feb 22 19:03:46 2020 -0500
+
+    Adress Alex's comments
+
+[33mcommit e8024e501de50fb2da94ee58e076e4048fe0b08d[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Sat Feb 22 10:54:24 2020 -0500
+
+    Fix daisy-chained trace on current amp and gennerate zip file for gerbers.
+
+[33mcommit e95934aec0fa8083b25a17945ae6b05101b5d73f[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Wed Feb 19 13:09:19 2020 -0500
+
+    address comments and generate gerbers
+
+[33mcommit 4eea5e8b88e45f14b9b1cd99fee0aabc8dc5dae7[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Tue Feb 18 18:42:59 2020 -0500
+
+    Ardess Aaron's comments.
+
+[33mcommit 66ba0d8ee123c645a76536b5c3eb4a63a0408169[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Tue Feb 18 14:46:41 2020 -0500
+
+    Complete initial tracing.
+
+[33mcommit 28c0ffe5f8c7295d4e16d146632070a823b8ab49[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Tue Feb 18 00:22:21 2020 -0500
+
+    Adress Aaron and Jared's comments, including reducing board size to a 1.25x1.4in bolt patern.
+
+[33mcommit 4a0de24908e3d6e7c5ce3623dc33b9d77f1ebbae[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Mon Feb 17 20:54:14 2020 -0500
+
+    Increase number of hall sensors to 14 and create initial PCB layout.
+
+[33mcommit 6dd03318f6362b265fbf7cabf9b1c72c0e36755c[m
+Author: Kevin Kwan <kevinkwan7777@gmail.com>
+Date:   Fri Jan 24 12:18:40 2020 -0500
+
+    Create initial commit for fill sensing board.
+
+[33mcommit 43b8794516bdfb532e5b13a88670b998bd9aa2b3[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Tue Mar 3 17:42:05 2020 -0500
+
+    Fix symbol library mapping for vent
+    
+    Make symbols use canhw.lib instead of rescue library.
+
+[33mcommit faae0a489ce78ddb1d6066673dc47457894524e8[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Sun Feb 23 13:46:59 2020 -0500
+
+    Shorten distance between C1 and U1
+
+[33mcommit f9fe1877220c00086b5f7269e9c6b071ffd7b76e[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Sat Feb 22 18:04:40 2020 -0500
+
+    Update board creation date
+
+[33mcommit f96776c9d870a268de1dd120feb7e4ad7bc389a2[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Sat Feb 22 17:42:56 2020 -0500
+
+    Generate gerbers
+
+[33mcommit 745308bf5adc4636dcfee28ef19c398346df87a5[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Sat Feb 22 17:34:18 2020 -0500
+
+    Address comments from Zach, Alex, Aaron:
+    
+    - Add part number for Q1
+    - Reduce distance between bypass caps C1, C2, C3 and their ICs
+    - Add vias on Y1 pour for more reliable connection
+    - Move J1 to ease access
+    - Move F2, R1, U1 to B.Cu to increase repairability
+    - Add descriptive silkscreen to allow for easy assembly
+
+[33mcommit 39cbe420a19184bc2931a70bccce0449bb52213c[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Fri Feb 21 22:37:56 2020 -0500
+
+    Adress Aaron's comments:
+    
+    - Make Q1 a GSD transistor
+    - Move D1 next to vent connector
+    - Move 12V trace away from the edge of the board
+    - Add LED colour silkscreen
+
+[33mcommit 1f6a0696f4d706a03d9fe99342a3393e7595cc11[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Fri Feb 21 16:26:22 2020 -0500
+
+    Move MCLR marking, change Q1 footprint to SOT23
+    
+    I'm fairly certain SOT23 is standard enough for this to be the NMOS we
+    use. I would like to have a part selected before we advance much further
+    though.
+
+[33mcommit 3901eb3c6c8fca863a68c5b8608c3c6d921847b5[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Fri Feb 21 01:27:10 2020 -0500
+
+    Add board name, fix ground pour islands
+
+[33mcommit b637d01c5b3662aaec8d31538491541c99c7cf67[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Thu Feb 20 21:52:40 2020 -0500
+
+    Add initial tracing
+    
+    Definitely not super happy with the first round but I wanted something
+    to get out for review so we can get this started. I mentioned in slack
+    we needed an actual part number but it won't affect the number of pads
+    on Q1 so it should be easy to replace even if the footprint changes.
+
+[33mcommit a0eeac6fb3aa34d08994518d5a388c9c17717545[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Thu Feb 20 20:34:32 2020 -0500
+
+    Add pours, Change all dimensions to Eco.User1
+
+[33mcommit 9467f41b7a3c7506521f98cd0e4b0621284036f0[m
+Author: JaredWatson <e6watson@uwaterloo.ca>
+Date:   Thu Feb 20 20:00:27 2020 -0500
+
+    Add third layout, optimize placement for tracing
+
+[33mcommit f06252e0bf192365e2b1966434395b51859fc93d[m
+Author: Matthew Gencher <39591606+MattiGen@users.noreply.github.com>
+Date:   Tue Feb 18 18:11:21 2020 -0500
+
+    Update layout to adresss review comments
+
+[33mcommit 4f66ca35212540f5269a6bb175d36bae0f72021f[m
+Author: Matthew Gencher <39591606+MattiGen@users.noreply.github.com>
+Date:   Mon Feb 17 18:31:59 2020 -0500
+
+    Finish layout
+
+[33mcommit e94dac1580d6ea0dd598e56cb672c22a6a859e82[m
+Author: Matthew Gencher <39591606+MattiGen@users.noreply.github.com>
+Date:   Sat Feb 15 21:08:13 2020 -0500
+
+    Create pcb file
+
+[33mcommit 8f62de0f55e5ba24f08db1ecfc1928d07827da9b[m
+Author: Matthew Gencher <39591606+MattiGen@users.noreply.github.com>
+Date:   Tue Feb 11 20:31:48 2020 -0500
+
+    Finish adding footprints
+
+[33mcommit c79a6e4b7119a6a71ce573cb8e7a8f2584a59c06[m
+Author: le2tang <le2tang@edu.uwaterloo.ca>
+Date:   Mon Feb 10 22:13:21 2020 -0500
+
+    Added limit control pins
+
+[33mcommit dd707899eaaec5902e4f4897c14c328810f6f43f[m
+Author: Matthew Gencher <39591606+MattiGen@users.noreply.github.com>
+Date:   Thu Feb 6 16:54:47 2020 -0500
+
+    Start adding footprints
+
+[33mcommit b7e9122d32a34675c0f1d2811634b7d490a6c0a9[m
+Author: Matthew Gencher <39591606+MattiGen@users.noreply.github.com>
+Date:   Sun Feb 2 13:57:48 2020 -0500
+
+    Import footprint libraries
+
+[33mcommit e2e85db3964c009fb9fd45a9b86b5eefb8e429fb[m
+Author: Matthew Gencher <39591606+MattiGen@users.noreply.github.com>
+Date:   Mon Dec 2 20:23:36 2019 -0500
+
+    Add old vent to archive directory
+
+[33mcommit dcd021facd486601554416ae217c56286dbd794b[m
+Author: Matthew Gencher <39591606+MattiGen@users.noreply.github.com>
+Date:   Sun Dec 1 21:43:05 2019 -0500
+
+    Address aarons comments
+
+[33mcommit 1f4a7215957e34d4892f0f73a49b2e08e5af241c[m
+Author: Matthew Gencher <39591606+MattiGen@users.noreply.github.com>
+Date:   Sun Dec 1 20:58:02 2019 -0500
+
+    Rename project to vent and delete old vent
+
+[33mcommit 0766da970de9e9d6b1fb9841e5940cf029e7ba37[m
+Author: Matthew Gencher <39591606+MattiGen@users.noreply.github.com>
+Date:   Thu Nov 14 19:49:23 2019 -0500
+
+    Attempt 2 for the mosfets
+
+[33mcommit 57b03b61c162cc45b26a83748c37d0b496be7283[m
+Author: Matthew Gencher <39591606+MattiGen@users.noreply.github.com>
+Date:   Thu Nov 14 13:40:47 2019 -0500
+
+    Address aarons comments on power and MCU sheets
+
+[33mcommit ba0ce38380aee63909d49d64899e08f1e685ef0d[m
+Author: Matthew Gencher <39591606+MattiGen@users.noreply.github.com>
+Date:   Wed Nov 13 18:33:13 2019 -0500
+
+    Fix typo
+
+[33mcommit a6fe3617c85767bd133420d70b9bb9f55a9d7f68[m
+Author: Matthew Gencher <39591606+MattiGen@users.noreply.github.com>
+Date:   Wed Nov 13 18:19:32 2019 -0500
+
+    Finish rev 1 of vent_2
+
+[33mcommit 981fb9c2e631f6dccd196118ed78b92ab857e0f7[m
+Author: Matthew Gencher <39591606+MattiGen@users.noreply.github.com>
+Date:   Wed Nov 13 14:42:14 2019 -0500
+
+    Finish mcu sheet
+
+[33mcommit 4c79c1f00f7b3afad395a480ce487f5d9ab4078d[m
+Author: Matthew Gencher <39591606+MattiGen@users.noreply.github.com>
+Date:   Tue Nov 12 21:36:02 2019 -0500
+
+    start mcu sheet
+
+[33mcommit 6494caa9da3963d88480f5974c4dfb01f37c2a41[m
+Author: Matthew Gencher <39591606+MattiGen@users.noreply.github.com>
+Date:   Tue Nov 12 21:22:01 2019 -0500
+
+    Finish power sheet
+
+[33mcommit 0dfb3d0e782e7b1989f3ba2c085e59b61f8e1de9[m
+Author: Matthew Gencher <39591606+MattiGen@users.noreply.github.com>
+Date:   Sun Nov 3 20:11:13 2019 -0500
+
+    update symbols to use default libraries
+
+[33mcommit 19d3c851304f9fdc0174aaa3fa2adea9ac9762f2[m
+Author: Matthew Gencher <39591606+MattiGen@users.noreply.github.com>
+Date:   Sun Nov 3 19:35:22 2019 -0500
+
+    Start creating power sheet
+
+[33mcommit 6a032f1f3d09354d19dd0c834cd34329cb761344[m
+Author: Matthew Gencher <39591606+MattiGen@users.noreply.github.com>
+Date:   Thu Oct 31 11:50:29 2019 -0400
+
+    Create new project file
+
+[33mcommit a460b8cd807d9878a104d40ba64eb123b75cf47f[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Tue Mar 3 13:47:31 2020 -0500
+
+    Adjust resistor and cap values
+
+[33mcommit 8d19a95cdf7684929424da64bd8b24414006183d[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Mon Feb 24 22:55:14 2020 -0500
+
+    Fix live telemetry logo
+
+[33mcommit 9df06786c450235767ba639c1db69ae33226135d[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Sun Feb 23 20:17:23 2020 -0500
+
+    Add gerber files
+
+[33mcommit 89521bbdb5d13d83559e6d710d30ac64d7f2419d[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Sun Feb 23 20:16:51 2020 -0500
+
+    Add board names
+
+[33mcommit ff89e1bb8cc091e0b3c501c0ce097d2e2b59e9f5[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Sun Feb 23 12:21:29 2020 -0500
+
+    Add isolated ground pours for RF modules
+    
+    Note:
+    -Still trying to come up with names
+
+[33mcommit 97e05948430c26505c983539cd0ace6a014c2935[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Sun Feb 23 10:49:23 2020 -0500
+
+    Address Jared's comments
+
+[33mcommit 127bedb046a8d4fd338839b0c0a415fe9b8cfb70[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Sat Feb 22 22:25:32 2020 -0500
+
+    Address Alex's comments
+    
+    Note:
+    -Still need to pick names for the boards
+
+[33mcommit 9af7c9af75837e5ccb4111cfc2e7bb8876a9c5a7[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Fri Feb 21 17:43:56 2020 -0500
+
+    Address Aaron's comments
+
+[33mcommit 90080f8655166de01a1d9feb5ba0a469a3b88185[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Thu Feb 20 20:59:19 2020 -0500
+
+    Add copper pours and address Jared's comments
+    
+    Note:
+    -Still haven't fixed CAN TX/RX lines running through OSC1&2
+    -Still need to add team logo
+
+[33mcommit e970ed0b45e40a2964f922bbf6a1326307e1b5b2[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Wed Feb 19 20:42:33 2020 -0500
+
+    Add initial trace routing
+    
+    Note:
+    -LED colours still need to be added
+    -Waterloo Rocketry logo needs to be added with the board name and
+    my name on the right side of the board
+    -Copper pours will be added next commit
+
+[33mcommit 69de8626cbbfc88575ca901bd6b58e320f11bb2c[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Sun Feb 16 12:57:38 2020 -0500
+
+    Address Aaron's comments on initial component layout
+
+[33mcommit 1eb5d28632bb1452193bd04d29ed19ae27373cf7[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Sun Feb 9 00:33:53 2020 -0500
+
+    Add initial PCB layouts
+
+[33mcommit d4afd59f77494e7fe9935b42c702824ad9f154cb[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Wed Jan 22 10:27:34 2020 -0500
+
+    Add pull downs to the RESET lines
+
+[33mcommit 5487b0f6c21078282957ab0053ed103d712b00fc[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Sat Jan 18 18:36:32 2020 -0500
+
+    Fix value reference for PIC on telemetry_receiver
+
+[33mcommit 3269c1052f875ce7ac0276107679507c306d5671[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Fri Jan 17 20:29:54 2020 -0500
+
+    Address Aaron's comments on USB power and change LDO on telemetry_receiver
+
+[33mcommit 0765cd5b437afe36d479e39163031aa24eb76d5b[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Fri Jan 17 14:55:42 2020 -0500
+
+    Address Zach/Aaron's comments for resistor values, CAN bus power, and reset pin
+
+[33mcommit 62b0aca4ceeb8953391662fa6712bc18d54caaca[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Thu Jan 16 22:53:23 2020 -0500
+
+    Addresses Adam/Aaron's comments: change RF module and take over for radio
+    
+    Now that the CAN bus battery is going in the recovery electronics bay,
+    the telemetry_transmitter board will be taking over for radio for all
+    communication from RLCS to the rocket and will also handle the power
+    control of the CAN bus.
+
+[33mcommit bed3e1da681d102f7470342f841a69a5e5ec2d34[m
+Author: Dawson Kletke <dawsonwkletke@gmail.com>
+Date:   Wed Dec 25 15:42:27 2019 -0600
+
+    Fix voltage mismatches, LED voltages, and add relative file path for canlib
+    
+    -Programming header switched from 5V to 3V3
+    -LEDs switched from 5V to 3V3
+    -Relative file path added for transmitter and receiver for canlib
+
+[33mcommit 99175104913d2d4ce97d8cf7c971ef5d2d31dc44[m
+Author: unknown <dawsonwkletke@gmail.com>
+Date:   Mon Dec 2 21:00:00 2019 -0500
+
+    Remove unneeded files to clean up kicad projects
+
+[33mcommit 6bb49a7b08d4cc41e59df0364d5e9780e9fc3c55[m
+Author: unknown <dawsonwkletke@gmail.com>
+Date:   Sun Dec 1 13:48:20 2019 -0500
+
+    Change mcu to power off 3v3 and add LRN LED/SW
+
+[33mcommit 01e640c26485e7054ac3b7c42f5532b0e0359d1c[m
+Author: unknown <dawsonwkletke@gmail.com>
+Date:   Thu Nov 14 21:24:30 2019 -0500
+
+    Initial commit
+
+[33mcommit 89e906e2677f3b752075636c7b11a2608e7b11ec[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Tue Mar 3 17:29:42 2020 -0500
+
+    Use relative canhw.lib path on recovery
+
+[33mcommit 8316d920e3fd69be3f43a0a3c1a73c51edf73ecf[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Fri Feb 28 15:29:43 2020 -0500
+
+    Adjust resistor values.
+
+[33mcommit 67199f26477710ef81d7ebb913b28af43bdb1572[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Thu Feb 27 20:15:47 2020 -0500
+
+    Rename stratologger to A1.
+
+[33mcommit 8ee94f3a87a1962f856cad16360e443c5d13af8f[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Wed Feb 26 17:38:20 2020 -0500
+
+    Change voltage divider resistors.
+
+[33mcommit e405d770d51cd25e624176a025013891516b23df[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Tue Jan 21 12:07:33 2020 -0500
+
+    Fix board size to be 2.8 inch square, generate final gerber files for fab.
+
+[33mcommit 1225c52370f24cc425950328074b183679a85800[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Sun Jan 19 16:54:11 2020 -0500
+
+    Adress Alex's Comments
+
+[33mcommit d92eeb9e379486f5ef0f07aab9265d68f89297cd[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Fri Jan 17 15:15:42 2020 -0500
+
+    Generate GBR files
+
+[33mcommit 15a2211cb3a9664ffd11749f2cebcfe1a0017963[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Thu Jan 16 16:23:33 2020 -0500
+
+    Adress Adam's comments: Fix silkscreen, Isolate the crystal.
+
+[33mcommit 5dcd76cc3d55f739864d46af6951cb0bfc66bd4d[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Thu Jan 16 12:57:20 2020 -0500
+
+    Route traces for PCB and adress Aarons's coment on mounitng hole positions.
+
+[33mcommit 8b13f40c0a452d375f076fdeff082b43830d56ae[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Tue Jan 14 21:05:46 2020 -0500
+
+    Clean up component layout.
+
+[33mcommit c920437cb095da3c1e96bb8633ce7fa91342e327[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Mon Jan 13 16:49:04 2020 -0500
+
+    Address Alex and Aaron's comments on component layout from pull request.
+
+[33mcommit 6b809e331ed455ffb3c72ea18aa044024a863471[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Sun Jan 12 22:40:57 2020 -0500
+
+    Create initial component layout for review
+
+[33mcommit 78c0205680558c05cc08d8bdcd7e0f3f1dae8397[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Fri Jan 10 20:19:19 2020 -0500
+
+    Driver MOSFET for BZ3. Begining of PCB Layout
+
+[33mcommit 20b23cd30351c9ca818d5e5c40d783d785562601[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Wed Jan 8 18:44:09 2020 -0500
+
+    Anottated schematic and removed unessisary diode on programing header.
+
+[33mcommit 45aa3afaeb2fc80e4984272e359eeedf50ba5e84[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Wed Jan 8 16:47:54 2020 -0500
+
+    Redesined scematic to reflect change to conectors for altimeter wiring, added more solder jumpers for increased board flexibility, created PCB file.
+
+[33mcommit 37a73465357f8487141317786ce990f7275ba5ff[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Thu Nov 28 01:21:49 2019 -0500
+
+    Add bypass magswitch connectors
+
+[33mcommit 248d8ba6bd516a77d793b76a5d889a931b238add[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Sat Nov 16 02:52:48 2019 -0500
+
+    Fix 5V protection diode setup
+
+[33mcommit 86840d8f89fcc20049671cc078a11bea939cba45[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Thu Nov 14 20:26:02 2019 -0500
+
+    add part numbers for buzzers
+
+[33mcommit 0938de273d8dd53939d182aba893480f6dc446ee[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Thu Nov 7 19:39:58 2019 -0500
+
+    fix comments from scematic review, make mag switches powerup the PIC
+
+[33mcommit 28d4b50d877e804b3bcbb3a3c095b9a84d0f71c4[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Wed Nov 6 20:09:26 2019 -0500
+
+    fix minor comments
+
+[33mcommit 29c9b4ffcbeeccdbea7561be1417bfc06ce03b08[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Sat Nov 2 23:34:20 2019 -0400
+
+    forget to add 2 files
+
+[33mcommit 1203f0fc607a9fd692be2f86622889d2fefd5225[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Sat Nov 2 23:31:59 2019 -0400
+
+    Fix level shifting circuit, improve layout of altimiters for better readability, and other small fixes
+
+[33mcommit 9442c1f332c7fb0a40c6b338ac4d6cd6e8110a08[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Wed Oct 30 23:30:18 2019 -0400
+
+    add PDF of schematic
+
+[33mcommit e5ecacc214f09b7e27e300677a1be15fde786716[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Wed Oct 30 23:04:27 2019 -0400
+
+    finnish adding altimeter and other support electronics
+
+[33mcommit cb0a60986d2624405e81eb2e53a5f5aa46466467[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Sat Oct 19 21:00:56 2019 -0400
+
+    split into seperate sheets, add majority of support and arming circutry
+
+[33mcommit 907c3da7e5bf00831cfd986d65b9deffbc823e3b[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Sun Oct 6 01:23:27 2019 -0400
+
+    add raven4 and stratologer altimeters
+
+[33mcommit 967ee34be77d8b9ef58304d57b35b4cd2de7fcd1[m
+Author: Joanna Diao <z2diao@uwaterloo.ca>
+Date:   Sun Nov 3 12:26:09 2019 -0500
+
+    New logger board design
+
+[33mcommit b21bd243e00e56d666a43587c0283fb59f4bf9be[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Sun Sep 29 13:10:00 2019 -0400
+
+    add folder and kicad project for recovery board
+
+[33mcommit fedeb6edee8eaed3abf1e3367b727a8a2a75be2c[m
+Author: Zachariah Mears <zx100x100@gmail.com>
+Date:   Tue Jul 23 15:44:10 2019 -0400
+
+    update the vent sym-lib-table with non computer specific filepath
+
+[33mcommit 9088cf632786caa39f91453799f4cca20b8a26a4[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sun Jun 23 13:46:18 2019 -0700
+
+    Update README.md
+
+[33mcommit 1a9035e2425abc4b5e03634135401694c117050a[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sun Jun 23 13:32:37 2019 -0700
+
+    Fix image link in README
+
+[33mcommit 53e22675dc2d76f5312ccb508337d596a59808cb[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sun Jun 23 12:47:43 2019 -0600
+
+    Add general canhw README
+
+[33mcommit 36d2e188e240581ef83c5bfb74804914ec6aa6a6[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sun May 12 20:51:18 2019 -0700
+
+    Add dims to inj and vent
+
+[33mcommit caf4afec6ee49c60adea00898e90848e7d847aac[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sun May 5 20:07:09 2019 -0700
+
+    Add descriptions/docs to canhw.lib components
+
+[33mcommit c6ea78600f4ed831c71cb01df99e1d8ca5aafb39[m
+Merge: a1e29ef e0c8f95
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sun May 5 19:34:04 2019 -0700
+
+    Merge branch 'minisensor'
+
+[33mcommit a1e29ef47cfbb2e6c3d60c235afcf6a3ea1b086e[m
+Merge: ed3567f 6e289b8
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sun May 5 19:31:51 2019 -0700
+
+    Merge branch 'radio_brd_fixes'
+    
+    Also rescue some symbols.
+
+[33mcommit ed3567f4e4c13b9dfdda6ff0341b91d8dfdb896b[m
+Merge: dcde5d3 b922a71
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sun May 5 19:30:23 2019 -0700
+
+    Merge branch 'usb_dongle'
+
+[33mcommit dcde5d3ca115206a9ed4bac2713574d04899ea09[m
+Merge: c47b9af 2ba11dc
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sun May 5 19:28:52 2019 -0700
+
+    Merge branch 'gps_brd'
+
+[33mcommit b922a71013337f274b99a1bc53cab4d37fe77aee[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Fri Apr 19 22:16:32 2019 -0400
+
+    usb_debug: add zip file we submitted to JLCPCB
+
+[33mcommit f181625548efee8b3e6d93b3797ce90d3511f371[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Fri Apr 19 22:08:46 2019 -0400
+
+    Add new usb debug gerbers
+
+[33mcommit bcc960c08c838b9059ccc65aa361ccc4a0e50443[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Fri Apr 19 22:08:04 2019 -0400
+
+    Burn USBdog gerbers
+
+[33mcommit e0c8f950b18a6817ece7892c70d6c44679941d89[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Fri Apr 19 22:04:41 2019 -0400
+
+    minisensor: Add zip file we gave to JLC pcb
+
+[33mcommit 860b10e9fac00d5d2da044a7354c883bc6fa11c0[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Fri Apr 19 22:04:17 2019 -0400
+
+    minisensor: decrease mask min width
+
+[33mcommit 6e289b8b84fd45fecddd862ee23f6a0c4063ddf9[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Fri Apr 19 21:43:23 2019 -0400
+
+    Add zip file that we're ordering from JLCPCB
+
+[33mcommit 2ba11dc1ac7a2e1c2327389533c1cdfaa37b5736[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Fri Apr 19 21:31:46 2019 -0400
+
+    Add zip file that we're ordering from JLCPCB
+
+[33mcommit c094b40c43743d22d6eb14b3dd02c6952e1baf55[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Fri Apr 19 21:19:18 2019 -0400
+
+    Add MCLR label to silkscreen on programming header
+
+[33mcommit e2a2808f00a33246232df382b66bdf3d483ab86d[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Fri Apr 19 17:15:54 2019 -0400
+
+    Made further changes to the recent reivew (that fixed a major issue with the PIC
+    
+    Redrew serveral traces.
+    Removed unessesary vias
+    Checked over all data sheets one last time to ensure I didn't make another mistake.
+    
+    Signed-off-by: Aidan Ha <qbha@edu.uwaterloo.ca>
+
+[33mcommit 5127a2e5a6fbb5cacc9b377451984808b1c608be[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Fri Apr 19 00:15:40 2019 -0400
+
+    Switch microcontroller to run off of 3V3
+    
+    This needs very serious review. I made these changes quickly, while
+    tired, and while currently eating dinner. Please look very closely at
+    everything, whoever winds up reviewing this.
+    
+    The reason the PIC needs to run off of 3v3 is so that it can interface
+    with the GPS chip over UART without level shifting (GPS runs off of
+    3v3). Not sure if I'm just missing something or how this got this far
+    into reviews without someone noticing. If I'm just off base in thinking
+    this change needs to be made, please revert the commit.
+    
+    Itemized list of changes:
+    
+    schematic:
+    - Replace 5v with 3v3 on:
+        - MCLR pullup
+        - Microcontroller VDD
+        - programming header
+        - 2562 VIO
+    
+    PCB:
+    - reroute Isense trace
+    - Reroute 5v and 3v3
+    - reroute CANH and CANL to make room for 3v3 VDDIO trace
+    
+    symbol libraries:
+    - use relative paths for canhw and flight instr
+    
+    netlist:
+    - generated a netlist
+    
+    gerbers:
+    - regenerated
+    - remove paste files, since we don't need them
+
+[33mcommit 535ea71cdf6997172cb53a10907ad21165792c07[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Thu Apr 18 22:08:49 2019 -0400
+
+    My own review changes
+    
+    Changes in this commit:
+    - removed daisy chain through C5
+    - removed daisy chain through R12
+    - Move C17 below barometer, to bypass VDD
+    - Move C12 silkscreen off of microcontroller pads
+
+[33mcommit 9811bd2442db759a03ffaf1e153b37277b22a805[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Thu Apr 18 15:09:34 2019 -0400
+
+    Address comments:
+    
+    Rerouted wonky traces
+    Created Gerbers and Drill files
+    
+    Signed-off-by: Aidan Ha <qbha@edu.uwaterloo.ca>
+
+[33mcommit 49455a32a2a2afca7d965a49c2a139b1aa5a7215[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Wed Apr 17 18:56:23 2019 -0700
+
+    DFM changes
+    
+    - Increase zone to copper clearance to 8 mil
+    - Add 2 mm fillet to zones
+    - Fix some wonky traces
+
+[33mcommit 52f6f1975d113330a8775ef481c3e843c54c4910[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Wed Apr 17 18:29:07 2019 -0700
+
+    Add sensor mini gerbers
+
+[33mcommit cab5f8aa394a2cb2a1bb2e8881f62c5bcf021171[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Wed Apr 17 18:24:03 2019 -0700
+
+    Review changes (Aidan, Aaron)
+    
+    - fix some daisy chaining
+    - if you liked it then you shoulda put a logo on it
+
+[33mcommit 4d3f72efe2c77f57accf67582e54bcd3f8730f02[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Sun Apr 14 12:46:06 2019 -0400
+
+    Address Alex's comments
+    
+    Fixed weird traces.
+    Did not fix the unecessary ground via. Awaiting comment
+
+[33mcommit 6b05e239153d00a331f8974086f47819ff08c967[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Sat Apr 13 10:30:57 2019 -0400
+
+    Board name change
+
+[33mcommit 8b5df98429e7119d183255add539e716c2cd42e2[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Mon Apr 8 20:54:12 2019 -0700
+
+    Review changes: Aaron & Julie
+    
+    - Fatten up some traces
+    - Connect CSB pin on U10 to VDD
+    - Remove some wonky traces
+    - Change clearance to 5 mil
+    - Rotate some caps to be cuter
+
+[33mcommit c61681d95ece18bcf6c7f450ae352e6f4e1bb0fd[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Sun Apr 7 13:52:16 2019 -0400
+
+    Addressed Aaron's comments
+    
+    spaced Out components mainly
+    Fixed tracing errors
+    
+    Signed-off-by: Aidan Ha <qbha@edu.uwaterloo.ca>
+
+[33mcommit c19b1231aef7c005ef06669497ea4515afb8e350[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Sun Apr 7 00:11:30 2019 -0400
+
+    Moving resistors away
+
+[33mcommit 8e315c24f677fd207e4bb0407a90163fa0bd3c51[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Sat Apr 6 20:37:54 2019 -0400
+
+    Addressed Alex comments
+    Fixed all DRC errors where a ground fill wasn't connected
+    Alligned a bunch of IC to make thge board look prettier
+    Fix silkscreens
+    
+    Signed-off-by: Aidan Ha <qbha@edu.uwaterloo.ca>
+
+[33mcommit d9517e5ceb90238bbb4679b8e91277ddfe6fc7bd[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Sat Apr 6 12:55:02 2019 -0400
+
+    Reannotating
+
+[33mcommit 1c1db9dd87f2a98ab8edb910b3d92220b6f794d7[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Thu Apr 4 22:54:48 2019 -0400
+
+    Refill zones
+
+[33mcommit bdc246c385e3536d58a2fd6c0565847f0049db9f[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Tue Apr 2 18:39:52 2019 -0700
+
+    Address Aidan's schematic comments
+    
+    - Add sense resistor values
+    - Add comments for IMU functionality
+
+[33mcommit 5f478d335614e6bdfa451715ddaf51c93433b96e[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Tue Apr 2 21:18:00 2019 -0400
+
+    PCB fixes, regenerating drill+gerber files, adding back in readme
+
+[33mcommit b91b667ab06bd3e280f3fbde6cc8342846b036f2[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Tue Apr 2 20:57:55 2019 -0400
+
+    Removing unneeded files
+
+[33mcommit 7a55f4ebeec35a5389c5b4307094f028ecb1cdb6[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Tue Apr 2 20:48:49 2019 -0400
+
+    Remove unneeded file
+
+[33mcommit f0314dfdb310da148be3789d64f7f4119b218022[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Mon Apr 1 22:56:30 2019 -0400
+
+    Fixing footprint, swapping Q1 and Q3
+
+[33mcommit fde6a2f57b1a480c9a07c450dc8a91e0f2959c7a[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sun Mar 31 16:06:45 2019 -0700
+
+    New sensor mini layout + routing
+    
+    This does not include cosmetic things like silkscreen
+
+[33mcommit b0e846ce369eb3cbce5b9542a680ef0296a3e473[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sat Mar 30 19:54:22 2019 -0700
+
+    Add magnetometer to schematic and move to SPI
+
+[33mcommit f3b89c021d5aee01f8dfb1231605ba30e0dc3907[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Sat Mar 30 20:59:55 2019 -0400
+
+    Add voltage divider to tank pressure output
+
+[33mcommit 08147afa35ddedc760686e0bc98a0214b0385a77[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Fri Mar 29 19:39:47 2019 -0400
+
+    Added gnd plane for both layers
+
+[33mcommit 685a9ae0dc62748f6a21a84eaff26f0857ee6309[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Wed Mar 27 22:47:20 2019 -0400
+
+    Fixing spacing
+
+[33mcommit 1a2af36b7cf6584cb9a9f04c29e279df31532ec4[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Wed Mar 27 22:28:13 2019 -0400
+
+    Remove ground pour and rearrange components
+
+[33mcommit 03eb89b8c393e1be36d1b4057ffad4bb33ae657b[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Mon Mar 25 20:22:02 2019 -0400
+
+    Addressed Adam and Alex's comments.
+    General fixes:
+    
+    Switched to a PIC that supports 3V3 and removed all level shifting
+    Fixed any traces >= 90 degrees
+    Added silkscreen for Team logo and LED
+    Add more space between components and reduced the board's size
+
+[33mcommit 4d94902ffa07013f18f7e308a6d6b6c8963d963e[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Sat Mar 23 02:36:54 2019 -0400
+
+    Sensor mini: Add analog stuff
+    
+    Adds one thermistor and the tank pressure sensor to sensor_mini.
+    Required making the board a quarter inch wider. This commit updates the
+    PCB and the schematic.
+    
+    Note that while all the traces are there (DRC mostly passes (IMU is too
+    small for 6mil DRC), and everything is connected), it isn't done. The
+    traces are not great, much improvement possible. Also, it's likely that
+    we'll be swapping the integrated IMU and gyro for just a discrete gyro,
+    since it was a bitch to work with on the big sensor board.
+
+[33mcommit 6858e2d377224d718fd7ed559b6839ec15a6f704[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Fri Mar 22 22:02:19 2019 -0400
+
+    Removing ground pour and regenerating fab and drill files
+
+[33mcommit b90bf40f613e4acf16d61e6b3b8e4d67c3794fda[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Fri Mar 22 21:36:46 2019 -0400
+
+    Redoing traces to connect ground pours
+
+[33mcommit d60a9dbc4e97543c97522bb0038d4a22d795809e[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Wed Mar 20 21:16:06 2019 -0400
+
+    Address Adam's review comments
+    
+    See above commit for details
+
+[33mcommit 43c189186bd1779f152964778fcfd366754bde9f[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Sun Mar 17 14:18:03 2019 -0400
+
+    Addressed Adam's comments.
+    Disregarded comments that were related to Traces since I wanted to confirm the layout.
+    
+    Comments Addressed:
+    Denoted all capacitance with capital 'F'
+    Removed net label on pin 5 of U3
+    Defined Edge cuts
+    Changed layout such that the silkscreens doint end up under pads
+    Changed mounting holes to be plated
+    
+    Trace-related comments ignored (until layout is confirmed:
+    All the DRC errors
+    Power Plane definition
+    
+    Other ignored comments:
+    Hierachal sheets (too lazy to change it at this point. I also personally think it's easier to look at
+    Use of TVS diodes (No other board in CANBus has it)
+    different PIC ( I believe were using this pic bc we already have programmed drivers for it)
+    Add silkscreen for LEDs (they are all debugging LEDs so no point...)
+
+[33mcommit cc40003bba480dff6047ebe52322646c9a08bd81[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Sat Mar 16 19:23:16 2019 -0400
+
+    Adding gerber and drill files
+
+[33mcommit c173b785189df1c89bb4bec16f83859fdd103a90[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Sat Mar 16 16:04:32 2019 -0400
+
+    Making changes to PCB
+
+[33mcommit e591f9425ed84ecee3010f959e4429ac1c406ead[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Sun Mar 10 15:46:18 2019 -0400
+
+    Addressed Aaron's comments
+    rotated pic in the bottom layer
+    'isolated' the crystal and the bottom of the board
+    moved various IC in effort to make the board size smaller
+    added an extra screw hole
+
+[33mcommit 3b591fbcecf4092d4ab098bdf3ff78a1dd0f403e[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Sun Mar 10 15:27:41 2019 -0400
+
+    Addressed Aaron's comments, made the board smaller
+
+[33mcommit 73761d0cebf6017b7d9526b3e11c0bd3a4eba2ac[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Sat Mar 9 13:18:58 2019 -0500
+
+    Connecting ground pins, fixing traces
+
+[33mcommit 85bf0bc663f61781d3b28f472d1b429b1c6878b1[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Sun Mar 3 20:15:04 2019 -0500
+
+    Addressed Aaron's changes
+    Mostly just a layout revamp since aaron's last comment made me :(
+    
+    Signed-off-by: Aidan Ha <qbha@edu.uwaterloo.ca>
+
+[33mcommit 9ae7a484bab347ab9f471a1bf3baf6ce8fafd3ae[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Sat Mar 2 20:21:38 2019 -0500
+
+    Updating schematic pdf
+
+[33mcommit c87f6b1fbc7672c56a3dfbeac32feaa542e2d81d[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Sat Mar 2 20:14:44 2019 -0500
+
+    Adjusting mounting holes
+
+[33mcommit 19fd2390c6a9cfef064b8247388795382bd05277[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Sat Mar 2 19:46:59 2019 -0500
+
+    Adding mounting holes
+
+[33mcommit 63bb2e04b2102b433d51541d79367ca7bcb280f2[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Sat Mar 2 16:31:49 2019 -0500
+
+    Redoing zones
+
+[33mcommit 01a8caa4dcfe04c89af08df3810a0f92bec6f239[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Sat Mar 2 15:34:35 2019 -0500
+
+    Updating net list
+
+[33mcommit e88e76f3a87971c2e73474020611912ca8e4383f[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Sat Mar 2 13:41:05 2019 -0500
+
+    Reannotating
+
+[33mcommit 25f4f2dcab662a1dfb41240ddc70f0551124748a[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Sat Mar 2 13:32:37 2019 -0500
+
+    Renaming bus_en lines and annotating
+
+[33mcommit da33c895742cf8f76c707ebb43fb6cc76af785b6[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Sat Mar 2 13:15:03 2019 -0500
+
+    DRC fixes
+
+[33mcommit 4c4399fed3fc06c08aa2d15ea34d43f43d75e7e3[m
+Merge: f1f981f 489fa31
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Fri Mar 1 23:35:18 2019 -0500
+
+    Merge branch 'radio_brd_fixes' of https://github.com/waterloo-rocketry/canhw into radio_brd_fixes
+    
+    # Conflicts:
+    #       radio/radio/radio.kicad_pcb
+
+[33mcommit f1f981f51855a88c3bdf28bc320db08f7bd9c297[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Fri Mar 1 23:31:27 2019 -0500
+
+    Minor fixes
+
+[33mcommit 09a1378123fc4254ed70013495c490a00372a6f0[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Thu Feb 28 22:34:22 2019 -0500
+
+    Create mini sensor
+
+[33mcommit 48c162cfd343141042c2daa3e4312493587d88db[m
+Author: Alexander Kitaev <alex.kitaev58@gmail.com>
+Date:   Tue Feb 19 11:22:57 2019 -0500
+
+    Fixed problems identified in initial GPS PCB design review
+
+[33mcommit 489fa31ae516de0d1b58eff2abaebe7694934698[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Mon Feb 18 16:19:00 2019 -0500
+
+    Saving changes
+
+[33mcommit 379eb1d8f56d9504b16e349f90c30a90491938dd[m
+Author: Alexander Kitaev <alex.kitaev58@gmail.com>
+Date:   Sun Feb 17 18:21:40 2019 -0500
+
+    Initial draft of GPS PCB layout; fixed GPS_TX connection
+
+[33mcommit b99d69b5d75fa397ad2a15a6319a5eb3a500f9fe[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Sun Feb 10 17:33:06 2019 -0500
+
+    Redoing zone outline
+
+[33mcommit b0b318a1315c97ba373d912917b9a6ecb696b138[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Sun Feb 10 16:43:20 2019 -0500
+
+    Addressing comments
+
+[33mcommit 1e5e82b52dbab5aa10d1b6068d6270a0061c81e1[m
+Author: Julie Xiao <julixiao@gmail.com>
+Date:   Mon Feb 4 22:54:34 2019 -0500
+
+    Radio board fixes
+
+[33mcommit e611fe25acc1be8ccdc5666c3ce291f9fba5a779[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Mon Feb 4 20:16:50 2019 -0500
+
+    Address Aaron's comments
+    Renamed POWER hierarchal label
+    Removed R21 and R23
+
+[33mcommit f1cd5364eaec6260713b3937de439d695bc03e07[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Wed Jan 23 20:07:33 2019 -0500
+
+    Address final changes. Colour in Level Shifter, removed extra pull-up resistors and  rename U4
+
+[33mcommit 3de679eaa7d1763b1231c247adfd36836ebb55c4[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Tue Jan 22 22:21:16 2019 -0500
+
+    Address final changes:
+    Add 0 ohm resistor in the Enable pin of U4 (the new level shifter)
+    Replace the old voltage divider with a bidirection level shifter
+    Modify library as necessary
+
+[33mcommit c47b9afe4ebfa2de1d978b7bddd1945f7994bcc5[m
+Author: Addesh <45300022+Addesh@users.noreply.github.com>
+Date:   Mon Jan 21 18:48:54 2019 -0500
+
+    Add README for vent, injector, radio, logger
+
+[33mcommit 6a8371a4e176ea114fbe18cbbc3d72242580018b[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Tue Jan 15 07:27:19 2019 -0800
+
+    Add fixed vent board gerbers
+
+[33mcommit 8e7748ef9816b3c51d76e81ac372a71731c63d67[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sat Dec 8 10:07:46 2018 -0500
+
+    Vent: fix schematic libraries, minor pcb tweaks
+    
+    - Change all components supposedly in vent-rescue.lib back to canhw.lib
+    where they should be.
+    - Rotate Q3 and Q4 so they match Q5 and Q6
+    - Clean up traces
+
+[33mcommit d16bbbde29918299615e53f23eaeb67e0d6f1d97[m
+Author: Alexander Kitaev <alex.kitaev58@gmail.com>
+Date:   Wed Dec 5 21:02:08 2018 -0500
+
+    Re-added logo
+
+[33mcommit 28b151a940ee3b6be34214327c6bbed1db3b5ae7[m
+Author: Alexander Kitaev <alex.kitaev58@gmail.com>
+Date:   Wed Dec 5 20:48:47 2018 -0500
+
+    Switched Q3 and Q4 sources and drains; connected R13 and R18 to +5VBAT
+
+[33mcommit 7b7df6cf89de74c60c7b564d8dcb58cda6a05d3c[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Fri Dec 21 09:48:43 2018 -0500
+
+    Addressed changes:
+    Re-added the 2.2 resistors in series with the 0ohm resistor
+    Accidentally wired the gps-board into self start mode when changing from SPI to UART. Reverted this change.
+    Connected PIC_RX to GPS_TX and PIC_TX with GPS_RX
+    changed resistor value of the voltage dividers from 1k to 10k and 2k to 20k
+    Added anotation to each components
+
+[33mcommit a45156a3eb0a46923b57089e7e68e7456365b2f5[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Tue Dec 18 13:52:06 2018 -0500
+
+    Create library with better mosfet symbols
+
+[33mcommit 779a1565ca97884087ecc3b7d8d7304bd7a5c521[m
+Author: julixiao <34080986+julixiao@users.noreply.github.com>
+Date:   Mon Dec 10 22:34:51 2018 -0500
+
+    Delete copy
+
+[33mcommit e3d537bc07456fe07dd73dc7ce175e8bd8861981[m
+Author: julixiao <34080986+julixiao@users.noreply.github.com>
+Date:   Mon Dec 10 22:34:21 2018 -0500
+
+    Delete backup file
+
+[33mcommit 1eb6b69fa7678017d2377111ac42e10193367f41[m
+Author: julixiao <34080986+julixiao@users.noreply.github.com>
+Date:   Mon Dec 10 22:34:04 2018 -0500
+
+    Delete backup file
+
+[33mcommit c36ee5c215284169cd887117093bc6dba99ed608[m
+Author: julixiao <34080986+julixiao@users.noreply.github.com>
+Date:   Mon Dec 10 22:33:48 2018 -0500
+
+    Delete backup file
+
+[33mcommit f7224f89fd6486598f8613052d89b85e0318a0f7[m
+Author: julixiao <34080986+julixiao@users.noreply.github.com>
+Date:   Mon Dec 10 22:33:30 2018 -0500
+
+    Delete backup file
+
+[33mcommit 0b3a97335025bc70fa190be7d96950fdfda95cde[m
+Author: julixiao <34080986+julixiao@users.noreply.github.com>
+Date:   Mon Dec 10 22:32:16 2018 -0500
+
+    Radio board fixes
+    
+    Footprint on C10 and C9 updated for through-hole
+    Bus_en line is split into three individual lines on schematic and pdf but not updated on PCB
+
+[33mcommit 40e1b9efb4afbbdb7af93467eb5a117b021d28e4[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Sat Dec 8 14:43:16 2018 -0500
+
+    Addressed Alex's issues:
+    Replaced 5V to 3v3 level shifter with 2 voltage dividers
+    Fixed Hierarchical labels for the gps
+    Renamed and clarified some connections
+
+[33mcommit dd38ff4eb5761cda722a599c501bfca11fc3a700[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Tue Dec 4 22:28:13 2018 -0500
+
+    Addressed Alex's comments:
+    Fixed Level shifters, specified directions of the signals correctly.
+    Added Pull-up resistors for the level shifters
+    Switched from SPI to UART, fixed nessesary connections
+    Grounded GPS board
+    Fixed misc. errors mentioned
+
+[33mcommit ae46601f94894e03e10c9e1d3ddd40f57136689d[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Thu Nov 29 21:27:50 2018 -0500
+
+    Addressed Alex's comments
+
+[33mcommit ec66f4369ba436c114733020fc1babbc242fb8ac[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Thu Nov 29 20:01:30 2018 -0500
+
+    fixed merged issues
+
+[33mcommit c0eba45ba401402b0d0f9dc1577904a73907f513[m
+Merge: fd65a19 5dfb385
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Thu Nov 29 19:57:25 2018 -0500
+
+    fixed merge issues
+
+[33mcommit fd65a191176be1d30daacecd9a44f256fc874c8d[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Thu Nov 29 19:35:10 2018 -0500
+
+    WIP
+
+[33mcommit 84f263c47a5898067acd0ab7092e7fae18274be2[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Thu Nov 29 18:03:19 2018 -0500
+
+    commited changes to rebase
+
+[33mcommit cf57b8a5f8c51e603e49b75708469e2b0bedc1ec[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Sat Nov 24 17:58:56 2018 -0500
+
+    addressed  Alex's changes
+
+[33mcommit e95abc44b1fc067858333f75c4e81d29a091c645[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sun Nov 11 16:58:07 2018 -0500
+
+    Fix gps lib issues
+    
+    - set canhw as a project specific library
+    - update library for gps component
+
+[33mcommit ac3e4e053af08e707221ac7f2cdb952975883947[m
+Author: Thomas Lim <thomas@limfamily.com>
+Date:   Sat Nov 10 11:24:29 2018 -0500
+
+    Updated library to add GPS part
+
+[33mcommit b0a8938d75728bb427b871e1296f5c8108922842[m
+Author: Thomas Lim <thomas@limfamily.com>
+Date:   Thu Nov 8 19:09:38 2018 -0500
+
+    Inital commit of GPS board
+
+[33mcommit 83a497be3c841a6102982f8dd532dc77ff130444[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Tue Nov 27 14:33:03 2018 -0500
+
+    USB dongle first draft
+
+[33mcommit 9b40cd470f69b623cb9c08d6f47f48700ac92e5d[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Mon Nov 26 14:30:44 2018 -0500
+
+    wip routing
+
+[33mcommit db487a803cbcd049a827a763e3999b530d6eba37[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sun Nov 25 15:56:02 2018 -0500
+
+    New dongle style layout
+
+[33mcommit 5dfb3859bf65320d0581a3a6f163438468e9a582[m
+Author: Aidan Ha <qbha@edu.uwaterloo.ca>
+Date:   Sat Nov 24 17:58:56 2018 -0500
+
+    addressed  Alex's changes
+
+[33mcommit 0d881226e13a8c87209a77172c7b8ee73229cb94[m
+Merge: 1cc0a81 6eef529
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Sat Nov 24 09:23:21 2018 -0500
+
+    Merge pull request #1 from waterloo-rocketry/pdfs
+    
+    Generate PDFs for all schematics
+
+[33mcommit 6eef529fca74052ce7b18f8e63c758a9cdced272[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Thu Nov 22 17:09:45 2018 -0500
+
+    Generate PDFs for all schematics
+
+[33mcommit 1cc0a81678be51a1c1520baebb72a7bc889d5e05[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sat Nov 17 15:15:01 2018 -0500
+
+    Give the sensor board a name
+
+[33mcommit 1346795b114c4dbf824355d6736ec8f4532714cc[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sat Nov 17 14:58:39 2018 -0500
+
+    Fix sensor board soldermask
+
+[33mcommit a4d38177ffdebc899baf6c7d5a5fe994afe741f5[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Thu Nov 15 12:52:04 2018 -0500
+
+    Sensor fab review 2 fixes
+    
+    - move some traces and vias around
+    - remove some daisy chaining
+    - add silkscreen to connectors
+    - add an actual edges layer
+
+[33mcommit 83531e66196be6437e393e48de492ac7a0bc9da5[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Wed Nov 14 13:24:21 2018 -0500
+
+    Add sensor board gerbers
+    
+    Includes a F.Paste layer because I want to get a stencil.
+
+[33mcommit 70d58a02c01ac8d6d290966fabd75f225d87fe79[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Sun Nov 11 16:56:38 2018 -0500
+
+    Sensor Board: Aaron making changes from Aaron's review
+
+[33mcommit 034a8ddb6fd86df76a3784f185926090f2516140[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Wed Nov 7 15:21:50 2018 -0500
+
+    Sensor board review changes
+    
+    - reroute some traces to make pours cleaner
+    - fix soldermask clearance
+
+[33mcommit f19b9eb954479a8f7d63980702c613298a762090[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Tue Nov 6 12:41:29 2018 -0500
+
+    Sensor Board rev 1
+    
+    Up for review
+
+[33mcommit 196e032e7e91db81271a45c996a63ac9d80288b7[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Tue Nov 6 09:02:43 2018 -0500
+
+    First pass routing
+    
+    TODO: cleanup
+
+[33mcommit bafe88552072170ae1a21acb8f6cc3023e7829a9[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sat Nov 3 22:06:40 2018 -0400
+
+    Finish sensor board layout
+
+[33mcommit d9f004f37f50c66606d46f509dbc7146b27ca4bf[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Sat Nov 3 10:45:50 2018 -0400
+
+    Move one thermistor connector to bottom row; unsquish IMUs
+
+[33mcommit 2ea3822ade1318c1bb1177535ad17d99824af400[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Sat Nov 3 10:33:43 2018 -0400
+
+    Squish some things, board is now 2.7 inches longs (arduino size)
+
+[33mcommit 81bb3670d150f8d1e8536e7719aa4a30c5e5d197[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Fri Nov 2 13:17:40 2018 -0400
+
+    WIP sensor layout board
+
+[33mcommit efceb801537c3681ea3e325edcff6453aebd366c[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Wed Oct 31 11:40:27 2018 -0400
+
+    Assign most footprints
+
+[33mcommit ee35a65faea9ba2b9c1a7e0ae2549fc8b782c80d[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Wed Oct 24 11:50:02 2018 -0400
+
+    Replace IMU cause Jacob wanted to
+    
+    New IMU has better magnetometer sensitivity
+
+[33mcommit d2d0955c8b26c3d1cc9f0d7cbc300bc5c47ab171[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sat Oct 13 16:48:41 2018 -0400
+
+    Update digital sensor suite
+    
+    Swap out our old IMUs with a pair of BMX055s. Add all the interfacing
+    required for that.
+
+[33mcommit ba9ff41a77504e464b4d1e3c1992f8e34b86ace2[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Mon Oct 8 14:07:58 2018 -0400
+
+    Sensor board review changes
+    
+    - annotate everything
+    - fix symbol library mapping
+    - fix debug header orientation
+    - add extra decoupling cap to mcu
+    - add a couple debug leds
+    - add 15V regulator (tht)
+    - add sensor comments
+
+[33mcommit 73fae23dac86283bc0e9bed91ba5a3417d67df98[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Fri Oct 5 17:32:10 2018 -0400
+
+    WIP sensor board
+    
+    TODO:
+    - check common mode on rtd amp. Might need to swap that out.
+    - put in a 15V regulator.
+
+[33mcommit e9668e2b1038fc512f56911b3159717f8b03bb82[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sun Nov 11 16:58:07 2018 -0500
+
+    Fix gps lib issues
+    
+    - set canhw as a project specific library
+    - update library for gps component
+
+[33mcommit da86d1349e7fd428bfdf56eabcd976a1c602e5a4[m
+Author: Thomas Lim <thomas@limfamily.com>
+Date:   Sat Nov 10 11:24:29 2018 -0500
+
+    Updated library to add GPS part
+
+[33mcommit 475499be4ae7fd7c644cb57000e3326ba3027849[m
+Author: Thomas Lim <thomas@limfamily.com>
+Date:   Thu Nov 8 19:09:38 2018 -0500
+
+    Inital commit of GPS board
+
+[33mcommit aa8a2002ecb6694621f64e80da854863ff72f87b[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Mon Nov 5 09:42:15 2018 -0500
+
+    Add zip files of logger, radio, vent and injector.
+    
+    We need another fab review, but after that we are good to go
+
+[33mcommit 2a374f0cc2f07b3757c28f1a2c90c9c884010417[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Sun Nov 4 17:47:28 2018 -0500
+
+    Vent Board: Fix non-square edges
+
+[33mcommit e42d5ed8e64853e68e157b6816330887535def9a[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Sun Nov 4 16:53:24 2018 -0500
+
+    Logger Board: Rename to "Yakisoba"
+
+[33mcommit b0d2f56df859521fc5547bb630447d6b83428672[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Sun Nov 4 16:46:35 2018 -0500
+
+    Radio Board: Fab review 1 fixes
+    
+    Changes in this commit:
+      - Reduce min soldermask width (6mil) so there isn't weird briding
+      - Make mounting hole layout imperial (1.75"x1.875")
+      - Name it. It now has a terrible name that I didn't get to pick. Harrumph.
+      - Change MCLR to ~MCLR
+      - Change soldermask clearance down to 2mil
+
+[33mcommit 149ca90d3202847241c1b9309e01f63163bb0940[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Sat Nov 3 23:18:19 2018 -0400
+
+    Logger Board: Fab review 1 fixes
+    
+    Changes fixed in this commit:
+      - Make mounting holes 1.5in square because I ain't no metric apologist
+      - Make programming header not overhang bottom right mounting hole
+      - Change MCLR to ~MCLR on silkscreen
+      - Move C1 closer to MCU
+      - Move C3 further from MCU
+      - Add 10uF capacitor on CAN transceiver (C11)
+    
+    Generate gerbers to reflect these changes
+
+[33mcommit ad5767bf84e1cbe0dbb6c2fbddfa5e1c9ad1661a[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sat Nov 3 17:37:21 2018 -0400
+
+    Injector fab review changes:
+    
+    - name it
+    - make mounting hole spacing nicer
+    - rotate R1 silkscreen
+    - move the power transistors up
+    - reduce soldermask clearance
+    - regenerate gerbers
+
+[33mcommit 92a53fd64c1e549577e0d33e439d8c102c5330b2[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sat Nov 3 13:07:23 2018 -0400
+
+    Add injector gerbers
+
+[33mcommit 28004506f7263d70f67af9ccc1fc637f005cddc3[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sat Nov 3 13:00:45 2018 -0400
+
+    Last minute review fixes
+    
+    - change routing around U1
+    - update zone clearance
+    - updated soldermask clearance
+
+[33mcommit 437169a8a5b20d7ee6c209aa4393eef48d154193[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Wed Oct 17 12:20:59 2018 -0400
+
+    Injector pcb tweaks
+
+[33mcommit c8ab1c48549108136bbe1e76f7aa6c8ff4624da1[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Mon Oct 15 17:29:38 2018 -0400
+
+    Injector pcb first draft
+
+[33mcommit 6a814674555d87d1ed4f65dc44f6f1f25a635946[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sat Oct 13 17:59:38 2018 -0400
+
+    Fix library symbol mappings
+
+[33mcommit 14d9c44346f6962b0084f970bdd99a8632c7d6cb[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sat Nov 3 17:58:36 2018 -0400
+
+    Injector fab review changes
+    
+    - delete paste files
+    - make mounting hole spacing nicer
+    - name it
+    - move the connectors closer to the edge of the board
+    - move trace away from R15, R17
+    - move trace into center of R13 (:|)
+    - reduce soldermask clearance
+    - regenerate gerbers
+
+[33mcommit 20ddb68ae90de51f71fa6d8e7f4fb100097cd246[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sat Nov 3 13:26:34 2018 -0400
+
+    Add vent gerbers
+
+[33mcommit c4a33a2068157fada9956bd38eec37221edcc827[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Tue Oct 23 19:03:20 2018 -0400
+
+    Vent board review changes
+    
+    - Make 5V pour bigger to get rid of long power trace
+
+[33mcommit 526d811cf7e2797d6da0275d04aa5ad5b38320fd[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Tue Oct 23 15:12:01 2018 -0400
+
+    Vent board rev 1
+    
+    Up for review
+
+[33mcommit 3487be6c841abbadcc5b63ae01bbaf955c0bcc29[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Mon Oct 22 17:25:04 2018 -0400
+
+    First draft vent layout
+
+[33mcommit 0c1a77341a77e39591df816db50811ff94dcbd21[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Wed Oct 31 11:10:14 2018 -0400
+
+    USB Flea: Generate Gerbers, update datestamp
+
+[33mcommit bde7b355efd942b2dab056a04c8aee30ceb25923[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Mon Oct 15 17:18:00 2018 -0400
+
+    USB Flea Preview 1
+
+[33mcommit e96080df1456c516a1eddfdfa95dadd34d2f8737[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Sun Oct 21 10:04:52 2018 -0400
+
+    Radio board: Rotate CAN connector, generate gerbers
+
+[33mcommit 8d3ddad7ca9d835b6853019fbb02f535d08d220f[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Sat Oct 13 16:21:10 2018 -0400
+
+    Radio Board: Review Version 1
+    
+    Designed to be a 2 sided, 6/6 board. The radio is designed for a UFL
+    connector, but if those are as bad as possible, there is room to move
+    a trace off board straight up (where the silkscreen name currently is)
+    and into an SMA connector.
+
+[33mcommit 9fbdcf21b5f47fb109227447454e834125c84d69[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Tue Oct 9 10:57:36 2018 -0400
+
+    Radio board: Pre review Layout V2
+    
+    Now it's way smaller (5x5.5cm). Not sure whether it's hand solderable,
+    but it'll be worth a try. Not sure if it's routable, but hey, why not?
+    Components are now on both sides (but not underneath XBEE).
+
+[33mcommit 6391fc552f2567adda1d3282c38cdc69b1ebb915[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Tue Oct 9 00:08:04 2018 -0400
+
+    Radio Board: More layout stuff
+    
+    Everything is now connected, but the layout is somewhat unoptimal.
+
+[33mcommit 081ad3f4d302da305b2421dd46a4f91a1346a352[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Thu Oct 4 13:25:53 2018 -0400
+
+    Move everything onto the board outline, start running power traces
+
+[33mcommit 86e1c2727a9752cdfa16eb0b40d9984cc6545c6a[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Wed Oct 31 10:53:59 2018 -0400
+
+    Logger Board: Add pullup resistors on SD card MISO lines
+
+[33mcommit ce9d2cddbdab60a3714212f9a6545de4c64de079[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Sun Oct 21 09:07:36 2018 -0400
+
+    Logger Board: Add MCLR 3v3 marking
+    
+    Regenerated F-SilkS gerber file to reflect the change.
+
+[33mcommit e68c510084d7a68bc2aae15c71494a81acddffc2[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Sun Oct 21 09:01:47 2018 -0400
+
+    Logger Board: Fab-ready review V1
+    
+    Minor touchups on some traces to make sure the ground plane gets where
+    it needs to go. No major component position tweaks.
+
+[33mcommit 883423850bf6579f1aff9332025e607a83ebb9a4[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Mon Oct 15 11:38:22 2018 -0400
+
+    Logger Board: Update CAN connector to use 90 degree SMD, not vertical SMD
+
+[33mcommit 16328fb0fb1a69c2f4310f3a47b5176e0ff450ea[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Mon Oct 8 21:37:28 2018 -0400
+
+    Logger Board PCB Review 1 changes
+    
+    Changes in this commit:
+            - Move C2 further from U1
+            - Space out F1, R5, U4 and C8
+            - Silkscreen rearrangements to make it pretty
+            - Replace J1 (SMT programming header) with a 90 degree connector
+            - Replace U3 with hand soldering footprints
+            - Turn mounting holes into plated holes
+            - Remove daisy chaining through pads. I hope I got all of them, please check
+            - Get rid of the power trace running through the SD card housing....
+            - Move SD card holders down, so the SD cards don't overhand the board
+            - Add rocketry logo to front silkscreen for that sweet sweet brand value
+
+[33mcommit 8af7872c2efdf150d12cefc28fb54fdf0b4158a1[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Thu Oct 4 17:06:41 2018 -0400
+
+    Logger: First Review-Ready version
+    
+    Things not covered in this review: ground trace widths. They're too
+    small. I know. That'll take some finnickying.
+    
+    Things that should be reviewed: Layout, sizing, is there enough space
+    to solder everything. Is doing a 1-sided board a terrible idea? Are
+    the traces nice (they're not)/are they workeable (maybe?)
+    
+    This commit christens this board RSRLog - The rocket-fast System for
+    rocket logging. Name subject to change, I'm not 100% attached to it.
+
+[33mcommit eba59c6fc611563f7af7609375d03914705d3536[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Thu Oct 4 15:39:54 2018 -0400
+
+    Logger: Shuffle layout a bit, reduce board size to 4.5x4.5cm
+    
+    The traces in this commit are ugly, they need to be cleaned up, but
+    all nodes that need to be connected are. Need to space out some
+    components so that we don't want to die when assembling the thing.
+    
+    This commit puts both SD cards together. IMHO, it's much more
+    aesthetic than it was before. And, things are connected
+
+[33mcommit cb0635086424d9bf4e01843c4278c75ca0e7a2f8[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Sat Sep 29 23:05:17 2018 -0400
+
+    Logger: A final, working layout of single layer board. Needs tweaking.
+    
+    All nets are connected, it fits on a 4.5x5cm pcb, some parts need to
+    be moved around slightly so I don't hate myself when assembling. I
+    think that this is the one to go with. After some tweaking.
+
+[33mcommit 14cd6bd9004a023a81ac17c4680d0122688ce7c1[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Sat Sep 29 14:05:37 2018 -0400
+
+    Logger: New layout, 5cm by 4.5cm. Not all connected.
+    
+    Used one jumper, probably need 2 more to connect everything together
+
+[33mcommit 75bcd82f21c7265dc9d154a5d4be33ff55def807[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Fri Sep 28 08:58:25 2018 -0400
+
+    Logger: route traces - got 95% of the way there
+    
+    Required remapping a bunch of SD card pins. Only things that I
+    couldn't manage to route onto a 4cm by 6cm single sided board was the
+    current sense line, and a couple of ground pour islands. It should be
+    doable with maybe one or two jumpers. I want to try rotating the
+    microcontroller 90 degrees CCW, that should make the current sense
+    line easier, as well as some of the SD card stuff.
+
+[33mcommit 66e46ca31a4e6d3b3bb3f7c48be0282c5a74d9f6[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Thu Sep 27 13:32:16 2018 -0400
+
+    Logger: Initial ballpark layout for logger, to see how big it should be
+    
+    Some footprints are not final ones - CAN connector is wrong, crystal
+    is wrong, current sense resistor is probably wrong, SD card holder is
+    wrong. These are just ballpark estimates so that we can get an idea of
+    the order of magnitude of the size of the final board.
+
+[33mcommit d6a7e2f81b9cc9b5107ffdbed18b9e78fb937223[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Thu Oct 4 11:18:26 2018 -0400
+
+    Radio board: Generate netlist and do preliminary layout.
+    
+    Noticed that one footprint was misassigned - the MCP2562 was listed as
+    a 14 pin package when it should have been 8 pins
+    
+    Done preliminary sizing. I believe that if the board is packed very
+    tightly, it can be made as a 6x7cm 6/6 2-layer board. Might be that
+    I'm overoptimistic, the preliminary layout doesn't even fit in that
+    space, but heck, I'm hopeful.
+
+[33mcommit 807fb2f93c0156004d6185d06fefd454a5e40074[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Thu Oct 4 09:32:26 2018 -0400
+
+    Add KIPRJMOD to symbol library path for logger board
+
+[33mcommit 8bb2cec7ab182be08b4851cf40d18d24517851c9[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Wed Oct 3 13:05:59 2018 -0400
+
+    Create project specific footprint library
+    
+    Whoops, i committed a bunch of new footprint references without
+    _actually_ committing the footprints themselves. Mia Cupla. Here they
+    are
+
+[33mcommit 3615996de2fb44b54beaf4ad91a6a217f76b370d[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Wed Oct 3 10:27:21 2018 -0400
+
+    Radio board: Create BOM, assign footprints
+    
+    It is not guaranteed that all footprints are correct, I still need to
+    check that. BOM does not contain resistors or caps, but it does
+    contain connectors and the inductor. All parts are from digikey.
+
+[33mcommit 9630c80e076fa34c59c5fc83f023e37149262c21[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Tue Oct 2 20:35:03 2018 -0400
+
+    Radio board: Fix SMPS, it was reverted to an older version in recent merge commit
+
+[33mcommit 3cd816ca841eca0997209cfc3059693ca4bea2e7[m
+Merge: c58ca21 54cabc6
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sun Sep 30 08:04:25 2018 -0400
+
+    Merge branch 'master' of github.com:waterloo-rocketry/canhw
+
+[33mcommit c58ca21b1b99cd976d1e965125d16ed519d86626[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sun Sep 30 08:00:23 2018 -0400
+
+    Annotate injector schematics
+
+[33mcommit e82481536d2c44f26ef8bf2c411b3be952ccd73c[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sun Sep 30 07:57:08 2018 -0400
+
+    Fix fail-safe control on vent
+    
+    Add a linear regulator to power the comparators and DACs off the same
+    battery as the linear actuator.
+
+[33mcommit 54cabc65bc937380eda469a3fa9f44d3dd150a88[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Sat Sep 29 15:35:08 2018 -0400
+
+    Radio board Review fix - Add new SMPS
+    
+    Running the Diodes incorporated AN1509 SMPS now, using component
+    values sourced from their datasheet and application note.
+
+[33mcommit 841a8ebae97135556d2a5e749ad0b759c7c13115[m
+Merge: de4e629 cbdbaa8
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sat Sep 29 13:31:29 2018 -0400
+
+    Merge branch 'master' of github.com:waterloo-rocketry/canhw
+
+[33mcommit de4e629b15431c84f27808c22894bf3f359d3b25[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sat Sep 29 13:30:12 2018 -0400
+
+    Vent board review changes
+    
+    - fix PMOS symbol
+    - make voltage divider less fat
+    - NC unused 12V rail
+    
+    TODO: failsafe for the DACs
+
+[33mcommit cbdbaa8988444a2ed2b8aeb73cf7c77ccec6ec09[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Fri Sep 28 15:56:48 2018 -0400
+
+    Free as in freedom (Create GPLv3.0 license file)
+
+[33mcommit cf6350da72ab53ff08fd2190f7bb361869b3d5f6[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Fri Sep 28 15:43:01 2018 -0400
+
+    Bye bye MIT license
+
+[33mcommit f487686d534f11c4668931115e058bcc0adae211[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Fri Sep 28 15:36:08 2018 -0400
+
+    Create picdev readme
+
+[33mcommit 03515022c0bb1d5b07e4ee92816b0bf6ee999f45[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Thu Sep 27 16:15:51 2018 -0400
+
+    First draft of vent board
+
+[33mcommit efbc793a7cb856dad0ea94e8deabe6e5f8eeda42[m
+Merge: d116c6c 5ab2011
+Author: Alex Mihaila <am@objectline.com>
+Date:   Thu Sep 27 13:01:40 2018 -0400
+
+    Merge branch 'master' of github.com:waterloo-rocketry/canhw
+
+[33mcommit d116c6cb21dfcb6677ae13a52bf68a1e2349da9f[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Thu Sep 27 12:59:58 2018 -0400
+
+    WIP vent board. Not for review.
+    
+    TODO: various component values
+
+[33mcommit 5ab2011fb1ae0c6b6a0546541ad3df6c69cbefc0[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Tue Sep 25 22:04:13 2018 -0400
+
+    Rocketlog - Review Changes
+    
+    Changes in this commit:
+        - change capacitor on SD card power rail to 4.7uF. Not sure of proper value,
+        but decoupling definitely is necessary (SD cards draw a lot of current).
+        - Remove the SMPS, run the board off 5V CAN rail (3v3 LDO is still there)
+        - Replace 4pin CAN connector with standard pinout 5pin connector
+        - Put current sense amplifier on 5V rail instead of VBATT rail
+        - Annotate the schematic (sorry)
+        - change MCLR to ~MCLR
+        - add polyfuse on 5V CAN bus rail
+        - remove US style resistors, all resistors now EU metric apologist style
+        - Set R_Sense and current gain values, full scale at 266mA (is this good?)
+
+[33mcommit 4b8c9622263448aadef20fdcb61a593d9f96a442[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Tue Sep 25 21:46:48 2018 -0400
+
+    USB Debug - annotate schematic
+    
+    I screwed up. I'd rather fess up to that than force push and have
+    github bot announce my shame to all the frosh
+
+[33mcommit 934f5115235a3f17497ecc527eeae14d6165beba[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Tue Sep 25 21:42:12 2018 -0400
+
+    USB Debug update - ready for review for production version (not usbdog)
+    
+    Remove the 0ohm resistors from USB power to 5V rail and from CAN
+    ground to ground plane. These were unneccessary, a wire does just
+    fine.
+    
+    Replace the CAN bus connector with a more standard 5 pin one. The usb
+    board should use the same connector as every other board, now it
+    can. There's a new jumper that allows you to power the CAN bus from
+    the USB board's 5V rail, in case you're doing an integration test or
+    something and you want to do that.
+
+[33mcommit 70a50608943f90ba28cdcdf7e459ba8b9dd23989[m
+Merge: 35fb603 27e2904
+Author: Alex Mihaila <am@objectline.com>
+Date:   Tue Sep 25 18:39:09 2018 -0400
+
+    Merge branch 'master' of github.com:waterloo-rocketry/canhw
+
+[33mcommit 27e2904fa067fafd07e0f9370c9480526568cff8[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Tue Sep 25 18:36:21 2018 -0400
+
+    Review Tweaks
+    
+    Move explanation text that was in a terrible spot, replace a DNP
+    resistor with a 10K resistor because it turns out the resistor
+    shouldn't have been DNP.
+
+[33mcommit 0eba413bf0aef2bc85fdccd0fa315dab4f851e39[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Tue Sep 25 14:57:25 2018 -0400
+
+    Review Fixes
+    
+    Changes in this commit:
+    1. Change power symbol +VBATT to +12V for consistency
+    2. Replace 4 pin bus connector with 5 pin (pinout 1-5 = 12v, 5v, gnd, canh,
+    canl)
+    3. Move current limiting resistor on bus enable line so it's in series with
+    three nmos's
+    4. Replace Q2 (transistor that pulls down the gate of the p-channel mosfets)
+    with a mosfet instead of a bjt
+    5. pull down bus enable line, so  the gates don't explode
+
+[33mcommit 35fb603acfa9d72932a8014c46019f4a4cd6813a[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Tue Sep 25 10:56:40 2018 -0400
+
+     Minor changes
+    
+     - add polyfuse to 5V line
+     - change all resistors to US style
+     - switch to +BATT symbol
+
+[33mcommit 3bc0808042c75ffeb54facdadff8c2cb3e12d5f8[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Mon Sep 24 12:27:35 2018 -0400
+
+    Add debug LEDs to injector board
+
+[33mcommit 20cadfc24312a4cdd1f9bc2217fed89f2b3ddb63[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sun Sep 23 11:59:13 2018 -0400
+
+    Injector schematic review changes
+    
+    - fix resistor value for current amp
+    - remove test points
+    - add 12V rail to CAN connector
+
+[33mcommit 6fd43edcddf3e0569f4a905bb285c40ce5df03e1[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sat Sep 22 18:14:22 2018 -0400
+
+    Move library files to lib/
+
+[33mcommit 5979553c53176a69189c4bb4cdb737333e2e50d9[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sat Sep 22 15:19:30 2018 -0400
+
+    First draft injector schematic
+    
+    TODO: investigate alternative motor control
+
+[33mcommit 5e68c03b76feee78cf4d7af7a7b4bcf616a537fd[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Fri Sep 21 10:50:01 2018 -0400
+
+    Increase Font size on USB Dog's silkscreen layer
+    
+    E5 SDC PCB centre can't print text on silkscreen narrower than .35mm
+    and shorter (height) than 2mm, ie really big text. This commit
+    increases the font size of all text, including part numbers (R4, U2,
+    whatever). The test point part numbers had to be removed from
+    silkscreen because there was no room for them, but all other parts are
+    still labelled.
+    
+    No copper, solder mask, or mechanical layers were changed in this
+    commit.
+
+[33mcommit c3206d4e6aaba3c13c0f7ffee69e30f63e82f6ee[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Tue Sep 18 18:30:10 2018 -0400
+
+    Minor review fix on USB dog
+    
+    Remove the bus power connector on the CAN header, it now only contains
+    ground, CANH and CANL. Also minor silkscreen edits to show which pins
+    are CANH, CANL, GND, and ~MCLR.
+
+[33mcommit 38f24311e7dae7abb69773670a43ab649fc51265[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Mon Sep 17 17:22:48 2018 -0400
+
+    Fixes from Alex's review
+    
+          - Current sense amps powered from 5v rail, not 3v3
+          - reorder bus connector to power, ground, canh, canl
+          - Switch debug LEDs from sourcing current to sinking current
+          - Change MCLR to ~MCLR
+
+[33mcommit 2ac26d130c31bea228c3f69daab0f27d2f3efba3[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Sun Sep 16 12:21:46 2018 -0400
+
+    First stab at schematic for radio/power control board
+    
+    Schematic is missing some component values, mostly for the SMPS. Board
+    features:
+            - An Xbee (surface mount), with logic level shifting
+            - A PIC18F26K83 (with programming header)
+            - CAN interfacing
+            - External oscillator
+            - Two MOSFETs to cut power from the bus lines (needs to be breadboarded)
+            - 3 Debug LEDs
+            - Current sense amplifiers on current from battery and current to bus
+
+[33mcommit c49a29e2b2283c428d1ca13357bfa76722dcc234[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Sun Sep 16 12:13:35 2018 -0400
+
+    Lay out usbdog pcb, generate gerbers
+    
+    USB Dog is our first spin of the USB debug board. It is meant to be
+    printed at the E5 3D print center, which can only make 16/16 boards. A
+    new layout has to be made for the final version (which will be printed
+    by an actual fab).
+
+[33mcommit f3526e8f7172a6cdba5e53809601d00abf9d7771[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Sat Sep 15 22:17:58 2018 -0400
+
+    Update part footprints for usbdbg, dump footprints onto pcb
+
+[33mcommit 371e563e91535dc514e053ec7c263c01b24d17ff[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Sat Sep 15 21:47:53 2018 -0400
+
+    First pass at usb debug board
+
+[33mcommit a1aea25b2378e71eaec9176194a82931902f2a67[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Sat Sep 15 19:51:20 2018 -0400
+
+    First stab at schematic for rocket logger board
+    
+    Schematic isn't very pretty, and is missing some component values, but
+    should mostly be done. Board features:
+           - 2 SD cards driven by separate SPI modules
+           - A dsPIC33EP512GP502 micro (super overkill)
+           - CAN interfacing
+           - Buck converter from bus to 5v, LDO from 5v to 3v3
+           - Current Sense amp for total current draw from bus power
+           - Programming header
+           - External oscillator
+           - 2 Debug LEDs
+
+[33mcommit 9de5429ac797aefbd8fa5655ed4b3a42e96f6582[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sat Sep 15 19:02:13 2018 -0400
+
+    Fix canhw lib merge
+
+[33mcommit fd6593f1113df428afeb177e4806caac8c79f082[m
+Merge: 4727fe6 6a07ba7
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sat Sep 15 18:55:26 2018 -0400
+
+    Merge branch 'master' of github.com:waterloo-rocketry/canhw
+
+[33mcommit 4727fe6b89efb216897fba32e0b73f32f0049207[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sat Sep 15 18:53:08 2018 -0400
+
+    WIP injector driver schematic
+
+[33mcommit 6a07ba7d62d02702f618580fc116b3704bab5c77[m
+Author: Aaron Morrison <akmorris@edu.uwaterloo.ca>
+Date:   Sat Sep 15 08:49:02 2018 -0400
+
+    Create DSPIC33EP512GP502 part
+    
+    High speed DSP micro with CAN support, multiple SPI and I2C modules, a
+    bunch of ADCs. Current plan is to use it for the logger board.
+
+[33mcommit 2bd6844b686d5aff4d641111f5c1355f4a89a1ad[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sat Sep 15 08:18:30 2018 -0400
+
+    Move all components to one side
+
+[33mcommit 63271ccc50058b0a735cda5cd3f67927337ece75[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Sat Sep 15 08:12:27 2018 -0400
+
+    Review changes
+    
+    - change test point footprint
+    - generate gerbers
+
+[33mcommit af4dfd94329506e8ba925ac7aab82168ae0175dd[m
+Merge: cbe627b b044fd8
+Author: Alex Mihaila <am@objectline.com>
+Date:   Fri Sep 14 11:46:28 2018 -0400
+
+    Merge branch 'master' of github.com:waterloo-rocketry/canhw
+
+[33mcommit cbe627baf0bf14e13ef6fca507a13df8a9e82f3b[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Fri Sep 14 11:45:46 2018 -0400
+
+    More silkscreen
+    
+    - name the board
+    - add osh logo cause there was space
+
+[33mcommit b044fd8266ae7ac9789344fef0fb42055eea9149[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Fri Sep 14 08:31:52 2018 -0400
+
+    Create LICENSE.md
+
+[33mcommit 70ab3a6b56360a8a0f573850e8864e2e88f4b01a[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Fri Sep 14 08:19:46 2018 -0400
+
+    Fix silkscreen test point labels
+
+[33mcommit 53eb25ad522a98aff8af431d55db1ac69a240f2e[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Thu Sep 13 21:35:38 2018 -0400
+
+    Picdev pcb first draft
+
+[33mcommit 58e02db9834714bc4f2402d0cfbd4dc261b355fc[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Tue Sep 11 10:23:51 2018 -0400
+
+    Schematic review changes
+    
+    - swap signals on RC4, RA5 (pic16f)
+    - add oscillator to 26k83
+    - break out usb connector
+    - break out some unused 26k83 pins
+    
+    Also:
+    - break out can bus
+    - add missing decoupling caps
+
+[33mcommit c263a96340e6c905313554eb3390bf87040809c4[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Mon Sep 10 22:04:09 2018 -0400
+
+    add gitignore
+
+[33mcommit 4e68cc2950579ab6333d5055016ffafa665d4073[m
+Author: Alex Mihaila <am@objectline.com>
+Date:   Mon Sep 10 22:00:53 2018 -0400
+
+    Initial commit
+    
+    PIC development board schematic
