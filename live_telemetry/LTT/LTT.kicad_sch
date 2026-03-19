@@ -1,9 +1,18 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "dba0825d-f4bc-4750-857e-1e3e550de350")
 	(paper "A4")
+	(title_block
+		(title "Live Telemetry Transmitter")
+		(date "2026-03-12")
+		(rev "2")
+		(company "Waterloo Rocketry")
+		(comment 1 "Manav Toor")
+		(comment 2 "Rio Liu")
+		(comment 3 "JLC04161H-7628(Standard/Finished thickness1.59mm±10%)")
+	)
 	(lib_symbols)
 	(wire
 		(pts
@@ -34,6 +43,36 @@
 			(type default)
 		)
 		(uuid "1b0eb322-be53-4d35-a2b6-3a49c06f8eb8")
+	)
+	(wire
+		(pts
+			(xy 165.1 68.58) (xy 179.07 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bec6327-2e8a-42fa-85eb-a1c96174b351")
+	)
+	(wire
+		(pts
+			(xy 165.1 60.96) (xy 179.07 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6458d8e9-6e16-4fd6-bdfc-d64f43f55b9c")
+	)
+	(wire
+		(pts
+			(xy 165.1 64.77) (xy 179.07 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b3c0ec3-6409-4b9f-a8f0-30ae428894af")
 	)
 	(wire
 		(pts
@@ -68,6 +107,10 @@
 	(sheet
 		(at 179.07 40.005)
 		(size 55.88 52.705)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -97,53 +140,83 @@
 		)
 		(pin "RESET" input
 			(at 179.07 57.15 180)
+			(uuid "9def7a41-ef16-496e-88dc-2a7ffd3836ac")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9def7a41-ef16-496e-88dc-2a7ffd3836ac")
 		)
 		(pin "MISO" input
 			(at 179.07 83.82 180)
+			(uuid "a4a144b0-b3dd-4ebf-88f0-e9a1007eedb2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a4a144b0-b3dd-4ebf-88f0-e9a1007eedb2")
 		)
 		(pin "SCLK" input
 			(at 179.07 76.2 180)
+			(uuid "2ebca6d2-7092-48d6-bf3c-00cc23e5f917")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2ebca6d2-7092-48d6-bf3c-00cc23e5f917")
 		)
 		(pin "MOSI" input
 			(at 179.07 80.01 180)
+			(uuid "942c3e94-f84f-4ae1-9436-7e2849b8ae03")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "942c3e94-f84f-4ae1-9436-7e2849b8ae03")
 		)
 		(pin "CS" input
 			(at 179.07 72.39 180)
+			(uuid "25b2ab82-b7fd-4b0c-b217-1a87c4195fc6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "25b2ab82-b7fd-4b0c-b217-1a87c4195fc6")
+		)
+		(pin "DIS1" input
+			(at 179.07 60.96 180)
+			(uuid "e5a7d737-8f81-4bdf-84a3-75d26aa482a8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIS2" input
+			(at 179.07 64.77 180)
+			(uuid "b4c856f0-659f-48ef-a382-5b3e906a584e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GPIO2" bidirectional
+			(at 179.07 68.58 180)
+			(uuid "dba98bfe-f66a-4492-9bcb-ff403fdff847")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
 		(instances
 			(project "LTT"
@@ -156,6 +229,10 @@
 	(sheet
 		(at 40.64 40.005)
 		(size 55.88 52.705)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -185,13 +262,13 @@
 		)
 		(pin "CURR_AMP_CAN" input
 			(at 96.52 60.96 0)
+			(uuid "6bc53663-57e3-492b-92db-adb90e9ad46d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "6bc53663-57e3-492b-92db-adb90e9ad46d")
 		)
 		(instances
 			(project "LTT"
@@ -204,6 +281,10 @@
 	(sheet
 		(at 109.22 40.005)
 		(size 55.88 52.705)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -233,63 +314,93 @@
 		)
 		(pin "SCLK" input
 			(at 165.1 76.2 0)
+			(uuid "a9be4711-24c9-4d12-8b25-7d8382f5e649")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a9be4711-24c9-4d12-8b25-7d8382f5e649")
 		)
 		(pin "MOSI" input
 			(at 165.1 80.01 0)
+			(uuid "e5129397-e7e7-4cf5-b7bb-b5881a12acb8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "e5129397-e7e7-4cf5-b7bb-b5881a12acb8")
 		)
 		(pin "CS" input
 			(at 165.1 72.39 0)
+			(uuid "a8ca346c-dcc4-48fe-94e2-8bc37c75541b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a8ca346c-dcc4-48fe-94e2-8bc37c75541b")
 		)
 		(pin "MISO" input
 			(at 165.1 83.82 0)
+			(uuid "933eb5f4-dd1c-402f-ac63-b19380ef6f41")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "933eb5f4-dd1c-402f-ac63-b19380ef6f41")
 		)
 		(pin "RESET" input
 			(at 165.1 57.15 0)
+			(uuid "cd1d9b63-1d56-457a-93b4-a7ee5e13df2f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "cd1d9b63-1d56-457a-93b4-a7ee5e13df2f")
 		)
 		(pin "CURR_AMP_CAN" input
 			(at 109.22 60.96 180)
+			(uuid "1bcac7cb-1d02-46be-95a0-e3c5c8a45649")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "1bcac7cb-1d02-46be-95a0-e3c5c8a45649")
+		)
+		(pin "DIS1" bidirectional
+			(at 165.1 60.96 0)
+			(uuid "fa3a13f8-8a1c-4415-bf36-9b463b21b444")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DIS2" bidirectional
+			(at 165.1 64.77 0)
+			(uuid "78a6a786-c56d-46cd-8b40-cd8fa6e616d0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GPIO2" bidirectional
+			(at 165.1 68.58 0)
+			(uuid "67700610-ef43-4a12-bec7-d726e854b3ef")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
 		)
 		(instances
 			(project "LTT"
@@ -304,4 +415,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
