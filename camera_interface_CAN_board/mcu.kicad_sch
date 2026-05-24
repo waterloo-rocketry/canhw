@@ -4,12 +4,6 @@
 	(generator_version "10.0")
 	(uuid "b6b5b681-a8bd-49d1-9043-e0c1eb46345d")
 	(paper "A4")
-	(title_block
-		(title "Camera Interface Board")
-		(date "2026-06-08")
-		(rev "B")
-		(company "Waterloo Rocketry")
-	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers
@@ -1954,6 +1948,26 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "CAN Communicator MCU"
+		(exclude_from_sim no)
+		(at 146.304 27.178 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2a49794f-4e15-4a63-ad8c-8277198e5f0e")
+	)
+	(text "Power/ground Coming\nfrom Gecko Connector"
+		(exclude_from_sim no)
+		(at 146.812 37.338 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5d6e290f-8497-48b3-87c5-4767f4b083a8")
+	)
 	(text "12 MHz crystal oscillator"
 		(exclude_from_sim no)
 		(at 140.208 137.414 0)
@@ -1981,19 +1995,13 @@
 		(uuid "00d6fae4-77d4-4969-aaf4-0f82459496fe")
 	)
 	(junction
-		(at 199.39 40.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0cb434f0-1d18-4c4e-b4ae-3747b96ad8e3")
-	)
-	(junction
 		(at 132.08 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "41a218f0-250a-4202-8374-bf53e59f30ba")
 	)
 	(junction
-		(at 184.15 90.17)
+		(at 195.58 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "477fd0b4-de05-4585-a5f0-187a66cc2501")
@@ -2016,23 +2024,17 @@
 		(color 0 0 0 0)
 		(uuid "f34d5ea6-3c8f-41fb-b3f0-fd386453581f")
 	)
-	(junction
-		(at 210.82 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f6d5bcf7-b3af-43b3-9b40-2d9436d1597b")
-	)
 	(no_connect
 		(at 143.51 80.01)
 		(uuid "005c3123-5a04-4e54-9905-98bf540b6cb0")
 	)
 	(no_connect
-		(at 143.51 82.55)
-		(uuid "040051be-c8e0-4d01-9b01-247ea38751f8")
-	)
-	(no_connect
 		(at 143.51 72.39)
 		(uuid "1d6772be-5a17-42e7-8f83-2ad9d479f78a")
+	)
+	(no_connect
+		(at 143.51 67.31)
+		(uuid "1e91638e-6520-4597-b343-fb9ef24c5794")
 	)
 	(no_connect
 		(at 180.34 72.39)
@@ -2043,16 +2045,8 @@
 		(uuid "3c7e56c2-c9d7-440d-9de3-669b62f098c2")
 	)
 	(no_connect
-		(at 180.34 69.85)
-		(uuid "4a309489-5915-4da2-8ecc-bb07e66f824a")
-	)
-	(no_connect
 		(at 180.34 77.47)
 		(uuid "4ea90d43-b0f9-40c0-9e43-91e1b5f1ad98")
-	)
-	(no_connect
-		(at 180.34 67.31)
-		(uuid "5af79797-c35a-49ea-b7d4-9501054594cd")
 	)
 	(no_connect
 		(at 180.34 74.93)
@@ -2063,18 +2057,12 @@
 		(uuid "875fa7c6-0b2b-4e79-a82c-5b5362b3facc")
 	)
 	(no_connect
+		(at 180.34 69.85)
+		(uuid "b345f337-672c-467b-8c5e-383eac48199c")
+	)
+	(no_connect
 		(at 143.51 69.85)
 		(uuid "f31d2350-561c-49f1-8b10-4e8f39e0f529")
-	)
-	(wire
-		(pts
-			(xy 210.82 50.8) (xy 210.82 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "067fb622-d0ec-46fa-ac1e-a39b29835263")
 	)
 	(wire
 		(pts
@@ -2128,17 +2116,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 53.34) (xy 199.39 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1edf14b6-d491-4a8c-a0b6-f1bf5b9cd250")
-	)
-	(wire
-		(pts
-			(xy 180.34 87.63) (xy 184.15 87.63)
+			(xy 180.34 87.63) (xy 195.58 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2198,7 +2176,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 90.17) (xy 184.15 90.17)
+			(xy 180.34 90.17) (xy 195.58 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2225,16 +2203,6 @@
 			(type default)
 		)
 		(uuid "5657ccd3-ffea-4ef5-a41c-02771753f530")
-	)
-	(wire
-		(pts
-			(xy 210.82 43.18) (xy 210.82 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "59c8015f-8220-4cf5-9078-c2ceca1f304e")
 	)
 	(wire
 		(pts
@@ -2268,16 +2236,6 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 40.64) (xy 199.39 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "763b17a2-43fb-4957-a047-7a227fedbcef")
-	)
-	(wire
-		(pts
 			(xy 116.84 74.93) (xy 116.84 77.47)
 		)
 		(stroke
@@ -2308,23 +2266,13 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 90.17) (xy 184.15 91.44)
+			(xy 195.58 90.17) (xy 195.58 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "860afc03-3801-49e2-a6a8-f56c3c1eefd8")
-	)
-	(wire
-		(pts
-			(xy 210.82 53.34) (xy 210.82 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87841771-a7a5-446d-b836-678b241465d9")
 	)
 	(wire
 		(pts
@@ -2408,7 +2356,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 87.63) (xy 184.15 90.17)
+			(xy 195.58 87.63) (xy 195.58 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2737,6 +2685,17 @@
 		)
 		(uuid "06c1bf7e-7a56-4e06-be96-6d0542622306")
 	)
+	(hierarchical_label "PWR_STATUS"
+		(shape input)
+		(at 143.51 82.55 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "14ea762e-425d-4048-91e3-7d570adabf54")
+	)
 	(hierarchical_label "CAN_TX"
 		(shape output)
 		(at 143.51 90.17 180)
@@ -2748,18 +2707,29 @@
 		)
 		(uuid "32b6ccf1-6847-4ab4-ac9b-74f3cbf91683")
 	)
-	(hierarchical_label "RUNCAM_ON"
-		(shape output)
-		(at 143.51 67.31 180)
+	(hierarchical_label "CURR_AMP"
+		(shape input)
+		(at 143.51 87.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "33e5f9da-9871-4393-be32-44fca8920d77")
+		(uuid "6a56ed0b-4edc-4492-8221-ba84d502113d")
 	)
-	(hierarchical_label "CURR_AMP"
+	(hierarchical_label "TX1_RunCam"
+		(shape output)
+		(at 180.34 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "88aa8a14-b538-4156-a274-a10f704ecc09")
+	)
+	(hierarchical_label "RX1_RunCam"
 		(shape input)
 		(at 180.34 64.77 0)
 		(effects
@@ -2768,20 +2738,9 @@
 			)
 			(justify left)
 		)
-		(uuid "37afca93-4eda-4b19-897d-e87bdf80a87e")
+		(uuid "9c7be5d5-fb8d-49cb-81d1-990c64906a22")
 	)
-	(hierarchical_label "TX1_RunCam"
-		(shape output)
-		(at 143.51 87.63 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6b31bc66-7b9c-41bd-b7e3-3676d47c59c2")
-	)
-	(hierarchical_label "RX1_RunCam"
+	(hierarchical_label "VCAP_SENSE"
 		(shape input)
 		(at 143.51 85.09 180)
 		(effects
@@ -2790,7 +2749,7 @@
 			)
 			(justify right)
 		)
-		(uuid "ec813000-92b3-452b-af76-ce3002336d62")
+		(uuid "fa178858-9a05-408f-9cf0-03606d29227d")
 	)
 	(rule_area
 		(exclude_from_sim no)
@@ -2832,6 +2791,26 @@
 			(uuid "67cdfb99-755f-4caf-b1e9-d0b1632e0b53")
 		)
 	)
+	(rule_area
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(polyline
+			(pts
+				(xy 86.36 29.21) (xy 211.455 29.21) (xy 211.455 101.6) (xy 86.36 101.6)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+				(color 10 6 255 1)
+			)
+			(fill
+				(type none)
+			)
+			(uuid "98ad1969-42d4-43a0-aced-972323d30bf7")
+		)
+	)
 	(symbol
 		(lib_id "power:+5V")
 		(at 190.5 39.37 0)
@@ -2844,7 +2823,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "04ccaf54-4657-4759-a27d-4c2fa81cd46a")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR05"
 			(at 190.5 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -2904,7 +2883,7 @@
 		(instances
 			(project "camera_interface_CAN_board"
 				(path "/1401ea74-3378-4e12-8edb-861fe50955a4/8cb78ced-05bc-469f-aef3-fb585a5cf39d"
-					(reference "#PWR010")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -2922,7 +2901,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "087aeb7e-9ddf-4376-a95e-dccead0d4344")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR03"
 			(at 104.14 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -2982,7 +2961,7 @@
 		(instances
 			(project "camera_interface_CAN_board"
 				(path "/1401ea74-3378-4e12-8edb-861fe50955a4/8cb78ced-05bc-469f-aef3-fb585a5cf39d"
-					(reference "#PWR04")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -2999,7 +2978,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0c28d1d3-aa24-4fb3-bb96-7fe8241cf1c6")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR012"
 			(at 83.82 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -3060,7 +3039,7 @@
 		(instances
 			(project "camera_interface_CAN_board"
 				(path "/1401ea74-3378-4e12-8edb-861fe50955a4/8cb78ced-05bc-469f-aef3-fb585a5cf39d"
-					(reference "#PWR01")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -3152,85 +3131,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 210.82 46.99 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "13879377-f05a-4c2a-a3a9-9a96dbcab5a1")
-		(property "Reference" "C16"
-			(at 217.17 45.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1uF"
-			(at 217.17 48.26 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 209.8548 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 210.82 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 210.82 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5db7fa31-254f-4c65-b4b5-7d8312750efd")
-		)
-		(pin "2"
-			(uuid "38b44786-ff74-4d94-9c05-7ba32c79e370")
-		)
-		(instances
-			(project "camera_interface_CAN_board"
-				(path "/1401ea74-3378-4e12-8edb-861fe50955a4/8cb78ced-05bc-469f-aef3-fb585a5cf39d"
-					(reference "C16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
 		(at 116.84 71.12 90)
 		(unit 1)
@@ -3253,7 +3153,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "BLUE"
+		(property "Value" "Blue"
 			(at 120.65 73.9774 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3264,7 +3164,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
+		(property "Footprint" "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
 			(at 116.84 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -3335,7 +3235,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "385d7f33-677e-4634-9bab-de64d1b43de6")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR024"
 			(at 158.75 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -3395,7 +3295,7 @@
 		(instances
 			(project "camera_interface_CAN_board"
 				(path "/1401ea74-3378-4e12-8edb-861fe50955a4/8cb78ced-05bc-469f-aef3-fb585a5cf39d"
-					(reference "#PWR09")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -3413,7 +3313,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "527f9248-e23e-4d18-930d-8457fa2f8bcc")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR01"
 			(at 132.08 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -3473,7 +3373,7 @@
 		(instances
 			(project "camera_interface_CAN_board"
 				(path "/1401ea74-3378-4e12-8edb-861fe50955a4/8cb78ced-05bc-469f-aef3-fb585a5cf39d"
-					(reference "#PWR07")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -3582,7 +3482,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "56d4b057-db9c-4032-833d-7404faa3a7be")
-		(property "Reference" "C2"
+		(property "Reference" "C5"
 			(at 154.94 146.05 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3644,7 +3544,7 @@
 		(instances
 			(project "camera_interface_CAN_board"
 				(path "/1401ea74-3378-4e12-8edb-861fe50955a4/8cb78ced-05bc-469f-aef3-fb585a5cf39d"
-					(reference "C2")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -3734,6 +3634,84 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 199.39 53.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "58d14020-c67b-41e4-a81d-6cca4a778a42")
+		(property "Reference" "#PWR09"
+			(at 199.39 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 201.168 58.674 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.39 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 199.39 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "37defb88-8e9b-4f40-a135-42917da2bee6")
+		)
+		(instances
+			(project "camera_interface_CAN_board"
+				(path "/1401ea74-3378-4e12-8edb-861fe50955a4/8cb78ced-05bc-469f-aef3-fb585a5cf39d"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 83.82 163.83 0)
 		(unit 1)
 		(body_style 1)
@@ -3743,7 +3721,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5d0d9ab4-a736-484e-a6ed-10f84ca77b2b")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR011"
 			(at 83.82 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -3804,7 +3782,7 @@
 		(instances
 			(project "camera_interface_CAN_board"
 				(path "/1401ea74-3378-4e12-8edb-861fe50955a4/8cb78ced-05bc-469f-aef3-fb585a5cf39d"
-					(reference "#PWR02")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -4073,7 +4051,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "WHITE"
+		(property "Value" "RED"
 			(at 96.52 73.9774 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4084,7 +4062,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
+		(property "Footprint" "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
 			(at 92.71 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -4144,84 +4122,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 210.82 55.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "85f76e0d-36bc-4f82-9755-e9c39c636bc1")
-		(property "Reference" "#PWR012"
-			(at 210.82 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 212.598 61.214 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 210.82 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 210.82 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 210.82 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f0f180f7-5b08-46f0-9943-f1ce2a8ef15d")
-		)
-		(instances
-			(project "camera_interface_CAN_board"
-				(path "/1401ea74-3378-4e12-8edb-861fe50955a4/8cb78ced-05bc-469f-aef3-fb585a5cf39d"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 92.71 67.31 0)
 		(unit 1)
@@ -4233,7 +4133,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8ce7562f-fc05-47fd-b720-06fe1e3eab98")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR02"
 			(at 92.71 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -4293,7 +4193,7 @@
 		(instances
 			(project "camera_interface_CAN_board"
 				(path "/1401ea74-3378-4e12-8edb-861fe50955a4/8cb78ced-05bc-469f-aef3-fb585a5cf39d"
-					(reference "#PWR03")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -4310,7 +4210,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a8e46eb9-b9a5-4ed2-b2ee-adfa2f93abf7")
-		(property "Reference" "C3"
+		(property "Reference" "C1"
 			(at 205.74 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4372,7 +4272,7 @@
 		(instances
 			(project "camera_interface_CAN_board"
 				(path "/1401ea74-3378-4e12-8edb-861fe50955a4/8cb78ced-05bc-469f-aef3-fb585a5cf39d"
-					(reference "C3")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -4390,7 +4290,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b2727535-9113-4536-a77e-951b8cd4e705")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR023"
 			(at 124.46 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -4450,7 +4350,7 @@
 		(instances
 			(project "camera_interface_CAN_board"
 				(path "/1401ea74-3378-4e12-8edb-861fe50955a4/8cb78ced-05bc-469f-aef3-fb585a5cf39d"
-					(reference "#PWR06")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -4458,7 +4358,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 184.15 91.44 0)
+		(at 195.58 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4468,8 +4368,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bac1ae48-846b-4236-87f9-6aa618ef4b82")
-		(property "Reference" "#PWR011"
-			(at 184.15 97.79 0)
+		(property "Reference" "#PWR06"
+			(at 195.58 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4480,7 +4380,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 184.15 96.52 0)
+			(at 195.58 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4490,7 +4390,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 184.15 91.44 0)
+			(at 195.58 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4501,7 +4401,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 91.44 0)
+			(at 195.58 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4512,7 +4412,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 184.15 91.44 0)
+			(at 195.58 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4528,7 +4428,7 @@
 		(instances
 			(project "camera_interface_CAN_board"
 				(path "/1401ea74-3378-4e12-8edb-861fe50955a4/8cb78ced-05bc-469f-aef3-fb585a5cf39d"
-					(reference "#PWR011")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -4546,7 +4446,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bb2705f7-4070-49c2-81bb-54b5c9090a11")
-		(property "Reference" "C1"
+		(property "Reference" "C2"
 			(at 128.27 146.05 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4608,7 +4508,7 @@
 		(instances
 			(project "camera_interface_CAN_board"
 				(path "/1401ea74-3378-4e12-8edb-861fe50955a4/8cb78ced-05bc-469f-aef3-fb585a5cf39d"
-					(reference "C1")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -4626,7 +4526,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d05f7271-c9e1-41cc-94dc-8665b7cf3f8d")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR022"
 			(at 140.97 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -4686,7 +4586,7 @@
 		(instances
 			(project "camera_interface_CAN_board"
 				(path "/1401ea74-3378-4e12-8edb-861fe50955a4/8cb78ced-05bc-469f-aef3-fb585a5cf39d"
-					(reference "#PWR08")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -4786,7 +4686,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eff73ff4-b74f-4422-9a21-750dae9b69ff")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR04"
 			(at 116.84 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -4846,7 +4746,7 @@
 		(instances
 			(project "camera_interface_CAN_board"
 				(path "/1401ea74-3378-4e12-8edb-861fe50955a4/8cb78ced-05bc-469f-aef3-fb585a5cf39d"
-					(reference "#PWR05")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -4957,7 +4857,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "RED"
+		(property "Value" "White"
 			(at 107.95 73.9774 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4968,7 +4868,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
+		(property "Footprint" "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
 			(at 104.14 71.12 0)
 			(hide yes)
 			(show_name no)
