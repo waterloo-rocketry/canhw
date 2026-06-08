@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "1401ea74-3378-4e12-8edb-861fe50955a4")
 	(paper "A4")
+	(title_block
+		(title "Camera Interface Board")
+		(date "2026-06-08")
+		(rev "B")
+		(company "Waterloo Rocketry")
+	)
 	(lib_symbols
 		(symbol "Mechanical:MountingHole"
 			(pin_names
@@ -137,13 +143,13 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 97.79) (xy 137.16 97.79)
+			(xy 110.49 101.6) (xy 137.16 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "420b1723-4009-4aab-8b31-8ce77464aaf7")
+		(uuid "4b1db727-0a8a-4cf2-86ab-e9eb9708e63a")
 	)
 	(wire
 		(pts
@@ -164,16 +170,6 @@
 			(type default)
 		)
 		(uuid "9e71e312-edc3-43e8-ab92-69434876777f")
-	)
-	(wire
-		(pts
-			(xy 110.49 104.14) (xy 137.16 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa7a15bc-781d-4cf8-adc4-48fc318992cc")
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
@@ -526,16 +522,6 @@
 				(justify right)
 			)
 		)
-		(pin "PWR_STATUS" output
-			(at 110.49 104.14 0)
-			(uuid "714e9e67-65e4-46be-9b1e-bee991f412d6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "RX1_RunCam" input
 			(at 110.49 86.36 0)
 			(uuid "576b748f-b6e4-4978-9b6c-e5465d7da353")
@@ -546,9 +532,9 @@
 				(justify right)
 			)
 		)
-		(pin "VCAP_SENSE" output
-			(at 110.49 97.79 0)
-			(uuid "64df2e52-88f0-44bc-8dbe-2adb5082cbbe")
+		(pin "RUNCAM_ON" input
+			(at 110.49 101.6 0)
+			(uuid "c902eb74-cb2d-4be2-80fe-4d4d9c606aeb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -728,19 +714,9 @@
 				(justify right)
 			)
 		)
-		(pin "VCAP_SENSE" input
-			(at 137.16 97.79 180)
-			(uuid "6565dc5f-3f5c-4645-bbe0-a8e9bdf4acc0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "PWR_STATUS" input
-			(at 137.16 104.14 180)
-			(uuid "76b5a256-fa5a-45c0-9cd7-fe2db4015a32")
+		(pin "RUNCAM_ON" output
+			(at 137.16 101.6 180)
+			(uuid "d2f93db4-d4c7-4549-a3b7-df8b8672b9c2")
 			(effects
 				(font
 					(size 1.27 1.27)
