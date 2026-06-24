@@ -2359,20 +2359,9 @@
 		)
 		(uuid b6025fcc-f0e6-4056-8862-187014a9f482)
 	)
-	(text "D1+"
+	(text "To the altimeter"
 		(exclude_from_sim no)
-		(at 134.112 100.838 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0a2cdda3-f442-452a-93fa-0fd75c82341b")
-	)
-	(text "To the first altimeter"
-		(exclude_from_sim no)
-		(at 125.73 104.648 0)
+		(at 125.476 103.124 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2383,7 +2372,7 @@
 	)
 	(text "N-MOS for controlling \nthe P-MOS"
 		(exclude_from_sim no)
-		(at 59.69 95.25 0)
+		(at 50.8 108.966 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2391,39 +2380,6 @@
 			(justify left bottom)
 		)
 		(uuid "18c70ad0-e9f6-428d-8991-a305d0414eeb")
-	)
-	(text "M1+"
-		(exclude_from_sim no)
-		(at 128.778 101.092 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "34758af6-05b0-4a1c-b009-7ffa431cc104")
-	)
-	(text "D1+"
-		(exclude_from_sim no)
-		(at 246.634 121.92 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5061913d-5323-45fb-9737-5415cb9932e2")
-	)
-	(text "M1+"
-		(exclude_from_sim no)
-		(at 246.634 112.776 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5ed1d516-3f03-4d64-a476-8e0980fa1d01")
 	)
 	(text "logic level shifting"
 		(exclude_from_sim no)
@@ -2535,7 +2491,7 @@
 		)
 		(uuid "e0294e60-d91a-419f-b060-8034d9d5c5f4")
 	)
-	(text "Makes noise when \nA1 is powered"
+	(text "Makes noise when \naltimeter is powered"
 		(exclude_from_sim no)
 		(at 100.33 125.73 0)
 		(effects
@@ -2575,6 +2531,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7de33e0a-6829-44d8-8a31-bbd31390c8ee")
+	)
+	(junction
+		(at 93.98 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "97bb8ed0-cd38-4481-ba17-18e4c508224e")
 	)
 	(junction
 		(at 73.66 74.93)
@@ -2639,6 +2601,16 @@
 		)
 		(uuid "0bcbb93d-87bd-41c6-8c22-2070d6f4fc72")
 	)
+	(wire
+		(pts
+			(xy 86.36 92.71) (xy 93.98 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c81df37-321c-44a8-8bfe-761af956710e")
+	)
 	(polyline
 		(pts
 			(xy 77.47 115.57) (xy 77.47 143.51)
@@ -2651,7 +2623,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 82.55) (xy 93.98 107.95)
+			(xy 93.98 82.55) (xy 93.98 92.71)
 		)
 		(stroke
 			(width 0)
@@ -2761,7 +2733,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 82.55) (xy 135.89 91.44)
+			(xy 135.89 82.55) (xy 135.89 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2801,7 +2773,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 76.2) (xy 130.81 91.44)
+			(xy 130.81 76.2) (xy 130.81 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2891,7 +2863,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 91.44) (xy 138.43 85.09)
+			(xy 138.43 93.98) (xy 138.43 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2991,6 +2963,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 92.71) (xy 93.98 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a848d253-33ea-4618-b956-ec408fe7cc33")
+	)
+	(wire
+		(pts
 			(xy 57.15 93.98) (xy 57.15 99.06)
 		)
 		(stroke
@@ -3011,7 +2993,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 52.07) (xy 125.73 91.44)
+			(xy 125.73 52.07) (xy 125.73 93.98)
 		)
 		(stroke
 			(width 0)
@@ -3179,8 +3161,8 @@
 		)
 		(uuid "fd1923e5-5e35-4852-8709-4a63686938b7")
 	)
-	(label "M1_D1+"
-		(at 128.27 91.44 90)
+	(label "M1+"
+		(at 128.27 93.98 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3199,8 +3181,8 @@
 		)
 		(uuid "15db9752-04b8-450b-b9f6-6eff7bf20e69")
 	)
-	(label "M1_D1+"
-		(at 133.35 91.44 90)
+	(label "D1+"
+		(at 133.35 93.98 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3209,7 +3191,17 @@
 		)
 		(uuid "1f619392-0d0c-4ba5-a473-88abd2dddb6c")
 	)
-	(label "M1_D1+"
+	(label "D1+"
+		(at 78.74 92.71 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "329c6f58-05d2-4d3d-a98c-e3baf3bfa81e")
+	)
+	(label "D1+"
 		(at 236.22 120.65 180)
 		(effects
 			(font
@@ -3239,7 +3231,7 @@
 		)
 		(uuid "992002de-edb2-4a38-8637-d1b6075c3f04")
 	)
-	(label "M1_D1+"
+	(label "M1+"
 		(at 236.22 113.03 180)
 		(effects
 			(font
@@ -3259,7 +3251,7 @@
 		)
 		(uuid "d2c67e96-0a93-44c5-b32c-60fe87581a96")
 	)
-	(label "M1_D1+"
+	(label "M1+"
 		(at 78.74 82.55 180)
 		(effects
 			(font
@@ -4735,7 +4727,7 @@
 			)
 		)
 		(property "Value" "A1 Connections"
-			(at 243.332 116.586 0)
+			(at 248.666 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4798,7 +4790,7 @@
 	)
 	(symbol
 		(lib_id "remote_arming-rescue:Conn_01x06_Female-Connector")
-		(at 130.81 96.52 90)
+		(at 130.81 99.06 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4807,7 +4799,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e1afbf0")
 		(property "Reference" "J4"
-			(at 140.6652 92.6338 90)
+			(at 140.6652 95.1738 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4815,8 +4807,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "A1 Input"
-			(at 140.6652 94.9452 90)
+		(property "Value" "Altimeter Input"
+			(at 140.6652 97.4852 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4825,7 +4817,7 @@
 			)
 		)
 		(property "Footprint" "canhw_footprints:connector_Harwin_G125–MG10605M4P"
-			(at 130.81 96.52 0)
+			(at 130.81 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4834,7 +4826,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 130.81 96.52 0)
+			(at 130.81 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4843,7 +4835,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 130.81 96.52 0)
+			(at 130.81 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4894,7 +4886,7 @@
 				)
 			)
 		)
-		(property "Value" "M1 & D1 Pull Up"
+		(property "Value" "M1 Pull Up"
 			(at 82.804 87.63 0)
 			(effects
 				(font
@@ -5269,6 +5261,72 @@
 			(project "remote_arming"
 				(path "/66ac2ba2-aeaf-4c0b-bff0-9252049e25ae/00000000-0000-0000-0000-00005da13d99"
 					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 82.55 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ae4d642f-23b9-4a6c-88c5-830f6fe1a410")
+		(property "Reference" "JP2"
+			(at 82.296 95.504 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D1 Pull Up"
+			(at 82.804 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 82.55 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 82.55 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f9ce0e6e-aa7e-4d81-8190-11d196284318")
+		)
+		(pin "2"
+			(uuid "554fbf57-d252-4d64-a021-874d41714a48")
+		)
+		(instances
+			(project "remote_arming"
+				(path "/66ac2ba2-aeaf-4c0b-bff0-9252049e25ae/00000000-0000-0000-0000-00005da13d99"
+					(reference "JP2")
 					(unit 1)
 				)
 			)
