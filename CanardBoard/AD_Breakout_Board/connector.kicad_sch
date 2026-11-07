@@ -296,26 +296,24 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 13.716 0)
+			(property "Reference" "J1"
+				(at -0.254 18.542 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
 			(property "Value" "1373827"
-				(at 0 11.176 0)
+				(at 0 16.002 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
 			(property "Footprint" "1373827"
@@ -415,8 +413,8 @@
 			)
 			(symbol "1373827_1_1"
 				(rectangle
-					(start -8.89 -8.89)
-					(end 8.89 8.89)
+					(start -8.89 13.97)
+					(end 8.89 -8.89)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -534,6 +532,42 @@
 					)
 				)
 				(pin passive line
+					(at -13.97 8.89 0)
+					(length 5.08)
+					(name "A7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -13.97 11.43 0)
+					(length 5.08)
+					(name "A8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
 					(at 13.97 -6.35 180)
 					(length 5.08)
 					(name "B1"
@@ -634,6 +668,42 @@
 						)
 					)
 					(number "B6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 13.97 8.89 180)
+					(length 5.08)
+					(name "B7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 13.97 11.43 180)
+					(length 5.08)
+					(name "B8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1133,6 +1203,10 @@
 		(uuid "3c6255ab-b99e-4178-a7ab-ad29ced8cbe6")
 	)
 	(no_connect
+		(at 149.86 97.79)
+		(uuid "3d90dfc9-7041-4ece-82af-9a39888e780b")
+	)
+	(no_connect
 		(at 242.57 99.06)
 		(uuid "9d44477f-8900-4bf5-a627-526f8774253f")
 	)
@@ -1152,7 +1226,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 86.36) (xy 158.75 95.25)
+			(xy 168.91 86.36) (xy 168.91 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1232,7 +1306,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 92.71) (xy 163.83 92.71)
+			(xy 149.86 92.71) (xy 172.72 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1312,7 +1386,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 95.25) (xy 158.75 95.25)
+			(xy 149.86 95.25) (xy 168.91 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1342,7 +1416,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 86.36) (xy 163.83 92.71)
+			(xy 172.72 86.36) (xy 172.72 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1370,6 +1444,28 @@
 			(justify right)
 		)
 		(uuid "001cfaa7-38bd-49bd-ae3d-5d9215c72de3")
+	)
+	(hierarchical_label "GYRO2_CS"
+		(shape output)
+		(at 121.92 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2426d390-6ce4-41b7-a23d-107bfe68e2da")
+	)
+	(hierarchical_label "GYRO2_MISO"
+		(shape input)
+		(at 149.86 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "49a8fb58-73c4-46cc-977a-b4bc137d5546")
 	)
 	(hierarchical_label "ADI_SDA"
 		(shape bidirectional)
@@ -1404,17 +1500,6 @@
 		)
 		(uuid "75812d74-3024-4ae6-aae5-ae88b9048fd9")
 	)
-	(hierarchical_label "ACCEL_INT"
-		(shape input)
-		(at 149.86 97.79 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8be774b9-abc9-4603-8533-5543ac2098f2")
-	)
 	(hierarchical_label "ST2"
 		(shape output)
 		(at 149.86 102.87 0)
@@ -1425,6 +1510,28 @@
 			(justify left)
 		)
 		(uuid "e568885b-7b1b-4a7e-be6d-06379440a904")
+	)
+	(hierarchical_label "GYRO2_SCLK"
+		(shape output)
+		(at 121.92 87.63 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e5facb3c-ccef-4d99-962d-587fa13db711")
+	)
+	(hierarchical_label "GYRO2_MOSI"
+		(shape output)
+		(at 149.86 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f4d89900-8cb6-4bee-b3c7-d8415c992608")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -1979,7 +2086,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 163.83 86.36 0)
+		(at 172.72 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1990,7 +2097,7 @@
 		(fields_autoplaced yes)
 		(uuid "9d82d9c4-c89a-498a-84e6-d6c911a3f857")
 		(property "Reference" "#PWR034"
-			(at 163.83 90.17 0)
+			(at 172.72 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2001,7 +2108,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 163.83 81.28 0)
+			(at 172.72 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2011,7 +2118,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 86.36 0)
+			(at 172.72 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2022,7 +2129,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 86.36 0)
+			(at 172.72 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2033,7 +2140,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 163.83 86.36 0)
+			(at 172.72 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2146,7 +2253,7 @@
 		(fields_autoplaced yes)
 		(uuid "b3edc95a-f3fd-4b7b-a691-88a8c952108c")
 		(property "Reference" "J1"
-			(at 135.89 82.55 0)
+			(at 135.636 77.978 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2156,7 +2263,7 @@
 			)
 		)
 		(property "Value" "1373827"
-			(at 135.89 85.09 0)
+			(at 135.89 80.518 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2165,7 +2272,7 @@
 				)
 			)
 		)
-		(property "Footprint" "canardboard:1373827"
+		(property "Footprint" ""
 			(at 160.02 186.36 0)
 			(hide yes)
 			(show_name no)
@@ -2307,6 +2414,18 @@
 		)
 		(pin "B3"
 			(uuid "35012f22-786a-4eb5-b2bc-b4e3dfa51815")
+		)
+		(pin "A7"
+			(uuid "cd2383e6-8efe-4ce5-922f-f0da960e0ffb")
+		)
+		(pin "B7"
+			(uuid "a050eb9f-22e3-4189-96ab-0c8a98ae7612")
+		)
+		(pin "A8"
+			(uuid "73d0da18-83ef-445b-be85-8a4135afd9f2")
+		)
+		(pin "B8"
+			(uuid "7df65498-a031-4838-98be-3f640a04f519")
 		)
 		(instances
 			(project "AD_Breakout"
@@ -2476,7 +2595,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 158.75 86.36 0)
+		(at 168.91 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2487,7 +2606,7 @@
 		(fields_autoplaced yes)
 		(uuid "d2619122-226b-45bc-a05f-4133542c0e7f")
 		(property "Reference" "#PWR033"
-			(at 158.75 90.17 0)
+			(at 168.91 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2498,7 +2617,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 158.75 81.28 0)
+			(at 168.91 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2508,7 +2627,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 158.75 86.36 0)
+			(at 168.91 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2519,7 +2638,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 158.75 86.36 0)
+			(at 168.91 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2530,7 +2649,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 158.75 86.36 0)
+			(at 168.91 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
