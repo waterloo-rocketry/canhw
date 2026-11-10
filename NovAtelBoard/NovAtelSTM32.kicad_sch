@@ -942,7 +942,7 @@
 				(pin input line
 					(at -25.4 35.56 0)
 					(length 2.54)
-					(name "NRST"
+					(name "~{NRST}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1888,7 +1888,7 @@
 				(pin bidirectional line
 					(at -25.4 -2.54 0)
 					(length 2.54)
-					(name "PB4(NJTRST)"
+					(name "~{PB4(NJTRST)}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2594,12 +2594,6 @@
 		(uuid "95b69c0e-9b1b-4f85-ae82-93135ee6411a")
 	)
 	(junction
-		(at 153.67 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0568141d-8ad5-4552-9c15-d155e6c19575")
-	)
-	(junction
 		(at 143.51 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2724,6 +2718,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c4e1821c-0df3-4c17-9f73-2f9dc1035e86")
+	)
+	(junction
+		(at 205.74 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ca6b20a5-f483-48f9-8e7e-ef50006471de")
 	)
 	(junction
 		(at 104.14 53.34)
@@ -2988,6 +2988,16 @@
 			(type default)
 		)
 		(uuid "2927007a-4c31-41cf-8131-9b08979887b9")
+	)
+	(wire
+		(pts
+			(xy 214.63 36.83) (xy 214.63 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29a9c462-37ec-437f-add9-f064d1e35db3")
 	)
 	(wire
 		(pts
@@ -3421,6 +3431,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 36.83) (xy 205.74 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a0584a5-8a4a-4bcc-b951-e7b5750bef26")
+	)
+	(wire
+		(pts
 			(xy 173.99 36.83) (xy 173.99 40.64)
 		)
 		(stroke
@@ -3488,16 +3508,6 @@
 			(type default)
 		)
 		(uuid "a8117575-d9c4-4446-9720-33cf60ca4d87")
-	)
-	(wire
-		(pts
-			(xy 153.67 34.29) (xy 153.67 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9c0cb40-2a15-485f-bf03-da82850664f9")
 	)
 	(wire
 		(pts
@@ -3829,7 +3839,7 @@
 		)
 		(uuid "2dbbe644-be65-4f06-abfc-dc2d1d1b19f1")
 	)
-	(label "NRST"
+	(label "~{NRST}"
 		(at 97.79 63.5 0)
 		(effects
 			(font
@@ -4025,84 +4035,6 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 153.67 34.29 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "14c3b749-7bd3-43d1-af74-46ff3d11827c")
-		(property "Reference" "#PWR016"
-			(at 153.67 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 151.13 29.464 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:Diodes_UDFN3810-9_TYPE_B"
-			(at 153.67 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 153.67 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 153.67 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3005dea0-9d39-4e4d-a56e-3e0ddb137559")
-		)
-		(instances
-			(project "NovAtelBoard"
-				(path "/6ecf8618-30ca-4a76-bd4e-360732c93983/82381ae5-1172-4259-a08f-aa0e035f4a5e"
-					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
 		(at 143.51 38.1 0)
 		(unit 1)
 		(body_style 1)
@@ -4291,7 +4223,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 174.9552 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -4373,7 +4305,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 92.4052 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -4613,7 +4545,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 105.1052 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -4994,7 +4926,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 79.7052 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -5154,7 +5086,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 206.7052 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -5393,7 +5325,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 131.7752 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -5663,7 +5595,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 87.63 64.4652 0)
 			(hide yes)
 			(show_name no)
@@ -5745,7 +5677,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 119.0752 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -5827,7 +5759,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 191.4652 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -5948,6 +5880,84 @@
 			(project "NovAtelBoard"
 				(path "/6ecf8618-30ca-4a76-bd4e-360732c93983/82381ae5-1172-4259-a08f-aa0e035f4a5e"
 					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 214.63 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c5bdff6e-62de-4dcc-bdaa-8c763549d2bc")
+		(property "Reference" "#PWR022"
+			(at 214.63 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 212.09 29.464 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:Diodes_UDFN3810-9_TYPE_B"
+			(at 214.63 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 214.63 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "87eda06d-a190-43ce-9b39-82f28c9e8164")
+		)
+		(instances
+			(project "NovAtelBoard"
+				(path "/6ecf8618-30ca-4a76-bd4e-360732c93983/82381ae5-1172-4259-a08f-aa0e035f4a5e"
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -6143,7 +6153,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 204.1652 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -6225,7 +6235,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 187.6552 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -6385,7 +6395,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LGA-12_2X2X0P7_STM"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 115.2652 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -6623,7 +6633,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LGA-12_2X2X0P7_STM"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 101.2952 142.24 0)
 			(hide yes)
 			(show_name no)
