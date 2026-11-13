@@ -217,6 +217,7 @@
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
+      "global_label_dangling": "warning",
       "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
       "isolated_pin_label": "warning",
@@ -237,6 +238,7 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
+      "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
@@ -284,17 +286,20 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
-    "netclass_assignments": null,
+    "net_colors": {},
+    "netclass_assignments": {},
     "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {
+      "gencad": "",
       "idf": "",
       "netlist": "",
       "plot": "",
+      "pos_files": "",
       "specctra_dsn": "",
       "step": "",
+      "svg": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -417,9 +422,17 @@
     "meta": {
       "version": 1
     },
+    "net_format_name": "",
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
+    "space_save_all_events": true,
+    "spice_current_sheet_as_root": false,
+    "spice_external_command": "spice \"%I\"",
+    "spice_model_current_sheet_as_root": true,
+    "spice_save_all_currents": false,
+    "spice_save_all_dissipations": false,
+    "spice_save_all_voltages": false,
     "subpart_first_id": 65,
     "subpart_id_separator": 0,
     "top_level_sheets": [
@@ -429,13 +442,21 @@
         "uuid": "70632ca5-374b-422e-afa1-9ab568244db4"
       }
     ],
-    "used_designators": "R1-3,J1-5,TP1-2,MK1,F1,#PWR1-35,U1-3,C1-7,C14,H1-8",
+    "used_designators": "#PWR1-42,3V3DTP1,3V3TP1,5VTP1,C1-15,C32,F1,H1-8,J1-5,MK1,R1-5,TP1-2,U1-6",
     "variants": []
   },
   "sheets": [
     [
       "70632ca5-374b-422e-afa1-9ab568244db4",
       ""
+    ],
+    [
+      "c6b3669c-d210-4b0d-b2fe-342f571cce4f",
+      "CAN"
+    ],
+    [
+      "99ce0a0e-624c-49e6-8cc8-52f4657cc22a",
+      "Power"
     ]
   ],
   "text_variables": {},
