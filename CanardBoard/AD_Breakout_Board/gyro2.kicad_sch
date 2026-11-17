@@ -187,7 +187,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "canardboard:ADXRS290BCEZ"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -220,21 +220,19 @@
 					)
 				)
 			)
-			(symbol "ADXRS290BCEZ_0_1"
+			(symbol "ADXRS290BCEZ_1_1"
 				(rectangle
 					(start -12.7 25.4)
 					(end 8.89 -5.08)
 					(stroke
 						(width 0)
-						(type default)
+						(type solid)
 					)
 					(fill
 						(type color)
-						(color 248 255 155 1)
+						(color 255 255 194 1)
 					)
 				)
-			)
-			(symbol "ADXRS290BCEZ_1_1"
 				(pin power_out line
 					(at -15.24 3.81 0)
 					(length 2.54)
@@ -562,7 +560,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3.3V"
+		(symbol "power:+3V3"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -587,7 +585,7 @@
 					)
 				)
 			)
-			(property "Value" "+3.3V"
+			(property "Value" "+3V3"
 				(at 0 3.556 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -619,7 +617,7 @@
 					)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -641,7 +639,7 @@
 					)
 				)
 			)
-			(symbol "+3.3V_0_1"
+			(symbol "+3V3_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -679,7 +677,7 @@
 					)
 				)
 			)
-			(symbol "+3.3V_1_1"
+			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -842,12 +840,6 @@
 		(uuid "d2bb190f-3e83-494c-8dbc-822eb4570b74")
 	)
 	(junction
-		(at 162.56 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f3f9e7a1-59da-4834-a618-c91f1009a765")
-	)
-	(junction
 		(at 173.99 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -907,16 +899,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 101.6) (xy 162.56 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "222bcbfd-502f-4012-a631-2c325115faf1")
-	)
-	(wire
-		(pts
 			(xy 113.03 105.41) (xy 127 105.41)
 		)
 		(stroke
@@ -937,7 +919,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 110.49) (xy 160.02 110.49)
+			(xy 160.02 110.49) (xy 166.37 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1077,16 +1059,6 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 101.6) (xy 162.56 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b094aa6-1494-49fa-b408-f5e2f101138b")
-	)
-	(wire
-		(pts
 			(xy 116.84 124.46) (xy 116.84 123.19)
 		)
 		(stroke
@@ -1167,16 +1139,6 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 110.49) (xy 162.56 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1e7536b-aac4-4874-8059-1166020fd9ff")
-	)
-	(wire
-		(pts
 			(xy 116.84 115.57) (xy 116.84 118.11)
 		)
 		(stroke
@@ -1225,6 +1187,17 @@
 			(justify right)
 		)
 		(uuid "037dd101-7024-4e53-a0c8-7d10b4290365")
+	)
+	(hierarchical_label "GYRO2_INIT"
+		(shape output)
+		(at 153.67 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a5012733-962f-48d9-8e3e-67a78fa82f65")
 	)
 	(hierarchical_label "GYRO2_MISO"
 		(shape output)
@@ -1414,84 +1387,6 @@
 			(project "AD_Breakout"
 				(path "/2d8145a1-ede2-4855-b75c-6b9a1bd4bcdd/489479cc-244e-46df-9a88-95b0cce98c19"
 					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 173.99 105.41 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1bea419b-7233-45eb-9495-45f91eaecf48")
-		(property "Reference" "#PWR039"
-			(at 173.99 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 173.99 100.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 173.99 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 173.99 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 173.99 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ccea6a25-2595-4b72-a265-89154351f506")
-		)
-		(instances
-			(project "AD_Breakout"
-				(path "/2d8145a1-ede2-4855-b75c-6b9a1bd4bcdd/489479cc-244e-46df-9a88-95b0cce98c19"
-					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -1946,6 +1841,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 173.99 105.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9f16159d-3d1f-41fc-9640-b2b03a776196")
+		(property "Reference" "#PWR034"
+			(at 173.99 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 173.99 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 173.99 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "40dc2564-6088-412c-8c01-b13fc8cc1026")
+		)
+		(instances
+			(project "AD_Breakout"
+				(path "/2d8145a1-ede2-4855-b75c-6b9a1bd4bcdd/489479cc-244e-46df-9a88-95b0cce98c19"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 116.84 120.65 0)
 		(unit 1)
@@ -2106,6 +2079,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 99.06 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dde7380e-3caf-4e1e-915a-d975f51465bd")
+		(property "Reference" "#PWR017"
+			(at 99.06 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 99.06 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 99.06 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ce7d83e6-0c30-4413-aceb-4495b7a929cf")
+		)
+		(instances
+			(project "AD_Breakout"
+				(path "/2d8145a1-ede2-4855-b75c-6b9a1bd4bcdd/489479cc-244e-46df-9a88-95b0cce98c19"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 173.99 116.84 0)
 		(unit 1)
@@ -2178,84 +2229,6 @@
 			(project "AD_Breakout"
 				(path "/2d8145a1-ede2-4855-b75c-6b9a1bd4bcdd/489479cc-244e-46df-9a88-95b0cce98c19"
 					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 99.06 100.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e7eee8e4-9862-4946-a6bb-57355d0f245d")
-		(property "Reference" "#PWR017"
-			(at 99.06 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 99.06 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 99.06 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 99.06 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 99.06 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9d4abb1b-54ff-4566-b94b-51a774fccf57")
-		)
-		(instances
-			(project "AD_Breakout"
-				(path "/2d8145a1-ede2-4855-b75c-6b9a1bd4bcdd/489479cc-244e-46df-9a88-95b0cce98c19"
-					(reference "#PWR017")
 					(unit 1)
 				)
 			)
