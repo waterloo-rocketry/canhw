@@ -1325,7 +1325,7 @@
 					)
 				)
 			)
-			(property "Footprint" "canhw_footprints:HARWIN_G125-MH104M4-04AD000P"
+			(property "Footprint" "canhw:connector_Harwin_G125-MH104M4-04AD000P"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1496,7 +1496,7 @@
 				(pin input line
 					(at 2.54 -20.32 180)
 					(length 3.81)
-					(name "NC"
+					(name "SYNC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1550,7 +1550,7 @@
 				(pin input line
 					(at 2.54 -6.35 180)
 					(length 3.81)
-					(name "+12V"
+					(name "+VBUS1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1568,7 +1568,7 @@
 				(pin input line
 					(at 2.54 -8.89 180)
 					(length 3.81)
-					(name "+5V"
+					(name "+VBUS2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1871,7 +1871,7 @@
 	)
 	(text "RCAN_H"
 		(exclude_from_sim no)
-		(at 65.532 93.218 0)
+		(at 65.024 97.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1980,10 +1980,6 @@
 	(no_connect
 		(at 54.61 77.47)
 		(uuid "b1673b0d-2ef0-490c-9127-8a67873c6394")
-	)
-	(no_connect
-		(at 54.61 91.44)
-		(uuid "e4ad8cab-f813-407f-b5d8-82d98e09d4b9")
 	)
 	(wire
 		(pts
@@ -2194,6 +2190,16 @@
 			(type default)
 		)
 		(uuid "5f69dd75-cb52-48fb-9886-df1f1533ff77")
+	)
+	(wire
+		(pts
+			(xy 64.77 91.44) (xy 54.61 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fff1f37-054a-4dc7-a21d-d2ce1358b013")
 	)
 	(wire
 		(pts
@@ -2645,6 +2651,17 @@
 		)
 		(uuid "dcfdbf63-19f8-4596-b615-bd6d52bfbddf")
 	)
+	(hierarchical_label "SYNC"
+		(shape input)
+		(at 64.77 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8691a141-fa51-4904-b343-455b18efcde4")
+	)
 	(hierarchical_label "RCAN_L"
 		(shape input)
 		(at 64.77 88.9 0)
@@ -3084,115 +3101,6 @@
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
 					(reference "#PWR0216")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "canhw:G125-MH104M4-04AD000P")
-		(at 52.07 71.12 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1864da9d-1c43-4355-8dea-81168d2d9067")
-		(property "Reference" "J10"
-			(at 50.4825 69.85 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "G125-MH104M4-04AD000P"
-			(at 50.4825 72.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "canhw_footprints:HARWIN_G125-MH104M4-04AD000P"
-			(at 52.07 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://content.harwin.com/m/91a65d72bc24bdea/original/DRG-03150-Technical-Drawing-Datasheet-G125-MH1XXM4-XXAD000P-pdf.pdf"
-			(at 52.07 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "4+4 Pos. Male Horizontal Throughboard Conn. Screw-Lok Board Mount"
-			(at 52.07 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" ""
-			(at 52.07 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "D"
-			(uuid "2eedef8b-a288-4f71-ab41-9d5265841798")
-		)
-		(pin "A"
-			(uuid "51f88c93-6c87-4d03-9b26-547916f1a4db")
-		)
-		(pin "B"
-			(uuid "49d9683e-4a4c-4fbb-84d8-95a4a4f79e66")
-		)
-		(pin "1"
-			(uuid "8f2bc60e-1f20-4ba4-a67d-2b10dc44e1f8")
-		)
-		(pin "2"
-			(uuid "ad5b0d56-5570-48b6-862b-fb306e0e99d4")
-		)
-		(pin "3"
-			(uuid "4eb9a924-7f1d-4248-9ec7-8c7b1f46bf48")
-		)
-		(pin "4"
-			(uuid "57ddd14e-6ad2-4e7e-9a3d-86034f13320d")
-		)
-		(pin "C"
-			(uuid "213ccd53-18fc-4acc-9742-ab37a0ee838c")
-		)
-		(instances
-			(project "CanardBoard"
-				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
-					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -4876,6 +4784,104 @@
 			(project "CanardBoard"
 				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
 					(reference "#PWR0145")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "canhw:G125-MH104M4-04AD000P")
+		(at 52.07 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "df12cb06-e81a-44d9-8324-cf45cc27e29c")
+		(property "Reference" "J1"
+			(at 50.4825 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "G125-MH104M4-04AD000P"
+			(at 50.4825 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "canhw_footprints:connector_Harwin_G125-MH104M4-04AD000P"
+			(at 52.07 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://content.harwin.com/m/91a65d72bc24bdea/original/DRG-03150-Technical-Drawing-Datasheet-G125-MH1XXM4-XXAD000P-pdf.pdf"
+			(at 52.07 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "4+4 Pos. Male Horizontal Throughboard Conn. Screw-Lok Board Mount"
+			(at 52.07 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "fee622cd-c421-4a1f-ab45-b7466032ae98")
+		)
+		(pin "2"
+			(uuid "1899f30f-cfe7-4f56-a336-ce0dcc4eb8f7")
+		)
+		(pin "1"
+			(uuid "16e64ac0-1cb4-40b0-b33e-f9f66d46dba7")
+		)
+		(pin "B"
+			(uuid "ad4f84b8-0c01-4394-998a-74c3f2a8e4c8")
+		)
+		(pin "A"
+			(uuid "86aef1dd-f75d-4b29-abf3-e4fbab34e5fd")
+		)
+		(pin "4"
+			(uuid "95c5b2b0-202f-4050-b718-5a37f6b446c6")
+		)
+		(pin "D"
+			(uuid "08f58877-afc7-43cc-9b6e-a57c43114add")
+		)
+		(pin "C"
+			(uuid "9ff2981a-8c7b-48e5-8a23-b92de27b0039")
+		)
+		(instances
+			(project "CanardBoard"
+				(path "/605ab838-6b02-4cf5-a6b5-94a0cdb1b998/4fea5507-ad74-497c-bf16-b3654a0fa101"
+					(reference "J1")
 					(unit 1)
 				)
 			)
