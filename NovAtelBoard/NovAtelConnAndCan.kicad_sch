@@ -2865,6 +2865,16 @@
 		)
 		(uuid "0f8fb5c2-23b0-4bec-a217-257878267d1a")
 	)
+	(text "LOW PASS FILTER \nFC = 1/(2(PI)(R)(C)) = 1/(2 * (PI) * (330) * (.1uF) =~ 500\nChosen FC : 500 Hz to accomadate any possible use of this pin (we need ~50hz of bandwidth and with\n 0.1ms rise time ~500 Hz does the job)\nExpected sampling rate is 4.8kHz\n\n"
+		(exclude_from_sim no)
+		(at 376.174 163.576 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0ddbf6af-49ba-4414-a3f6-b2c2690d5820")
+	)
 	(text "expected 2A\n"
 		(exclude_from_sim no)
 		(at 297.434 84.074 0)
@@ -5038,7 +5048,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1uF"
 			(at 381 134.6199 0)
 			(show_name no)
 			(do_not_autoplace no)
