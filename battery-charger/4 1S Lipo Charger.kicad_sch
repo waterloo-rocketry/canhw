@@ -4175,6 +4175,18 @@
 		(uuid "4335251a-f95c-4395-aef4-2baedc99db62")
 	)
 	(rectangle
+		(start 20.32 224.79)
+		(end 58.42 251.46)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "4b81190a-8733-4520-8475-bd68efebb25f")
+	)
+	(rectangle
 		(start 217.17 133.35)
 		(end 254 193.04)
 		(stroke
@@ -4185,6 +4197,30 @@
 			(type none)
 		)
 		(uuid "4c98994a-8062-4793-b573-7ba6902ec5ad")
+	)
+	(rectangle
+		(start 20.32 153.67)
+		(end 119.38 193.04)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "50e046bb-cfd6-42ae-8f85-dcd8ac6a6224")
+	)
+	(rectangle
+		(start 48.26 194.31)
+		(end 60.96 223.52)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "60805c6a-4c85-44a7-a0a5-3c5a13f5de77")
 	)
 	(rectangle
 		(start 149.86 153.67)
@@ -4199,8 +4235,8 @@
 		(uuid "994f9c6e-b595-4913-a0ab-8c3e5bb4c638")
 	)
 	(rectangle
-		(start 62.23 29.21)
-		(end 81.28 58.42)
+		(start 20.32 194.31)
+		(end 46.99 223.52)
 		(stroke
 			(width 0)
 			(type default)
@@ -4211,8 +4247,8 @@
 		(uuid "a4a5ba62-2b53-4c47-bb83-bce9a0ac3d87")
 	)
 	(rectangle
-		(start 163.83 27.94)
-		(end 205.74 58.42)
+		(start 62.23 194.31)
+		(end 91.44 223.52)
 		(stroke
 			(width 0)
 			(type default)
@@ -4247,8 +4283,8 @@
 		(uuid "f6baa546-3866-4bf6-adbb-7ddd4a328124")
 	)
 	(rectangle
-		(start 91.44 209.55)
-		(end 375.92 246.38)
+		(start 120.65 213.36)
+		(end 405.13 250.19)
 		(stroke
 			(width 0)
 			(type default)
@@ -4258,20 +4294,19 @@
 		)
 		(uuid "f993366f-5122-4408-91ca-75418692edea")
 	)
-	(text "Failure analysis:\nRP2040 Hangs: should be fine if watchdog is enabled\nI2C bus comm issue during operation: can be a problem that's not fixable since the MCU would lose comm with the MP2760s\nMP2750/bat fet fails short: fuse should* blow (rated 4A so???)\nBattery plugged in backwards: not rated, not tested, could blow up the entire charging block, please don't be dum"
+	(text "C7 p1 IOVDD  C9 p10 IOVDD  C10 p22 IOVDD  C11 p33 IOVDD  C130 p42 IOVDD  C131 p49 IOVDD"
 		(exclude_from_sim no)
-		(at 16.256 173.99 0)
+		(at 70.612 186.182 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
 		)
-		(uuid "1f7dfeef-9f5a-4c46-955b-56926ce08f1f")
+		(uuid "0da707a7-e07e-4bf8-8b33-80551b410d56")
 	)
 	(text "RP2040 + 16Mbit QSPI flash, 12MHz crystal"
 		(exclude_from_sim no)
-		(at 86.106 29.718 0)
+		(at 97.79 25.908 0)
 		(effects
 			(font
 				(size 2 2)
@@ -4280,9 +4315,19 @@
 		)
 		(uuid "2074ca46-c615-478e-9bf5-d82a211bdb40")
 	)
+	(text "RP2040 IOVDD caps"
+		(exclude_from_sim no)
+		(at 98.552 157.226 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "21a30018-b3d0-4cb7-b649-ebcf1281b25f")
+	)
 	(text "Connectors"
 		(exclude_from_sim no)
-		(at 186.944 182.626 0)
+		(at 196.85 187.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4323,7 +4368,7 @@
 	)
 	(text "Each channel identical\n"
 		(exclude_from_sim no)
-		(at 233.934 242.57 0)
+		(at 263.144 246.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4342,9 +4387,19 @@
 		)
 		(uuid "4aeddf5e-bd57-4177-8676-b8fb712cb322")
 	)
+	(text "SPI Flash Cap"
+		(exclude_from_sim no)
+		(at 70.358 57.404 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4e83efce-415b-4408-9232-5c452eb9c416")
+	)
 	(text "Pinout reference: https://www.aliexpress.com/item/1005006141235306.html"
 		(exclude_from_sim no)
-		(at 141.732 196.342 0)
+		(at 149.606 196.342 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4352,6 +4407,16 @@
 			(justify left bottom)
 		)
 		(uuid "53d322a1-b690-4398-bd37-71d3a082d98f")
+	)
+	(text "2(10-3)=14pF so roughly 15pF"
+		(exclude_from_sim no)
+		(at 43.434 103.632 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5baf1c00-58e6-44cc-bec4-17e75dd3b9bf")
 	)
 	(text "I2C: STUSB4500 0x28, OLED 0x3C, TCA9548A 0x70.\nMux ch0-3 -> charge ports 1-4 (each: MP2760 0x69 + BQ76907 0x08)."
 		(exclude_from_sim no)
@@ -4364,9 +4429,19 @@
 		)
 		(uuid "67376639-f2c3-4875-ba77-c295be17bee8")
 	)
+	(text "VREG_OUT\n"
+		(exclude_from_sim no)
+		(at 54.102 221.996 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "67aa18b1-577a-41a9-9749-8d5b4dcc4893")
+	)
 	(text "Pwr management/input\n"
 		(exclude_from_sim no)
-		(at 38.1 212.598 0)
+		(at 367.792 181.356 0)
 		(effects
 			(font
 				(size 2 2)
@@ -4395,9 +4470,9 @@
 		)
 		(uuid "adebdfb1-08e8-4e76-a8fb-260e978e1db3")
 	)
-	(text "DVDD (pin 23)"
+	(text "DVDD (pin 23, 50)"
 		(exclude_from_sim no)
-		(at 184.658 55.88 0)
+		(at 74.676 221.996 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4405,9 +4480,19 @@
 		)
 		(uuid "b6f0de4c-9743-4983-a0c3-378d3380e361")
 	)
+	(text "ADC_AVDD Cap\n"
+		(exclude_from_sim no)
+		(at 29.718 249.174 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "bcc1fb0a-e8cc-4a72-a438-b97043e1240c")
+	)
 	(text "VREG_VIN (p. 44)"
 		(exclude_from_sim no)
-		(at 71.882 56.388 0)
+		(at 29.972 221.488 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4415,8 +4500,29 @@
 		)
 		(uuid "d609780a-f342-4faa-b326-933bd7573422")
 	)
+	(text "USB_VDD Cap\n"
+		(exclude_from_sim no)
+		(at 47.752 249.428 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e256aa67-35fd-40c3-ad3b-a736a665054e")
+	)
+	(text "CRYSTAL CALCS - Y1 ABM8-272-T3 12.000 MHz (datasheet: CL 10pF, C0 <= 3pF, ESR <= 50R, DL 10uW typ / 200uW max)\nLoad:   CL = C1*C2/(C1+C2) + Cstray,  Cstray ~ 3pF (RP2040 XIN/XOUT pins + traces)\n        need C1 = C2 = 2*(CL - Cstray) = 2*(10 - 3) = 14pF -> 15pF (E12, C0G)  =>  CL = 7.5 + 3 = 10.5pF\nPulling: df/f = C1m/2 * [1/(C0+CLact) - 1/(C0+CL)] = 1.5fF*(1/13.5pF - 1/13pF) = -4 ppm  (C1m ~3fF assumed)\nBudget: +-30 tol + +-30 temp + +-5 aging + 4 pull = +-69 ppm worst  << USB FS limit +-2500 ppm  -> OK\nOsc. margin: gm_crit = 4*ESR*(2*pi*f)^2*(C0+CL)^2 = 4*50*(75.4e6)^2*(13pF)^2 = 0.19 mA/V (RP2040 XOSC far above)\nDrive: I = 2*pi*f*(C0+CL)*Vrms = 75.4e6*13pF*1.17V = 1.14 mA rms,  P = ESR*I^2 = 50*(1.14mA)^2 = 65 uW\n        worst case rail-to-rail 3.3Vpp, no R2: 65 uW < 200 uW max -> R2 1k (XOUT series) adds margin\nFirmware: pico-sdk default XOSC startup is OK; if it ever fails to start set PICO_XOSC_STARTUP_DELAY_MULTIPLIER=64\nLayout: Y1/C1/C2/R2 < 5 mm from U2 p20/p21, GND guard under them, no other traces under Y1"
+		(exclude_from_sim no)
+		(at 160.02 266.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fde11d9e-bda9-4cec-8829-cad16e38d8a1")
+	)
 	(junction
-		(at 43.18 97.79)
+		(at 46.99 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "043e5dae-fe49-4c5f-a6e4-d24b49a1e5d1")
@@ -4444,6 +4550,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "60379feb-c8db-42df-bb24-2709e01936ca")
+	)
+	(junction
+		(at 336.55 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6317da7f-f1cb-4e6d-bb52-a894a264473e")
 	)
 	(junction
 		(at 297.18 170.18)
@@ -4507,13 +4619,23 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 97.79) (xy 43.18 97.79)
+			(xy 44.45 83.82) (xy 46.99 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "00948668-fbf4-4e9c-9864-14365038ae3b")
+	)
+	(wire
+		(pts
+			(xy 29.21 240.03) (xy 29.21 242.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00e59cda-53e3-4a2f-a858-8899b4a57e1f")
 	)
 	(wire
 		(pts
@@ -4547,7 +4669,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 44.45) (xy 181.61 46.99)
+			(xy 67.31 210.82) (xy 67.31 213.36)
 		)
 		(stroke
 			(width 0)
@@ -4567,7 +4689,7 @@
 	)
 	(wire
 		(pts
-			(xy 335.28 217.17) (xy 330.2 217.17)
+			(xy 364.49 220.98) (xy 359.41 220.98)
 		)
 		(stroke
 			(width 0)
@@ -4584,6 +4706,16 @@
 			(type default)
 		)
 		(uuid "0827f036-dd10-43a3-a6cd-78970f3f48f5")
+	)
+	(wire
+		(pts
+			(xy 46.99 232.41) (xy 46.99 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "083b4dd1-043d-4c90-96c1-d8f05bca82bb")
 	)
 	(wire
 		(pts
@@ -4607,7 +4739,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 36.83) (xy 168.91 34.29)
+			(xy 53.34 203.2) (xy 53.34 200.66)
 		)
 		(stroke
 			(width 0)
@@ -4687,17 +4819,7 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 151.13) (xy 276.86 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1553f31a-9d91-463b-ad41-4eeb3b8c541b")
-	)
-	(wire
-		(pts
-			(xy 182.88 121.92) (xy 182.88 124.46)
+			(xy 31.75 175.26) (xy 31.75 177.8)
 		)
 		(stroke
 			(width 0)
@@ -4707,7 +4829,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 227.33) (xy 105.41 227.33)
+			(xy 139.7 231.14) (xy 134.62 231.14)
 		)
 		(stroke
 			(width 0)
@@ -4717,7 +4839,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 222.25) (xy 105.41 222.25)
+			(xy 139.7 226.06) (xy 134.62 226.06)
 		)
 		(stroke
 			(width 0)
@@ -4757,6 +4879,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 175.26) (xy 78.74 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c7d5ac2-5305-4052-9ca5-87525a9c2914")
+	)
+	(wire
+		(pts
 			(xy 285.75 91.44) (xy 285.75 88.9)
 		)
 		(stroke
@@ -4764,6 +4896,16 @@
 			(type default)
 		)
 		(uuid "1cda2573-7c06-4ee3-b1d7-66c8bd09e410")
+	)
+	(wire
+		(pts
+			(xy 90.17 175.26) (xy 90.17 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e1b1ac9-05a6-4bd2-b2ac-314e23fc1dd3")
 	)
 	(wire
 		(pts
@@ -4797,7 +4939,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 100.33) (xy 25.4 97.79)
+			(xy 29.21 86.36) (xy 29.21 83.82)
 		)
 		(stroke
 			(width 0)
@@ -4847,7 +4989,7 @@
 	)
 	(wire
 		(pts
-			(xy 335.28 232.41) (xy 330.2 232.41)
+			(xy 364.49 236.22) (xy 359.41 236.22)
 		)
 		(stroke
 			(width 0)
@@ -4864,16 +5006,6 @@
 			(type default)
 		)
 		(uuid "2a76e09f-6109-4732-a2fc-72d964a36d3f")
-	)
-	(wire
-		(pts
-			(xy 160.02 161.29) (xy 162.56 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c261f88-32a6-431c-b7a1-c7b267123cdd")
 	)
 	(wire
 		(pts
@@ -4987,13 +5119,23 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 219.71) (xy 105.41 219.71)
+			(xy 139.7 223.52) (xy 134.62 223.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3b6de4e3-b417-4a6e-8432-9e4956a9eab6")
+	)
+	(wire
+		(pts
+			(xy 55.88 167.64) (xy 55.88 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e69517b-1ee7-4f25-8aaa-fb8627382902")
 	)
 	(wire
 		(pts
@@ -5007,7 +5149,7 @@
 	)
 	(wire
 		(pts
-			(xy 307.34 154.94) (xy 304.8 154.94)
+			(xy 307.34 154.94) (xy 292.1 154.94)
 		)
 		(stroke
 			(width 0)
@@ -5017,7 +5159,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 224.79) (xy 180.34 224.79)
+			(xy 214.63 228.6) (xy 209.55 228.6)
 		)
 		(stroke
 			(width 0)
@@ -5027,7 +5169,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 82.55) (xy 53.34 82.55)
+			(xy 72.39 77.47) (xy 69.85 77.47)
 		)
 		(stroke
 			(width 0)
@@ -5077,7 +5219,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 224.79) (xy 105.41 224.79)
+			(xy 139.7 228.6) (xy 134.62 228.6)
 		)
 		(stroke
 			(width 0)
@@ -5087,17 +5229,7 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 158.75) (xy 276.86 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "474f04d4-fd57-406f-b428-ebb69661119d")
-	)
-	(wire
-		(pts
-			(xy 260.35 219.71) (xy 255.27 219.71)
+			(xy 289.56 223.52) (xy 284.48 223.52)
 		)
 		(stroke
 			(width 0)
@@ -5147,7 +5279,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 227.33) (xy 255.27 227.33)
+			(xy 289.56 231.14) (xy 284.48 231.14)
 		)
 		(stroke
 			(width 0)
@@ -5164,6 +5296,16 @@
 			(type default)
 		)
 		(uuid "541f73c9-f504-4389-8183-dbb7ac91f144")
+	)
+	(wire
+		(pts
+			(xy 336.55 101.6) (xy 336.55 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54321e04-ce12-4383-92ae-3db15be4c353")
 	)
 	(wire
 		(pts
@@ -5197,7 +5339,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 38.1) (xy 69.85 35.56)
+			(xy 27.94 203.2) (xy 27.94 200.66)
 		)
 		(stroke
 			(width 0)
@@ -5207,7 +5349,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 45.72) (xy 69.85 48.26)
+			(xy 27.94 210.82) (xy 27.94 213.36)
 		)
 		(stroke
 			(width 0)
@@ -5217,7 +5359,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 121.92) (xy 171.45 124.46)
+			(xy 38.1 210.82) (xy 38.1 213.36)
 		)
 		(stroke
 			(width 0)
@@ -5237,7 +5379,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 121.92) (xy 195.58 124.46)
+			(xy 44.45 175.26) (xy 44.45 177.8)
 		)
 		(stroke
 			(width 0)
@@ -5257,7 +5399,17 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 107.95) (xy 52.07 110.49)
+			(xy 46.99 240.03) (xy 46.99 242.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d81269d-1289-41a0-98ec-7eae35ca3cdd")
+	)
+	(wire
+		(pts
+			(xy 55.88 93.98) (xy 55.88 96.52)
 		)
 		(stroke
 			(width 0)
@@ -5287,7 +5439,7 @@
 	)
 	(wire
 		(pts
-			(xy 335.28 227.33) (xy 330.2 227.33)
+			(xy 364.49 231.14) (xy 359.41 231.14)
 		)
 		(stroke
 			(width 0)
@@ -5297,7 +5449,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 227.33) (xy 180.34 227.33)
+			(xy 214.63 231.14) (xy 209.55 231.14)
 		)
 		(stroke
 			(width 0)
@@ -5307,7 +5459,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 232.41) (xy 255.27 232.41)
+			(xy 289.56 236.22) (xy 284.48 236.22)
 		)
 		(stroke
 			(width 0)
@@ -5317,7 +5469,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 44.45) (xy 168.91 46.99)
+			(xy 53.34 210.82) (xy 53.34 213.36)
 		)
 		(stroke
 			(width 0)
@@ -5327,7 +5479,7 @@
 	)
 	(wire
 		(pts
-			(xy 335.28 222.25) (xy 330.2 222.25)
+			(xy 364.49 226.06) (xy 359.41 226.06)
 		)
 		(stroke
 			(width 0)
@@ -5387,7 +5539,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 44.45) (xy 193.04 46.99)
+			(xy 78.74 210.82) (xy 78.74 213.36)
 		)
 		(stroke
 			(width 0)
@@ -5407,7 +5559,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 217.17) (xy 255.27 217.17)
+			(xy 289.56 220.98) (xy 284.48 220.98)
 		)
 		(stroke
 			(width 0)
@@ -5457,7 +5609,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 36.83) (xy 193.04 34.29)
+			(xy 78.74 203.2) (xy 78.74 200.66)
 		)
 		(stroke
 			(width 0)
@@ -5477,7 +5629,7 @@
 	)
 	(wire
 		(pts
-			(xy 335.28 219.71) (xy 330.2 219.71)
+			(xy 364.49 223.52) (xy 359.41 223.52)
 		)
 		(stroke
 			(width 0)
@@ -5517,7 +5669,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 217.17) (xy 105.41 217.17)
+			(xy 139.7 220.98) (xy 134.62 220.98)
 		)
 		(stroke
 			(width 0)
@@ -5527,7 +5679,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 97.79) (xy 25.4 97.79)
+			(xy 36.83 83.82) (xy 29.21 83.82)
 		)
 		(stroke
 			(width 0)
@@ -5537,7 +5689,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 97.79) (xy 43.18 100.33)
+			(xy 46.99 83.82) (xy 46.99 86.36)
 		)
 		(stroke
 			(width 0)
@@ -5587,7 +5739,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 224.79) (xy 255.27 224.79)
+			(xy 289.56 228.6) (xy 284.48 228.6)
 		)
 		(stroke
 			(width 0)
@@ -5607,7 +5759,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 102.87) (xy 36.83 110.49)
+			(xy 40.64 88.9) (xy 40.64 96.52)
 		)
 		(stroke
 			(width 0)
@@ -5654,6 +5806,16 @@
 			(type default)
 		)
 		(uuid "9409d083-5fd3-4847-87f0-465fbdb49112")
+	)
+	(wire
+		(pts
+			(xy 162.56 161.29) (xy 160.02 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "954bb41b-9212-4938-b880-331942ed2146")
 	)
 	(wire
 		(pts
@@ -5727,7 +5889,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 107.95) (xy 43.18 113.03)
+			(xy 46.99 93.98) (xy 46.99 99.06)
 		)
 		(stroke
 			(width 0)
@@ -5737,7 +5899,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 219.71) (xy 180.34 219.71)
+			(xy 214.63 223.52) (xy 209.55 223.52)
 		)
 		(stroke
 			(width 0)
@@ -5787,7 +5949,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 36.83) (xy 181.61 34.29)
+			(xy 67.31 203.2) (xy 67.31 200.66)
 		)
 		(stroke
 			(width 0)
@@ -5807,7 +5969,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 232.41) (xy 105.41 232.41)
+			(xy 139.7 236.22) (xy 134.62 236.22)
 		)
 		(stroke
 			(width 0)
@@ -5887,7 +6049,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 222.25) (xy 255.27 222.25)
+			(xy 289.56 226.06) (xy 284.48 226.06)
 		)
 		(stroke
 			(width 0)
@@ -5897,7 +6059,7 @@
 	)
 	(wire
 		(pts
-			(xy 335.28 229.87) (xy 330.2 229.87)
+			(xy 364.49 233.68) (xy 359.41 233.68)
 		)
 		(stroke
 			(width 0)
@@ -5927,6 +6089,16 @@
 	)
 	(wire
 		(pts
+			(xy 55.88 175.26) (xy 55.88 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b53fdcc3-57ec-41d7-81ed-0082c10913c9")
+	)
+	(wire
+		(pts
 			(xy 339.09 88.9) (xy 336.55 88.9)
 		)
 		(stroke
@@ -5947,7 +6119,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 82.55) (xy 66.04 82.55)
+			(xy 80.01 77.47) (xy 90.17 77.47)
 		)
 		(stroke
 			(width 0)
@@ -5957,7 +6129,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 229.87) (xy 180.34 229.87)
+			(xy 214.63 233.68) (xy 209.55 233.68)
 		)
 		(stroke
 			(width 0)
@@ -5974,6 +6146,16 @@
 			(type default)
 		)
 		(uuid "ba96399e-050d-4c15-a16d-6a1542eb0fb8")
+	)
+	(wire
+		(pts
+			(xy 162.56 184.15) (xy 160.02 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdb64bcb-c326-4d06-8908-c50a8fbe3914")
 	)
 	(wire
 		(pts
@@ -5997,7 +6179,17 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 232.41) (xy 180.34 232.41)
+			(xy 67.31 167.64) (xy 67.31 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf4a2927-1a50-410c-b2c1-4d62c53d5d81")
+	)
+	(wire
+		(pts
+			(xy 214.63 236.22) (xy 209.55 236.22)
 		)
 		(stroke
 			(width 0)
@@ -6017,23 +6209,13 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 97.79) (xy 52.07 97.79)
+			(xy 46.99 83.82) (xy 55.88 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c2dde21a-f84c-4f2f-9bf8-1353e28f6539")
-	)
-	(wire
-		(pts
-			(xy 264.16 151.13) (xy 264.16 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2ec2e87-8c67-4d08-97f5-dd46f5141487")
 	)
 	(wire
 		(pts
@@ -6057,6 +6239,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 40.64) (xy 69.85 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5b5ecd5-c7f0-4a53-938c-f1b2bf280dd2")
+	)
+	(wire
+		(pts
 			(xy 140.97 85.09) (xy 143.51 85.09)
 		)
 		(stroke
@@ -6067,16 +6259,6 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 184.15) (xy 162.56 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca2de3bf-eedc-4735-9670-7460b3a5ed1e")
-	)
-	(wire
-		(pts
 			(xy 334.01 147.32) (xy 334.01 149.86)
 		)
 		(stroke
@@ -6084,6 +6266,16 @@
 			(type default)
 		)
 		(uuid "ca3a301d-aaea-4c80-be1e-43d6dc9a5145")
+	)
+	(wire
+		(pts
+			(xy 90.17 167.64) (xy 90.17 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "caea4e55-d33d-4031-b11c-e33efe499be5")
 	)
 	(wire
 		(pts
@@ -6117,23 +6309,13 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 217.17) (xy 180.34 217.17)
+			(xy 214.63 220.98) (xy 209.55 220.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "cf5908fa-fc7a-4cda-b9d2-f37dba7680de")
-	)
-	(wire
-		(pts
-			(xy 90.17 74.93) (xy 87.63 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d03a166e-f39d-447c-88b9-0422eefdc274")
 	)
 	(wire
 		(pts
@@ -6157,16 +6339,6 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 77.47) (xy 87.63 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d29ab755-a0d8-4bf6-9f94-8e3c1a438174")
-	)
-	(wire
-		(pts
 			(xy 140.97 102.87) (xy 143.51 102.87)
 		)
 		(stroke
@@ -6187,7 +6359,7 @@
 	)
 	(wire
 		(pts
-			(xy 335.28 224.79) (xy 330.2 224.79)
+			(xy 364.49 228.6) (xy 359.41 228.6)
 		)
 		(stroke
 			(width 0)
@@ -6227,7 +6399,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 114.3) (xy 195.58 111.76)
+			(xy 44.45 167.64) (xy 44.45 165.1)
 		)
 		(stroke
 			(width 0)
@@ -6257,7 +6429,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 107.95) (xy 25.4 110.49)
+			(xy 29.21 93.98) (xy 29.21 96.52)
 		)
 		(stroke
 			(width 0)
@@ -6277,7 +6449,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 74.93) (xy 53.34 74.93)
+			(xy 72.39 74.93) (xy 69.85 74.93)
 		)
 		(stroke
 			(width 0)
@@ -6287,7 +6459,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 163.83) (xy 191.77 163.83)
+			(xy 189.23 163.83) (xy 205.74 163.83)
 		)
 		(stroke
 			(width 0)
@@ -6297,7 +6469,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 74.93) (xy 66.04 74.93)
+			(xy 80.01 74.93) (xy 90.17 74.93)
 		)
 		(stroke
 			(width 0)
@@ -6317,7 +6489,17 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 229.87) (xy 105.41 229.87)
+			(xy 67.31 175.26) (xy 67.31 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4770270-9280-45a8-9137-6a9ec198fda2")
+	)
+	(wire
+		(pts
+			(xy 139.7 233.68) (xy 134.62 233.68)
 		)
 		(stroke
 			(width 0)
@@ -6337,6 +6519,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 232.41) (xy 29.21 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7de7a80-91cd-467b-9e7d-c86f775976de")
+	)
+	(wire
+		(pts
 			(xy 140.97 115.57) (xy 143.51 115.57)
 		)
 		(stroke
@@ -6347,7 +6539,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 229.87) (xy 255.27 229.87)
+			(xy 289.56 233.68) (xy 284.48 233.68)
 		)
 		(stroke
 			(width 0)
@@ -6367,16 +6559,6 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 158.75) (xy 264.16 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ececb375-8e07-4d1a-b5ba-2a9902186014")
-	)
-	(wire
-		(pts
 			(xy 29.21 128.27) (xy 29.21 133.35)
 		)
 		(stroke
@@ -6387,7 +6569,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 97.79) (xy 52.07 100.33)
+			(xy 55.88 83.82) (xy 55.88 86.36)
 		)
 		(stroke
 			(width 0)
@@ -6397,7 +6579,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 114.3) (xy 182.88 111.76)
+			(xy 31.75 167.64) (xy 31.75 165.1)
 		)
 		(stroke
 			(width 0)
@@ -6414,6 +6596,16 @@
 			(type default)
 		)
 		(uuid "f2706e66-b9d8-4e9f-9a1d-bdd9f5350e7a")
+	)
+	(wire
+		(pts
+			(xy 69.85 48.26) (xy 69.85 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f34f48c3-9ea9-4332-909a-78e9f3185f8e")
 	)
 	(wire
 		(pts
@@ -6447,6 +6639,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 167.64) (xy 78.74 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb1ce7f8-edeb-4f3d-b01c-956ca8386e14")
+	)
+	(wire
+		(pts
 			(xy 275.59 91.44) (xy 275.59 88.9)
 		)
 		(stroke
@@ -6477,7 +6679,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 114.3) (xy 171.45 111.76)
+			(xy 38.1 203.2) (xy 38.1 200.66)
 		)
 		(stroke
 			(width 0)
@@ -6497,7 +6699,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 222.25) (xy 180.34 222.25)
+			(xy 214.63 226.06) (xy 209.55 226.06)
 		)
 		(stroke
 			(width 0)
@@ -6556,7 +6758,7 @@
 		(uuid "04dd7255-778a-4b10-b24b-bf981921ddcd")
 	)
 	(label "CH4_SDA"
-		(at 330.2 217.17 180)
+		(at 359.41 220.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6565,18 +6767,8 @@
 		)
 		(uuid "0cba037c-2cb7-47bb-842e-336372664dce")
 	)
-	(label "SWCLK"
-		(at 162.56 181.61 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0e6c358e-bf5e-441a-9e1a-c534ff738b12")
-	)
 	(label "CH2_SDA"
-		(at 180.34 217.17 180)
+		(at 209.55 220.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6616,7 +6808,7 @@
 		(uuid "16b2dd62-27f9-4a48-882c-0581c8332f67")
 	)
 	(label "CH3_INT"
-		(at 255.27 222.25 180)
+		(at 284.48 226.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6635,16 +6827,6 @@
 		)
 		(uuid "1aa4c44b-cf3c-47b6-b80d-e5202d99ffe2")
 	)
-	(label "USB_N_R"
-		(at 66.04 74.93 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1c13d7d4-ef8a-48aa-9cb2-cfaff0b8fd46")
-	)
 	(label "XOUT"
 		(at 87.63 115.57 180)
 		(effects
@@ -6656,7 +6838,7 @@
 		(uuid "1c81de6e-aeb6-46bc-b491-65419f999164")
 	)
 	(label "CH4_IMON"
-		(at 330.2 227.33 180)
+		(at 359.41 231.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6676,7 +6858,7 @@
 		(uuid "221d72ca-da5e-4a02-ac55-251c23d822b3")
 	)
 	(label "XIN"
-		(at 25.4 97.79 180)
+		(at 29.21 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6705,6 +6887,16 @@
 		)
 		(uuid "2916982c-18a2-4c77-ba95-1ad7a705c135")
 	)
+	(label "SWDIO"
+		(at 162.56 181.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2b7784b5-ceb4-454c-8d12-292575578ee4")
+	)
 	(label "CH1_IMON"
 		(at 143.51 120.65 0)
 		(effects
@@ -6716,7 +6908,7 @@
 		(uuid "2bc7e8b7-833f-4e3e-9741-dba403d66288")
 	)
 	(label "CH3_IMON"
-		(at 255.27 227.33 180)
+		(at 284.48 231.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6726,7 +6918,7 @@
 		(uuid "2bd62713-8abe-481f-bc46-55bf8f7ac463")
 	)
 	(label "CH2_SCL"
-		(at 180.34 219.71 180)
+		(at 209.55 223.52 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6756,7 +6948,7 @@
 		(uuid "30f0db28-898c-4953-bed6-ac992045a57c")
 	)
 	(label "CH3_SCL"
-		(at 255.27 219.71 180)
+		(at 284.48 223.52 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6766,7 +6958,7 @@
 		(uuid "354a723a-4f53-42a6-ba38-fa16f46adaf5")
 	)
 	(label "CH4_SELB"
-		(at 330.2 232.41 180)
+		(at 359.41 236.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6796,7 +6988,7 @@
 		(uuid "415f43d4-63ea-4c18-a056-1a30d8c10020")
 	)
 	(label "CH1_SDA"
-		(at 105.41 217.17 180)
+		(at 134.62 220.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6806,7 +6998,7 @@
 		(uuid "41f62438-762b-49c9-9479-5ccbf75f44a4")
 	)
 	(label "CH1_SELB"
-		(at 105.41 232.41 180)
+		(at 134.62 236.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6816,7 +7008,7 @@
 		(uuid "4469fa7a-ac19-48bc-b79e-d0b37c53f19d")
 	)
 	(label "CH3_SELA"
-		(at 255.27 229.87 180)
+		(at 284.48 233.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6856,7 +7048,7 @@
 		(uuid "506c2c64-eaa7-4949-9a74-7daf6ada3728")
 	)
 	(label "+1V1"
-		(at 181.61 34.29 90)
+		(at 67.31 200.66 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6886,7 +7078,7 @@
 		(uuid "51c1e0ce-2a5b-4945-b069-7aabfa09b0e0")
 	)
 	(label "CH2_SELA"
-		(at 180.34 229.87 180)
+		(at 209.55 233.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6896,7 +7088,7 @@
 		(uuid "52325fd5-98c3-4b01-8ab1-22eb0c56802e")
 	)
 	(label "CH3_SELB"
-		(at 255.27 232.41 180)
+		(at 284.48 236.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6906,7 +7098,7 @@
 		(uuid "52edf090-ad13-4cf1-8239-7e7d13598325")
 	)
 	(label "CH1_IMON"
-		(at 105.41 227.33 180)
+		(at 134.62 231.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6986,7 +7178,7 @@
 		(uuid "66f6278d-ffb6-4b6e-87bf-a2b272b8e2c2")
 	)
 	(label "CH1_ALERT"
-		(at 105.41 224.79 180)
+		(at 134.62 228.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6996,7 +7188,7 @@
 		(uuid "6bd41b15-5f06-44ef-a7b6-8c3e714f35b9")
 	)
 	(label "CH4_SELA"
-		(at 330.2 229.87 180)
+		(at 359.41 233.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7026,7 +7218,7 @@
 		(uuid "73e96ed4-51f8-417a-914c-f41eee9b4d77")
 	)
 	(label "XOUT"
-		(at 43.18 113.03 0)
+		(at 46.99 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7036,7 +7228,7 @@
 		(uuid "74677fc9-b602-43ed-9c77-6aaab4e58f0a")
 	)
 	(label "CH2_INT"
-		(at 180.34 222.25 180)
+		(at 209.55 226.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7046,7 +7238,7 @@
 		(uuid "74b558c6-4c67-4709-b637-f319997d767f")
 	)
 	(label "CH2_ALERT"
-		(at 180.34 224.79 180)
+		(at 209.55 228.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7115,18 +7307,8 @@
 		)
 		(uuid "98fbfdee-9792-43e3-a8b9-f69bae7eb8b3")
 	)
-	(label "USB_P_R"
-		(at 87.63 77.47 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9a4b96ad-11e5-461a-9b94-f79003d1f17e")
-	)
 	(label "CH1_SELA"
-		(at 105.41 229.87 180)
+		(at 134.62 233.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7146,7 +7328,7 @@
 		(uuid "a1daae58-7f59-4392-8716-57381a2767ea")
 	)
 	(label "CH4_SCL"
-		(at 330.2 219.71 180)
+		(at 359.41 223.52 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7154,6 +7336,16 @@
 			(justify right bottom)
 		)
 		(uuid "a1e909de-fd61-4b4d-b7f2-a760dd37be2c")
+	)
+	(label "SWCLK"
+		(at 162.56 179.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a41831fe-2dde-48e7-82af-93ce1e689c94")
 	)
 	(label "QSPI_SS"
 		(at 87.63 85.09 180)
@@ -7176,7 +7368,7 @@
 		(uuid "a5218e98-bffb-4cf6-87f8-00ffc4ec4aa2")
 	)
 	(label "CH3_ALERT"
-		(at 255.27 224.79 180)
+		(at 284.48 228.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7186,7 +7378,7 @@
 		(uuid "a5cfcbd3-1fcd-423f-899f-0ccc8bc7a791")
 	)
 	(label "CH3_SDA"
-		(at 255.27 217.17 180)
+		(at 284.48 220.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7214,16 +7406,6 @@
 			(justify left bottom)
 		)
 		(uuid "aeb9c35f-13b8-4cff-a28e-c71e2574ee35")
-	)
-	(label "USB_P_R"
-		(at 66.04 82.55 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b0188468-0fd0-4eeb-b68f-d778970673ae")
 	)
 	(label "CH3_INT"
 		(at 143.51 77.47 0)
@@ -7265,16 +7447,6 @@
 		)
 		(uuid "c06021fd-6701-4b9e-811e-2ec9a51e9557")
 	)
-	(label "SWDIO"
-		(at 162.56 179.07 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c076eb2d-05ea-4300-b6c8-7bd722d09269")
-	)
 	(label "CH3_SELB"
 		(at 143.51 110.49 0)
 		(effects
@@ -7296,7 +7468,7 @@
 		(uuid "c7336d18-3dda-4890-b3f6-a8f4c3888498")
 	)
 	(label "CH4_ALERT"
-		(at 330.2 224.79 180)
+		(at 359.41 228.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7316,7 +7488,7 @@
 		(uuid "c7a0b82d-1744-4a9c-8e84-9ae6dad1fa96")
 	)
 	(label "CH2_IMON"
-		(at 180.34 227.33 180)
+		(at 209.55 231.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7346,7 +7518,7 @@
 		(uuid "caada34f-e046-4602-a1f9-44a27e4c55e3")
 	)
 	(label "CH1_INT"
-		(at 105.41 222.25 180)
+		(at 134.62 226.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7416,7 +7588,7 @@
 		(uuid "d8649819-43b9-488c-a538-bf68ca8a74e8")
 	)
 	(label "CH2_SELB"
-		(at 180.34 232.41 180)
+		(at 209.55 236.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7426,7 +7598,7 @@
 		(uuid "daa83b3f-11f6-47de-9688-d9c3895f49f7")
 	)
 	(label "CH1_SCL"
-		(at 105.41 219.71 180)
+		(at 134.62 223.52 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7436,7 +7608,7 @@
 		(uuid "dd96e353-b06b-4147-8b42-531e0aea1d79")
 	)
 	(label "+1V1"
-		(at 168.91 34.29 90)
+		(at 53.34 200.66 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7454,16 +7626,6 @@
 			(justify left bottom)
 		)
 		(uuid "e4174a14-7edb-4d06-b55c-6fc06421fcf7")
-	)
-	(label "USB_N_R"
-		(at 87.63 74.93 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e75d254d-c0db-4fdc-aad0-a6955f8f3996")
 	)
 	(label "SWDIO"
 		(at 87.63 125.73 180)
@@ -7486,7 +7648,7 @@
 		(uuid "ec24a7a3-c89a-4671-a6f3-a2031728e0f2")
 	)
 	(label "+1V1"
-		(at 193.04 34.29 90)
+		(at 78.74 200.66 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7536,7 +7698,7 @@
 		(uuid "f21d00de-ee41-4b25-abf1-bf660cc86bdb")
 	)
 	(label "CH4_INT"
-		(at 330.2 222.25 180)
+		(at 359.41 226.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7607,7 +7769,7 @@
 	)
 	(global_label "USB_DM"
 		(shape bidirectional)
-		(at 53.34 74.93 180)
+		(at 69.85 74.93 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7617,7 +7779,7 @@
 		)
 		(uuid "101c1a7b-56d0-432b-89d7-4a2be64c184b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 41.7445 74.93 0)
+			(at 58.2545 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7629,9 +7791,33 @@
 			)
 		)
 	)
+	(global_label "UART_TX"
+		(shape bidirectional)
+		(at 162.56 161.29 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2b3304da-2775-459d-8d96-1528934b8cc8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 174.4579 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "USB_DP"
 		(shape bidirectional)
-		(at 53.34 82.55 180)
+		(at 69.85 77.47 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7641,7 +7827,7 @@
 		)
 		(uuid "326b3e68-b944-4112-b70a-2fda3cf4bce4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 41.9259 82.55 0)
+			(at 58.4359 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7871,30 +8057,6 @@
 	)
 	(global_label "UART_TX"
 		(shape bidirectional)
-		(at 162.56 166.37 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c6582ea0-9854-4fbb-9f66-64eeb30f607f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 174.4579 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "UART_TX"
-		(shape bidirectional)
 		(at 143.51 52.07 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7914,6 +8076,99 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 67.31 171.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "065c2242-af49-48de-884f-c68f1e216991")
+		(property "Reference" "C11"
+			(at 69.85 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 69.85 172.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 67.31 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
+			(at 67.31 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 67.31 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Placement" "U2 pin 33 IOVDD -> GND pad (EP 57)"
+			(at 67.31 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "df18aa14-75a8-4042-b1d0-e68bbf759930")
+		)
+		(pin "2"
+			(uuid "f47eae11-edd1-4e67-962e-034f5ca51b62")
+		)
+		(instances
+			(project "4 1S Lipo Charger"
+				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
+					(reference "C11")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -8040,7 +8295,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 306.07 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -8157,7 +8412,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 276.86 161.29 0)
+		(at 67.31 177.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8166,9 +8421,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0d275f14-59ab-45e2-af0c-24b892d09896")
-		(property "Reference" "#PWR042"
-			(at 276.86 167.64 0)
+		(uuid "0c730b04-2ac3-4117-b82f-d904f8b2ca0a")
+		(property "Reference" "#PWR0908"
+			(at 67.31 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8179,7 +8434,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 276.86 165.1 0)
+			(at 67.31 181.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8189,7 +8444,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 276.86 161.29 0)
+			(at 67.31 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8200,7 +8455,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 276.86 161.29 0)
+			(at 67.31 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8211,7 +8466,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 276.86 161.29 0)
+			(at 67.31 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8222,12 +8477,90 @@
 			)
 		)
 		(pin "1"
-			(uuid "875969f5-e0ea-4006-9079-ce08b71653fb")
+			(uuid "e0c7ea93-51b1-48c5-ab70-9d8f42ce8b9f")
 		)
 		(instances
 			(project "4 1S Lipo Charger"
 				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
-					(reference "#PWR042")
+					(reference "#PWR0908")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 162.56 184.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0d208d35-7019-4f06-a686-7986058df4f1")
+		(property "Reference" "#PWR019"
+			(at 162.56 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 162.56 187.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 162.56 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fb1c87af-821e-4602-9e82-b4d48fb97b44")
+		)
+		(instances
+			(project "4 1S Lipo Charger"
+				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -8276,7 +8609,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://suddendocs.samtec.com/catalog_english/tsw_th.pdf"
 			(at 154.94 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -8318,85 +8651,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 336.55 104.14 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0f7258fa-a3fb-42ec-a7d8-12f95a6cf854")
-		(property "Reference" "#PWR056"
-			(at 330.2 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 332.74 104.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 336.55 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 336.55 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 336.55 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "28624987-c59b-4676-a1c5-28fec63be12f")
-		)
-		(instances
-			(project "4 1S Lipo Charger"
-				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
-					(reference "#PWR056")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 304.8 154.94 270)
+		(at 292.1 154.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8407,7 +8662,7 @@
 		(fields_autoplaced yes)
 		(uuid "1367b3c4-8f27-4ba2-8728-0f90ce2df840")
 		(property "Reference" "#PWR047"
-			(at 298.45 154.94 0)
+			(at 292.1 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8418,7 +8673,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 300.99 154.94 0)
+			(at 292.1 158.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8428,7 +8683,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 304.8 154.94 0)
+			(at 292.1 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8439,7 +8694,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 304.8 154.94 0)
+			(at 292.1 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8450,7 +8705,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 304.8 154.94 0)
+			(at 292.1 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8552,7 +8807,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 191.77 163.83 270)
+		(at 205.74 163.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8563,7 +8818,7 @@
 		(fields_autoplaced yes)
 		(uuid "174db3ca-979c-4b0f-8479-eab76e8a0552")
 		(property "Reference" "#PWR028"
-			(at 187.96 163.83 0)
+			(at 205.74 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8574,7 +8829,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 195.326 163.83 0)
+			(at 205.74 160.274 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8584,7 +8839,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 191.77 163.83 0)
+			(at 205.74 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8595,7 +8850,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 191.77 163.83 0)
+			(at 205.74 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8606,7 +8861,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 191.77 163.83 0)
+			(at 205.74 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8673,7 +8928,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 264.16 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -8832,7 +9087,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 293.37 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -8871,85 +9126,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 276.86 148.59 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "20bd4ca2-85f6-4afb-933c-55ddc8513b71")
-		(property "Reference" "#PWR041"
-			(at 276.86 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 276.86 145.034 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 276.86 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 276.86 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 276.86 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c398f78c-6f56-4f55-96e4-3193ad91943a")
-		)
-		(instances
-			(project "4 1S Lipo Charger"
-				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
-					(reference "#PWR041")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 182.88 111.76 0)
+		(at 31.75 165.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8960,7 +9137,7 @@
 		(fields_autoplaced yes)
 		(uuid "214bdcec-b27b-4ab5-a71b-8c4dc3880688")
 		(property "Reference" "#PWR026"
-			(at 182.88 115.57 0)
+			(at 31.75 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8971,7 +9148,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 182.88 108.204 0)
+			(at 31.75 161.544 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8981,7 +9158,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 182.88 111.76 0)
+			(at 31.75 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8992,7 +9169,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 111.76 0)
+			(at 31.75 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9003,7 +9180,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 182.88 111.76 0)
+			(at 31.75 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9105,7 +9282,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 59.69 82.55 270)
+		(at 76.2 77.47 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9113,10 +9290,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "23a41031-d589-4fbb-8c91-ca826fe235db")
 		(property "Reference" "R5"
-			(at 59.69 85.09 90)
+			(at 76.2 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9126,7 +9302,7 @@
 			)
 		)
 		(property "Value" "27R"
-			(at 59.69 80.01 90)
+			(at 76.2 81.788 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9136,7 +9312,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 59.69 82.55 0)
+			(at 76.2 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9146,8 +9322,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 59.69 82.55 0)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 76.2 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9158,7 +9334,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 59.69 82.55 0)
+			(at 76.2 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9184,41 +9360,40 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 168.91 40.64 0)
+		(lib_id "power:GND")
+		(at 90.17 177.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "283128a6-0601-4931-840b-101dcce6cff5")
-		(property "Reference" "C4"
-			(at 171.45 39.37 0)
+		(uuid "27cd2d0c-17f9-401f-89d4-68e0f9373ffe")
+		(property "Reference" "#PWR0912"
+			(at 90.17 184.15 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "1uF"
-			(at 171.45 41.91 0)
+		(property "Value" "GND"
+			(at 90.17 181.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 168.91 40.64 0)
+		(property "Footprint" ""
+			(at 90.17 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9229,7 +9404,86 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 40.64 0)
+			(at 90.17 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 90.17 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f10c78f3-df32-4aae-9082-abfefbb66d54")
+		)
+		(instances
+			(project "4 1S Lipo Charger"
+				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
+					(reference "#PWR0912")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 53.34 207.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "283128a6-0601-4931-840b-101dcce6cff5")
+		(property "Reference" "C4"
+			(at 55.88 205.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 55.88 208.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 53.34 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X5R_4V-TO-50V"
+			(at 53.34 207.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9240,7 +9494,18 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 168.91 40.64 0)
+			(at 53.34 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Placement" "U2 pin 45 VREG_VOUT -> GND pad (EP 57), same layer"
+			(at 53.34 207.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9308,7 +9573,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 177.8 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -9425,7 +9690,7 @@
 	)
 	(symbol
 		(lib_id "Device:Crystal_GND24")
-		(at 36.83 97.79 0)
+		(at 40.64 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9436,7 +9701,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d9c524b-3426-42fa-a241-3e5891638f37")
 		(property "Reference" "Y1"
-			(at 40.005 92.71 0)
+			(at 43.815 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9447,7 +9712,7 @@
 			)
 		)
 		(property "Value" "12MHz"
-			(at 40.005 94.615 0)
+			(at 43.815 80.645 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9458,7 +9723,7 @@
 			)
 		)
 		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
-			(at 36.83 97.79 0)
+			(at 40.64 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9468,8 +9733,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 36.83 97.79 0)
+		(property "Datasheet" "https://abracon.com/datasheets/ABM8-272-T3.pdf"
+			(at 40.64 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9480,7 +9745,7 @@
 			)
 		)
 		(property "Description" "Four pin crystal, GND on pins 2 and 4"
-			(at 36.83 97.79 0)
+			(at 40.64 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9491,7 +9756,7 @@
 			)
 		)
 		(property "MPN" "ABM8-272-T3"
-			(at 36.83 97.79 0)
+			(at 40.64 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9524,7 +9789,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 171.45 118.11 0)
+		(at 38.1 207.01 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9535,7 +9800,7 @@
 		(fields_autoplaced yes)
 		(uuid "2e496e87-db55-4bc6-b256-b3ef8c397dfb")
 		(property "Reference" "C5"
-			(at 173.99 116.84 0)
+			(at 40.64 205.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9546,7 +9811,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 173.99 119.38 0)
+			(at 40.64 208.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9557,7 +9822,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 171.45 118.11 0)
+			(at 38.1 207.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9567,8 +9832,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 171.45 118.11 0)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X5R_4V-TO-50V"
+			(at 38.1 207.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9579,7 +9844,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 171.45 118.11 0)
+			(at 38.1 207.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9590,7 +9855,18 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 171.45 118.11 0)
+			(at 38.1 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Placement" "3V3 bulk: where the +3V3 feed enters the RP2040 area, next to C3"
+			(at 38.1 207.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9617,7 +9893,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 25.4 110.49 0)
+		(at 29.21 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9628,7 +9904,7 @@
 		(fields_autoplaced yes)
 		(uuid "2fcbbb5d-04f4-4567-8ee7-3f87a91baf38")
 		(property "Reference" "#PWR01"
-			(at 25.4 116.84 0)
+			(at 29.21 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9639,7 +9915,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 25.4 114.3 0)
+			(at 29.21 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9649,7 +9925,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 25.4 110.49 0)
+			(at 29.21 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9660,7 +9936,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 110.49 0)
+			(at 29.21 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9671,7 +9947,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 25.4 110.49 0)
+			(at 29.21 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9688,6 +9964,84 @@
 			(project "4 1S Lipo Charger"
 				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 90.17 165.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "312b6f8c-27a0-4967-a44e-a752f808a596")
+		(property "Reference" "#PWR0911"
+			(at 90.17 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 90.17 161.544 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 90.17 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 90.17 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "257f12ff-1a54-4d9c-93c8-d64a754e8597")
+		)
+		(instances
+			(project "4 1S Lipo Charger"
+				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
+					(reference "#PWR0911")
 					(unit 1)
 				)
 			)
@@ -9738,7 +10092,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
 			(at 367.03 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -9750,6 +10104,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 367.03 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Placement" "At U2 pin 5 (GPIO3 / ENC_B) - RC filter cap at the MCU input"
 			(at 367.03 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -10158,7 +10523,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 195.58 118.11 0)
+		(at 44.45 171.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10169,7 +10534,7 @@
 		(fields_autoplaced yes)
 		(uuid "3cb13c00-17cc-4115-b1a4-76301a893f3f")
 		(property "Reference" "C9"
-			(at 198.12 116.84 0)
+			(at 46.99 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10180,7 +10545,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 198.12 119.38 0)
+			(at 46.99 172.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10191,7 +10556,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 195.58 118.11 0)
+			(at 44.45 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10201,8 +10566,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 195.58 118.11 0)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
+			(at 44.45 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10213,7 +10578,18 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 195.58 118.11 0)
+			(at 44.45 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Placement" "U2 pin 10 IOVDD -> GND pad (EP 57)"
+			(at 44.45 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10240,7 +10616,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 193.04 46.99 0)
+		(at 78.74 213.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10251,7 +10627,7 @@
 		(fields_autoplaced yes)
 		(uuid "41ea30e9-5534-415f-b264-8c4314f6cbe4")
 		(property "Reference" "#PWR030"
-			(at 193.04 53.34 0)
+			(at 78.74 219.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10262,7 +10638,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 193.04 50.8 0)
+			(at 78.74 217.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10272,7 +10648,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 193.04 46.99 0)
+			(at 78.74 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10283,7 +10659,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 193.04 46.99 0)
+			(at 78.74 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10294,7 +10670,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 193.04 46.99 0)
+			(at 78.74 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10361,7 +10737,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 318.77 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -10400,7 +10776,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 25.4 104.14 0)
+		(at 29.21 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10410,7 +10786,7 @@
 		(dnp no)
 		(uuid "46b95f68-454a-45cd-9931-02f2d7fcc22c")
 		(property "Reference" "C1"
-			(at 26.67 101.6 0)
+			(at 30.48 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10421,7 +10797,7 @@
 			)
 		)
 		(property "Value" "15pF"
-			(at 26.67 104.14 0)
+			(at 30.48 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10432,7 +10808,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 25.4 104.14 0)
+			(at 29.21 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10442,8 +10818,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 25.4 104.14 0)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GP_NP0_16V-to-250V"
+			(at 29.21 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10454,7 +10830,18 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 25.4 104.14 0)
+			(at 29.21 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Placement" "Y1 pin 1 / U2 pin 20 XIN side, GND pad to Y1 pins 2+4, < 3 mm from Y1"
+			(at 29.21 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10524,7 +10911,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 285.75 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -10563,7 +10950,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 264.16 161.29 0)
+		(at 69.85 50.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10572,9 +10959,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "47ae8d76-598e-470e-9e71-102da0766d54")
-		(property "Reference" "#PWR039"
-			(at 264.16 167.64 0)
+		(uuid "47885888-de02-4407-a832-ae86e57c23c0")
+		(property "Reference" "#PWR0918"
+			(at 69.85 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10585,7 +10972,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 264.16 165.1 0)
+			(at 69.85 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10595,7 +10982,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 264.16 161.29 0)
+			(at 69.85 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10606,7 +10993,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 264.16 161.29 0)
+			(at 69.85 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10617,7 +11004,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 264.16 161.29 0)
+			(at 69.85 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10628,12 +11015,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "7a8c8f8d-77ed-4458-925b-0ac8554fbcae")
+			(uuid "690cfac6-01d0-40a8-8d22-44210125be8a")
 		)
 		(instances
 			(project "4 1S Lipo Charger"
 				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
-					(reference "#PWR039")
+					(reference "#PWR0918")
 					(unit 1)
 				)
 			)
@@ -10719,6 +11106,84 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
+		(at 162.56 176.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "48a8ea1b-e823-4490-a0f1-98965613ea80")
+		(property "Reference" "#PWR020"
+			(at 162.56 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 162.56 172.974 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 162.56 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d5020230-67de-49bc-8920-d93d15a4a974")
+		)
+		(instances
+			(project "4 1S Lipo Charger"
+				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
 		(at 306.07 54.61 0)
 		(unit 1)
 		(body_style 1)
@@ -10790,84 +11255,6 @@
 			(project "4 1S Lipo Charger"
 				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
 					(reference "#PWR048")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 162.56 161.29 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "50b6a5b2-8de0-4950-ac73-ff036a068f84")
-		(property "Reference" "#PWR018"
-			(at 168.91 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 166.37 161.29 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 162.56 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 162.56 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 162.56 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d40f82ac-5d7e-4cc7-9a26-2cfb938bf15e")
-		)
-		(instances
-			(project "4 1S Lipo Charger"
-				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
-					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -10996,7 +11383,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 252.73 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -11077,7 +11464,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 300.99 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -11193,84 +11580,6 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 162.56 184.15 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5538d2d6-102f-40af-acf8-dfcdd929e5d3")
-		(property "Reference" "#PWR020"
-			(at 158.75 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 166.116 184.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 162.56 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 162.56 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 162.56 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9bad1691-3c9e-49bd-985a-36b7f6376482")
-		)
-		(instances
-			(project "4 1S Lipo Charger"
-				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
-					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
 		(at 349.25 68.58 0)
 		(unit 1)
 		(body_style 1)
@@ -11349,7 +11658,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 87.63 59.69 270)
+		(at 87.63 59.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11359,7 +11668,7 @@
 		(dnp no)
 		(uuid "5934085d-bd70-4371-b00d-018c5a7ef988")
 		(property "Reference" "#PWR011"
-			(at 81.28 59.69 0)
+			(at 87.63 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11370,7 +11679,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 83.566 59.69 0)
+			(at 87.63 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11426,7 +11735,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 168.91 46.99 0)
+		(at 53.34 213.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11437,7 +11746,7 @@
 		(fields_autoplaced yes)
 		(uuid "5a365560-2645-48fb-aaf9-1b64285bc2e6")
 		(property "Reference" "#PWR021"
-			(at 168.91 53.34 0)
+			(at 53.34 219.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11448,7 +11757,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 168.91 50.8 0)
+			(at 53.34 217.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11458,7 +11767,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.91 46.99 0)
+			(at 53.34 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11469,7 +11778,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 46.99 0)
+			(at 53.34 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11480,7 +11789,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 168.91 46.99 0)
+			(at 53.34 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11497,6 +11806,84 @@
 			(project "4 1S Lipo Charger"
 				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 29.21 229.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5c4c6ac8-c2ac-4289-a98c-2b544d8c703b")
+		(property "Reference" "#PWR0913"
+			(at 29.21 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 29.21 226.314 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 29.21 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 29.21 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e466427b-a32d-43ec-a913-8ccf061d347e")
+		)
+		(instances
+			(project "4 1S Lipo Charger"
+				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
+					(reference "#PWR0913")
 					(unit 1)
 				)
 			)
@@ -11573,6 +11960,84 @@
 			(project "4 1S Lipo Charger"
 				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
 					(reference "FID1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 46.99 242.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5df4a50e-b96e-4719-ad88-8c8cbcec2259")
+		(property "Reference" "#PWR0916"
+			(at 46.99 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 46.99 246.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 46.99 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 46.99 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "43572e9b-cfe2-47ff-8a1d-16695884a5e9")
+		)
+		(instances
+			(project "4 1S Lipo Charger"
+				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
+					(reference "#PWR0916")
 					(unit 1)
 				)
 			)
@@ -11699,7 +12164,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://suddendocs.samtec.com/catalog_english/tsw_th.pdf"
 			(at 184.15 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -11898,6 +12363,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 78.74 177.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "63d2a164-4372-4b71-9422-386587753d7c")
+		(property "Reference" "#PWR0910"
+			(at 78.74 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 78.74 181.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 78.74 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8d9b733f-e49a-4a26-8655-89d76b40794b")
+		)
+		(instances
+			(project "4 1S Lipo Charger"
+				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
+					(reference "#PWR0910")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Memory_Flash:W25Q16JVSS")
 		(at 45.72 45.72 0)
 		(unit 1)
@@ -12075,7 +12618,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 69.85 35.56 0)
+		(at 27.94 200.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12086,7 +12629,7 @@
 		(fields_autoplaced yes)
 		(uuid "644540bd-043d-4157-abab-329a60fedf1a")
 		(property "Reference" "#PWR08"
-			(at 69.85 39.37 0)
+			(at 27.94 204.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12097,7 +12640,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 69.85 32.004 0)
+			(at 27.94 197.104 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12107,7 +12650,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 35.56 0)
+			(at 27.94 200.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12118,7 +12661,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 35.56 0)
+			(at 27.94 200.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12129,7 +12672,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 69.85 35.56 0)
+			(at 27.94 200.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12350,7 +12893,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 308.61 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -12545,7 +13088,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 52.07 104.14 0)
+		(at 55.88 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12556,7 +13099,7 @@
 		(fields_autoplaced yes)
 		(uuid "6cf8b6a7-59ff-4a02-870c-186337734067")
 		(property "Reference" "C2"
-			(at 54.61 102.87 0)
+			(at 58.42 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12567,7 +13110,7 @@
 			)
 		)
 		(property "Value" "15pF"
-			(at 54.61 105.41 0)
+			(at 58.42 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12578,7 +13121,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 52.07 104.14 0)
+			(at 55.88 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12588,8 +13131,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 52.07 104.14 0)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GP_NP0_16V-to-250V"
+			(at 55.88 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12600,7 +13143,18 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 52.07 104.14 0)
+			(at 55.88 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Placement" "Y1 pin 3 (between Y1 and R2), GND pad to Y1 pins 2+4, < 3 mm from Y1"
+			(at 55.88 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12620,6 +13174,84 @@
 			(project "4 1S Lipo Charger"
 				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 55.88 165.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "700605f9-ddda-4b5a-b98e-0fc40ef178c5")
+		(property "Reference" "#PWR0905"
+			(at 55.88 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 55.88 161.544 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.88 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 55.88 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cd2590fa-954a-41fc-8b41-152bd0402561")
+		)
+		(instances
+			(project "4 1S Lipo Charger"
+				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
+					(reference "#PWR0905")
 					(unit 1)
 				)
 			)
@@ -12748,7 +13380,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 297.18 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -12797,7 +13429,7 @@
 		(dnp no)
 		(uuid "76fa95ef-54ab-4afe-b8a7-3c40d6fbbd19")
 		(property "Reference" "SW2"
-			(at 64.77 142.24 0)
+			(at 65.278 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12829,7 +13461,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.e-switch.com/product/tl3342-series-low-profile-smt-tactile-switch/"
 			(at 62.23 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -12868,7 +13500,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 195.58 124.46 0)
+		(at 44.45 177.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12879,7 +13511,7 @@
 		(fields_autoplaced yes)
 		(uuid "772f67a9-79e9-4495-9bfc-3f814d820fbf")
 		(property "Reference" "#PWR032"
-			(at 195.58 130.81 0)
+			(at 44.45 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12890,7 +13522,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 195.58 128.27 0)
+			(at 44.45 181.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12900,7 +13532,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 195.58 124.46 0)
+			(at 44.45 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12911,7 +13543,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 124.46 0)
+			(at 44.45 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12922,7 +13554,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 195.58 124.46 0)
+			(at 44.45 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12939,84 +13571,6 @@
 			(project "4 1S Lipo Charger"
 				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
 					(reference "#PWR032")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 336.55 101.6 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7790fd89-6d5e-4126-a234-834ba8f7e583")
-		(property "Reference" "#PWR055"
-			(at 330.2 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 332.74 101.6 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 336.55 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 336.55 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 336.55 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "144879b3-ac33-43af-b219-acdb1d89543f")
-		)
-		(instances
-			(project "4 1S Lipo Charger"
-				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
-					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -13257,8 +13811,101 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 55.88 171.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "821f0e6b-e14a-40b0-8c4e-20da00d7c04c")
+		(property "Reference" "C10"
+			(at 58.42 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 58.42 172.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 55.88 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
+			(at 55.88 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 55.88 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Placement" "U2 pin 22 IOVDD -> GND pad (EP 57)"
+			(at 55.88 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4b5ceb32-7410-4f98-83f1-50799664ca75")
+		)
+		(pin "2"
+			(uuid "49d1d1d9-434f-45d1-a3f3-c4f8baca92be")
+		)
+		(instances
+			(project "4 1S Lipo Charger"
+				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 43.18 143.51 90)
+		(at 43.18 143.51 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13269,7 +13916,7 @@
 		(fields_autoplaced yes)
 		(uuid "83c90791-9de4-432b-a9da-2bda50bffac8")
 		(property "Reference" "#PWR04"
-			(at 49.53 143.51 0)
+			(at 43.18 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13280,7 +13927,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 46.99 143.51 0)
+			(at 43.18 147.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13413,7 +14060,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 43.18 104.14 180)
+		(at 46.99 90.17 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13424,7 +14071,7 @@
 		(fields_autoplaced yes)
 		(uuid "8594109b-b687-46ee-97ec-fbbc3db0c6eb")
 		(property "Reference" "R2"
-			(at 45.72 102.8699 0)
+			(at 49.53 88.8999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13435,7 +14082,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 45.72 105.4099 0)
+			(at 49.53 91.4399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13446,7 +14093,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 43.18 104.14 0)
+			(at 46.99 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13456,8 +14103,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 43.18 104.14 0)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 46.99 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13468,7 +14115,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 43.18 104.14 0)
+			(at 46.99 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13494,90 +14141,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 264.16 154.94 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "87ce4d7f-0c7b-404f-a0b6-58cc7a8d4df4")
-		(property "Reference" "C10"
-			(at 266.7 153.67 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 266.7 156.21 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 264.16 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 264.16 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 264.16 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6a388f71-144e-4be9-9520-30d74d91cb1b")
-		)
-		(pin "2"
-			(uuid "3ccd41df-8362-4659-8b4d-c8568231b61c")
-		)
-		(instances
-			(project "4 1S Lipo Charger"
-				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
-					(reference "C10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 336.55 106.68 270)
+		(at 336.55 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13588,7 +14153,7 @@
 		(fields_autoplaced yes)
 		(uuid "87e61417-6b0c-4b76-be8c-30d0da2059ab")
 		(property "Reference" "#PWR057"
-			(at 330.2 106.68 0)
+			(at 336.55 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13599,7 +14164,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 332.74 106.68 0)
+			(at 336.55 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13654,8 +14219,101 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 46.99 236.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "88dcdf65-c5ad-49b0-b369-28157093fe59")
+		(property "Reference" "C133"
+			(at 49.53 234.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 49.53 237.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 46.99 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
+			(at 46.99 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 46.99 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Placement" "U2 pin 48 USB_VDD -> GND pad (EP 57)"
+			(at 46.99 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "85b4f20b-876e-48e0-8e37-8b9abd320f1d")
+		)
+		(pin "2"
+			(uuid "dc4026ed-b682-4f98-970a-08c1c87e48a3")
+		)
+		(instances
+			(project "4 1S Lipo Charger"
+				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
+					(reference "C133")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 200.66 69.85 90)
+		(at 200.66 69.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13665,7 +14323,7 @@
 		(dnp no)
 		(uuid "896a2c2a-b2a2-4c41-bdee-1f09098ddbec")
 		(property "Reference" "#PWR033"
-			(at 207.01 69.85 0)
+			(at 200.66 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13676,7 +14334,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 204.978 69.85 0)
+			(at 200.66 74.168 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13809,6 +14467,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 162.56 166.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "979602fe-fecb-4c71-aecd-9fecf745775d")
+		(property "Reference" "#PWR018"
+			(at 162.56 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 162.56 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 162.56 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fc647106-df81-450b-be49-b5b45773ea31")
+		)
+		(instances
+			(project "4 1S Lipo Charger"
+				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 35.56 143.51 0)
 		(unit 1)
@@ -13852,7 +14588,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.e-switch.com/product/tl3342-series-low-profile-smt-tactile-switch/"
 			(at 35.56 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -13934,7 +14670,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 275.59 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -14050,8 +14786,101 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 90.17 171.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a042c90d-fc37-46de-acbf-11542d7c6b99")
+		(property "Reference" "C131"
+			(at 92.71 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 92.71 172.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 90.17 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
+			(at 90.17 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 90.17 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Placement" "U2 pin 49 IOVDD -> GND pad (EP 57)"
+			(at 90.17 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a8a386fa-f946-4845-b840-a98bbde6d9c2")
+		)
+		(pin "2"
+			(uuid "fb8e5c8f-1582-4bc9-884e-8b506a46a468")
+		)
+		(instances
+			(project "4 1S Lipo Charger"
+				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
+					(reference "C131")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
-		(at 171.45 111.76 0)
+		(at 38.1 200.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14062,7 +14891,7 @@
 		(fields_autoplaced yes)
 		(uuid "a07908c7-a2a3-4869-b37e-138ecd321eac")
 		(property "Reference" "#PWR022"
-			(at 171.45 115.57 0)
+			(at 38.1 204.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14073,7 +14902,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 171.45 108.204 0)
+			(at 38.1 197.104 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14083,7 +14912,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 171.45 111.76 0)
+			(at 38.1 200.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14094,7 +14923,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 171.45 111.76 0)
+			(at 38.1 200.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14105,7 +14934,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 171.45 111.76 0)
+			(at 38.1 200.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14129,7 +14958,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 191.77 166.37 90)
+		(at 191.77 166.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14140,7 +14969,7 @@
 		(fields_autoplaced yes)
 		(uuid "a1a1f035-8ac4-4b2c-b6d8-4d33a8ae0f1e")
 		(property "Reference" "#PWR029"
-			(at 198.12 166.37 0)
+			(at 191.77 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14151,7 +14980,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 195.58 166.37 0)
+			(at 191.77 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14328,7 +15157,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 334.01 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -14410,7 +15239,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
 			(at 318.77 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -14422,6 +15251,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 318.77 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Placement" "U3 pin 24 VCC -> pin 12 GND"
 			(at 318.77 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -14449,7 +15289,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 193.04 40.64 0)
+		(at 78.74 207.01 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14460,7 +15300,7 @@
 		(fields_autoplaced yes)
 		(uuid "a7367084-1651-4c37-bb32-3ede349b3cf4")
 		(property "Reference" "C8"
-			(at 195.58 39.37 0)
+			(at 81.28 205.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14471,7 +15311,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 195.58 41.91 0)
+			(at 81.28 208.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14482,7 +15322,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 193.04 40.64 0)
+			(at 78.74 207.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14492,8 +15332,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 193.04 40.64 0)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
+			(at 78.74 207.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14504,7 +15344,18 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 193.04 40.64 0)
+			(at 78.74 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Placement" "U2 pin 50 DVDD -> GND pad (EP 57)"
+			(at 78.74 207.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14531,7 +15382,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 69.85 48.26 0)
+		(at 27.94 213.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14542,7 +15393,7 @@
 		(fields_autoplaced yes)
 		(uuid "a7ecbe93-846d-4185-8e65-d76205854059")
 		(property "Reference" "#PWR09"
-			(at 69.85 54.61 0)
+			(at 27.94 219.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14553,7 +15404,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 69.85 52.07 0)
+			(at 27.94 217.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14563,7 +15414,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 48.26 0)
+			(at 27.94 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14574,7 +15425,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 48.26 0)
+			(at 27.94 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14585,7 +15436,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 69.85 48.26 0)
+			(at 27.94 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14602,6 +15453,192 @@
 			(project "4 1S Lipo Charger"
 				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 29.21 236.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a8bc2f7f-9d7c-4543-84a2-d266df91f27b")
+		(property "Reference" "C132"
+			(at 31.75 234.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 31.75 237.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 29.21 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
+			(at 29.21 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 29.21 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Placement" "U2 pin 43 ADC_AVDD -> GND pad (EP 57)"
+			(at 29.21 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "47490c70-e2d5-4f23-abc7-f56def52d39c")
+		)
+		(pin "2"
+			(uuid "491e4c29-3cdc-4799-94b4-6e7f9fca6bdf")
+		)
+		(instances
+			(project "4 1S Lipo Charger"
+				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
+					(reference "C132")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 69.85 44.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa363677-0cd6-466e-849f-7da74101cafd")
+		(property "Reference" "C134"
+			(at 72.39 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 72.39 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 69.85 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
+			(at 69.85 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 69.85 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Placement" "U1 pin 8 VCC -> pin 4 GND"
+			(at 69.85 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7aa733d3-3549-44c9-9f25-ea751289b70c")
+		)
+		(pin "2"
+			(uuid "81def9d4-d6a2-4608-b589-cb5efaa1b068")
+		)
+		(instances
+			(project "4 1S Lipo Charger"
+				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
+					(reference "C134")
 					(unit 1)
 				)
 			)
@@ -14866,41 +15903,40 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 181.61 40.64 0)
+		(lib_id "power:GND")
+		(at 29.21 242.57 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "bb0ab979-9542-453a-a086-e4eb79f9983b")
-		(property "Reference" "C6"
-			(at 184.15 39.37 0)
+		(uuid "b5c331af-1072-47e6-8c45-acda1dfd2fdc")
+		(property "Reference" "#PWR0914"
+			(at 29.21 248.92 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "100nF"
-			(at 184.15 41.91 0)
+		(property "Value" "GND"
+			(at 29.21 246.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 181.61 40.64 0)
+		(property "Footprint" ""
+			(at 29.21 242.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14911,7 +15947,86 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 181.61 40.64 0)
+			(at 29.21 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 29.21 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "76939d27-c8dc-4801-8eed-b2b69455d1c7")
+		)
+		(instances
+			(project "4 1S Lipo Charger"
+				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
+					(reference "#PWR0914")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 78.74 171.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b682835f-4a70-488a-b83a-b1a8dd157504")
+		(property "Reference" "C130"
+			(at 81.28 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 81.28 172.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 78.74 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
+			(at 78.74 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14922,7 +16037,267 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 181.61 40.64 0)
+			(at 78.74 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Placement" "U2 pin 42 IOVDD -> GND pad (EP 57)"
+			(at 78.74 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "01b1764e-9ed4-455d-b0e6-8434b5ffad69")
+		)
+		(pin "2"
+			(uuid "c9b289d1-d92b-4ef1-b950-486c684ab2d3")
+		)
+		(instances
+			(project "4 1S Lipo Charger"
+				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
+					(reference "C130")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 78.74 165.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b7cdef49-39f3-4698-ba61-e7b9975022f8")
+		(property "Reference" "#PWR0909"
+			(at 78.74 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 78.74 161.544 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 78.74 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "89168ea9-dc35-40bc-b315-ea298901d8c7")
+		)
+		(instances
+			(project "4 1S Lipo Charger"
+				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
+					(reference "#PWR0909")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 55.88 177.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b90bd0c2-bcf2-451d-9dc0-f7f254bc5376")
+		(property "Reference" "#PWR0906"
+			(at 55.88 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 55.88 181.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.88 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 55.88 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "76caf0a4-37fe-4a54-a5f4-3c428441c5d1")
+		)
+		(instances
+			(project "4 1S Lipo Charger"
+				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
+					(reference "#PWR0906")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 67.31 207.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bb0ab979-9542-453a-a086-e4eb79f9983b")
+		(property "Reference" "C6"
+			(at 69.85 205.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 69.85 208.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 67.31 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
+			(at 67.31 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 67.31 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Placement" "U2 pin 23 DVDD -> GND pad (EP 57)"
+			(at 67.31 207.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14992,7 +16367,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 242.57 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -15031,7 +16406,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 195.58 111.76 0)
+		(at 44.45 165.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15042,7 +16417,7 @@
 		(fields_autoplaced yes)
 		(uuid "c73bafda-ed08-44c2-bc8b-f479d71909fb")
 		(property "Reference" "#PWR031"
-			(at 195.58 115.57 0)
+			(at 44.45 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15053,7 +16428,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 195.58 108.204 0)
+			(at 44.45 161.544 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15063,7 +16438,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 195.58 111.76 0)
+			(at 44.45 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15074,7 +16449,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 111.76 0)
+			(at 44.45 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15085,7 +16460,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 195.58 111.76 0)
+			(at 44.45 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15102,6 +16477,84 @@
 			(project "4 1S Lipo Charger"
 				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
 					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 46.99 229.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc46fef4-6d3e-47e5-9945-114f3c32e5db")
+		(property "Reference" "#PWR0915"
+			(at 46.99 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 46.99 226.314 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 46.99 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 46.99 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2252c4e9-08a4-4d17-8062-e04b382d2059")
+		)
+		(instances
+			(project "4 1S Lipo Charger"
+				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
+					(reference "#PWR0915")
 					(unit 1)
 				)
 			)
@@ -15149,7 +16602,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 300.99 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -15231,7 +16684,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 161.29 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -15313,7 +16766,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 52.07 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -15429,8 +16882,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 36.83 110.49 0)
+		(lib_id "power:+3V3")
+		(at 69.85 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15439,9 +16892,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d9ab38e9-08e4-4160-9dc4-04a87a733644")
-		(property "Reference" "#PWR03"
-			(at 36.83 116.84 0)
+		(uuid "d68b4d71-d179-47c9-b5a3-6225d4af8097")
+		(property "Reference" "#PWR0917"
+			(at 69.85 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15451,8 +16904,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 36.83 114.3 0)
+		(property "Value" "+3V3"
+			(at 69.85 34.544 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15462,7 +16915,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 110.49 0)
+			(at 69.85 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15473,7 +16926,85 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 110.49 0)
+			(at 69.85 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 69.85 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a31a5fd6-6371-4122-a874-fe27b68a1686")
+		)
+		(instances
+			(project "4 1S Lipo Charger"
+				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
+					(reference "#PWR0917")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 40.64 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d9ab38e9-08e4-4160-9dc4-04a87a733644")
+		(property "Reference" "#PWR03"
+			(at 40.64 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 40.64 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15484,7 +17015,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 36.83 110.49 0)
+			(at 40.64 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15508,7 +17039,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 325.12 152.4 90)
+		(at 325.12 152.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15519,7 +17050,7 @@
 		(fields_autoplaced yes)
 		(uuid "dabc471f-fa43-4e13-9bfb-f513e591685b")
 		(property "Reference" "#PWR053"
-			(at 331.47 152.4 0)
+			(at 325.12 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15530,7 +17061,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 328.93 152.4 0)
+			(at 325.12 156.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15663,84 +17194,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 264.16 148.59 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "de51ca91-7439-4b88-84b1-acf98c006aa0")
-		(property "Reference" "#PWR038"
-			(at 264.16 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 264.16 145.034 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 264.16 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 264.16 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 264.16 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "16d73f9d-c6f8-40b2-a01d-872d87cf2eda")
-		)
-		(instances
-			(project "4 1S Lipo Charger"
-				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
-					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 293.37 146.05 90)
 		(unit 1)
@@ -15784,7 +17237,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 293.37 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -15864,7 +17317,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SGC.pdf"
 			(at 187.96 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -16008,7 +17461,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
+		(property "Footprint" "Charger:RotaryEncoder_Bourns_PEC11R-4xxxF-Sxxxx_Vertical"
 			(at 314.96 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -16019,7 +17472,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/PEC11R.pdf"
 			(at 314.96 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -16041,7 +17494,7 @@
 				)
 			)
 		)
-		(property "Note" "PEC11R shares the EC11E footprint - verify against Bourns drawing"
+		(property "Note" "Footprint built from Bourns PEC11R-4xxxF-Sxxxx drawing (datasheet REV. 04/26)"
 			(at 314.96 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -16078,7 +17531,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 171.45 124.46 0)
+		(at 38.1 213.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16089,7 +17542,7 @@
 		(fields_autoplaced yes)
 		(uuid "e4802288-83ae-4355-b801-b33f13de4719")
 		(property "Reference" "#PWR023"
-			(at 171.45 130.81 0)
+			(at 38.1 219.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16100,7 +17553,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 171.45 128.27 0)
+			(at 38.1 217.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16110,7 +17563,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 171.45 124.46 0)
+			(at 38.1 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16121,7 +17574,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 171.45 124.46 0)
+			(at 38.1 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16132,7 +17585,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 171.45 124.46 0)
+			(at 38.1 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16156,7 +17609,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 182.88 124.46 0)
+		(at 31.75 177.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16167,7 +17620,7 @@
 		(fields_autoplaced yes)
 		(uuid "e7b48b6c-08d8-43b3-886a-8d7d6712ec0c")
 		(property "Reference" "#PWR027"
-			(at 182.88 130.81 0)
+			(at 31.75 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16178,7 +17631,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 182.88 128.27 0)
+			(at 31.75 181.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16188,7 +17641,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 182.88 124.46 0)
+			(at 31.75 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16199,7 +17652,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 124.46 0)
+			(at 31.75 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16210,7 +17663,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 182.88 124.46 0)
+			(at 31.75 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16277,7 +17730,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 29.21 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -16309,6 +17762,84 @@
 			(project "4 1S Lipo Charger"
 				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 67.31 165.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e928a55d-3bdf-4388-99f6-5041818cb859")
+		(property "Reference" "#PWR0907"
+			(at 67.31 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 67.31 161.544 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 67.31 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2621d23c-9799-4fa8-b5de-7f715e82c88e")
+		)
+		(instances
+			(project "4 1S Lipo Charger"
+				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
+					(reference "#PWR0907")
 					(unit 1)
 				)
 			)
@@ -16394,7 +17925,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 182.88 118.11 0)
+		(at 31.75 171.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16405,7 +17936,7 @@
 		(fields_autoplaced yes)
 		(uuid "e9dfb1e5-1249-43e9-b038-e6ec063e2aed")
 		(property "Reference" "C7"
-			(at 185.42 116.84 0)
+			(at 34.29 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16416,7 +17947,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 185.42 119.38 0)
+			(at 34.29 172.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16427,7 +17958,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 182.88 118.11 0)
+			(at 31.75 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16437,8 +17968,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 182.88 118.11 0)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
+			(at 31.75 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16449,7 +17980,18 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 182.88 118.11 0)
+			(at 31.75 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Placement" "U2 pin 1 IOVDD -> GND pad (EP 57)"
+			(at 31.75 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16476,7 +18018,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 52.07 110.49 0)
+		(at 55.88 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16487,7 +18029,7 @@
 		(fields_autoplaced yes)
 		(uuid "ea4c9126-2238-4934-b5c0-ffb5f80e89af")
 		(property "Reference" "#PWR07"
-			(at 52.07 116.84 0)
+			(at 55.88 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16498,7 +18040,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 52.07 114.3 0)
+			(at 55.88 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16508,7 +18050,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 52.07 110.49 0)
+			(at 55.88 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16519,7 +18061,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 110.49 0)
+			(at 55.88 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16530,7 +18072,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 52.07 110.49 0)
+			(at 55.88 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16554,7 +18096,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 69.85 41.91 0)
+		(at 27.94 207.01 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16565,7 +18107,7 @@
 		(fields_autoplaced yes)
 		(uuid "ea6777de-d4d1-4608-82db-8b4b5d4ad7f4")
 		(property "Reference" "C3"
-			(at 72.39 40.64 0)
+			(at 30.48 205.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16576,7 +18118,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 72.39 43.18 0)
+			(at 30.48 208.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16587,7 +18129,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 69.85 41.91 0)
+			(at 27.94 207.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16597,8 +18139,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 69.85 41.91 0)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X5R_4V-TO-50V"
+			(at 27.94 207.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16609,7 +18151,18 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 69.85 41.91 0)
+			(at 27.94 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Placement" "U2 pin 44 VREG_VIN -> GND pad (EP 57), same layer"
+			(at 27.94 207.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16636,7 +18189,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 72.39 143.51 90)
+		(at 72.39 143.51 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16646,7 +18199,7 @@
 		(dnp no)
 		(uuid "eaff6716-8fa5-4292-9fa3-5feff0b627f8")
 		(property "Reference" "#PWR010"
-			(at 78.74 143.51 0)
+			(at 72.39 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16657,7 +18210,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 76.708 145.034 0)
+			(at 72.39 147.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16755,7 +18308,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://suddendocs.samtec.com/catalog_english/tsw_th.pdf"
 			(at 154.94 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -16843,7 +18396,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
 			(at 355.6 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -16855,6 +18408,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 355.6 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Placement" "At U2 pin 4 (GPIO2 / ENC_A) - RC filter cap at the MCU input"
 			(at 355.6 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -16881,86 +18445,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 162.56 176.53 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f25a3847-d57f-4fcc-8394-8ffcf333d297")
-		(property "Reference" "#PWR019"
-			(at 168.91 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 166.37 176.53 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 162.56 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 162.56 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 162.56 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a2cc709b-b541-4ecc-a2a7-7be5efce1c3c")
-		)
-		(instances
-			(project "4 1S Lipo Charger"
-				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
-					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
-		(at 59.69 74.93 270)
+		(at 76.2 74.93 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16968,10 +18454,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f3ac31eb-b886-4e48-9d8c-738264962b5d")
 		(property "Reference" "R4"
-			(at 59.69 77.47 90)
+			(at 76.2 70.358 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16981,7 +18466,7 @@
 			)
 		)
 		(property "Value" "27R"
-			(at 59.69 72.39 90)
+			(at 76.2 72.39 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16991,7 +18476,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 59.69 74.93 0)
+			(at 76.2 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17001,8 +18486,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 59.69 74.93 0)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 76.2 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17013,7 +18498,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 59.69 74.93 0)
+			(at 76.2 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17083,7 +18568,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 175.26 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -17121,90 +18606,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 276.86 154.94 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f7a4c4b9-129a-452d-bc49-b3a3ae9a341e")
-		(property "Reference" "C11"
-			(at 279.4 153.67 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 279.4 156.21 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 276.86 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 276.86 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 276.86 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "dac56d14-b9a1-49a2-8f0f-542cfa37dde0")
-		)
-		(pin "2"
-			(uuid "e93a20ad-d7b6-48fe-b81a-dea1bce15f3a")
-		)
-		(instances
-			(project "4 1S Lipo Charger"
-				(path "/9bc66db6-ce80-4dd6-8d04-62e0a5c66c34"
-					(reference "C11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 181.61 46.99 0)
+		(at 67.31 213.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17215,7 +18618,7 @@
 		(fields_autoplaced yes)
 		(uuid "fd48b51c-7bbf-4880-8be7-6648c803eea3")
 		(property "Reference" "#PWR025"
-			(at 181.61 53.34 0)
+			(at 67.31 219.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17226,7 +18629,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 181.61 50.8 0)
+			(at 67.31 217.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17236,7 +18639,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 181.61 46.99 0)
+			(at 67.31 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17247,7 +18650,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 181.61 46.99 0)
+			(at 67.31 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17258,7 +18661,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 181.61 46.99 0)
+			(at 67.31 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17358,7 +18761,7 @@
 		)
 	)
 	(sheet
-		(at 335.28 214.63)
+		(at 364.49 218.44)
 		(size 35 22)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17374,7 +18777,7 @@
 		)
 		(uuid "673659a2-e400-4e62-a613-296d900a87d9")
 		(property "Sheetname" "Port4"
-			(at 335.28 213.9184 0)
+			(at 364.49 217.7284 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17385,7 +18788,7 @@
 			)
 		)
 		(property "Sheetfile" "channel.kicad_sch"
-			(at 335.28 237.2146 0)
+			(at 364.49 241.0246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17396,7 +18799,7 @@
 			)
 		)
 		(pin "SDA" bidirectional
-			(at 335.28 217.17 180)
+			(at 364.49 220.98 180)
 			(uuid "db3c3926-c273-4b92-a537-f34349f9f170")
 			(effects
 				(font
@@ -17406,7 +18809,7 @@
 			)
 		)
 		(pin "SCL" input
-			(at 335.28 219.71 180)
+			(at 364.49 223.52 180)
 			(uuid "7d1d63ba-fa7f-466a-a2d9-c5bd47f6adca")
 			(effects
 				(font
@@ -17416,7 +18819,7 @@
 			)
 		)
 		(pin "~{INT}" output
-			(at 335.28 222.25 180)
+			(at 364.49 226.06 180)
 			(uuid "bf28f9f1-5593-4758-81bb-a2eb2e8b7fb4")
 			(effects
 				(font
@@ -17426,7 +18829,7 @@
 			)
 		)
 		(pin "~{ALERT}" output
-			(at 335.28 224.79 180)
+			(at 364.49 228.6 180)
 			(uuid "e88d547a-ce9a-4622-a874-038af1be1640")
 			(effects
 				(font
@@ -17436,7 +18839,7 @@
 			)
 		)
 		(pin "IMON" output
-			(at 335.28 227.33 180)
+			(at 364.49 231.14 180)
 			(uuid "5bf1a138-934e-43e5-96b3-c28e43127f23")
 			(effects
 				(font
@@ -17446,7 +18849,7 @@
 			)
 		)
 		(pin "BAL_SEL_A" input
-			(at 335.28 229.87 180)
+			(at 364.49 233.68 180)
 			(uuid "52c7224c-77f7-437d-a5b4-0ee57e859265")
 			(effects
 				(font
@@ -17456,7 +18859,7 @@
 			)
 		)
 		(pin "BAL_SEL_B" input
-			(at 335.28 232.41 180)
+			(at 364.49 236.22 180)
 			(uuid "597ab0b8-a373-4495-aeb3-7e0ab9aee780")
 			(effects
 				(font
@@ -17474,7 +18877,7 @@
 		)
 	)
 	(sheet
-		(at 30.48 214.63)
+		(at 364.49 184.15)
 		(size 40 25)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17490,7 +18893,7 @@
 		)
 		(uuid "8f8fac86-716f-4336-9367-4d2ac3236b3a")
 		(property "Sheetname" "Power"
-			(at 30.48 213.9184 0)
+			(at 364.49 183.4384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17501,7 +18904,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 30.48 240.2146 0)
+			(at 364.49 209.7346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17520,7 +18923,7 @@
 		)
 	)
 	(sheet
-		(at 185.42 214.63)
+		(at 214.63 218.44)
 		(size 35 22)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17536,7 +18939,7 @@
 		)
 		(uuid "98396fcf-b0a4-49e1-b21a-8752f7e41fba")
 		(property "Sheetname" "Port2"
-			(at 185.42 213.9184 0)
+			(at 214.63 217.7284 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17547,7 +18950,7 @@
 			)
 		)
 		(property "Sheetfile" "channel.kicad_sch"
-			(at 185.42 237.2146 0)
+			(at 214.63 241.0246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17558,7 +18961,7 @@
 			)
 		)
 		(pin "SDA" bidirectional
-			(at 185.42 217.17 180)
+			(at 214.63 220.98 180)
 			(uuid "8d0be5ba-1ce9-4fde-a589-f9e2eec87e13")
 			(effects
 				(font
@@ -17568,7 +18971,7 @@
 			)
 		)
 		(pin "SCL" input
-			(at 185.42 219.71 180)
+			(at 214.63 223.52 180)
 			(uuid "b1506e20-9d9b-44f3-876a-05fbc8fe5cad")
 			(effects
 				(font
@@ -17578,7 +18981,7 @@
 			)
 		)
 		(pin "~{INT}" output
-			(at 185.42 222.25 180)
+			(at 214.63 226.06 180)
 			(uuid "16815f0d-01eb-45a5-9ae1-e73b95b72fc9")
 			(effects
 				(font
@@ -17588,7 +18991,7 @@
 			)
 		)
 		(pin "~{ALERT}" output
-			(at 185.42 224.79 180)
+			(at 214.63 228.6 180)
 			(uuid "7b9ef01b-2615-4866-8f17-bb4f2125dc2e")
 			(effects
 				(font
@@ -17598,7 +19001,7 @@
 			)
 		)
 		(pin "IMON" output
-			(at 185.42 227.33 180)
+			(at 214.63 231.14 180)
 			(uuid "3abe6147-ed53-420f-adfc-7b5cc703a5a8")
 			(effects
 				(font
@@ -17608,7 +19011,7 @@
 			)
 		)
 		(pin "BAL_SEL_A" input
-			(at 185.42 229.87 180)
+			(at 214.63 233.68 180)
 			(uuid "6d8e5b89-3317-4d6e-9bbd-9312af71ad71")
 			(effects
 				(font
@@ -17618,7 +19021,7 @@
 			)
 		)
 		(pin "BAL_SEL_B" input
-			(at 185.42 232.41 180)
+			(at 214.63 236.22 180)
 			(uuid "f8c49a30-d4f4-4575-89c9-093ee0b0c287")
 			(effects
 				(font
@@ -17636,7 +19039,7 @@
 		)
 	)
 	(sheet
-		(at 110.49 214.63)
+		(at 139.7 218.44)
 		(size 35 22)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17652,7 +19055,7 @@
 		)
 		(uuid "a056fd8d-56b8-4343-a68e-fbc62cbe27b0")
 		(property "Sheetname" "Port1"
-			(at 110.49 213.9184 0)
+			(at 139.7 217.7284 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17663,7 +19066,7 @@
 			)
 		)
 		(property "Sheetfile" "channel.kicad_sch"
-			(at 110.49 237.2146 0)
+			(at 139.7 241.0246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17674,7 +19077,7 @@
 			)
 		)
 		(pin "SDA" bidirectional
-			(at 110.49 217.17 180)
+			(at 139.7 220.98 180)
 			(uuid "192fb660-7e55-44ad-af89-57a8178a55e3")
 			(effects
 				(font
@@ -17684,7 +19087,7 @@
 			)
 		)
 		(pin "SCL" input
-			(at 110.49 219.71 180)
+			(at 139.7 223.52 180)
 			(uuid "26bcf877-681b-4baf-b976-415281f9072c")
 			(effects
 				(font
@@ -17694,7 +19097,7 @@
 			)
 		)
 		(pin "~{INT}" output
-			(at 110.49 222.25 180)
+			(at 139.7 226.06 180)
 			(uuid "86d8f0be-f1c7-438e-80ca-9b1db029a9d6")
 			(effects
 				(font
@@ -17704,7 +19107,7 @@
 			)
 		)
 		(pin "~{ALERT}" output
-			(at 110.49 224.79 180)
+			(at 139.7 228.6 180)
 			(uuid "a5049a11-2856-47f4-8c72-6e2afd692666")
 			(effects
 				(font
@@ -17714,7 +19117,7 @@
 			)
 		)
 		(pin "IMON" output
-			(at 110.49 227.33 180)
+			(at 139.7 231.14 180)
 			(uuid "7a1b631f-8624-43e4-9dde-634785b2ba17")
 			(effects
 				(font
@@ -17724,7 +19127,7 @@
 			)
 		)
 		(pin "BAL_SEL_A" input
-			(at 110.49 229.87 180)
+			(at 139.7 233.68 180)
 			(uuid "3dd56508-b657-47ea-8dc1-d02ba26a0f39")
 			(effects
 				(font
@@ -17734,7 +19137,7 @@
 			)
 		)
 		(pin "BAL_SEL_B" input
-			(at 110.49 232.41 180)
+			(at 139.7 236.22 180)
 			(uuid "188c12d1-aec1-43e3-ad7c-a33c188cdab4")
 			(effects
 				(font
@@ -17752,7 +19155,7 @@
 		)
 	)
 	(sheet
-		(at 260.35 214.63)
+		(at 289.56 218.44)
 		(size 35 22)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17768,7 +19171,7 @@
 		)
 		(uuid "b1d9659e-bfe0-496a-9001-3a252e37c920")
 		(property "Sheetname" "Port3"
-			(at 260.35 213.9184 0)
+			(at 289.56 217.7284 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17779,7 +19182,7 @@
 			)
 		)
 		(property "Sheetfile" "channel.kicad_sch"
-			(at 260.35 237.2146 0)
+			(at 289.56 241.0246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17790,7 +19193,7 @@
 			)
 		)
 		(pin "SDA" bidirectional
-			(at 260.35 217.17 180)
+			(at 289.56 220.98 180)
 			(uuid "c53f869a-148c-4e51-ab90-08787f63b00a")
 			(effects
 				(font
@@ -17800,7 +19203,7 @@
 			)
 		)
 		(pin "SCL" input
-			(at 260.35 219.71 180)
+			(at 289.56 223.52 180)
 			(uuid "21bb9113-9a18-4d45-87ae-479ea4cca2de")
 			(effects
 				(font
@@ -17810,7 +19213,7 @@
 			)
 		)
 		(pin "~{INT}" output
-			(at 260.35 222.25 180)
+			(at 289.56 226.06 180)
 			(uuid "18d602fa-a8f7-4950-9ba9-b99befb2c85c")
 			(effects
 				(font
@@ -17820,7 +19223,7 @@
 			)
 		)
 		(pin "~{ALERT}" output
-			(at 260.35 224.79 180)
+			(at 289.56 228.6 180)
 			(uuid "59418724-f43b-4fde-8ebf-927d1e5d18a2")
 			(effects
 				(font
@@ -17830,7 +19233,7 @@
 			)
 		)
 		(pin "IMON" output
-			(at 260.35 227.33 180)
+			(at 289.56 231.14 180)
 			(uuid "1b6efa22-1681-436b-9aca-b78a59327934")
 			(effects
 				(font
@@ -17840,7 +19243,7 @@
 			)
 		)
 		(pin "BAL_SEL_A" input
-			(at 260.35 229.87 180)
+			(at 289.56 233.68 180)
 			(uuid "980b4ec4-1432-4c89-a843-073269103673")
 			(effects
 				(font
@@ -17850,7 +19253,7 @@
 			)
 		)
 		(pin "BAL_SEL_B" input
-			(at 260.35 232.41 180)
+			(at 289.56 236.22 180)
 			(uuid "3a19e497-eea2-4095-bd10-d108d8c2fe0f")
 			(effects
 				(font
