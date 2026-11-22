@@ -1427,23 +1427,13 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "canhw:G125-MH104M4-04AD000P"
+		(symbol "canhw:G125-MH10605M4R"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at 0 2.032 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "G125-MH104M4-04AD000P"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1453,18 +1443,17 @@
 					)
 				)
 			)
-			(property "Footprint" "canhw:connector_Harwin_G125-MH104M4-04AD000P"
-				(at 0 0 0)
+			(property "Value" "G125-MH10605M4R"
+				(at -0.254 -1.778 0)
 				(show_name no)
 				(do_not_autoplace no)
-				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Datasheet" "https://content.harwin.com/m/91a65d72bc24bdea/original/DRG-03150-Technical-Drawing-Datasheet-G125-MH1XXM4-XXAD000P-pdf.pdf"
+			(property "Footprint" "canhw:connector_Harwin_G125–MG10605M4P"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1475,7 +1464,7 @@
 					)
 				)
 			)
-			(property "Description" "4+4 Pos. Male Horizontal Throughboard Conn. Screw-Lok Board Mount"
+			(property "Datasheet" "https://content.harwin.com/m/49338d26cfd298f0/original/PD007-Product-Datasheet-Gecko-range-signal-connectors-HRi.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1486,109 +1475,22 @@
 					)
 				)
 			)
-			(symbol "G125-MH104M4-04AD000P_0_1"
-				(arc
-					(start -1.905 -3.175)
-					(mid -1.27 -3.81)
-					(end -1.905 -4.445)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.905 -5.715)
-					(mid -1.27 -6.35)
-					(end -1.905 -6.985)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.905 -8.255)
-					(mid -1.27 -8.89)
-					(end -1.905 -9.525)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.905 -10.795)
-					(mid -1.27 -11.43)
-					(end -1.905 -12.065)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.905 -14.605)
-					(mid -1.27 -15.24)
-					(end -1.905 -15.875)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.905 -17.145)
-					(mid -1.27 -17.78)
-					(end -1.905 -18.415)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.905 -19.685)
-					(mid -1.27 -20.32)
-					(end -1.905 -20.955)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.905 -22.225)
-					(mid -1.27 -22.86)
-					(end -1.905 -23.495)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 				)
 			)
-			(symbol "G125-MH104M4-04AD000P_1_1"
-				(pin input line
-					(at 2.54 -15.24 180)
+			(symbol "G125-MH10605M4R_1_1"
+				(pin power_in line
+					(at 0 -6.35 180)
 					(length 3.81)
-					(name "CANH"
+					(name "+VBUS1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1603,10 +1505,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at 2.54 -17.78 180)
+				(pin power_out line
+					(at 0 -16.51 180)
 					(length 3.81)
-					(name "CANL"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1621,10 +1523,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at 2.54 -20.32 180)
+				(pin bidirectional line
+					(at 0 -11.43 180)
 					(length 3.81)
-					(name "SYNC"
+					(name "CANH"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1639,10 +1541,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at 2.54 -22.86 180)
+				(pin power_in line
+					(at 0 -8.89 180)
 					(length 3.81)
-					(name "NC"
+					(name "+VBUS2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1658,16 +1560,16 @@
 					)
 				)
 				(pin input line
-					(at 2.54 -3.81 180)
+					(at 0 -19.05 180)
 					(length 3.81)
-					(name "+CHG"
+					(name "SYNC"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "A"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1675,53 +1577,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at 2.54 -6.35 180)
+				(pin bidirectional line
+					(at 0 -13.97 180)
 					(length 3.81)
-					(name "+VBUS1"
+					(name "CANL"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 2.54 -8.89 180)
-					(length 3.81)
-					(name "+VBUS2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 2.54 -11.43 180)
-					(length 3.81)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "D"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3026,18 +2892,6 @@
 		(uuid "fb76f7ff-230d-41b8-8e40-2411c7b687c7")
 	)
 	(no_connect
-		(at 33.02 127)
-		(uuid "581fef9d-5fef-4bd8-a795-5df19cdfb9d6")
-	)
-	(no_connect
-		(at 33.02 129.54)
-		(uuid "582605c5-79da-4245-bd2c-ae9e7a0cee68")
-	)
-	(no_connect
-		(at 33.02 110.49)
-		(uuid "9242c0d4-5715-44e9-b7e5-77c357fa379c")
-	)
-	(no_connect
 		(at 83.82 49.53)
 		(uuid "cfb3ead0-4449-4b72-857f-5ebde69a03e8")
 	)
@@ -3150,6 +3004,16 @@
 			(type default)
 		)
 		(uuid "0fd3ac13-3e12-4d70-9884-12b81767c40c")
+	)
+	(wire
+		(pts
+			(xy 80.01 124.46) (xy 83.82 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ffb8c76-3ed3-4e94-854c-985d54a07433")
 	)
 	(wire
 		(pts
@@ -3393,16 +3257,6 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 118.11) (xy 45.72 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "438f5ed9-9f0e-4b63-9f5f-69a1ed9c605b")
-	)
-	(wire
-		(pts
 			(xy 185.42 128.27) (xy 180.34 128.27)
 		)
 		(stroke
@@ -3453,6 +3307,16 @@
 	)
 	(wire
 		(pts
+			(xy 80.01 127) (xy 83.82 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b9a68f6-9be7-4156-8d8d-c5316d5858fa")
+	)
+	(wire
+		(pts
 			(xy 60.96 46.99) (xy 60.96 38.1)
 		)
 		(stroke
@@ -3470,6 +3334,16 @@
 			(type default)
 		)
 		(uuid "4c74c671-08e7-4383-9e13-d15a1338ce7e")
+	)
+	(wire
+		(pts
+			(xy 80.01 119.38) (xy 83.82 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "524cefa3-cf22-4357-8fe6-50f41b6aa84e")
 	)
 	(wire
 		(pts
@@ -3510,16 +3384,6 @@
 			(type default)
 		)
 		(uuid "5c2fcaa0-6d37-477c-aad7-0378645cb43f")
-	)
-	(wire
-		(pts
-			(xy 33.02 118.11) (xy 45.72 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5cd9d27a-016b-48be-b857-c41a17b6b580")
 	)
 	(wire
 		(pts
@@ -3580,16 +3444,6 @@
 			(type default)
 		)
 		(uuid "65f1935d-0e7b-4cad-ba0d-5e29b8f3ad4f")
-	)
-	(wire
-		(pts
-			(xy 38.1 113.03) (xy 33.02 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68f0db34-0588-4a7c-8b89-c0350714742c")
 	)
 	(wire
 		(pts
@@ -3720,6 +3574,16 @@
 			(type default)
 		)
 		(uuid "8ddc71ba-161b-445f-b8bb-7dd6306097f4")
+	)
+	(wire
+		(pts
+			(xy 80.01 116.84) (xy 83.82 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90ca7aca-464c-4ab3-99c2-4ea6341f6cb2")
 	)
 	(wire
 		(pts
@@ -3873,6 +3737,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 127) (xy 83.82 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b34d7c3a-4196-44ba-94ab-186e58e7efdb")
+	)
+	(wire
+		(pts
 			(xy 260.35 52.07) (xy 262.89 52.07)
 		)
 		(stroke
@@ -3890,16 +3764,6 @@
 			(type default)
 		)
 		(uuid "bad9c97e-72f5-4018-8645-15577bb8eb08")
-	)
-	(wire
-		(pts
-			(xy 38.1 115.57) (xy 33.02 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb46f3a0-294f-4cd2-8734-22769fd8e9d5")
 	)
 	(wire
 		(pts
@@ -4123,6 +3987,16 @@
 	)
 	(wire
 		(pts
+			(xy 80.01 121.92) (xy 83.82 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f42e8f71-15d2-484d-b7b8-a1b97f110dbc")
+	)
+	(wire
+		(pts
 			(xy 173.99 100.33) (xy 184.15 100.33)
 		)
 		(stroke
@@ -4182,7 +4056,7 @@
 		(uuid "ff91a1f6-eeb3-4c8a-af88-a5a9b56c916a")
 	)
 	(label "+VBUS2"
-		(at 38.1 115.57 0)
+		(at 83.82 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4192,7 +4066,7 @@
 		(uuid "60be926a-54ad-4461-baaa-e4771776a5a1")
 	)
 	(label "CANL"
-		(at 33.02 124.46 0)
+		(at 83.82 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4212,7 +4086,7 @@
 		(uuid "c222367e-df53-4be7-97a4-0557b350819b")
 	)
 	(label "+VBUS1"
-		(at 38.1 113.03 0)
+		(at 83.82 116.84 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4222,7 +4096,7 @@
 		(uuid "cc5c02ec-d68b-476c-a662-e7075f7fe388")
 	)
 	(label "CANH"
-		(at 33.02 121.92 0)
+		(at 83.82 121.92 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4371,6 +4245,84 @@
 			(project "NovatelJL"
 				(path "/90c42022-78bb-4f42-8f1d-e285e6497357/3eb3a1f3-b628-4782-93fc-c18491832b33"
 					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 83.82 132.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "025576d4-2bd9-4e89-83b3-7aebcc24d4d2")
+		(property "Reference" "#PWR03"
+			(at 83.82 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 83.82 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 83.82 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8ddd963a-6a7a-4bec-b333-3efbe0c8c38d")
+		)
+		(instances
+			(project "NovatelJL"
+				(path "/90c42022-78bb-4f42-8f1d-e285e6497357/3eb3a1f3-b628-4782-93fc-c18491832b33"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -4874,104 +4826,6 @@
 			(project "NovatelJL"
 				(path "/90c42022-78bb-4f42-8f1d-e285e6497357/3eb3a1f3-b628-4782-93fc-c18491832b33"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "canhw:G125-MH104M4-04AD000P")
-		(at 30.48 106.68 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "22b8b978-cfdc-4f8b-819b-1a98ac2e9301")
-		(property "Reference" "J1"
-			(at 28.8925 105.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "G125-MH104M4-04AD000P"
-			(at 28.8925 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "canhw:connector_Harwin_G125-MH104M4-04AD000P"
-			(at 30.48 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://content.harwin.com/m/91a65d72bc24bdea/original/DRG-03150-Technical-Drawing-Datasheet-G125-MH1XXM4-XXAD000P-pdf.pdf"
-			(at 30.48 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "4+4 Pos. Male Horizontal Throughboard Conn. Screw-Lok Board Mount"
-			(at 30.48 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "7758deda-3f7e-4a6b-9a73-790d0b7262f5")
-		)
-		(pin "3"
-			(uuid "4d1f42db-06c8-4cbb-9f87-a917186c8adf")
-		)
-		(pin "D"
-			(uuid "9355f29f-c482-4744-90c4-d9fdb4a37b59")
-		)
-		(pin "1"
-			(uuid "d1d29de8-83a3-4b20-833a-7eda9982f183")
-		)
-		(pin "4"
-			(uuid "9cac8274-1803-435b-948b-6abeb87ab362")
-		)
-		(pin "A"
-			(uuid "14983658-1b2a-4893-91ba-36c901f20266")
-		)
-		(pin "B"
-			(uuid "1dcb9fa5-1158-4b5a-8c0d-52c9eb6d761b")
-		)
-		(pin "C"
-			(uuid "1568d74f-6afd-42ee-8189-3b1989a131c0")
-		)
-		(instances
-			(project "NovatelJL"
-				(path "/90c42022-78bb-4f42-8f1d-e285e6497357/3eb3a1f3-b628-4782-93fc-c18491832b33"
-					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -5656,7 +5510,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e587d0b-3c9d-46cf-a178-d066af7564e5")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR02"
 			(at 59.69 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -5716,7 +5570,7 @@
 		(instances
 			(project "NovatelJL"
 				(path "/90c42022-78bb-4f42-8f1d-e285e6497357/3eb3a1f3-b628-4782-93fc-c18491832b33"
-					(reference "#PWR03")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -6193,6 +6047,98 @@
 			(project "NovatelJL"
 				(path "/90c42022-78bb-4f42-8f1d-e285e6497357/3eb3a1f3-b628-4782-93fc-c18491832b33"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "canhw:G125-MH10605M4R")
+		(at 80.01 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "90f93f90-8b32-4653-b88c-faefcf120419")
+		(property "Reference" "J1"
+			(at 76.2 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "G125-MH10605M4R"
+			(at 76.2 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "canhw:connector_Harwin_G125–MG10605M4P"
+			(at 80.01 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://content.harwin.com/m/49338d26cfd298f0/original/PD007-Product-Datasheet-Gecko-range-signal-connectors-HRi.pdf"
+			(at 80.01 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 80.01 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "325708a9-4935-400a-b866-3ca0b48ab20b")
+		)
+		(pin "3"
+			(uuid "a341da19-6bda-4b74-bcef-9dc9692da330")
+		)
+		(pin "4"
+			(uuid "9b436fc7-75ed-4abf-97c2-bb9de48454e7")
+		)
+		(pin "5"
+			(uuid "812cb421-7568-4f44-9ca5-1d37fa3762a9")
+		)
+		(pin "6"
+			(uuid "0837cc3e-c82b-4d69-b6a7-28dc7d4aa142")
+		)
+		(pin "2"
+			(uuid "3cf8e4f6-78a8-4a15-935e-c30ee0eaa1b7")
+		)
+		(instances
+			(project "NovatelJL"
+				(path "/90c42022-78bb-4f42-8f1d-e285e6497357/3eb3a1f3-b628-4782-93fc-c18491832b33"
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -8103,84 +8049,6 @@
 			(project "NovatelJL"
 				(path "/90c42022-78bb-4f42-8f1d-e285e6497357/3eb3a1f3-b628-4782-93fc-c18491832b33"
 					(reference "TP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 45.72 123.19 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ecb816a5-9449-4fcc-a977-b9ad668e2244")
-		(property "Reference" "#PWR02"
-			(at 45.72 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 45.72 128.27 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 45.72 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 45.72 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 45.72 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "42df06bf-f2aa-429b-b1c1-52bc49db3345")
-		)
-		(instances
-			(project "NovatelJL"
-				(path "/90c42022-78bb-4f42-8f1d-e285e6497357/3eb3a1f3-b628-4782-93fc-c18491832b33"
-					(reference "#PWR02")
 					(unit 1)
 				)
 			)
