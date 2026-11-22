@@ -2683,16 +2683,16 @@
 		)
 		(uuid "1cb47ce9-1690-4ea5-a39b-a71aa732221d")
 	)
-	(text "200R on ILIMIT is 2A max current, change resistor to change\nthe cutoff current, graph on pg 12 of datasheet\n\nN/C on DVDT is 0.9V/ms, can put a capacitor from \nDVDT to ground to change slew rate (pg 12)\n"
+	(text "Novatel Power Draw: 1.8W typ / 3.3V = 0.54A (1.74A inrush / 0.2 for antenna) \nSTM: max 200 mA (pg 73)\nMag/Baro: max 0.1 mA\n\nTotal Draw: 0.74 typical\nILim target = 1.0 A\nResistor Size: R = (545/1)-72 = 470R \nCoulr Replace R2 with series resistors as well\n\nNot sure what to use for DV/DT values"
 		(exclude_from_sim no)
-		(at 64.008 77.724 0)
+		(at 89.916 84.836 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "b0e2b949-4d33-461e-ad90-7ae7fbb91c5a")
+		(uuid "347b15b1-6bb1-4443-8394-1f9c4b9dcc27")
 	)
 	(text "ESD protection on CAN lines"
 		(exclude_from_sim no)
@@ -2724,28 +2724,6 @@
 			(justify left)
 		)
 		(uuid "e86fcd7a-8bf2-4274-bd54-cfaa26fef7dd")
-	)
-	(text "Pull up resistor to VIN to reduce current\nSee pg 11 for more details"
-		(exclude_from_sim no)
-		(at 43.688 34.29 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ed1c50e9-b10b-477f-8993-d5c479e0ecd3")
-	)
-	(text "Schottky diodes are one way \nto combine the two power buses"
-		(exclude_from_sim no)
-		(at 16.256 22.86 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fea62d42-49ac-41b8-a32d-94b59077ffc3")
 	)
 	(junction
 		(at 40.64 38.1)
@@ -2890,10 +2868,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fb76f7ff-230d-41b8-8e40-2411c7b687c7")
-	)
-	(no_connect
-		(at 83.82 49.53)
-		(uuid "cfb3ead0-4449-4b72-857f-5ebde69a03e8")
 	)
 	(wire
 		(pts
@@ -3167,6 +3141,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 62.23) (xy 99.06 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "287e6d2b-5905-47f2-a5df-814608798451")
+	)
+	(wire
+		(pts
 			(xy 161.29 49.53) (xy 171.45 49.53)
 		)
 		(stroke
@@ -3194,6 +3178,16 @@
 			(type default)
 		)
 		(uuid "2d31342f-f638-411e-aa57-5a0e0d6f73c6")
+	)
+	(wire
+		(pts
+			(xy 99.06 49.53) (xy 99.06 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "379cbf71-61ee-4918-9fc9-a532ebe5b140")
 	)
 	(wire
 		(pts
@@ -3974,6 +3968,16 @@
 			(type default)
 		)
 		(uuid "eeb98ed4-5783-4328-b055-6876bd0916bd")
+	)
+	(wire
+		(pts
+			(xy 83.82 49.53) (xy 99.06 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef3be7d3-e840-419b-8aa1-fed6b07611f5")
 	)
 	(wire
 		(pts
@@ -4936,7 +4940,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "470R"
 			(at 91.44 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5571,6 +5575,87 @@
 			(project "NovatelJL"
 				(path "/90c42022-78bb-4f42-8f1d-e285e6497357/3eb3a1f3-b628-4782-93fc-c18491832b33"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 99.06 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5f2353ce-d7cb-419c-8f8a-382ded204663")
+		(property "Reference" "C?"
+			(at 102.87 57.1499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "?uF"
+			(at 101.854 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.0252 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 99.06 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5f4cb1d8-1e3d-4cd6-b407-a3bfa86e8812")
+		)
+		(pin "2"
+			(uuid "fcccd321-ed40-4fed-b658-61432df173aa")
+		)
+		(instances
+			(project "NovatelJL"
+				(path "/90c42022-78bb-4f42-8f1d-e285e6497357/3eb3a1f3-b628-4782-93fc-c18491832b33"
+					(reference "C?")
 					(unit 1)
 				)
 			)
@@ -6826,6 +6911,84 @@
 			(project "NovatelJL"
 				(path "/90c42022-78bb-4f42-8f1d-e285e6497357/3eb3a1f3-b628-4782-93fc-c18491832b33"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 99.06 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7efec58-682c-4394-9d9c-75117ac42be2")
+		(property "Reference" "#PWR044"
+			(at 99.06 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 99.06 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 99.06 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "951e3291-d272-4f1d-a404-81ee5e707882")
+		)
+		(instances
+			(project "NovatelJL"
+				(path "/90c42022-78bb-4f42-8f1d-e285e6497357/3eb3a1f3-b628-4782-93fc-c18491832b33"
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
