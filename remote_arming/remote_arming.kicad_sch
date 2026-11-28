@@ -6057,6 +6057,17 @@
 		)
 		(uuid "19172a29-f27f-4f3f-88e4-8a475af3e7a8")
 	)
+	(text "Swapped to 220 for around \n15 miliamps, so under 20 mA\n\nI = V/R\nI = 3.3/220\nI = 0.015\n\nMay swap for similar values \ndepending on lead times"
+		(exclude_from_sim no)
+		(at 191.008 235.458 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3a9d68cb-af6e-4ea2-86c7-586f71adaf14")
+	)
 	(text "Debugging / Indicator LEDs"
 		(exclude_from_sim no)
 		(at 157.988 222.758 0)
@@ -6097,6 +6108,16 @@
 			)
 		)
 		(uuid "b223979f-85ab-4d69-89e2-7d3b79505239")
+	)
+	(text "Datasheet says 5V ADC, \nswap or keep with note \nuntil i figure some shit \nout with nosecone?"
+		(exclude_from_sim no)
+		(at 339.852 94.742 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e94576c7-21b4-42c9-82d6-037a253f4544")
 	)
 	(text "RocketCAN"
 		(exclude_from_sim no)
@@ -7104,7 +7125,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 134.62) (xy 152.4 134.62)
+			(xy 158.75 134.62) (xy 152.4 134.62)
 		)
 		(stroke
 			(width 0)
@@ -7534,7 +7555,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 129.54) (xy 173.99 129.54)
+			(xy 138.43 129.54) (xy 158.75 129.54)
 		)
 		(stroke
 			(width 0)
@@ -7564,7 +7585,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 132.08) (xy 149.86 132.08)
+			(xy 158.75 132.08) (xy 149.86 132.08)
 		)
 		(stroke
 			(width 0)
@@ -7934,7 +7955,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 143.51) (xy 173.99 143.51)
+			(xy 154.94 143.51) (xy 158.75 143.51)
 		)
 		(stroke
 			(width 0)
@@ -8003,7 +8024,7 @@
 		(uuid "fe74e9cd-3ab1-46ac-9c41-e542d92cc607")
 	)
 	(label "VMAG1"
-		(at 173.99 132.08 0)
+		(at 158.75 132.08 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8023,7 +8044,7 @@
 		(uuid "03acf657-d0cb-4683-bd6c-21c0da066639")
 	)
 	(label "CURR_AMP_BATT1"
-		(at 173.99 129.54 0)
+		(at 158.75 129.54 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8133,7 +8154,7 @@
 		(uuid "515ec23c-7a74-4cca-bce3-fcbcf7d06cc2")
 	)
 	(label "VBAT1"
-		(at 173.99 134.62 0)
+		(at 158.75 134.62 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8172,8 +8193,8 @@
 		)
 		(uuid "7fd40b6e-04d7-46bf-8917-12857cb5cab5")
 	)
-	(label "CURR_AMP_CAN"
-		(at 173.99 143.51 0)
+	(label "CURR_SENSE"
+		(at 158.75 143.51 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8192,7 +8213,7 @@
 		)
 		(uuid "8322abcb-705f-412c-b459-7fe980327e79")
 	)
-	(label "CURR_AMP_CAN"
+	(label "CURR_SENSE"
 		(at 205.74 158.75 180)
 		(effects
 			(font
@@ -8618,7 +8639,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330R"
+		(property "Value" "220R"
 			(at 188.4172 250.063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8698,7 +8719,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330R"
+		(property "Value" "220R"
 			(at 179.5272 250.063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8778,7 +8799,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330R"
+		(property "Value" "220R"
 			(at 170.6372 250.063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8858,7 +8879,7 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
+		(property "Value" "+3V3"
 			(at 169.291 228.0158 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8934,7 +8955,7 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
+		(property "Value" "+3V3"
 			(at 178.181 228.0158 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9010,7 +9031,7 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
+		(property "Value" "+3V3"
 			(at 187.071 228.0158 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14082,7 +14103,7 @@
 				(justify right)
 			)
 		)
-		(pin "CURR_AMP_CAN" input
+		(pin "CURR_SENSE" input
 			(at 138.43 140.97 0)
 			(uuid "e3204824-f1c5-4255-be83-99edaa3d77bd")
 			(effects
